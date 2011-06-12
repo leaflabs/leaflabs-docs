@@ -4,33 +4,59 @@
  ADC
 =====
 
-Analog-Digital Conversion is the process of reading a physical voltage
-as a number. The Maple has a large number of pins which are capable of
-taking 12-bit ADC measurements, which means that voltages from 0 to
-3.3V are read as numbers from 0 to 4095.  This corresponds to a
-theoretical sensitivity of just under 1 millivolt. In reality, a
-number of factors introduce noise and bias into this reading, and a
-number of techniques must be used to get good precision and accuracy.
+Analog to digital conversion is the process of reading a physical
+voltage as a number.  Maple can convert voltages between 0 and 3.3V to
+numbers between 0 and 4095.
 
 .. contents:: Contents
    :local:
+
+ADC On Maple
+------------
+
+Doing analog-to-digital conversion on the Maple is simple.
+:ref:`Maple IDE <ide>` contains a basic example.  To see it, choose
+Analog > AnalogInSerial from the :ref:`examples menu <ide-examples>`.
+
+In order to set up your board for conversion, first connect the wire
+(potentiometer, etc.)  with the voltage you want to measure to a
+:ref:`pin <gpio>` which can perform ADC.  Each pin which can do ADC
+has "AIN" (or "ain") written next to the the pin number.  Then, as in
+the example program, set the chosen pin's :ref:`pin mode
+<lang-pinmode>` to ``INPUT_ANALOG`` by calling ``pinMode(<your_pin>,
+INPUT_ANALOG)``.  You will usually do this in your :ref:`lang-setup`
+function.  Now you can use :ref:`lang-analogread` to perform an ADC
+reading.
+
+.. _adc-function-reference:
+
+Function Reference
+------------------
+
+* :ref:`lang-analogread`
+* :ref:`lang-pinmode`
 
 .. _adc-noise-bias:
 
 Noise and Bias
 --------------
 
+Maple has a large number of pins which are capable of taking 12-bit
+ADC measurements, which means that voltages from 0 to 3.3V are read as
+numbers from 0 to 4095.  In theory, this means that a change in
+voltage of about 1 millivolt should change the numeric voltage reading
+by 1.  In reality, however, a number of issues introduce noise and
+bias into this reading, and a number of techniques must be used to get
+good precision and accuracy.
+
+In order to allow for good readings, LeafLabs has tried to isolate at
+least some of each board's ADC pins and traces from strong noise
+sources.  However, there are always trade-offs between noise,
+additional functionality, cost, and package size.  More information on
+these isolated pins is available in each board's hardware
+documentation:
+
 .. FIXME [0.0.12, Maple Native]
-
-The biggest issues with analog to digital conversion are noise and
-bias.  With the Maple line, we have tried to isolate the ADC pins and
-traces from strong noise sources, but there are always trade-offs
-between noise, additional functionality, cost, and package size.
-We've tried to enable good analog performance by isolating as many ADC
-pins as possible from digital noise on each board.
-
-More information on these isolated pins is available in each board's
-hardware documentation:
 
 * :ref:`Maple <maple-adc-bank>`
 * :ref:`Maple RET6 Edition <maple-ret6-adc-bank>`
@@ -62,14 +88,6 @@ are `resistor dividers
 .  However, `operational amplifiers
 <http://en.wikipedia.org/wiki/Operational_amplifier>`_ and other
 powered components can also be used if greater precision is required.
-
-.. _adc-function-reference:
-
-Function Reference
-------------------
-
-* :ref:`lang-analogread`
-* :ref:`lang-pinmode`
 
 .. _adc-recommended-reading:
 
