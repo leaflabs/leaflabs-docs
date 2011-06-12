@@ -20,8 +20,8 @@ import sys, os
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 # We rely on Michael Jones's breathe as a Doxygen-to-Sphinx bridge.
-# See libmaple/docs/README for information on obtaining it and letting
-# Sphinx know where it is.
+# See the README for information on obtaining it and letting Sphinx
+# know where it is.
 sys.path.append(os.environ['BREATHE_HOME'])
 
 # -- General configuration ----------------------------------------------------
@@ -269,6 +269,6 @@ intersphinx_mapping = {'http://docs.python.org/': None}
 # -- Options for breathe integration ------------------------------------------
 
 breathe_projects = {'libmaple' : os.path.join(os.environ['LIB_MAPLE_HOME'],
-                                              'docs', 'doxygen', 'xml')}
+                                              'doxygen', 'xml')}
 
 breathe_default_project = 'libmaple'

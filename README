@@ -1,9 +1,27 @@
-This directory contains source files used to generate libmaple's
-documentation.  
+Introduction
+------------
 
-The generated documentation for the latest libmaple release is
-available online in HTML form at http://leaflabs.com/docs/.  The web
-interface is the recommended way for users to read the documentation.
+This directory contains reStructuredText (reST) source files used to
+generate the documentation for LeafLabs' libmaple and Maple IDE
+projects.  For more information on these projects, see their GitHub
+pages:
+
+    https://github.com/leaflabs/libmaple
+    https://github.com/leaflabs/maple-ide
+
+While the two projects are developed separately, they are released in
+lockstep, and Maple IDE depends upon libmaple.  (libmaple doesn't
+depend on Maple IDE).
+
+The generated documentation for the latest libmaple and Maple IDE
+release is available online in HTML form:
+
+    http://leaflabs.com/docs/
+
+The web interface is the recommended way for users to read the
+documentation.  Older versions are available as well:
+
+    http://static.leaflabs.com/pub/leaflabs/maple-docs/
 
 This file contains instructions for generating the HTML files.
 
@@ -16,7 +34,7 @@ The docs are written in Sphinx's extensions to reStructuredText
     http://sphinx.pocoo.org/tutorial.html
 
 Much of the documentation is pulled out of the libmaple source code;
-we use Doxygen XML output into Sphinx documentation.  You can read
+we pull Doxygen's XML output into Sphinx documentation.  You can read
 more about Doxygen here:
 
     http://doxygen.org
@@ -67,12 +85,12 @@ the HTML documentation.
 
 4. Before the first time you run Sphinx (and any time the Doxygen
    comments in the libmaple source code are changed), you'll need to
-   build the Doxygen XML output:
+   rebuild libmaple's Doxygen XML output.  That is, from within the
+   libmaple (i.e., NOT THIS REPOSITORY), run:
 
-    $ cd libmaple/docs/source
-    $ doxygen
+    $ make doxygen
 
-5. Finally, you can build the documentation:
+5. Finally, you can build the documentation (in this folder):
 
     $ make html
 
@@ -83,16 +101,19 @@ Reading and Modifying the Documentation
 
 Just point your web browser at the file
 
-  /docs/build/html/index.html
+  build/html/index.html
 
 It corresponds to the Sphinx file
 
-  /docs/source/index.rst
+  source/index.rst
 
-The file /docs/source/conf.py is the Sphinx configuration file; you
-can go read it for more information about our setup.
+Read more about Sphinx and chase pointers within the docs source to
+find out more.
+
+The file source/conf.py is the Sphinx configuration file; you can go
+read it for more information about our setup.
 
 All of the documentation which isn't pulled out of source code
-comments lives in /docs/source/.  The directory /docs/source/_static/
-is for static content (like style sheets); /docs/source/_templates/
-contains Sphinx templates.
+comments lives in source/.  The directory source/_static/ is for
+static content (like style sheets); source/_templates/ is meant to
+contain Sphinx templates.
