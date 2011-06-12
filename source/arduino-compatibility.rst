@@ -187,7 +187,7 @@ The state of currently ported Arduino libraries is the
      - (Unsupported) third-party emulation
      - The Maple doesn't have EEPROM; it uses flash instead.  There is
        an `EEPROM emulation library
-       <http://akb77.com/g/mcu/maple-eeprom-emulation-library/>`_ by
+       <http://akb77.com/g/stm32/maple-eeprom-emulation-library/>`_ by
        `x893 <http://akb77.com/g/>`_, but we haven't tested it.
 
    * - Firmata
