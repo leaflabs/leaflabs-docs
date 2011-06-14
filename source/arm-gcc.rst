@@ -74,12 +74,23 @@ including Arduino) for use on the Maple.
 
 .. _arm-gcc-attribute-flash:
 
-- Replacing ``PROGMEM``: You can direct the linker script provided
-  with libmaple to store a variable in Flash (instead of RAM) by using
-  the libmaple macro ``__FLASH__``, like so::
+- Replacing ``PROGMEM``: If you need to store a lot of constant data,
+  you can store variables in Flash (instead of RAM) by using the
+  libmaple macro ``__FLASH__``.  Here's an example::
 
       uint32 array[] __FLASH__ = {0, 1, 2};
 
-  Be aware, however, that if you do that, you can only store values
-  which are compile-time constants, and that if you attempt to change
-  a variable stored in Flash, your program will crash.
+  This will help you save RAM when you need to store large amounts of
+  data, like look-up tables.
+
+  You can only store values which are compile-time constants (like
+  numbers and strings, and arrays of numbers and strings) in this way.
+  Also, if you try to change a variable stored in Flash, your program
+  will crash.
+
+  If you need to port over AVR/Arduino code that uses pgmspace.h,
+  these declarations may help you::
+
+      typedef const unsigned char prog_uchar;
+      #define pgm_read_byte_near(x) (*(prog_uchar*)x)
+      #define pgm_read_byte(x) (*(prog_uchar*)x)
