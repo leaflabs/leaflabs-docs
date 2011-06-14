@@ -35,6 +35,7 @@ Function Reference
 
 * :ref:`lang-analogread`
 * :ref:`lang-pinmode`
+* :ref:`libmaple-adc` (low-level ADC support)
 
 .. _adc-noise-bias:
 
