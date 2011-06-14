@@ -15,7 +15,7 @@ Overview
 The biggest difference between the Maple and most Arduino boards is
 that the Maple uses a 32-bit ARM Cortex-M3 architecture chip, while
 the Arduinos have 8-bit Atmel AVR chips. The different instruction set
-means that machine code (which makes up executable binary program) is
+means that machine code (which makes up executable binary programs) is
 incompatible between the two, and a different compiler (actually just
 a different version of `gcc <http://gcc.gnu.org/>`_) is required.
 
