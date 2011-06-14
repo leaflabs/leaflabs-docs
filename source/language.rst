@@ -13,7 +13,7 @@ language used to program the `Arduino <http://arduino.cc/>`_ boards.
 .. TODO [0.2.0?] Wiring tutorial
 
 C or C++ programmers may wish to skip to the
-:ref:`arduino_c_for_c_hackers`.
+:ref:`arduino_c_for_c_hackers` or the :ref:`unix-toolchain`.
 
 .. contents:: Contents
    :local:
@@ -21,6 +21,8 @@ C or C++ programmers may wish to skip to the
 .. admonition:: **Looking for Something Else?**
 
    - See the :ref:`libraries` for extra built-in libraries.
+
+   - If you want to use C or C++, see the :ref:`unix-toolchain`.
 
    - If you're looking for something from the C standard library (like
      ``atoi()``, for instance): the :ref:`CodeSourcery GCC compiler
