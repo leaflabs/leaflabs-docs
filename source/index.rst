@@ -36,6 +36,7 @@ Have fun!
    libmaple <libmaple>
    Bootloader <bootloader>
    Troubleshooting <troubleshooting>
+   FAQ <faq>
    Notes on GCC's ARM target <arm-gcc>
    Complete Language Index <language-index>
 
