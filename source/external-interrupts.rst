@@ -56,6 +56,7 @@ Function Reference
 
 - :ref:`attachInterrupt() <lang-attachinterrupt>`
 - :ref:`detachInterrupt() <lang-detachinterrupt>`
+- :ref:`libmaple-exti`
 
 Recommended Reading
 -------------------
