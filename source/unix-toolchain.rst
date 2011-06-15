@@ -13,6 +13,22 @@ program the Maple; you can always :ref:`install the Maple IDE
 are comfortable using C or C++ and would like to use :ref:`libmaple`
 directly.
 
+We currently have instructions for 32- and 64-bit Linux and OS X Snow
+Leopard. If you're on another Unix platform, Windows, or an earlier
+version of OS X, we imagine you can translate/port these directions on
+your own. You might want to begin with these `stripped down
+distributions <http://static.leaflabs.com/pub/codesourcery/>`_ of the
+`CodeSourcery GCC compiler tools
+<http://www.codesourcery.com/sgpp/features.html>`_ (including Win32
+versions). If you do have success on other platforms, please post in
+the forums, so we can fold your tips into this document!
+
+.. contents:: Contents
+   :local:
+
+Requirements
+------------
+
 You'll need a Maple board, a Mini-B USB cable, a functional computer,
 and root (or Administrator) access to that computer. This guide
 assumes you've had success with the IDE on your machine and that you
@@ -20,24 +36,6 @@ are fairly comfortable with the Unix command line.  Some previous
 experience with editing your shell startup script (.bashrc, .tcshrc,
 etc.) and using `GCC <http://gcc.gnu.org/>`_ and `make
 <http://www.gnu.org/software/make/>`_ is recommended.
-
-For generic installation and setup issues, see the :ref:`IDE
-installation <maple-ide-install>` and :ref:`troubleshooting` pages. If
-all else fails, try our `forum`_, or `contact us directly`_\ !
-
-We currently have instructions for 32- and 64-bit Linux and OS X Snow
-Leopard. If you're on another Unix platform, Windows, or an earlier
-version of OS X, we're guessing that you can translate/port these
-directions on your own. As a jumping off point, you might want to
-begin with these `stripped down distributions
-<http://static.leaflabs.com/pub/codesourcery/>`_ of the `CodeSourcery
-GCC compiler tools <http://www.codesourcery.com/sgpp/features.html>`_
-(including Win32 versions). If you do have success on other platforms,
-please post in the forums, so we can fold your tips into this
-document!
-
-.. contents:: Contents
-   :local:
 
 .. _toolchain-linux-setup:
 
@@ -121,7 +119,7 @@ script so :file:`~/libmaple/arm/bin` stays in your ``PATH``.
 
 From the libmaple directory, ::
 
-  $ groups # make sure it includes plugdev; if not add, yourself to it
+  $ groups # make sure it includes plugdev; if not, add yourself to it
   $ sudo cp support/scripts/45-maple.rules /etc/udev/rules.d/45-maple.rules
   $ sudo restart udev
 
@@ -246,7 +244,7 @@ you can then unpack the archive and let OS X know where the compilers
 live with ::
 
   $ cd ~/Downloads
-  $ tar -xvzf gcc-blah-blah-macosx32.tar.gz
+  $ tar -xvzf gcc-blah-blah-osx32.tar.gz
   $ mv arm ~/libmaple/arm
   $ export PATH=$PATH:~/libmaple/arm/bin
 
