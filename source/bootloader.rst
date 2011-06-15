@@ -661,11 +661,9 @@ More information on ``Serial1`` is available :ref:`here
 At this point, you're ready to plug the FTDI board into your computer
 (via USB).
 
-**Step 3: Put your Maple into serial bootloader mode**.  Do this by
-pressing the RESET button, then *while RESET is held down*, pressing
-and holding the BUT button.  Next, *making sure to keep BUT held
-down*, release the RESET button and wait for a few seconds before
-releasing BUT.
+**Step 3: Put your Maple into serial bootloader mode**.  See the
+:ref:`perpetual bootloader mode troubleshooting item
+<troubleshooting-perpetual-bootloader>` for instructions.
 
 **Step 4: Get stm32loader.py**.  You can download it directly from
 `libmaple's GitHub page
