@@ -180,6 +180,12 @@ you :command:`make clean` when switching between Flash and RAM
 targets; our Makefile isn't smart enough to rebuild everything for the
 new target.
 
+My code uploads, but it doesn't work!
+-------------------------------------
+
+Are you sure you have the right board selected? (Maple vs. Maple Mini,
+etc.)
+
 .. _troubleshooting-shell:
 
 ===================
