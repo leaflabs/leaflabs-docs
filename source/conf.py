@@ -50,7 +50,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Maple'
-copyright = u'2010, LeafLabs, LLC'
+copyright = u'2010, 2011, LeafLabs, LLC'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
