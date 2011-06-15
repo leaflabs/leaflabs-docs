@@ -223,15 +223,14 @@ In this mode, Maple stays a DFU device and does not jump to user code
 until the next reset.  This is useful for guaranteeing that your Maple
 will be available for reprogramming.
 
-To put your Maple into perpetual bootloader mode:
+To put your Maple (or other Maple board) into perpetual bootloader mode:
 
-#. Plug your Maple into the USB port.
+#. Plug your board into the USB port.
 
-#. Hit the reset button on your Maple (it's the small button at the
-   bottom left, labeled RESET).  Notice that it blinks quickly 6
-   times, then blinks slowly a few more times.
+#. Hit the reset button (it's the button labeled RESET).  Notice that
+   your board blinks quickly 6 times, then blinks slowly a few more
+   times.
 
 #. Hit reset again, and this time push and hold the other button
-   during the 6 fast blinks (the button is on the top right; it is
-   labeled BUT). You can release it once the slow blinks start.
-
+   during the 6 fast blinks (the normal button is labeled BUT). You
+   can release it once the slow blinks start.
