@@ -52,7 +52,7 @@ contemporary Debian-based distribution.
 
 **1. Collect and Install Tools**
 
-Firs, you'll need some tools::
+First, you'll need some tools::
 
   $ sudo aptitude install build-essential git-core wget screen dfu-util \
                           openocd python python-serial
