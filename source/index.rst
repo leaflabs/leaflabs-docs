@@ -33,12 +33,12 @@ Have fun!
    Language <language>
    Libraries <libraries>
    Arduino Compatibility <arduino-compatibility>
-   libmaple <libmaple>
+   libmaple
    Bootloader <bootloader>
    Troubleshooting <troubleshooting>
    FAQ <faq>
-   Notes on GCC's ARM target <arm-gcc>
-   Complete Language Index <language-index>
+   GCC and libc for Maple <arm-gcc>
+   Language Index <language-index>
 
 .. _index-hardware:
 
