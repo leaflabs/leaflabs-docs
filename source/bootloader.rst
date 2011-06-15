@@ -14,7 +14,7 @@ Flash memory and only runs when the chip is reset).
 
   git clone git://github.com/leaflabs/maple-bootloader.git
 
-**Visit the github development project**: https://github.com/leaflabs/maple-bootloader
+**Visit the GitHub development project**: https://github.com/leaflabs/maple-bootloader
 
 .. contents:: Contents
    :local:
@@ -34,7 +34,7 @@ This is a fairly involved explanation, with a lot of details that are
 likely only interesting to a few. If you just want to get the rough
 idea, skim this article. If you want to start hacking on the
 bootloader, get in touch with us to get even more info on how this all
-works.  And finally, you can always `check out the code at github
+works.  And finally, you can always `check out the code at GitHub
 <https://github.com/leaflabs/libmaple>`_!
 
 Arduino
@@ -668,7 +668,7 @@ down*, release the RESET button and wait for a few seconds before
 releasing BUT.
 
 **Step 4: Get stm32loader.py**.  You can download it directly from
-`libmaple's github page
+`libmaple's GitHub page
 <https://github.com/leaflabs/libmaple/raw/master/support/stm32loader.py>`_
 (click the link, then save the file somewhere on your system).  If you
 have set up the :ref:`Unix toolchain <unix-toolchain>`, it's the file
