@@ -622,7 +622,7 @@ do is to compile your bootloader binary.  Note that an ASCII
 representation of the binary, such as the Intel .hex format, won't
 work.
 
-.. FIXME [Mini, Native] links to precompiled bootloaders
+.. FIXME [0.0.12] links to bootloaders for Mini and Native
 
 If you just want to flash the default Maple bootloader (the one that
 was installed on your Maple when it arrived), we host a `pre-compiled
@@ -646,7 +646,7 @@ could use another Maple, an Arduino, etc. -- anything that allows your
 computer to communicate with the Maple you want to reprogram over a
 serial interface.
 
-.. FIXME [Maple-specific values]
+.. FIXME [0.0.12, Maple-specific values]
 
 If you do use an FTDI breakout board, first make sure your Maple is
 disconnected from an external power source, be it battery, USB, or
