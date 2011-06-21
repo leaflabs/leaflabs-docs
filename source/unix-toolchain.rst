@@ -144,8 +144,8 @@ These instructions have been tested successfully on OS X 10.6.4. As
 stated previously, this document assumes a general level of Unix
 aptitude on the part of the reader; if you're uncomfortable using
 Terminal (or if you don't know what that means), then you should
-probably stick with using the `Maple IDE
-<http://leaflabs.com/docs/maple-ide/>`_ to write programs.
+probably stick with using the :ref:`Maple IDE <ide>` to write
+programs.
 
 **1. Collect and Install Tools**
 
@@ -235,12 +235,12 @@ You first need to clone libmaple::
 Then you need to get the cross-compilers we use to build a
 project. These are just modified versions of GCC; you can `download
 them for OS X here
-<http://static.leaflabs.com/pub/codesourcery/gcc-arm-none-eabi-latest-osx32.tar.gz>`_. Assuming
-you saved this file to
+<http://static.leaflabs.com/pub/codesourcery/gcc-arm-none-eabi-latest-osx32.tar.gz>`_. Let's
+say you saved this file to
 
   :file:`~/Downloads/gcc-blah-blah-osx32.tar.gz`
 
-you can then unpack the archive and let OS X know where the compilers
+You can then unpack the archive and let OS X know where the compilers
 live with ::
 
   $ cd ~/Downloads
