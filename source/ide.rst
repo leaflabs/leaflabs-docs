@@ -7,9 +7,11 @@ This page documents the basic functionality of the Maple IDE.
 Specifically, it describes the operation of the buttons on the main
 toolbar.  It is expected to become more comprehensive over time.
 
-The :ref:`Maple Quickstart <maple-quickstart>` is another good source of
-information on the IDE; it is especially useful for setting up a
-computer for the first time.
+If you're new to Maple, you should begin with the :ref:`Maple
+Quickstart <maple-quickstart>`.
+
+If you need to install the IDE for the first time, see the
+:ref:`maple-ide-install` page.
 
 .. contents:: Contents
    :local:
