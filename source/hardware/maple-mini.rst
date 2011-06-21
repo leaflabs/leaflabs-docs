@@ -304,7 +304,7 @@ Hardware Design Files
 ---------------------
 
 The hardware schematics and board layout files are available in the
-`Maple Mini GitHub repository <https://github.com/leaflabs/maplemini>`_
+`Maple Mini GitHub repository <https://github.com/leaflabs/maplemini>`_.
 
 From the GitHub repository main page, you can download the entire
 repository by clicking the "Download" button.  If you are familiar
