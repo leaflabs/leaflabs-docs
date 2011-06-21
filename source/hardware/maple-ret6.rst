@@ -7,8 +7,9 @@ Maple RET6 Edition
 
 This page is a general resource for information specific to the Maple
 RET6 Edition.  The Maple RET6 Edition is a "beta" board released as a
-simple way to get a more powerful chip than the one on the base Maple
-(the STM32F103RET6, hence the name) in the hands of Maple developers.
+simple way to get a more powerful chip (the STM32F103\ **RET6**, hence
+the name) than the one on the base Maple (the STM32F103\ **RBT6**) in
+the hands of Maple developers.
 
 .. contents:: Contents
    :local:
@@ -394,9 +395,10 @@ features only available on the STM32F103RET6.
   the board's built-in LED; this is the same GPIO bit which is
   connected to the DAC's channel 2 output.  This is also due to the
   RET6 Edition's board layout being that of the Maple Rev 5.  The DAC
-  output channel is still available, and (if you use libmaple) its
-  output is buffered by default, so this may not significantly
-  interfere with its functionality.
+  output channel is still available, and (if you use the
+  :ref:`standard libmaple DAC interface <libmaple-dac>`) its output is
+  buffered by default, so this may not significantly interfere with
+  its functionality.
 
 .. _maple-ret6-nrst-pb4:
 
