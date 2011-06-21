@@ -4,7 +4,7 @@
 GCC for Maple
 =============
 
-This document provides notes on using of ``arm-none-eabi-gcc``, the
+This document provides notes on using ``arm-none-eabi-gcc``, the
 `CodeSourcery <http://www.codesourcery.com/>`_ version of the GNU `GCC
 <http://gcc.gnu.org/>`_ compilers used for the Maple boards.  It is
 not intended as a reference manual for GCC; such manuals are available
