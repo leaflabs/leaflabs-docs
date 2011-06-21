@@ -10,6 +10,9 @@ This document provides notes on using ``arm-none-eabi-gcc``, the
 not intended as a reference manual for GCC; such manuals are available
 `elsewhere <http://gcc.gnu.org/>`_.
 
+.. contents:: Contents
+   :local:
+
 Obtaining ``arm-none-eabi-gcc``
 -------------------------------
 
