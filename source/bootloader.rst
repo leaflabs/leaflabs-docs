@@ -634,7 +634,7 @@ To obtain the latest development version, you can run (on a
 :ref:`suitably configured system <unix-toolchain>`) the following to
 obtain a binary of the bootloader currently used on the Maple::
 
-    $ git checkout git://github.com/leaflabs/maple-bootloader.git
+    $ git clone git://github.com/leaflabs/maple-bootloader.git
     $ cd maple-bootloader
     $ make
     $ ls -lh build/maple-boot.bin # this is the compiled bootloader binary
