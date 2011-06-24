@@ -38,6 +38,7 @@ Recommended Reading
 * `Embedded USB - a brief tutorial <http://www.computer-solutions.co.uk/info/Embedded_tutorials/usb_tutorial.htm>`_
 * `Wikipedia article on Universal Serial Bus (USB) <http://en.wikipedia.org/wiki/Universal_Serial_Bus>`_
 * Linux Kernel documentation for `USB ACM <http://www.kernel.org/doc/Documentation/usb/acm.txt>`_ and `USB Serial <http://www.kernel.org/doc/Documentation/usb/usb-serial.txt>`_
+* `USB Glossary of Terms <http://belcarra.com/usb_glossary.html>`_
 * ST documentation:
     * Reference Manual `RM0008
       <http://www.st.com/stonline/products/literature/rm/13902.pdf>`_
