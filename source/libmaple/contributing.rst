@@ -70,6 +70,15 @@ The steps to submit a pull request are as follows:
 3. Push your commits to your GitHub libmaple fork (see instructions
    linked in Step 2 for a step-by-step walkthrough on how to do this).
 
+   Please add a signed-off-by line to your commits which certify your
+   `developer certificate of origin
+   <http://elinux.org/Developer_Certificate_Of_Origin>`_ [#fcert]_.
+   For example, if your name is "John Smith", and your email address
+   is "jsmith@example.com", just include the following line at the
+   bottom of your commit messages:
+
+       ``Signed-off-by: John Smith <jsmith@example.com>``
+
 4. `Submit a pull request <http://help.github.com/pull-requests/>`_ to
    the LeafLabs version of libmaple.
 
@@ -92,7 +101,7 @@ the following information in your email:
    you think we should know.
 
 4. A sign-off line certifying your `developer certificate of origin
-   <http://elinux.org/Developer_Certificate_Of_Origin>`_.
+   <http://elinux.org/Developer_Certificate_Of_Origin>`_ [#fcert]_.
 
 That said, we'd really prefer a pull request.  If you'd like to learn
 more about Git, we recommend the following resources:
@@ -111,3 +120,38 @@ more about Git, we recommend the following resources:
   <http://eagain.net/articles/git-for-computer-scientists/>`_: if
   you're comfortable with directed acyclic graphs, this resource
   explains Git's functionality in graph-theoretic terms.
+
+.. highlight:: text
+
+.. rubric:: Footnotes
+
+.. [#fcert] Including this line indicates that you certify the following::
+
+              Developer's Certificate of Origin 1.1
+
+              By making a contribution to this project, I certify that:
+
+              (a) The contribution was created in whole or in part by me and I
+                  have the right to submit it under the open source license
+                  indicated in the file; or
+
+              (b) The contribution is based upon previous work that, to the best
+                  of my knowledge, is covered under an appropriate open source
+                  license and I have the right under that license to submit that
+                  work with modifications, whether created in whole or in part
+                  by me, under the same open source license (unless I am
+                  permitted to submit under a different license), as indicated
+                  in the file; or
+
+              (c) The contribution was provided directly to me by some other
+                  person who certified (a), (b) or (c) and I have not modified
+                  it.
+
+              (d) I understand and agree that this project and the contribution
+                  are public and that a record of the contribution (including all
+                  personal information I submit with it, including my sign-off) is
+                  maintained indefinitely and may be redistributed consistent with
+                  this project or the open source license(s) involved.
+
+             This may seem arbitrary, but it helps ensure that libmaple
+             remains open source.
