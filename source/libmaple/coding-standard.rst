@@ -356,7 +356,7 @@ General Formatting
 
 .. highlight:: scheme
 
-- Keep it 80-column clean.  
+- Keep it 80-column clean.
 
   Emacs users: this means that the largest column number is 79.  You
   should turn on column number mode to help you out::
