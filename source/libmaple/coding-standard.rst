@@ -53,6 +53,11 @@ Emacs: if you don't like seeing the license, you should use elide-head
 Whitespace
 ----------
 
+TextMate users may find `this bundle
+<https://github.com/glennr/uber-glory-tmbundle>`_ useful for
+automatically converting tabs to spaces and removing trailing
+whitespace at save time.
+
 - 4 space indents (set in ``.dir-locals.el``).
 
 - Unix newlines. Some exceptions are currently grandfathered in; these
