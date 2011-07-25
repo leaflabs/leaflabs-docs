@@ -611,33 +611,34 @@ Setup
 
 In order to follow these instructions, you will need:
 
-- A binary of the bootloader you want to upload
+- A binary of the bootloader you want to upload (see below).
 - Hardware for communicating between the Maple and your computer over
   serial.
-- `Python <http://python.org>`_ version 2.5 or higher, with the
-  `PySerial <http://pyserial.sourceforge.net/>`_ library installed.
+- `Python <http://python.org>`_, version 2.5 or higher.
+- The `PySerial <http://pyserial.sourceforge.net/>`_ library (this
+  must be installed separately; it is not part of the Python standard
+  library).
 
-**Step 1: Obtain a bootloader binary**. The first thing you'll need to
-do is to compile your bootloader binary.  Note that an ASCII
-representation of the binary, such as the Intel .hex format, won't
-work.
+**Step 1: Obtain a bootloader binary**. If you want to re-flash the
+"factory-default" bootloader, LeafLabs hosts pre-compiled copies:
 
-.. FIXME [0.0.12] links to bootloaders for Mini and Native
+- `Maple <http://static.leaflabs.com/pub/leaflabs/maple-bootloader/maple_boot.bin>`_
+- `Maple Mini <http://static.leaflabs.com/pub/leaflabs/maple-bootloader/maple_mini_boot.bin>`_
+- `Maple RET6 Edition <http://static.leaflabs.com/pub/leaflabs/maple-bootloader/maple_RET6_boot.bin>`_
 
-If you just want to flash the default Maple bootloader (the one that
-was installed on your Maple when it arrived), we host a `pre-compiled
-copy
-<http://static.leaflabs.com/pub/leaflabs/maple-bootloader/maple_boot-rev3-9c5f8e.bin>`_,
-which works on all Maple Revs.
-
-To obtain the latest development version, you can run (on a
-:ref:`suitably configured system <unix-toolchain>`) the following to
-obtain a binary of the bootloader currently used on the Maple::
+To flash a customized version of a LeafLabs bootloader, you can run
+(on a :ref:`suitably configured system <unix-toolchain>`) the
+following to obtain a bootloader binary::
 
     $ git clone git://github.com/leaflabs/maple-bootloader.git
     $ cd maple-bootloader
     $ make
-    $ ls -lh build/maple-boot.bin # this is the compiled bootloader binary
+    $ ls -lh build/maple_boot.bin # this is the compiled bootloader binary
+
+.. note:: If you plan to write a totally custom bootloader, you'll
+   need an actual binary to use these instructions.  An ASCII
+   representation of the binary, such as the Intel .hex format, won't
+   work.
 
 **Step 2: Connect Maple Serial1 to your computer**.
 There are a variety of ways of doing this.  We use Sparkfun's `FTDI
@@ -651,9 +652,10 @@ serial interface.
 If you do use an FTDI breakout board, first make sure your Maple is
 disconnected from an external power source, be it battery, USB, or
 barrel jack.  Then, connect the FTDI board's TX pin to ``Serial1``\ 's
-RX pin (pin 8), FTDI RX to ``Serial1`` TX (pin 7), FTDI ground to
-Maple's GND, and its 3.3V pin to Maple's Vin (use the Maple's
-silkscreen for help locating these pins).
+RX pin (pin 8 on Maple), FTDI RX to ``Serial1`` TX (pin 7 on Maple),
+FTDI ground to ground (labeled GND), and its 3.3V pin to Vin.  On
+Maple Mini, you will also need to tie BOOT1 (pin 2) to ground.  You
+can use the silkscreen for help locating these pins on other boards.
 
 More information on ``Serial1`` is available :ref:`here
 <lang-serial>`.
@@ -661,9 +663,20 @@ More information on ``Serial1`` is available :ref:`here
 At this point, you're ready to plug the FTDI board into your computer
 (via USB).
 
-**Step 3: Put your Maple into serial bootloader mode**.  See the
-:ref:`perpetual bootloader mode troubleshooting item
-<troubleshooting-perpetual-bootloader>` for instructions.
+**Step 3: Run the built-in hardware serial bootloader**\
+[#fserbootmode]_.  Accomplish this using the following steps:
+
+1. Press and hold the reset and BUT buttons.
+2. Release the reset button *without releasing BUT*.
+3. Release BUT.
+
+At this point, if you followed the instructions correctly, the board
+will appear unresponsive -- the LED won't blink, etc.  Don't worry.
+This is the expected behavior for the serial bootloader.
+
+Do not confuse the above steps, which run the built-in serial
+bootloader, with the steps for :ref:`perpetual boodloader mode
+<troubleshooting-perpetual-bootloader>`.
 
 **Step 4: Get stm32loader.py**.  You can download it directly from
 `libmaple's GitHub page
@@ -730,3 +743,9 @@ obtaining help, with IRC (server irc.freenode.net, channel
                bootloader is not enumerated as a virtual serial port
                (it uses DFU instead; see :ref:`above
                <bootloader-rev3>` for more details).
+
+.. [#fserbootmode] Resetting your board in this way runs a special
+                   bootloader that ST builds into their chips'
+                   hardware, which communicates over :ref:`usart`.
+                   This is different from the LeafLabs bootloader,
+                   which is a normal program that runs on your board.
