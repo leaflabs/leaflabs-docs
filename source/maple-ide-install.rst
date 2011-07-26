@@ -19,26 +19,25 @@ Download
 
 .. FIXME [0.0.12] Update this for the release.
 
-This documentation was built from a development version of libmaple.
-See the formally released `LeafLabs documentation
-<http://leaflabs.com/docs/>`_ for more information about the current
-Maple IDE release.
+.. This documentation was built from a development version of libmaple.
+.. See the formally released `LeafLabs documentation
+.. <http://leaflabs.com/docs/>`_ for more information about the current
+.. Maple IDE release.
 
-.. Choose the correct version for your operating system:
+Choose the correct version for your operating system:
 
-.. .. list-table::
-..    :widths: 15 30
-..    :header-rows: 1
+.. list-table::
+   :widths: 15 30
+   :header-rows: 1
 
-..    * - Platform
-..      - Status
-..      - IDE Package
-..    * - `Windows XP <http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.10-windowsxp32.zip>`_
-..      - Tested on 32-bit Windows XP
-..    * - `Linux <http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.10-linux32.tgz>`_
-..      - Tested on Ubuntu 10.04 (32-bit)
-..    * - `Mac OS X <http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.10-macosx-10_6.dmg>`_
-..      - Tested on Snow Leopard (10.6)
+   * - Platform
+     - Status
+   * - `Windows XP <http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.11-windowsxp32.zip>`_
+     - Tested on 32-bit Windows XP
+   * - `Linux <http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.11-linux32.tgz>`_
+     - Tested on Ubuntu 10.04 (32-bit)
+   * - `Mac OS X <http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.11-macosx-10_6.dmg>`_
+     - Tested on Snow Leopard (10.6)
 
 The package bundles together a compiler, an upload utility, a software
 library, and a simple GUI text editor. All this software is `free and
