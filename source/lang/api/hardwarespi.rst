@@ -99,7 +99,7 @@ receive data using ``HardwareSPI::read()``, and do both using
    Get the next available, unread byte.  If there aren't any unread
    bytes, this function will wait until one is received.
 
-.. cpp:function:: byte HardwareSPI::transmit(byte data)
+.. cpp:function:: byte HardwareSPI::transfer(byte data)
 
    Send a byte, then return the next byte received.
 
