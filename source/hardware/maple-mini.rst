@@ -185,7 +185,7 @@ EXTI Line Pin Map
 ^^^^^^^^^^^^^^^^^
 
 The following table shows which pins connect to which :ref:`EXTI lines
-<external-interrupts-exti-line>` on the Maple.
+<external-interrupts-exti-line>`.
 
 .. list-table::
    :widths: 1 1
@@ -231,9 +231,9 @@ The following table shows which pins connect to which :ref:`EXTI lines
 USART Pin Map
 ^^^^^^^^^^^^^
 
-The Maple RET6 Edition has three serial ports whose pins are broken
-out to headers (also known as :ref:`USARTs <usart>`). They communicate
-using the pins summarized in the following table:
+The Maple Mini has three serial ports (also known as :ref:`USARTs
+<usart>`). They communicate using the pins summarized in the following
+table:
 
 .. csv-table::
    :header: Serial Port, TX, RX, CK, CTS, RTS
