@@ -41,6 +41,12 @@ Library Documentation
 
 .. doxygentypedef:: voidFuncPtr
 
+.. note::
+
+   You should set the :ref:`pin mode <lang-pinmode>` of your desired
+   pin to an input mode (e.g. ``INPUT``, ``INPUT_PULLUP``,
+   ``INPUT_PULLDOWN``).
+
 Discussion
 ----------
 
@@ -50,30 +56,44 @@ Because the function will run in interrupt context, inside of it,
 the function may be lost. You should declare as ``volatile`` any
 global variables that you modify within the attached function.
 
-There are a few limits you should be aware of if you're using more
-than one interrupt at a time; the :ref:`External Interrupts
-<external-interrupts-exti-line>` page has more information.
+There are some limits you should be aware of if you're using
+``attachInterrupt()`` with more than one pin; the :ref:`External
+Interrupts <external-interrupts-exti-line>` page has more information.
 
 Example
 -------
 
- ::
+The following example blinks the LED any time pin 0 changes from
+``HIGH`` to ``LOW`` or vice versa. ::
 
     volatile int state = LOW; // must declare volatile, since it's
                               // modified within the blink() handler
 
     void setup() {
-      pinMode(BOARD_LED_PIN, OUTPUT);
-      attachInterrupt(0, blink, CHANGE);
+        pinMode(BOARD_LED_PIN, OUTPUT);
+        pinMode(0, INPUT);
+        attachInterrupt(0, blink, CHANGE);
     }
 
     void loop() {
-      digitalWrite(BOARD_LED_PIN, state);
+        digitalWrite(BOARD_LED_PIN, state);
     }
 
     void blink() {
-      state = !state;
+        if (state == HIGH) {
+            state = LOW;
+        } else { // state must be LOW
+            state = HIGH;
+        }
     }
+
+In this example, the function ``blink()`` is the interrupt handler.
+Whenever the state on pin 0 changes, ``blink()`` gets called.  It
+reacts to the change by changing the ``state`` variable to ``LOW`` if
+it is ``HIGH``, and to ``HIGH`` if it is ``LOW``.  It then exits,
+letting the board get back to calling ``loop()``.  Since ``loop()``
+sets the LED pin to whatever ``state`` is, changing the voltage on pin
+0 will toggle the LED.
 
 Arduino Compatibility
 ---------------------

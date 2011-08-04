@@ -5,13 +5,11 @@
 External Interrupts
 ===================
 
-External interrupts can be used to make a voltage change on a pin
-cause a function to be called.  Each :ref:`GPIO pin <gpio>` can be
-used to detect transitions, such as when the voltage goes from
-:ref:`LOW <lang-constants-low>` to :ref:`HIGH <lang-constants-high>`,
-or from ``HIGH`` to ``LOW``. This can be used to avoid checking for
-changes on a pin "manually" by waiting in a loop until the pin
-changes.
+External interrupts can be used to make a voltage change on a
+:ref:`pin <gpio>` (the pin going from :ref:`LOW <lang-constants-low>`
+to :ref:`HIGH <lang-constants-high>`, or vice-versa) to cause a
+function to be called.  This can be used to avoid checking for changes
+on a pin "manually" by waiting in a loop until the pin changes.
 
 .. _contents: Contents
    :local:
@@ -20,16 +18,16 @@ Overview
 --------
 
 External interrupts are often used to detect when events happen
-outside of the Maple. These can be used to tell Maple when events
-happen, such as when a sensor has data ready to be read, or when a
-button has been pushed.  When such an event happens, an interrupt is
-raised, and the Maple stops whatever it was doing to react to it by
-calling a function (called an *interrupt handler*) which you specify
-using :ref:`lang-attachinterrupt`.
+outside of the Maple.  Example events include when a sensor has data
+ready to be read, or when a button has been pushed.  When such an
+event happens, an interrupt is raised, and the Maple stops whatever it
+was doing (it is "interrupted"), and reacts to the event by calling a
+function (called an *interrupt handler*) which you specify using
+:ref:`lang-attachinterrupt`.
 
 .. _external-interrupts-exti-line:
 
-Every pin can generate an external interrupt, but there are some
+Any pin can be used for external interrupts, but there are some
 restrictions.  At most 16 different external interrupts can be used at
 one time.  Further, you can't just pick any 16 pins to use.  This is
 because every pin on the Maple connects to what is called an *EXTI
@@ -44,12 +42,6 @@ EXTI lines:
 * :ref:`Maple <maple-exti-map>`
 * :ref:`Maple RET6 Edition <maple-ret6-exti-map>`
 * :ref:`Maple Mini <maple-mini-exti-map>`
-
-.. note::
-
-   You should set the :ref:`pin mode <lang-pinmode>` of your desired
-   pin to an input mode (e.g. ``INPUT``, ``INPUT_PULLUP``,
-   ``INPUT_PULLDOWN``).
 
 Function Reference
 ------------------
