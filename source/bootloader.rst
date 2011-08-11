@@ -677,7 +677,7 @@ will appear unresponsive -- the LED won't blink, etc.  Don't worry.
 This is the expected behavior for the serial bootloader.
 
 Do not confuse the above steps, which run the built-in serial
-bootloader, with the steps for :ref:`perpetual boodloader mode
+bootloader, with the steps for :ref:`perpetual bootloader mode
 <troubleshooting-perpetual-bootloader>`.
 
 **Step 4: Get stm32loader.py**.  You can download it directly from
