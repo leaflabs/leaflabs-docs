@@ -10,11 +10,17 @@ another Maple, etc.).
 .. contents:: Contents
    :local:
 
+.. _usart-circuit:
+
 Hardware/Circuit Design
 -----------------------
 
-.. TODO [0.0.12] Add some more information here (like how you should
-.. connect TX_a to RX_b and RX_a to TX_b).
+To use a serial port to communicate with an external serial device,
+connect the TX pin to your device's RX pin, the RX to your device's TX
+pin, and your Maple board's ground to your device's ground.
+
+.. warning:: Don't connect these pins directly to an RS232 serial
+   port; they operate at +/- 12V and can damage your board.
 
 .. TODO [0.0.12/Maple Native] UART4 and UART5, Native links
 
@@ -52,3 +58,6 @@ Recommended Reading
 * ST `Reference Manual RM0008
   <http://www.st.com/stonline/products/literature/rm/13902.pdf>`_
   (PDF), Chapter 27.
+* `Serial and UART Tutorial
+  <http://www.freebsd.org/doc/en/articles/serial-uart/>`_ (written for
+  FreeBSD, but contains a large amount of general information).
