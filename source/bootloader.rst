@@ -750,4 +750,5 @@ obtaining help, with IRC (server irc.freenode.net, channel
                    bootloader that ST builds into their chips'
                    hardware, which communicates over :ref:`usart`.
                    This is different from the LeafLabs bootloader,
-                   which is a normal program that runs on your board.
+                   which is a normal program that runs on your board,
+                   and communicates over :ref:`usb`.
