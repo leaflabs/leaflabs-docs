@@ -269,6 +269,22 @@ tools correctly::
   $ make clean
   $ make
 
+.. note:: These instructions are for the Maple.  If you're compiling
+   for another board, you'll need to set a ``BOARD`` environment
+   variable appropriately.  For example, to compile for Maple Mini (in
+   the bash shell), ::
+
+       $ export BOARD=maple_mini
+       $ make
+
+   The ``BOARD`` for Maple RET6 edition is ``maple_RET6``.  You can
+   also use ::
+
+       $ BOARD=maple_mini make
+
+   This will only set the environment variable for the duration of
+   that single compile.
+
 If it all works out, you should end up seeing something like this::
 
   find build -iname *.o | xargs arm-none-eabi-size -t
