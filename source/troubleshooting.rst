@@ -17,8 +17,22 @@ This page documents common problems and their solutions.
 The LED is throbbing and my program is stopped!
 -----------------------------------------------
 
-The LED throbs when there has been a failed software :ref:`assertion
+The LED throbs when there has been a failed software :ref:`ASSERT()
 <lang-assert>` or some other error.
+
+In the case of a failed assertion, a first debugging step you can take
+is to find out the file and line where the failed assertion took place
+(for instructions on this, see the ``ASSERT()`` documentation linked
+to above).  This may give you some clue about the source of the error.
+
+:ref:`libmaple` often uses ``ASSERT()`` to halt immediately when it
+detects that something has gone wrong, so if you're not using
+assertions, then what's probably happening is that some bug is causing
+the failed ``ASSERT()`` lower down.
+
+If it's not a failed assertion, then you're likely looking at
+something like a `hard fault
+<http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.ddi0337e/ch05s12s01.html>`_.
 
 There are a few issues with the bootloader which mean you might not be
 able to upload your program when this happens.  You can still
