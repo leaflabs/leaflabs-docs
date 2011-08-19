@@ -9,6 +9,9 @@ If you just bought a Maple board, you probably want to head to the
 :ref:`quickstart <maple-quickstart>`.  If you're having problems,
 check out the :ref:`troubleshooting <troubleshooting>` page.
 
+If you can't find what you're looking for, try looking on our `wiki
+<http://wiki.leaflabs.com/index.php?title=Main_Page>`_.
+
 Have fun!
 
 .. _index-usage:
