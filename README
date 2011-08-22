@@ -1,7 +1,7 @@
 Introduction
 ------------
 
-This directory contains reStructuredText (reST) source files used to
+This repository contains reStructuredText (reST) source files used to
 generate the documentation for LeafLabs' libmaple and Maple IDE
 projects.  For more information on these projects, see their GitHub
 pages:
@@ -33,9 +33,8 @@ The docs are written in Sphinx's extensions to reStructuredText
 
     http://sphinx.pocoo.org/tutorial.html
 
-Much of the documentation is pulled out of the libmaple source code;
-we pull Doxygen's XML output into Sphinx documentation.  You can read
-more about Doxygen here:
+Much of the documentation is pulled out of the libmaple source code.
+libmaple documents itself using Doxygen:
 
     http://doxygen.org
 
@@ -47,8 +46,8 @@ into a form usable by Sphinx.  You can read more about Breathe here:
 Documentation Build Steps
 -------------------------
 
-You first need to produce Doxygen XML output, then you can generate
-the HTML documentation.
+First, you will need to install some dependencies (Doxygen, Sphinx,
+and Breathe).
 
 1. You need a recent-ish version of Doxygen in your PATH:
 
@@ -83,14 +82,17 @@ the HTML documentation.
 
    You need Sphinx version >= 1.0.6.
 
-4. Before the first time you run Sphinx (and any time the Doxygen
+You are now ready to build the documentation.  First, you'll produce
+Doxygen XML output, then you can generate the HTML documentation.
+
+1. Before the first time you run Sphinx (and any time the Doxygen
    comments in the libmaple source code are changed), you'll need to
    rebuild libmaple's Doxygen XML output.  That is, from within the
-   libmaple (i.e., NOT THIS REPOSITORY), run:
+   libmaple repository (i.e., NOT THIS REPOSITORY), run:
 
     $ make doxygen
 
-5. Finally, you can build the documentation (in this folder):
+2. Finally, you can build the documentation (in this folder):
 
     $ make html
 
