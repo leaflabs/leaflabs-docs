@@ -13,6 +13,8 @@ Cortex M3 microcontrollers.  Its high-level interfaces are
 libraries written for the `Arduino <http://arduino.cc>`_ and `Wiring
 <http://wiring.org.co/>`_ development boards.
 
+.. _libmaple-vs-wirish:
+
 libmaple is split into two pieces: a lower level layer written in pure
 C, which we call *libmaple proper* (in the `libmaple/
 <https://github.com/leaflabs/libmaple/tree/master/libmaple>`_
