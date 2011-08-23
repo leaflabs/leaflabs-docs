@@ -14,6 +14,8 @@ This page documents common problems and their solutions.
  Hardware problems
 ===================
 
+.. _troubleshooting-throb:
+
 The LED is throbbing and my program is stopped!
 -----------------------------------------------
 
