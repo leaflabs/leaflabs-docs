@@ -4,9 +4,27 @@
 ``scb.h``
 =========
 
-[Stub] support.
+System Control Block (SCB) support.
 
-Library Documentation
----------------------
+.. contents:: Contents
+   :local:
 
-.. doxygenfile:: scb.h
+Types
+-----
+
+.. doxygenstruct:: scb_reg_map
+
+Devices
+-------
+
+None.
+
+Register Map Base Pointers
+--------------------------
+
+.. doxygendefine:: SCB_BASE
+
+Register Bit Definitions
+------------------------
+
+None at this time.

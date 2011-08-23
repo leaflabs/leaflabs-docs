@@ -1,7 +1,6 @@
 .. highlight:: c
 
-.. FIXME [0.1.0] move these to the right places once Breathe is fast
-.. enough to use for libmaple proper
+.. FIXME [0.0.10] move these to the right places:
 
 .. _libmaple-systick_disable:
 
@@ -12,9 +11,56 @@
 ``systick.h``
 =============
 
-[Stub] support.
+System timer (SysTick) support.
 
-Library Documentation
----------------------
+.. contents:: Contents
+   :local:
 
-.. doxygenfile:: systick.h
+Types
+-----
+
+.. doxygenstruct:: systick_reg_map
+
+Devices
+-------
+
+None.
+
+Functions
+---------
+
+.. doxygenfunction:: systick_init
+.. doxygenfunction:: systick_enable
+.. doxygenfunction:: systick_disable
+.. doxygenfunction:: systick_uptime
+.. doxygenfunction:: systick_get_count
+.. doxygenfunction:: systick_check_underflow
+
+Register Map Base Pointers
+--------------------------
+
+.. doxygendefine:: SYSTICK_BASE
+
+Register Bit Definitions
+------------------------
+
+Control and status register
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. doxygendefine:: SYSTICK_CSR_COUNTFLAG
+.. doxygendefine:: SYSTICK_CSR_CLKSOURCE
+.. doxygendefine:: SYSTICK_CSR_CLKSOURCE_EXTERNAL
+.. doxygendefine:: SYSTICK_CSR_CLKSOURCE_CORE
+.. doxygendefine:: SYSTICK_CSR_TICKINT
+.. doxygendefine:: SYSTICK_CSR_TICKINT_PEND
+.. doxygendefine:: SYSTICK_CSR_TICKINT_NO_PEND
+.. doxygendefine:: SYSTICK_CSR_ENABLE
+.. doxygendefine:: SYSTICK_CSR_ENABLE_MULTISHOT
+.. doxygendefine:: SYSTICK_CSR_ENABLE_DISABLED
+
+Calibration value register
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. doxygendefine:: SYSTICK_CVR_NOREF
+.. doxygendefine:: SYSTICK_CVR_SKEW
+.. doxygendefine:: SYSTICK_CVR_TENMS

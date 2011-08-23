@@ -4,9 +4,9 @@
 ``delay.h``
 ===========
 
-[Stub] support.
+Simple busy-loop delaying.
 
-Library Documentation
----------------------
+Functions
+---------
 
-.. doxygenfile:: delay.h
+.. doxygenfunction:: delay_us
