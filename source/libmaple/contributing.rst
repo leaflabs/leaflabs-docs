@@ -103,14 +103,25 @@ the following information in your email:
 4. A sign-off line certifying your `developer certificate of origin
    <http://elinux.org/Developer_Certificate_Of_Origin>`_ [#fcert]_.
 
-That said, we'd really prefer a pull request.  If you'd like to learn
-more about Git, we recommend the following resources:
+.. _libmaple-git-resources:
+
+Git Resources
+-------------
+
+If you'd like to learn more about Git, we recommend the following
+resources:
 
 * `The Git Community Book <http://book.git-scm.com/index.html>`_: A
   collaboratively edited book on Git.
 
 * `Pro Git <http://progit.org/book/>`_: despite its title, this is a
   fairly beginner-friendly source of information.
+
+* `Git - Revision Control Perfected (Linux Journal)
+  <http://www.linuxjournal.com/content/git-revision-control-perfected>`_:
+  Despite a title that makes it sound like it was written by a
+  marketing department, this is a very good introductory article on
+  basic Git concepts, and a solid primer on Git's internals.
 
 * `Understanding Git Conceptually
   <http://www.eecs.harvard.edu/~cduan/technical/git/>`_: a good,
