@@ -123,6 +123,10 @@ differences, most of which are improvements:
 Shield and Device Compatibility
 -------------------------------
 
+**Can't find your shield?** Check out the `Compatible Shields
+<http://wiki.leaflabs.com/index.php?title=Compatible_Shields>`_ page
+on our wiki.
+
 .. list-table::
    :header-rows: 1
 
