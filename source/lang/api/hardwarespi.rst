@@ -57,6 +57,10 @@ The speed at which the SPI port communicates is configured using a
 .. note:: Due to hardware issues, you can't use the frequency
    ``SPI_140_625KHz`` with SPI port 1.
 
+The "mode" value determines the clock phase and polarity, like so:
+
+.. doxygenenum:: spi_mode
+
 You'll need to determine the correct values for ``frequency``,
 ``bitOrder``, and ``mode`` yourself, by consulting the datasheet for
 the device you're communicating with.  Continuing our example from
