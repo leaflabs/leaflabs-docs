@@ -33,9 +33,6 @@ Functions
 
 .. TODO [0.0.11?] figure out the dma_attach_interrupt weirdness
 
-.. warning:: There currently appear to be problems with
-   the dma_attach_interrupt() implementation.
-
 .. doxygenfunction:: dma_init
 .. doxygenfunction:: dma_setup_transfer
 .. doxygenfunction:: dma_set_num_transfers
