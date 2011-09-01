@@ -108,6 +108,9 @@ board from another source, or you could damage it.
    supplied by up to 18 V.  We recommend a barrel jack input voltage
    **no greater than 12 V**.
 
+   Rev5s manufactured after Spring 2011 may still have this error on
+   the silk, but it has been marked over.
+
    See :ref:`this erratum <maple-barrel-jack>` for more information.
 
 Using the Built-in Battery Charger
@@ -503,9 +506,10 @@ Rev 3
 
   For reference, the button part number is KMR211GLFS and the flux
   remover we used is "Precision Electronics Cleaner" from RadioShack,
-  which is "Safe on most plastics" and contains Dipropylene glycol
+  which is "Safe on most plastics" and contains: dipropylene glycol
   monomethyl ether, hydrotreated heavy naphtha, dipropylene glycol
-  methyl ether acetate, and carbon dioxide.
+  methyl ether acetate (say that three times fast!), and carbon
+  dioxide.
 
 * **Resistors on pins 0 and 1**: these header pins, which are RX/TX on
   USART2 (:ref:`Serial2 <lang-serial>`), have resistors in-line
