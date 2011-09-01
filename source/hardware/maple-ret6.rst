@@ -70,8 +70,7 @@ it, put a jumper across the CHRG header on the power selection header
 and across the USB, or EXT selectors, depending on whether you're
 charging the battery via USB cable or barrel jack connector.  The LED
 labeled CHRG will light up while the battery is being charged.  When
-the battery is finished charging, the LED labeled DONE will also light
-up.
+the battery is finished charging, the LED labeled DONE will light up.
 
 .. _maple-ret6-gpios:
 

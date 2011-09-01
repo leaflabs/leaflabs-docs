@@ -122,7 +122,7 @@ selection header and across the USB, or EXT selectors, depending on
 whether you're charging the battery via USB cable or barrel jack
 connector.  The LED labeled CHRG will light up while the battery is
 being charged.  When the battery is finished charging, the LED labeled
-DONE will also light up.
+DONE will light up.
 
 .. _maple-gpios:
 
