@@ -16,24 +16,25 @@ This page is a general resource for information specific to the Maple.
 Technical Specifications
 ------------------------
 
-* MCU: **STM32F103RBT6**, a 32-bit ARM Cortex M3 microprocessor
+* MCU: :ref:`STM32F103RBT6 <maple-stdocs>`, a 32-bit ARM Cortex M3
+  microprocessor
 * Clock Speed: **72 MHz**
 * **128 KB Flash** and **20 KB SRAM**
-* 43 Digital I/O Pins (:ref:`gpio`)
-* 15 **PWM** pins at 16 bit resolution (:ref:`pwm`)
-* 15 analog input pins, 12-bit **ADC** resolution (:ref:`adc`)
-* 2 **SPI** peripherals (:ref:`spi`)
-* 2 **I2C** peripherals (:ref:`i2c`)
+* 43 :ref:`digital I/O pins (GPIOs) <gpio>`
+* 15 :ref:`PWM <pwm>` pins at 16 bit resolution
+* 15 :ref:`analog input (ADC) <adc>` pins at 12-bit resolution
+* 2 :ref:`SPI <spi>` peripherals
+* 2 :ref:`I2C <i2c>` peripherals
 * 7 Channels of Direct Memory Access (**DMA**) (:ref:`libmaple-dma`)
-* 3 **USART** peripherals (:ref:`usart`)
-* One advanced and three general-purpose **timers** (:ref:`timers`)
-* Dedicated **USB** port for programming and communications (:ref:`usb`)
-* **JTAG** (:ref:`jtag`)
+* 3 :ref:`USART (serial port) <usart>` peripherals
+* One advanced and three general-purpose :ref:`timers <timers>`
+* Dedicated :ref:`USB <usb>` port for programming and communications
+* :ref:`JTAG <jtag>`
 * Nested Vectored Interrupt Controller (NVIC) (including
   :ref:`external interrupt <external-interrupts>` on GPIOs)
 * Supplies up to 500 mA at 3.3 V, with separate 250 mA digital and
   analog regulators for low-noise analog performance
-* :ref:`Four layer design <maple-hardware>`
+* :ref:`Open source, four layer design <maple-hardware>`
 * Support for low power, sleep, and standby modes (<500 μA)
 * Operating Voltage: 3.3 V
 * Input Voltage (recommended): 4 V — 12 V
@@ -154,6 +155,9 @@ Master Pin Map
 This table shows a summary of the available functionality on every
 GPIO pin, by peripheral type.  The "5 V?" column documents whether or
 not the pin is :ref:`5 volt tolerant <gpio-5v-tolerant>`.
+
+Note that this table is not exhaustive; on some pins, more peripherals
+are available than are listed here.
 
 .. csv-table::
    :header: Pin, :ref:`GPIO <gpio>`, :ref:`ADC <adc>`, :ref:`Timer <timers>`, :ref:`I2C <i2c>`, :ref:`UART <usart>`, :ref:`SPI <spi>`, 5 V?
@@ -552,6 +556,8 @@ Rev 1
 Recommended Reading
 -------------------
 
+.. _maple-stdocs:
+
 STMicro documentation for STM32F103RB microcontroller:
 
 * `Datasheet
@@ -559,7 +565,7 @@ STMicro documentation for STM32F103RB microcontroller:
   (PDF); covers STM32F103x8, STM32F103xB.
 * `Reference Manual RM0008
   <http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/REFERENCE_MANUAL/CD00171190.pdf>`_
-  (PDF); general, definitive resource for STM32F1 line.
+  (PDF); definitive resource for peripherals on the STM32F1 line.
 * `Programming Manual PM0056
   <http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/PROGRAMMING_MANUAL/CD00228163.pdf>`_
   (PDF); assembly language and register reference.
