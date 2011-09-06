@@ -60,8 +60,7 @@ whitespace at save time.
 
 - 4 space indents (set in ``.dir-locals.el``).
 
-- Unix newlines. Some exceptions are currently grandfathered in; these
-  will go away in time.
+- Unix newlines.
 
 - No tab characters (set in ``.dir-locals.el``).
 
@@ -319,19 +318,24 @@ Documentation
   by reading ST RM0008.
 
 - Doxygen comments generally only belong on types, functions,
-  etc. that are part of the public user-facing API.  This generally
-  means that if there's ReST documentation for it under libmaple's
-  ``docs/source/``, it needs Doxygen comments, and that ReST should
-  use Breathe to pull that Doxygen comment out. (For more information
-  on this, see libmaple file ``docs/README``).
+  etc. that are part of the public user-facing API.
 
-  There are some exceptions to this rule since Breathe isn't totally
-  mature yet and Sphinx's C++ domain is still in flux.  In these
-  cases, document the code "manually" in ReST.
+  This essentially means that if what you're writing is going to be
+  documented under http://leaflabs.com/docs/ (i.e., if there's `Sphinx
+  documentation <http://sphinx.pocoo.org/>`_ for it in the
+  `leaflabs-docs <https://github.com/leaflabs/leaflabs-docs>`_
+  repository), then you need to write Doxygen comments.  Further,
+  those Sphinx docs should use Breathe to pull the Doxygen out.  (For
+  more information on this, see the `leaflabs-docs README
+  <https://raw.github.com/leaflabs/leaflabs-docs/master/README>`_).
 
-  This should be avoided if at all possible, since it creates a
-  maintenance burden of documenting things in two places at once, and
-  makes it easier for documentation to go stale.
+  Because Breathe isn't totally mature yet, you won't always be able
+  to do this.  In these cases, document the code "manually" using the
+  Sphinx `C and C++ domains
+  <http://sphinx.pocoo.org/domains.html#the-c-domain>`_.  This should
+  be avoided if at all possible, since it creates a maintenance burden
+  of documenting things in two places at once, and makes it easier for
+  documentation to go stale.
 
   If you do have to document something manually, put a comment in the
   source file informing future maintainers about it, so they'll pay
@@ -345,7 +349,8 @@ Documentation
   This lets us keep the source files relatively free of "introductory"
   material, while allowing new readers a convenient starting point.
   These longer-form notes also have a habit of turning into official,
-  user-facing documentation.
+  user-facing documentation (or `wiki <http://wiki.leaflabs.com>`_
+  pages).
 
 - **For libmaple proper**, the convention is to document any
   user-facing function at the point where it is defined.  In
