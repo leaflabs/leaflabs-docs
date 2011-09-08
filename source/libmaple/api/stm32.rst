@@ -17,6 +17,7 @@ Defines
 .. doxygendefine:: STM32_NR_INTERRUPTS
 .. doxygendefine:: STM32_NR_GPIO_PORTS
 .. doxygendefine:: STM32_DELAY_US_MULT
+.. doxygendefine:: STM32_SRAM_END
 
 Deprecated Defines
 ------------------
