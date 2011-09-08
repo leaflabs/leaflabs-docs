@@ -14,9 +14,9 @@ the hands of Maple developers.
 .. contents:: Contents
    :local:
 
-.. TODO [dma.rst] Ref to dma.rst in sequel instead of libmaple-dma
-.. TODO [dac.rst] Ref to dac.rst in sequel instead of libmaple-dac
-.. TODO [nvic.rst] Ref to nvic.rst in sequel
+.. TODO [dma.rst] Ref to source/dma.rst in sequel instead of libmaple-dma
+.. TODO [dac.rst] Ref to source/dac.rst in sequel instead of libmaple-dac
+.. TODO [nvic.rst] Ref to source/nvic.rst in sequel
 
 Technical Specifications
 ------------------------
