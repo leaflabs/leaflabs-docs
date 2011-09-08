@@ -12,6 +12,15 @@ than board-specific, which belongs in :ref:`Wirish
 Defines
 -------
 
+.. doxygendefine:: STM32_PCLK1
+.. doxygendefine:: STM32_PCLK2
+.. doxygendefine:: STM32_NR_INTERRUPTS
+.. doxygendefine:: STM32_NR_GPIO_PORTS
+.. doxygendefine:: STM32_DELAY_US_MULT
+
+Deprecated Defines
+------------------
+
 .. doxygendefine:: PCLK1
 .. doxygendefine:: PCLK2
 .. doxygendefine:: NR_INTERRUPTS
