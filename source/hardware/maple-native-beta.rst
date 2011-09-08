@@ -102,15 +102,15 @@ it.
 .. _maple-native-b-fsmc:
 
 .. FIXME [0.0.12] Add note on Native "use SRAM" vs. "no SRAM" builds
-..
-.. TODO [0.0.12] Specify which pins are safe, and which aren't
 
 Many of the pins on the right header (pins ``D56`` through ``D100``,
-the header is labeled "FSMC" on the silkscreen) are connected to
-:ref:`FSMC <fsmc>` lines.  Using these pins as GPIOs may render the
-memory chip useless, which can cause your program to crash.  For this
+the header is labeled :ref:`"FSMC" <fsmc>` on the silkscreen) are
+connected to the SRAM chip.  Using these pins as GPIOs may render the
+memory chip useless, which can cause your program to crash. For this
 reason, we don't recommend that you use these pins unless you know
-what you are doing.
+what you are doing. The following pins on the right header are not
+connected to the SRAM and may be used with impunity: ``D57``, ``D60``,
+``D63``, ``D66``, ``D69``, ``D72``, ``D75``, ``D80``, ``D83``.
 
 .. _maple-native-b-jtag:
 
@@ -431,16 +431,19 @@ These are given in the following table.
 Low-Noise ADC Pins
 ^^^^^^^^^^^^^^^^^^
 
-.. TODO [0.0.12] finish this; ask Jess for help and confirmation
+There are fifteen pins at the bottom right of the board (``D41`` —
+``D55``) that generally offer lower-noise ADC performance than other
+pins on the board. If you're concerned about getting good ADC
+readings, we recommend using one of these pins to take your
+measurements.
 
 Maple Native has an electrically isolated analog power plane with its
-own regulator, and a geometrically isolated ground plane,
-
-Analog input pins D41 — D55 are laid out to correspond with these
-analog planes, and our measurements indicate that they generally ofer
-low noise ADC performance.  However, analog performance may vary
-depending upon the activity of other GPIOs.  In particular, using PWM
-on any of pins D46 — D51, D54, and D55 may cause digital noise.
+own regulator, and a geometrically isolated ground plane. Analog input
+pins D41 — D55 are laid out to correspond with these analog planes,
+and our measurements indicate that they generally ofer low noise ADC
+performance.  However, analog performance may vary depending upon the
+activity of other GPIOs.  In particular, using PWM on any of pins
+``D46`` — ``D51``, ``D54``, and ``D55`` may cause digital noise.
 Consult the :ref:`Maple Native beta hardware design files
 <maple-native-b-hardware>` for more details.
 
