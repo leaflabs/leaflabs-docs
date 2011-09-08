@@ -47,6 +47,8 @@ Functions
 
 .. doxygenfunction:: afio_init
 .. doxygenfunction:: afio_exti_select
+
+.. _gpio-h-afio-remap:
 .. doxygenfunction:: afio_remap
 .. doxygenfunction:: afio_cfg_debug_ports
 
