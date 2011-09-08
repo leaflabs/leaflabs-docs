@@ -220,37 +220,37 @@ The following table shows which pins connect to which :ref:`EXTI lines
    * - EXTI Line
      - Pins
    * - EXTI0
-     - 2, 15, 27
+     - D2, D15, D27
    * - EXTI1
-     - 3, 16, 28
+     - D3, D16, D28
    * - EXTI2
-     - 1, 17, 25
+     - D1, D17, D25
    * - EXTI3
-     - 0, 18, 42
+     - D0, D18, D42
    * - EXTI4
-     - 10, 19
+     - D10, D19
    * - EXTI5
-     - 4, 13, 20
+     - D4, D13, D20
    * - EXTI6
-     - 5, 12, 35
+     - D5, D12, D35
    * - EXTI7
-     - 9, 11, 36
+     - D9, D11, D36
    * - EXTI8
-     - 6, 14, 37
+     - D6, D14, D37
    * - EXTI9
-     - 7, 25, 28
+     - D7, D25, D28
    * - EXTI10
-     - 8, 26, 29
+     - D8, D26, D29
    * - EXTI11
-     - 30
+     - D30
    * - EXTI12
-     - 31
+     - D31
    * - EXTI13
-     - 21, 32, 39
+     - D21, D32, D39
    * - EXTI14
-     - 22, 33, 40
+     - D22, D33, D40
    * - EXTI15
-     - 23, 34, 41
+     - D23, D34, D41
 
 .. _maple-ret6-usart-map:
 
@@ -265,9 +265,9 @@ using the pins summarized in the following table:
    :header: Serial Port, TX, RX, CK, CTS, RTS
    :delim: |
 
-   ``Serial1`` | 7  | 8  | 6  | -  | -
-   ``Serial2`` | 1  | 0  | 10 | 2  | 3
-   ``Serial3`` | 29 | 30 | 31 | 32 | 33
+   ``Serial1`` | D7  | D8  | D6  |     |
+   ``Serial2`` | D1  | D0  | D10 | D2  | D3
+   ``Serial3`` | D29 | D30 | D31 | D32 | D33
 
 Unfortunately, :ref:`UART4 and UART5 aren't completely available
 <maple-ret6-uarts>`.

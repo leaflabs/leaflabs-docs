@@ -198,37 +198,37 @@ The following table shows which pins connect to which :ref:`EXTI lines
    * - EXTI Line
      - Pins
    * - EXTI0
-     - 3, 11
+     - D3, D11
    * - EXTI1
-     - 10, 33
+     - D10, D33
    * - EXTI2
-     - 2, 9
+     - D2, D9
    * - EXTI3
-     - 8, 19
+     - D8, D19
    * - EXTI4
-     - 7, 18
+     - D7, D18
    * - EXTI5
-     - 6, 17
+     - D6, D17
    * - EXTI6
-     - 5, 16
+     - D5, D16
    * - EXTI7
-     - 4, 15
+     - D4, D15
    * - EXTI8
-     - 27, 32
+     - D27, D32
    * - EXTI9
-     - 26
+     - D26
    * - EXTI10
-     - 1, 25
+     - D1, D25
    * - EXTI11
-     - 0, 24
+     - D0, D24
    * - EXTI12
-     - 23, 31
+     - D23, D31
    * - EXTI13
-     - 14, 22, 30
+     - D14, D22, D30
    * - EXTI14
-     - 13, 21, 29
+     - D13, D21, D29
    * - EXTI15
-     - 12, 20, 28
+     - D12, D20, D28
 
 .. _maple-mini-usart-map:
 
@@ -243,9 +243,9 @@ table:
    :header: Serial Port, TX, RX, CK, CTS, RTS
    :delim: |
 
-   ``Serial1`` | 26 | 25 | 27 | 24 | 23
-   ``Serial2`` | 9  |  8 |  7 | 11 | 10
-   ``Serial3`` | 1  |  0 | 31 | 30 | 29
+   ``Serial1`` | D26 | D25 | D27 | D24 | D23
+   ``Serial2`` | D9  |  D8 |  D7 | D11 | D10
+   ``Serial3`` | D1  |  D0 | D31 | D30 | D29
 
 .. _maple-mini-adc-bank:
 
