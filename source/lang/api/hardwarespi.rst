@@ -15,9 +15,6 @@ the :ref:`SPI reference <spi>`.
 Getting Started
 ---------------
 
-.. TODO [0.1.0] Add a note about calling disableDebugPorts() when
-.. using SPI3 on Maple Native
-
 In order to get started, you'll first need to define a ``HardwareSPI``
 variable, which you'll use to control the SPI port.  Do this by
 putting the line "``HardwareSPI spi(number);``" with your variables,
@@ -46,6 +43,10 @@ function (an example is given below).
 .. FIXME [Breathe] Output doesn't include the class; fix & submit pull req
 
 .. doxygenfunction:: HardwareSPI::begin
+
+.. note:: If you are using SPI port 3 (on a board that supports it;
+   not all do); you'll need to call :ref:`lang-disabledebugports`
+   before calling ``begin()``.
 
 The speed at which the SPI port communicates is configured using a
 ``SPIFrequency`` value:
