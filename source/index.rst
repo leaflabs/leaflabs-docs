@@ -74,5 +74,5 @@ Have fun!
    hardware/maple-mini.rst
    hardware/maple-native-beta.rst
 
-.. TODO write/include upon Native release
+.. TODO [Maple Native] write/include upon finished Native release
 ..    hardware/maple-native.rst
