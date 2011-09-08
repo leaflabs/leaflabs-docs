@@ -9,7 +9,7 @@ Used to disable an interrupt specified with
 Library Documentation
 ---------------------
 
-.. FIXME [Breathe] once we can get the correct detachInterupt(),
+.. FIXME [Breathe] once we can get the correct detachInterrupt(),
 .. replace with doxygenfunction.
 
 .. cpp:function:: void detachInterrupt(uint8 pin)
