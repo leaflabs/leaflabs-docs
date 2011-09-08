@@ -118,7 +118,7 @@ periodic or delayed events.  Its separate timer does not conflict with
 any other peripherals, but the associated 1 kHz interrupt can jitter
 the general purpose timer interrupts.  The SysTick peripheral can be
 disabled by calling :ref:`systick_disable()
-<libmaple-systick_disable>`, and re-enabled using
-:ref:`systick_resume() <libmaple-systick_resume>`.  However, be aware
+<libmaple-systick-disable>`, and re-enabled using
+:ref:`systick_enable() <libmaple-systick-enable>`.  However, be aware
 that calling ``systick_disable()`` will stop the values coming from
 :ref:`lang-micros` and :ref:`lang-millis` from increasing.

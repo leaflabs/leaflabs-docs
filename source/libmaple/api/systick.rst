@@ -1,11 +1,5 @@
 .. highlight:: c
 
-.. FIXME [0.0.10] move these to the right places:
-
-.. _libmaple-systick_disable:
-
-.. _libmaple-systick_resume:
-
 .. _libmaple-systick:
 
 ``systick.h``
@@ -30,7 +24,9 @@ Functions
 ---------
 
 .. doxygenfunction:: systick_init
+.. _libmaple-systick-enable:
 .. doxygenfunction:: systick_enable
+.. _libmaple-systick-disable:
 .. doxygenfunction:: systick_disable
 .. doxygenfunction:: systick_uptime
 .. doxygenfunction:: systick_get_count
