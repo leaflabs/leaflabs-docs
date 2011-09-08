@@ -306,9 +306,9 @@ The following table shows which pins connect to which :ref:`EXTI lines
 USART Pin Map
 ^^^^^^^^^^^^^
 
-The Maple has three serial ports (also known as USARTs): ``Serial1``,
-``Serial2``, and ``Serial3``. They communicate using the pins
-summarized in the following table:
+The Maple has three serial ports (also known as :ref:`USARTs
+<usart>`): ``Serial1``, ``Serial2``, and ``Serial3``. They communicate
+using the pins given in the following table.
 
 .. csv-table::
    :header: Serial Port, TX, RX, CK, CTS, RTS

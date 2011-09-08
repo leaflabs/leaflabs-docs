@@ -236,8 +236,8 @@ USART Pin Map
 ^^^^^^^^^^^^^
 
 The Maple Mini has three serial ports (also known as :ref:`USARTs
-<usart>`). They communicate using the pins summarized in the following
-table:
+<usart>`). They communicate using the pins given in the following
+table.
 
 .. csv-table::
    :header: Serial Port, TX, RX, CK, CTS, RTS

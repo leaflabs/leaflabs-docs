@@ -259,7 +259,7 @@ USART Pin Map
 
 The Maple RET6 Edition has three serial ports whose pins are broken
 out to headers (also known as :ref:`USARTs <usart>`). They communicate
-using the pins summarized in the following table:
+using the pins given in the following table.
 
 .. csv-table::
    :header: Serial Port, TX, RX, CK, CTS, RTS
