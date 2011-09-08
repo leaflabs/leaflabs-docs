@@ -22,8 +22,6 @@ pin, and your Maple board's ground to your device's ground.
 .. warning:: Don't connect these pins directly to an RS232 serial
    port; they operate at +/- 12V and can damage your board.
 
-.. TODO [0.0.12/Maple Native] UART4 and UART5, Native links
-
 Each LeafLabs board has at least 3 separate USART devices. In the most
 simple use case, the RX and TX pins are used to send data at a
 predetermined speed (or *baud rate*).  Their usage is documented in
@@ -36,6 +34,7 @@ available here:
 * :ref:`Maple <maple-usart-map>`
 * :ref:`Maple RET6 Edition <maple-ret6-usart-map>`
 * :ref:`Maple Mini <maple-mini-usart-map>`
+* :ref:`Maple Native Beta <maple-native-b-usart-map>`
 
 If you use a particular serial port, you cannot also use its
 communication pins for other purposes at the same time.

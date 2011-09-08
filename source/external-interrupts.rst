@@ -34,14 +34,13 @@ because every pin on the Maple connects to what is called an *EXTI
 line*, and only one pin per EXTI line can be used for external
 interrupts at a time [#fextisports]_.
 
-.. TODO [0.0.12] Maple Native links
-
 The EXTI Line Pin Map for your board lists which pins connect to which
 EXTI lines:
 
 * :ref:`Maple <maple-exti-map>`
 * :ref:`Maple RET6 Edition <maple-ret6-exti-map>`
 * :ref:`Maple Mini <maple-mini-exti-map>`
+* :ref:`Maple Native Beta <maple-native-b-exti-map>`
 
 Function Reference
 ------------------

@@ -57,13 +57,10 @@ additional functionality, cost, and package size.  More information on
 these isolated pins is available in each board's hardware
 documentation:
 
-.. FIXME [0.0.12, Maple Native]
-
 * :ref:`Maple <maple-adc-bank>`
 * :ref:`Maple RET6 Edition <maple-ret6-adc-bank>`
 * :ref:`Maple Mini <maple-mini-adc-bank>`
-
-.. :ref:`Maple Native <maple-native-adc-bank>`
+* :ref:`Maple Native Beta <maple-native-b-adc-bank>`
 
 That said, there are a number of more general things you can do to try
 to get good readings.  If your input voltage changes relatively
