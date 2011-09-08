@@ -17,7 +17,7 @@ us directly`_\ !
 Download
 --------
 
-.. FIXME [0.0.12] Update this for the release.
+.. FIXME [RELEASE] Update this for the release.
 
 This documentation was built from a development version of libmaple.
 See the formally released `LeafLabs documentation
