@@ -308,7 +308,7 @@ It needs to be updated RIGHT AWAY, you say?  Here's what you do:
 
 - Make your changes.
 
-- Rebuild the docs (see the last step in "Cutting the Release").
+- Rebuild the docs (see the last two steps in "Cutting the Release").
 
 - If your changes need to happen on the master branch, make them
   appropriately.
