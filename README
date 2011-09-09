@@ -145,6 +145,7 @@ file for it into source/hardware/!
   * timers.rst: timer pin maps
   * adc.rst: low-noise ADC banks
   * usart.rst: USART pin maps
+  * gpio.rst: master pin maps
 
 - The quickstart document may not explain how to use the new board.
   If the board is different enough, a new, special-purpose quickstart

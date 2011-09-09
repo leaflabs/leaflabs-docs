@@ -69,11 +69,10 @@ GPIO port and bit for each pin number.  The GPIO documentation for
 your board includes its pin map, which also lists the other
 peripherals by pin number:
 
-.. TODO [0.0.12] Native link
-
 * :ref:`Maple <maple-gpios>`
 * :ref:`Maple RET6 Edition <maple-ret6-gpios>`
 * :ref:`Maple Mini <maple-mini-gpios>`
+* :ref:`Maple Native (Beta) <maple-native-b>`
 
 .. * :ref:`Maple Native <maple-native-gpios>`
 
