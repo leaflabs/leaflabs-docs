@@ -649,15 +649,13 @@ could use another Maple, an Arduino, etc. -- anything that allows your
 computer to communicate with the Maple you want to reprogram over a
 serial interface.
 
-.. FIXME [0.0.12, Maple-specific values]
-
 If you do use an FTDI breakout board, first make sure your Maple is
 disconnected from an external power source, be it battery, USB, or
 barrel jack.  Then, connect the FTDI board's TX pin to ``Serial1``\ 's
-RX pin (pin 8 on Maple), FTDI RX to ``Serial1`` TX (pin 7 on Maple),
-FTDI ground to ground (labeled GND), and its 3.3V pin to Vin.  On
-Maple Mini, you will also need to tie BOOT1 (pin 2) to ground.  You
-can use the silkscreen for help locating these pins on other boards.
+RX pin (labeled "RX1" on the silkscreen), FTDI RX to ``Serial1`` TX
+(labeled "TX1"), FTDI ground to ground (labeled GND), and its 3.3V pin
+to Vin.  On Maple Mini, you will also need to tie BOOT1 (pin 2) to
+ground.
 
 More information on ``Serial1`` is available :ref:`here
 <lang-serial>`.
