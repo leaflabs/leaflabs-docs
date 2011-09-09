@@ -1,6 +1,6 @@
 .. highlight:: sh
 
-.. _maple-native:
+.. _maple-native-b:
 
 Maple Native β
 ==============
