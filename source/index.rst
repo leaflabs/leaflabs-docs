@@ -52,6 +52,7 @@ Have fun!
 
    adc
    external-interrupts
+   fsmc
    gpio
    i2c
    jtag
