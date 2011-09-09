@@ -450,8 +450,6 @@ Consult the :ref:`Maple Native beta hardware design files
 Board-Specific Values
 ---------------------
 
-.. TODO [0.0.12] get pwm, used pins
-
 This section lists the Maple Native's :ref:`board-specific values
 <lang-board-values>`.
 
@@ -459,14 +457,19 @@ This section lists the Maple Native's :ref:`board-specific values
 - ``BOARD_BUTTON_PIN``: 6
 - ``BOARD_LED_PIN``: 22
 - ``BOARD_NR_GPIO_PINS``: 106
-- ``BOARD_NR_PWM_PINS``:
-- ``boardPWMPins``:
+- ``BOARD_NR_PWM_PINS``: 18
+- ``boardPWMPins``: 13, 14, 15, 16, 23, 24, 25, 26, 38, 39, 46, 47,
+  48, 49, 50, 51, 54, 55
 - ``BOARD_NR_ADC_PINS``: 21
 - ``boardADCPins``: 7, 8, 9, 10, 11, 12, 41, 42, 43, 44, 45, 46, 47,
-   48, 49, 50, 51, 52, 53, 54, 55
-- ``BOARD_NR_USED_PINS``:
-- ``boardUsedPins``: ``BOARD_LED_PIN``, ``BOARD_BUTTON_PIN``
-- ``BOARD_NR_USARTS``:
+  48, 49, 50, 51, 52, 53, 54, 55
+- ``BOARD_NR_USED_PINS``: 43
+- ``boardUsedPins``: ``BOARD_LED_PIN``, ``BOARD_BUTTON_PIN``,
+    ``BOARD_JTMS_SWDIO_PIN``, ``BOARD_JTCK_SWCLK_PIN``,
+    ``BOARD_JTDI_PIN``, ``BOARD_JTDO_PIN``, ``BOARD_NJTRST_PIN``, and
+    all pins on FSMC header except those mentioned :ref:`above
+    <maple-native-b-fsmc>`.
+- ``BOARD_NR_USARTS``: 5
 - ``BOARD_USART1_TX_PIN``: 24
 - ``BOARD_USART1_RX_PIN``: 25
 - ``BOARD_USART2_TX_PIN``: 50
@@ -486,6 +489,10 @@ This section lists the Maple Native's :ref:`board-specific values
 - ``BOARD_SPI2_MOSI_PIN``: 5
 - ``BOARD_SPI2_MISO_PIN``: 4
 - ``BOARD_SPI2_SCK_PIN``: 3
+- ``BOARD_SPI3_NSS_PIN``: 103 (on :ref:`JTAG header <maple-native-b-jtag>`)
+- ``BOARD_SPI3_MOSI_PIN``: 37
+- ``BOARD_SPI3_MISO_PIN``: 105 (JTAG header)
+- ``BOARD_SPI3_SCK_PIN``: 104 (JTAG header)
 - ``BOARD_JTMS_SWDIO_PIN``: :ref:`103 <maple-native-b-jtag>`
 - ``BOARD_JTCK_SWCLK_PIN``: 102
 - ``BOARD_JTDI_PIN``: 103
