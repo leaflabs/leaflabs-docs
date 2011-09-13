@@ -99,8 +99,6 @@ it.
 
 .. _maple-native-b-fsmc:
 
-.. FIXME [0.0.12] Add note on Native "use SRAM" vs. "no SRAM" builds
-
 Many of the pins on the right header (pins ``D56`` through ``D100``,
 the header is labeled :ref:`"FSMC" <fsmc>` on the silkscreen) are
 connected to the SRAM chip.  Using these pins as GPIOs may render the
