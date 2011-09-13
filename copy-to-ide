@@ -1,0 +1,9 @@
+#!/bin/sh
+
+IDE_DIRECTORY=$1
+
+REFERENCE=$IDE_DIRECTORY/build/shared/reference
+
+echo copying built docs...
+cp -R build/html/* $REFERENCE
+echo done
