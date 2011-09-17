@@ -540,6 +540,9 @@ Beta.
 * **PWM on pin 39**: PWM on pin 39 appears to be nonfunctional.  We
   are looking into this issue.
 
+* **VREF is nonfunctional**: Due to a routing error, VREF is
+  permanently tied to 3.3V at VAA.
+
 Recommended Reading
 -------------------
 
