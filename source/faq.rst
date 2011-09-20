@@ -21,11 +21,25 @@ of its headers.
 
 .. _faq-dynamic-memory:
 
-Why don't ``malloc()``/``new`` work?
-------------------------------------
+How can I use ``malloc()``/``new``?
+-----------------------------------
 
-Due to our newlib configuration, dynamic memory allocation is
-currently not available.
+For ``malloc()``, just ``#include <stdlib.h>``, and everything should
+work fine.  Be careful, though!  This isn't like C programming on a
+PC.  You're on the bare metal, and probably shouldn't be using dynamic
+memory unless you know what you're doing.
+
+``new`` should work out of the box (the warning about knowing what
+you're doing applies here as well).  If you find that ``new`` (or
+``new[]``, ``delete``, etc.) is broken in some way, that's a bug;
+please let us know in the `forum`_.
+
+Some information on the heap: on boards with an external SRAM chip
+(like Maple Native), the heap is located on external SRAM by default.
+For other boards, the heap is located immediately after ``.bss``, and
+grows towards the stack.  (In all cases, statically allocated
+variables and the stack are located on internal SRAM, for performance
+reasons).
 
 .. _faq-flash-tables:
 
