@@ -3,16 +3,15 @@
 LeafLabs Documentation Index
 ============================
 
-Welcome!  This is the Maple documentation index.
+Welcome to the LeafLabs documentation!
 
-If you just bought a Maple board, you probably want to head to the
+If you're setting up a board for the first time, try the
 :ref:`quickstart <maple-quickstart>`.  If you're having problems,
-check out the :ref:`troubleshooting <troubleshooting>` page.
+check out the :ref:`troubleshooting <troubleshooting>` and :ref:`FAQ
+<faq>` pages.
 
-If you can't find what you're looking for, try looking on our `wiki
+If you can't find what you're looking for here, try the `LeafLabs wiki
 <http://wiki.leaflabs.com/index.php?title=Main_Page>`_.
-
-Have fun!
 
 .. _index-usage:
 
