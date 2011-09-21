@@ -11,11 +11,11 @@
 
 .. _faq-atoi:
 
-How can I use ``atoi()``, ``strol()``, etc?
--------------------------------------------
+How can I use ``atoi()``, ``strol()``, etc.?
+--------------------------------------------
 
 Just ``#include <stdlib.h>``.  See :ref:`arm-gcc-libc` for more
-information on the C standard library.
+information.
 
 .. _faq-dynamic-memory:
 
