@@ -79,6 +79,10 @@ The steps to submit a pull request are as follows:
 
        ``Signed-off-by: John Smith <jsmith@example.com>``
 
+   If you've configured Git to know your name and email, you can
+   instruct it to insert this line automatically by calling ``git
+   commit`` with the ``-s`` flag.
+
 4. `Submit a pull request <http://help.github.com/pull-requests/>`_ to
    the LeafLabs version of libmaple.
 
