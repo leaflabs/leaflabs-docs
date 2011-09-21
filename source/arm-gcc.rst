@@ -29,6 +29,8 @@ LeafLabs maintains `mirrors
 recent versions of the compiler, including versions for OS X, Win32,
 and 32-bit Linux.
 
+.. _arm-gcc-compiler-flags:
+
 Compiler Flags Used by libmaple
 -------------------------------
 
@@ -56,7 +58,7 @@ The following flags are among those passed to the assembler::
 
 .. highlight:: cpp
 
-.. _arm-gcc-avr-gcc:
+.. _arm-gcc-libc:
 
 Using the C Standard Library
 ----------------------------
@@ -70,6 +72,8 @@ include of any of its headers.
 Be advised, however, that a variety of syscalls may only be partially
 implemented, if at all.  See the :ref:`libmaple` file syscalls.c and
 the newlib documentation for more details.
+
+.. _arm-gcc-avr-gcc:
 
 Switching from AVR-GCC
 ----------------------
