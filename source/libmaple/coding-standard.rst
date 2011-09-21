@@ -24,7 +24,7 @@ in Emacs (but not on Windows, where it would need to be named
 ``_dir_locals.el``, and no way, man).  There's also some elisp
 scattered about this file which will provide you additional help.
 
-Vim customizations to do the same thing would be nice!
+Configuration for other editors (vim, etc.) would be nice!
 
 .. contents:: Contents
    :local:
