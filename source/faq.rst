@@ -11,13 +11,11 @@
 
 .. _faq-atoi:
 
-How can I use ``atoi()``?
--------------------------
+How can I use ``atoi()``, ``strol()``, etc?
+-------------------------------------------
 
-The :ref:`CodeSourcery GCC compiler <arm-gcc>` used to compile your
-programs is configured to link against the `newlib
-<http://sourceware.org/newlib/>`_ C library, and allows the use of any
-of its headers.
+Just ``#include <stdlib.h>``.  See :ref:`arm-gcc-libc` for more
+information on the C standard library.
 
 .. _faq-dynamic-memory:
 
