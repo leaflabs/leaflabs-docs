@@ -106,4 +106,6 @@ squeeze a little extra out of your board.  First, a `general summary
 try, with measurements of the speed you'll get.  Next, a thread
 featuring a `detailed discussion on pin capability
 <http://forums.leaflabs.com/topic.php?id=774>`_, with a focus on
-writes.
+writes.  And finally, `another thread
+<http://forums.leaflabs.com/topic.php?id=895>`_ on the subject which
+summarizes a variety of other threads on doing I/O quickly.
