@@ -67,6 +67,10 @@ link against `newlib <http://sourceware.org/newlib/>`_, a C standard
 library intended for use with embedded applications.  You are free to
 include of any of its headers.
 
+Be advised, however, that a variety of syscalls may only be partially
+implemented, if at all.  See the :ref:`libmaple` file syscalls.c and
+the newlib documentation for more details.
+
 Switching from AVR-GCC
 ----------------------
 
