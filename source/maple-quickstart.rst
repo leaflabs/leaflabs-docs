@@ -6,7 +6,11 @@
  Maple Quickstart Guide
 ========================
 
-.. TODO [0.1.0] Update the images; we've changed "to FLASH" -> "to Flash"
+.. TODO [0.0.13]: Update the images; e.g., "to FLASH" is now "to Flash"
+..
+.. Consider putting the images as a bundle somewhere under
+.. static.leaflabs.com that gets downloaded and unpacked if they are
+.. not present, but don't get crazy.
 
 You'll need a `Maple board <http://leaflabs.com/store/>`_, a `Mini-B
 USB cable <http://www.google.com/products?q=mini-b+usb+cable>`_, a
@@ -39,22 +43,22 @@ From the File menu, select Examples > Digital > Blink:
    :align: center
    :alt: Click "Blink"
 
-Next, select Tools > Board > "LeafLabs Maple ... to FLASH":
+Next, select Tools > Board > "LeafLabs Maple ... to Flash", where
+"..." depends on the board you're using.
 
 .. image:: /_static/img/blinky-to-flash.png
    :align: center
-   :alt: Upload to FLASH
+   :alt: Upload to Flash
 
 .. note::
 
-   You have the option between RAM and FLASH programming: FLASH saves
-   the program into permanent memory so the program will be run every
-   time the Maple is reset, while RAM simply injects the compiled
-   program into the processor's memory.
+   You have the choice between Flash and RAM programming. Flash saves
+   the program into permanent Flash memory.  RAM simply puts the
+   compiled program into the processor's built-in RAM.
 
-   Programming to RAM is faster to upload and a buggy program can be
-   wiped away with a simple reset, while FLASH memory is larger and is
-   the only option for permanently uploading a program.
+   Flash memory is larger, and is the only option for permanently
+   uploading a program. Programming to RAM is faster to upload, and a
+   buggy program can be wiped away with a simple reset.
 
 .. image:: /_static/img/verify_button.png
    :align: left
@@ -90,7 +94,7 @@ CHRG header):
 .. note::
 
    On OS X, a network interface dialog will pop up every time you plug in
-   the Maple.
+   the board.
 
    .. image:: /_static/img/osx-unconfigured-popup.png
       :align: center
@@ -105,16 +109,10 @@ CHRG header):
       :scale: 75%
       :alt: Click "Apply"
 
-The Maple should blink a short pattern on the blue status LED every
-time it is plugged in, reset, or reprogrammed, just to let you know
-it's there.  If it ever starts throbbing in a slow, smooth pattern,
-then you've got a problem: see the :ref:`troubleshooting
-<troubleshooting>` page for help.
-
-If all systems are go, select the Maple's serial port in the Tools >
-Serial Port menu.  The Maple will appear as something like
-:file:`COMx`, :file:`/dev/ttyACMx`, or :file:`/dev/tty.usbmodemxxxxx`,
-depending on your platform, like so:
+If all systems are go, select your board's serial port in the Tools >
+Serial Port menu.  It will appear as something like :file:`COMx`,
+:file:`/dev/ttyACMx`, or :file:`/dev/tty.usbmodemxxxxx`, depending on
+your platform, like so:
 
 Windows XP:
 
@@ -134,21 +132,25 @@ OS X:
    :align: center
    :alt: Board type and serial port for the OS X
 
-Then press the "Upload" button to upload your program to the
-Maple.
+Then press the "Upload" button to upload your program over USB.
 
 .. image:: /_static/img/upload-button.png
    :align: center
    :alt: Click the "Upload" button
 
 You should see some text and a progress bar flash by in the status
-window of the IDE, then some blinky patterns on the Maple, and then a
+window of the IDE, then some quick blinking patterns, followed a
 constant blinking on and off.  Congratulations!  You've successfully
-uploaded your first program to the Maple.
+uploaded your first program to your Maple.
+
+The built-in status LED should blink in a short pattern every time the
+board is plugged in, reset, or reprogrammed.  If it ever starts
+throbbing in a smooth, even pattern, then you've got a problem; see
+this :ref:`troubleshooting item <troubleshooting-throb>` for help.
 
 Next, go ahead and modify the file a little bit.  If you change the
-``delay(1000);`` lines to a different value, the speed of the blink
-will change.  The value is a time in milliseconds to pause before
+number in the ``delay(1000);`` lines, the speed of the blink will
+change.  The number is a time in milliseconds to pause before
 continuing with the program, so by default, the LED will be on for 1
 second, then off for 1 second, etc.  Any time you make any changes, go
 through the same Verify and Upload process to upload the new version
@@ -174,17 +176,16 @@ Use the serial port monitor!
 
 As a last step to make sure everything has been configured correctly,
 let's upload a "Hello, world!" program that will send text from the
-Maple back to the IDE over the USB connection. From the File menu,
-select Examples > Stubs > HelloWorld (similarly to when you selected
-the Blink program), and make sure the correct board and serial port
-targets are selected from the Tools menu.
+board back to the IDE over the USB connection.
+
+From the File menu, select Examples > Stubs > HelloWorld (similarly to
+how you selected the Blink program), and make sure the correct board
+and serial port targets are selected from the Tools menu.
 
 Open the Serial Monitor window (on the far right of the toolbar). Then
-go back to the code editing window and upload your program (Upload
-will recompile your code automatically if there's been any change
-since the last Verify). You should get text spit at you over the
-serial monitor right after the program is uploaded.  Shout back!  We
-can hear you!
+go back to the code editing window and upload your program. You should
+get text spit at you over the serial monitor right after the program
+is uploaded. Shout back! We can hear you!
 
 Go forth exuberantly!
 ---------------------
@@ -202,7 +203,8 @@ computer, you may want to look at the :ref:`Unix toolchain quickstart
 <unix-toolchain>` guide.  It's the tutorial for getting working with
 your old friends :command:`make`, :command:`gcc`, and :command:`jtag`.
 
-Let us know what you come up with! Tag us with #leaflabs on Twitter,
-post in the `forum`_, post on `our wiki's Projects page
+Let us know what you come up with! Reach us at `leaflabs
+<http://twitter.com/#!/leaflabs>`_ on Twitter, post in the `forum`_,
+post on `our wiki's Projects page
 <http://wiki.leaflabs.com/index.php?title=Projects>`_, track us down
 in the real world, whatever. We love projects!
