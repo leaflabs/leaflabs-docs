@@ -20,7 +20,9 @@ C, which we call *libmaple proper* (in the `libmaple/
 <https://github.com/leaflabs/libmaple/tree/master/libmaple>`_
 directory of the source repository), and the Wiring-style C++ API
 written on top of it, called *Wirish* (in `wirish/
-<https://github.com/leaflabs/libmaple/tree/master/wirish>`_).
+<https://github.com/leaflabs/libmaple/tree/master/wirish>`_; the
+wirish APIs are :ref:`summarized here <language>`, with an :ref:`index
+here <language-index>`).
 
 libmaple is bundled with the :ref:`Maple IDE <ide>`.  However, we
 develop it separately, and :ref:`release it standalone
