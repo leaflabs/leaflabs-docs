@@ -584,6 +584,8 @@ DFU pipe and bringing up the USB serial port.
 Flashing A Custom Bootloader
 ----------------------------
 
+.. FIXME [0.0.13] Update for Maple Native
+
 .. warning:: This section is for users who want to put a fresh or
    custom bootloader on their board.  It's possible to make a mistake
    in this process and e.g. render your Maple unable to communicate

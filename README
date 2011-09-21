@@ -146,6 +146,7 @@ file for it into source/hardware/!
   * adc.rst: low-noise ADC banks
   * usart.rst: USART pin maps
   * gpio.rst: master pin maps
+  * bootloader.rst: flashing a custom bootloader
 
 - The quickstart document may not explain how to use the new board.
   If the board is different enough, a new, special-purpose quickstart
