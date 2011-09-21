@@ -9,11 +9,8 @@
 The Maple can be programmed in the `Wiring
 <http://www.wiring.org.co/reference/>`_ language, which is the same
 language used to program the `Arduino <http://arduino.cc/>`_ boards.
-
-.. TODO [0.2.0?] Wiring tutorial
-
-C or C++ programmers may wish to skip to the
-:ref:`arduino_c_for_c_hackers` or the :ref:`unix-toolchain`.
+C or C++ programmers who are new to Wiring may wish to skip to the
+:ref:`arduino_c_for_c_hackers`.
 
 .. contents:: Contents
    :local:
@@ -22,10 +19,10 @@ C or C++ programmers may wish to skip to the
 
    - See the :ref:`libraries` for extra built-in libraries.
 
-   - If you want to use C or C++, see the :ref:`unix-toolchain`.
+   - If you prefer C or C++ over Wiring, see the :ref:`unix-toolchain`.
 
    - If you're looking for something from the C standard library (like
-     ``atoi()``, for instance, see :ref:`this FAQ <faq-atoi>`.
+     ``atoi()``, for instance), see :ref:`this FAQ <faq-atoi>`.
 
    - Low-level details are in :ref:`libmaple` and this page's
      :ref:`Recommended Reading <language-recommended-reading>`.
@@ -295,24 +292,20 @@ the following is valid Wiring, and ``f()`` returns ``5``::
 All of the files in a sketch share the same (global) namespace.  That
 is, the behavior is as if all of a sketch's files were part of the
 same translation unit, so they don't have to include one another in
-order to access each other's definitions.  The only other major
-difference between Wiring and C++ is that Wiring doesn't support
-dynamically allocated memory -- that is, ``new`` and ``delete`` won't
-work.  As of |today|, Maple only has 20 KB RAM, anyway, so it's
-doubtful that static allocation is not what you want.
+order to access each other's definitions.
 
 The Wiring language also does not require you to define your own
 ``main`` method (in fact, we currently forbid you from doing so).
 Instead, you are required to define two functions, ``setup`` and
-``loop``, with type signatures ::
+``loop``, whose prototypes are ::
 
   void setup(void);
   void loop(void);
 
 Once a sketch is uploaded to a Maple and begins to run, ``setup()`` is
-called once, and then ``loop()`` is called repeatedly.  The IDE
-compilation process proceeds via a source-to-source translation from
-the files in a sketch to C++.
+called once, and then ``loop()`` is called repeatedly, forever.  The
+IDE compilation process proceeds via a source-to-source translation
+from the files in a sketch to C++.
 
 This translation process first concatenates the sketch files, then
 parses the result to produce a list of all functions defined in the
@@ -328,7 +321,7 @@ depends on a particular ordering.
 The concatenated sketch files are then appended onto a file which
 includes `WProgram.h
 <https://github.com/leaflabs/libmaple/blob/master/wirish/WProgram.h>`_
-(which includes the wirish and libmaple libraries, and declares
+(which includes the Wirish and libmaple proper libraries, and declares
 ``setup()`` and ``loop()``), and then provides declarations for all
 the function definitions found in the previous step.  At this point,
 we have a file that is a valid C++ translation unit, but lacks
