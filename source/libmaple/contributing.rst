@@ -123,6 +123,10 @@ resources:
   marketing department, this is a very good introductory article on
   basic Git concepts, and a solid primer on Git's internals.
 
+- `GitPhraseBook (openembedded.org)
+  <http://www.openembedded.org/index.php/GitPhraseBook>`_: A
+  cookbook-style list of common Git problems and their solutions.
+
 * `Understanding Git Conceptually
   <http://www.eecs.harvard.edu/~cduan/technical/git/>`_: a good,
   introductory tutorial on Git's fundamental concepts.
