@@ -31,7 +31,7 @@ The following example turns the LED on or off when the button is pressed::
 
     void loop() {
       int val = digitalRead(BOARD_BUTTON_PIN);   // reads the input pin
-      togglePin(BOARD_LED_PIN, val);
+      togglePin(BOARD_LED_PIN);
     }
 
 Arduino Compatibility
