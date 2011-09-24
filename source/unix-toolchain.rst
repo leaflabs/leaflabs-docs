@@ -45,29 +45,23 @@ Setup
 Linux
 ^^^^^
 
-These instructions are oriented towards Linux users using a
-contemporary, 32-bit Debian-based distribution.  If you use another
-Linux operating system and you have any tips to offer, please us at
-info@leaflabs.com or post in the `forum`_. Thanks!
+These instructions are oriented towards Linux users using
+contemporary, 32-bit Debian- or Red Hat-based distributions.  If you
+use another Linux operating system and you have any tips to offer,
+please us at info@leaflabs.com or post in the `forum`_. Thanks!
 
 **1. Collect and Install Tools**
 
-First, you'll need some tools::
+First, you'll need some tools.
+
+On Debian-based distributions (including Ubuntu, etc.), do this with::
 
   $ sudo aptitude install build-essential git-core wget screen dfu-util \
                           openocd python python-serial
 
-A user report says that on Fedora, the following will install Git,
-wget, screen, dfu-util, Python, and PySerial, although it won't
-install GCC, etc.::
+On Red Hat-based distributions (Fedora, etc.), do this with::
 
-  $ yum install screen wget git pyserial dfu-util openocd
-
-You'll want to install a bunch of developer "basics" like ``make``,
-``tar``, etc.  A good catch-all for these tools is the
-``build-essential`` meta-package on most Debian platforms: installing
-this fake package will pull in dozens of useful tools without bogging
-your system down too much.
+  $ yum install screen wget git python pyserial dfu-util openocd make
 
 `Git <http://git-scm.com/>`_ is a distributed code versioning system
 we use to track changes in our source code; ``git-core`` is the
