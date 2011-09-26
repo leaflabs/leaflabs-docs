@@ -119,18 +119,25 @@ script so :file:`~/libmaple/arm/bin` stays in your ``PATH``.
 
 **3. Install udev Rules**
 
-From the libmaple directory, ::
+From the libmaple directory, copy our udev rules to ``/etc/udev/rules.d``::
 
-  $ groups # make sure it includes plugdev; if not, add yourself to it
   $ sudo cp support/scripts/45-maple.rules /etc/udev/rules.d/45-maple.rules
+
+On Debian, run ``$ groups``. Make sure the output includes "plugdev".
+If not, add yourself to that group. Then run ::
+
   $ sudo restart udev
+
+On Red Hat, run ::
+
+ $ udevadm control --reload-rules
 
 As a security precaution on Linux, unknown USB devices can only be
 accessed by root. This udev script identifies the Maple based on its
-vendor and product IDs, mounts it to :file:`/dev/maple`, and grants
-read/write permissions to the ``plugdev`` group. After restarting
-``udev`` you'll need to fully unplug or power cycle any Maples
-connected to the computer.
+vendor and product IDs, mounts it to :file:`/dev/maple`, and (on
+Debian-based distros) grants read/write permissions to the ``plugdev``
+group. After restarting ``udev`` you'll need to fully unplug or power
+cycle any Maples connected to the computer.
 
 **So far, so good?**
 
