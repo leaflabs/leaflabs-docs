@@ -119,9 +119,10 @@ Linux
 
    The IDE is written in Java and requires a compatible runtime (JRE).
 
-   If you don't have one, they're usually pretty easy to install.  Sun
-   Java 1.6 and OpenJDK 1.6 are known to work, and runtimes mostly
-   compatible with Sun Java 1.5+ should probably get the job done.
+   If you don't have one, they're usually pretty easy to install.
+   Oracle Java 1.6 and OpenJDK 1.6 are known to work, and runtimes
+   mostly compatible with Oracle Java 1.5+ should probably get the job
+   done.
 
    To install Java, try using your distribution's software packaging
    tool and search for "JRE" or "java". On Debian-based systems
