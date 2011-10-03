@@ -58,9 +58,20 @@ standard Maple <maple-powering>`.
 
 .. warning:: The RET6 Edition silkscreen falsely indicates that the
    barrel jack accepts up to 18 V.  We recommend a barrel jack input
-   voltage **no greater than 12 V**.
+   voltage **no greater than 12V**, and potentially even lower
+   depending upon the current draw requirements of the
+   application. The same goes for powering off LiPo batteries.
 
-   See :ref:`this erratum <maple-barrel-jack>` for more information.
+   Please see :ref:`Power Regulation on the Maple
+   <maple-power-regulation>` for more information.
+
+.. _maple-ret6power-regulation:
+
+Power Regulation on the Maple RET6
+----------------------------------
+
+Power regulation on the Maple RET6 works in the :ref:`same way as the
+standard Maple <maple-power-regulation>`.
 
 Using the Built-in Battery Charger
 ----------------------------------
@@ -373,11 +384,17 @@ features only available on the STM32F103RET6.
 
 .. _maple-ret6-barrel-jack:
 
-* **Barrel jack power supply voltage mistake**: The silkscreen next to
-  the barrel jack connector incorrectly indicates that up to an 18 V
-  input voltage is allowed.  **We do not recommend exceeding 12 V**.
-
-  See this :ref:`Maple erratum <maple-barrel-jack>` for more
+* **Barrel jack power supply voltage mistake**: The acceptable voltage
+  range given next to the barrel jack on the Maple RET6 is
+  **incorrect**.  The given range is 7V — 18V.  In fact, **18V is too
+  high** and should not be supplied to your board. The original
+  voltage regulators used on the Maple were rated up to 18V.  However,
+  the voltage regulators on current Maple Revs are rated up to only
+  16V, and due to the current draw requirements of the board, operate
+  properly only up to 12V.  The recommended maximum voltage you should
+  apply is **12V**, and potentially even lower depending upon the
+  current draw requirements of the application. Please see :ref:`Power
+  Regulation on the Maple <maple-power-regulation>` for more
   information.
 
 * **Power supply marketing mistake**: We originally sold the Maple
