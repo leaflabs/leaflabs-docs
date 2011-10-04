@@ -75,8 +75,7 @@ Power Regulation on the Maple Native
 
 Power regulation on the Maple Native is provided by two low dropout
 linear voltage regulators. (The part is the MCP1703 from Microchip, in
-the SOT-23A package. You can download the datasheet `here
-<http://www.xilinx.com/support/documentation/dt_ise.htm>`_ ). One of
+the SOT-23A package. You can download the datasheet `here <http://ww1.microchip.com/downloads/en/DeviceDoc/22049a.pdf>`_ ). One of
 the regulators supplies power to the digital voltage plane; the other
 supplies power to the analog voltage plane.
 
