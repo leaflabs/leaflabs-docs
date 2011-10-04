@@ -109,14 +109,14 @@ silkscreen right next to the connector.
 
 .. warning:: Silkscreens on Maples up through Rev 5s manufactured in
    Spring 2011 falsely indicated that the barrel jack could be
-   supplied by up to 18 V.  We recommend a barrel jack input voltage
-   **no greater than 12 V**, and potentially even lower depending upon
-   the current draw requirements of the application. The same goes for
-   powering off LiPo batteries. Please see :ref:`Power Regulation on
-   the Maple <maple-power-regulation>` for more information.
+   supplied by up to 18V. (Rev5s manufactured after Spring 2011 may
+   still have this error on the silk, but it has been marked over.) We
+   recommend a barrel jack input voltage **no greater than 12V**, and
+   potentially even lower depending upon the current draw requirements
+   of the application. The same goes for powering off LiPo batteries.
 
-   Rev5s manufactured after Spring 2011 may still have this error on
-   the silk, but it has been marked over.
+   Please see :ref:`Power Regulation on the Maple
+   <maple-power-regulation>` for more information.
 
 .. _maple-power-regulation:
 
