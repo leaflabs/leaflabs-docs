@@ -46,20 +46,57 @@ Technical Specifications
 Powering the Maple Native
 -------------------------
 
-The Maple Native may be powered from the barrel jack connector, USB,
-or a LiPo battery.  The power source is determined by the header
-labeled "PWRSEL" on the silkscreen.  Boards are shipped with a jumper
-on the USB selector.  In order to power it off of an alternative
-source, unplug the Maple Native, then move the jumper to the desired
-selector before reconnecting power.
+The power source is determined by the header labeled "PWRSEL" on the
+silkscreen. The Maple Native may be powered from USB (marked "USB" on
+the PWRSEL header), a LiPo battery (marked "BAT"), or one of the two
+"Vin" pins (marked "EXT").  Boards are shipped with a jumper on the
+USB selector.  In order to power it off of an alternative source,
+unplug the Maple Native, then move the jumper to the desired selector
+before reconnecting power.
 
-You can also power the Maple Native via the pin labeled "Vin" on the
-vertical header to the right of the PWRSEL header.  This pin feeds
-into both the digital and analog voltage regulators.  However, don't
-do this while simultaneously powering the board from another source,
-or you could damage it.
+The "Vin" line is available on the pin labeled "Vin" on the vertical
+header to the right of the PWRSEL header, as well as on the
+unpopulated two-pin connector on the upper left corner of the
+board. On this latter connector, polarity was accidentally left
+unmarked: the leftmost, round pin should be power, while the square
+pin should be ground.
 
-We recommend an input voltage no greater than 12 V.
+When powering the Maple Native board from a battery or the Vin lines,
+care must be taken not to over-voltage the board. In general, an upper
+limit of 12V input is acceptable, but this may vary depending upon the
+current draw requirements of the application. Please see :ref:`Power
+Regulation on the Maple Native <maple-native-b-power-regulation>` for
+more information.
+
+.. _maple-native-b-power-regulation:
+
+Power Regulation on the Maple Native
+------------------------------------
+
+Power regulation on the Maple Native is provided by two low dropout
+linear voltage regulators. (The part is the MCP1703 from Microchip, in
+the SOT-23A package. You can download the datasheet `here
+<http://www.xilinx.com/support/documentation/dt_ise.htm>`_ ). One of
+the regulators supplies power to the digital voltage plane; the other
+supplies power to the analog voltage plane.
+
+These voltage regulators nominally take an input of up to 16V. In
+addition, while the maximum continuous output current for the board is
+250mA, if you are powering the board off higher voltages the amount
+off current it can supply goes down, due to the regulators needing to
+dissipate the extra power. So if you are powering the board off 12V,
+the max current is about 40mA at room temperature. In general (again,
+at room temperature) the max power dissipation (PD) for the chip is
+about .37W, and output current = PD/(Vin-Vout). For exact max current
+calculations, please refer to the datasheet linked above.
+
+If you are planning to draw a lot of current from the Maple Native
+board, it is necessary to provide input power as close to 3.3V as
+possible. Powering the microcontroller circuitry and LEDs on the board
+alone takes approximately 30mA, so if you are powering the board with
+12V that leaves only 10mA (at best) available for powering any user
+circuitry. Attempting to draw more than 10mA runs the risk of shorting
+out the power regulators and bricking your board.
 
 Using the Built-in Battery Charger
 ----------------------------------

@@ -111,25 +111,23 @@ silkscreen right next to the connector.
    Spring 2011 falsely indicated that the barrel jack could be
    supplied by up to 18 V.  We recommend a barrel jack input voltage
    **no greater than 12 V**, and potentially even lower depending upon
-   the current draw requirements of the application. Please see
-   :ref:`Power Regulation on the Maple <power-regulation>` for more
-   information.
+   the current draw requirements of the application. The same goes for
+   powering off LiPo batteries. Please see :ref:`Power Regulation on
+   the Maple <maple-power-regulation>` for more information.
 
    Rev5s manufactured after Spring 2011 may still have this error on
    the silk, but it has been marked over.
 
-   See :ref:`this erratum <maple-barrel-jack>` for more information.
-
-.. _power-regulation:
+.. _maple-power-regulation:
 
 Power Regulation on the Maple
 -----------------------------
 
 Power regulation on the Maple is provided by two low dropout linear
 voltage regulators. (The part is the MCP1703 from Microchip, in the
-SOT-23A package. You can download the datasheet here
-http://www.xilinx.com/support/documentation/dt_ise.htm ). One of the
-regulators supplies power to the digital voltage plane; the other
+SOT-23A package. You can download the datasheet `here
+<http://www.xilinx.com/support/documentation/dt_ise.htm>`_ ). One of
+the regulators supplies power to the digital voltage plane; the other
 supplies power to the analog voltage plane.
 
 These voltage regulators nominally take an input of up to 16V. In
@@ -460,15 +458,16 @@ General
 
 * **Barrel jack power supply voltage mistake**: The acceptable voltage
   range given next to the barrel jack on the Maple through Rev 5s
-  manufactured in Spring 2011 is **incorrect**.  The given range is 7
-  V — 18 V.  In fact, **18 V is too high** and should not be supplied
-  to your board.  The recommended maximum voltage you should apply is
-  **12 V**.
-
-  The original voltage regulators used on the Maple were rated up to
-  18 V.  However, the voltage regulators on current Maple Revs are
-  rated up to 16 V.  Our tests indicate that they operate correctly
-  through 12 V.  We do not recommend higher input voltages.
+  manufactured in Spring 2011 is **incorrect**.  The given range is 7V
+  — 18V.  In fact, **18V is too high** and should not be supplied to
+  your board. The original voltage regulators used on the Maple were
+  rated up to 18V.  However, the voltage regulators on current Maple
+  Revs are rated up to only 16V, and due to the current draw
+  requirements of the board, operate properly only up to 12V.  The
+  recommended maximum voltage you should apply is **12V**, and
+  potentially even lower depending upon the current draw requirements
+  of the application. Please see :ref:`Power Regulation on the Maple
+  <maple-power-regulation>` for more information.
 
 .. _maple-nrst-pb4:
 

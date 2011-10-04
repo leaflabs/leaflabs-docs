@@ -50,9 +50,40 @@ directly.
 
 .. warning:: The silkscreen on the Maple Mini suggests it will accept
    an input voltage up to 16 V.  We recommend applying **no greater
-   than 12 V**.
+   than 12 V**, and potentially even lower depending upon the current
+   draw requirements of the application. Please see :ref:`Power
+   Regulation on the Maple Mini <maple-mini-power-regulation>` for
+   more information.
 
-   See :ref:`this erratum <maple-mini-vin>` for more information.
+.. _maple-mini-power-regulation:
+
+Power Regulation on the Maple Mini
+----------------------------------
+
+Power regulation on the Maple is provided by two low dropout linear
+voltage regulators. (The part is the MCP1703 from Microchip, in the
+SOT-23A package. You can download the datasheet `here
+<http://www.xilinx.com/support/documentation/dt_ise.htm>`_ ). One of
+the regulators supplies power to the digital voltage plane; the other
+supplies power to the analog voltage plane.
+
+These voltage regulators nominally take an input of up to 16V. In
+addition, while the maximum continuous output current for the board is
+250mA, if you are powering the board off higher voltages the amount
+off current it can supply goes down, due to the regulators needing to
+dissipate the extra power. So if you are powering the board off 12V,
+the max current is about 40mA at room temperature. In general (again,
+at room temperature) the max power dissipation (PD) for the chip is
+about .37W, and output current = PD/(Vin-Vout). For exact max current
+calculations, please refer to the datasheet linked above.
+
+If you are planning to draw a lot of current from the Maple board, it
+is necessary to provide input power as close to 3.3V as
+possible. Powering the microcontroller circuitry and LEDs on the board
+alone takes approximately 30mA, so if you are powering the board with
+12V that leaves only 10mA (at best) available for powering any user
+circuitry. Attempting to draw more than 10mA runs the risk of shorting
+out the power regulators and bricking your board.
 
 .. _maple-mini-gpios:
 
@@ -339,14 +370,12 @@ This section lists known issues and warnings for the Maple Mini Rev 2
 .. _maple-mini-vin:
 
 * **Silkscreen Vin voltage mistake**: The silkscreen on the Maple Mini
-  falsely indicates that Vin may be supplied with up to 16 V.  We
-  recommend an input voltage **no greater than 12 V**.
+  falsely indicates that Vin may be supplied with up to 16V.  We
+  recommend an input voltage **no greater than 12V**, and potentially
+  even lower depending upon the current draw requirements of the
+  application. Please see :ref:`Power Regulation on the Maple Mini
+  <maple-mini-power-regulation>` for more information.
 
-  The voltage regulator on the Mini is rated up to 16 V.  However, our
-  tests indicate that as its input voltage approaches 16 V, its output
-  begins to rise to levels higher than those recommended by ST for
-  supplying the STM32F103CB.  The limit of 12 V keeps the voltage
-  supplied to the processor at safe levels.
 
 Recommended Reading
 -------------------
