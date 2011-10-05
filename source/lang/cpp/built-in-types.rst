@@ -86,8 +86,8 @@ Floating-Point Types
 
    64-bit, IEEE-754 double-precision floating-point type.
 
-Other Types
------------
+Miscellaneous Types
+-------------------
 
 .. cpp:type:: voidFuncPtr
 
@@ -98,3 +98,11 @@ Other Types
 .. cpp:type:: bool
 
    Boolean type.
+
+Other
+-----
+
+.. cpp:type:: void
+
+   Not really a type. To be honest with you, this only exists here to
+   silence warnings from our documentation build system.
