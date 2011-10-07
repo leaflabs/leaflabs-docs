@@ -34,6 +34,7 @@ Functions
 .. doxygenfunction:: usart_disable
 .. doxygenfunction:: usart_disable_all
 .. doxygenfunction:: usart_foreach
+.. doxygenfunction:: usart_rx
 .. doxygenfunction:: usart_tx
 .. doxygenfunction:: usart_putudec
 .. doxygenfunction:: usart_putc
