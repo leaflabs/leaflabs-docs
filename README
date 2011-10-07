@@ -310,11 +310,34 @@ It needs to be updated RIGHT AWAY, you say?  Here's what you do:
 
 - Make your changes.
 
-- Rebuild the docs (see the last two steps in "Cutting the Release").
+- Rebuild the docs (see the last two steps in "Cutting the Release")
+  and look at the changed pages.
 
-- If your changes need to happen on the master branch, make them
+- If your changes also need to happen on the master branch, make them
   appropriately.
+
+  Advice: git cherry-pick is your friend.  Let's say you're on branch
+  "vX.Y.Z-maintenance", and you want to get commit C onto master:
+
+             o---C  vX.Y.Z-maintenance
+            /
+      -o---o---o---o  master
+
+  The recipe is:
+
+      $ git checkout master
+      $ git cherry-pick C
+
+  Which (if there are no conflicts) will result in:
+
+             o---C  vX.Y.Z-maintenance
+            /
+      -o---o---o---o---C'  master
+
+  Where C' performs the same changes as C.
 
 - Push your fixes to GitHub.
 
-- Distribute the updated docs.
+- Distribute the updated docs.  These are world-visible here:
+
+      http://static.leaflabs.com/pub/leaflabs/maple-docs/
