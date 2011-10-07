@@ -599,9 +599,6 @@ This means that you can **always** follow these instructions to put a
 new bootloader program on your board; it **doesn't matter** if there's
 already a copy of the Maple bootloader on it or not.
 
-This section applies to Maple Rev 3 (or higher), Maple Mini, and Maple
-RET6 Edition.
-
 If you have a Maple Rev 1; you don't have a BUT button, and won't be
 able to follow these directions.  A workaround is detailed in `this
 forum posting <http://forums.leaflabs.com/topic.php?id=32#post-126>`_.
@@ -627,6 +624,7 @@ In order to follow these instructions, you will need:
 - `Maple <http://static.leaflabs.com/pub/leaflabs/maple-bootloader/maple_boot.bin>`_
 - `Maple Mini <http://static.leaflabs.com/pub/leaflabs/maple-bootloader/maple_mini_boot.bin>`_
 - `Maple RET6 Edition <http://static.leaflabs.com/pub/leaflabs/maple-bootloader/maple_RET6_boot.bin>`_
+- `Maple Native <http://static.leaflabs.com/pub/leaflabs/maple-bootloader/maple_native_boot.bin>`_
 
 To flash a customized version of a LeafLabs bootloader, you can run
 (on a :ref:`suitably configured system <unix-toolchain>`) the
