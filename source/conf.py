@@ -14,7 +14,6 @@
 
 import sys, os
 
-
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -37,7 +36,7 @@ extensions = ['sphinx.ext.autodoc', 'sphinx.ext.doctest',
               'sphinx.ext.coverage', 'breathe']
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates', '_static']
+templates_path = ['_templates']
 
 # The suffix of source filenames.
 source_suffix = '.rst'
@@ -132,7 +131,7 @@ html_theme_options = {
         'relbarbgcolor' : 'green',
         'headlinkcolor' : '#000000',
         'linkcolor' : 'green',
-        'visitedlinkcolor' : 'green',
+        #'visitedlinkcolor' : 'green',
 
         ## Font
         'headfont' : 'Georgia',
@@ -144,7 +143,7 @@ html_theme_options = {
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = project + ' v' + release + ' Documentation'
+html_title = project + ' v' + release
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 html_short_title = 'Index'
@@ -172,12 +171,9 @@ html_last_updated_fmt = '%b %d, %Y'
 #html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-# re-add commented line when custom template for api finished
 html_sidebars = {
    '**': ['globaltoc.html', 'searchbox.html'],
-   #'lang/api**':['searchbox.html', 'apilist.html'],
 }
-
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
