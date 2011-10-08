@@ -16,11 +16,7 @@ programmers familiar with the Arduino language.
      with different kinds of hardware.
 
    - If you're looking for something from the C standard library (like
-     ``atoi()``, for instance): the :ref:`CodeSourcery GCC compiler
-     <arm-gcc>` used to compile your programs is configured to link
-     against `newlib <http://sourceware.org/newlib/>`_, and allows the
-     use of any of its header files.  However, dynamic memory allocation
-     (``malloc()``, etc.) is not available.
+     ``atoi()``, for instance), see :ref:`this FAQ <faq-atoi>`.
 
    - If you're looking for pointers to low-level details, see the
      :ref:`Language Recommended Reading
