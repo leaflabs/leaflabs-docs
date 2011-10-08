@@ -45,7 +45,7 @@ source_suffix = '.rst'
 #source_encoding = 'utf-8-sig'
 
 # The master toctree document.
-master_doc = 'index'
+master_doc = 'contents'
 
 # General information about the project.
 project = u'Maple'
@@ -135,7 +135,7 @@ html_theme_options = {
 
         ## Font
         'headfont' : 'Georgia',
-        'bodyfont' : 'Lucidia'
+        'bodyfont' : 'Lucida'
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
@@ -150,7 +150,7 @@ html_short_title = 'Index'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = '_static/img/round_logo_60x60.png'
+# html_logo = '_static/img/round_logo_60x60.png'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -177,7 +177,9 @@ html_sidebars = {
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
-#html_additional_pages = {}
+html_additional_pages = {
+    'index': 'indexcontent.html'
+}
 
 # If false, no module index is generated.
 #html_domain_indices = True
@@ -259,7 +261,7 @@ man_pages = [
 
 
 # Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = {'http://docs.python.org/': None}
+#intersphinx_mapping = {'http://docs.python.org/': None}
 
 
 # -- Options for breathe integration ------------------------------------------

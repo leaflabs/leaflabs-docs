@@ -1,8 +1,8 @@
 
 .. _arm-gcc:
 
-GCC for Maple
-=============
+GCC and libc
+============
 
 This document provides notes on using ``arm-none-eabi-gcc``, the
 `CodeSourcery <http://www.codesourcery.com/>`_ version of the GNU `GCC

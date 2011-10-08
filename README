@@ -110,9 +110,10 @@ Just point your web browser at the file
 
   build/html/index.html
 
-It corresponds to the Sphinx file
-
-  source/index.rst
+For the most poart, the file build/html/foo.html is built from
+source/foo.rst.  (The index is an exception, because we needed to
+hand-hack the HTML to get the "Contents at a Glance" section to look
+nice).
 
 Read more about Sphinx and use the existing docs source as an example
 when writing yours.  The directory tmpl/ contains template ReST files

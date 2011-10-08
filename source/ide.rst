@@ -1,7 +1,7 @@
 .. _ide:
 
-Maple IDE
-=========
+Using Maple IDE
+===============
 
 This page documents the basic functionality of the Maple IDE.
 Specifically, it describes the operation of the buttons on the main

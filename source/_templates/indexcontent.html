@@ -1,0 +1,112 @@
+{# This file generates the top-level index.html file. We are very
+   obviously stealing from the Python docs's style ;).
+#}
+
+<!-- Extend our layout.html. So inheritance hierarchy is Sphinx's
+     layout, then our layout.html, then this file. -->
+{% extends "layout.html" %}
+
+<!-- Pull in extra index stylesheet -->
+{% set css_files = css_files + ["_static/index-style.css"] %}
+
+<!-- Separator for contents lists -->
+{% set content_sep = "&middot;" %}
+
+<!-- Content -->
+{% block body %}
+<h1>Index</h1>
+
+Welcome!  This is the documentation for the LeafLabs Maple boards,
+version {{ release }}.
+
+<h2>Read This First</h2>
+
+<p>Just getting started? Try the <a href="{{
+pathto("maple-quickstart") }}">Quickstart</a>. Having problems? Check
+out <a href="{{ pathto("troubleshooting") }}">Troubleshooting</a> and
+the <a href="{{ pathto("faq") }}">FAQ</a>. Can't find what you want
+here?  Look on the <a href="http://wiki.leaflabs.com/">LeafLabs
+wiki</a>.
+</p>
+
+<h2>Contents at a Glance</h2>
+
+<table class="contents-table">
+  <tr>
+    <td><p><strong>Getting Started</strong></p>
+      <ul>
+        <li><a href="{{ pathto("maple-quickstart") }}">Quickstart</a>
+            {{ content_sep }}</li>
+        <li><a href="{{ pathto("maple-ide-install") }}">Installing Maple IDE</a>
+            {{ content_sep }}</li>
+        <li><a href="{{ pathto("ide") }}">Using Maple IDE</a>
+            {{ content_sep }}</li>
+        <li><a href="{{ pathto("unix-toolchain") }}">Command-Line
+                Toolchain</a></li>
+      </ul>
+    </td>
+    <td><p><strong>Boards</strong></p>
+      <ul>
+        <li><a href="{{ pathto("hardware/maple") }}">Maple</a>
+            {{ content_sep }}</li>
+        <li><a href="{{ pathto("hardware/maple-ret6") }}">Maple RET6 Edition</a>
+            {{ content_sep }}</li>
+        <li><a href="{{ pathto("hardware/maple-mini") }}">Maple Mini</a>
+            {{ content_sep }}</li>
+        <li><a href="{{ pathto("hardware/maple-native-beta") }}">Maple
+                Native β</a></li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td><p><strong>Programming</strong></p>
+      <ul>
+        <li><a href="{{ pathto("language") }}">Language Reference</a>
+            {{ content_sep }}</li>
+        <li><a href="{{ pathto("troubleshooting") }}">Troubleshooting</a>
+            {{ content_sep }}</li>
+        <li><a href="{{ pathto("faq") }}">FAQ</a>
+            {{ content_sep }}</li>
+        <li><a href="{{ pathto("libraries") }}">Libraries</a>
+            {{ content_sep }}</li>
+        <li><a href="{{ pathto("libmaple") }}"><tt>libmaple</tt></a>
+            {{ content_sep }}</li>
+        <li><a href="{{ pathto("bootloader") }}">Bootloader</a>
+            {{ content_sep }}</li>
+        <li><a href="{{ pathto("arm-gcc") }}">GCC and libc</a>
+            {{ content_sep }}</li>
+        <li><a href="{{ pathto("arduino-compatibility") }}">Arduino
+                Compatibility</a></li>
+      </ul>
+    </td>
+    <td><p><strong>Peripherals</strong></p>
+      <ul>
+        <li><a href="{{ pathto("adc") }}">ADC</a>
+            {{ content_sep }}</li>
+        <li><a href="{{ pathto("external-interrupts") }}">External
+            Interrupts</a> {{ content_sep }}</li>
+        <li><a href="{{ pathto("fsmc") }}">FSMC</a>
+            {{ content_sep }}</li>
+        <li><a href="{{ pathto("gpio") }}">GPIO</a>
+            {{ content_sep }}</li>
+        <li><a href="{{ pathto("i2c") }}">I<sup>2</sup>C</a>
+            {{ content_sep }}</li>
+        <li><a href="{{ pathto("jtag") }}">JTAG</a>
+            {{ content_sep }}</li>
+        <li><a href="{{ pathto("pwm") }}">PWM</a>
+            {{ content_sep }}</li>
+        <li><a href="{{ pathto("spi") }}">SPI</a>
+            {{ content_sep }}</li>
+        <li><a href="{{ pathto("systick") }}">SysTick</a>
+            {{ content_sep }}</li>
+        <li><a href="{{ pathto("timers") }}">Timers</a>
+            {{ content_sep }}</li>
+        <li><a href="{{ pathto("usart") }}">USART</a>
+            {{ content_sep }}</li>
+        <li><a href="{{ pathto("usb") }}">USB</a></li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+{% endblock %}

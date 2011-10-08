@@ -1,5 +1,11 @@
 {% extends "!layout.html" %}
+
+{% set css_files = css_files + ["_static/leaflabs-docs.css"] %}
+
 {% block rootrellink %}
-    <li><a href="http://leaflabs.com/">LeafLabs</a> |</li>
-    {{ super() }}
+    <li><a href="http://leaflabs.com/">
+            <img width="16px" src="_static/img/round_logo_32x32.ico"></img>
+            leaflabs.com
+        </a>&middot;</li>
+    <li><a href="{{ pathto('index') }}">{{ shorttitle }}</a>{{ reldelim1 }}</li>
 {% endblock %}

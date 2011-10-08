@@ -2,9 +2,9 @@
 
 .. _language:
 
-==========================
- Maple Language Reference
-==========================
+====================
+ Language Reference
+====================
 
 The Maple can be programmed in the `Wiring
 <http://www.wiring.org.co/reference/>`_ language, which is the same
