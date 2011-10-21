@@ -8,6 +8,10 @@
     display: inline;
 }
 
+.contents-table td {
+    padding: 0em 1em 0em;
+}
+
 .contents-table ul {
     list-style-type: none;
     margin: 0em;
