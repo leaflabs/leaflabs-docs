@@ -15,7 +15,7 @@ breadboard.
 Technical Specifications
 ------------------------
 
-* MCU: :ref:`STM32F103RCBT6 <maple-mini-stdocs>`, a 32-bit ARM Cortex
+* MCU: :ref:`STM32F103CBT6 <maple-mini-stdocs>`, a 32-bit ARM Cortex
   M3 microprocessor
 * Clock Speed: **72 MHz**
 * **128 KB Flash** and **20 KB SRAM**
