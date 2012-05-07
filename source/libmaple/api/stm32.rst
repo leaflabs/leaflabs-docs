@@ -19,6 +19,9 @@ Defines
 .. doxygendefine:: STM32_DELAY_US_MULT
 .. doxygendefine:: STM32_SRAM_END
 
+.. _libmaple-stm32-STM32_MCU_SERIES:
+.. doxygendefine:: STM32_MCU_SERIES
+
 Deprecated Defines
 ------------------
 
