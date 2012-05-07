@@ -15,8 +15,8 @@ libraries written for the `Arduino <http://arduino.cc>`_ and `Wiring
 
 .. _libmaple-vs-wirish:
 
-libmaple is split into two pieces: a lower level layer written in pure
-C, which we call *libmaple proper* (in the `libmaple/
+libmaple is split into two pieces: a lower level layer written in C,
+which we call *libmaple proper* (in the `libmaple/
 <https://github.com/leaflabs/libmaple/tree/master/libmaple>`_
 directory of the source repository), and the Wiring-style C++ API
 written on top of it, called *Wirish* (in `wirish/
