@@ -16,9 +16,16 @@ from the sources.
 Design Goals
 ------------
 
-The central goal of the libmaple project is to provide a pleasant,
-consistent set of interfaces for dealing with the various peripherals
-on the STM32 line.
+The central goal for libmaple proper is to provide a pleasant,
+portable, and consistent set of interfaces for dealing with the
+various series of STM32 microcontrollers. We want to make it easy to
+write portable STM32 code. To enable that, we've abstracted away many
+hardware details behind portable interfaces. We also want to make it
+easy for you to get your hands dirty when need or desire arises. To
+that end, libmaple makes as few assumptions as possible, and does its
+best to get out of your way when you want it to leave.
+
+
 
 Let's start with the basics. If you're interested in low-level details
 on the STM32, then you're going to spend a lot of quality time wading
