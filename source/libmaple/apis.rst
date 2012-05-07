@@ -1,7 +1,7 @@
 .. _libmaple-apis:
 
-APIs
-====
+``libmaple`` API Index
+======================
 
 This is the master index for libmaple proper's APIs.
 
