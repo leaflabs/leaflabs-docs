@@ -117,8 +117,8 @@ nice).
 
 Read more about Sphinx and use the existing docs source as an example
 when writing yours.  The directory tmpl/ contains template ReST files
-you should modify when creating a new page, in order to keep the style
-consistent.
+you should sometimes use when creating a new page, in order to keep
+the style consistent.
 
 The file source/conf.py is the Sphinx configuration file; you can go
 read it for more information about our setup.
