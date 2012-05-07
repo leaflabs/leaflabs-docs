@@ -137,12 +137,12 @@ always possible, but can be nonportable, and should you choose to do
 this, it's up to you to get it right.
 
 An ``adc_dev`` also contains an ``rcc_clk_id`` for the ADC peripheral
-it represents.  The ``rcc_clk_id`` enum type has an enumerator for
-each peripheral supported by your series. For example, the ADC
-peripherals' ``rcc_clk_id`` enumerators are ``RCC_ADC1``,
-``RCC_ADC2``, and ``RCC_ADC3``.  In general, an ``rcc_clk_id`` is
-useful not only for managing the clock line to a peripheral, but also
-as a unique identifier for that peripheral.
+it represents in the ``clk_id`` field.  The ``rcc_clk_id`` enum type
+has an enumerator for each peripheral supported by your series. For
+example, the ADC peripherals' ``rcc_clk_id`` enumerators are
+``RCC_ADC1``, ``RCC_ADC2``, and ``RCC_ADC3``.  In general, an
+``rcc_clk_id`` is useful not only for managing the clock line to a
+peripheral, but also as a unique identifier for that peripheral.
 
 (Device types can be more complicated than this; ``adc_dev`` was
 chosen as a simple example of the minimum you can expect.)
