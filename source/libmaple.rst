@@ -34,7 +34,7 @@ separately.
 
 libmaple is bundled with the :ref:`Maple IDE <ide>`.  However, we
 develop it separately, and :ref:`release it standalone
-<unix-toolchain>` for advanced users who might chafe at the "sketch"
+<unix-toolchain>` for users who might chafe at the "sketch"
 programming model of the IDE. The following pages document libmaple
 proper. As such, they're intended for advanced users who know how to
 write C.
