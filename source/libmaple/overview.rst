@@ -420,7 +420,7 @@ results of ADC conversion are stored), you would write::
 Register Bit Definitions
 ------------------------
 
-In ``<libmpale/foo.h>``, there will also be a variety of ``#define``\
+In ``<libmaple/foo.h>``, there will also be a variety of ``#define``\
 s for dealing with interesting bits in the xxx registers, called
 *register bit definitions*.  In keeping with the ST reference manuals,
 these are named according to the scheme ``FOO_REG_FIELD``, where
