@@ -11,16 +11,16 @@
 
 .. _faq-atoi:
 
-How can I use ``atoi()``, ``strol()``, etc.?
---------------------------------------------
+Can I use ``atoi()``, ``strol()``, etc.?
+----------------------------------------
 
 Just ``#include <stdlib.h>``.  See :ref:`arm-gcc-libc` for more
 information.
 
 .. _faq-dynamic-memory:
 
-How can I use ``malloc()``/``new``?
------------------------------------
+Can I use ``malloc()``/``new``?
+-------------------------------
 
 For ``malloc()``, just ``#include <stdlib.h>``, and everything should
 work fine.  Be careful, though!  This isn't like C programming on a
