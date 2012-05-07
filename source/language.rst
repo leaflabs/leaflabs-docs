@@ -15,17 +15,18 @@ C or C++ programmers who are new to Wiring may wish to skip to the
 .. contents:: Contents
    :local:
 
-.. admonition:: **Looking for Something Else?**
+.. admonition:: Looking for Something Else? Try these
 
    - See the :ref:`libraries` for extra built-in libraries.
 
-   - If you prefer C or C++ over Wiring, see the :ref:`unix-toolchain`.
+   - If you prefer C or C++ over Wiring, see :ref:`libmaple` and the
+     :ref:`unix-toolchain`.
 
    - If you're looking for something from the C standard library (like
      ``atoi()``, for instance), see :ref:`this FAQ <faq-atoi>`.
 
-   - Low-level details are in :ref:`libmaple` and this page's
-     :ref:`Recommended Reading <language-recommended-reading>`.
+   - An :ref:`stm32` and other :ref:`language-recommended-reading` are
+     also available.
 
 .. _language-lang-docs:
 
@@ -272,7 +273,7 @@ the Maple can be programmed using a :ref:`standard Unix toolchain
 <unix-toolchain>`, so if you'd rather stick with :command:`gcc`,
 :command:`make`, and friends, you can.  If you're using the Unix
 toolchain and want to skip past the Wiring conveniences and get
-straight to registers, you are encouraged to move on to the
+straight to the details, you are encouraged to move on to the
 :ref:`libmaple` documentation.
 
 A *sketch* is the IDE's notion of a project; it consists of one or
@@ -419,21 +420,12 @@ Which could plausibly be turned into the final source file ::
 Recommended Reading
 -------------------
 
-* :ref:`libmaple Documentation <libmaple>`
-* Your board's :ref:`Board Hardware Documentation <index-boards>` page
-* ST Documentation:
-    * Reference Manual `RM0008
-      <http://www.st.com/stonline/products/literature/rm/13902.pdf>`_
-      (PDF).  This is the most important reference work on the STM32
-      line, and covers the low-level hardware capabilities and
-      interfaces in great detail.
-    * `Programming Manual
-      <http://www.st.com/stonline/products/literature/pm/15491.pdf>`_
-      (PDF). This is an assembly language and register reference for
-      the STM32 line.
-* ARM Documentation:
-    * `Cortex-M3 Technical Reference Manual, Revision r1p1
-      <http://infocenter.arm.com/help/topic/com.arm.doc.ddi0337e/DDI0337E_cortex_m3_r1p1_trm.pdf>`_
-      (PDF).  This ARM manual specifies much of the the Cortex M3
-      Architecture, including instruction timings.
-* `newlib Documentation <http://sourceware.org/newlib/>`_
+* :ref:`Your board's documentation <index-boards>` page, which
+  includes references to the relevant ST materials (reference manual,
+  datashseet, etc.) for your board.
+* `ARM Cortex-M3 Technical Reference Manual, Revision r1p1 <http://infocenter.arm.com/help/topic/com.arm.doc.ddi0337e/DDI0337E_cortex_m3_r1p1_trm.pdf>`_
+  (PDF).  This ARM manual specifies the Cortex-M3 architecture,
+  including instruction timings.
+* :ref:`libmaple`
+* `newlib's Documentation <http://sourceware.org/newlib/>`_
+  (see :ref:`arm-gcc-libc`)
