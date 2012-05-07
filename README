@@ -110,7 +110,7 @@ Just point your web browser at the file
 
   build/html/index.html
 
-For the most poart, the file build/html/foo.html is built from
+For the most part, the file build/html/foo.html is built from
 source/foo.rst.  (The index is an exception, because we needed to
 hand-hack the HTML to get the "Contents at a Glance" section to look
 nice).
