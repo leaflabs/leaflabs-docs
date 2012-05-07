@@ -7,8 +7,10 @@ Overview
 
 This page is a general overview of :ref:`libmaple proper
 <libmaple-vs-wirish>`.  It describes libmaple's design, and names
-implementation patterns to look for when using it.  Examples are given
-from the sources.
+implementation patterns to look for when using it.  General
+familiarity with the :ref:`STM32 <stm32>` is assumed; beginners should
+start with the high-level :ref:`Wirish interface <language>` instead.
+Examples are given from libmaple's sources.
 
 .. contents:: Contents
    :local:
@@ -18,175 +20,317 @@ Design Goals
 
 The central goal for libmaple proper is to provide a pleasant,
 portable, and consistent set of interfaces for dealing with the
-various series of STM32 microcontrollers. We want to make it easy to
-write portable STM32 code. To enable that, we've abstracted away many
-hardware details behind portable interfaces. We also want to make it
-easy for you to get your hands dirty when need or desire arises. To
-that end, libmaple makes as few assumptions as possible, and does its
-best to get out of your way when you want it to leave.
+various series of STM32 microcontrollers.
 
+Portability in particular can be a problem when programming for the
+STM32. While the various STM32 series are largely pin-compatible with
+one another, the peripheral register maps between series often change
+drastically, even when the functionality provided by the peripheral
+doesn't change very much. This means that code which accesses
+registers directly often needs to change when porting a program to a
+different series MCU.
 
+ST's solution to this problem thus far has been to `issue
+<http://www.st.com/internet/com/SOFTWARE_RESOURCES/SW_COMPONENT/FIRMWARE/stm32l1_stdperiph_lib.zip>`_
+`separate
+<http://www.st.com/internet/com/SOFTWARE_RESOURCES/SW_COMPONENT/FIRMWARE/stm32f10x_stdperiph_lib.zip>`_
+`firmware
+<http://www.st.com/internet/com/SOFTWARE_RESOURCES/SW_COMPONENT/FIRMWARE/stm32f2xx_stdperiph_lib.zip>`_
+`libraries
+<http://www.st.com/internet/com/SOFTWARE_RESOURCES/SW_COMPONENT/FIRMWARE/stm32f4_dsp_stdperiph_lib.zip>`_;
+one for each STM32 series.  Along with these, they have released a
+`number
+<http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/APPLICATION_NOTE/DM00024853.pdf>`_
+of `application
+<http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/APPLICATION_NOTE/DM00033267.pdf>`_
+`notes
+<http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/APPLICATION_NOTE/DM00032987.pdf>`_
+describing the compatibility issues and how to migrate between series
+by switching firmware libraries. Often, the migration advice is
+essentially "rewrite your code"; this occurs, for example, with any
+code involving GPIO or DMA being migrated between STM32F1 and STM32F2.
 
-Let's start with the basics. If you're interested in low-level details
-on the STM32, then you're going to spend a lot of quality time wading
-through `ST RM0008
-<http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/REFERENCE_MANUAL/CD00171190.pdf>`_.
-That document is the single most important tool in your toolbox.  It
-is the authoritative documentation for the capabilities and register
-interfaces of the STM32 line.
+Needless to say, this can be very annoying.  (Didn't we solve this
+sort of problem years ago?)  When you just want your robot to fly,
+your `LEDs to blink <http://www.youtube.com/watch?v=J845L45zqfk>`_, or
+your `FM synthesizer <https://github.com/Ixox/preen>`_ to, well,
+`synthesize <http://xhosxe.free.fr/IxoxFMSynth.mp3>`_, you probably
+couldn't care less about dealing with a new set of registers.
 
-Perhaps you haven't read it in detail, but maybe you've at least
-thumbed through a few of the sections, trying to gain some
-understanding of what's going on.  If you've done that (and if you
-haven't, just take our word for it), then you know that underneath the
-covers, *everything* is controlled by messing with bits in the
-seemingly endless collections of registers specific to every
-peripheral.  The :ref:`USARTs <usart>` have data registers; (some of
-the) the :ref:`timers <timers>` have capture/compare registers, the
-:ref:`GPIOs <gpio>` have output data registers, etc.
+We want to make it easier to write portable STM32 code. To enable
+that, libmaple abstracts away many hardware details behind portable
+interfaces. We also want to make it easy for you to get your hands
+dirty when need or desire arises. To that end, libmaple makes as few
+assumptions as possible, and does its best to get out of your way when
+you want it to leave.
 
-For the most part, Wirish does everything it can to hide this truth
-from you.  That's because when you really just want to get your robot
-to fly, your LEDs to blink, or your `FM synthesizer
-<https://github.com/Ixox/preen>`_ to, well, `synthesize
-<http://xhosxe.free.fr/IxoxFMSynth.mp3>`_, you probably couldn't care
-less about messing with registers.
+.. _libmaple-overview-devices:
 
-That's fine!  In fact, it's our explicit goal for Wirish to be good
-enough that most people never need to know libmaple proper even
-exists.  We want to make programming our boards as easy as possible,
-after all.  But the day may come when you want to add a library for an
-as-yet unsupported peripheral, or you want to do something we didn't
-anticipate, or you'd like to squeeze a little more speed out of a
-critical section in your program.  Or maybe you're just curious!
+Libmaple's Device Model
+-----------------------
 
-If anything in the above paragraph describes you, then you'll find
-that you need a way to translate your knowledge of RM0008 into
-software.  We imagine (if you're anything like us) you want to spend
-the least amount of time you possibly can doing that
-translation. Ideally, once you've finished your design, you want some
-way to start reading and writing code right away, without having to
-bushwhack your way through a thicket of clunky APIs.
+The libmaple device model is simple and stupid. This is a feature.
 
-The central abstractions we've chosen to accomplish the above goals
-are *register maps* and *devices*.  Register maps are just structs
-which encapsulate the layout of the IO-mapped memory regions
-corresponding to a peripheral's registers.  Devices encapsulate a
-peripheral's register map as well as any other necessary information
-needed to operate on it.  Peripheral support routines generally
-operate on devices rather than register maps.
+*Device types* are the central libmaple abstraction; they exist to
+provide portable interfaces to common peripherals, but they still let
+you do nonportable things easily if you want to.
 
-Devices
--------
+The rules for device types are:
 
-At the highest level, you'll be dealing with *devices*, where a
-"device" is a general term for any particular piece of hardware you
-might encounter.  So, for example, an analog to digital converter is a
-device.  So is a USART.  So is a GPIO port.  In this section, we'll
-consider some hypothetical "xxx" device.
+- Device types are structs representing peripherals.  The name of the
+  device type for peripheral "foo" is ``struct foo_dev`` (so for
+  foo=ADC, it's ``struct adc_dev``. For foo=DMA, it's ``struct
+  dma_dev``; etc.). These are always ``typedef``\ ed to ``foo_dev``.
 
-The first thing you need to know is that the header file for dealing
-with xxx devices is, naturally enough, called ``xxx.h``.  So if you
-want to interface with the :ref:`ADCs <adc>`, just ``#include
-"adc.h"``.
+- Each device type contains any information needed or used by libmaple
+  for operating on the peripheral the type represents. Device types
+  are defined alongside declarations for portable support routines in
+  the header ``<libmaple/foo.h>`` (examples: :ref:`libmaple-adc`,
+  :ref:`libmaple-dma`).
 
-Inside of ``xxx.h``, there will be a declaration for a ``struct
-xxx_dev`` type.  This type encapsulates all of the information we keep
-track of for that xxx.  So, for example, in ``adc.h``, there's a
-``struct adc_dev``::
+- Direct :ref:`register access <libmaple-overview-regmaps>` is
+  possible via the ``regs`` field in each device type.  (Given a
+  ``foo_dev *foo``, you can read and write the BAR register
+  ``FOO_BAR`` with ``foo->regs->BAR``.)
 
-    /** ADC device type. */
+- An ``rcc_clk_id`` for the device is available in the ``clk_id``
+  field; this is an opaque type that can be used to uniquely
+  identifies the peripheral. (Given ``foo_dev *foo``, you can check
+  which foo you have by looking at ``foo->clk_id``.)
+
+- The backend for each supported STM32 series statically initializes
+  devices as appropriate, and ensures that the peripheral support
+  header includes declarations for pointers to these statically
+  allocated devices.
+
+- Peripheral support functions usually expect a pointer to a device as
+  their first argument.  These functions' implementations may vary
+  with the particular microcontroller you're targeting, but their
+  semantics try to stay the same. To migrate to a different target,
+  you'll often be able to simply recompile your program (and libmaple)
+  for the new target.
+
+- When complete portability is not possible, libmaple tries to keep
+  the nonportable bits in data, rather than code.
+
+Example: ``adc_dev``
+~~~~~~~~~~~~~~~~~~~~
+
+These rules are best explained by example. The device type for ADC
+peripherals is ``struct adc_dev``. Its definition is provided by
+``<libmaple/adc.h>``::
+
     typedef struct adc_dev {
-        adc_reg_map *regs; /**< Register map */
-        rcc_clk_id clk_id; /**< RCC clock information */
+        adc_reg_map *regs;
+        rcc_clk_id clk_id;
     } adc_dev;
 
-The ADCs aren't particularly complicated.  All we keep track of for an
-ADC device is a pointer to its register map (which keeps track of all
-of its registers' bits; see :ref:`below <libmaple-overview-regmaps>`
-for more details), and an identifying piece of information which tells
-the RCC (reset and clock control) interface how to turn the ADC on and
-reset its registers to their default values.
+An ``adc_dev`` contains a pointer to its register map in the ``regs``
+field. This ``regs`` field is available on all device types. Its value
+is a :ref:`register map base pointer
+<libmaple-overview-regmaps-base-pts>` (like ``ADC1_BASE``, etc.)  for
+the peripheral, as determined by the current target. For example, two
+equivalent expressions for reading the ADC1 regular data register are
+``ADC1_BASE->DR`` and ``ADC1->regs->DR`` (though the first one is
+faster).  Manipulating registers directly via ``->regs`` is thus
+always possible, but can be nonportable, and should you choose to do
+this, it's up to you to get it right.
 
-The timers on the STM32 line are more involved than the ADCs, so a
-``timer_dev`` has to keep track of a bit more information::
+An ``adc_dev`` also contains an ``rcc_clk_id`` for the ADC peripheral
+it represents.  The ``rcc_clk_id`` enum type has an enumerator for
+each peripheral supported by your series. For example, the ADC
+peripherals' ``rcc_clk_id`` enumerators are ``RCC_ADC1``,
+``RCC_ADC2``, and ``RCC_ADC3``.  In general, an ``rcc_clk_id`` is
+useful not only for managing the clock line to a peripheral, but also
+as a unique identifier for that peripheral.
 
-    /** Timer device type */
-    typedef struct timer_dev {
-        timer_reg_map regs;         /**< Register map */
-        rcc_clk_id clk_id;          /**< RCC clock information */
-        timer_type type;            /**< Timer's type */
-        voidFuncPtr handlers[];     /**< User IRQ handlers */
-    } timer_dev;
+(Device types can be more complicated than this; ``adc_dev`` was
+chosen as a simple example of the minimum you can expect.)
 
-However, as you can see, both ADC and timer devices are named
-according to a single scheme, and store similar information.
+Rather than have you define your own ``adc_dev``\ s, libmaple defines
+them for you as appropriate for your target STM32 series. For example,
+on STM32F1, the file libmaple/stm32f1/adc.c contains the following::
 
-``xxx.h`` will also declare pointers to the actual devices you need to
-deal with, called ``XXX1``, ``XXX2``, etc. (or just ``XXX``, if
-there's only one) [#fgpio]_.  For instance, on the Maple's
-microcontroller (the STM32F103RBT6), there are two ADCs.
-Consequently, in ``adc.h``, there are declarations for dealing with
-ADC devices one and two::
+    static adc_dev adc1 = {
+        .regs   = ADC1_BASE,
+        .clk_id = RCC_ADC1,
+    };
+    /** ADC1 device. */
+    const adc_dev *ADC1 = &adc1;
 
-    extern const adc_dev *ADC1;
-    extern const adc_dev *ADC2;
+    static adc_dev adc2 = {
+        .regs   = ADC2_BASE,
+        .clk_id = RCC_ADC2,
+    };
+    /** ADC2 device. */
+    const adc_dev *ADC2 = &adc2;
 
-In general, each device needs to be initialized before it can be used.
-libmaple provides this initialization routine for each peripheral
-``xxx``; its name is ``xxx_init()``.  These initialization routines
-turn on the clock to a device, and restore its register values to
-their default settings.  Here are a few examples::
+    #if defined(STM32_HIGH_DENSITY) || defined(STM32_XL_DENSITY)
+    static adc_dev adc3 = {
+        .regs   = ADC3_BASE,
+        .clk_id = RCC_ADC3,
+    };
+    /** ADC3 device. */
+    const adc_dev *ADC3 = &adc3;
+    #endif
 
-    /* From dma.h */
-    void dma_init(dma_dev *dev);
+Since all supported STM32F1 targets support ADC1 and ADC2, libmaple
+predefines corresponding ``adc_dev`` instances for you. To save space,
+it avoids defining an ``adc_dev`` for ADC3 unless you are targeting a
+high- or XL-density STM32F1, as medium- and lower density MCUs don't
+have ADC3.
 
-    /* From gpio.h */
-    void gpio_init(gpio_dev *dev);
-    void gpio_init_all(void);
+Note that the structs themselves are static and are exposed only via
+pointers. These pointers are declared in a series-specific ADC header,
+``<series/adc.h>`` which is included by ``<libmaple/adc.h>`` based on
+the MCU you're targeting. (**Never include** ``<series/foo.h>``
+**directly**. Instead, include ``<libmaple/foo.h>`` and let it take
+care of that for you.) On STM32F1, the series ADC header contains the
+following::
 
-Note that, sometimes, there will be an additional initialization
-routine for all available peripherals of a certain kind.
+    extern const struct adc_dev *ADC1;
+    extern const struct adc_dev *ADC2;
+    #if defined(STM32_HIGH_DENSITY) || defined(STM32_XL_DENSITY)
+    extern const struct adc_dev *ADC3;
+    #endif
 
-Many peripherals also need additional configuration before they can be
-used.  These functions are usually called something along the lines of
-``xxx_enable()``, and often take additional arguments which specify a
-particular configuration for the peripheral.  Some examples::
+In general, you access the predefined devices via these pointers. As
+illustrated by the ADC example, the variables for these pointers
+follow the naming scheme used in ST's reference manuals -- the pointer
+to ADC1's ``adc_dev`` is named ``ADC1``, and so on.
 
-    /* From usart.h */
-    void usart_enable(usart_dev *dev);
+The API documentation for the peripherals you're interested in will
+list the available devices on each target.
 
-    /* From i2c.h */
-    void i2c_master_enable(i2c_dev *dev, uint32 flags);
+Using Devices
+~~~~~~~~~~~~~
 
-After you've initialized, and potentially enabled, your peripheral, it
-is now time to begin using it.  The file ``xxx.h`` contains other
-convenience functions for dealing with xxx devices.  For instance,
-here are a few from ``adc.h``::
+Peripheral support routines usually expect pointers to their device
+types as their first arguments. Here are some ADC examples::
+
+    uint16 adc_read(const adc_dev *dev, uint8 channel);
+    static inline void adc_enable(const adc_dev *dev);
+    static inline void adc_disable(const adc_dev *dev);
+
+So, to read channel 2 of ADC1, you could call ``adc_read(ADC1, 2)``.
+To disable ADC2, call ``adc_disable(ADC2)``; etc.
+
+That's it; there's nothing complicated here. In general, just follow
+links from the :ref:`libmaple-apis` page to the header for the
+peripheral you're interested in. It will explain the supported
+functionality, both portable and series-specific.
+
+Segregating Non-portable Functionality into Data
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+As mentioned previously, when total portability isn't possible,
+libmaple tries to do the right thing and segregate the nonportable
+portions into data rather than code. The function
+``adc_set_sample_rate()`` is a good example of how this works, and why
+it's useful::
 
     void adc_set_sample_rate(const adc_dev *dev, adc_smp_rate smp_rate);
-    uint32 adc_read(const adc_dev *dev, uint8 channel);
 
-We aim to enable libmaple's users to interact with peripherals through
-devices as much as possible, rather than having to break the
-abstraction and consider individual registers.  However, there will
-always be a need for low-level access.  To allow for that, libmaple
-provides *register maps* as a consistent set of names and abstractions
-for dealing with registers and their bits.
+For example, while both STM32F1 and STM32F2 support setting the ADC
+sample time via the same register interface, the actual sample times
+supported are different. For instance, on STM32F1, available sample
+times include 1.5, 7.5, and 13.5 ADC cycles. On STM32F2, none of these
+are available, but 3, 15, and 28 ADC cycles are supported (which is
+not true for STM32F1). To work with this, libmaple provides a single
+function, ``adc_set_sample_rate()``, for setting an ADC controller's
+channel sampling time, but the actual sample rates it takes are given
+by the ``adc_smp_rate`` type, which is different on STM32F1 and
+STM32F2.
+
+This is the STM32F1 implementation of adc_smp_rate::
+
+    typedef enum adc_smp_rate {
+        ADC_SMPR_1_5,               /**< 1.5 ADC cycles */
+        ADC_SMPR_7_5,               /**< 7.5 ADC cycles */
+        ADC_SMPR_13_5,              /**< 13.5 ADC cycles */
+        ADC_SMPR_28_5,              /**< 28.5 ADC cycles */
+        ADC_SMPR_41_5,              /**< 41.5 ADC cycles */
+        ADC_SMPR_55_5,              /**< 55.5 ADC cycles */
+        ADC_SMPR_71_5,              /**< 71.5 ADC cycles */
+        ADC_SMPR_239_5,             /**< 239.5 ADC cycles */
+    } adc_smp_rate;
+
+And here is the STM32F2 implementation::
+
+    typedef enum adc_smp_rate {
+        ADC_SMPR_3,                 /**< 3 ADC cycles */
+        ADC_SMPR_15,                /**< 15 ADC cycles */
+        ADC_SMPR_28,                /**< 28 ADC cycles */
+        ADC_SMPR_56,                /**< 56 ADC cycles */
+        ADC_SMPR_84,                /**< 84 ADC cycles */
+        ADC_SMPR_112,               /**< 112 ADC cycles */
+        ADC_SMPR_144,               /**< 144 ADC cycles */
+        ADC_SMPR_480,               /**< 480 ADC cycles */
+    } adc_smp_rate;
+
+So, on F1, you could call ``adc_set_sample_rate(ADC1, ADC_SMPR_1_5)``,
+and on F2, you could call ``adc_set_sample_rate(ADC1,
+ADC_SMPR_3)``. If you're only interested in one of those series, then
+that's all you need to know.
+
+However, if you're targeting multiple series, then this is useful
+because it lets you put the actual sample time for the MCU you're
+targeting into a variable, whose value depends on the target you're
+compiling for. This lets you have a single codebase to test and
+maintain, and lets you add support for a new target by simply adding
+some new data.
+
+To continue the example, one easy way is to pick an ``adc_smp_rate``
+for each of STM32F1 and STM32F2 is with conditional compilation. Using
+the :ref:`STM32_MCU_SERIES <libmaple-stm32-STM32_MCU_SERIES>` define
+from :ref:`libmaple-stm32`, you can write::
+
+    #include <libmaple/stm32.h>
+
+    #if STM32_MCU_SERIES == STM32_SERIES_F1
+    /* Target is an STM32F1 */
+    adc_smp_rate smp_rate = ADC_SMPR_1_5;
+    #elif STM32_MCU_SERIES == STM32_SERIES_F2
+    /* Target is an STM32F2 */
+    adc_smp_rate smp_rate = ADC_SMPR_3;
+    #else
+    #error "Unsupported STM32 target; can't pick a sample rate"
+    #endif
+
+    void setup(void) {
+        adc_set_smp_rate(ADC1, smp_rate);
+    }
+
+Adding support for e.g. STM32F4 would only require adding a new
+``#elif`` for that series. This is simple, but hackish, and can get
+out of control if you're not careful.
+
+Another way to get the job done is to declare an ``extern adc_smp_rate
+smp_rate``, and use the build system to compile a file defining
+``smp_rate`` depending on your target. As was discussed earlier, this
+is what libmaple does when choosing which files to use for defining
+the appropriate ``adc_dev``\ s for your target. How to do this is
+outside the scope of this overview, however.
 
 .. _libmaple-overview-regmaps:
 
 Register Maps
 -------------
 
-A *register map* is just a C struct which names and provides access to
-a peripheral's registers.  These registers are usually mapped to
-contiguous regions of memory (though at times unusable or reserved
-regions exist between a peripheral's registers).  Here's an example
-register map, from ``dac.h`` (``__io`` is just libmaple's way of
-saying ``volatile`` when referring to register values)::
+Though we aim to enable libmaple's users to interact with the more
+portable :ref:`device interface <libmaple-overview-devices>` as much
+as possible, there will always be a need for efficient direct register
+access.  To allow for that, libmaple provides *register maps* as a
+consistent set of names and abstractions for dealing with peripheral
+registers and their bits.
 
-    /** DAC register map. */
+A *register map type* is a struct which names and provides access to a
+peripheral's registers (we can use a struct because registers are
+usually mapped into contiguous regions of memory). Here's an example
+register map for the DAC peripheral on STM32F1 series MCUs (``__io``
+is just libmaple's way of saying ``volatile`` when referring to
+register values)::
+
     typedef struct dac_reg_map {
         __io uint32 CR;      /**< Control register */
         __io uint32 SWTRIGR; /**< Software trigger register */
@@ -212,89 +356,87 @@ saying ``volatile`` when referring to register values)::
         __io uint32 DOR2;    /**< Channel 2 data output register */
     } dac_reg_map;
 
+There are two things to notice here.  First, if the chip reference
+manual (for STM32F1, that's RM0008) names a register ``DAC_FOO``, then
+``dac_reg_map`` has a field named ``FOO``.  So, the Channel 1 12-bit
+right-aligned data register (DAC_DHR12R1) is the ``DHR12R1`` field in
+a ``dac_reg_map``.  Second, if the reference manual describes a
+register as "Foo bar register", the documentation for the
+corresponding field has the same description.  This consistency makes
+it easy to search for a particular register, and, if you see one used
+in a source file, to feel sure about what's going on just based on its
+name.
 
-There are two things to notice here.  First, if RM0008 names a
-register ``DAC_FOO``, then ``dac_reg_map`` has a field named ``FOO``.
-So, the Channel 1 12-bit right-aligned data register (RM0008:
-DAC_DHR12R1) is the ``DHR12R1`` field in a ``dac_reg_map``.  Second,
-if RM0008 describes a register as "Foo bar register", the
-documentation for the corresponding field has the same description.
-This consistency makes it easy to search for a particular register,
-and, if you see one used in a source file, to feel sure about what's
-going on just based on its name.
+.. _libmaple-overview-regmaps-base-pts:
 
-So let's say you've included ``xxx.h``, and you want to mess with some
-particular register.  What's the name of the ``xxx_reg_map`` variable
-you want?  That depends on if there's more than one xxx or not.  If
-there's only one xxx, then libmaple guarantees there will be a
-``#define`` that looks like like this::
+So let's say you've included ``<libmaple/foo.h>``, and you want to
+mess with some particular register. You'll do this using *register map
+base pointers*, which are pointers to ``struct foo_reg_map``. What's
+the name of the base pointer you want?  That depends on if there's
+more than one foo or not.  If there's only one foo, then libmaple
+guarantees there will be a ``#define`` that looks like like this::
 
-    #define XXX_BASE                    ((struct xxx_reg_map*)0xDEADBEEF)
+    #define FOO_BASE    ((struct foo_reg_map*)0xDEADBEEF)
 
 That is, you're guaranteed there will be a pointer to the (only)
-``xxx_reg_map`` you want, and it will be called
-``XXX_BASE``. (``0xDEADBEEF`` is the register map's *base address*, or
-the fixed location in memory where the register map begins).  Here's a
-concrete example from ``dac.h``::
+``foo_reg_map`` you want, and it will be called
+``FOO_BASE``. (``0xDEADBEEF`` is the register map's *base address*, or
+the fixed location in memory where the register map begins).  Here's
+an example for STM32F1::
 
-    #define DAC_BASE                        ((struct dac_reg_map*)0x40007400)
+    #define DAC_BASE    ((struct dac_reg_map*)0x40007400)
 
-How can you use these?  This is perhaps best explained by example.
+Here are some examples for how to read and write to registers using
+register map base pointers.
 
 * In order to write 2048 to the channel 1 12-bit left-aligned data
-  holding register (RM0008: DAC_DHR12L1), you could write::
+  holding register (DAC_DHR12L1), you would write::
 
       DAC_BASE->DHR12L1 = 2048;
 
-* In order to read the DAC control register, you could write::
+* In order to read the DAC control register, you would write::
 
       uint32 cr = DAC_BASE->CR;
 
-The microcontroller takes care of converting reads and writes from a
-register's IO-mapped memory regions into reads and writes to the
-corresponding hardware registers.
+That covers the case where there's a single foo peripheral.  If
+there's more than one (say, if there are *n*), then
+``<libmaple/foo.h>`` provides the following::
 
-That covers the case where there's a single xxx peripheral.  If
-there's more than one (say, if there are *n*), then ``xxx.h`` provides
-the following::
-
-    #define XXX1_BASE                       ((struct xxx_reg_map*)0xDEADBEEF)
-    #define XXX2_BASE                       ((struct xxx_reg_map*)0xF00DF00D)
+    #define FOO1_BASE    ((struct foo_reg_map*)0xDEADBEEF)
+    #define FOO2_BASE    ((struct foo_reg_map*)0xF00DF00D)
     ...
-    #define XXXn_BASE                       ((struct xxx_reg_map*)0x13AF1AB5)
+    #define FOOn_BASE    ((struct foo_reg_map*)0x1EAF1AB5)
 
-Here are some examples from ``adc.h``::
+Here are some examples for the ADCs on STM32F1::
 
-    #define ADC1_BASE                       ((struct adc_reg_map*)0x40012400)
-    #define ADC2_BASE                       ((struct adc_reg_map*)0x40012800)
+    #define ADC1_BASE    ((struct adc_reg_map*)0x40012400)
+    #define ADC2_BASE    ((struct adc_reg_map*)0x40012800)
 
 In order to read from the ADC1's regular data register (where the
-results of ADC conversion are stored), you might write::
+results of ADC conversion are stored), you would write::
 
     uint32 converted_result = ADC1_BASE->DR;
 
 Register Bit Definitions
 ------------------------
 
-In ``xxx.h``, there will also be a variety of #defines for dealing
-with interesting bits in the xxx registers, called *register bit
-definitions*.  These are named according to the scheme
-``XXX_REG_FIELD``, where "``REG``" refers to the register, and
-"``FIELD``" refers to the bit or bits in ``REG`` that are special.
+In ``<libmpale/foo.h>``, there will also be a variety of ``#define``\
+s for dealing with interesting bits in the xxx registers, called
+*register bit definitions*.  In keeping with the ST reference manuals,
+these are named according to the scheme ``FOO_REG_FIELD``, where
+"``REG``" refers to the register, and "``FIELD``" refers to the bit or
+bits in ``REG`` that are special.
 
-.. TODO image of the bit layout of a DMA_CCR register
-
-Again, this is probably best explained by example.  Each Direct Memory
-Access (DMA) controller's register map has a certain number of channel
-configuration registers (RM0008: DMA_CCRx).  In each of these channel
-configuration registers, bit 14 is called the ``MEM2MEM`` bit, and
-bits 13 and 12 are the priority level (``PL``) bits.  Here are the
-register bit definitions for those fields::
-
-    /* From dma.h */
+Again, this is probably best explained by example.  On STM32F1, each
+Direct Memory Access (DMA) controller's register map has a certain
+number of channel configuration registers (DMA_CCRx).  In each of
+these channel configuration registers, bit 14 is called the
+``MEM2MEM`` bit, and bits 13 and 12 are the priority level (``PL``)
+bits.  Here are the register bit definitions for those fields on
+STM32F1::
 
     #define DMA_CCR_MEM2MEM_BIT             14
-    #define DMA_CCR_MEM2MEM                 BIT(DMA_CCR_MEM2MEM_BIT)
+    #define DMA_CCR_MEM2MEM                 (1U << DMA_CCR_MEM2MEM_BIT)
     #define DMA_CCR_PL                      (0x3 << 12)
     #define DMA_CCR_PL_LOW                  (0x0 << 12)
     #define DMA_CCR_PL_MEDIUM               (0x1 << 12)
@@ -302,7 +444,7 @@ register bit definitions for those fields::
     #define DMA_CCR_PL_VERY_HIGH            (0x3 << 12)
 
 Thus, to check if the ``MEM2MEM`` bit is set in DMA controller 1's
-channel configuration register 2 (RM0008: DMA_CCR2), you can write::
+channel configuration register 2 (DMA_CCR2), you can write::
 
     if (DMA1_BASE->CCR2 & DMA_CCR_MEM2MEM) {
         /* MEM2MEM is set */
@@ -312,33 +454,61 @@ Certain register values occupy multiple bits.  For example, the
 priority level (PL) of a DMA channel is determined by bits 13 and 12
 of the corresponding channel configuration register.  As shown above,
 libmaple provides several register bit definitions for masking out the
-individual PL bits and determining their meaning.  For example, to
-check the priority level of a DMA transfer, you can write::
+individual PL bits and determining their meaning.  For example, to set
+the priority level of a DMA transfer to "high priority", you can
+do a read-modify-write sequence on the DMA_CCR_PL bits like so::
 
-    switch (DMA1_BASE->CCR2 & DMA_CCR_PL) {
-    case DMA_CCR_PL_LOW:
-        /* handle low priority case */
-    case DMA_CCR_PL_MEDIUM:
-        /* handle medium priority case */
-    case DMA_CCR_PL_HIGH:
-        /* handle high priority case */
-    case DMA_CCR_PL_VERY_HIGH:
-        /* handle very high priority case */
-    }
+    uint32 ccr = DMA1_BASE->CCR2;
+    ccr &= ~DMA_CCR_PL;
+    ccr |= DMA_CCR_PL_HIGH;
+    DMA1_BASE->CCR2 = ccr;
 
 Of course, before doing that, you should check to make sure there's
-not already a device-level function for performing the same task!
+not already a device-level function for performing the same task!  (In
+this case, there is. It's called :c:func:`dma_set_priority()`; see
+:ref:`libmaple-dma`.) For instance, **none of the above code is
+portable** to STM32F4, which uses DMA streams instead of channels for
+this purpose.
 
-What Next?
-----------
+Peripheral Support Routines
+---------------------------
 
-After you've read this page, you can proceed to the :ref:`libmaple API
-listing <libmaple-apis>`.  From there, you can read documentation and
-follow links to the current source code for those files on `libmaple's
-GitHub page <https://github.com/leaflabs/libmaple>`_.
+This section describes patterns to look for in peripheral support
+routines.
+
+In general, each device needs to be initialized before it can be used.
+libmaple provides this initialization routine for each peripheral
+``foo``; its name is ``foo_init()``.  These initialization routines
+turn on the clock to a device, and restore its register values to
+their default settings.  Here are a few examples::
+
+    /* From dma.h */
+    void dma_init(dma_dev *dev);
+
+    /* From gpio.h */
+    void gpio_init(gpio_dev *dev);
+    void gpio_init_all(void);
+
+Note that, sometimes, there will be an additional initialization
+routine for all available peripherals of a certain kind.
+
+Many peripherals also need additional configuration before they can be
+used.  These functions are usually called something along the lines of
+``foo_enable()``, and often take additional arguments which specify a
+particular configuration for the peripheral.  Some examples::
+
+    /* From usart.h */
+    void usart_enable(usart_dev *dev);
+
+    /* From i2c.h */
+    void i2c_master_enable(i2c_dev *dev, uint32 flags);
+
+After you've initialized, and potentially enabled, your peripheral, it
+is now time to begin using it.  The :ref:`libmaple API pages
+<libmaple-apis>` are your friends here.
 
 .. rubric:: Footnotes
 
-.. [#fgpio] For consistency with RM0008, GPIO ports are given letters
-            instead of numbers (``GPIOA`` and ``GPIOB`` instead of
-            ``GPIO1`` and ``GPIO2``, etc.).
+.. [#fgpio] As an exception, GPIO ports are given letters instead of
+            numbers (``GPIOA`` and ``GPIOB`` instead of ``GPIO1`` and
+            ``GPIO2``, etc.).
