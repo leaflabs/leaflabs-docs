@@ -34,11 +34,12 @@ Contents in Full
 
 .. _index-hardware:
 
-**Peripherals**
+**Hardware and Peripherals**
 
 .. toctree::
    :maxdepth: 2
 
+   stm32
    adc
    external-interrupts
    fsmc
