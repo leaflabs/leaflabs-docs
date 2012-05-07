@@ -1,5 +1,5 @@
 {# This file generates the top-level index.html file. We are very
-   obviously stealing from the Python docs's style ;).
+   obviously stealing from the Python docs' style ;).
 #}
 
 <!-- Extend our layout.html. So inheritance hierarchy is Sphinx's
@@ -14,10 +14,10 @@
 
 <!-- Content -->
 {% block body %}
-<h1>Index</h1>
+<h1>Hi!</h1>
 
-Welcome!  This is the documentation for the LeafLabs Maple boards,
-version {{ release }}.
+This is the documentation for the LeafLabs Maple boards, version {{
+release }}.
 
 <h2>Read This First</h2>
 
@@ -79,8 +79,10 @@ wiki</a>.
                 Compatibility</a></li>
       </ul>
     </td>
-    <td><p><strong>Peripherals</strong></p>
+    <td><p><strong>Hardware and Peripherals</strong></p>
       <ul>
+        <li><a href="{{ pathto("stm32") }}">STM32</a>
+            {{ content_sep }}</li>
         <li><a href="{{ pathto("adc") }}">ADC</a>
             {{ content_sep }}</li>
         <li><a href="{{ pathto("external-interrupts") }}">External
