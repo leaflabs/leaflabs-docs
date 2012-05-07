@@ -107,3 +107,9 @@ featuring a `detailed discussion on pin capability
 writes.  And finally, `another thread
 <http://forums.leaflabs.com/topic.php?id=895>`_ on the subject which
 summarizes a variety of other threads on doing I/O quickly.
+
+Can I use Maple without Maple IDE?
+----------------------------------
+
+Yes. See :ref:`unix-toolchain` for the details.
+
