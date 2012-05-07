@@ -5,9 +5,10 @@
 Overview
 ========
 
-This page is a general overview of libmaple proper.  It provides a
-general perspective of the library's goals and design.  Examples are
-given from libmaple's sources.
+This page is a general overview of :ref:`libmaple proper
+<libmaple-vs-wirish>`.  It describes libmaple's design, and names
+implementation patterns to look for when using it.  Examples are given
+from the sources.
 
 .. contents:: Contents
    :local:
