@@ -1,8 +1,8 @@
 .. highlight:: c
 .. _libmaple-ring_buffer:
 
-``ring_buffer.h``
-=================
+``<libmaple/ring_buffer.h>``
+============================
 
 Simple circular byte buffer.  This implementation is not thread-safe.
 In particular, none of these functions is guaranteed to be re-entrant.
