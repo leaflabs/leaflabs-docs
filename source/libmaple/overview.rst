@@ -482,10 +482,10 @@ libmaple provides this initialization routine for each peripheral
 turn on the clock to a device, and restore its register values to
 their default settings.  Here are a few examples::
 
-    /* From dma.h */
+    /* From <libmaple/dma.h> */
     void dma_init(dma_dev *dev);
 
-    /* From gpio.h */
+    /* From <libmaple/gpio.h> */
     void gpio_init(gpio_dev *dev);
     void gpio_init_all(void);
 
@@ -497,10 +497,10 @@ used.  These functions are usually called something along the lines of
 ``foo_enable()``, and often take additional arguments which specify a
 particular configuration for the peripheral.  Some examples::
 
-    /* From usart.h */
+    /* From <libmaple/usart.h> */
     void usart_enable(usart_dev *dev);
 
-    /* From i2c.h */
+    /* From <libmaple/i2c.h> */
     void i2c_master_enable(i2c_dev *dev, uint32 flags);
 
 After you've initialized, and potentially enabled, your peripheral, it
