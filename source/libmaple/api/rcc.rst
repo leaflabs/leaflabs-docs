@@ -37,6 +37,8 @@ Functions
 .. doxygenfunction:: rcc_reset_dev
 .. doxygenfunction:: rcc_dev_clk
 .. doxygenfunction:: rcc_set_prescaler
+.. _libmaple-rcc-rcc_configure_pll:
+.. doxygenfunction:: rcc_configure_pll
 
 Register Map Base Pointers
 --------------------------
