@@ -1,8 +1,8 @@
 .. highlight:: c
 .. _libmaple-bitband:
 
-``bitband.h``
-=============
+``<libmaple/bitband.h>``
+========================
 
 Bit-banding support.
 
