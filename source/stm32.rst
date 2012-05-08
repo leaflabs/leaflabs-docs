@@ -1,11 +1,29 @@
 .. _stm32:
 
-Introduction to the STM32
-=========================
+Introduction to STM32
+=====================
 
-.. FIXME [v0.0.13] Stub.
+.. FIXME [v0.0.13] Stub page.
 
-Stub. To fill in:
+Every Maple board is powered by an STM32 microcontroller (the chip
+which controls all of the pins).  Once you're comfortable using your
+Maple, you'll probably start to get curious about what's going on
+under the hood.  This page is a good place to begin.  It includes an
+overview of the STM32, and helps you make sense of the sometimes
+dizzying array of features, libraries, and documentation that are
+available to you.
+
+The world of the STM32 is a big one, and it's only getting bigger.
+With literally thousands of pages of manuals, datasheets, application
+notes, etc. available for every STM32 microcontroller, and a huge
+variety of categories and subcategories of STM32s available to choose
+from, it's easy to get confused or feel daunted about getting started.
+Don't panic!  We've got `your towel
+<http://en.wikipedia.org/wiki/Know_where_one%27s_towel_is#Knowing_where_one.27s_towel_is>`_
+right here.
+
+.. contents:: Contents
+   :local:
 
 .. _stm32-general:
 
@@ -21,6 +39,16 @@ General Information
 - Pointers to ST reference manuals. Note that the appropriate
   reference manual for each board is always documented in that board's
   hardware page.
+
+.. _stm32-series:
+.. _stm32-series-f1-lines:
+
+STM32 Series
+------------
+
+- Describe families, F1 lines, etc.
+
+- Describe how a product name tells you what you need
 
 ST's Documentation
 ------------------
@@ -51,8 +79,8 @@ the) the :ref:`timers <timers>` have capture/compare registers, the
 
 .. _stm32-libmaple-support:
 
-``libmaple``\ 's STM32 support
-------------------------------
+``libmaple`` STM32 support
+--------------------------
 
 - Descriptions of libmaple's present support for the STM32 line
   (i.e. currently performance-line only; update when the F2 branch is
