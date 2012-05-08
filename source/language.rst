@@ -15,7 +15,7 @@ C or C++ programmers who are new to Wiring may wish to skip to the
 .. contents:: Contents
    :local:
 
-.. admonition:: Looking for Something Else? Try these
+.. admonition:: Looking for something else? Try these
 
    - See the :ref:`libraries` for extra built-in libraries.
 
