@@ -1,8 +1,8 @@
 .. highlight:: c
 .. _libmaple-util:
 
-``util.h``
-==========
+``<libmaple/util.h>``
+=====================
 
 .. TODO [0.2.0?] clean this up.
 
@@ -14,13 +14,15 @@ Miscellaneous utility macros and procedures.
 Bit Manipulation
 ----------------
 
-::
+The following macros are useful for bit manipulation.
 
-    #define BIT(shift)                     (1UL << (shift))
-    #define BIT_MASK_SHIFT(mask, shift)    ((mask) << (shift))
-    /** Gets bits m to n of x */
-    #define GET_BITS(x, m, n) ((((uint32)x) << (31 - (n))) >> ((31 - (n)) + (m)))
-    #define IS_POWER_OF_TWO(v)  (v && !(v & (v - 1)))
+**BIT(shift)**: ``1UL << (shift)``
+
+**BIT_MASK_SHIFT(mask, shift)**: ``mask << shift``
+
+**GET_BITS(x, m, n)**: Bits ``m`` to ``n`` of ``x``, right-aligned.
+
+**IS_POWER_OF_TWO(v)**: True iff ``v`` is a power of two (1, 2, 4, etc.)
 
 Failure Routines
 ----------------
