@@ -1,10 +1,11 @@
 .. highlight:: c
 .. _libmaple-iwdg:
 
-``iwdg.h``
-==========
+``<libmaple/iwdg.h>``
+=====================
 
-Independent Watchdog (IWDG) support.
+Independent Watchdog (IWDG) support. The IWDG peripheral is common
+across supported targets, so everything documented here is portable.
 
 .. contents:: Contents
    :local:
@@ -12,19 +13,14 @@ Independent Watchdog (IWDG) support.
 Usage Note
 ----------
 
-To use the independent watchdog, first call :c:func:`iwdg_init()` with
-the appropriate prescaler and IWDG counter reload values for your
-application.  Afterwards, you must periodically call
-:c:func:`iwdg_feed()` before the IWDG counter reaches 0 to reset the
-counter to its reload value.  If you do not, the chip will reset.
+To use the independent watchdog, first call :ref:`iwdg_init()
+<libmaple-iwdg-iwdg_init>` with the appropriate prescaler and IWDG
+counter reload values for your application.  Afterwards, you must
+periodically call :ref:`iwdg_feed() <libmaple-iwdg-iwdg_feed>` before
+the IWDG counter reaches zero to reset the counter to its reload
+value.  If you do not, the chip will reset.
 
 Once started, the independent watchdog cannot be turned off.
-
-Types
------
-
-.. doxygenstruct:: iwdg_reg_map
-.. doxygenenum:: iwdg_prescaler
 
 Devices
 -------
@@ -34,40 +30,55 @@ None at this time.
 Functions
 ---------
 
+.. _libmaple-iwdg-iwdg_init:
 .. doxygenfunction:: iwdg_init
+.. _libmaple-iwdg-iwdg_feed:
 .. doxygenfunction:: iwdg_feed
 
-Register Map Base Pointers
---------------------------
+Types
+-----
+
+.. doxygenenum:: iwdg_prescaler
+
+
+Register Maps
+-------------
+
+The register map is common on all supported targets. The base pointer
+is ``IWDG_BASE``.
 
 .. doxygendefine:: IWDG_BASE
+
+.. doxygenstruct:: iwdg_reg_map
 
 Register Bit Definitions
 ------------------------
 
-Key register
-~~~~~~~~~~~~
+Register bit definitions are common on all supported targets. They are
+given as source code.
 
-.. doxygendefine:: IWDG_KR_UNLOCK
-.. doxygendefine:: IWDG_KR_FEED
-.. doxygendefine:: IWDG_KR_START
+::
 
-Prescaler register
-~~~~~~~~~~~~~~~~~~
+    /* Key register */
 
-.. doxygendefine:: IWDG_PR_DIV_4
-.. doxygendefine:: IWDG_PR_DIV_8
-.. doxygendefine:: IWDG_PR_DIV_16
-.. doxygendefine:: IWDG_PR_DIV_32
-.. doxygendefine:: IWDG_PR_DIV_64
-.. doxygendefine:: IWDG_PR_DIV_128
-.. doxygendefine:: IWDG_PR_DIV_256
+    #define IWDG_KR_UNLOCK                  0x5555
+    #define IWDG_KR_FEED                    0xAAAA
+    #define IWDG_KR_START                   0xCCCC
 
-Status register
-~~~~~~~~~~~~~~~
+    /* Prescaler register */
 
-.. doxygendefine:: IWDG_SR_RVU_BIT
-.. doxygendefine:: IWDG_SR_PVU_BIT
+    #define IWDG_PR_DIV_4                   0x0
+    #define IWDG_PR_DIV_8                   0x1
+    #define IWDG_PR_DIV_16                  0x2
+    #define IWDG_PR_DIV_32                  0x3
+    #define IWDG_PR_DIV_64                  0x4
+    #define IWDG_PR_DIV_128                 0x5
+    #define IWDG_PR_DIV_256                 0x6
 
-.. doxygendefine:: IWDG_SR_RVU
-.. doxygendefine:: IWDG_SR_PVU
+    /* Status register */
+
+    #define IWDG_SR_RVU_BIT                 1
+    #define IWDG_SR_PVU_BIT                 0
+
+    #define IWDG_SR_RVU                     (1U << IWDG_SR_RVU_BIT)
+    #define IWDG_SR_PVU                     (1U << IWDG_SR_PVU_BIT)
