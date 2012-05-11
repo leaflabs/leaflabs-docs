@@ -52,8 +52,8 @@ STM32F2 targets
 Register Bit Definitions
 ------------------------
 
-Register bit definitions vary by target. They are given as source
-code.
+These are given as source code.  Available register bit definitions
+vary by target.
 
 STM32F1 Targets
 ~~~~~~~~~~~~~~~
