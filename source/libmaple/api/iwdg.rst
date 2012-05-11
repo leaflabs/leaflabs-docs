@@ -44,9 +44,6 @@ Types
 Register Maps
 -------------
 
-The register map is common on all supported targets. The base pointer
-is ``IWDG_BASE``.
-
 .. doxygendefine:: IWDG_BASE
 
 .. doxygenstruct:: iwdg_reg_map
@@ -54,8 +51,7 @@ is ``IWDG_BASE``.
 Register Bit Definitions
 ------------------------
 
-Register bit definitions are common on all supported targets. They are
-given as source code.
+These are given as source code.
 
 ::
 
