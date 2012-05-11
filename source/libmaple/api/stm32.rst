@@ -65,6 +65,7 @@ MCU Feature Tests
 The following defines can be used to determine if the target MCU has
 a particular feature.
 
+.. _libmaple-stm32-STM32_HAVE_FSMC:
 .. doxygendefine:: STM32_HAVE_FSMC
 .. doxygendefine:: STM32_HAVE_USB
 
