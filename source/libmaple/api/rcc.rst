@@ -33,6 +33,7 @@ Functions
 ---------
 
 .. doxygenfunction:: rcc_clk_init
+.. _libmaple-rcc-rcc_clk_enable:
 .. doxygenfunction:: rcc_clk_enable
 .. doxygenfunction:: rcc_reset_dev
 .. doxygenfunction:: rcc_dev_clk
