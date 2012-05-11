@@ -20,8 +20,8 @@ Devices
 
 None at this time.
 
-Portable Functions
-------------------
+Functions
+---------
 
 The following functions can be used to portably manipulate Flash memory.
 
