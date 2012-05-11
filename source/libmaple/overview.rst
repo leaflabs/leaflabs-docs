@@ -93,10 +93,11 @@ The rules for device types are:
   ``foo_dev *foo``, you can read and write the BAR register
   ``FOO_BAR`` with ``foo->regs->BAR``.)
 
-- An ``rcc_clk_id`` for the device is available in the ``clk_id``
-  field; this is an opaque type that can be used to uniquely
-  identifies the peripheral. (Given ``foo_dev *foo``, you can check
-  which foo you have by looking at ``foo->clk_id``.)
+- An :ref:`rcc_clk_id <libmaple-rcc-rcc_clk_id>` for the device is
+  available in the ``clk_id`` field; this is an opaque type that can
+  be used to uniquely identifies the peripheral. (Given ``foo_dev
+  *foo``, you can check which foo you have by looking at
+  ``foo->clk_id``.)
 
 - The backend for each supported STM32 series statically initializes
   devices as appropriate, and ensures that the peripheral support
@@ -181,11 +182,11 @@ high- or XL-density STM32F1, as medium- and lower density MCUs don't
 have ADC3.
 
 Note that the structs themselves are static and are exposed only via
-pointers. These pointers are declared in a series-specific ADC header,
-``<series/adc.h>`` which is included by ``<libmaple/adc.h>`` based on
-the MCU you're targeting. (**Never include** ``<series/foo.h>``
-**directly**. Instead, include ``<libmaple/foo.h>`` and let it take
-care of that for you.) On STM32F1, the series ADC header contains the
+pointers.  These pointers are declared in a series-specific ADC
+header, ``<series/adc.h>`` which is included by ``<libmaple/adc.h>``
+based on the MCU you're targeting.  (**Never include <series/foo.h>
+directly**.  Instead, include ``<libmaple/foo.h>`` and let it take
+care of that for you.)  On STM32F1, the series ADC header contains the
 following::
 
     extern const struct adc_dev *ADC1;
@@ -199,8 +200,8 @@ illustrated by the ADC example, the variables for these pointers
 follow the naming scheme used in ST's reference manuals -- the pointer
 to ADC1's ``adc_dev`` is named ``ADC1``, and so on.
 
-The API documentation for the peripherals you're interested in will
-list the available devices on each target.
+The :ref:`API documentation <libmaple-apis>` for the peripherals
+you're interested in will list the available devices on each target.
 
 Using Devices
 ~~~~~~~~~~~~~
@@ -275,16 +276,17 @@ that's all you need to know.
 
 However, if you're targeting multiple series, then this is useful
 because it lets you put the actual sample time for the MCU you're
-targeting into a variable, whose value depends on the target you're
-compiling for. This lets you have a single codebase to test and
-maintain, and lets you add support for a new target by simply adding
-some new data.
+targeting into a variable (or macro, etc.), whose value depends on the
+target you're compiling for. This lets you have a single codebase to
+test and maintain, and lets you add support for a new target by simply
+adding some new data.
 
 To continue the example, one easy way is to pick an ``adc_smp_rate``
 for each of STM32F1 and STM32F2 is with conditional compilation. Using
 the :ref:`STM32_MCU_SERIES <libmaple-stm32-STM32_MCU_SERIES>` define
 from :ref:`libmaple-stm32`, you can write::
 
+    #include <libmaple/adc.h>
     #include <libmaple/stm32.h>
 
     #if STM32_MCU_SERIES == STM32_SERIES_F1
