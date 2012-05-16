@@ -44,12 +44,14 @@ and Breathe).
    - Everyone else, clone without them:
      $ git clone git://github.com/leaflabs/breathe.git
 
-   After that's done, set an environment variable BREATHE_HOME to
-   point to your clone.  Something like this in Bash:
+4. After that's done, set environment variables LIB_MAPLE_HOME to
+   point to libmaple, and BREATHE_HOME to point to Breathe.  Something
+   like this in Bash:
 
-    $ export BREATHE_HOME=/path/to/breathe/repo/
+   $ export LIB_MAPLE_HOME=/path/to/libmaple/repo/
+   $ export BREATHE_HOME=/path/to/breathe/repo/
 
-   (You'll want to put this in your shell startup script.)
+   (You'll want this in your shell startup script.)
 
 Build the Docs
 --------------
