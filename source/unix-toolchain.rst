@@ -75,6 +75,11 @@ connect to serial port devices.
 ``dfu-util`` is a tool from the `OpenMoko`_ project that we use to
 upload programs to the Maple over USB.
 
+.. warning:: Due to firmware bugs in our :ref:`bootloader
+   <bootloader>`, you must use recent versions of ``dfu-util``, or
+   uploads will not work.  ``dfu-util`` versions 0.6 and greater
+   should work.
+
 .. _OpenMoko: http://openmoko.com/
 
 ``openocd`` is a `JTAG
@@ -167,6 +172,11 @@ You will need the following tools\ [#fpackman]_ to get started:
  programs to the Maple over USB.  If you prefer to compile from
  source, OpenMoko provides instructions for `building dfu-util
  <http://wiki.openmoko.org/wiki/Dfu-util#Mac>`_.
+
+ .. warning:: Due to firmware bugs in our :ref:`bootloader
+    <bootloader>`, you must use recent versions of ``dfu-util``, or
+    uploads will not work.  ``dfu-util`` versions 0.6 and greater
+    should work.
 
  If you're in a hurry, you can steal a dfu-util binary from a program
  called `OpenMoko Flasher
