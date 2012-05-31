@@ -1,3 +1,4 @@
+.. FIXME [0.0.13] This doesn't include UART4/5, or USART6
 .. highlight:: cpp
 
 .. _lang-serial:
