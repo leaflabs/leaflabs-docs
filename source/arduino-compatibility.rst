@@ -22,7 +22,7 @@ a different version of `gcc <http://gcc.gnu.org/>`_) is required.
 The compiler for the regular Arduino IDE is the popular `avr-gcc
 <http://www.nongnu.org/avr-libc/>`_ package; the compiler for the
 Maple version of the IDE is CodeSourcery's edition of gcc for the ARM
-EABI target (:command:`arm-non-eabi-gcc`).  A (preliminary) reference
+EABI target (:command:`arm-none-eabi-gcc`).  A (preliminary) reference
 on :ref:`using arm-none-eabi-gcc <arm-gcc>` is available.
 
 The bitwidth of the processor means that the Maple can process 32-bit
