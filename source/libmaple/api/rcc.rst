@@ -78,47 +78,6 @@ sources. Switch the SYSCLK source with :ref:`rcc_switch_sysclk()
 As a special case, you can configure the PLL with a call to
 :ref:`rcc_configure_pll() <libmaple-rcc-rcc_configure_pll>`.
 
-To set SYSCLK to PLL driven by an external oscillator, you can use
-something like this, which is portable except for the initialization
-of ``your_pll_cfg``::
-
-    /* You need to make this point to something valid for your target; see
-     * the documentation for rcc_configure_pll() for more details. */
-    extern rcc_pll_cfg *your_pll_cfg;
-
-    void pll_reconfigure() {
-        /* Turn on HSI using rcc_turn_on_clk() and wait for it to
-         * become ready by busy-waiting on rcc_is_clk_ready().
-         *
-         * Switch to HSI to ensure we're not using the PLL while we
-         * reconfigure it. */
-        rcc_turn_on_clk(RCC_CLK_HSI);
-        while (!rcc_is_clk_ready(RCC_CLK_HSI))
-            ;
-        rcc_switch_sysclk(RCC_CLKSRC_HSI);
-
-        /* Turn off HSE and the PLL, or we can't reconfigure it. */
-        rcc_turn_off_clk(RCC_CLK_PLL);
-        rcc_turn_off_clk(RCC_CLK_HSE);
-
-        /* Reconfigure the PLL. You can also perform any other
-         * prescaler management here. */
-        rcc_configure_pll(your_pll_cfg);
-
-        /* Turn on RCC_CLK_HSE. */
-        rcc_turn_on_clk(RCC_CLK_HSE);
-        while (!rcc_is_clk_ready(RCC_CLK_HSE))
-            ;
-
-        /* Turn on RCC_CLK_PLL. */
-        rcc_turn_on_clk(RCC_CLK_PLL);
-        while (!rcc_is_clk_ready(RCC_CLK_PLL))
-            ;
-
-        /* Finally, switch to the PLL. */
-        rcc_switch_sysclk(RCC_CLKSRC_PLL);
-    }
-
 .. _libmaple-rcc-rcc_clk:
 
 System and Secondary Clock Sources: ``rcc_clk``
@@ -204,8 +163,8 @@ Change the SYSCLK source with ``rcc_switch_sysclk()``.
 
 .. _libmaple-rcc-rcc_configure_pll:
 
-Configuring the PLL
-~~~~~~~~~~~~~~~~~~~
+PLL Configuration
+~~~~~~~~~~~~~~~~~
 
 You can configure the PLL with ``rcc_configure_pll()``.  This takes an
 ``rcc_pll_cfg`` struct as its argument.  Though the definition of
@@ -213,6 +172,7 @@ You can configure the PLL with ``rcc_configure_pll()``.  This takes an
 target-dependent.
 
 .. doxygenstruct:: rcc_pll_cfg
+.. _rcc-rcc_configure_pll:
 .. doxygenfunction:: rcc_configure_pll
 
 The fields in an ``rcc_pll_cfg`` on each target are as follows.
@@ -247,8 +207,8 @@ The ``data`` field must point to a ``struct stm32f2_rcc_pll_data``.
 
 .. _libmaple-rcc-clk-funcs:
 
-System and Secondary Clock Sources
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+System and Secondary Clock Management
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 These functions are useful for managing clocks via their :ref:`rcc_clk
 <libmaple-rcc-rcc_clk>`.
@@ -274,8 +234,8 @@ These functions are useful for managing peripherals via their
 
 .. _libmaple-rcc-prescalers:
 
-Prescalers
-~~~~~~~~~~
+Prescaler Management
+~~~~~~~~~~~~~~~~~~~~
 
 All clock prescalers managed by RCC can be controlled with a single
 function, ``rcc_set_prescaler()``.
@@ -355,5 +315,46 @@ vary by target.
 Deprecated Functionality
 ------------------------
 
+.. _rcc-rcc_clk_init:
 .. doxygenfunction:: stm32f1::rcc_clk_init
 
+To replace a call to ``rcc_clk_init()`` in order to set SYSCLK to PLL
+driven by an external oscillator, you can use something like this,
+which is portable except for the initialization of ``your_pll_cfg``::
+
+    /* You need to make this point to something valid for your target; see
+     * the documentation for rcc_configure_pll() for more details. */
+    extern rcc_pll_cfg *your_pll_cfg;
+
+    void pll_reconfigure() {
+        /* Turn on HSI using rcc_turn_on_clk() and wait for it to
+         * become ready by busy-waiting on rcc_is_clk_ready().
+         *
+         * Switch to HSI to ensure we're not using the PLL while we
+         * reconfigure it. */
+        rcc_turn_on_clk(RCC_CLK_HSI);
+        while (!rcc_is_clk_ready(RCC_CLK_HSI))
+            ;
+        rcc_switch_sysclk(RCC_CLKSRC_HSI);
+
+        /* Turn off HSE and the PLL, or we can't reconfigure it. */
+        rcc_turn_off_clk(RCC_CLK_PLL);
+        rcc_turn_off_clk(RCC_CLK_HSE);
+
+        /* Reconfigure the PLL. You can also perform any other
+         * prescaler management here. */
+        rcc_configure_pll(your_pll_cfg);
+
+        /* Turn on RCC_CLK_HSE. */
+        rcc_turn_on_clk(RCC_CLK_HSE);
+        while (!rcc_is_clk_ready(RCC_CLK_HSE))
+            ;
+
+        /* Turn on RCC_CLK_PLL. */
+        rcc_turn_on_clk(RCC_CLK_PLL);
+        while (!rcc_is_clk_ready(RCC_CLK_PLL))
+            ;
+
+        /* Finally, switch to the PLL. */
+        rcc_switch_sysclk(RCC_CLKSRC_PLL);
+    }
