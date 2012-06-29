@@ -1,8 +1,8 @@
 .. highlight:: c
 .. _libmaple-libmaple:
 
-``libmaple.h``
-==============
+``<libmaple/libmaple.h>``
+=========================
 
 Base include file for libmaple.
 
