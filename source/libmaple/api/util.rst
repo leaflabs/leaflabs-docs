@@ -16,16 +16,17 @@ Bit Manipulation
 
 The following macros are useful for bit manipulation.
 
-**BIT(shift)**: ``1UL << (shift)``
-
-**BIT_MASK_SHIFT(mask, shift)**: ``mask << shift``
-
-**GET_BITS(x, m, n)**: Bits ``m`` to ``n`` of ``x``, right-aligned.
-
-**IS_POWER_OF_TWO(v)**: True iff ``v`` is a power of two (1, 2, 4, etc.)
+.. doxygendefine:: BIT
+.. doxygendefine:: BIT_MASK_SHIFT
+.. doxygendefine:: GET_BITS
+.. doxygendefine:: IS_POWER_OF_TWO
 
 Failure Routines
 ----------------
+
+``throb()`` is called by various routines to throb a built-in
+LED. **Usually, you shouldn't call it yourself**; use something like
+``ASSERT(0)`` (or the libc ``abort()`` function) instead.
 
 .. doxygenfunction:: throb
 
