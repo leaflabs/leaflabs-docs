@@ -14,6 +14,7 @@ Contents in Full
    maple-ide-install
    ide
    unix-toolchain
+   whats-new
 
 .. _index-maple-programming:
 
