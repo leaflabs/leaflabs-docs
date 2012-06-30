@@ -73,7 +73,7 @@ bugs, and reported on the forums.
 Wire
 ----
 
-.. FIXME [0.1.0] Update with hard Wire implementation info
+.. FIXME [0.0.13] Update with crenn's info
 
 We currently provide a soft (bit-banged) implementation of the
 :ref:`Wire <libs-wire>` I2C library.  A hardware version is planned
