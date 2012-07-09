@@ -67,6 +67,8 @@ First, extract all the files in the ZIP file to a suitable location on
 your system (like your Desktop folder).  Next, you have to install
 some drivers.  Sorry!
 
+.. _maple-ide-install-windows-drivers:
+
 .. note:: Note that while these instructions work on Windows XP,
    changes in Windows 7 mean that you won't be able to install the IDE
    without disabling driver signing on your computer.  We're working
