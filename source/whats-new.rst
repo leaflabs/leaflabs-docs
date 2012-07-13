@@ -14,10 +14,10 @@ This page tracks updates to libmaple and MapleIDE.
 v0.0.13
 -------
 
-**General Changes**
-
 .. We started doing this as we updated the docs on 29 Jun 2012, so
 .. updates before then need to be pulled from libmaple's Git logs.
+
+**General Changes**
 
 - Additional STM32 support: for this release, libmaple was taught
   how to target STM32F1 value line (thanks to Anton Eltchaninov) and
@@ -55,7 +55,7 @@ includes explanatory material and usage notes. See
 
 .. FIXME [0.0.13] this is ugly
 
-Changes by header follow.
+Major changes by header follow.
 
 .. list-table::
    :header-rows: 1
