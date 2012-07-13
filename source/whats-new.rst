@@ -38,6 +38,9 @@ v0.0.13
   as ``#include "SPI.h"`` and clashes with :ref:`libmaple-spi` on
   case-insensitive filesystems like OS X's).
 
+- :ref:`Windows instructions <toolchain-win-setup>` for the
+  :ref:`unix-toolchain`.
+
 **Wirish**
 
 - Wire I2C library: New, improved, and more Arduino-compatible
