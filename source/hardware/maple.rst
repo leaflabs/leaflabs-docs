@@ -132,12 +132,12 @@ other supplies power to the analog voltage plane.
 
 These voltage regulators nominally take an input of up to 16V. In
 addition, while the maximum continuous output current for the board is
-250mA, if you are powering the board off higher voltages the amount
-off current it can supply goes down, due to the regulators needing to
-dissipate the extra power. So if you are powering the board off 12V,
-the max current is about 40mA at room temperature. In general (again,
-at room temperature) the max power dissipation (PD) for the chip is
-about .37W, and output current = PD/(Vin-Vout). For exact max current
+250mA, if you are powering the board off higher voltages the current
+it can supply goes down, due to the regulators needing to dissipate
+the extra power. So if you are powering the board off 12V, the max
+current is about 40mA at room temperature. In general (again, at room
+temperature) the max power dissipation (PD) for the chip is about
+.37W, and output current = PD/(Vin-Vout). For exact max current
 calculations, please refer to the datasheet linked above.
 
 If you are planning to draw a lot of current from the Maple board, it
