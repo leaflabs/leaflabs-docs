@@ -22,19 +22,22 @@ update this document.
 Requirements
 ------------
 
-You need a Maple board, a Mini-B USB cable, and root (or
-Administrator) access to your computer. We assume you've had success
-with the IDE on your machine (this is important on Windows, as this
-document doesn't cover :ref:`driver installation
-<maple-ide-install-windows-drivers>`).
+You need:
 
-On Linux and OS X, you need to know how to use a shell and edit your
-shell startup script (.bashrc, .tcshrc, etc.). (The Windows
-instructions are more detailed, since we assume many Windows users
-will be newer to the Unix shell). Some experience using `GCC
-<http://gcc.gnu.org/>`_ and `make
+* Maple board
+* Mini-B USB cable
+* root (or Administrator) access to your computer.
+
+Some experience using `GCC <http://gcc.gnu.org/>`_ and `make
 <http://www.gnu.org/software/make/>`_ is recommended, but is not
 required.
+
+On Linux and OS X, you need to know how to use `bash
+<http://www.gnu.org/software/bash/>`_, and how to edit your .bashrc.
+
+We assume you've had success with the :ref:`Maple IDE <ide>` (this is
+important on Windows, as this document doesn't cover :ref:`driver
+installation <maple-ide-install-windows-drivers>`).
 
 Setup
 -----
