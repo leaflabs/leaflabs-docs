@@ -126,8 +126,7 @@ First, you'll need some tools.
 
   * `PySerial`_ is a Python library for interacting with serial port
     devices. It's needed by our reset script. PySerial can also be
-    installed with `easy_install
-    <http://peak.telecommunity.com/DevCenter/EasyInstall>`_.
+    installed with `easy_install`_.
 
   Optional tools:
 
@@ -283,7 +282,7 @@ First, you'll need some tools. [#fpackman]_
       $ python setup.py build
       $ sudo python setup.py install
 
-  PySerial is also available via ``easy_install``, so if you're
+  PySerial is also available via `easy_install`_, so if you're
   comfortable using that, you could alternatively install it with ::
 
       $ easy_install pyserial
@@ -659,6 +658,7 @@ Let us know what you come up with! Mention `@leaflabs on Twitter
 .. _OpenMoko: http://openmoko.com/
 .. _Git: http://git-scm.com/
 .. _dfu-util: http://wiki.openmoko.org/wiki/Dfu-util
+.. _easy_install: http://packages.python.org/distribute/easy_install.html
 
 .. rubric:: Footnotes
 
