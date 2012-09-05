@@ -336,15 +336,21 @@ notifications about bleeding-edge development.
 
 Advanced users will wish to use a JTAG (or SWD) dongle for uploading
 and debugging their programs. A big advantage to this approach is that
-it lets you use `GDB
-<http://www.gnu.org/software/gdb/documentation/>`_ to single-step
-through your code, inspect variables, etc.
+it lets you use `GDB <http://www.gnu.org/software/gdb/>`_ to
+single-step through your code, inspect variables, etc.
 
 You can build your projects for JTAG or SWD upload with the ``jtag``
-Makefile target. Instead of compiling with ``make``, compile with
-``make jtag``. Then use your method of choice to upload the resulting
-program, which will be in ``build/$BOARD.elf`` in the libmaple
-directory.
+Makefile target. That is, instead of compiling with ``make``, compile
+with ::
+
+  # (This is equivalent to $ MEMORY_TARGET=jtag make)
+  $ make jtag
+
+Then use your favorite JTAG/SWD dongle and driver software to upload
+the resulting program. An `ELF
+<http://en.wikipedia.org/wiki/Executable_and_Linkable_Format>`_
+suitable for upload is in :file:`build/$BOARD.elf`; the raw binary you
+can copy directly to address 0x0 is :file:`build/$BOARD.bin`.
 
 .. warning:: Uploading code built with the ``jtag`` target will
    overwrite the :ref:`bootloader <bootloader>`. This is a good thing
