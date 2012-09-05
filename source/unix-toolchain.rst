@@ -118,11 +118,11 @@ First, you'll need some tools.
   * `Make <http://www.gnu.org/software/make/>`_ is used to direct
     compilation.
 
-  * `Python <http://python.org>`_ is a programming language. Our reset
-    script, which sends control signals to the board which cause it to
-    to reset and enter the :ref:`bootloader <bootloader>`, is written
-    in Python (and works with Python 2 or 3). Most Linux distributions
-    these days include Python by default.
+  * `Python`_ is a programming language. Our reset script, which sends
+    control signals to the board which cause it to to reset and enter
+    the :ref:`bootloader <bootloader>`, is written in Python (and
+    works with Python 2 or 3). Most Linux distributions these days
+    include Python by default.
 
   * `PySerial`_ is a Python library for interacting with serial port
     devices. It's needed by our reset script. PySerial can also be
@@ -654,6 +654,7 @@ Let us know what you come up with! Mention `@leaflabs on Twitter
 #leafblowers IRC channel on `freenode
 <http://freenode.net/irc_servers.shtml>`_, whatever. We love projects!
 
+.. _Python: http://python.org/download/
 .. _PySerial: http://pyserial.sourceforge.net/
 .. _OpenMoko: http://openmoko.com/
 .. _Git: http://git-scm.com/
