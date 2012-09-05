@@ -178,8 +178,13 @@ Then restart udev.
 
   Make sure you are in the plugdev group (e.g. by running ``$ groups``
   and seeing if the output includes "plugdev").  If not, add yourself
-  to it (e.g. ``$ sudo usermod -a -G plugdev <your-username>``, then
-  log out and log back in). Then run::
+  to plugdev with ::
+
+    $ sudo usermod -a -G plugdev $USER
+
+  then log back out and log back in.
+
+  After that's done, restart udev::
 
     $ sudo restart udev
 
