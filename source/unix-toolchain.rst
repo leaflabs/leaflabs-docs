@@ -324,112 +324,148 @@ Great! Test your setup by :ref:`compiling a sample program
 Windows
 ^^^^^^^
 
-These instructions have been tested successfully on Windows XP SP3.
+These instructions have been tested successfully on Windows 7 Home
+Premium.
 
 1. Collect and Install Tools
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You'll need a few software tools for compiling and uploading programs.
+First, you'll need some tools.
 
-* `Git`_, a versioning system we use for :ref:`libmaple`.  Install Git
-  using the wonderful `Windows guide on GitHub
-  <https://help.github.com/articles/set-up-git#platform-windows>`_.
+* `GitHub for Windows <http://windows.github.com/>`_: this is a GUI
+  for `Git`_, the version control system we use for :ref:`libmaple`.
 
-  .. note:: These instructions use Git Bash, the command-line
-            interface to Git on Windows. You can use the GitHub for
-            Windows application instead, but we haven't tried.
+  If you don't have one, you need to sign up for a (free) `GitHub
+  account <https://github.com/signup/free>`_.
 
-* `Install Python <http://python.org/download>`_.  Choose the latest
-  **2.7.x version**; Python 3 might work, but it's not tested.
+  .. note:: If you use Git from the command line, you can clone
+            libmaple with::
 
-* `Install PySerial <http://pypi.python.org/pypi/pyserial>`_.  Choose
-  the latest **pyserial-x.y-win32.exe version** (or the "py3k" version
-  if you installed Python 3).
+              $ git clone git://github.com/leaflabs/libmaple.git
+
+            If you go this route, you don't need a GitHub account.
+
+* `Python`_: choose the **latest 2.7.x version**. (Python 3 works, but
+  you're on your own.)
+
+* `PySerial`_:  Choose the latest **pyserial-x.y-win32.exe version**.
 
 2. Fetch ``libmaple`` and Compiler Toolchain
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-First, make a Git clone of :ref:`libmaple`. Do this by running Git
-Bash (which you installed in step 1), typing the following line, and
-hitting return. (Do not type the "$".  We put these in to remind you
-that lines like this are for the Git Bash prompt). ::
+First, make a Git clone of the :ref:`libmaple` repository with the
+following steps:
 
-    $ git clone git://github.com/leaflabs/libmaple.git
+1. **Run GitHub for Windows**, and **sign in** using your GitHub
+   account.
+2. **Visit** `libmaple's GitHub page
+   <https://github.com/leaflabs/libmaple/>`_, and **sign in** to
+   GitHub in your web browser as well.
+3. **Click on the "Clone in Windows" button** on libmaple's GitHub
+   page, which looks like this:
 
-.. note:: Keep the Git Bash window open as you go.
+     .. figure:: /_static/img/github-clone-in-windows.png
 
-You now have the libmaple repository in the folder ``C:\Documents and
-Settings\<Your Name>``.
+   Your browser may prompt you about what to do when you click the
+   "Clone in Windows" button. Choose the option that launches the
+   GitHub for Windows application.
 
-Next, download the `compilers and other tools
-<http://static.leaflabs.com/pub/codesourcery/gcc-arm-none-eabi-latest-win32.tar.gz>`_
-you'll use to build and upload your programs.  When the download
-finishes, move the file into the libmaple repository's folder. Then
-type these two lines into the Git Bash prompt to go to the libmaple
-folder and extract the archive::
+Next, you'll need to get some cross-compilers and other tools for
+building and uploading your programs:
 
-    $ cd libmaple
-    $ tar xzf gcc-arm-none-eabi-latest-win32.tar.gz
+- `Download a .zip of the latest tools
+  <http://static.leaflabs.com/pub/codesourcery/gcc-arm-none-eabi-latest-win32.zip>`_.
 
-This will create a folder named "arm" inside the libmaple folder.
+- Extract the .zip, and **move the extracted "arm" folder into the
+  libmaple repository's folder**.
 
-You'll now configure your system to use these tools. Type the
-following lines into Git Bash.
+  You can open the libmaple repository folder by right-clicking
+  libmaple in the main GitHub for Windows screen and choosing "open in
+  explorer":
 
-.. warning:: If you've installed Bash on your computer before starting
-   this guide, and have a .bashrc already, typing these lines will
-   overwrite it. If that's the case, we assume you know what you're
-   doing, and can modify your .bashrc appropriately.
+  .. figure:: /_static/img/win7-github-open-in-explorer.png
+     :align: center
 
-   If you're using Bash for the first time, don't worry about this
-   warning.
-
-::
-
-    $ cat >~/.bashrc <<EOF
-    > export PATH=\$PATH:~/libmaple/arm/bin/
-    > EOF
-
-.. note:: The "> " at the beginning of the second and third lines will
-   appear automatically.
-
-   In case that's hard to read, the part of the first line between
-   ``cat`` and ``bashrc`` is these five characters: space ( ), right
-   angle bracket (>), tilde (~), forward slash (/), and period (.).
-
-For reference, here's a screenshot of what your Git Bash window should
-look like at this point (the green prompts and output after the ``git
-clone`` line will be slightly different):
-
-.. _toolchain-git-bash-screenshot:
-
-.. figure:: /_static/img/winxp-git-bash-screenshot.png
-   :align: center
-   :alt: Git Bash screenshot
-
-3. Check Your Setup
+3. Update your PATH
 ~~~~~~~~~~~~~~~~~~~
 
-Let's check that you completed the previous step correctly.  If you
-did, there will be a file called ".bashrc" (the period is supposed to
-be there) in the folder ``Documents and Settings\<Your Name>\``.  Open
-this file in Notepad by right clicking on it and selecting "Open
-With...", like so:
+You'll next need to configure your system to use the various tools
+you've downloaded and installed. Do that by adding the Python and
+``arm\bin`` directories to your PATH environment variable.
 
-.. figure:: /_static/img/winxp-open-bashrc-with.png
-   :align: center
-   :alt: Open .bashrc With
+If you've never set environment variables before, this section
+explains what to do.
 
-Choose "Notepad" from the resulting pop-up window, and click "OK".
-The Notepad window should look like this:
+**Add Python to your PATH**:
 
-.. figure:: /_static/img/winxp-bashrc-notepad.png
-   :align: center
-   :alt: .bashrc in Notepad
+  Start by navigating to the folder where Python is installed on your
+  system (this is probably ``C:\Python27``). Right click on the folder
+  address, then choose "Copy address as text":
 
-The little box at the end of the line is supposed to be there. Close
-the Notepad window (don't save any changes you may have accidentally
-made).
+  .. figure:: /_static/img/win7-copy-python-address.png
+     :align: center
+
+  Next, open your environment variables window: from the Start/Windows
+  menu, right click on Computer, then choose Properties > Advanced
+  System Settings > Environment Variables. Under the "User variables
+  for YOUR_USERNAME", look for PATH.
+
+  - If PATH is missing from the list, click "New...".
+
+    Under "Variable Name", write PATH. Under "Variable value", paste
+    the Python address you just copied, and click OK. The result looks
+    like this:
+
+    .. figure:: /_static/img/win7-python-path.png
+       :align: center
+
+  - If PATH is present in the list, click on it and choose "Edit...".
+
+    Go to the end of the "Variable value:" text box, type a semicolon
+    (the ``;`` character), and then paste the path you just
+    copied. Click OK.
+
+  Test that this worked by running the Git Shell program that came with
+  GitHub for Windows, then running ``python`` at the command prompt. You
+  should get a Python interpreter that looks like this:
+
+  .. figure:: /_static/img/win7-python-prompt.png
+     :align: center
+
+  If that worked, then close the window.
+
+**Add compiler toolchain to your PATH**:
+
+  Do this by adding the ``arm\bin`` directory (earlier instructions
+  had you move ``arm`` to the libmaple repository folder) to your PATH
+  environment variable in the same way you added Python.
+
+  Copy the address of the ``arm\bin`` folder by right-clicking on it
+  after navigating to it:
+
+  .. figure:: /_static/img/win7-copy-arm-bin-address.png
+     :align: center
+
+  The PATH environment variable should exist from when you added
+  Python to it, so make sure you choose "Edit..."  from the
+  environment variables window. Then paste the ``arm\bin`` address you
+  copied after typing a semicolon. The final result will look
+  something like this:
+
+  .. figure:: /_static/img/win7-python-arm-bin-path.png
+     :align: center
+
+  Click OK.
+
+Once that's done, **open a new Git Shell**, then type this at the
+prompt, and hit return::
+
+  cd libmaple
+
+.. warning:: You must open a new Git Shell window. If you use a shell
+             that's already open, then the changes to PATH you just
+             made won't be available, and the instructions in the next
+             section won't work.
 
 So far, so good?
 ~~~~~~~~~~~~~~~~
@@ -441,36 +477,19 @@ Great! Go on to the next section, where you'll compile a program.
 Test compilation
 ----------------
 
-Get back into the libmaple directory (this tutorial assumes you put it
-in :file:`libmaple` under your home directory) and test that you've
-installed all the compilation tools correctly::
+Test that you've installed all the compilation tools correctly by
+running these commands in your shell::
 
-  # Note: Use "cs-make" instead of "make" on Windows
-  $ cd ~/libmaple
+  # Windows users:
+  #   - Type "cs-make" instead of "make"
+  #   - Don't type the "$", just the parts that come after
+  #
+  # Linux and OS X users:
+  #   - First get to libmaple with $ cd libmaple
+
   $ cp main.cpp.example main.cpp
   $ make clean
   $ make
-
-.. note:: These instructions are for the Maple.  If you're compiling
-   for another board, you'll need to set a ``BOARD`` environment
-   variable appropriately.  For example, to compile for Maple Mini (in
-   Bash), run::
-
-     $ export BOARD=maple_mini
-     $ make
-
-   You can also use the following, but you'll need to write the
-   ``BOARD=maple_mini`` part every time you call ``make`` (for ``make
-   install``, etc.)::
-
-     $ BOARD=maple_mini make
-
-   To get a list of all boards, run ::
-
-     $ make list-boards
-
-   To make this setting permanent, put the ``export BOARD=maple_mini``
-   line in your .bashrc.
 
 If all goes well, you should see a bunch of output, then something
 like this::
@@ -479,10 +498,93 @@ like this::
      text          data     bss     dec     hex filename
     13164          1704     552   15420    3c3c build/maple.elf
 
-The ``dec`` field at the end gives the total program size in
-bytes. The long table of object files above the ``Final Size`` shows
-similar information on a per-file basis. You can use it to help slim
-down programs that use too much space.
+Hurray! You've just compiled your first program for Maple.
+
+**Important: if you're not using Maple (Maple Mini, etc.), make sure
+to read the following note before moving on**.
+
+You can now move on to :ref:`uploading a program <toolchain-upload>`,
+or take a quick detour to learn :ref:`more about the build output
+<toolchain-build-info>`.
+
+.. _toolchain-setting-board:
+
+.. note:: This tutorial assumes you're using a Maple.  If you're
+   compiling for another board, you'll need to set a ``BOARD``
+   environment variable appropriately.
+
+   To get a list of values for ``BOARD``, run ::
+
+     $ make list-boards
+
+   For example, to compile for Maple Mini:
+
+   * On OS X or Linux, run::
+
+      $ export BOARD=maple_mini
+      $ make
+
+   * On Windows, set a new environment variable named ``BOARD`` to
+     value ``maple_mini``, then open a new Git Shell, and run ``cd
+     libmaple`` followed by ``cs-make`` as explained above.
+
+   You can check that this worked by making sure that the final
+   program file is named ``build/maple_mini.elf`` instead of
+   ``maple.elf``::
+
+     Final Size:
+        text       data     bss     dec     hex filename
+       16848       2696     704   20248    4f18 build/maple_mini.elf
+
+   Other notes for OS X and Linux:
+
+   - You can also use the following, but you'll need to write the
+     ``BOARD=maple_mini`` part every time you call ``make`` (for
+     ``make install``, etc.)::
+
+       $ BOARD=maple_mini make
+
+   - To make the board setting permanent, add this line to your
+     .bashrc::
+
+       export BOARD=maple_mini
+
+.. warning:: You must start from a clean build after each time you
+   change ``BOARD`` (advanced users: or ``MEMORY_TARGET``). For
+   example, if you compile a program for Maple, then you want to
+   compile another program for Maple Mini, you must run ``$ make
+   clean`` **before** you compile the second program. If you do not,
+   you will experience strange errors.
+
+.. _toolchain-build-info:
+
+Notes about the ``libmaple`` build
+----------------------------------
+
+These are just some miscellaneous notes that are good to know. Feel
+free to skip reading this section.
+
+- The ``dec`` field at the end under ``Final Size:`` gives the total
+  program size in bytes.  The ``text``, ``data``, and ``bss`` fields
+  respectively break down the size of the program into `code
+  <http://en.wikipedia.org/wiki/Code_segment>`_, `initialized data
+  <http://en.wikipedia.org/wiki/Data_segment>`_, and `zero-valued data
+  <http://en.wikipedia.org/wiki/.bss>`_.
+
+- The long list of object files above the ``Final Size`` shows similar
+  information on a per-file basis. You can use it to help slim down
+  programs that use too much space.
+
+- ``build/$BOARD.elf`` is the final build result (where ``BOARD`` is
+  ``maple``, ``maple_mini``, etc. :ref:`depending on your build
+  <toolchain-setting-board>`).
+
+- There are other files under ``build`` you may be interested in, like
+  disassembly and map files.
+
+- If you want quicker build times, you should check out our blog post,
+  `Making libmaple compile faster
+  <http://leaflabs.com/2012/08/2549/>`_.
 
 .. _toolchain-upload:
 
@@ -491,13 +593,20 @@ Upload a program
 
 Let's blow away the little example program and upload the interactive
 test session to your Maple.  This will let you interact with the Maple
-over a :ref:`USB serial port <usb>`. If you're on Linux, then before
-executing ``make install``, you'll want to have the udev rules setup
-:ref:`as described above <toolchain-udev>`.
+over a :ref:`USB serial port <usb>`.
 
-Plug in your Maple using the Mini-B USB cable, then run ::
+* Linux: you need udev rules set up :ref:`as described above
+  <toolchain-udev>`.
 
-  $ cd ~/libmaple
+* Windows: you need to :ref:`install the Maple's device drivers
+  <maple-ide-install-windows-drivers>`.
+
+* OS X: everything Just Works for you. Aren't you special?
+
+Plug in your Maple using a Mini-B USB cable, then run ::
+
+  # Window users: as usual, use cs-make instead of make.
+
   $ cp examples/test-session.cpp main.cpp
   $ make clean
   $ make
@@ -514,11 +623,14 @@ friend.
 Communicate over USB-Serial
 ---------------------------
 
-Now let's try out the interactive test session.  The serial port
-device file will look something like :file:`/dev/ttyACMXXX` on Linux,
-:file:`/dev/tty.usbmodemXXX` on OS X, or :file:`COMx` on Windows, but
-``XXX`` will vary depending on your system.  Try using one of these to
-find out which it is::
+Now let's try out the interactive test session.  You need to connect
+to the board's serial port device file.
+
+* Linux: this looks like :file:`/dev/ttyACM*`
+* OS X: it looks like :file:`/dev/tty.usbmodem*`
+* Windows: it will be :file:`COMx`, where ``x`` is some number.
+
+Try using one of these to find out which it is::
 
   # Linux
   $ ls /dev/ttyACM*
@@ -537,11 +649,28 @@ To open up a session on Linux or OS X, run ::
 IDE's serial console or `PuTTY
 <http://www.chiark.greenend.org.uk/~sgtatham/putty/>`_.)
 
-If the interactive test program built and uploaded correctly,
-``screen`` won't report any errors, and will present you an empty
-terminal.  Your board is now waiting for you to send it a command.
-Type ``h`` to print a list of commands which demonstrate various
-features; type any command's letter to run it.
+``screen`` will present you an empty terminal.  Your board is waiting
+for you to send it a command.  Type ``h`` to print a list of commands;
+type any command's letter to run it.
+
+.. highlight:: none
+
+Example output (for Maple)::
+
+    > u
+    Hello World!
+    > b
+    Board information
+    =================
+    * Clock speed (MHz): 72
+    * BOARD_LED_PIN: 13
+    * BOARD_BUTTON_PIN: 38
+    * GPIO information (BOARD_NR_GPIO_PINS = 44):
+            ADC pins (15): 0, 1, 2, 3, 10, 11, 12, 15, 16, 17, 18, 19, 20, 27, 28
+            PWM pins (15): 0, 1, 2, 3, 5, 6, 7, 8, 9, 11, 12, 14, 24, 27, 28
+            Used pins (7): 13, 38, 39, 40, 41, 42, 43``
+
+.. highlight:: sh
 
 To exit the screen session, type :kbd:`C-a k` (control-a k) on Linux,
 or :kbd:`C-a C-\\` (Control-a, followed by Control-backslash) on OS X,
@@ -630,7 +759,7 @@ through your code, inspect variables, etc.
 You can build your projects for JTAG or SWD upload with the ``jtag``
 Makefile target. Instead of compiling with ``make``, compile with
 ``make jtag``. Then use your method of choice to upload the resulting
-program, which will be in ``build/<your-board>.elf`` in the libmaple
+program, which will be in ``build/$BOARD.elf`` in the libmaple
 directory.
 
 .. warning:: Uploading code built with the ``jtag`` target will
