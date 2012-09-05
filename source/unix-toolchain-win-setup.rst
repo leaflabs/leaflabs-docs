@@ -146,8 +146,11 @@ explains what to do.
 
   Click OK.
 
-Once that's done, **open a new Git Shell**, then type this at the
-prompt, and hit return::
+So far, so good?
+----------------
+
+Great! Open a new Git Shell, then type this at the prompt and hit
+return to get to the libmaple directory::
 
   cd libmaple
 
@@ -156,7 +159,5 @@ prompt, and hit return::
              made won't be available, and the instructions in the next
              section won't work.
 
-So far, so good?
-----------------
-
-Great! Go on to the next section, where you'll compile a program.
+Now you're ready to move on by :ref:`compiling a sample program
+<toolchain-test>`.
