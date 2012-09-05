@@ -6,7 +6,9 @@ Unix Toolchain OS X Setup
 =========================
 
 This page contains instructions for setting up an OS X computer for
-use with the :ref:`Unix toolchain <unix-toolchain>`.
+use with the :ref:`Unix toolchain <unix-toolchain>`. (Setup
+instructions for :ref:`other operating systems <toolchain-setup>` are
+also available.)
 
 These instructions have been tested successfully on OS X 10.6.4 and
 10.8.1.

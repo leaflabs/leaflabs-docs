@@ -6,7 +6,9 @@ Unix Toolchain Windows Setup
 ============================
 
 This page contains instructions for setting up a Windows computer for
-use with the :ref:`Unix toolchain <unix-toolchain>`.
+use with the :ref:`Unix toolchain <unix-toolchain>`.  (Setup
+instructions for :ref:`other operating systems <toolchain-setup>` are
+also available.)
 
 These instructions have been tested successfully on Windows 7 Home
 Premium.

@@ -6,7 +6,9 @@ Unix Toolchain Linux Setup
 ==========================
 
 This page contains instructions for setting up a Linux computer for
-use with the :ref:`Unix toolchain <unix-toolchain>`.
+use with the :ref:`Unix toolchain <unix-toolchain>`. (Setup
+instructions for :ref:`other operating systems <toolchain-setup>` are
+also available.)
 
 These instructions have been tested successfully on:
 

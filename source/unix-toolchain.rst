@@ -36,6 +36,7 @@ required.
 .. _toolchain-linux-setup:
 .. _toolchain-osx-setup:
 .. _toolchain-win-setup:
+.. _toolchain-setup:
 
 Setup
 -----
