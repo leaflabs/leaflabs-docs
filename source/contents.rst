@@ -14,6 +14,9 @@ Contents in Full
    maple-ide-install
    ide
    unix-toolchain
+   unix-toolchain-linux-setup
+   unix-toolchain-osx-setup
+   unix-toolchain-win-setup
    whats-new
 
 .. _index-maple-programming:
