@@ -14,6 +14,7 @@ These instructions have been tested successfully on:
 
 - Ubuntu 10.04 and 12.04 (32- and 64-bit)
 - Fedora 17 (64-bit)
+- Debian Wheezy 64-bit
 
 Generic instructions for other distributions are also provided. Please
 `contact`_ us with any updates for distros not already covered!
@@ -150,7 +151,7 @@ From the libmaple directory, copy our udev rules [#fudev]_ to
 
 Then restart udev.
 
-**Debian-based distros**:
+**Ubuntu (NOT Debian)**:
 
   Make sure you are in the plugdev group (e.g. by running ``$ groups``
   and seeing if the output includes "plugdev").  If not, add yourself
@@ -158,11 +159,23 @@ Then restart udev.
 
     $ sudo usermod -a -G plugdev $USER
 
-  then log back out and log back in.
+  then log out and log back in.
 
   After that's done, restart udev::
 
     $ sudo restart udev
+
+**Debian (NOT Ubuntu)**:
+
+  Make sure you're in the dialout group. If not, add yourself with ::
+
+    $ sudo usermod -a -G dialout $USER
+
+  then log out and log back in.
+
+  After that's done, restart udev::
+
+    $ sudo /etc/init.d/udev restart
 
 **Red Hat-based distros**:
 
@@ -185,4 +198,3 @@ Great! Move on by :ref:`compiling a sample program <toolchain-test>`.
    based on its vendor and product IDs, mounts it to
    :file:`/dev/maple`, and (for Debian-based distros) grants
    read/write permissions to the ``plugdev`` group.
-
