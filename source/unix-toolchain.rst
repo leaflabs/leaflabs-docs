@@ -207,7 +207,8 @@ Great! Test your setup by :ref:`compiling a sample program
 OS X
 ^^^^
 
-These instructions have been tested successfully on OS X 10.6.4.
+These instructions have been tested successfully on OS X 10.6.4 and
+10.8.1.
 
 1. Collect and Install Tools
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
