@@ -30,9 +30,9 @@ Wiring Diagram
    :align: center
    :alt: JTAG wiring diagram
    :width: 7.4in
+   :target: _images/jtag-wiring.png
 
-   JTAG wiring diagram (`large version
-   <http://leaflabs.com/wp-content/uploads/2010/11/maple-jtagadapter.png>`_)
+   JTAG wiring diagram (`large version <_images/jtag-wiring.png>`_)
    to connect a standard 20-pin ARM JTAG device to the 8-pin JTAG port
    on the Maple.
 
