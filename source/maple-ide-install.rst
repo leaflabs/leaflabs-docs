@@ -27,8 +27,10 @@ Choose the correct version for your operating system:
      - Status
    * - `Windows XP <http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.12-windowsxp32.zip>`_
      - Tested on 32-bit Windows XP
-   * - `Linux <http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.12-linux32.tgz>`_
+   * - `Linux 32-bit <http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.12-linux32.tgz>`_
      - Tested on Ubuntu 10.04 (32-bit)
+   * - `Linux 64-bit <http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.12-linux64.tgz>`_
+     - Tested on Debian Wheezy (64-bit) and Mint 14.1 (64-bit)
    * - `Mac OS X <http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.12-macosx-10_6.dmg>`_
      - Tested on Snow Leopard (10.6)
 
@@ -128,21 +130,46 @@ directory or desktop).
 Make sure you have a Java runtime (JRE) installed; if you can run
 :command:`java` from the shell, you should be fine.
 
+On *64-bit distros only*, you will also need to install some 32-bit libraries
+needed by the LeafLabs-supported :ref:`ARM GCC toolchain <arm-gcc>` with ::
+
+    # 64-bit systems only!
+    $ sudo apt-get install ia32-libs
+
+You may also need to remove `brltty <http://mielke.cc/brltty/>`_
+(if it is installed) with ::
+
+    # Optional
+    $ sudo apt-get remove brltty
+
+Brltty provides braille access to the console.  It has been reported
+to cause conflicts with Maple.
+
 Next, run the script :file:`install-udev-rules.sh` in the extracted
 IDE directory.  It will ask for root permissions (you will be prompted
 with something along the lines of ``[sudo] password for
 <username>:``).  You now need to restart udev::
 
-  $ sudo restart udev
+    # For upstart distros like Ubuntu
+    $ sudo restart udev
+    
+    # For SysV init distros like Debian
+    $ sudo /etc/init.d/udev restart
+    
+    # For Red Hat distros like Fedora
+    $ udevadm control --reload-rules
 
-This will grant members of the group ``plugdev`` read/write access to
-Maple devices over USB.  Make sure that you are in that group by
-running ``$ sudo adduser <your username> plugdev`` (which will ensure
-access to the Maple, but may report that you are already a member of
-that group).  (For more information on why this is part of the install
-process, see the :ref:`Unix toolchain quickstart <toolchain-udev>`).
+This will grant members of the group ``plugdev`` read/write access to Maple
+devices over USB.  For Debian (and perhaps some versions of Ubuntu and Mint),
+you want to be in the ``dialout`` group.  It's easy to find out: just ``ls -l
+/dev/ttyACM0`` with the Maple plugged in and see which group owns the device.
+Make sure that you are in the appropriate group by running, eg, ``$ sudo
+adduser <your_username> plugdev`` (which will ensure access to the Maple, but
+may report that you are already a member of that group).  (For more information
+on why this is part of the install process, see the :ref:`Unix toolchain
+quickstart <toolchain-udev>`).
 
-To run the Maple IDE, run :command:`maple-ide` from the shell, or
+To run the Maple IDE, run :command:`./maple-ide` from the shell, or
 double-click on it if your window system supports it.
 
 Feel free to put the IDE directory wherever you want.  As long as you
