@@ -155,9 +155,6 @@ with something along the lines of ``[sudo] password for
     
     # For SysV init distros like Debian
     $ sudo /etc/init.d/udev restart
-    
-    # For Red Hat distros like Fedora
-    $ udevadm control --reload-rules
 
 This will grant members of the group ``plugdev`` read/write access to Maple
 devices over USB.  For Debian (and perhaps some versions of Ubuntu and Mint),
