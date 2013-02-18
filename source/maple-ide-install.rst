@@ -145,6 +145,10 @@ You may also need to remove `brltty <http://mielke.cc/brltty/>`_
 Brltty provides braille access to the console.  It has been reported
 to cause conflicts with Maple.
 
+For some non-Debian distributions, you may additionally need to install
+`libusb`.  Specifically, for 64-bit ArchLinux you need `lib32-libusb` and
+`lib32-libusb-compat`.
+
 Next, run the script :file:`install-udev-rules.sh` in the extracted
 IDE directory.  It will ask for root permissions (you will be prompted
 with something along the lines of ``[sudo] password for
