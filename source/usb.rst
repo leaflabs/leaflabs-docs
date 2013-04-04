@@ -41,9 +41,9 @@ Recommended Reading
 * `USB Glossary of Terms <http://belcarra.com/usb_glossary.html>`_
 * ST documentation:
     * Reference Manual `RM0008
-      <http://www.st.com/stonline/products/literature/rm/13902.pdf>`_
+      <http://www.st.com/web/en/resource/technical/document/reference_manual/CD00171190.pdf>`_
       (PDF), Chapter 23, "Universal serial bus full-speed device
       interface"
-    * `Programming Manual
-      <http://www.st.com/stonline/products/literature/pm/15491.pdf>`_
+    * Programming Manual `PM0056
+      <http://www.st.com/st-web-ui/static/active/en/resource/technical/document/programming_manual/CD00228163.pdf>`_
       (PDF; assembly language and register reference)
