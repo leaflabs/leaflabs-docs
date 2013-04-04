@@ -93,10 +93,10 @@ Recommended Reading
 * ST Documentation for the STM32F103 series of microcontrollers:
 
   * `Reference Manual RM0008
-    <http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/REFERENCE_MANUAL/CD00171190.pdf>`_
+    <http://www.st.com/web/en/resource/technical/document/reference_manual/CD00171190.pdf>`_
     (PDF); general, definitive resource for STM32F1 line.
   * `Programming Manual PM0056
-    <http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/PROGRAMMING_MANUAL/CD00228163.pdf>`_
+    <http://www.st.com/st-web-ui/static/active/en/resource/technical/document/programming_manual/CD00228163.pdf>`_
     (PDF); assembly language and register reference.
 
 .. rubric:: Footnotes
