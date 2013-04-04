@@ -72,6 +72,6 @@ Recommended Reading
 
 * `I2C Bus <http://www.i2c-bus.org/>`_
 * `Wikipedia: I2C <http://en.wikipedia.org/wiki/I%C2%B2C>`_
-* `Arduino I2C/TWI reference <http://www.arduino.cc/playground/Learning/I2C>`_
-* ST `Application Note on Advanced I2C Usage
-  <http://www.st.com/stonline/products/literature/an/15021.pdf>`_ (PDF)
+* `Arduino I2C/TWI reference <http://www.arduino.cc/en/Reference/Wire>`_
+* ST `Application note STM32F10xxx I2C optimized examples
+  <http://www.st.com/st-web-ui/static/active/en/resource/technical/document/application_note/CD00209826.pdf>`_ (PDF)
