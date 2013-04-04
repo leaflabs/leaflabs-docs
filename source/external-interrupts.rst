@@ -53,7 +53,7 @@ Recommended Reading
 -------------------
 
 * ST manual `RM0008
-  <http://www.st.com/stonline/products/literature/rm/13902.pdf>`_
+  <http://www.st.com/web/en/resource/technical/document/reference_manual/CD00171190.pdf>`_
   (PDF), Chapter 9, "General-purpose and alternate-function I/Os", and
   Chapter 10, "Interrupts and Events".
 
