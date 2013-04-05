@@ -18,13 +18,13 @@ Recommended Reading
   <http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus>`_
 
 * `Arduino reference on SPI
-  <http://www.arduino.cc/playground/Code/Spi>`_
+  <http://arduino.cc/en/Reference/SPI>`_
 
-* `Hardcore SPI on Arduino <http://klk64.com/arduino-spi/>`_ by kik64
+* `Hardcore SPI on Arduino <http://web.archive.org/web/20100522034122/http://klk64.com/arduino-spi/>`_ by kik64
 
 * ST Documentation:
 
   * Reference Manual `RM0008
-    <http://www.st.com/stonline/products/literature/rm/13902.pdf>`_
+    <http://www.st.com/web/en/resource/technical/document/reference_manual/CD00171190.pdf>`_
     (PDF), Chapter 25, "Serial Peripheral Interface"
 

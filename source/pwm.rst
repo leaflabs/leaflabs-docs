@@ -96,8 +96,8 @@ Recommended Reading
 * `Secrets of Arduino PWM
   <http://www.arcfn.com/2009/07/secrets-of-arduino-pwm.html>`_ by Ken
   Shirriff
-* `So You Want To Use PWM, Eh? <http://www.arcfn.com/2009/07/secrets-of-arduino-pwm.html>`_ at Non-Lexical Vocables
+* `So You Want To Use PWM, Eh? <http://www.nlvocables.com/blog/?p=188>`_ at Non-Lexical Vocables
 * STMicro documentation for STM32F103RB microcontroller:
 
-  * `Datasheet <http://www.st.com/stonline/products/literature/ds/13587.pdf>`_ (pdf)
-  * `Reference Manual <http://www.st.com/stonline/products/literature/rm/13902.pdf>`_ (pdf)
+  * `Datasheet <http://www.st.com/web/en/resource/technical/document/datasheet/CD00161566.pdf>`_ (pdf)
+  * `Reference Manual <http://www.st.com/st-web-ui/static/active/en/resource/technical/document/programming_manual/CD00228163.pdf>`_ (pdf)
