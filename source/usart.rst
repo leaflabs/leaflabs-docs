@@ -55,7 +55,7 @@ Recommended Reading
 * `Arduino Serial reference
   <http://arduino.cc/en/Reference/Serial>`_
 * ST `Reference Manual RM0008
-  <http://www.st.com/stonline/products/literature/rm/13902.pdf>`_
+  <http://www.st.com/web/en/resource/technical/document/reference_manual/CD00171190.pdf>`_
   (PDF), Chapter 27.
 * `Serial and UART Tutorial
   <http://www.freebsd.org/doc/en/articles/serial-uart/>`_ (written for
