@@ -21,12 +21,11 @@ Collect and Install Tools
 
 First, you'll need some tools. [#fpackman]_
 
-* `XCode <http://developer.apple.com/technologies/xcode.html>`_:
-  Provides compilers and other basic tools of the trade.  XCode was
-  once free of charge, but Apple has since begun charging for it. If
-  you'd rather not pay, you can probably get by with just a `make
-  <http://www.gnu.org/software/make/>`_ binary, but you're on your
-  own.
+* `XCode <https://developer.apple.com/xcode/>`_: Provides compilers
+  and other basic tools of the trade.  XCode seems to only be available for
+  those with Apple IDs through the Mac App Store. If you'd rather not go
+  through that mechanism, you can probably get by with just a `make
+  <http://www.gnu.org/software/make/>`_ binary, but you're on your own.
 
 * `Git`_: All of our code is tracked by a distributed versioning
   system called Git. A `Mac installer
