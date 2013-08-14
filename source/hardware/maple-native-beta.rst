@@ -15,7 +15,7 @@ change slightly between now and the final Maple Native release.
 Technical Specifications
 ------------------------
 
-* MCU: `STM32F103ZET6 <maple-native-b-stdocs>`_, a 32-bit ARM Cortex M3
+* MCU: `STM32F103ZET6 <maple-native-b-stdocs>`, a 32-bit ARM Cortex M3
   microprocessor.
 * Clock Speed: **72 MHz**
 * **512 KB Flash**, **64 KB SRAM** (on-chip), **1 MB SRAM** (external)
