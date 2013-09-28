@@ -141,9 +141,9 @@ anything in ``loop()``. ::
         timer.setPeriod(LED_RATE); // in microseconds
 
         // Set up an interrupt on channel 1
-        timer.setChannel1Mode(TIMER_OUTPUT_COMPARE);
+        timer.setMode(TIMER_CH1, TIMER_OUTPUT_COMPARE);
         timer.setCompare(TIMER_CH1, 1);  // Interrupt 1 count after each update
-        timer.attachCompare1Interrupt(handler_led);
+        timer.attachInterrupt(1, handler_led);
 
         // Refresh the timer's count, prescale, and overflow
         timer.refresh();
