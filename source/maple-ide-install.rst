@@ -25,14 +25,14 @@ Choose the correct version for your operating system:
 
    * - Platform
      - Status
-   * - `Windows XP <http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.12-windowsxp32.zip>`_
-     - Tested on 32-bit Windows XP
+   * - `Windows XP (Legacy) <http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.12-windowsxp32.zip>`_
+     - Tested on 32-bit Windows XP. Official Windows support is so far out of date it is effectively non-existent.
    * - `Linux 32-bit <http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.12-linux32.tgz>`_
      - Tested on Ubuntu 10.04 (32-bit)
    * - `Linux 64-bit <http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.12-linux64.tgz>`_
      - Tested on Debian Wheezy (64-bit) and Mint 14.1 (64-bit)
    * - `Mac OS X <http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.12-macosx-10_6.dmg>`_
-     - Tested on Snow Leopard (10.6)
+     - Tested on Snow Leopard (10.6); believed to work with more recent versions
 
 The package bundles together a compiler, an upload utility, a software
 library, and a simple GUI text editor. All this software is `free and
@@ -55,18 +55,18 @@ Installation
 
 .. _maple-ide-install-windows:
 
-Windows
-^^^^^^^
+Windows XP (Legacy Only)
+^^^^^^^^^^^^^^^^^^^^^^^^
 First, extract all the files in the ZIP file to a suitable location on
 your system (like your Desktop folder).  Next, you have to install
 some drivers.  Sorry!
 
 .. note:: Note that while these instructions work on Windows XP,
-   changes in Windows 7 mean that you won't be able to install the IDE
-   without disabling driver signing on your computer.  We're working
-   on resolving this situation.  For now, `users on the forum have
-   reported a workaround
-   <http://forums.leaflabs.com/topic.php?id=73#post-788>`_.
+   changes in Windows 7 (and later) mean that you won't be able to install the
+   IDE without disabling driver signing on your computer.
+   `Users on the forum have reported a workaround
+   <http://forums.leaflabs.com/topic.php?id=73#post-788>`_, but we
+   only officially support the IDE on 32-bit Windows XP.
 
 First, install DFU drivers (for uploading code to your Maple) using
 the following steps.
