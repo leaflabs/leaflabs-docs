@@ -19,9 +19,9 @@ version of OS X, we imagine you can translate/port these directions on
 your own. You might want to begin with these `stripped down
 distributions <http://static.leaflabs.com/pub/codesourcery/>`_ of the
 `CodeSourcery GCC compiler tools
-<http://www.codesourcery.com/sgpp/features.html>`_ (including Win32
-versions). If you do have success on other platforms, please post in
-the forums, so we can fold your tips into this document!
+<http://www.mentor.com/embedded-software/sourcery-tools/sourcery-codebench/features/>`_
+(including Win32 versions). If you do have success on other platforms, please
+post in the forums, so we can fold your tips into this document!
 
 .. contents:: Contents
    :local:
