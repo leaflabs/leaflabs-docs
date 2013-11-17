@@ -34,7 +34,7 @@ Maple IDE release.
 ..      - Status
 ..      - IDE Package
 ..    * - `Windows XP <http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.10-windowsxp32.zip>`_
-..      - Tested on 32-bit Windows XP
+..      - Tested on Debian Wheezy (64-bit) and Mint 14.1 (64-bit)
 ..    * - `Linux <http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.10-linux32.tgz>`_
 ..      - Tested on Ubuntu 10.04 (32-bit)
 ..    * - `Mac OS X <http://static.leaflabs.com/pub/leaflabs/maple-ide/maple-ide-0.0.10-macosx-10_6.dmg>`_
@@ -61,20 +61,22 @@ Installation
 
 .. _maple-ide-install-windows:
 
-Windows
-^^^^^^^
+Windows XP (Legacy Only)
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. note:: Note that while these instructions work on Windows XP,
+   changes in Windows 7 (and later) mean that you won't be able to install the
+   IDE without disabling driver signing on your computer.
+   `Users on the forum have reported a workaround
+   <http://forums.leaflabs.com/topic.php?id=73#post-788>`_, but we
+   only officially support the IDE on 32-bit Windows XP.
+
 First, extract all the files in the ZIP file to a suitable location on
 your system (like your Desktop folder).  Next, you have to install
 some drivers.  Sorry!
 
 .. _maple-ide-install-windows-drivers:
 
-.. note:: Note that while these instructions work on Windows XP,
-   changes in Windows 7 mean that you won't be able to install the IDE
-   without disabling driver signing on your computer.  We're working
-   on resolving this situation.  For now, `users on the forum have
-   reported a workaround
-   <http://forums.leaflabs.com/topic.php?id=73#post-788>`_.
 
 First, install DFU drivers (for uploading code to your Maple) using
 the following steps.
