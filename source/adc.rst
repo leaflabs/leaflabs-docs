@@ -82,7 +82,7 @@ over the entire range of 0 through 3.3 V; otherwise, only a fraction
 of the sensitivity is being used.  Some basic tools to accomplish this
 are `resistor dividers
 <http://en.wikipedia.org/wiki/Voltage_divider>`_ and `Zener diodes
-<http://en.wikipedia.org/wiki/Voltage_source#Zener_voltage_source>`_\
+<http://en.wikipedia.org/wiki/Zener_diode>`_\
 .  However, `operational amplifiers
 <http://en.wikipedia.org/wiki/Operational_amplifier>`_ and other
 powered components can also be used if greater precision is required.
