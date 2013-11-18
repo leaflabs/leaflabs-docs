@@ -12,7 +12,7 @@ PAPEROPT_a4     = -D latex_paper_size=a4
 PAPEROPT_letter = -D latex_paper_size=letter
 ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
-.PHONY: help clean html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf text man changes linkcheck doctest
+.PHONY: help clean html dirhtml singlehtml pickle json htmlhelp qthelp devhelp epub latex latexpdf text man changes linkcheck doctest rsync_upload_production
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
@@ -32,6 +32,7 @@ help:
 	@echo "  changes    to make an overview of all changed/added/deprecated items"
 	@echo "  linkcheck  to check all external links for integrity"
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
+	@echo "  rsync_upload_production"
 
 clean:
 	-rm -rf $(BUILDDIR)/*
@@ -132,3 +133,15 @@ doctest:
 doxygen:
 	@echo "Wrong!  You need to run this from within libmaple!"
 	false
+
+SSH_PORT=484
+SSH_HOST=kelp.leaflabs.com
+SSH_USER=$(USER)
+SSH_TARGET_GROUP=team
+SSH_TARGET_DIR_STAGING=/srv/http/static.leaflabs.com/www/pub/leaflabs/maple-docs/latest
+SSH_TARGET_DIR_PRODUCTION=/srv/http/static.leaflabs.com/www/pub/leaflabs/maple-docs/latest
+OUTPUTDIR=build/html
+rsync_upload_production: html
+	rsync -e "ssh -p $(SSH_PORT)" -P -rvz --chmod=g+rwX --no-perms --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR_PRODUCTION)
+	# ignore failures of the below
+	ssh -p $(SSH_PORT) $(SSH_USER)@$(SSH_HOST) chgrp -fR $(SSH_TARGET_GROUP) $(SSH_TARGET_DIR_PRODUCTION) || true
