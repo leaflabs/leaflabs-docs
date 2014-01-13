@@ -322,7 +322,7 @@ The following table shows which pins connect to which :ref:`EXTI lines
    * - EXTI8
      - D6, D14, D37
    * - EXTI9
-     - D7, D25, D28
+     - D7, D24, D38
    * - EXTI10
      - D8, D26, D29
    * - EXTI11
