@@ -128,9 +128,21 @@ script so :file:`~/libmaple/arm/bin` stays in your ``PATH``.
 
 **3. Install udev Rules**
 
-From the libmaple directory, ::
+First, run::
 
-  $ groups # make sure it includes plugdev; if not, add yourself to it
+  $ groups
+
+And make sure the output includes "plugdev" and "dialout". If not, add
+yourself to the groups you're not in with::
+
+  $ sudo usermod -a -G plugdev $USER
+  $ sudo usermod -a -G dialout $USER
+
+**Then log out and log back in for group changes to take effect**.
+
+Then, from the libmaple directory, install some `udev rules
+<http://www.freedesktop.org/software/systemd/man/udev.html>`_ with::
+
   $ sudo cp support/scripts/45-maple.rules /etc/udev/rules.d/45-maple.rules
   $ sudo restart udev
 
