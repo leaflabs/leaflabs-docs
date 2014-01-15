@@ -55,6 +55,12 @@ First, you'll need some tools::
   $ sudo aptitude install build-essential git-core wget screen dfu-util \
                           openocd python python-serial
 
+  # On 64-bit Ubuntu 12.04, you also need:
+  $ sudo apt-get install ia32-libs
+
+  # On 64-bit Ubuntu 13 and up, you need:
+  $ sudo apt-get install lib32z1 lib32ncurses5 lib32bz2-1.0
+
 You'll want to install a bunch of developer "basics" like ``make``,
 ``tar``, etc.  A good catch-all for these tools is the
 ``build-essential`` meta-package on most Debian platforms: installing
