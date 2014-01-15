@@ -132,6 +132,12 @@ to measure the joy that awaits you.
 - Run "$ make mrproper" from the libmaple directory, and "$ make
   clean" from this directory, in order to wipe out existing old docs.
 
+- Run "$ make doxygen" from the libmaple directory, and copy its
+  doxygen/xml directory to doxygen/xml in this directory, and commit
+  it in the vA.B.C-maintenance branch.
+
+  (This makes later maintenance commits easier, and keeps a single
+
 - Finally, you can actually build the docs. (See README-building.txt
   for instructions if you've never done this before.)
 
