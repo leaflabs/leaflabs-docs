@@ -45,6 +45,9 @@ First, you'll need some tools.
     # 64-bit systems only!
     $ sudo apt-get install ia32-libs
 
+    # As of Ubuntu 13, you should do this instead:
+    $ sudo apt-get install lib32z1 lib32ncurses5 lib32bz2-1.0
+
   You may also need to remove `brltty <http://mielke.cc/brltty/>`_
   with ::
 
