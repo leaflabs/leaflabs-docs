@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structdac__dev" kind="struct" prot="public">
+    <compoundname>dac_dev</compoundname>
+    <includes refid="dac_8h" local="no">dac.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdac__dev_1a8bf2291eb825bf089fdfe032c1551639" prot="public" static="no" mutable="no">
+        <type><ref refid="structdac__reg__map" kindref="compound">dac_reg_map</ref> *</type>
+        <definition>dac_reg_map* dac_dev::regs</definition>
+        <argsstring></argsstring>
+        <name>regs</name>
+        <briefdescription>
+<para>Register map. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dac.h" line="82" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dac.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>DAC device type. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="20">
+        <label>dac_reg_map</label>
+        <link refid="structdac__reg__map"/>
+      </node>
+      <node id="19">
+        <label>dac_dev</label>
+        <link refid="structdac__dev"/>
+        <childnode refid="20" relation="usage">
+          <edgelabel>regs</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/dac.h" line="81" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dac.h" bodystart="81" bodyend="83"/>
+    <listofallmembers>
+      <member refid="structdac__dev_1a8bf2291eb825bf089fdfe032c1551639" prot="public" virt="non-virtual"><scope>dac_dev</scope><name>regs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="ux_queue_messages_waiting" kind="page">
+    <compoundname>uxQueueMessagesWaiting</compoundname>
+    <title>uxQueueMessagesWaiting</title>
+    <detaileddescription>
+<para>queue.</para><para>h <preformatted>unsigned portBASE_TYPE uxQueueMessagesWaiting( const xQueueHandle xQueue );</preformatted></para><para>Return the number of messages stored in a queue.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xQueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to the queue being queried.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of messages available in the queue. </para></simplesect>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

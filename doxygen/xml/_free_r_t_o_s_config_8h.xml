@@ -1,0 +1,587 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="_free_r_t_o_s_config_8h" kind="file">
+    <compoundname>FreeRTOSConfig.h</compoundname>
+    <includedby refid="_free_r_t_o_s_8h" local="yes">libraries/FreeRTOS/utility/FreeRTOS.h</includedby>
+    <invincdepgraph>
+      <node id="1165">
+        <label>libraries/FreeRTOS/utility/FreeRTOS.h</label>
+        <link refid="_free_r_t_o_s_8h_source"/>
+        <childnode refid="1166" relation="include">
+        </childnode>
+        <childnode refid="1167" relation="include">
+        </childnode>
+        <childnode refid="1168" relation="include">
+        </childnode>
+        <childnode refid="1169" relation="include">
+        </childnode>
+        <childnode refid="1170" relation="include">
+        </childnode>
+        <childnode refid="1171" relation="include">
+        </childnode>
+        <childnode refid="1172" relation="include">
+        </childnode>
+        <childnode refid="1173" relation="include">
+        </childnode>
+      </node>
+      <node id="1172">
+        <label>libraries/FreeRTOS/utility/tasks.c</label>
+        <link refid="tasks_8c_source"/>
+      </node>
+      <node id="1164">
+        <label>libraries/FreeRTOS/utility/FreeRTOSConfig.h</label>
+        <link refid="FreeRTOSConfig.h"/>
+        <childnode refid="1165" relation="include">
+        </childnode>
+      </node>
+      <node id="1171">
+        <label>libraries/FreeRTOS/utility/queue.c</label>
+        <link refid="queue_8c_source"/>
+      </node>
+      <node id="1168">
+        <label>libraries/FreeRTOS/utility/heap_2.c</label>
+        <link refid="heap__2_8c_source"/>
+      </node>
+      <node id="1170">
+        <label>libraries/FreeRTOS/utility/port.c</label>
+        <link refid="port_8c_source"/>
+      </node>
+      <node id="1167">
+        <label>libraries/FreeRTOS/utility/croutine.c</label>
+        <link refid="croutine_8c_source"/>
+      </node>
+      <node id="1169">
+        <label>libraries/FreeRTOS/utility/list.c</label>
+        <link refid="list_8c_source"/>
+      </node>
+      <node id="1166">
+        <label>libraries/FreeRTOS/MapleFreeRTOS.h</label>
+        <link refid="_maple_free_r_t_o_s_8h_source"/>
+      </node>
+      <node id="1173">
+        <label>libraries/FreeRTOS/utility/timers.c</label>
+        <link refid="timers_8c_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1adde83486022745409c40605922b0bdd6" prot="public" static="no">
+        <name>configUSE_PREEMPTION</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="69" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1ac637ae45863c19fa2e919db0ed49301f" prot="public" static="no">
+        <name>configUSE_IDLE_HOOK</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="70" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1a23c5922c077106fad3f70b54d9071466" prot="public" static="no">
+        <name>configUSE_TICK_HOOK</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="71" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1aa68082df879e6fc96bcb9b26513639e7" prot="public" static="no">
+        <name>configCPU_CLOCK_HZ</name>
+        <initializer>( ( unsigned long ) 72000000 )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="72" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1a2f0258dd1e3b877e5bc013be54c2db6a" prot="public" static="no">
+        <name>configTICK_RATE_HZ</name>
+        <initializer>( ( portTickType ) 1000 )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="73" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1a9a78f5ac61e6cb172dadf2a51f11db38" prot="public" static="no">
+        <name>configMAX_PRIORITIES</name>
+        <initializer>( ( unsigned portBASE_TYPE ) 5 )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="74" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1a6c534a6cf8a00528fe0be42083484f9a" prot="public" static="no">
+        <name>configMINIMAL_STACK_SIZE</name>
+        <initializer>( ( unsigned short ) 120 )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="75" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1a9f213227674effff0122a75d94d87938" prot="public" static="no">
+        <name>configTOTAL_HEAP_SIZE</name>
+        <initializer>( ( size_t ) ( 8 * 1024 ) )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="76" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1ac388dc4041aab6997348828eb27fc1a8" prot="public" static="no">
+        <name>configMAX_TASK_NAME_LEN</name>
+        <initializer>( 16 )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="77" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1a27f5ee137dc9f125681a31f0b0a4b3be" prot="public" static="no">
+        <name>configUSE_TRACE_FACILITY</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="78" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1aac311ed9b9e5ae4d2d9648b33a24acce" prot="public" static="no">
+        <name>configUSE_16_BIT_TICKS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="79" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1ad6a5061a742fee450ac455e4ad0f4b6c" prot="public" static="no">
+        <name>configIDLE_SHOULD_YIELD</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="80" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1a57990715eb06402474b8b47e1d562616" prot="public" static="no">
+        <name>configUSE_CO_ROUTINES</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="83" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1ae8f3fd645e6e78dfeb8a6e874af6195a" prot="public" static="no">
+        <name>configMAX_CO_ROUTINE_PRIORITIES</name>
+        <initializer>( 2 )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="84" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1a543bf3c79008974cc1d36bab51d94fbf" prot="public" static="no">
+        <name>configUSE_MUTEXES</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="86" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1a55778995203c57369d2fbfb10224943d" prot="public" static="no">
+        <name>configUSE_COUNTING_SEMAPHORES</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="87" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1aefc70099423a764e4ae37a5c46ab6457" prot="public" static="no">
+        <name>configUSE_ALTERNATIVE_API</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="88" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1a847511ee433494b1e32c90602c967ae7" prot="public" static="no">
+        <name>configCHECK_FOR_STACK_OVERFLOW</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="89" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1a9fe02d866cb1c4fbaa0c3de79f53d42d" prot="public" static="no">
+        <name>configUSE_RECURSIVE_MUTEXES</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="90" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1aa4b5138c4e42a180f0abd4f2455f90fb" prot="public" static="no">
+        <name>configQUEUE_REGISTRY_SIZE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="91" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1ad8081822f3ebc7c917b63bd7bdd7bc58" prot="public" static="no">
+        <name>configGENERATE_RUN_TIME_STATS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="92" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1ad6858ac8aaf726007fd19752956ef1bd" prot="public" static="no">
+        <name>INCLUDE_vTaskPrioritySet</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="97" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1a1279eb797355460aeeec06aa524e91df" prot="public" static="no">
+        <name>INCLUDE_uxTaskPriorityGet</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="98" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1a5ae1434fdf995108dc749ff9329f53bd" prot="public" static="no">
+        <name>INCLUDE_vTaskDelete</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="99" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1a7ee138825e57f243c8ee5fd4207b9e26" prot="public" static="no">
+        <name>INCLUDE_vTaskCleanUpResources</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="100" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1aef8fbb97819ad3d962f334ac298206d1" prot="public" static="no">
+        <name>INCLUDE_vTaskSuspend</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="101" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1ae8459bfd5b428319bb10de9f504a53aa" prot="public" static="no">
+        <name>INCLUDE_vTaskDelayUntil</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="102" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1a24361a6eb816a965f1ee4e2e08e364f8" prot="public" static="no">
+        <name>INCLUDE_vTaskDelay</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="103" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1ac42cff506ad61d4174fa23e952e3225e" prot="public" static="no">
+        <name>configKERNEL_INTERRUPT_PRIORITY</name>
+        <initializer>255</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="107" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1a54bfc31c410ee452577a25a4552c3704" prot="public" static="no">
+        <name>configMAX_SYSCALL_INTERRUPT_PRIORITY</name>
+        <initializer>191 /* equivalent to 0xb0, or priority 11. */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="108" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1ad0d3cf99dcf2cfed37f9f0432d350751" prot="public" static="no">
+        <name>configLIBRARY_KERNEL_INTERRUPT_PRIORITY</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="115" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1a6d4c11eb6eb148619f391a1ed8dad365" prot="public" static="no">
+        <name>configCOM0_RX_BUFFER_LENGTH</name>
+        <initializer>128</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="120" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1ad12bbefdc6fe128537dd1bb4342120f3" prot="public" static="no">
+        <name>configCOM0_TX_BUFFER_LENGTH</name>
+        <initializer>128</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="121" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1a1a772fc7358691c88f8969f9ba358f95" prot="public" static="no">
+        <name>configCOM1_RX_BUFFER_LENGTH</name>
+        <initializer>128</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="122" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_free_r_t_o_s_config_8h_1a41a7c40091920cda4cafeb70bb4b3f43" prot="public" static="no">
+        <name>configCOM1_TX_BUFFER_LENGTH</name>
+        <initializer>128</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" line="123" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>V7.0.1<sp/>-<sp/>Copyright<sp/>(C)<sp/>2011<sp/>Real<sp/>Time<sp/>Engineers<sp/>Ltd.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>***************************************************************************</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>FreeRTOS<sp/>tutorial<sp/>books<sp/>are<sp/>available<sp/>in<sp/>pdf<sp/>and<sp/>paperback.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>Complete,<sp/>revised,<sp/>and<sp/>edited<sp/>pdf<sp/>reference<sp/>manuals<sp/>are<sp/>also<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>available.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>Purchasing<sp/>FreeRTOS<sp/>documentation<sp/>will<sp/>not<sp/>only<sp/>help<sp/>you,<sp/>by<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>ensuring<sp/>you<sp/>get<sp/>running<sp/>as<sp/>quickly<sp/>as<sp/>possible<sp/>and<sp/>with<sp/>an<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>in-depth<sp/>knowledge<sp/>of<sp/>how<sp/>to<sp/>use<sp/>FreeRTOS,<sp/>it<sp/>will<sp/>also<sp/>help<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>the<sp/>FreeRTOS<sp/>project<sp/>to<sp/>continue<sp/>with<sp/>its<sp/>mission<sp/>of<sp/>providing<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>professional<sp/>grade,<sp/>cross<sp/>platform,<sp/>de<sp/>facto<sp/>standard<sp/>solutions<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>for<sp/>microcontrollers<sp/>-<sp/>completely<sp/>free<sp/>of<sp/>charge!<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>&gt;&gt;&gt;<sp/>See<sp/>http://www.FreeRTOS.org/Documentation<sp/>for<sp/>details.<sp/>&lt;&lt;&lt;<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>Thank<sp/>you<sp/>for<sp/>using<sp/>FreeRTOS,<sp/>and<sp/>thank<sp/>you<sp/>for<sp/>your<sp/>support!<sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/>***************************************************************************</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"></highlight></codeline>
+<codeline lineno="24"><highlight class="comment"></highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>FreeRTOS<sp/>distribution.</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"></highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it<sp/>under</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>(version<sp/>2)<sp/>as<sp/>published<sp/>by<sp/>the</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/><sp/>Free<sp/>Software<sp/>Foundation<sp/>AND<sp/>MODIFIED<sp/>BY<sp/>the<sp/>FreeRTOS<sp/>exception.</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/>&gt;&gt;&gt;NOTE&lt;&lt;&lt;<sp/>The<sp/>modification<sp/>to<sp/>the<sp/>GPL<sp/>is<sp/>included<sp/>to<sp/>allow<sp/>you<sp/>to</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/>distribute<sp/>a<sp/>combined<sp/>work<sp/>that<sp/>includes<sp/>FreeRTOS<sp/>without<sp/>being<sp/>obliged<sp/>to</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/><sp/>provide<sp/>the<sp/>source<sp/>code<sp/>for<sp/>proprietary<sp/>components<sp/>outside<sp/>of<sp/>the<sp/>FreeRTOS</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/>kernel.<sp/><sp/>FreeRTOS<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/>MERCHANTABILITY</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/>more<sp/>details.<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/>License<sp/>and<sp/>the<sp/>FreeRTOS<sp/>license<sp/>exception<sp/>along<sp/>with<sp/>FreeRTOS;<sp/>if<sp/>not<sp/>it</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/>can<sp/>be<sp/>viewed<sp/>here:<sp/>http://www.freertos.org/a00114.html<sp/>and<sp/>also<sp/>obtained</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/>by<sp/>writing<sp/>to<sp/>Richard<sp/>Barry,<sp/>contact<sp/>details<sp/>for<sp/>whom<sp/>are<sp/>available<sp/>on<sp/>the</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>WEB<sp/>site.</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"></highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/><sp/><sp/>1<sp/>tab<sp/>==<sp/>4<sp/>spaces!</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"></highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.FreeRTOS.org<sp/>-<sp/>Documentation,<sp/>latest<sp/>information,<sp/>license<sp/>and</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/><sp/><sp/>contact<sp/>details.</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"></highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.SafeRTOS.com<sp/>-<sp/>A<sp/>version<sp/>that<sp/>is<sp/>certified<sp/>for<sp/>use<sp/>in<sp/>safety</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/><sp/><sp/>critical<sp/>systems.</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"></highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.OpenRTOS.com<sp/>-<sp/>Commercial<sp/>support,<sp/>development,<sp/>porting,</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/>licensing<sp/>and<sp/>training<sp/>services.</highlight></codeline>
+<codeline lineno="52"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>FREERTOS_CONFIG_H</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FREERTOS_CONFIG_H</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">/*-----------------------------------------------------------</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*<sp/>Application<sp/>specific<sp/>definitions.</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/>*<sp/>These<sp/>definitions<sp/>should<sp/>be<sp/>adjusted<sp/>for<sp/>your<sp/>particular<sp/>hardware<sp/>and</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/>*<sp/>application<sp/>requirements.</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>*<sp/>THESE<sp/>PARAMETERS<sp/>ARE<sp/>DESCRIBED<sp/>WITHIN<sp/>THE<sp/>&apos;CONFIGURATION&apos;<sp/>SECTION<sp/>OF<sp/>THE</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/>*<sp/>FreeRTOS<sp/>API<sp/>DOCUMENTATION<sp/>AVAILABLE<sp/>ON<sp/>THE<sp/>FreeRTOS.org<sp/>WEB<sp/>SITE.</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/>*<sp/>See<sp/>http://www.freertos.org/a00110.html.</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>*----------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>configUSE_PREEMPTION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>configUSE_IDLE_HOOK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>configUSE_TICK_HOOK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>configCPU_CLOCK_HZ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>(<sp/>unsigned<sp/>long<sp/>)<sp/>72000000<sp/>)</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>configTICK_RATE_HZ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>(<sp/>portTickType<sp/>)<sp/>1000<sp/>)</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>configMAX_PRIORITIES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>(<sp/>unsigned<sp/>portBASE_TYPE<sp/>)<sp/>5<sp/>)</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>configMINIMAL_STACK_SIZE<sp/><sp/><sp/><sp/>(<sp/>(<sp/>unsigned<sp/>short<sp/>)<sp/>120<sp/>)</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>configTOTAL_HEAP_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>(<sp/>size_t<sp/>)<sp/>(<sp/>8<sp/>*<sp/>1024<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>configMAX_TASK_NAME_LEN<sp/><sp/><sp/><sp/><sp/>(<sp/>16<sp/>)</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>configUSE_TRACE_FACILITY<sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>configUSE_16_BIT_TICKS<sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>configIDLE_SHOULD_YIELD<sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Co-routine<sp/>definitions.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>configUSE_CO_ROUTINES<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>configMAX_CO_ROUTINE_PRIORITIES<sp/>(<sp/>2<sp/>)</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>configUSE_MUTEXES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>configUSE_COUNTING_SEMAPHORES<sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>configUSE_ALTERNATIVE_API<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>configCHECK_FOR_STACK_OVERFLOW<sp/><sp/>2</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>configUSE_RECURSIVE_MUTEXES<sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>configQUEUE_REGISTRY_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>configGENERATE_RUN_TIME_STATS<sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Set<sp/>the<sp/>following<sp/>definitions<sp/>to<sp/>1<sp/>to<sp/>include<sp/>the<sp/>API<sp/>function,<sp/>or<sp/>zero</highlight></codeline>
+<codeline lineno="95"><highlight class="comment">to<sp/>exclude<sp/>the<sp/>API<sp/>function.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INCLUDE_vTaskPrioritySet<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INCLUDE_uxTaskPriorityGet<sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INCLUDE_vTaskDelete<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INCLUDE_vTaskCleanUpResources<sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INCLUDE_vTaskSuspend<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INCLUDE_vTaskDelayUntil<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INCLUDE_vTaskDelay<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>This<sp/>is<sp/>the<sp/>raw<sp/>value<sp/>as<sp/>per<sp/>the<sp/>Cortex-M3<sp/>NVIC.<sp/><sp/>Values<sp/>can<sp/>be<sp/>255</highlight></codeline>
+<codeline lineno="106"><highlight class="comment">(lowest)<sp/>to<sp/>0<sp/>(1?)<sp/>(highest).<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>configKERNEL_INTERRUPT_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>255</highlight></codeline>
+<codeline lineno="108"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>configMAX_SYSCALL_INTERRUPT_PRIORITY<sp/><sp/><sp/><sp/>191<sp/></highlight><highlight class="comment">/*<sp/>equivalent<sp/>to<sp/>0xb0,<sp/>or<sp/>priority<sp/>11.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>This<sp/>is<sp/>the<sp/>value<sp/>being<sp/>used<sp/>as<sp/>per<sp/>the<sp/>ST<sp/>library<sp/>which<sp/>permits<sp/>16</highlight></codeline>
+<codeline lineno="112"><highlight class="comment">priority<sp/>values,<sp/>0<sp/>to<sp/>15.<sp/><sp/>This<sp/>must<sp/>correspond<sp/>to<sp/>the</highlight></codeline>
+<codeline lineno="113"><highlight class="comment">configKERNEL_INTERRUPT_PRIORITY<sp/>setting.<sp/><sp/>Here<sp/>15<sp/>corresponds<sp/>to<sp/>the<sp/>lowest</highlight></codeline>
+<codeline lineno="114"><highlight class="comment">NVIC<sp/>value<sp/>of<sp/>255.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>configLIBRARY_KERNEL_INTERRUPT_PRIORITY<sp/>15</highlight></codeline>
+<codeline lineno="116"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">/*-----------------------------------------------------------</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"><sp/>*<sp/>UART<sp/>configuration.</highlight></codeline>
+<codeline lineno="119"><highlight class="comment"><sp/>*-----------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>configCOM0_RX_BUFFER_LENGTH<sp/><sp/><sp/><sp/><sp/>128</highlight></codeline>
+<codeline lineno="121"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>configCOM0_TX_BUFFER_LENGTH<sp/><sp/><sp/><sp/><sp/>128</highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>configCOM1_RX_BUFFER_LENGTH<sp/><sp/><sp/><sp/><sp/>128</highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>configCOM1_TX_BUFFER_LENGTH<sp/><sp/><sp/><sp/><sp/>128</highlight></codeline>
+<codeline lineno="124"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FREERTOS_CONFIG_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/FreeRTOSConfig.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__cr_q_u_e_u_e___s_e_n_d" kind="group">
+    <compoundname>crQUEUE_SEND</compoundname>
+    <title>crQUEUE_SEND</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><preformatted>
+ crQUEUE_SEND(
+                  xCoRoutineHandle xHandle,
+                  xQueueHandle pxQueue,
+                  void *pvItemToQueue,
+                  portTickType xTicksToWait,
+                  portBASE_TYPE *pxResult
+             )</preformatted></para><para>The macro&apos;s crQUEUE_SEND() and crQUEUE_RECEIVE() are the co-routine equivalent to the xQueueSend() and xQueueReceive() functions used by tasks.</para><para>crQUEUE_SEND and crQUEUE_RECEIVE can only be used from a co-routine whereas xQueueSend() and xQueueReceive() can only be used from tasks.</para><para>crQUEUE_SEND can only be called from the co-routine function itself - not from within a function called by the co-routine function. This is because co-routines do not maintain their own stack.</para><para>See the co-routine section of the WEB documentation for information on passing data between tasks and co-routines and between ISR&apos;s and co-routines.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle of the calling co-routine. This is the xHandle parameter of the co-routine function.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pxQueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle of the queue on which the data will be posted. The handle is obtained as the return value when the queue is created using the xQueueCreate() API function.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pvItemToQueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the data being posted onto the queue. The number of bytes of each queued item is specified when the queue is created. This number of bytes is copied from pvItemToQueue into the queue itself.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xTickToDelay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of ticks that the co-routine should block to wait for space to become available on the queue, should space not be available immediately. The actual amount of time this equates to is defined by configTICK_RATE_HZ (set in <ref refid="_free_r_t_o_s_config_8h_source" kindref="compound">FreeRTOSConfig.h</ref>). The constant portTICK_RATE_MS can be used to convert ticks to milliseconds (see example below).</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pxResult</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The variable pointed to by pxResult will be set to pdPASS if data was successfully posted onto the queue, otherwise it will be set to an error defined within ProjDefs.h.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Example usage: <preformatted>
+Co-routine function that blocks for a fixed period then posts a number onto
+a queue.
+ static void prvCoRoutineFlashTask( xCoRoutineHandle xHandle, unsigned portBASE_TYPE uxIndex )
+ {
+Variables in co-routines must be declared static if they must maintain value across a blocking call.
+ static portBASE_TYPE xNumberToPost = 0;
+ static portBASE_TYPE xResult;</preformatted></para><para><preformatted>Co-routines must begin with a call to crSTART().
+    crSTART( xHandle );</preformatted></para><para><preformatted>    for( ;; )
+    {
+This assumes the queue has already been created.
+        crQUEUE_SEND( xHandle, xCoRoutineQueue, &amp;xNumberToPost, NO_DELAY, &amp;xResult );</preformatted></para><para><preformatted>        if( xResult != pdPASS )
+        {
+The message was not posted!
+        }</preformatted></para><para><preformatted>Increment the number to be posted onto the queue.
+        xNumberToPost++;</preformatted></para><para><preformatted>Delay for 100 ticks.
+        crDELAY( xHandle, 100 );
+    }</preformatted></para><para><preformatted>Co-routines must end with a call to crEND().
+    crEND();
+ }</preformatted> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

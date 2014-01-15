@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__x_semaphore_take" kind="group">
+    <compoundname>xSemaphoreTake</compoundname>
+    <title>xSemaphoreTake</title>
+    <briefdescription>
+<para>semphr. </para>    </briefdescription>
+    <detaileddescription>
+<para>h <preformatted>xSemaphoreTake( 
+                   xSemaphoreHandle xSemaphore, 
+                   portTickType xBlockTime 
+               )</preformatted></para><para><emphasis>Macro</emphasis> to obtain a semaphore. The semaphore must have previously been created with a call to vSemaphoreCreateBinary(), xSemaphoreCreateMutex() or xSemaphoreCreateCounting().</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xSemaphore</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to the semaphore being taken - obtained when the semaphore was created.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xBlockTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time in ticks to wait for the semaphore to become available. The macro portTICK_RATE_MS can be used to convert this to a real time. A block time of zero can be used to poll the semaphore. A block time of portMAX_DELAY can be used to block indefinitely (provided INCLUDE_vTaskSuspend is set to 1 in <ref refid="_free_r_t_o_s_config_8h_source" kindref="compound">FreeRTOSConfig.h</ref>).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pdTRUE if the semaphore was obtained. pdFALSE if xBlockTime expired without the semaphore becoming available.</para></simplesect>
+Example usage: <preformatted>
+ xSemaphoreHandle xSemaphore = NULL;</preformatted></para><para><preformatted>A task that creates a semaphore.
+ void vATask( void * pvParameters )
+ {
+Create the semaphore to guard a shared resource.
+    vSemaphoreCreateBinary( xSemaphore );
+ }</preformatted></para><para><preformatted>A task that uses the semaphore.
+ void vAnotherTask( void * pvParameters )
+ {
+... Do other things.</preformatted></para><para><preformatted>    if( xSemaphore != NULL )
+    {
+See if we can obtain the semaphore.  If the semaphore is not available
+wait 10 ticks to see if it becomes free.	
+        if( xSemaphoreTake( xSemaphore, ( portTickType ) 10 ) == pdTRUE )
+        {
+We were able to obtain the semaphore and can now access the
+shared resource.</preformatted></para><para><preformatted>...</preformatted></para><para><preformatted>We have finished accessing the shared resource.  Release the 
+semaphore.
+            xSemaphoreGive( xSemaphore );
+        }
+        else
+        {
+We could not obtain the semaphore and can therefore not access
+the shared resource safely.
+        }
+    }
+ }
+ </preformatted> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

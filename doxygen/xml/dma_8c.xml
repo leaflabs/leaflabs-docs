@@ -1,0 +1,1091 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dma_8c" kind="file">
+    <compoundname>dma.c</compoundname>
+    <includes refid="dma_8h" local="yes">dma.h</includes>
+    <includes refid="bitband_8h" local="yes">bitband.h</includes>
+    <includes refid="util_8h" local="yes">util.h</includes>
+    <incdepgraph>
+      <node id="142">
+        <label>nvic.h</label>
+        <link refid="nvic_8h"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>libmaple/dma.c</label>
+        <link refid="dma.c"/>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>dma.h</label>
+        <link refid="dma_8h"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+      </node>
+      <node id="140">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="144">
+        <label>bitband.h</label>
+        <link refid="bitband_8h"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="140" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="dma_8c_1aff84b5e63f53065ee8dc1b8e3a7adfcf" prot="public" static="yes" mutable="no">
+        <type><ref refid="structdma__dev" kindref="compound">dma_dev</ref></type>
+        <definition>dma_dev dma1</definition>
+        <argsstring></argsstring>
+        <name>dma1</name>
+        <initializer> {
+    .regs     = <ref refid="dma_8h_1ab2d8a917a0e4ea99a22ac6ebf279bc72" kindref="member">DMA1_BASE</ref>,
+    .clk_id   = RCC_DMA1,
+    .handlers = {{ .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a22a0c760f526174a94cc86bd72d2b89f" kindref="member">NVIC_DMA_CH1</ref> },
+                 { .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a4d74a4b6b73a4405f373079c0d1feb93" kindref="member">NVIC_DMA_CH2</ref> },
+                 { .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83afbe138534ebc954ed573413448d1156e" kindref="member">NVIC_DMA_CH3</ref> },
+                 { .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a4b1be77f458cefd1016bf82295d34e79" kindref="member">NVIC_DMA_CH4</ref> },
+                 { .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a4f51a32f7d0f0377052b8363640f982a" kindref="member">NVIC_DMA_CH5</ref> },
+                 { .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a7a4ca45525650ed873d60fc9f8f2729d" kindref="member">NVIC_DMA_CH6</ref> },
+                 { .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ac059ac418fc501559f77bc413aedf463" kindref="member">NVIC_DMA_CH7</ref> }}
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="52" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dma_8c_1a45c741e3187f7f599b190b3d25844f4b" prot="public" static="no" mutable="no">
+        <type><ref refid="structdma__dev" kindref="compound">dma_dev</ref> *</type>
+        <definition>dma_dev* DMA1</definition>
+        <argsstring></argsstring>
+        <name>DMA1</name>
+        <initializer> &amp;dma1</initializer>
+        <briefdescription>
+<para>DMA1 device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="54" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dma_8c_1a60bbf84a9efffb3ccc7c678377d2f12a" prot="public" static="yes" mutable="no">
+        <type><ref refid="structdma__dev" kindref="compound">dma_dev</ref></type>
+        <definition>dma_dev dma2</definition>
+        <argsstring></argsstring>
+        <name>dma2</name>
+        <initializer> {
+    .regs     = <ref refid="dma_8h_1ab72a9ae145053ee13d1d491fb5c1df64" kindref="member">DMA2_BASE</ref>,
+    .clk_id   = RCC_DMA2,
+    .handlers = {{ .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ae91724dc4e6d6eb703d7abeb65876247" kindref="member">NVIC_DMA2_CH1</ref>   },
+                 { .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a0706d26ca8dba7916b8308f3082a3958" kindref="member">NVIC_DMA2_CH2</ref>   },
+                 { .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a227868cba6a935eb919f4697b62bab1b" kindref="member">NVIC_DMA2_CH3</ref>   },
+                 { .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ac69ab723e573f422fff8840a38d64696" kindref="member">NVIC_DMA2_CH_4_5</ref> },
+                 { .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ac69ab723e573f422fff8840a38d64696" kindref="member">NVIC_DMA2_CH_4_5</ref> }} 
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="65" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dma_8c_1a4ed0852dbf444b5d1f50a614e36c11df" prot="public" static="no" mutable="no">
+        <type><ref refid="structdma__dev" kindref="compound">dma_dev</ref> *</type>
+        <definition>dma_dev* DMA2</definition>
+        <argsstring></argsstring>
+        <name>DMA2</name>
+        <initializer> &amp;dma2</initializer>
+        <briefdescription>
+<para>DMA2 device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="67" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="dma_8c_1a57ea06bbb1dd31e1170f283c15d219cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dma_init</definition>
+        <argsstring>(dma_dev *dev)</argsstring>
+        <name>dma_init</name>
+        <param>
+          <type><ref refid="structdma__dev" kindref="compound">dma_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Initialize a DMA device. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device to initialize. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="78" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="dma_8c_1aab34011ca301787c6ce2179fd473e07a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dma_setup_transfer</definition>
+        <argsstring>(dma_dev *dev, dma_channel channel, __io void *peripheral_address, dma_xfer_size peripheral_size, __io void *memory_address, dma_xfer_size memory_size, uint32 mode)</argsstring>
+        <name>dma_setup_transfer</name>
+        <param>
+          <type><ref refid="structdma__dev" kindref="compound">dma_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69" kindref="member">dma_channel</ref></type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>__io void *</type>
+          <declname>peripheral_address</declname>
+        </param>
+        <param>
+          <type><ref refid="dma_8h_1a56f5f1271dceb83185618bbf2f36a9d8" kindref="member">dma_xfer_size</ref></type>
+          <declname>peripheral_size</declname>
+        </param>
+        <param>
+          <type>__io void *</type>
+          <declname>memory_address</declname>
+        </param>
+        <param>
+          <type><ref refid="dma_8h_1a56f5f1271dceb83185618bbf2f36a9d8" kindref="member">dma_xfer_size</ref></type>
+          <declname>memory_size</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Set up a DMA transfer. </para>        </briefdescription>
+        <detaileddescription>
+<para>The channel will be disabled before being reconfigured. The transfer will have low priority by default. You may choose another priority before the transfer begins using <ref refid="dma_8c_1a05332163a62ced4183a7a33b539a6b39" kindref="member">dma_set_priority()</ref>, as well as performing any other configuration you desire. When the channel is configured to your liking, enable it using <ref refid="dma_8c_1ab3c98635e9e065a55897d9fa7ad43c7b" kindref="member">dma_enable()</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DMA device. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DMA channel. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>peripheral_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Base address of peripheral data register involved in the transfer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>peripheral_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Peripheral data transfer size. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memory_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Base memory address involved in the transfer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>memory_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Memory data transfer size. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Logical OR of dma_mode_flags </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Side Effects:</title><para>Disables the given DMA channel. </para></simplesect>
+<simplesect kind="see"><para><ref refid="dma_8h_1a56f5f1271dceb83185618bbf2f36a9d8" kindref="member">dma_xfer_size</ref> </para><simplesectsep/><para><ref refid="dma_8h_1a87022d9b6ca90de66eb25b9f234e50fe" kindref="member">dma_mode_flags</ref> </para><simplesectsep/><para><ref refid="dma_8c_1a6fdb88633503f5b9f17ae413ea017ca6" kindref="member">dma_set_num_transfers()</ref> </para><simplesectsep/><para><ref refid="dma_8c_1a05332163a62ced4183a7a33b539a6b39" kindref="member">dma_set_priority()</ref> </para><simplesectsep/><para><ref refid="dma_8c_1a1ff49becb138eba7be8ef004ab19d41c" kindref="member">dma_attach_interrupt()</ref> </para><simplesectsep/><para><ref refid="dma_8c_1ab3c98635e9e065a55897d9fa7ad43c7b" kindref="member">dma_enable()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="113" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="107" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="dma_8c_1a6fdb88633503f5b9f17ae413ea017ca6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dma_set_num_transfers</definition>
+        <argsstring>(dma_dev *dev, dma_channel channel, uint16 num_transfers)</argsstring>
+        <name>dma_set_num_transfers</name>
+        <param>
+          <type><ref refid="structdma__dev" kindref="compound">dma_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69" kindref="member">dma_channel</ref></type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>uint16</type>
+          <declname>num_transfers</declname>
+        </param>
+        <briefdescription>
+<para>Set the number of data to be transferred on a DMA channel. </para>        </briefdescription>
+        <detaileddescription>
+<para>You may not call this function while the channel is enabled.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DMA device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel through which the transfer occurs. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_transfers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="133" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="131" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="dma_8c_1a05332163a62ced4183a7a33b539a6b39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dma_set_priority</definition>
+        <argsstring>(dma_dev *dev, dma_channel channel, dma_priority priority)</argsstring>
+        <name>dma_set_priority</name>
+        <param>
+          <type><ref refid="structdma__dev" kindref="compound">dma_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69" kindref="member">dma_channel</ref></type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type><ref refid="dma_8h_1acff7214370827484610e276b30f6da75" kindref="member">dma_priority</ref></type>
+          <declname>priority</declname>
+        </param>
+        <briefdescription>
+<para>Set the priority of a DMA transfer. </para>        </briefdescription>
+        <detaileddescription>
+<para>You may not call this function while the channel is enabled.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DMA device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DMA channel </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>priority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>priority to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="153" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="151" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="dma_8c_1a1ff49becb138eba7be8ef004ab19d41c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dma_attach_interrupt</definition>
+        <argsstring>(dma_dev *dev, dma_channel channel, void(*handler)(void))</argsstring>
+        <name>dma_attach_interrupt</name>
+        <param>
+          <type><ref refid="structdma__dev" kindref="compound">dma_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69" kindref="member">dma_channel</ref></type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>void(*)(void)</type>
+          <declname>handler</declname>
+        </param>
+        <briefdescription>
+<para>Attach an interrupt to a DMA transfer. </para>        </briefdescription>
+        <detaileddescription>
+<para>Interrupts are enabled using appropriate mode flags in <ref refid="dma_8c_1aab34011ca301787c6ce2179fd473e07a" kindref="member">dma_setup_transfer()</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DMA device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel to attach handler to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt handler to call when channel interrupt fires. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="dma_8c_1aab34011ca301787c6ce2179fd473e07a" kindref="member">dma_setup_transfer()</ref> </para><simplesectsep/><para><ref refid="dma_8c_1a5db401f3b50026d7dd893fa3595b2565" kindref="member">dma_get_irq_cause()</ref> </para><simplesectsep/><para><ref refid="dma_8c_1aa14dcbc06506d8547cd08bf9ba886d25" kindref="member">dma_detach_interrupt()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="181" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="179" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="dma_8c_1aa14dcbc06506d8547cd08bf9ba886d25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dma_detach_interrupt</definition>
+        <argsstring>(dma_dev *dev, dma_channel channel)</argsstring>
+        <name>dma_detach_interrupt</name>
+        <param>
+          <type><ref refid="structdma__dev" kindref="compound">dma_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69" kindref="member">dma_channel</ref></type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Detach a DMA transfer interrupt handler. </para>        </briefdescription>
+        <detaileddescription>
+<para>After calling this function, the given channel&apos;s interrupts will be disabled.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DMA device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel whose handler to detach </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Side Effects:</title><para>Clears interrupt enable bits in the channel&apos;s CCR register. </para></simplesect>
+<simplesect kind="see"><para><ref refid="dma_8c_1a1ff49becb138eba7be8ef004ab19d41c" kindref="member">dma_attach_interrupt()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="197" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="197" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="dma_8c_1a5db401f3b50026d7dd893fa3595b2565" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="dma_8h_1ac2ee798d0badf18c1ade11946d788506" kindref="member">dma_irq_cause</ref></type>
+        <definition>dma_irq_cause dma_get_irq_cause</definition>
+        <argsstring>(dma_dev *dev, dma_channel channel)</argsstring>
+        <name>dma_get_irq_cause</name>
+        <param>
+          <type><ref refid="structdma__dev" kindref="compound">dma_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69" kindref="member">dma_channel</ref></type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Discover the reason why a DMA interrupt was called. </para>        </briefdescription>
+        <detaileddescription>
+<para>You may only call this function within an attached interrupt handler for the given channel.</para><para>This function resets the internal DMA register state which encodes the cause of the interrupt; consequently, it can only be called once per interrupt handler invocation.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DMA device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel whose interrupt is being handled. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Reason why the interrupt fired. </para></simplesect>
+<simplesect kind="par"><title>Side Effects:</title><para>Clears channel status flags in dev-&gt;regs-&gt;ISR. </para></simplesect>
+<simplesect kind="see"><para><ref refid="dma_8c_1a1ff49becb138eba7be8ef004ab19d41c" kindref="member">dma_attach_interrupt()</ref> </para><simplesectsep/><para><ref refid="dma_8h_1ac2ee798d0badf18c1ade11946d788506" kindref="member">dma_irq_cause</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="220" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="220" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="dma_8c_1ab3c98635e9e065a55897d9fa7ad43c7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dma_enable</definition>
+        <argsstring>(dma_dev *dev, dma_channel channel)</argsstring>
+        <name>dma_enable</name>
+        <param>
+          <type><ref refid="structdma__dev" kindref="compound">dma_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69" kindref="member">dma_channel</ref></type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Enable a DMA channel. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DMA device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel to enable </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="261" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="261" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="dma_8c_1a893cc9d375bbcde07a7fe5dedb1e4dfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dma_disable</definition>
+        <argsstring>(dma_dev *dev, dma_channel channel)</argsstring>
+        <name>dma_disable</name>
+        <param>
+          <type><ref refid="structdma__dev" kindref="compound">dma_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69" kindref="member">dma_channel</ref></type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Disable a DMA channel. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DMA device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel to disable </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="271" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="271" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="dma_8c_1a57381fc42f25610de33fbdbbf7a81701" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dma_set_mem_addr</definition>
+        <argsstring>(dma_dev *dev, dma_channel channel, __io void *addr)</argsstring>
+        <name>dma_set_mem_addr</name>
+        <param>
+          <type><ref refid="structdma__dev" kindref="compound">dma_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69" kindref="member">dma_channel</ref></type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>__io void *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+<para>Set the base memory address where data will be read from or written to. </para>        </briefdescription>
+        <detaileddescription>
+<para>You must not call this function while the channel is enabled.</para><para>If the DMA memory size is 16 bits, the address is automatically aligned to a half-word. If the DMA memory size is 32 bits, the address is aligned to a word.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DMA Device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel whose base memory address to set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Memory base address to use. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="290" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="290" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="dma_8c_1a36aabeaf4b50b67af24ba4e3b25295e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void dma_set_per_addr</definition>
+        <argsstring>(dma_dev *dev, dma_channel channel, __io void *addr)</argsstring>
+        <name>dma_set_per_addr</name>
+        <param>
+          <type><ref refid="structdma__dev" kindref="compound">dma_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69" kindref="member">dma_channel</ref></type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>__io void *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+<para>Set the base peripheral address where data will be read from or written to. </para>        </briefdescription>
+        <detaileddescription>
+<para>You must not call this function while the channel is enabled.</para><para>If the DMA peripheral size is 16 bits, the address is automatically aligned to a half-word. If the DMA peripheral size is 32 bits, the address is aligned to a word.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DMA Device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Channel whose peripheral data register base address to set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Peripheral memory base address to use. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="313" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="313" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="dma_8c_1ad16d817748af6a41645c33e4a3cb4345" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dispatch_handler</definition>
+        <argsstring>(dma_dev *dev, dma_channel channel)</argsstring>
+        <name>dispatch_handler</name>
+        <param>
+          <type><ref refid="structdma__dev" kindref="compound">dma_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69" kindref="member">dma_channel</ref></type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="326" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="326" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="dma_8c_1a4f9d34e65f917411bcdeb568c70b3c59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __irq_dma1_channel1</definition>
+        <argsstring>(void)</argsstring>
+        <name>__irq_dma1_channel1</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="334" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="334" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="dma_8c_1aa20d6e4ec3f089c3f33203484979a851" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __irq_dma1_channel2</definition>
+        <argsstring>(void)</argsstring>
+        <name>__irq_dma1_channel2</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="338" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="338" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="dma_8c_1ad65b2dd033903765555bc1d18a7d7de6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __irq_dma1_channel3</definition>
+        <argsstring>(void)</argsstring>
+        <name>__irq_dma1_channel3</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="342" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="342" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="dma_8c_1aef3743cbc4efdc9ac82588d9b20a1b17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __irq_dma1_channel4</definition>
+        <argsstring>(void)</argsstring>
+        <name>__irq_dma1_channel4</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="346" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="346" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="dma_8c_1a72fc390a1bae2c723077f6544cba68c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __irq_dma1_channel5</definition>
+        <argsstring>(void)</argsstring>
+        <name>__irq_dma1_channel5</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="350" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="350" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="dma_8c_1a9b9787c49ff79b4add1d0bd452e2bfd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __irq_dma1_channel6</definition>
+        <argsstring>(void)</argsstring>
+        <name>__irq_dma1_channel6</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="354" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="354" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="dma_8c_1a8b75d94c4247099a7b2e515bdf03e647" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __irq_dma1_channel7</definition>
+        <argsstring>(void)</argsstring>
+        <name>__irq_dma1_channel7</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="358" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="358" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="dma_8c_1ab26d05560e791d5d8939181da5e47764" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __irq_dma2_channel1</definition>
+        <argsstring>(void)</argsstring>
+        <name>__irq_dma2_channel1</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="363" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="363" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="function" id="dma_8c_1a462161582b1eb626926fb1dc4c18a421" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __irq_dma2_channel2</definition>
+        <argsstring>(void)</argsstring>
+        <name>__irq_dma2_channel2</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="367" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="367" bodyend="369"/>
+      </memberdef>
+      <memberdef kind="function" id="dma_8c_1aa45d63114e8f3626e0710b82f2195f63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __irq_dma2_channel3</definition>
+        <argsstring>(void)</argsstring>
+        <name>__irq_dma2_channel3</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="371" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="371" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="function" id="dma_8c_1a8f220f9ab2bde139ae67af8cd314a989" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __irq_dma2_channel4_5</definition>
+        <argsstring>(void)</argsstring>
+        <name>__irq_dma2_channel4_5</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c" line="375" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.c" bodystart="375" bodyend="378"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Direct Memory Access peripheral support. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Marti Bolivar &lt;<ulink url="mailto:mbolivar@leaflabs.com">mbolivar@leaflabs.com</ulink>&gt;; Original implementation by Michael Hope </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Michael<sp/>Hope.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dma_8h" kindref="compound" tooltip="Direct Memory Access peripheral support.">dma.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bitband_8h" kindref="compound" tooltip="Bit-banding utility functions.">bitband.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="util_8h" kindref="compound" tooltip="Miscellaneous utility macros and procedures.">util.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/>Devices</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structdma__dev" kindref="compound" tooltip="DMA device type.">dma_dev</ref><sp/>dma1<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="structdma__dev_1a8f5bdbb8be935b20b76145ff23debc1f" kindref="member" tooltip="Register map.">regs</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="dma_8h_1ab2d8a917a0e4ea99a22ac6ebf279bc72" kindref="member" tooltip="DMA controller 1 register map base pointer.">DMA1_BASE</ref>,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>.clk_id<sp/><sp/><sp/>=<sp/>RCC_DMA1,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>.handlers<sp/>=<sp/>{{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a22a0c760f526174a94cc86bd72d2b89f" kindref="member" tooltip="DMA1 channel 1.">NVIC_DMA_CH1</ref><sp/>},</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a4d74a4b6b73a4405f373079c0d1feb93" kindref="member" tooltip="DMA1 channel 2.">NVIC_DMA_CH2</ref><sp/>},</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83afbe138534ebc954ed573413448d1156e" kindref="member" tooltip="DMA1 channel 3.">NVIC_DMA_CH3</ref><sp/>},</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a4b1be77f458cefd1016bf82295d34e79" kindref="member" tooltip="DMA1 channel 4.">NVIC_DMA_CH4</ref><sp/>},</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a4f51a32f7d0f0377052b8363640f982a" kindref="member" tooltip="DMA1 channel 5.">NVIC_DMA_CH5</ref><sp/>},</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a7a4ca45525650ed873d60fc9f8f2729d" kindref="member" tooltip="DMA1 channel 6.">NVIC_DMA_CH6</ref><sp/>},</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ac059ac418fc501559f77bc413aedf463" kindref="member" tooltip="DMA1 channel 7.">NVIC_DMA_CH7</ref><sp/>}}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="54" refid="dma_8h_1a45c741e3187f7f599b190b3d25844f4b" refkind="member"><highlight class="normal"><ref refid="structdma__dev" kindref="compound" tooltip="DMA device type.">dma_dev</ref><sp/>*<ref refid="dma_8c_1a45c741e3187f7f599b190b3d25844f4b" kindref="member" tooltip="DMA1 device.">DMA1</ref><sp/>=<sp/>&amp;dma1;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>STM32_HIGH_DENSITY</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structdma__dev" kindref="compound" tooltip="DMA device type.">dma_dev</ref><sp/>dma2<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="structdma__dev_1a8f5bdbb8be935b20b76145ff23debc1f" kindref="member" tooltip="Register map.">regs</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="dma_8h_1ab72a9ae145053ee13d1d491fb5c1df64" kindref="member" tooltip="DMA controller 2 register map base pointer.">DMA2_BASE</ref>,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>.clk_id<sp/><sp/><sp/>=<sp/>RCC_DMA2,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>.handlers<sp/>=<sp/>{{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ae91724dc4e6d6eb703d7abeb65876247" kindref="member" tooltip="DMA2 channel 1.">NVIC_DMA2_CH1</ref><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a0706d26ca8dba7916b8308f3082a3958" kindref="member" tooltip="DMA2 channel 2.">NVIC_DMA2_CH2</ref><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a227868cba6a935eb919f4697b62bab1b" kindref="member" tooltip="DMA2 channel 3.">NVIC_DMA2_CH3</ref><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ac69ab723e573f422fff8840a38d64696" kindref="member" tooltip="DMA2 channels 4 and 5.">NVIC_DMA2_CH_4_5</ref><sp/>},</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ac69ab723e573f422fff8840a38d64696" kindref="member" tooltip="DMA2 channels 4 and 5.">NVIC_DMA2_CH_4_5</ref><sp/>}}<sp/></highlight><highlight class="comment">/*<sp/>!@#$<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="67" refid="dma_8h_1a4ed0852dbf444b5d1f50a614e36c11df" refkind="member"><highlight class="normal"><ref refid="structdma__dev" kindref="compound" tooltip="DMA device type.">dma_dev</ref><sp/>*<ref refid="dma_8c_1a4ed0852dbf444b5d1f50a614e36c11df" kindref="member" tooltip="DMA2 device.">DMA2</ref><sp/>=<sp/>&amp;dma2;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/>*<sp/>Convenience<sp/>routines</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="dma_8h_1a57ea06bbb1dd31e1170f283c15d219cb" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dma_8c_1a57ea06bbb1dd31e1170f283c15d219cb" kindref="member" tooltip="Initialize a DMA device.">dma_init</ref>(<ref refid="structdma__dev" kindref="compound" tooltip="DMA device type.">dma_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>rcc_clk_enable(dev-&gt;<ref refid="structdma__dev_1ae529643f1617cc2884a5c1e59cee4d92" kindref="member" tooltip="Clock ID.">clk_id</ref>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="dma_8h_1aab34011ca301787c6ce2179fd473e07a" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dma_8c_1aab34011ca301787c6ce2179fd473e07a" kindref="member" tooltip="Set up a DMA transfer.">dma_setup_transfer</ref>(<ref refid="structdma__dev" kindref="compound" tooltip="DMA device type.">dma_dev</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*dev,</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69" kindref="member" tooltip="DMA channel.">dma_channel</ref><sp/><sp/><sp/><sp/>channel,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__io<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>*peripheral_address,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dma_8h_1a56f5f1271dceb83185618bbf2f36a9d8" kindref="member" tooltip="Source and destination transfer sizes.">dma_xfer_size</ref><sp/><sp/>peripheral_size,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__io<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>*memory_address,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dma_8h_1a56f5f1271dceb83185618bbf2f36a9d8" kindref="member" tooltip="Source and destination transfer sizes.">dma_xfer_size</ref><sp/><sp/>memory_size,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mode)<sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdma__channel__reg__map" kindref="compound" tooltip="DMA channel register map type.">dma_channel_reg_map</ref><sp/>*channel_regs<sp/>=<sp/><ref refid="dma_8h_1a8715e22604010e556eba58a394bfcd65" kindref="member" tooltip="Obtain a pointer to an individual DMA channel&amp;#39;s registers.">dma_channel_regs</ref>(dev,<sp/>channel);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dma_8c_1a893cc9d375bbcde07a7fe5dedb1e4dfb" kindref="member" tooltip="Disable a DMA channel.">dma_disable</ref>(dev,<sp/>channel);<sp/><sp/></highlight><highlight class="comment">/*<sp/>can&apos;t<sp/>write<sp/>to<sp/>CMAR/CPAR<sp/>otherwise<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>channel_regs-&gt;<ref refid="structdma__channel__reg__map_1acc7d75d79e01cb8c33126cc49dd5f3e4" kindref="member" tooltip="Channel configuration register.">CCR</ref><sp/>=<sp/>(memory_size<sp/>&lt;&lt;<sp/>10)<sp/>|<sp/>(peripheral_size<sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>mode;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>channel_regs-&gt;<ref refid="structdma__channel__reg__map_1acf1a1214e3b12ca02b2de9608ed5b14b" kindref="member" tooltip="Channel memory address register.">CMAR</ref><sp/>=<sp/>(uint32)memory_address;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>channel_regs-&gt;<ref refid="structdma__channel__reg__map_1a04591a2895e9b08079413fd69692fd46" kindref="member" tooltip="Channel peripheral address register.">CPAR</ref><sp/>=<sp/>(uint32)peripheral_address;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="dma_8h_1a6fdb88633503f5b9f17ae413ea017ca6" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dma_8c_1a6fdb88633503f5b9f17ae413ea017ca6" kindref="member" tooltip="Set the number of data to be transferred on a DMA channel.">dma_set_num_transfers</ref>(<ref refid="structdma__dev" kindref="compound" tooltip="DMA device type.">dma_dev</ref><sp/>*dev,</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69" kindref="member" tooltip="DMA channel.">dma_channel</ref><sp/>channel,</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16<sp/>num_transfers)<sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdma__channel__reg__map" kindref="compound" tooltip="DMA channel register map type.">dma_channel_reg_map</ref><sp/>*channel_regs;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT_FAULT(!<ref refid="dma_8h_1a466733f31298ba458a91fae0966cd56f" kindref="member" tooltip="Check if a DMA channel is enabled.">dma_is_channel_enabled</ref>(dev,<sp/>channel));</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>channel_regs<sp/>=<sp/><ref refid="dma_8h_1a8715e22604010e556eba58a394bfcd65" kindref="member" tooltip="Obtain a pointer to an individual DMA channel&amp;#39;s registers.">dma_channel_regs</ref>(dev,<sp/>channel);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>channel_regs-&gt;<ref refid="structdma__channel__reg__map_1ab837164625bb51b79aeca17e3a86c53f" kindref="member" tooltip="Channel number of data register.">CNDTR</ref><sp/>=<sp/>num_transfers;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="dma_8h_1a05332163a62ced4183a7a33b539a6b39" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dma_8c_1a05332163a62ced4183a7a33b539a6b39" kindref="member" tooltip="Set the priority of a DMA transfer.">dma_set_priority</ref>(<ref refid="structdma__dev" kindref="compound" tooltip="DMA device type.">dma_dev</ref><sp/>*dev,</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69" kindref="member" tooltip="DMA channel.">dma_channel</ref><sp/>channel,</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dma_8h_1acff7214370827484610e276b30f6da75" kindref="member" tooltip="DMA transfer priority.">dma_priority</ref><sp/>priority)<sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdma__channel__reg__map" kindref="compound" tooltip="DMA channel register map type.">dma_channel_reg_map</ref><sp/>*channel_regs;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>ccr;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT_FAULT(!<ref refid="dma_8h_1a466733f31298ba458a91fae0966cd56f" kindref="member" tooltip="Check if a DMA channel is enabled.">dma_is_channel_enabled</ref>(dev,<sp/>channel));</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>channel_regs<sp/>=<sp/><ref refid="dma_8h_1a8715e22604010e556eba58a394bfcd65" kindref="member" tooltip="Obtain a pointer to an individual DMA channel&amp;#39;s registers.">dma_channel_regs</ref>(dev,<sp/>channel);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>ccr<sp/>=<sp/>channel_regs-&gt;<ref refid="structdma__channel__reg__map_1acc7d75d79e01cb8c33126cc49dd5f3e4" kindref="member" tooltip="Channel configuration register.">CCR</ref>;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>ccr<sp/>&amp;=<sp/>~DMA_CCR_PL;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>ccr<sp/>|=<sp/>priority;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>channel_regs-&gt;<ref refid="structdma__channel__reg__map_1acc7d75d79e01cb8c33126cc49dd5f3e4" kindref="member" tooltip="Channel configuration register.">CCR</ref><sp/>=<sp/>ccr;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="dma_8h_1a1ff49becb138eba7be8ef004ab19d41c" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dma_8c_1a1ff49becb138eba7be8ef004ab19d41c" kindref="member" tooltip="Attach an interrupt to a DMA transfer.">dma_attach_interrupt</ref>(<ref refid="structdma__dev" kindref="compound" tooltip="DMA device type.">dma_dev</ref><sp/>*dev,</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69" kindref="member" tooltip="DMA channel.">dma_channel</ref><sp/>channel,</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*handler)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>dev-&gt;<ref refid="structdma__dev_1ae001d450b5b4ce3c07ab4b2de310cbb2" kindref="member" tooltip="IRQ handlers and NVIC numbers.">handlers</ref>[channel<sp/>-<sp/>1].<ref refid="structdma__handler__config_1ac771c2cf86b0cb58b0da1c27412550f4" kindref="member" tooltip="User-specified channel interrupt handler.">handler</ref><sp/>=<sp/>handler;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a51e6b1b0e83aac5cd8f1a50255db6b45" kindref="member" tooltip="Enable interrupt irq_num.">nvic_irq_enable</ref>(dev-&gt;<ref refid="structdma__dev_1ae001d450b5b4ce3c07ab4b2de310cbb2" kindref="member" tooltip="IRQ handlers and NVIC numbers.">handlers</ref>[channel<sp/>-<sp/>1].<ref refid="structdma__handler__config_1aa5d1dd770e57e8cb739cbbef9b30cf94" kindref="member" tooltip="Channel&amp;#39;s NVIC interrupt number.">irq_line</ref>);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="dma_8h_1aa14dcbc06506d8547cd08bf9ba886d25" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dma_8c_1aa14dcbc06506d8547cd08bf9ba886d25" kindref="member" tooltip="Detach a DMA transfer interrupt handler.">dma_detach_interrupt</ref>(<ref refid="structdma__dev" kindref="compound" tooltip="DMA device type.">dma_dev</ref><sp/>*dev,<sp/><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69" kindref="member" tooltip="DMA channel.">dma_channel</ref><sp/>channel)<sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Don&apos;t<sp/>use<sp/>nvic_irq_disable()!<sp/>Think<sp/>about<sp/>DMA2<sp/>channels<sp/>4<sp/>and<sp/>5.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dma_8h_1a8715e22604010e556eba58a394bfcd65" kindref="member" tooltip="Obtain a pointer to an individual DMA channel&amp;#39;s registers.">dma_channel_regs</ref>(dev,<sp/>channel)-&gt;<ref refid="structdma__channel__reg__map_1acc7d75d79e01cb8c33126cc49dd5f3e4" kindref="member" tooltip="Channel configuration register.">CCR</ref><sp/>&amp;=<sp/>~0xF;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>dev-&gt;<ref refid="structdma__dev_1ae001d450b5b4ce3c07ab4b2de310cbb2" kindref="member" tooltip="IRQ handlers and NVIC numbers.">handlers</ref>[channel<sp/>-<sp/>1].<ref refid="structdma__handler__config_1ac771c2cf86b0cb58b0da1c27412550f4" kindref="member" tooltip="User-specified channel interrupt handler.">handler</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220" refid="dma_8h_1a5db401f3b50026d7dd893fa3595b2565" refkind="member"><highlight class="normal"><ref refid="dma_8h_1ac2ee798d0badf18c1ade11946d788506" kindref="member" tooltip="Encodes the reason why a DMA interrupt was called.">dma_irq_cause</ref><sp/><ref refid="dma_8c_1a5db401f3b50026d7dd893fa3595b2565" kindref="member" tooltip="Discover the reason why a DMA interrupt was called.">dma_get_irq_cause</ref>(<ref refid="structdma__dev" kindref="compound" tooltip="DMA device type.">dma_dev</ref><sp/>*dev,<sp/><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69" kindref="member" tooltip="DMA channel.">dma_channel</ref><sp/>channel)<sp/>{</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>status_bits<sp/>=<sp/><ref refid="dma_8h_1a1b9b6288bc40dd5059923ee105d64ae2" kindref="member" tooltip="Get the ISR status bits for a DMA channel.">dma_get_isr_bits</ref>(dev,<sp/>channel);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>If<sp/>the<sp/>channel<sp/>global<sp/>interrupt<sp/>flag<sp/>is<sp/>cleared,<sp/>then</highlight></codeline>
+<codeline lineno="224"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>something&apos;s<sp/>very<sp/>wrong.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(status_bits<sp/>&amp;<sp/>BIT(0));</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dma_8h_1a8566f5e2b45a9ada964fb639dd4284a7" kindref="member" tooltip="Clear the ISR status bits for a given DMA channel.">dma_clear_isr_bits</ref>(dev,<sp/>channel);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>ISR<sp/>flags<sp/>get<sp/>set<sp/>even<sp/>if<sp/>the<sp/>corresponding<sp/>interrupt<sp/>enable</highlight></codeline>
+<codeline lineno="230"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>bits<sp/>in<sp/>the<sp/>channel&apos;s<sp/>configuration<sp/>register<sp/>are<sp/>cleared,<sp/>so<sp/>we</highlight></codeline>
+<codeline lineno="231"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>can&apos;t<sp/>use<sp/>a<sp/>switch<sp/>here.</highlight></codeline>
+<codeline lineno="232"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="233"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Don&apos;t<sp/>change<sp/>the<sp/>order<sp/>of<sp/>these<sp/>if<sp/>statements.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status_bits<sp/>&amp;<sp/>BIT(3))<sp/>{</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dma_8h_1ac2ee798d0badf18c1ade11946d788506a33b08477949c2af982da6075a96ce422" kindref="member" tooltip="Error occurred during transfer.">DMA_TRANSFER_ERROR</ref>;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status_bits<sp/>&amp;<sp/>BIT(1))<sp/>{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dma_8h_1ac2ee798d0badf18c1ade11946d788506aaff2450e5eb8260fbf49cf0e33ab95af" kindref="member" tooltip="Transfer is complete.">DMA_TRANSFER_COMPLETE</ref>;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status_bits<sp/>&amp;<sp/>BIT(2))<sp/>{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dma_8h_1ac2ee798d0badf18c1ade11946d788506a68d7bca7b9d4f70c07d479567d8bbef4" kindref="member" tooltip="Transfer is half complete.">DMA_TRANSFER_HALF_COMPLETE</ref>;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status_bits<sp/>&amp;<sp/>BIT(0))<sp/>{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Shouldn&apos;t<sp/>happen<sp/>(unless<sp/>someone<sp/>messed<sp/>up<sp/>an<sp/>IFCR<sp/>write).<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>throb();</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>DEBUG_LEVEL<sp/>&lt;<sp/>DEBUG_ALL</highlight></codeline>
+<codeline lineno="245"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>We<sp/>shouldn&apos;t<sp/>have<sp/>been<sp/>called,<sp/>but<sp/>the<sp/>debug<sp/>level<sp/>is<sp/>too</highlight></codeline>
+<codeline lineno="247"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>low<sp/>for<sp/>the<sp/>above<sp/>ASSERT()<sp/>to<sp/>have<sp/>had<sp/>any<sp/>effect.<sp/><sp/>In</highlight></codeline>
+<codeline lineno="248"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>order<sp/>to<sp/>fail<sp/>fast,<sp/>mimic<sp/>the<sp/>DMA<sp/>controller&apos;s<sp/>behavior</highlight></codeline>
+<codeline lineno="249"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>when<sp/>an<sp/>error<sp/>occurs.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dma_8c_1a893cc9d375bbcde07a7fe5dedb1e4dfb" kindref="member" tooltip="Disable a DMA channel.">dma_disable</ref>(dev,<sp/>channel);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="253"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="dma_8h_1ac2ee798d0badf18c1ade11946d788506a33b08477949c2af982da6075a96ce422" kindref="member" tooltip="Error occurred during transfer.">DMA_TRANSFER_ERROR</ref>;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261" refid="dma_8h_1ab3c98635e9e065a55897d9fa7ad43c7b" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dma_8c_1ab3c98635e9e065a55897d9fa7ad43c7b" kindref="member" tooltip="Enable a DMA channel.">dma_enable</ref>(<ref refid="structdma__dev" kindref="compound" tooltip="DMA device type.">dma_dev</ref><sp/>*dev,<sp/><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69" kindref="member" tooltip="DMA channel.">dma_channel</ref><sp/>channel)<sp/>{</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdma__channel__reg__map" kindref="compound" tooltip="DMA channel register map type.">dma_channel_reg_map</ref><sp/>*chan_regs<sp/>=<sp/><ref refid="dma_8h_1a8715e22604010e556eba58a394bfcd65" kindref="member" tooltip="Obtain a pointer to an individual DMA channel&amp;#39;s registers.">dma_channel_regs</ref>(dev,<sp/>channel);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bitband_8h_1a20fc9d0655ba9ecfd07045b759729942" kindref="member" tooltip="Set a bit in an address in the peripheral bit-band region.">bb_peri_set_bit</ref>(&amp;chan_regs-&gt;<ref refid="structdma__channel__reg__map_1acc7d75d79e01cb8c33126cc49dd5f3e4" kindref="member" tooltip="Channel configuration register.">CCR</ref>,<sp/>DMA_CCR_EN_BIT,<sp/>1);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271" refid="dma_8h_1a893cc9d375bbcde07a7fe5dedb1e4dfb" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dma_8c_1a893cc9d375bbcde07a7fe5dedb1e4dfb" kindref="member" tooltip="Disable a DMA channel.">dma_disable</ref>(<ref refid="structdma__dev" kindref="compound" tooltip="DMA device type.">dma_dev</ref><sp/>*dev,<sp/><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69" kindref="member" tooltip="DMA channel.">dma_channel</ref><sp/>channel)<sp/>{</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdma__channel__reg__map" kindref="compound" tooltip="DMA channel register map type.">dma_channel_reg_map</ref><sp/>*chan_regs<sp/>=<sp/><ref refid="dma_8h_1a8715e22604010e556eba58a394bfcd65" kindref="member" tooltip="Obtain a pointer to an individual DMA channel&amp;#39;s registers.">dma_channel_regs</ref>(dev,<sp/>channel);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bitband_8h_1a20fc9d0655ba9ecfd07045b759729942" kindref="member" tooltip="Set a bit in an address in the peripheral bit-band region.">bb_peri_set_bit</ref>(&amp;chan_regs-&gt;<ref refid="structdma__channel__reg__map_1acc7d75d79e01cb8c33126cc49dd5f3e4" kindref="member" tooltip="Channel configuration register.">CCR</ref>,<sp/>DMA_CCR_EN_BIT,<sp/>0);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290" refid="dma_8h_1ae51fbd2396b562a524b1f8b5011e1453" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dma_8c_1a57381fc42f25610de33fbdbbf7a81701" kindref="member" tooltip="Set the base memory address where data will be read from or written to.">dma_set_mem_addr</ref>(<ref refid="structdma__dev" kindref="compound" tooltip="DMA device type.">dma_dev</ref><sp/>*dev,<sp/><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69" kindref="member" tooltip="DMA channel.">dma_channel</ref><sp/>channel,<sp/>__io<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*addr)<sp/>{</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdma__channel__reg__map" kindref="compound" tooltip="DMA channel register map type.">dma_channel_reg_map</ref><sp/>*chan_regs;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT_FAULT(!<ref refid="dma_8h_1a466733f31298ba458a91fae0966cd56f" kindref="member" tooltip="Check if a DMA channel is enabled.">dma_is_channel_enabled</ref>(dev,<sp/>channel));</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>chan_regs<sp/>=<sp/><ref refid="dma_8h_1a8715e22604010e556eba58a394bfcd65" kindref="member" tooltip="Obtain a pointer to an individual DMA channel&amp;#39;s registers.">dma_channel_regs</ref>(dev,<sp/>channel);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>chan_regs-&gt;<ref refid="structdma__channel__reg__map_1acf1a1214e3b12ca02b2de9608ed5b14b" kindref="member" tooltip="Channel memory address register.">CMAR</ref><sp/>=<sp/>(uint32)addr;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313" refid="dma_8h_1a2e71d393b1c461cd6e547fb786f7568b" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dma_8c_1a36aabeaf4b50b67af24ba4e3b25295e1" kindref="member" tooltip="Set the base peripheral address where data will be read from or written to.">dma_set_per_addr</ref>(<ref refid="structdma__dev" kindref="compound" tooltip="DMA device type.">dma_dev</ref><sp/>*dev,<sp/><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69" kindref="member" tooltip="DMA channel.">dma_channel</ref><sp/>channel,<sp/>__io<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*addr)<sp/>{</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdma__channel__reg__map" kindref="compound" tooltip="DMA channel register map type.">dma_channel_reg_map</ref><sp/>*chan_regs;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT_FAULT(!<ref refid="dma_8h_1a466733f31298ba458a91fae0966cd56f" kindref="member" tooltip="Check if a DMA channel is enabled.">dma_is_channel_enabled</ref>(dev,<sp/>channel));</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/>chan_regs<sp/>=<sp/><ref refid="dma_8h_1a8715e22604010e556eba58a394bfcd65" kindref="member" tooltip="Obtain a pointer to an individual DMA channel&amp;#39;s registers.">dma_channel_regs</ref>(dev,<sp/>channel);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/>chan_regs-&gt;<ref refid="structdma__channel__reg__map_1a04591a2895e9b08079413fd69692fd46" kindref="member" tooltip="Channel peripheral address register.">CPAR</ref><sp/>=<sp/>(uint32)addr;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="323"><highlight class="comment"><sp/>*<sp/>IRQ<sp/>handlers</highlight></codeline>
+<codeline lineno="324"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dispatch_handler(<ref refid="structdma__dev" kindref="compound" tooltip="DMA device type.">dma_dev</ref><sp/>*dev,<sp/><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69" kindref="member" tooltip="DMA channel.">dma_channel</ref><sp/>channel)<sp/>{</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*handler)(void)<sp/>=<sp/>dev-&gt;<ref refid="structdma__dev_1ae001d450b5b4ce3c07ab4b2de310cbb2" kindref="member" tooltip="IRQ handlers and NVIC numbers.">handlers</ref>[channel<sp/>-<sp/>1].<ref refid="structdma__handler__config_1ac771c2cf86b0cb58b0da1c27412550f4" kindref="member" tooltip="User-specified channel interrupt handler.">handler</ref>;</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(handler)<sp/>{</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>handler();</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dma_8h_1a8566f5e2b45a9ada964fb639dd4284a7" kindref="member" tooltip="Clear the ISR status bits for a given DMA channel.">dma_clear_isr_bits</ref>(dev,<sp/>channel);<sp/></highlight><highlight class="comment">/*<sp/>in<sp/>case<sp/>handler<sp/>doesn&apos;t<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="332"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__irq_dma1_channel1(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>dispatch_handler(DMA1,<sp/><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69a5b88330b8095d765e3c649e2551bff0c" kindref="member" tooltip="Channel 1.">DMA_CH1</ref>);</highlight></codeline>
+<codeline lineno="336"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__irq_dma1_channel2(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/>dispatch_handler(DMA1,<sp/><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69aa563f1a041ae38f16d40d98a807065e8" kindref="member" tooltip="Channel 2.">DMA_CH2</ref>);</highlight></codeline>
+<codeline lineno="340"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__irq_dma1_channel3(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/>dispatch_handler(DMA1,<sp/><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69a6af989c2f8e27f4d462b05a909761979" kindref="member" tooltip="Channel 3.">DMA_CH3</ref>);</highlight></codeline>
+<codeline lineno="344"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__irq_dma1_channel4(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/>dispatch_handler(DMA1,<sp/><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69a768248d56aeedbee2d097fa3e1b69f18" kindref="member" tooltip="Channel 4.">DMA_CH4</ref>);</highlight></codeline>
+<codeline lineno="348"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__irq_dma1_channel5(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/>dispatch_handler(DMA1,<sp/><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69a530ca37d228e10509571d0c40b4e71b6" kindref="member" tooltip="Channel 5.">DMA_CH5</ref>);</highlight></codeline>
+<codeline lineno="352"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__irq_dma1_channel6(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/>dispatch_handler(DMA1,<sp/><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69acafb0c9fb8ca2a9d9561564806d86894" kindref="member" tooltip="Channel 6.">DMA_CH6</ref>);</highlight></codeline>
+<codeline lineno="356"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__irq_dma1_channel7(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/>dispatch_handler(DMA1,<sp/><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69a9d0ad62083aa63491e9973e0fc2074b9" kindref="member" tooltip="Channel 7.">DMA_CH7</ref>);</highlight></codeline>
+<codeline lineno="360"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>STM32_HIGH_DENSITY</highlight></codeline>
+<codeline lineno="363"><highlight class="preprocessor"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__irq_dma2_channel1(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/>dispatch_handler(DMA2,<sp/><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69a5b88330b8095d765e3c649e2551bff0c" kindref="member" tooltip="Channel 1.">DMA_CH1</ref>);</highlight></codeline>
+<codeline lineno="365"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__irq_dma2_channel2(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/>dispatch_handler(DMA2,<sp/><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69aa563f1a041ae38f16d40d98a807065e8" kindref="member" tooltip="Channel 2.">DMA_CH2</ref>);</highlight></codeline>
+<codeline lineno="369"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__irq_dma2_channel3(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/>dispatch_handler(DMA2,<sp/><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69a6af989c2f8e27f4d462b05a909761979" kindref="member" tooltip="Channel 3.">DMA_CH3</ref>);</highlight></codeline>
+<codeline lineno="373"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__irq_dma2_channel4_5(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/>dispatch_handler(DMA2,<sp/><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69a768248d56aeedbee2d097fa3e1b69f18" kindref="member" tooltip="Channel 4.">DMA_CH4</ref>);</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/>dispatch_handler(DMA2,<sp/><ref refid="dma_8h_1a34bd82a90dd729c4d77f81ae92ff6e69a530ca37d228e10509571d0c40b4e71b6" kindref="member" tooltip="Channel 5.">DMA_CH5</ref>);</highlight></codeline>
+<codeline lineno="378"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.c"/>
+  </compounddef>
+</doxygen>

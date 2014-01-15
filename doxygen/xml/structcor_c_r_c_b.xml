@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structcor_c_r_c_b" kind="struct" prot="public">
+    <compoundname>corCRCB</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcor_c_r_c_b_1af473bd45221cb04057a95373a55f4a5a" prot="public" static="no" mutable="no">
+        <type>crCOROUTINE_CODE</type>
+        <definition>crCOROUTINE_CODE corCRCB::pxCoRoutineFunction</definition>
+        <argsstring></argsstring>
+        <name>pxCoRoutineFunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" line="83" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcor_c_r_c_b_1aae1f7c0a5875b6c78ed8d832cfb1cc5f" prot="public" static="no" mutable="no">
+        <type>xListItem</type>
+        <definition>xListItem corCRCB::xGenericListItem</definition>
+        <argsstring></argsstring>
+        <name>xGenericListItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" line="84" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcor_c_r_c_b_1a91032c115dc3d9e308708007debe08d4" prot="public" static="no" mutable="no">
+        <type>xListItem</type>
+        <definition>xListItem corCRCB::xEventListItem</definition>
+        <argsstring></argsstring>
+        <name>xEventListItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" line="85" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcor_c_r_c_b_1aa40a9727f03a89201e12fe21b853376a" prot="public" static="no" mutable="no">
+        <type>unsigned portBASE_TYPE</type>
+        <definition>unsigned portBASE_TYPE corCRCB::uxPriority</definition>
+        <argsstring></argsstring>
+        <name>uxPriority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" line="86" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcor_c_r_c_b_1aada3883f2b9d0a12d2c718a93c3508b7" prot="public" static="no" mutable="no">
+        <type>unsigned portBASE_TYPE</type>
+        <definition>unsigned portBASE_TYPE corCRCB::uxIndex</definition>
+        <argsstring></argsstring>
+        <name>uxIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" line="87" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcor_c_r_c_b_1a9fcb9bf637e8f5c50c5b6d0ca54d3f72" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short corCRCB::uxState</definition>
+        <argsstring></argsstring>
+        <name>uxState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" line="88" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" line="82" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" bodystart="81" bodyend="89"/>
+    <listofallmembers>
+      <member refid="structcor_c_r_c_b_1af473bd45221cb04057a95373a55f4a5a" prot="public" virt="non-virtual"><scope>corCRCB</scope><name>pxCoRoutineFunction</name></member>
+      <member refid="structcor_c_r_c_b_1aada3883f2b9d0a12d2c718a93c3508b7" prot="public" virt="non-virtual"><scope>corCRCB</scope><name>uxIndex</name></member>
+      <member refid="structcor_c_r_c_b_1aa40a9727f03a89201e12fe21b853376a" prot="public" virt="non-virtual"><scope>corCRCB</scope><name>uxPriority</name></member>
+      <member refid="structcor_c_r_c_b_1a9fcb9bf637e8f5c50c5b6d0ca54d3f72" prot="public" virt="non-virtual"><scope>corCRCB</scope><name>uxState</name></member>
+      <member refid="structcor_c_r_c_b_1a91032c115dc3d9e308708007debe08d4" prot="public" virt="non-virtual"><scope>corCRCB</scope><name>xEventListItem</name></member>
+      <member refid="structcor_c_r_c_b_1aae1f7c0a5875b6c78ed8d832cfb1cc5f" prot="public" virt="non-virtual"><scope>corCRCB</scope><name>xGenericListItem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

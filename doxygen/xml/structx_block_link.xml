@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structx_block_link" kind="struct" prot="public">
+    <compoundname>xBlockLink</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structx_block_link_1a738613f5ca1b3f99a40d2cb0dcbc2e6e" prot="public" static="no" mutable="no">
+        <type>struct A_BLOCK_LINK *</type>
+        <definition>struct A_BLOCK_LINK* xBlockLink::pxNextFreeBlock</definition>
+        <argsstring></argsstring>
+        <name>pxNextFreeBlock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/heap_2.c" line="90" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/heap_2.c" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_block_link_1a8329fe1b3ca933530274b2c6017e5cbd" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t xBlockLink::xBlockSize</definition>
+        <argsstring></argsstring>
+        <name>xBlockSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/heap_2.c" line="91" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/heap_2.c" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/heap_2.c" line="89" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/heap_2.c" bodystart="88" bodyend="92"/>
+    <listofallmembers>
+      <member refid="structx_block_link_1a738613f5ca1b3f99a40d2cb0dcbc2e6e" prot="public" virt="non-virtual"><scope>xBlockLink</scope><name>pxNextFreeBlock</name></member>
+      <member refid="structx_block_link_1a8329fe1b3ca933530274b2c6017e5cbd" prot="public" virt="non-virtual"><scope>xBlockLink</scope><name>xBlockSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

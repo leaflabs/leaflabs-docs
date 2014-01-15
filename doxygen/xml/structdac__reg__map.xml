@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structdac__reg__map" kind="struct" prot="public">
+    <compoundname>dac_reg_map</compoundname>
+    <includes refid="dac_8h" local="no">dac.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdac__reg__map_1a95e25a46456804f6b9934aa8bb527d4b" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dac_reg_map::CR</definition>
+        <argsstring></argsstring>
+        <name>CR</name>
+        <briefdescription>
+<para>Control register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dac.h" line="49" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dac.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdac__reg__map_1af3eb640a7127f3e4007c2f8206e36def" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dac_reg_map::SWTRIGR</definition>
+        <argsstring></argsstring>
+        <name>SWTRIGR</name>
+        <briefdescription>
+<para>Software trigger register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dac.h" line="50" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dac.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdac__reg__map_1a9f480b2a138605706277fd8a81d6369a" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dac_reg_map::DHR12R1</definition>
+        <argsstring></argsstring>
+        <name>DHR12R1</name>
+        <briefdescription>
+<para>Channel 1 12-bit right-aligned data holding register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dac.h" line="52" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dac.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdac__reg__map_1a38a6e1cdabf29bd8eb42be73328e1a35" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dac_reg_map::DHR12L1</definition>
+        <argsstring></argsstring>
+        <name>DHR12L1</name>
+        <briefdescription>
+<para>Channel 1 12-bit left-aligned data holding register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dac.h" line="54" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dac.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdac__reg__map_1a7b3f8cc48a06223800853d433b36f9ac" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dac_reg_map::DHR8R1</definition>
+        <argsstring></argsstring>
+        <name>DHR8R1</name>
+        <briefdescription>
+<para>Channel 1 8-bit left-aligned data holding register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dac.h" line="56" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dac.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdac__reg__map_1a7e8213488db030bb17fca9360ad272bb" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dac_reg_map::DHR12R2</definition>
+        <argsstring></argsstring>
+        <name>DHR12R2</name>
+        <briefdescription>
+<para>Channel 2 12-bit right-aligned data holding register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dac.h" line="58" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dac.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdac__reg__map_1a5371486846c0bdd630c3ed2836220157" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dac_reg_map::DHR12L2</definition>
+        <argsstring></argsstring>
+        <name>DHR12L2</name>
+        <briefdescription>
+<para>Channel 2 12-bit left-aligned data holding register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dac.h" line="60" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dac.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdac__reg__map_1a7846c69ece36d2a5daf156015c165886" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dac_reg_map::DHR8R2</definition>
+        <argsstring></argsstring>
+        <name>DHR8R2</name>
+        <briefdescription>
+<para>Channel 2 8-bit left-aligned data holding register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dac.h" line="62" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dac.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdac__reg__map_1a8ea727fb9c69c6d64eebc30e1d3dbdd7" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dac_reg_map::DHR12RD</definition>
+        <argsstring></argsstring>
+        <name>DHR12RD</name>
+        <briefdescription>
+<para>Dual DAC 12-bit right-aligned data holding register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dac.h" line="64" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dac.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdac__reg__map_1a0c78e968c5fc4bcb63cb8c054721ad57" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dac_reg_map::DHR12LD</definition>
+        <argsstring></argsstring>
+        <name>DHR12LD</name>
+        <briefdescription>
+<para>Dual DAC 12-bit left-aligned data holding register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dac.h" line="66" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dac.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdac__reg__map_1ac45ed7eb5bca8581a5d64d2ace4972af" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dac_reg_map::DHR8RD</definition>
+        <argsstring></argsstring>
+        <name>DHR8RD</name>
+        <briefdescription>
+<para>Dual DAC 8-bit right-aligned data holding register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dac.h" line="68" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dac.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdac__reg__map_1a2f9c1a352445a3a0a1231f302ef8f52a" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dac_reg_map::DOR1</definition>
+        <argsstring></argsstring>
+        <name>DOR1</name>
+        <briefdescription>
+<para>Channel 1 data output register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dac.h" line="69" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dac.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdac__reg__map_1adbdfb335ebc32232fe1071a611443a29" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dac_reg_map::DOR2</definition>
+        <argsstring></argsstring>
+        <name>DOR2</name>
+        <briefdescription>
+<para>Channel 2 data output register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dac.h" line="70" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dac.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>DAC register map. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/dac.h" line="48" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dac.h" bodystart="48" bodyend="71"/>
+    <listofallmembers>
+      <member refid="structdac__reg__map_1a95e25a46456804f6b9934aa8bb527d4b" prot="public" virt="non-virtual"><scope>dac_reg_map</scope><name>CR</name></member>
+      <member refid="structdac__reg__map_1a38a6e1cdabf29bd8eb42be73328e1a35" prot="public" virt="non-virtual"><scope>dac_reg_map</scope><name>DHR12L1</name></member>
+      <member refid="structdac__reg__map_1a5371486846c0bdd630c3ed2836220157" prot="public" virt="non-virtual"><scope>dac_reg_map</scope><name>DHR12L2</name></member>
+      <member refid="structdac__reg__map_1a0c78e968c5fc4bcb63cb8c054721ad57" prot="public" virt="non-virtual"><scope>dac_reg_map</scope><name>DHR12LD</name></member>
+      <member refid="structdac__reg__map_1a9f480b2a138605706277fd8a81d6369a" prot="public" virt="non-virtual"><scope>dac_reg_map</scope><name>DHR12R1</name></member>
+      <member refid="structdac__reg__map_1a7e8213488db030bb17fca9360ad272bb" prot="public" virt="non-virtual"><scope>dac_reg_map</scope><name>DHR12R2</name></member>
+      <member refid="structdac__reg__map_1a8ea727fb9c69c6d64eebc30e1d3dbdd7" prot="public" virt="non-virtual"><scope>dac_reg_map</scope><name>DHR12RD</name></member>
+      <member refid="structdac__reg__map_1a7b3f8cc48a06223800853d433b36f9ac" prot="public" virt="non-virtual"><scope>dac_reg_map</scope><name>DHR8R1</name></member>
+      <member refid="structdac__reg__map_1a7846c69ece36d2a5daf156015c165886" prot="public" virt="non-virtual"><scope>dac_reg_map</scope><name>DHR8R2</name></member>
+      <member refid="structdac__reg__map_1ac45ed7eb5bca8581a5d64d2ace4972af" prot="public" virt="non-virtual"><scope>dac_reg_map</scope><name>DHR8RD</name></member>
+      <member refid="structdac__reg__map_1a2f9c1a352445a3a0a1231f302ef8f52a" prot="public" virt="non-virtual"><scope>dac_reg_map</scope><name>DOR1</name></member>
+      <member refid="structdac__reg__map_1adbdfb335ebc32232fe1071a611443a29" prot="public" virt="non-virtual"><scope>dac_reg_map</scope><name>DOR2</name></member>
+      <member refid="structdac__reg__map_1af3eb640a7127f3e4007c2f8206e36def" prot="public" virt="non-virtual"><scope>dac_reg_map</scope><name>SWTRIGR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

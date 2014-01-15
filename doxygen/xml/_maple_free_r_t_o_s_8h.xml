@@ -1,0 +1,426 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="_maple_free_r_t_o_s_8h" kind="file">
+    <compoundname>MapleFreeRTOS.h</compoundname>
+    <includes refid="wirish_8h" local="yes">wirish.h</includes>
+    <includes refid="_free_r_t_o_s_8h" local="yes">utility/FreeRTOS.h</includes>
+    <includes refid="task_8h" local="yes">utility/task.h</includes>
+    <includes refid="queue_8h" local="yes">utility/queue.h</includes>
+    <includes refid="semphr_8h" local="yes">utility/semphr.h</includes>
+    <incdepgraph>
+      <node id="1118">
+        <label>utility/FreeRTOS.h</label>
+        <link refid="_free_r_t_o_s_8h_source"/>
+        <childnode refid="1119" relation="include">
+        </childnode>
+        <childnode refid="1120" relation="include">
+        </childnode>
+        <childnode refid="1121" relation="include">
+        </childnode>
+        <childnode refid="1122" relation="include">
+        </childnode>
+      </node>
+      <node id="1117">
+        <label>usb_serial.h</label>
+        <link refid="usb__serial_8h_source"/>
+        <childnode refid="1115" relation="include">
+        </childnode>
+      </node>
+      <node id="1108">
+        <label>wirish_math.h</label>
+        <link refid="wirish__math_8h"/>
+        <childnode refid="1109" relation="include">
+        </childnode>
+      </node>
+      <node id="1116">
+        <label>HardwareTimer.h</label>
+        <link refid="_hardware_timer_8h_source"/>
+        <childnode refid="1095" relation="include">
+        </childnode>
+      </node>
+      <node id="1122">
+        <label>portable.h</label>
+        <link refid="portable_8h_source"/>
+        <childnode refid="1123" relation="include">
+        </childnode>
+        <childnode refid="1124" relation="include">
+        </childnode>
+      </node>
+      <node id="1086">
+        <label>wirish.h</label>
+        <link refid="wirish_8h_source"/>
+        <childnode refid="1087" relation="include">
+        </childnode>
+        <childnode refid="1092" relation="include">
+        </childnode>
+        <childnode refid="1099" relation="include">
+        </childnode>
+        <childnode refid="1100" relation="include">
+        </childnode>
+        <childnode refid="1103" relation="include">
+        </childnode>
+        <childnode refid="1105" relation="include">
+        </childnode>
+        <childnode refid="1106" relation="include">
+        </childnode>
+        <childnode refid="1107" relation="include">
+        </childnode>
+        <childnode refid="1108" relation="include">
+        </childnode>
+        <childnode refid="1101" relation="include">
+        </childnode>
+        <childnode refid="1110" relation="include">
+        </childnode>
+        <childnode refid="1112" relation="include">
+        </childnode>
+        <childnode refid="1116" relation="include">
+        </childnode>
+        <childnode refid="1117" relation="include">
+        </childnode>
+      </node>
+      <node id="1112">
+        <label>HardwareSerial.h</label>
+        <link refid="_hardware_serial_8h"/>
+        <childnode refid="1088" relation="include">
+        </childnode>
+        <childnode refid="1113" relation="include">
+        </childnode>
+        <childnode refid="1115" relation="include">
+        </childnode>
+      </node>
+      <node id="1099">
+        <label>boards.h</label>
+        <link refid="boards_8h"/>
+        <childnode refid="1087" relation="include">
+        </childnode>
+        <childnode refid="1093" relation="include">
+        </childnode>
+        <childnode refid="1095" relation="include">
+        </childnode>
+        <childnode refid="1092" relation="include">
+        </childnode>
+      </node>
+      <node id="1096">
+        <label>nvic.h</label>
+        <link refid="nvic_8h"/>
+        <childnode refid="1088" relation="include">
+        </childnode>
+        <childnode refid="1090" relation="include">
+        </childnode>
+      </node>
+      <node id="1113">
+        <label>usart.h</label>
+        <link refid="usart_8h"/>
+        <childnode refid="1088" relation="include">
+        </childnode>
+        <childnode refid="1090" relation="include">
+        </childnode>
+        <childnode refid="1094" relation="include">
+        </childnode>
+        <childnode refid="1096" relation="include">
+        </childnode>
+        <childnode refid="1114" relation="include">
+        </childnode>
+      </node>
+      <node id="1100">
+        <label>io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="1093" relation="include">
+        </childnode>
+        <childnode refid="1098" relation="include">
+        </childnode>
+        <childnode refid="1101" relation="include">
+        </childnode>
+      </node>
+      <node id="1094">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="1088" relation="include">
+        </childnode>
+      </node>
+      <node id="1111">
+        <label>spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="1088" relation="include">
+        </childnode>
+        <childnode refid="1094" relation="include">
+        </childnode>
+        <childnode refid="1096" relation="include">
+        </childnode>
+        <childnode refid="1093" relation="include">
+        </childnode>
+        <childnode refid="1090" relation="include">
+        </childnode>
+      </node>
+      <node id="1110">
+        <label>HardwareSPI.h</label>
+        <link refid="_hardware_s_p_i_8h"/>
+        <childnode refid="1088" relation="include">
+        </childnode>
+        <childnode refid="1111" relation="include">
+        </childnode>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1115">
+        <label>Print.h</label>
+        <link refid="_print_8h_source"/>
+        <childnode refid="1088" relation="include">
+        </childnode>
+      </node>
+      <node id="1089">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="1125">
+        <label>utility/task.h</label>
+        <link refid="task_8h_source"/>
+        <childnode refid="1122" relation="include">
+        </childnode>
+        <childnode refid="1126" relation="include">
+        </childnode>
+      </node>
+      <node id="1088">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="1121">
+        <label>FreeRTOSConfig.h</label>
+        <link refid="_free_r_t_o_s_config_8h_source"/>
+      </node>
+      <node id="1119">
+        <label>stddef.h</label>
+      </node>
+      <node id="1087">
+        <label>libmaple.h</label>
+        <link refid="libmaple_8h"/>
+        <childnode refid="1088" relation="include">
+        </childnode>
+        <childnode refid="1089" relation="include">
+        </childnode>
+        <childnode refid="1090" relation="include">
+        </childnode>
+        <childnode refid="1091" relation="include">
+        </childnode>
+      </node>
+      <node id="1105">
+        <label>pwm.h</label>
+        <link refid="pwm_8h"/>
+      </node>
+      <node id="1101">
+        <label>wirish_time.h</label>
+        <link refid="wirish__time_8h"/>
+        <childnode refid="1087" relation="include">
+        </childnode>
+        <childnode refid="1096" relation="include">
+        </childnode>
+        <childnode refid="1102" relation="include">
+        </childnode>
+        <childnode refid="1099" relation="include">
+        </childnode>
+      </node>
+      <node id="1092">
+        <label>wirish_types.h</label>
+        <link refid="wirish__types_8h"/>
+        <childnode refid="1088" relation="include">
+        </childnode>
+        <childnode refid="1093" relation="include">
+        </childnode>
+        <childnode refid="1095" relation="include">
+        </childnode>
+        <childnode refid="1098" relation="include">
+        </childnode>
+      </node>
+      <node id="1104">
+        <label>bit_constants.h</label>
+        <link refid="bit__constants_8h_source"/>
+      </node>
+      <node id="1098">
+        <label>adc.h</label>
+        <link refid="adc_8h"/>
+        <childnode refid="1087" relation="include">
+        </childnode>
+        <childnode refid="1097" relation="include">
+        </childnode>
+        <childnode refid="1094" relation="include">
+        </childnode>
+      </node>
+      <node id="1107">
+        <label>wirish_debug.h</label>
+        <link refid="wirish__debug_8h"/>
+      </node>
+      <node id="1114">
+        <label>ring_buffer.h</label>
+        <link refid="ring__buffer_8h"/>
+        <childnode refid="1088" relation="include">
+        </childnode>
+      </node>
+      <node id="1102">
+        <label>systick.h</label>
+        <link refid="systick_8h"/>
+        <childnode refid="1088" relation="include">
+        </childnode>
+        <childnode refid="1090" relation="include">
+        </childnode>
+      </node>
+      <node id="1097">
+        <label>bitband.h</label>
+        <link refid="bitband_8h"/>
+        <childnode refid="1088" relation="include">
+        </childnode>
+      </node>
+      <node id="1093">
+        <label>gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="1087" relation="include">
+        </childnode>
+        <childnode refid="1094" relation="include">
+        </childnode>
+      </node>
+      <node id="1095">
+        <label>timer.h</label>
+        <link refid="timer_8h"/>
+        <childnode refid="1087" relation="include">
+        </childnode>
+        <childnode refid="1094" relation="include">
+        </childnode>
+        <childnode refid="1096" relation="include">
+        </childnode>
+        <childnode refid="1097" relation="include">
+        </childnode>
+      </node>
+      <node id="1106">
+        <label>ext_interrupts.h</label>
+        <link refid="ext__interrupts_8h"/>
+        <childnode refid="1088" relation="include">
+        </childnode>
+        <childnode refid="1096" relation="include">
+        </childnode>
+      </node>
+      <node id="1127">
+        <label>utility/queue.h</label>
+        <link refid="queue_8h_source"/>
+        <childnode refid="1124" relation="include">
+        </childnode>
+      </node>
+      <node id="1120">
+        <label>projdefs.h</label>
+        <link refid="projdefs_8h_source"/>
+      </node>
+      <node id="1109">
+        <label>math.h</label>
+      </node>
+      <node id="1091">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="1088" relation="include">
+        </childnode>
+        <childnode refid="1089" relation="include">
+        </childnode>
+      </node>
+      <node id="1128">
+        <label>utility/semphr.h</label>
+        <link refid="semphr_8h_source"/>
+        <childnode refid="1127" relation="include">
+        </childnode>
+      </node>
+      <node id="1123">
+        <label>portmacro.h</label>
+        <link refid="portmacro_8h_source"/>
+      </node>
+      <node id="1085">
+        <label>libraries/FreeRTOS/MapleFreeRTOS.h</label>
+        <link refid="MapleFreeRTOS.h"/>
+        <childnode refid="1086" relation="include">
+        </childnode>
+        <childnode refid="1118" relation="include">
+        </childnode>
+        <childnode refid="1125" relation="include">
+        </childnode>
+        <childnode refid="1127" relation="include">
+        </childnode>
+        <childnode refid="1128" relation="include">
+        </childnode>
+      </node>
+      <node id="1126">
+        <label>list.h</label>
+        <link refid="list_8h_source"/>
+      </node>
+      <node id="1090">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="1088" relation="include">
+        </childnode>
+      </node>
+      <node id="1124">
+        <label>mpu_wrappers.h</label>
+        <link refid="mpu__wrappers_8h_source"/>
+      </node>
+      <node id="1103">
+        <label>bits.h</label>
+        <link refid="bits_8h_source"/>
+        <childnode refid="1104" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_maple_free_r_t_o_s_8h_1ab96d3df7b7312bb49eeb600e809b99ab" prot="public" static="no">
+        <name>GCC_ARMCM3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/MapleFreeRTOS.h" line="33" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/MapleFreeRTOS.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2011<sp/>LeafLabs,<sp/>LLC.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__MAPLE_FREERTOS_H__</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__MAPLE_FREERTOS_H__</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wirish.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GCC_ARMCM3</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;utility/FreeRTOS.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;utility/task.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;utility/queue.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;utility/semphr.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/MapleFreeRTOS.h"/>
+  </compounddef>
+</doxygen>

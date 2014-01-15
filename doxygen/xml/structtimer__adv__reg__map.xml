@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structtimer__adv__reg__map" kind="struct" prot="public">
+    <compoundname>timer_adv_reg_map</compoundname>
+    <includes refid="timer_8h" local="no">timer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtimer__adv__reg__map_1add888670a199fecc2c0e9b50bda1f671" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 timer_adv_reg_map::CR1</definition>
+        <argsstring></argsstring>
+        <name>CR1</name>
+        <briefdescription>
+<para>Control register 1. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="53" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__adv__reg__map_1a92b5970d77b7319516519c8786b477de" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 timer_adv_reg_map::CR2</definition>
+        <argsstring></argsstring>
+        <name>CR2</name>
+        <briefdescription>
+<para>Control register 2. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="54" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__adv__reg__map_1a19d488c32a5edacf9b8d104b22797656" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 timer_adv_reg_map::SMCR</definition>
+        <argsstring></argsstring>
+        <name>SMCR</name>
+        <briefdescription>
+<para>Slave mode control register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="55" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__adv__reg__map_1ac93ee1e1c9054147994e4dcb5c4d0c49" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 timer_adv_reg_map::DIER</definition>
+        <argsstring></argsstring>
+        <name>DIER</name>
+        <briefdescription>
+<para>DMA/Interrupt enable register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="56" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__adv__reg__map_1af50571a1f004fca6fdf4fac8e8fc2fec" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 timer_adv_reg_map::SR</definition>
+        <argsstring></argsstring>
+        <name>SR</name>
+        <briefdescription>
+<para>Status register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="57" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__adv__reg__map_1a61221cd9c0a5ab185a269243fbb49114" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 timer_adv_reg_map::EGR</definition>
+        <argsstring></argsstring>
+        <name>EGR</name>
+        <briefdescription>
+<para>Event generation register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="58" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__adv__reg__map_1a1fab0dfbbf7b4cf8edd484f8cc0d4396" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 timer_adv_reg_map::CCMR1</definition>
+        <argsstring></argsstring>
+        <name>CCMR1</name>
+        <briefdescription>
+<para>Capture/compare mode register 1. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="59" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__adv__reg__map_1a45915ea234ee3f173fe29a226179283d" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 timer_adv_reg_map::CCMR2</definition>
+        <argsstring></argsstring>
+        <name>CCMR2</name>
+        <briefdescription>
+<para>Capture/compare mode register 2. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="60" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__adv__reg__map_1a34756f7838137c48dbaa28488a35706c" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 timer_adv_reg_map::CCER</definition>
+        <argsstring></argsstring>
+        <name>CCER</name>
+        <briefdescription>
+<para>Capture/compare enable register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="61" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__adv__reg__map_1a3bfd4a589b110f4f24705c89902687a9" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 timer_adv_reg_map::CNT</definition>
+        <argsstring></argsstring>
+        <name>CNT</name>
+        <briefdescription>
+<para>Counter. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="62" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__adv__reg__map_1a4081f4e49a86ecf4375b2ce7f533d4a2" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 timer_adv_reg_map::PSC</definition>
+        <argsstring></argsstring>
+        <name>PSC</name>
+        <briefdescription>
+<para>Prescaler. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="63" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__adv__reg__map_1a9abaa5d07ce03c2e86564de79a65d5bf" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 timer_adv_reg_map::ARR</definition>
+        <argsstring></argsstring>
+        <name>ARR</name>
+        <briefdescription>
+<para>Auto-reload register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="64" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__adv__reg__map_1ab03165172f959c51880f339feeade244" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 timer_adv_reg_map::RCR</definition>
+        <argsstring></argsstring>
+        <name>RCR</name>
+        <briefdescription>
+<para>Repetition counter register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="65" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__adv__reg__map_1a519d839e790a2c53010bd453fe04657d" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 timer_adv_reg_map::CCR1</definition>
+        <argsstring></argsstring>
+        <name>CCR1</name>
+        <briefdescription>
+<para>Capture/compare register 1. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="66" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__adv__reg__map_1a5729ca67355bd77bf0a27b2be81b8ad8" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 timer_adv_reg_map::CCR2</definition>
+        <argsstring></argsstring>
+        <name>CCR2</name>
+        <briefdescription>
+<para>Capture/compare register 2. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="67" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__adv__reg__map_1abfd5bb6bc3244e7f237bfc90b9d35001" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 timer_adv_reg_map::CCR3</definition>
+        <argsstring></argsstring>
+        <name>CCR3</name>
+        <briefdescription>
+<para>Capture/compare register 3. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="68" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__adv__reg__map_1ac663bcb492500c43e34c469152d37ab1" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 timer_adv_reg_map::CCR4</definition>
+        <argsstring></argsstring>
+        <name>CCR4</name>
+        <briefdescription>
+<para>Capture/compare register 4. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="69" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__adv__reg__map_1aecf2514461cf101bd115e6b4373720a8" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 timer_adv_reg_map::BDTR</definition>
+        <argsstring></argsstring>
+        <name>BDTR</name>
+        <briefdescription>
+<para>Break and dead-time register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="70" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__adv__reg__map_1a9af838afec7eed947a3147379f77b211" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 timer_adv_reg_map::DCR</definition>
+        <argsstring></argsstring>
+        <name>DCR</name>
+        <briefdescription>
+<para>DMA control register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="71" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__adv__reg__map_1a85e5b652d342984b5e6a4d0c7a6ad35e" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 timer_adv_reg_map::DMAR</definition>
+        <argsstring></argsstring>
+        <name>DMAR</name>
+        <briefdescription>
+<para>DMA address for full transfer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="72" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Advanced control timer register map type. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="52" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="52" bodyend="73"/>
+    <listofallmembers>
+      <member refid="structtimer__adv__reg__map_1a9abaa5d07ce03c2e86564de79a65d5bf" prot="public" virt="non-virtual"><scope>timer_adv_reg_map</scope><name>ARR</name></member>
+      <member refid="structtimer__adv__reg__map_1aecf2514461cf101bd115e6b4373720a8" prot="public" virt="non-virtual"><scope>timer_adv_reg_map</scope><name>BDTR</name></member>
+      <member refid="structtimer__adv__reg__map_1a34756f7838137c48dbaa28488a35706c" prot="public" virt="non-virtual"><scope>timer_adv_reg_map</scope><name>CCER</name></member>
+      <member refid="structtimer__adv__reg__map_1a1fab0dfbbf7b4cf8edd484f8cc0d4396" prot="public" virt="non-virtual"><scope>timer_adv_reg_map</scope><name>CCMR1</name></member>
+      <member refid="structtimer__adv__reg__map_1a45915ea234ee3f173fe29a226179283d" prot="public" virt="non-virtual"><scope>timer_adv_reg_map</scope><name>CCMR2</name></member>
+      <member refid="structtimer__adv__reg__map_1a519d839e790a2c53010bd453fe04657d" prot="public" virt="non-virtual"><scope>timer_adv_reg_map</scope><name>CCR1</name></member>
+      <member refid="structtimer__adv__reg__map_1a5729ca67355bd77bf0a27b2be81b8ad8" prot="public" virt="non-virtual"><scope>timer_adv_reg_map</scope><name>CCR2</name></member>
+      <member refid="structtimer__adv__reg__map_1abfd5bb6bc3244e7f237bfc90b9d35001" prot="public" virt="non-virtual"><scope>timer_adv_reg_map</scope><name>CCR3</name></member>
+      <member refid="structtimer__adv__reg__map_1ac663bcb492500c43e34c469152d37ab1" prot="public" virt="non-virtual"><scope>timer_adv_reg_map</scope><name>CCR4</name></member>
+      <member refid="structtimer__adv__reg__map_1a3bfd4a589b110f4f24705c89902687a9" prot="public" virt="non-virtual"><scope>timer_adv_reg_map</scope><name>CNT</name></member>
+      <member refid="structtimer__adv__reg__map_1add888670a199fecc2c0e9b50bda1f671" prot="public" virt="non-virtual"><scope>timer_adv_reg_map</scope><name>CR1</name></member>
+      <member refid="structtimer__adv__reg__map_1a92b5970d77b7319516519c8786b477de" prot="public" virt="non-virtual"><scope>timer_adv_reg_map</scope><name>CR2</name></member>
+      <member refid="structtimer__adv__reg__map_1a9af838afec7eed947a3147379f77b211" prot="public" virt="non-virtual"><scope>timer_adv_reg_map</scope><name>DCR</name></member>
+      <member refid="structtimer__adv__reg__map_1ac93ee1e1c9054147994e4dcb5c4d0c49" prot="public" virt="non-virtual"><scope>timer_adv_reg_map</scope><name>DIER</name></member>
+      <member refid="structtimer__adv__reg__map_1a85e5b652d342984b5e6a4d0c7a6ad35e" prot="public" virt="non-virtual"><scope>timer_adv_reg_map</scope><name>DMAR</name></member>
+      <member refid="structtimer__adv__reg__map_1a61221cd9c0a5ab185a269243fbb49114" prot="public" virt="non-virtual"><scope>timer_adv_reg_map</scope><name>EGR</name></member>
+      <member refid="structtimer__adv__reg__map_1a4081f4e49a86ecf4375b2ce7f533d4a2" prot="public" virt="non-virtual"><scope>timer_adv_reg_map</scope><name>PSC</name></member>
+      <member refid="structtimer__adv__reg__map_1ab03165172f959c51880f339feeade244" prot="public" virt="non-virtual"><scope>timer_adv_reg_map</scope><name>RCR</name></member>
+      <member refid="structtimer__adv__reg__map_1a19d488c32a5edacf9b8d104b22797656" prot="public" virt="non-virtual"><scope>timer_adv_reg_map</scope><name>SMCR</name></member>
+      <member refid="structtimer__adv__reg__map_1af50571a1f004fca6fdf4fac8e8fc2fec" prot="public" virt="non-virtual"><scope>timer_adv_reg_map</scope><name>SR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

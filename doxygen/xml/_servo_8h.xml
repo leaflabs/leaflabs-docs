@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="_servo_8h" kind="file">
+    <compoundname>Servo.h</compoundname>
+    <includes refid="libmaple__types_8h" local="yes">libmaple_types.h</includes>
+    <includes refid="timer_8h" local="yes">timer.h</includes>
+    <includes refid="wirish__types_8h" local="yes">wirish_types.h</includes>
+    <incdepgraph>
+      <node id="1397">
+        <label>nvic.h</label>
+        <link refid="nvic_8h"/>
+        <childnode refid="1390" relation="include">
+        </childnode>
+        <childnode refid="1394" relation="include">
+        </childnode>
+      </node>
+      <node id="1396">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="1390" relation="include">
+        </childnode>
+      </node>
+      <node id="1393">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="1390">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="1392">
+        <label>libmaple.h</label>
+        <link refid="libmaple_8h"/>
+        <childnode refid="1390" relation="include">
+        </childnode>
+        <childnode refid="1393" relation="include">
+        </childnode>
+        <childnode refid="1394" relation="include">
+        </childnode>
+        <childnode refid="1395" relation="include">
+        </childnode>
+      </node>
+      <node id="1399">
+        <label>wirish_types.h</label>
+        <link refid="wirish__types_8h"/>
+        <childnode refid="1390" relation="include">
+        </childnode>
+        <childnode refid="1400" relation="include">
+        </childnode>
+        <childnode refid="1391" relation="include">
+        </childnode>
+        <childnode refid="1401" relation="include">
+        </childnode>
+      </node>
+      <node id="1389">
+        <label>libraries/Servo/Servo.h</label>
+        <link refid="Servo.h"/>
+        <childnode refid="1390" relation="include">
+        </childnode>
+        <childnode refid="1391" relation="include">
+        </childnode>
+        <childnode refid="1399" relation="include">
+        </childnode>
+      </node>
+      <node id="1401">
+        <label>adc.h</label>
+        <link refid="adc_8h"/>
+        <childnode refid="1392" relation="include">
+        </childnode>
+        <childnode refid="1398" relation="include">
+        </childnode>
+        <childnode refid="1396" relation="include">
+        </childnode>
+      </node>
+      <node id="1398">
+        <label>bitband.h</label>
+        <link refid="bitband_8h"/>
+        <childnode refid="1390" relation="include">
+        </childnode>
+      </node>
+      <node id="1400">
+        <label>gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="1392" relation="include">
+        </childnode>
+        <childnode refid="1396" relation="include">
+        </childnode>
+      </node>
+      <node id="1391">
+        <label>timer.h</label>
+        <link refid="timer_8h"/>
+        <childnode refid="1392" relation="include">
+        </childnode>
+        <childnode refid="1396" relation="include">
+        </childnode>
+        <childnode refid="1397" relation="include">
+        </childnode>
+        <childnode refid="1398" relation="include">
+        </childnode>
+      </node>
+      <node id="1395">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="1390" relation="include">
+        </childnode>
+        <childnode refid="1393" relation="include">
+        </childnode>
+      </node>
+      <node id="1394">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="1390" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_servo" prot="public">Servo</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_servo_8h_1a46dcd9ca1d11a16616d7f8573206450d" prot="public" static="no">
+        <name>NOT_ATTACHED</name>
+        <initializer>(-1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" line="66" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_servo_8h_1a410f4cefd52c68e32370b11a2135596c" prot="public" static="no">
+        <name>SERVO_DEFAULT_MIN_PW</name>
+        <initializer>544</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" line="71" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_servo_8h_1ad44cb98d0de323711dd2734863c9ad39" prot="public" static="no">
+        <name>SERVO_DEFAULT_MAX_PW</name>
+        <initializer>2400</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" line="72" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_servo_8h_1af497ac834bb1b1d84a312c4e4856785c" prot="public" static="no">
+        <name>SERVO_DEFAULT_MIN_ANGLE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" line="73" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_servo_8h_1ab383479a776b682f94950a21d4e673b4" prot="public" static="no">
+        <name>SERVO_DEFAULT_MAX_ANGLE</name>
+        <initializer>180</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" line="74" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010,<sp/>LeafLabs,<sp/>LLC.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_SERVO_H_</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_SERVO_H_</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libmaple__types_8h" kindref="compound" tooltip="libmaple types">libmaple_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="timer_8h" kindref="compound" tooltip="New-style timer interface.">timer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wirish__types_8h" kindref="compound" tooltip="Wirish library type definitions.">wirish_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MAPLE_IDE</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;wirish.h&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>hack<sp/>for<sp/>IDE<sp/>compile<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/>Note<sp/>on<sp/>Arduino<sp/>compatibility:</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/>In<sp/>the<sp/>Arduino<sp/>implementation,<sp/>PWM<sp/>is<sp/>done<sp/>&quot;by<sp/>hand&quot;<sp/>in<sp/>the<sp/>sense</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*<sp/>that<sp/>timer<sp/>channels<sp/>are<sp/>hijacked<sp/>in<sp/>groups<sp/>and<sp/>an<sp/>ISR<sp/>is<sp/>set<sp/>which</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*<sp/>toggles<sp/>Servo::attach()ed<sp/>pins<sp/>using<sp/>digitalWrite().</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>*<sp/>While<sp/>this<sp/>scheme<sp/>allows<sp/>any<sp/>pin<sp/>to<sp/>drive<sp/>a<sp/>servo,<sp/>it<sp/>chews<sp/>up</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/>cycles<sp/>and<sp/>complicates<sp/>the<sp/>programmer&apos;s<sp/>notion<sp/>of<sp/>when<sp/>a<sp/>particular</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*<sp/>timer<sp/>channel<sp/>will<sp/>be<sp/>in<sp/>use.</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*<sp/>This<sp/>implementation<sp/>only<sp/>allows<sp/>Servo<sp/>instances<sp/>to<sp/>attach()<sp/>to<sp/>pins</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*<sp/>that<sp/>already<sp/>have<sp/>a<sp/>timer<sp/>channel<sp/>associated<sp/>with<sp/>them,<sp/>and<sp/>just</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*<sp/>uses<sp/>pwmWrite()<sp/>to<sp/>drive<sp/>the<sp/>wave.</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*<sp/>This<sp/>introduces<sp/>an<sp/>incompatibility:<sp/>while<sp/>the<sp/>Arduino</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*<sp/>implementation<sp/>of<sp/>attach()<sp/>returns<sp/>the<sp/>affected<sp/>channel<sp/>on<sp/>success</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*<sp/>and<sp/>0<sp/>on<sp/>failure,<sp/>this<sp/>one<sp/>returns<sp/>true<sp/>on<sp/>success<sp/>and<sp/>false<sp/>on</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*<sp/>failure.</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>*<sp/>RC<sp/>Servos<sp/>expect<sp/>a<sp/>pulse<sp/>every<sp/>20ms.<sp/><sp/>Since<sp/>periods<sp/>are<sp/>set<sp/>for</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/>*<sp/>entire<sp/>timers,<sp/>rather<sp/>than<sp/>individual<sp/>channels,<sp/>attach()ing<sp/>a<sp/>Servo</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/>*<sp/>to<sp/>a<sp/>pin<sp/>can<sp/>interfere<sp/>with<sp/>other<sp/>pins<sp/>associated<sp/>with<sp/>the<sp/>same</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*<sp/>timer.<sp/><sp/>As<sp/>always,<sp/>your<sp/>board&apos;s<sp/>pin<sp/>map<sp/>is<sp/>your<sp/>friend.</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Pin<sp/>number<sp/>of<sp/>unattached<sp/>pins</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NOT_ATTACHED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-1)</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Default<sp/>min/max<sp/>pulse<sp/>widths<sp/>(in<sp/>microseconds)<sp/>and<sp/>angles<sp/>(in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//<sp/>degrees).<sp/><sp/>Values<sp/>chosen<sp/>for<sp/>Arduino<sp/>compatibility.<sp/><sp/>These<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//<sp/>are<sp/>part<sp/>of<sp/>the<sp/>public<sp/>API;<sp/>DO<sp/>NOT<sp/>CHANGE<sp/>THEM.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERVO_DEFAULT_MIN_PW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>544</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SERVO_DEFAULT_MAX_PW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2400</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SERVO_DEFAULT_MIN_ANGLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SERVO_DEFAULT_MAX_ANGLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>180</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="77" refid="class_servo" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_servo" kindref="compound" tooltip="Class for interfacing with RC servomotors.">Servo</ref><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_servo_1a70b2b17657cf258cdcb57503bcf62cd2" kindref="member" tooltip="Construct a new Servo instance.">Servo</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_servo_1aa8a75e68a28d6934b16a777c1731641e" kindref="member" tooltip="Associate this instance with a servomotor whose input is connected to pin.">attach</ref>(uint8<sp/>pin,</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16<sp/>minPulseWidth=SERVO_DEFAULT_MIN_PW,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16<sp/>maxPulseWidth=SERVO_DEFAULT_MAX_PW,</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int16<sp/>minAngle=SERVO_DEFAULT_MIN_ANGLE,</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int16<sp/>maxAngle=SERVO_DEFAULT_MAX_ANGLE);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="class_servo_1a098181c41d52a24a30d4c0d1e829fac8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_servo_1a098181c41d52a24a30d4c0d1e829fac8" kindref="member" tooltip="Check if this instance is attached to a servo.">attached</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;pin<sp/>!=<sp/>NOT_ATTACHED;<sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="class_servo_1a9201fe678b7ebeb50b74646838798847" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo_1a9201fe678b7ebeb50b74646838798847" kindref="member" tooltip="Get the pin this instance is attached to.">attachedPin</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;pin;<sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_servo_1afa4042feca3c79ba934798961d202bea" kindref="member" tooltip="Stop driving the servo pulse train.">detach</ref>();</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_servo_1af69aba052f5907ef7fc3b6159e3b7726" kindref="member" tooltip="Set the servomotor target angle.">write</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>angle);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_servo_1a4b4d0f67163e983813f2db1c834ad7c2" kindref="member" tooltip="Get the servomotor&amp;#39;s target angle, in degrees.">read</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_servo_1a7d35c33a26697722dc0c7e6cdb66d299" kindref="member" tooltip="Set the pulse width, in microseconds.">writeMicroseconds</ref>(uint16<sp/>pulseWidth);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16<sp/><ref refid="class_servo_1a925de51eb1c8d0b241476df747662311" kindref="member" tooltip="Get the current pulse width, in microseconds.">readMicroseconds</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>int16<sp/>pin;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16<sp/>minPW;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16<sp/>maxPW;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>int16<sp/>minAngle;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>int16<sp/>maxAngle;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>resetFields(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>_SERVO_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h"/>
+  </compounddef>
+</doxygen>

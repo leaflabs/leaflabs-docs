@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="struct_o_n_e___d_e_s_c_r_i_p_t_o_r" kind="struct" prot="public">
+    <compoundname>ONE_DESCRIPTOR</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_o_n_e___d_e_s_c_r_i_p_t_o_r_1a92a0baa48dcbc4e81f3d8e8e483c02c3" prot="public" static="no" mutable="no">
+        <type>u8 *</type>
+        <definition>u8* PONE_DESCRIPTOR::Descriptor</definition>
+        <argsstring></argsstring>
+        <name>Descriptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="42" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_o_n_e___d_e_s_c_r_i_p_t_o_r_1a47178d63e82284d90fad43c8401a9305" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 PONE_DESCRIPTOR::Descriptor_Size</definition>
+        <argsstring></argsstring>
+        <name>Descriptor_Size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="43" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="41" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="40" bodyend="44"/>
+    <listofallmembers>
+      <member refid="struct_o_n_e___d_e_s_c_r_i_p_t_o_r_1a92a0baa48dcbc4e81f3d8e8e483c02c3" prot="public" virt="non-virtual"><scope>ONE_DESCRIPTOR</scope><name>Descriptor</name></member>
+      <member refid="struct_o_n_e___d_e_s_c_r_i_p_t_o_r_1a47178d63e82284d90fad43c8401a9305" prot="public" virt="non-virtual"><scope>ONE_DESCRIPTOR</scope><name>Descriptor_Size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

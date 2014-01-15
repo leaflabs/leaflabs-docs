@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="struct_d_e_v_i_c_e" kind="struct" prot="public">
+    <compoundname>DEVICE</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_d_e_v_i_c_e_1adc67fd027a590a81bf5582125ad8f9d8" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 DEVICE::Total_Endpoint</definition>
+        <argsstring></argsstring>
+        <name>Total_Endpoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="94" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_e_v_i_c_e_1a8e6e547924b7ce52a328b4b2cc756e22" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 DEVICE::Total_Configuration</definition>
+        <argsstring></argsstring>
+        <name>Total_Configuration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="95" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="93" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="92" bodyend="96"/>
+    <listofallmembers>
+      <member refid="struct_d_e_v_i_c_e_1a8e6e547924b7ce52a328b4b2cc756e22" prot="public" virt="non-virtual"><scope>DEVICE</scope><name>Total_Configuration</name></member>
+      <member refid="struct_d_e_v_i_c_e_1adc67fd027a590a81bf5582125ad8f9d8" prot="public" virt="non-virtual"><scope>DEVICE</scope><name>Total_Endpoint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

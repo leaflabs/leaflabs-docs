@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__v_task_suspend_all" kind="group">
+    <compoundname>vTaskSuspendAll</compoundname>
+    <title>vTaskSuspendAll</title>
+    <briefdescription>
+<para>task. </para>    </briefdescription>
+    <detaileddescription>
+<para>h <preformatted>void vTaskSuspendAll( void );</preformatted></para><para>Suspends all real time kernel activity while keeping interrupts (including the kernel tick) enabled.</para><para>After calling vTaskSuspendAll () the calling task will continue to execute without risk of being swapped out until a call to xTaskResumeAll () has been made.</para><para>API functions that have the potential to cause a context switch (for example, vTaskDelayUntil(), xQueueSend(), etc.) must not be called while the scheduler is suspended.</para><para>Example usage: <preformatted>
+ void vTask1( void * pvParameters )
+ {
+	 for( ;; )
+	 {
+Task code goes here.</preformatted></para><para><preformatted>...</preformatted></para><para><preformatted>At some point the task wants to perform a long operation during
+which it does not want to get swapped out.  It cannot use
+taskENTER_CRITICAL ()/taskEXIT_CRITICAL () as the length of the
+operation may cause interrupts to be missed - including the
+ticks.</preformatted></para><para><preformatted>Prevent the real time kernel swapping out the task.
+		 vTaskSuspendAll ();</preformatted></para><para><preformatted>Perform the operation here.  There is no need to use critical
+sections as we have all the microcontroller processing time.
+During this time interrupts will still operate and the kernel
+tick count will be maintained.</preformatted></para><para><preformatted>...</preformatted></para><para><preformatted>The operation is complete.  Restart the kernel.
+		 xTaskResumeAll ();
+	 }
+ }
+   </preformatted> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

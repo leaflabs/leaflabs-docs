@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="struct_e_n_d_p_o_i_n_t___i_n_f_o" kind="struct" prot="public">
+    <compoundname>ENDPOINT_INFO</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_e_n_d_p_o_i_n_t___i_n_f_o_1a0dab960ba70fc85eefc84c2167d69d52" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 ENDPOINT_INFO::Usb_wLength</definition>
+        <argsstring></argsstring>
+        <name>Usb_wLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="84" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_e_n_d_p_o_i_n_t___i_n_f_o_1a40c1ebf915d60ccb71dfed4162d57c0d" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 ENDPOINT_INFO::Usb_wOffset</definition>
+        <argsstring></argsstring>
+        <name>Usb_wOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="85" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_e_n_d_p_o_i_n_t___i_n_f_o_1a825d8623694683db9059ed5386ae1fc2" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 ENDPOINT_INFO::PacketSize</definition>
+        <argsstring></argsstring>
+        <name>PacketSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="86" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_e_n_d_p_o_i_n_t___i_n_f_o_1a00024e6860b36b1f840017fedf2e9c0e" prot="public" static="no" mutable="no">
+        <type>u8 *(*</type>
+        <definition>u8*(* ENDPOINT_INFO::CopyData)(u16 Length)</definition>
+        <argsstring>)(u16 Length)</argsstring>
+        <name>CopyData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="87" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="61" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="60" bodyend="88"/>
+    <listofallmembers>
+      <member refid="struct_e_n_d_p_o_i_n_t___i_n_f_o_1a00024e6860b36b1f840017fedf2e9c0e" prot="public" virt="non-virtual"><scope>ENDPOINT_INFO</scope><name>CopyData</name></member>
+      <member refid="struct_e_n_d_p_o_i_n_t___i_n_f_o_1a825d8623694683db9059ed5386ae1fc2" prot="public" virt="non-virtual"><scope>ENDPOINT_INFO</scope><name>PacketSize</name></member>
+      <member refid="struct_e_n_d_p_o_i_n_t___i_n_f_o_1a0dab960ba70fc85eefc84c2167d69d52" prot="public" virt="non-virtual"><scope>ENDPOINT_INFO</scope><name>Usb_wLength</name></member>
+      <member refid="struct_e_n_d_p_o_i_n_t___i_n_f_o_1a40c1ebf915d60ccb71dfed4162d57c0d" prot="public" virt="non-virtual"><scope>ENDPOINT_INFO</scope><name>Usb_wOffset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="systick_8c" kind="file">
+    <compoundname>systick.c</compoundname>
+    <includes refid="systick_8h" local="yes">systick.h</includes>
+    <incdepgraph>
+      <node id="610">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="608">
+        <label>libmaple/systick.c</label>
+        <link refid="systick.c"/>
+        <childnode refid="609" relation="include">
+        </childnode>
+      </node>
+      <node id="609">
+        <label>systick.h</label>
+        <link refid="systick_8h"/>
+        <childnode refid="610" relation="include">
+        </childnode>
+        <childnode refid="611" relation="include">
+        </childnode>
+      </node>
+      <node id="611">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="610" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="systick_8c_1a202ff4986ead6aa0fd590c4c9a5af768" prot="public" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>volatile uint32 systick_uptime_millis</definition>
+        <argsstring></argsstring>
+        <name>systick_uptime_millis</name>
+        <briefdescription>
+<para>System timer interrupt handler and initialization routines. </para>        </briefdescription>
+        <detaileddescription>
+<para>System elapsed time, in milliseconds. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.c" line="33" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.c" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="systick_8c_1acd6b2a53de80c6f610c82a3598d2bea3" prot="public" static="yes" mutable="no">
+        <type>void(*</type>
+        <definition>void(* systick_user_callback)(void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>systick_user_callback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.c" line="34" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.c" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="systick_8c_1a3824cca1fc00921d15e474451714afa6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void systick_init</definition>
+        <argsstring>(uint32 reload_val)</argsstring>
+        <name>systick_init</name>
+        <param>
+          <type>uint32</type>
+          <declname>reload_val</declname>
+        </param>
+        <briefdescription>
+<para>Initialize and enable SysTick. </para>        </briefdescription>
+        <detaileddescription>
+<para>Clocks the system timer with the core clock, turns it on, and enables interrupts.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reload_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Appropriate reload counter to tick every 1 ms. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.c" line="44" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.c" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="systick_8c_1a23a475a16abcc21caa11e52539be4a70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void systick_disable</definition>
+        <argsstring>()</argsstring>
+        <name>systick_disable</name>
+        <briefdescription>
+<para>Clock the system timer with the core clock, but don&apos;t turn it on or enable interrupt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.c" line="53" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.c" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="systick_8c_1ab0296113160a008111a1c39150423b5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void systick_enable</definition>
+        <argsstring>()</argsstring>
+        <name>systick_enable</name>
+        <briefdescription>
+<para>Clock the system timer with the core clock and turn it on; interrupt every 1 ms, for systick_timer_millis. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.c" line="61" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.c" bodystart="61" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="systick_8c_1a429ad91ff8547013cbaa8bf8560a2fe1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void systick_attach_callback</definition>
+        <argsstring>(void(*callback)(void))</argsstring>
+        <name>systick_attach_callback</name>
+        <param>
+          <type>void(*)(void)</type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+<para>Attach a callback to be called from the SysTick exception handler. </para>        </briefdescription>
+        <detaileddescription>
+<para>To detach a callback, call this function again with a null argument. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.c" line="73" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.c" bodystart="73" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="systick_8c_1aa1f54018f0c42479e261959210988b98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __exc_systick</definition>
+        <argsstring>(void)</argsstring>
+        <name>__exc_systick</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.c" line="81" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.c" bodystart="81" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Perry<sp/>Hung.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="systick_8h" kindref="compound" tooltip="Various system timer definitions.">systick.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="systick_8h_1a202ff4986ead6aa0fd590c4c9a5af768" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32<sp/>systick_uptime_millis;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>void<sp/>(*systick_user_callback)(void);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="systick_8h_1a3824cca1fc00921d15e474451714afa6" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>systick_init(uint32<sp/>reload_val)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="systick_8h_1a5f6ac8b4c581ebfa1f6a2013dec2396d" kindref="member" tooltip="SysTick register map base pointer.">SYSTICK_BASE</ref>-&gt;RVR<sp/>=<sp/>reload_val;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>systick_enable();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="systick_8h_1a23a475a16abcc21caa11e52539be4a70" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>systick_disable()<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="systick_8h_1a5f6ac8b4c581ebfa1f6a2013dec2396d" kindref="member" tooltip="SysTick register map base pointer.">SYSTICK_BASE</ref>-&gt;CSR<sp/>=<sp/>SYSTICK_CSR_CLKSOURCE_CORE;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="systick_8h_1ab0296113160a008111a1c39150423b5d" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>systick_enable()<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>re-enables<sp/>init<sp/>registers<sp/>without<sp/>changing<sp/>reload<sp/>val<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="systick_8h_1a5f6ac8b4c581ebfa1f6a2013dec2396d" kindref="member" tooltip="SysTick register map base pointer.">SYSTICK_BASE</ref>-&gt;CSR<sp/>=<sp/>(SYSTICK_CSR_CLKSOURCE_CORE<sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SYSTICK_CSR_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SYSTICK_CSR_TICKINT_PEND);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>systick_attach_callback(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*callback)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>systick_user_callback<sp/>=<sp/>callback;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*<sp/>SysTick<sp/>ISR</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__exc_systick(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>systick_uptime_millis++;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(systick_user_callback)<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>systick_user_callback();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.c"/>
+  </compounddef>
+</doxygen>

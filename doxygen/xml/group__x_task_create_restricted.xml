@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__x_task_create_restricted" kind="group">
+    <compoundname>xTaskCreateRestricted</compoundname>
+    <title>xTaskCreateRestricted</title>
+    <briefdescription>
+<para>task. </para>    </briefdescription>
+    <detaileddescription>
+<para>h <preformatted>
+ portBASE_TYPE xTaskCreateRestricted( xTaskParameters *pxTaskDefinition, xTaskHandle *pxCreatedTask );</preformatted></para><para>xTaskCreateRestricted() should only be used in systems that include an MPU implementation.</para><para>Create a new task and add it to the list of tasks that are ready to run. The function parameters define the memory regions and associated access permissions allocated to the task.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pxTaskDefinition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a structure that contains a member for each of the normal xTaskCreate() parameters (see the xTaskCreate() API documentation) plus an optional stack buffer and the memory region definitions.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pxCreatedTask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Used to pass back a handle by which the created task can be referenced.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pdPASS if the task was successfully created and added to a ready list, otherwise an error code defined in the file errors. h</para></simplesect>
+Example usage: <preformatted>
+Create an <ref refid="structx_task_parameters" kindref="compound">xTaskParameters</ref> structure that defines the task to be created.
+static const <ref refid="structx_task_parameters" kindref="compound">xTaskParameters</ref> xCheckTaskParameters =
+{
+	vATask,		// pvTaskCode - the function that implements the task.
+	&quot;ATask&quot;,	// pcName - just a text name for the task to assist debugging.
+	100,		// usStackDepth	- the stack size DEFINED IN WORDS.
+	NULL,		// pvParameters - passed into the task function as the function parameters.
+	( 1UL | portPRIVILEGE_BIT ),// uxPriority - task priority, set the portPRIVILEGE_BIT if the task should run in a privileged state.
+	cStackBuffer,// puxStackBuffer - the buffer to be used as the task stack.</preformatted></para><para><preformatted>xRegions - Allocate up to three separate memory regions for access by
+the task, with appropriate access permissions.  Different processors have
+different memory alignment requirements - refer to the FreeRTOS documentation
+for full information.
+	{											
+Base address					Length	Parameters
+        { cReadWriteArray,				32,		portMPU_REGION_READ_WRITE },
+        { cReadOnlyArray,				32,		portMPU_REGION_READ_ONLY },
+        { cPrivilegedOnlyAccessArray,	128,	portMPU_REGION_PRIVILEGED_READ_WRITE }
+	}
+};</preformatted></para><para><preformatted>int main( void )
+{
+xTaskHandle xHandle;</preformatted></para><para><preformatted>Create a task from the const structure defined above.  The task handle
+is requested (the second parameter is not NULL) but in this case just for
+demonstration purposes as its not actually used.
+	xTaskCreateRestricted( &amp;xRegTest1Parameters, &amp;xHandle );</preformatted></para><para><preformatted>Start the scheduler.
+	vTaskStartScheduler();</preformatted></para><para><preformatted>Will only get here if there was insufficient memory to create the idle
+task.
+	for( ;; );
+}
+   </preformatted></para><para>h <preformatted>
+ void vTaskAllocateMPURegions( xTaskHandle xTask, const xMemoryRegion * const pxRegions );</preformatted></para><para>Memory regions are assigned to a restricted task when the task is created by a call to xTaskCreateRestricted(). These regions can be redefined using vTaskAllocateMPURegions().</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xTask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle of the task being updated.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xRegions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to an <ref refid="structx_memory_region" kindref="compound">xMemoryRegion</ref> structure that contains the new memory region definitions.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Example usage: <preformatted>
+Define an array of <ref refid="structx_memory_region" kindref="compound">xMemoryRegion</ref> structures that configures an MPU region
+allowing read/write access for 1024 bytes starting at the beginning of the
+ucOneKByte array.  The other two of the maximum 3 definable regions are
+unused so set to zero.
+static const <ref refid="structx_memory_region" kindref="compound">xMemoryRegion</ref> xAltRegions[ portNUM_CONFIGURABLE_REGIONS ] =
+{											
+Base address		Length		Parameters
+	{ ucOneKByte,		1024,		portMPU_REGION_READ_WRITE },
+	{ 0,				0,			0 },
+	{ 0,				0,			0 }
+};</preformatted></para><para><preformatted>void vATask( void *pvParameters )
+{
+This task was created such that it has access to certain regions of
+memory as defined by the MPU configuration.  At some point it is
+desired that these MPU regions are replaced with that defined in the
+xAltRegions const struct above.  Use a call to vTaskAllocateMPURegions()
+for this purpose.  NULL is used as the task handle to indicate that this
+function should modify the MPU regions of the calling task.
+	vTaskAllocateMPURegions( NULL, xAltRegions );</preformatted></para><para><preformatted>Now the task can continue its function, but from this point on can only
+access its stack and the ucOneKByte array (unless any other statically
+defined or shared regions have been declared elsewhere).
+}
+   </preformatted> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

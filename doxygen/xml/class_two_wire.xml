@@ -1,0 +1,426 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="class_two_wire" kind="class" prot="public">
+    <compoundname>TwoWire</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_two_wire_1a5b8e8b616a6bc52092fba81b9a19078a" prot="private" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 TwoWire::rx_buf[WIRE_BUFSIZ]</definition>
+        <argsstring>[WIRE_BUFSIZ]</argsstring>
+        <name>rx_buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="62" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_two_wire_1aa8b20a5ab7fb009864250830d12cb77a" prot="private" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 TwoWire::rx_buf_idx</definition>
+        <argsstring></argsstring>
+        <name>rx_buf_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="63" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_two_wire_1ad4dc24c283eb8e7e4038f34cd918db33" prot="private" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 TwoWire::rx_buf_len</definition>
+        <argsstring></argsstring>
+        <name>rx_buf_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="64" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_two_wire_1a2f961f09e1fab66ed21c371c92ee41d3" prot="private" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 TwoWire::tx_addr</definition>
+        <argsstring></argsstring>
+        <name>tx_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="66" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_two_wire_1ae7e2694215b903fc8e3f766eff233dd4" prot="private" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 TwoWire::tx_buf[WIRE_BUFSIZ]</definition>
+        <argsstring>[WIRE_BUFSIZ]</argsstring>
+        <name>tx_buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="67" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_two_wire_1a9c38cea1f88ebda5f6f7d143f5d74c9c" prot="private" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 TwoWire::tx_buf_idx</definition>
+        <argsstring></argsstring>
+        <name>tx_buf_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="68" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_two_wire_1ae42bb7f712950ee07ee7e3f8fc44a8f8" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean TwoWire::tx_buf_overflow</definition>
+        <argsstring></argsstring>
+        <name>tx_buf_overflow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="69" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_two_wire_1ad6b66b4f1fe5a741235fdb5a30aae5dd" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_port" kindref="compound">Port</ref></type>
+        <definition>Port TwoWire::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="70" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_two_wire_1a8e2626f60437bf14af3592be1f4f2493" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8</type>
+        <definition>uint8 TwoWire::writeOneByte</definition>
+        <argsstring>(uint8)</argsstring>
+        <name>writeOneByte</name>
+        <param>
+          <type>uint8</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1aff4f5f9e910a137c6d35c6e97173e842" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8</type>
+        <definition>uint8 TwoWire::readOneByte</definition>
+        <argsstring>(uint8, uint8 *)</argsstring>
+        <name>readOneByte</name>
+        <param>
+          <type>uint8</type>
+        </param>
+        <param>
+          <type>uint8 *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="72"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_two_wire_1a4c7daf378c06e5e72762e1bd3d5937b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TwoWire::TwoWire</definition>
+        <argsstring>()</argsstring>
+        <name>TwoWire</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1ada85a7a8663ec8af0a1248b659be2f18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TwoWire::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a1e711b51ef20f8add87591563ffce1b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TwoWire::begin</definition>
+        <argsstring>(uint8, uint8)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>uint8</type>
+        </param>
+        <param>
+          <type>uint8</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a8567472a5240e3716d28958ec70b54d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TwoWire::beginTransmission</definition>
+        <argsstring>(uint8)</argsstring>
+        <name>beginTransmission</name>
+        <param>
+          <type>uint8</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a4da95eb4adced5dad152344243e57aad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TwoWire::beginTransmission</definition>
+        <argsstring>(int)</argsstring>
+        <name>beginTransmission</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a7cc26f3a58b0c457ff4d2f3d5e21a99f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8</type>
+        <definition>uint8 TwoWire::endTransmission</definition>
+        <argsstring>(void)</argsstring>
+        <name>endTransmission</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a67c71ee1c2e7695251c62c6acf0d81e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8</type>
+        <definition>uint8 TwoWire::requestFrom</definition>
+        <argsstring>(uint8, int)</argsstring>
+        <name>requestFrom</name>
+        <param>
+          <type>uint8</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a57926dd28cbfac641d40af3c0415bffd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8</type>
+        <definition>uint8 TwoWire::requestFrom</definition>
+        <argsstring>(int, int)</argsstring>
+        <name>requestFrom</name>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a47705faff562cfb3df39c0bf344b9fe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TwoWire::send</definition>
+        <argsstring>(uint8)</argsstring>
+        <name>send</name>
+        <param>
+          <type>uint8</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a52334dea80917cb7285d2303c4a9b8f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TwoWire::send</definition>
+        <argsstring>(uint8 *, int)</argsstring>
+        <name>send</name>
+        <param>
+          <type>uint8 *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a4841a3c5ced724dbb0f393a222162bce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TwoWire::send</definition>
+        <argsstring>(int)</argsstring>
+        <name>send</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a67475cc8d892ab1d1320035b9475fcbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TwoWire::send</definition>
+        <argsstring>(int *, int)</argsstring>
+        <name>send</name>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1ae3c6123ecf8ece5d4107e73226a370a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TwoWire::send</definition>
+        <argsstring>(char *)</argsstring>
+        <name>send</name>
+        <param>
+          <type>char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1ac0f7753d54706adf64f3aacbf9435f1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8</type>
+        <definition>uint8 TwoWire::available</definition>
+        <argsstring>()</argsstring>
+        <name>available</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_two_wire_1a4d3a8be02ef9110a7904597f40bd71b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8</type>
+        <definition>uint8 TwoWire::receive</definition>
+        <argsstring>()</argsstring>
+        <name>receive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="88"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="60" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" bodystart="60" bodyend="89"/>
+    <listofallmembers>
+      <member refid="class_two_wire_1ac0f7753d54706adf64f3aacbf9435f1b" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>available</name></member>
+      <member refid="class_two_wire_1ada85a7a8663ec8af0a1248b659be2f18" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>begin</name></member>
+      <member refid="class_two_wire_1a1e711b51ef20f8add87591563ffce1b4" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>begin</name></member>
+      <member refid="class_two_wire_1a8567472a5240e3716d28958ec70b54d4" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>beginTransmission</name></member>
+      <member refid="class_two_wire_1a4da95eb4adced5dad152344243e57aad" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>beginTransmission</name></member>
+      <member refid="class_two_wire_1a7cc26f3a58b0c457ff4d2f3d5e21a99f" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>endTransmission</name></member>
+      <member refid="class_two_wire_1ad6b66b4f1fe5a741235fdb5a30aae5dd" prot="private" virt="non-virtual"><scope>TwoWire</scope><name>port</name></member>
+      <member refid="class_two_wire_1aff4f5f9e910a137c6d35c6e97173e842" prot="private" virt="non-virtual"><scope>TwoWire</scope><name>readOneByte</name></member>
+      <member refid="class_two_wire_1a4d3a8be02ef9110a7904597f40bd71b7" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>receive</name></member>
+      <member refid="class_two_wire_1a67c71ee1c2e7695251c62c6acf0d81e4" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>requestFrom</name></member>
+      <member refid="class_two_wire_1a57926dd28cbfac641d40af3c0415bffd" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>requestFrom</name></member>
+      <member refid="class_two_wire_1a5b8e8b616a6bc52092fba81b9a19078a" prot="private" virt="non-virtual"><scope>TwoWire</scope><name>rx_buf</name></member>
+      <member refid="class_two_wire_1aa8b20a5ab7fb009864250830d12cb77a" prot="private" virt="non-virtual"><scope>TwoWire</scope><name>rx_buf_idx</name></member>
+      <member refid="class_two_wire_1ad4dc24c283eb8e7e4038f34cd918db33" prot="private" virt="non-virtual"><scope>TwoWire</scope><name>rx_buf_len</name></member>
+      <member refid="class_two_wire_1a47705faff562cfb3df39c0bf344b9fe3" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>send</name></member>
+      <member refid="class_two_wire_1a52334dea80917cb7285d2303c4a9b8f6" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>send</name></member>
+      <member refid="class_two_wire_1a4841a3c5ced724dbb0f393a222162bce" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>send</name></member>
+      <member refid="class_two_wire_1a67475cc8d892ab1d1320035b9475fcbf" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>send</name></member>
+      <member refid="class_two_wire_1ae3c6123ecf8ece5d4107e73226a370a0" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>send</name></member>
+      <member refid="class_two_wire_1a4c7daf378c06e5e72762e1bd3d5937b6" prot="public" virt="non-virtual"><scope>TwoWire</scope><name>TwoWire</name></member>
+      <member refid="class_two_wire_1a2f961f09e1fab66ed21c371c92ee41d3" prot="private" virt="non-virtual"><scope>TwoWire</scope><name>tx_addr</name></member>
+      <member refid="class_two_wire_1ae7e2694215b903fc8e3f766eff233dd4" prot="private" virt="non-virtual"><scope>TwoWire</scope><name>tx_buf</name></member>
+      <member refid="class_two_wire_1a9c38cea1f88ebda5f6f7d143f5d74c9c" prot="private" virt="non-virtual"><scope>TwoWire</scope><name>tx_buf_idx</name></member>
+      <member refid="class_two_wire_1ae42bb7f712950ee07ee7e3f8fc44a8f8" prot="private" virt="non-virtual"><scope>TwoWire</scope><name>tx_buf_overflow</name></member>
+      <member refid="class_two_wire_1a8e2626f60437bf14af3592be1f4f2493" prot="private" virt="non-virtual"><scope>TwoWire</scope><name>writeOneByte</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

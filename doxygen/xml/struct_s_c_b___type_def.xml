@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="struct_s_c_b___type_def" kind="struct" prot="public">
+    <compoundname>SCB_TypeDef</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_s_c_b___type_def_1a573e25c88528bf57e6102c2f58bfbebb" prot="public" static="no" mutable="no">
+        <type>vuc32</type>
+        <definition>vuc32 SCB_TypeDef::CPUID</definition>
+        <argsstring></argsstring>
+        <name>CPUID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="110" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_def_1a8c461c728ecfcfe29386bd9a5451ef70" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 SCB_TypeDef::ICSR</definition>
+        <argsstring></argsstring>
+        <name>ICSR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="111" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_def_1adadf3af56fc57fb35feec8ca17b94328" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 SCB_TypeDef::VTOR</definition>
+        <argsstring></argsstring>
+        <name>VTOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="112" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_def_1a268a81d1a31a92ca3b49c89e715da4d0" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 SCB_TypeDef::AIRCR</definition>
+        <argsstring></argsstring>
+        <name>AIRCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="113" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_def_1a76d72e3b95d53db9a5749ea70d5e28f1" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 SCB_TypeDef::SCR</definition>
+        <argsstring></argsstring>
+        <name>SCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="114" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_def_1a2060dc4dff7eafec405ff4a3ebdbc6ba" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 SCB_TypeDef::CCR</definition>
+        <argsstring></argsstring>
+        <name>CCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="115" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_def_1ad4abb157a413cd565862faa2c438e9b5" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 SCB_TypeDef::SHPR[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>SHPR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="116" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_def_1acf8d2216f847e8c32fdc1d2894846c5d" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 SCB_TypeDef::SHCSR</definition>
+        <argsstring></argsstring>
+        <name>SHCSR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="117" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_def_1a6f9fa0acc8876b471a08711905fbe404" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 SCB_TypeDef::CFSR</definition>
+        <argsstring></argsstring>
+        <name>CFSR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="118" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_def_1a409abf8bf83a27ddbf4bb02a824cd683" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 SCB_TypeDef::HFSR</definition>
+        <argsstring></argsstring>
+        <name>HFSR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="119" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_def_1aa65ab0c1b8f69d60734e45dd47b42905" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 SCB_TypeDef::DFSR</definition>
+        <argsstring></argsstring>
+        <name>DFSR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="120" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_def_1a5f569314b5438b50ebc6c2f5397c5fa1" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 SCB_TypeDef::MMFAR</definition>
+        <argsstring></argsstring>
+        <name>MMFAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="121" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_def_1a17db96ee7ae775af8899594d19c822de" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 SCB_TypeDef::BFAR</definition>
+        <argsstring></argsstring>
+        <name>BFAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="122" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_c_b___type_def_1a010d336f3b888ad79ab4ef4133bbf4bc" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 SCB_TypeDef::AFSR</definition>
+        <argsstring></argsstring>
+        <name>AFSR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="123" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="109" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="109" bodyend="124"/>
+    <listofallmembers>
+      <member refid="struct_s_c_b___type_def_1a010d336f3b888ad79ab4ef4133bbf4bc" prot="public" virt="non-virtual"><scope>SCB_TypeDef</scope><name>AFSR</name></member>
+      <member refid="struct_s_c_b___type_def_1a268a81d1a31a92ca3b49c89e715da4d0" prot="public" virt="non-virtual"><scope>SCB_TypeDef</scope><name>AIRCR</name></member>
+      <member refid="struct_s_c_b___type_def_1a17db96ee7ae775af8899594d19c822de" prot="public" virt="non-virtual"><scope>SCB_TypeDef</scope><name>BFAR</name></member>
+      <member refid="struct_s_c_b___type_def_1a2060dc4dff7eafec405ff4a3ebdbc6ba" prot="public" virt="non-virtual"><scope>SCB_TypeDef</scope><name>CCR</name></member>
+      <member refid="struct_s_c_b___type_def_1a6f9fa0acc8876b471a08711905fbe404" prot="public" virt="non-virtual"><scope>SCB_TypeDef</scope><name>CFSR</name></member>
+      <member refid="struct_s_c_b___type_def_1a573e25c88528bf57e6102c2f58bfbebb" prot="public" virt="non-virtual"><scope>SCB_TypeDef</scope><name>CPUID</name></member>
+      <member refid="struct_s_c_b___type_def_1aa65ab0c1b8f69d60734e45dd47b42905" prot="public" virt="non-virtual"><scope>SCB_TypeDef</scope><name>DFSR</name></member>
+      <member refid="struct_s_c_b___type_def_1a409abf8bf83a27ddbf4bb02a824cd683" prot="public" virt="non-virtual"><scope>SCB_TypeDef</scope><name>HFSR</name></member>
+      <member refid="struct_s_c_b___type_def_1a8c461c728ecfcfe29386bd9a5451ef70" prot="public" virt="non-virtual"><scope>SCB_TypeDef</scope><name>ICSR</name></member>
+      <member refid="struct_s_c_b___type_def_1a5f569314b5438b50ebc6c2f5397c5fa1" prot="public" virt="non-virtual"><scope>SCB_TypeDef</scope><name>MMFAR</name></member>
+      <member refid="struct_s_c_b___type_def_1a76d72e3b95d53db9a5749ea70d5e28f1" prot="public" virt="non-virtual"><scope>SCB_TypeDef</scope><name>SCR</name></member>
+      <member refid="struct_s_c_b___type_def_1acf8d2216f847e8c32fdc1d2894846c5d" prot="public" virt="non-virtual"><scope>SCB_TypeDef</scope><name>SHCSR</name></member>
+      <member refid="struct_s_c_b___type_def_1ad4abb157a413cd565862faa2c438e9b5" prot="public" virt="non-virtual"><scope>SCB_TypeDef</scope><name>SHPR</name></member>
+      <member refid="struct_s_c_b___type_def_1adadf3af56fc57fb35feec8ca17b94328" prot="public" virt="non-virtual"><scope>SCB_TypeDef</scope><name>VTOR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

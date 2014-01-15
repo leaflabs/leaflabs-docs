@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__v_task_resume" kind="group">
+    <compoundname>vTaskResume</compoundname>
+    <title>vTaskResume</title>
+    <briefdescription>
+<para>task. </para>    </briefdescription>
+    <detaileddescription>
+<para>h <preformatted>void vTaskResume( xTaskHandle pxTaskToResume );</preformatted></para><para>INCLUDE_vTaskSuspend must be defined as 1 for this function to be available. See the configuration section for more information.</para><para>Resumes a suspended task.</para><para>A task that has been suspended by one of more calls to vTaskSuspend () will be made available for running again by a single call to vTaskResume ().</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pxTaskToResume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the task being readied.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Example usage: <preformatted>
+ void vAFunction( void )
+ {
+ xTaskHandle xHandle;</preformatted></para><para><preformatted>Create a task, storing the handle.
+	 xTaskCreate( vTaskCode, &quot;NAME&quot;, STACK_SIZE, NULL, tskIDLE_PRIORITY, &amp;xHandle );</preformatted></para><para><preformatted>...</preformatted></para><para><preformatted>Use the handle to suspend the created task.
+	 vTaskSuspend( xHandle );</preformatted></para><para><preformatted>...</preformatted></para><para><preformatted>The created task will not run during this period, unless
+another task calls vTaskResume( xHandle ).</preformatted></para><para><preformatted>...</preformatted></para><para><preformatted>Resume the suspended task ourselves.
+	 vTaskResume( xHandle );</preformatted></para><para><preformatted>The created task will once again get microcontroller processing
+time in accordance with it priority within the system.
+ }
+   </preformatted> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

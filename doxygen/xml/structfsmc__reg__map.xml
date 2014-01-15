@@ -1,0 +1,520 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structfsmc__reg__map" kind="struct" prot="public">
+    <compoundname>fsmc_reg_map</compoundname>
+    <includes refid="fsmc_8h" local="no">fsmc.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structfsmc__reg__map_1a1fb48e034948173448747eccced8bd9e" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::BCR1</definition>
+        <argsstring></argsstring>
+        <name>BCR1</name>
+        <briefdescription>
+<para>SRAM/NOR-Flash chip-select control register 1. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="52" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1a6104d7ec09dac60e2beba9f2d6898509" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::BTR1</definition>
+        <argsstring></argsstring>
+        <name>BTR1</name>
+        <briefdescription>
+<para>SRAM/NOR-Flash chip-select timing register 1. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="53" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1ac573320102c85a0ae5b596dce8760c97" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::BCR2</definition>
+        <argsstring></argsstring>
+        <name>BCR2</name>
+        <briefdescription>
+<para>SRAM/NOR-Flash chip-select control register 2. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="54" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1af553413fcf809df0844d8b8d33e52b61" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::BTR2</definition>
+        <argsstring></argsstring>
+        <name>BTR2</name>
+        <briefdescription>
+<para>SRAM/NOR-Flash chip-select timing register 2. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="55" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1afbe794f0ff6e603754e5d6bb22e4b6b1" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::BCR3</definition>
+        <argsstring></argsstring>
+        <name>BCR3</name>
+        <briefdescription>
+<para>SRAM/NOR-Flash chip-select control register 3. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="56" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1aa3e5c766358bae3e60de2e51620606a3" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::BTR3</definition>
+        <argsstring></argsstring>
+        <name>BTR3</name>
+        <briefdescription>
+<para>SRAM/NOR-Flash chip-select timing register 3. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="57" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1a6aca9be911a63b6df93408b3911b72c3" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::BCR4</definition>
+        <argsstring></argsstring>
+        <name>BCR4</name>
+        <briefdescription>
+<para>SRAM/NOR-Flash chip-select control register 4. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="58" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1a8d12b82fc36e18c844c580f8d7d6cfad" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::BTR4</definition>
+        <argsstring></argsstring>
+        <name>BTR4</name>
+        <briefdescription>
+<para>SRAM/NOR-Flash chip-select timing register 4. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="59" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1aeb4d9aceebeef1323d440b29c5d65815" prot="public" static="no" mutable="no">
+        <type>const uint8</type>
+        <definition>const uint8 fsmc_reg_map::RESERVED1[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>RESERVED1</name>
+        <briefdescription>
+<para>Reserved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="60" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1af9e46da6a7fc03adf4d1525de3ee5659" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::PCR2</definition>
+        <argsstring></argsstring>
+        <name>PCR2</name>
+        <briefdescription>
+<para>PC Card/NAND Flash control register 2. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="61" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1a1da0e8f63f95aeb309393e575a337f30" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::SR2</definition>
+        <argsstring></argsstring>
+        <name>SR2</name>
+        <briefdescription>
+<para>FIFO status and interrupt register 2. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="62" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1a0f0c5cba630f43b512d1c82eaf2e22df" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::PMEM2</definition>
+        <argsstring></argsstring>
+        <name>PMEM2</name>
+        <briefdescription>
+<para>Common memory space timing register 2. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="63" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1a7fbff7e9eaba4e0aa3fe9aeaba3a5da5" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::PATT2</definition>
+        <argsstring></argsstring>
+        <name>PATT2</name>
+        <briefdescription>
+<para>Attribute memory space timing register 2. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="64" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1ad478df36124a4646897f8efaf4d93733" prot="public" static="no" mutable="no">
+        <type>const uint8</type>
+        <definition>const uint8 fsmc_reg_map::RESERVED2[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>RESERVED2</name>
+        <briefdescription>
+<para>Reserved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="65" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1a8f231c889b3353bd5018f38414d66f31" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::ECCR2</definition>
+        <argsstring></argsstring>
+        <name>ECCR2</name>
+        <briefdescription>
+<para>ECC result register 2. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="66" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1a1b2536d95305b1c8e0ffaa489403cdfb" prot="public" static="no" mutable="no">
+        <type>const uint8</type>
+        <definition>const uint8 fsmc_reg_map::RESERVED3[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>RESERVED3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="67" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1a27cce5c0b4a9161feb30a5344ef6cf31" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::PCR3</definition>
+        <argsstring></argsstring>
+        <name>PCR3</name>
+        <briefdescription>
+<para>PC Card/NAND Flash control register 3. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="68" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1a7f99c956bfce77f43067af5cea2f33fd" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::SR3</definition>
+        <argsstring></argsstring>
+        <name>SR3</name>
+        <briefdescription>
+<para>FIFO status and interrupt register 3. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="69" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1aa1316797a30423294e360191d55e5b50" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::PMEM3</definition>
+        <argsstring></argsstring>
+        <name>PMEM3</name>
+        <briefdescription>
+<para>Common memory space timing register 3. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="70" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1a7d8391975d90fb42ed414d7d893b90b6" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::PATT3</definition>
+        <argsstring></argsstring>
+        <name>PATT3</name>
+        <briefdescription>
+<para>Attribute memory space timing register 3. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="71" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1a32b4b4455ae2df6881febb0bb1cd1ee8" prot="public" static="no" mutable="no">
+        <type>const uint32</type>
+        <definition>const uint32 fsmc_reg_map::RESERVED4</definition>
+        <argsstring></argsstring>
+        <name>RESERVED4</name>
+        <briefdescription>
+<para>Reserved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="72" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1a801025934631ccf7d26f281ef52d849b" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::ECCR3</definition>
+        <argsstring></argsstring>
+        <name>ECCR3</name>
+        <briefdescription>
+<para>ECC result register 3. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="73" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1a0a0a9f18a263149b236884979d82713e" prot="public" static="no" mutable="no">
+        <type>const uint8</type>
+        <definition>const uint8 fsmc_reg_map::RESERVED5[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>RESERVED5</name>
+        <briefdescription>
+<para>Reserved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="74" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1a69409eba6e7892aecfbeead3ad2eb016" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::PCR4</definition>
+        <argsstring></argsstring>
+        <name>PCR4</name>
+        <briefdescription>
+<para>PC Card/NAND Flash control register 4. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="75" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1acccc4334509ac8c5ca42a5d5be4dbe03" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::SR4</definition>
+        <argsstring></argsstring>
+        <name>SR4</name>
+        <briefdescription>
+<para>FIFO status and interrupt register 4. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="76" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1a84c7294d067d074fc47f3f4e061b3547" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::PMEM4</definition>
+        <argsstring></argsstring>
+        <name>PMEM4</name>
+        <briefdescription>
+<para>Common memory space timing register 4. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="77" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1ad98fa434538a2a95c63804e40b7c2c6b" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::PATT4</definition>
+        <argsstring></argsstring>
+        <name>PATT4</name>
+        <briefdescription>
+<para>Attribute memory space timing register 4. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="78" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1a4bbeb0119d0db4b808973fbbdd066af1" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::PIO4</definition>
+        <argsstring></argsstring>
+        <name>PIO4</name>
+        <briefdescription>
+<para>I/O space timing register 4. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="79" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1a6e8a50ac2993e4c8c44d3bea1efb2c7f" prot="public" static="no" mutable="no">
+        <type>const uint8</type>
+        <definition>const uint8 fsmc_reg_map::RESERVED6[80]</definition>
+        <argsstring>[80]</argsstring>
+        <name>RESERVED6</name>
+        <briefdescription>
+<para>Reserved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="80" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1a5e8c07e1931430460a5ce6d51e089912" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::BWTR1</definition>
+        <argsstring></argsstring>
+        <name>BWTR1</name>
+        <briefdescription>
+<para>SRAM/NOR-Flash write timing register 1. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="81" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1afb3f18c1b9c0fc5af6cf72ccc06ee069" prot="public" static="no" mutable="no">
+        <type>const uint32</type>
+        <definition>const uint32 fsmc_reg_map::RESERVED7</definition>
+        <argsstring></argsstring>
+        <name>RESERVED7</name>
+        <briefdescription>
+<para>Reserved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="82" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1a1c639af5b7ea4910ba9b260a24a45c55" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::BWTR2</definition>
+        <argsstring></argsstring>
+        <name>BWTR2</name>
+        <briefdescription>
+<para>SRAM/NOR-Flash write timing register 2. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="83" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1a67f9857951107c739431942a2c7850f0" prot="public" static="no" mutable="no">
+        <type>const uint32</type>
+        <definition>const uint32 fsmc_reg_map::RESERVED8</definition>
+        <argsstring></argsstring>
+        <name>RESERVED8</name>
+        <briefdescription>
+<para>Reserved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="84" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1a9dcd0773179079721c06b2563fdcafdf" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::BWTR3</definition>
+        <argsstring></argsstring>
+        <name>BWTR3</name>
+        <briefdescription>
+<para>SRAM/NOR-Flash write timing register 3. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="85" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1a46bbd38fb981993b82aaffa2a1b9af9c" prot="public" static="no" mutable="no">
+        <type>const uint32</type>
+        <definition>const uint32 fsmc_reg_map::RESERVED9</definition>
+        <argsstring></argsstring>
+        <name>RESERVED9</name>
+        <briefdescription>
+<para>Reserved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="86" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__reg__map_1ad3793af341d7b7b557eabfbccf62386c" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_reg_map::BWTR4</definition>
+        <argsstring></argsstring>
+        <name>BWTR4</name>
+        <briefdescription>
+<para>SRAM/NOR-Flash write timing register 4. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="87" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>FSMC register map type. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="51" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="51" bodyend="88"/>
+    <listofallmembers>
+      <member refid="structfsmc__reg__map_1a1fb48e034948173448747eccced8bd9e" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>BCR1</name></member>
+      <member refid="structfsmc__reg__map_1ac573320102c85a0ae5b596dce8760c97" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>BCR2</name></member>
+      <member refid="structfsmc__reg__map_1afbe794f0ff6e603754e5d6bb22e4b6b1" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>BCR3</name></member>
+      <member refid="structfsmc__reg__map_1a6aca9be911a63b6df93408b3911b72c3" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>BCR4</name></member>
+      <member refid="structfsmc__reg__map_1a6104d7ec09dac60e2beba9f2d6898509" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>BTR1</name></member>
+      <member refid="structfsmc__reg__map_1af553413fcf809df0844d8b8d33e52b61" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>BTR2</name></member>
+      <member refid="structfsmc__reg__map_1aa3e5c766358bae3e60de2e51620606a3" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>BTR3</name></member>
+      <member refid="structfsmc__reg__map_1a8d12b82fc36e18c844c580f8d7d6cfad" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>BTR4</name></member>
+      <member refid="structfsmc__reg__map_1a5e8c07e1931430460a5ce6d51e089912" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>BWTR1</name></member>
+      <member refid="structfsmc__reg__map_1a1c639af5b7ea4910ba9b260a24a45c55" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>BWTR2</name></member>
+      <member refid="structfsmc__reg__map_1a9dcd0773179079721c06b2563fdcafdf" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>BWTR3</name></member>
+      <member refid="structfsmc__reg__map_1ad3793af341d7b7b557eabfbccf62386c" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>BWTR4</name></member>
+      <member refid="structfsmc__reg__map_1a8f231c889b3353bd5018f38414d66f31" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>ECCR2</name></member>
+      <member refid="structfsmc__reg__map_1a801025934631ccf7d26f281ef52d849b" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>ECCR3</name></member>
+      <member refid="structfsmc__reg__map_1a7fbff7e9eaba4e0aa3fe9aeaba3a5da5" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>PATT2</name></member>
+      <member refid="structfsmc__reg__map_1a7d8391975d90fb42ed414d7d893b90b6" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>PATT3</name></member>
+      <member refid="structfsmc__reg__map_1ad98fa434538a2a95c63804e40b7c2c6b" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>PATT4</name></member>
+      <member refid="structfsmc__reg__map_1af9e46da6a7fc03adf4d1525de3ee5659" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>PCR2</name></member>
+      <member refid="structfsmc__reg__map_1a27cce5c0b4a9161feb30a5344ef6cf31" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>PCR3</name></member>
+      <member refid="structfsmc__reg__map_1a69409eba6e7892aecfbeead3ad2eb016" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>PCR4</name></member>
+      <member refid="structfsmc__reg__map_1a4bbeb0119d0db4b808973fbbdd066af1" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>PIO4</name></member>
+      <member refid="structfsmc__reg__map_1a0f0c5cba630f43b512d1c82eaf2e22df" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>PMEM2</name></member>
+      <member refid="structfsmc__reg__map_1aa1316797a30423294e360191d55e5b50" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>PMEM3</name></member>
+      <member refid="structfsmc__reg__map_1a84c7294d067d074fc47f3f4e061b3547" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>PMEM4</name></member>
+      <member refid="structfsmc__reg__map_1aeb4d9aceebeef1323d440b29c5d65815" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>RESERVED1</name></member>
+      <member refid="structfsmc__reg__map_1ad478df36124a4646897f8efaf4d93733" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>RESERVED2</name></member>
+      <member refid="structfsmc__reg__map_1a1b2536d95305b1c8e0ffaa489403cdfb" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>RESERVED3</name></member>
+      <member refid="structfsmc__reg__map_1a32b4b4455ae2df6881febb0bb1cd1ee8" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>RESERVED4</name></member>
+      <member refid="structfsmc__reg__map_1a0a0a9f18a263149b236884979d82713e" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>RESERVED5</name></member>
+      <member refid="structfsmc__reg__map_1a6e8a50ac2993e4c8c44d3bea1efb2c7f" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>RESERVED6</name></member>
+      <member refid="structfsmc__reg__map_1afb3f18c1b9c0fc5af6cf72ccc06ee069" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>RESERVED7</name></member>
+      <member refid="structfsmc__reg__map_1a67f9857951107c739431942a2c7850f0" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>RESERVED8</name></member>
+      <member refid="structfsmc__reg__map_1a46bbd38fb981993b82aaffa2a1b9af9c" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>RESERVED9</name></member>
+      <member refid="structfsmc__reg__map_1a1da0e8f63f95aeb309393e575a337f30" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>SR2</name></member>
+      <member refid="structfsmc__reg__map_1a7f99c956bfce77f43067af5cea2f33fd" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>SR3</name></member>
+      <member refid="structfsmc__reg__map_1acccc4334509ac8c5ca42a5d5be4dbe03" prot="public" virt="non-virtual"><scope>fsmc_reg_map</scope><name>SR4</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

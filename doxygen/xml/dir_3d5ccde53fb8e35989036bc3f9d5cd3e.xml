@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_3d5ccde53fb8e35989036bc3f9d5cd3e" kind="dir">
+    <compoundname>wirish/boards/</compoundname>
+    <innerfile refid="maple_8h">maple.h</innerfile>
+    <innerfile refid="maple__mini_8h">maple_mini.h</innerfile>
+    <innerfile refid="maple__native_8h">maple_native.h</innerfile>
+    <innerfile refid="maple___r_e_t6_8h">maple_RET6.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/wirish/boards/"/>
+  </compounddef>
+</doxygen>

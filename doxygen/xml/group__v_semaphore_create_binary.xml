@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__v_semaphore_create_binary" kind="group">
+    <compoundname>vSemaphoreCreateBinary</compoundname>
+    <title>vSemaphoreCreateBinary</title>
+    <briefdescription>
+<para>semphr. </para>    </briefdescription>
+    <detaileddescription>
+<para>h <preformatted>vSemaphoreCreateBinary( xSemaphoreHandle xSemaphore )</preformatted></para><para><emphasis>Macro</emphasis> that implements a semaphore by using the existing queue mechanism. The queue length is 1 as this is a binary semaphore. The data size is 0 as we don&apos;t want to actually store any data - we just want to know if the queue is empty or full.</para><para>This type of semaphore can be used for pure synchronisation between tasks or between an interrupt and a task. The semaphore need not be given back once obtained, so one task/interrupt can continuously &apos;give&apos; the semaphore while another continuously &apos;takes&apos; the semaphore. For this reason this type of semaphore does not use a priority inheritance mechanism. For an alternative that does use priority inheritance see xSemaphoreCreateMutex().</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xSemaphore</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the created semaphore. Should be of type xSemaphoreHandle.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Example usage: <preformatted>
+ xSemaphoreHandle xSemaphore;</preformatted></para><para><preformatted> void vATask( void * pvParameters )
+ {
+Semaphore cannot be used before a call to vSemaphoreCreateBinary ().
+This is a macro so pass the variable in directly.
+    vSemaphoreCreateBinary( xSemaphore );</preformatted></para><para><preformatted>    if( xSemaphore != NULL )
+    {
+The semaphore was created successfully.
+The semaphore can now be used.  
+    }
+ }
+ </preformatted> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

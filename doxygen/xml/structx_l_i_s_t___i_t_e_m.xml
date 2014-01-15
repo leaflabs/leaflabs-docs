@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structx_l_i_s_t___i_t_e_m" kind="struct" prot="public">
+    <compoundname>xLIST_ITEM</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structx_l_i_s_t___i_t_e_m_1ad375b0d9500255eece74ad10f88656cb" prot="public" static="no" mutable="no">
+        <type>portTickType</type>
+        <definition>portTickType xListItem::xItemValue</definition>
+        <argsstring></argsstring>
+        <name>xItemValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="100" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_l_i_s_t___i_t_e_m_1a60d12c9d526ded80f65f3c2c8091007a" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structx_l_i_s_t___i_t_e_m" kindref="compound">xLIST_ITEM</ref> *</type>
+        <definition>struct xLIST_ITEM* xListItem::pxNext</definition>
+        <argsstring></argsstring>
+        <name>pxNext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="101" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_l_i_s_t___i_t_e_m_1a45fd80974e87787f1a9a727daaf705f2" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structx_l_i_s_t___i_t_e_m" kindref="compound">xLIST_ITEM</ref> *</type>
+        <definition>struct xLIST_ITEM* xListItem::pxPrevious</definition>
+        <argsstring></argsstring>
+        <name>pxPrevious</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="102" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_l_i_s_t___i_t_e_m_1a94a5032444eb115d60387ca27318464b" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* xListItem::pvOwner</definition>
+        <argsstring></argsstring>
+        <name>pvOwner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="103" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_l_i_s_t___i_t_e_m_1a166e3c77f68ea7c82bd8bf3e1519c48a" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* xListItem::pvContainer</definition>
+        <argsstring></argsstring>
+        <name>pvContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="104" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="188">
+        <label>xListItem</label>
+        <link refid="structx_l_i_s_t___i_t_e_m"/>
+        <childnode refid="188" relation="usage">
+          <edgelabel>pxPrevious</edgelabel>
+          <edgelabel>pxNext</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="99" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" bodystart="98" bodyend="105"/>
+    <listofallmembers>
+      <member refid="structx_l_i_s_t___i_t_e_m_1a166e3c77f68ea7c82bd8bf3e1519c48a" prot="public" virt="non-virtual"><scope>xLIST_ITEM</scope><name>pvContainer</name></member>
+      <member refid="structx_l_i_s_t___i_t_e_m_1a94a5032444eb115d60387ca27318464b" prot="public" virt="non-virtual"><scope>xLIST_ITEM</scope><name>pvOwner</name></member>
+      <member refid="structx_l_i_s_t___i_t_e_m_1a60d12c9d526ded80f65f3c2c8091007a" prot="public" virt="non-virtual"><scope>xLIST_ITEM</scope><name>pxNext</name></member>
+      <member refid="structx_l_i_s_t___i_t_e_m_1a45fd80974e87787f1a9a727daaf705f2" prot="public" virt="non-virtual"><scope>xLIST_ITEM</scope><name>pxPrevious</name></member>
+      <member refid="structx_l_i_s_t___i_t_e_m_1ad375b0d9500255eece74ad10f88656cb" prot="public" virt="non-virtual"><scope>xLIST_ITEM</scope><name>xItemValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

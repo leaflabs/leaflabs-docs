@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="nvic_8c" kind="file">
+    <compoundname>nvic.c</compoundname>
+    <includes refid="nvic_8h" local="yes">nvic.h</includes>
+    <includes refid="scb_8h" local="yes">scb.h</includes>
+    <includes refid="stm32_8h" local="yes">stm32.h</includes>
+    <incdepgraph>
+      <node id="400">
+        <label>scb.h</label>
+        <link refid="scb_8h"/>
+        <childnode refid="398" relation="include">
+        </childnode>
+      </node>
+      <node id="396">
+        <label>libmaple/nvic.c</label>
+        <link refid="nvic.c"/>
+        <childnode refid="397" relation="include">
+        </childnode>
+        <childnode refid="400" relation="include">
+        </childnode>
+        <childnode refid="401" relation="include">
+        </childnode>
+      </node>
+      <node id="397">
+        <label>nvic.h</label>
+        <link refid="nvic_8h"/>
+        <childnode refid="398" relation="include">
+        </childnode>
+        <childnode refid="399" relation="include">
+        </childnode>
+      </node>
+      <node id="401">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="398">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="399">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="398" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="nvic_8c_1a784a3763b98c412b032754845848627b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvic_irq_set_priority</definition>
+        <argsstring>(nvic_irq_num irqn, uint8 priority)</argsstring>
+        <name>nvic_irq_set_priority</name>
+        <param>
+          <type><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83" kindref="member">nvic_irq_num</ref></type>
+          <declname>irqn</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>priority</declname>
+        </param>
+        <briefdescription>
+<para>Nested interrupt controller routines. </para>        </briefdescription>
+        <detaileddescription>
+<para>Set interrupt priority for an interrupt line</para><para>Note: The STM32 only implements 4 bits of priority, ignoring the lower 4 bits. This means there are only 16 levels of priority. Bits[3:0] read as zero and ignore writes.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>irqn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>device to set </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>priority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Priority to set, 0 being highest priority and 15 being lowest. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.c" line="46" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.c" bodystart="46" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="nvic_8c_1a96b7467a19b905a304c6bd498b8c4dc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvic_init</definition>
+        <argsstring>(uint32 vector_table_address, uint32 offset)</argsstring>
+        <name>nvic_init</name>
+        <param>
+          <type>uint32</type>
+          <declname>vector_table_address</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the NVIC. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vector_table_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector table base address. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset from vector_table_address. Some restrictions apply to the use of nonzero offsets; see ST RM0008 and the ARM Cortex M3 Technical Reference Manual. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.c" line="62" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.c" bodystart="62" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="nvic_8c_1ab78786ff3387dfaf3d9aeb017a111197" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvic_set_vector_table</definition>
+        <argsstring>(uint32 addr, uint32 offset)</argsstring>
+        <name>nvic_set_vector_table</name>
+        <param>
+          <type>uint32</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Reset the vector table address. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.c" line="82" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.c" bodystart="82" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Perry<sp/>Hung.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="nvic_8h" kindref="compound" tooltip="Nested vector interrupt controller support.">nvic.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="scb_8h" kindref="compound" tooltip="System control block header.">scb.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32_8h" kindref="compound" tooltip="STM32 chip-specific definitions.">stm32.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="nvic_8h_1a784a3763b98c412b032754845848627b" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>nvic_irq_set_priority(<ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83" kindref="member" tooltip="Interrupt vector table interrupt numbers.">nvic_irq_num</ref><sp/>irqn,<sp/>uint8<sp/>priority)<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(irqn<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>This<sp/>interrupt<sp/>is<sp/>in<sp/>the<sp/>system<sp/>handler<sp/>block<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="scb_8h_1ad55a7ddb8d4b2398b0c1cfec76c0d9fd" kindref="member" tooltip="System control block register map base pointer.">SCB_BASE</ref>-&gt;SHP[((uint32)irqn<sp/>&amp;<sp/>0xF)<sp/>-<sp/>4]<sp/>=<sp/>(priority<sp/>&amp;<sp/>0xF)<sp/>&lt;&lt;<sp/>4;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1aa0288691785a5f868238e0468b39523d" kindref="member" tooltip="NVIC register map base pointer.">NVIC_BASE</ref>-&gt;IP[irqn]<sp/>=<sp/>(priority<sp/>&amp;<sp/>0xF)<sp/>&lt;&lt;<sp/>4;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="nvic_8h_1a96b7467a19b905a304c6bd498b8c4dc4" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>nvic_init(uint32<sp/>vector_table_address,<sp/>uint32<sp/>offset)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>i;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>nvic_set_vector_table(vector_table_address,<sp/>offset);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Lower<sp/>priority<sp/>level<sp/>for<sp/>all<sp/>peripheral<sp/>interrupts<sp/>to<sp/>lowest</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>possible.</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="stm32_8h_1a5e7e389e40d430eacb6cca06e413a7a4" kindref="member" tooltip="Number of interrupts in the NVIC.">STM32_NR_INTERRUPTS</ref>;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nvic_irq_set_priority((<ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83" kindref="member" tooltip="Interrupt vector table interrupt numbers.">nvic_irq_num</ref>)i,<sp/>0xF);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Lower<sp/>systick<sp/>interrupt<sp/>priority<sp/>to<sp/>lowest<sp/>level<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>nvic_irq_set_priority(<ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a0f4af4aa81216de905041b64a3a511eb" kindref="member" tooltip="System tick timer.">NVIC_SYSTICK</ref>,<sp/>0xF);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="nvic_8h_1a07a5f148a05fc3900f869c5a6f077537" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>nvic_set_vector_table(uint32<sp/>addr,<sp/>uint32<sp/>offset)<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="scb_8h_1ad55a7ddb8d4b2398b0c1cfec76c0d9fd" kindref="member" tooltip="System control block register map base pointer.">SCB_BASE</ref>-&gt;VTOR<sp/>=<sp/>addr<sp/>|<sp/>(offset<sp/>&amp;<sp/>0x1FFFFF80);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.c"/>
+  </compounddef>
+</doxygen>

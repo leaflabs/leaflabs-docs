@@ -1,0 +1,718 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="timers_8h" kind="file">
+    <compoundname>timers.h</compoundname>
+    <includes refid="portable_8h" local="yes">portable.h</includes>
+    <includes refid="list_8h" local="yes">list.h</includes>
+    <includedby refid="tasks_8c" local="yes">libraries/FreeRTOS/utility/tasks.c</includedby>
+    <includedby refid="timers_8c" local="yes">libraries/FreeRTOS/utility/timers.c</includedby>
+    <incdepgraph>
+      <node id="1347">
+        <label>libraries/FreeRTOS/utility/timers.h</label>
+        <link refid="timers.h"/>
+        <childnode refid="1348" relation="include">
+        </childnode>
+        <childnode refid="1351" relation="include">
+        </childnode>
+      </node>
+      <node id="1348">
+        <label>portable.h</label>
+        <link refid="portable_8h_source"/>
+        <childnode refid="1349" relation="include">
+        </childnode>
+        <childnode refid="1350" relation="include">
+        </childnode>
+      </node>
+      <node id="1349">
+        <label>portmacro.h</label>
+        <link refid="portmacro_8h_source"/>
+      </node>
+      <node id="1351">
+        <label>list.h</label>
+        <link refid="list_8h_source"/>
+      </node>
+      <node id="1350">
+        <label>mpu_wrappers.h</label>
+        <link refid="mpu__wrappers_8h_source"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1352">
+        <label>libraries/FreeRTOS/utility/timers.h</label>
+        <link refid="timers.h"/>
+        <childnode refid="1353" relation="include">
+        </childnode>
+        <childnode refid="1354" relation="include">
+        </childnode>
+      </node>
+      <node id="1353">
+        <label>libraries/FreeRTOS/utility/tasks.c</label>
+        <link refid="tasks_8c_source"/>
+      </node>
+      <node id="1354">
+        <label>libraries/FreeRTOS/utility/timers.c</label>
+        <link refid="timers_8c_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="timers_8h_1afc38af63403775cc4ced3995f920343a" prot="public" static="no">
+        <name>tmrCOMMAND_START</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" line="78" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="timers_8h_1a0cd6f6a41dcd52d2fc06c350f43516c0" prot="public" static="no">
+        <name>tmrCOMMAND_STOP</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" line="79" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="timers_8h_1adb27881a1a1118b9cc4d711391c89414" prot="public" static="no">
+        <name>tmrCOMMAND_CHANGE_PERIOD</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" line="80" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="timers_8h_1a5a5586339a9dbc1320153fd96a1c2f33" prot="public" static="no">
+        <name>tmrCOMMAND_DELETE</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" line="81" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="timers_8h_1a5feb6cc52c2bccc594aceaf51068c255" prot="public" static="no">
+        <name>xTimerStart</name>
+        <param><defname>xTimer</defname></param>
+        <param><defname>xBlockTime</defname></param>
+        <initializer>xTimerGenericCommand( ( xTimer ), tmrCOMMAND_START, ( xTaskGetTickCount() ), NULL, ( xBlockTime ) )</initializer>
+        <briefdescription>
+<para>portBASE_TYPE xTimerStart( xTimerHandle xTimer, portTickType xBlockTime ); </para>        </briefdescription>
+        <detaileddescription>
+<para>Timer functionality is provided by a timer service/daemon task. Many of the public FreeRTOS timer API functions send commands to the timer service task though a queue called the timer command queue. The timer command queue is private to the kernel itself and is not directly accessible to application code. The length of the timer command queue is set by the configTIMER_QUEUE_LENGTH configuration constant.</para><para>xTimerStart() starts a timer that was previously created using the xTimerCreate() API function. If the timer had already been started and was already in the active state, then xTimerStart() has equivalent functionality to the xTimerReset() API function.</para><para>Starting a timer ensures the timer is in the active state. If the timer is not stopped, deleted, or reset in the mean time, the callback function associated with the timer will get called &apos;n&apos; ticks after xTimerStart() was called, where &apos;n&apos; is the timers defined period.</para><para>It is valid to call xTimerStart() before the scheduler has been started, but when this is done the timer will not actually start until the scheduler is started, and the timers expiry time will be relative to when the scheduler is started, not relative to when xTimerStart() was called.</para><para>The configUSE_TIMERS configuration constant must be set to 1 for xTimerStart() to be available.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xTimer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle of the timer being started/restarted.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xBlockTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the time, in ticks, that the calling task should be held in the Blocked state to wait for the start command to be successfully sent to the timer command queue, should the queue already be full when xTimerStart() was called. xBlockTime is ignored if xTimerStart() is called before the scheduler is started.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pdFAIL will be returned if the start command could not be sent to the timer command queue even after xBlockTime ticks had passed. pdPASS will be returned if the command was successfully sent to the timer command queue. When the command is actually processed will depend on the priority of the timer service/daemon task relative to other tasks in the system, although the timers expiry time is relative to when xTimerStart() is actually called. The timer service/daemon task priority is set by the configTIMER_TASK_PRIORITY configuration constant.</para></simplesect>
+Example usage:</para><para>See the xTimerCreate() API function example usage scenario. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" line="336" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="timers_8h_1a75dce0296021f582935a78e34a4e6b0e" prot="public" static="no">
+        <name>xTimerStop</name>
+        <param><defname>xTimer</defname></param>
+        <param><defname>xBlockTime</defname></param>
+        <initializer>xTimerGenericCommand( ( xTimer ), tmrCOMMAND_STOP, 0U, NULL, ( xBlockTime ) )</initializer>
+        <briefdescription>
+<para>portBASE_TYPE xTimerStop( xTimerHandle xTimer, portTickType xBlockTime ); </para>        </briefdescription>
+        <detaileddescription>
+<para>Timer functionality is provided by a timer service/daemon task. Many of the public FreeRTOS timer API functions send commands to the timer service task though a queue called the timer command queue. The timer command queue is private to the kernel itself and is not directly accessible to application code. The length of the timer command queue is set by the configTIMER_QUEUE_LENGTH configuration constant.</para><para>xTimerStop() stops a timer that was previously started using either of the The xTimerStart(), xTimerReset(), xTimerStartFromISR(), xTimerResetFromISR(), xTimerChangePeriod() or xTimerChangePeriodFromISR() API functions.</para><para>Stopping a timer ensures the timer is not in the active state.</para><para>The configUSE_TIMERS configuration constant must be set to 1 for xTimerStop() to be available.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xTimer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle of the timer being stopped.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xBlockTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the time, in ticks, that the calling task should be held in the Blocked state to wait for the stop command to be successfully sent to the timer command queue, should the queue already be full when xTimerStop() was called. xBlockTime is ignored if xTimerStop() is called before the scheduler is started.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pdFAIL will be returned if the stop command could not be sent to the timer command queue even after xBlockTime ticks had passed. pdPASS will be returned if the command was successfully sent to the timer command queue. When the command is actually processed will depend on the priority of the timer service/daemon task relative to other tasks in the system. The timer service/daemon task priority is set by the configTIMER_TASK_PRIORITY configuration constant.</para></simplesect>
+Example usage:</para><para>See the xTimerCreate() API function example usage scenario. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" line="378" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="timers_8h_1acd45ce938d7dd35bd826e6e7633379bb" prot="public" static="no">
+        <name>xTimerChangePeriod</name>
+        <param><defname>xTimer</defname></param>
+        <param><defname>xNewPeriod</defname></param>
+        <param><defname>xBlockTime</defname></param>
+        <initializer>xTimerGenericCommand( ( xTimer ), tmrCOMMAND_CHANGE_PERIOD, ( xNewPeriod ), NULL, ( xBlockTime ) )</initializer>
+        <briefdescription>
+<para>portBASE_TYPE xTimerChangePeriod( xTimerHandle xTimer, portTickType xNewPeriod, portTickType xBlockTime ); </para>        </briefdescription>
+        <detaileddescription>
+<para>Timer functionality is provided by a timer service/daemon task. Many of the public FreeRTOS timer API functions send commands to the timer service task though a queue called the timer command queue. The timer command queue is private to the kernel itself and is not directly accessible to application code. The length of the timer command queue is set by the configTIMER_QUEUE_LENGTH configuration constant.</para><para>xTimerChangePeriod() changes the period of a timer that was previously created using the xTimerCreate() API function.</para><para>xTimerChangePeriod() can be called to change the period of an active or dormant state timer.</para><para>The configUSE_TIMERS configuration constant must be set to 1 for xTimerChangePeriod() to be available.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xTimer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle of the timer that is having its period changed.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xNewPeriod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new period for xTimer. Timer periods are specified in tick periods, so the constant portTICK_RATE_MS can be used to convert a time that has been specified in milliseconds. For example, if the timer must expire after 100 ticks, then xNewPeriod should be set to 100. Alternatively, if the timer must expire after 500ms, then xNewPeriod can be set to ( 500 / portTICK_RATE_MS ) provided configTICK_RATE_HZ is less than or equal to 1000.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xBlockTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the time, in ticks, that the calling task should be held in the Blocked state to wait for the change period command to be successfully sent to the timer command queue, should the queue already be full when xTimerChangePeriod() was called. xBlockTime is ignored if xTimerChangePeriod() is called before the scheduler is started.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pdFAIL will be returned if the change period command could not be sent to the timer command queue even after xBlockTime ticks had passed. pdPASS will be returned if the command was successfully sent to the timer command queue. When the command is actually processed will depend on the priority of the timer service/daemon task relative to other tasks in the system. The timer service/daemon task priority is set by the configTIMER_TASK_PRIORITY configuration constant.</para></simplesect>
+Example usage:</para><para>// This function assumes xTimer has already been created. If the timer // referenced by xTimer is already active when it is called, then the timer // is deleted. If the timer referenced by xTimer is not active when it is // called, then the period of the timer is set to 500ms and the timer is // started. void vAFunction( xTimerHandle xTimer ) { if( xTimerIsTimerActive( xTimer ) != pdFALSE ) // or more simply and equivalently &quot;if( xTimerIsTimerActive( xTimer ) )&quot; { // xTimer is already active - delete it. xTimerDelete( xTimer ); } else { // xTimer is not active, change its period to 500ms. This will also // cause the timer to start. Block for a maximum of 100 ticks if the // change period command cannot immediately be sent to the timer // command queue. if( xTimerChangePeriod( xTimer, 500 / portTICK_RATE_MS, 100 ) == pdPASS ) { // The command was successfully sent. } else { // The command could not be sent, even after waiting for 100 ticks // to pass. Take appropriate action here. } } } </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" line="457" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="timers_8h_1adc41da15f41a5686e3927e293153ddd3" prot="public" static="no">
+        <name>xTimerDelete</name>
+        <param><defname>xTimer</defname></param>
+        <param><defname>xBlockTime</defname></param>
+        <initializer>xTimerGenericCommand( ( xTimer ), tmrCOMMAND_DELETE, 0U, NULL, ( xBlockTime ) )</initializer>
+        <briefdescription>
+<para>portBASE_TYPE xTimerDelete( xTimerHandle xTimer, portTickType xBlockTime ); </para>        </briefdescription>
+        <detaileddescription>
+<para>Timer functionality is provided by a timer service/daemon task. Many of the public FreeRTOS timer API functions send commands to the timer service task though a queue called the timer command queue. The timer command queue is private to the kernel itself and is not directly accessible to application code. The length of the timer command queue is set by the configTIMER_QUEUE_LENGTH configuration constant.</para><para>xTimerDelete() deletes a timer that was previously created using the xTimerCreate() API function.</para><para>The configUSE_TIMERS configuration constant must be set to 1 for xTimerDelete() to be available.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xTimer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle of the timer being deleted.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xBlockTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the time, in ticks, that the calling task should be held in the Blocked state to wait for the delete command to be successfully sent to the timer command queue, should the queue already be full when xTimerDelete() was called. xBlockTime is ignored if xTimerDelete() is called before the scheduler is started.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pdFAIL will be returned if the delete command could not be sent to the timer command queue even after xBlockTime ticks had passed. pdPASS will be returned if the command was successfully sent to the timer command queue. When the command is actually processed will depend on the priority of the timer service/daemon task relative to other tasks in the system. The timer service/daemon task priority is set by the configTIMER_TASK_PRIORITY configuration constant.</para></simplesect>
+Example usage:</para><para>See the xTimerChangePeriod() API function example usage scenario. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" line="495" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" bodystart="495" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="timers_8h_1a5ff57759f5b50640901243c9e7ab1773" prot="public" static="no">
+        <name>xTimerReset</name>
+        <param><defname>xTimer</defname></param>
+        <param><defname>xBlockTime</defname></param>
+        <initializer>xTimerGenericCommand( ( xTimer ), tmrCOMMAND_START, ( xTaskGetTickCount() ), NULL, ( xBlockTime ) )</initializer>
+        <briefdescription>
+<para>portBASE_TYPE xTimerReset( xTimerHandle xTimer, portTickType xBlockTime ); </para>        </briefdescription>
+        <detaileddescription>
+<para>Timer functionality is provided by a timer service/daemon task. Many of the public FreeRTOS timer API functions send commands to the timer service task though a queue called the timer command queue. The timer command queue is private to the kernel itself and is not directly accessible to application code. The length of the timer command queue is set by the configTIMER_QUEUE_LENGTH configuration constant.</para><para>xTimerReset() re-starts a timer that was previously created using the xTimerCreate() API function. If the timer had already been started and was already in the active state, then xTimerReset() will cause the timer to re-evaluate its expiry time so that it is relative to when xTimerReset() was called. If the timer was in the dormant state then xTimerReset() has equivalent functionality to the xTimerStart() API function.</para><para>Resetting a timer ensures the timer is in the active state. If the timer is not stopped, deleted, or reset in the mean time, the callback function associated with the timer will get called &apos;n&apos; ticks after xTimerReset() was called, where &apos;n&apos; is the timers defined period.</para><para>It is valid to call xTimerReset() before the scheduler has been started, but when this is done the timer will not actually start until the scheduler is started, and the timers expiry time will be relative to when the scheduler is started, not relative to when xTimerReset() was called.</para><para>The configUSE_TIMERS configuration constant must be set to 1 for xTimerReset() to be available.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xTimer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle of the timer being reset/started/restarted.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xBlockTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the time, in ticks, that the calling task should be held in the Blocked state to wait for the reset command to be successfully sent to the timer command queue, should the queue already be full when xTimerReset() was called. xBlockTime is ignored if xTimerReset() is called before the scheduler is started.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pdFAIL will be returned if the reset command could not be sent to the timer command queue even after xBlockTime ticks had passed. pdPASS will be returned if the command was successfully sent to the timer command queue. When the command is actually processed will depend on the priority of the timer service/daemon task relative to other tasks in the system, although the timers expiry time is relative to when xTimerStart() is actually called. The timer service/daemon task priority is set by the configTIMER_TASK_PRIORITY configuration constant.</para></simplesect>
+Example usage:</para><para>// When a key is pressed, an LCD back-light is switched on. If 5 seconds pass // without a key being pressed, then the LCD back-light is switched off. In // this case, the timer is a one-shot timer.</para><para>xTimerHandle xBacklightTimer = NULL;</para><para>// The callback function assigned to the one-shot timer. In this case the // parameter is not used. void vBacklightTimerCallback( xTIMER *pxTimer ) { // The timer expired, therefore 5 seconds must have passed since a key // was pressed. Switch off the LCD back-light. vSetBacklightState( BACKLIGHT_OFF ); }</para><para>// The key press event handler. void vKeyPressEventHandler( char cKey ) { // Ensure the LCD back-light is on, then reset the timer that is // responsible for turning the back-light off after 5 seconds of // key inactivity. Wait 10 ticks for the command to be successfully sent // if it cannot be sent immediately. vSetBacklightState( BACKLIGHT_ON ); if( xTimerReset( xBacklightTimer, 100 ) != pdPASS ) { // The reset command was not executed successfully. Take appropriate // action here. }</para><para>// Perform the rest of the key processing here. }</para><para>void main( void ) { long x;</para><para>// Create then start the one-shot timer that is responsible for turning // the back-light off if no keys are pressed within a 5 second period. xBacklightTimer = xTimerCreate( &quot;BacklightTimer&quot;, // Just a text name, not used by the kernel. ( 5000 / portTICK_RATE_MS), // The timer period in ticks. pdFALSE, // The timer is a one-shot timer. 0, // The id is not used by the callback so can take any value. vBacklightTimerCallback // The callback function that switches the LCD back-light off. );</para><para>if( xBacklightTimer == NULL ) { // The timer was not created. } else { // Start the timer. No block time is specified, and even if one was // it would be ignored because the scheduler has not yet been // started. if( xTimerStart( xBacklightTimer, 0 ) != pdPASS ) { // The timer could not be set into the Active state. } }</para><para>// ... // Create tasks here. // ...</para><para>// Starting the scheduler will start the timer running as it has already // been set into the active state. xTaskStartScheduler();</para><para>// Should not reach here. for( ;; ); } </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" line="618" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" bodystart="618" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="timers_8h_1adab5809f9679e44a343b8dbb8fb7c67f" prot="public" static="no">
+        <name>xTimerStartFromISR</name>
+        <param><defname>xTimer</defname></param>
+        <param><defname>pxHigherPriorityTaskWoken</defname></param>
+        <initializer>xTimerGenericCommand( ( xTimer ), tmrCOMMAND_START, ( xTaskGetTickCountFromISR() ), ( pxHigherPriorityTaskWoken ), 0U )</initializer>
+        <briefdescription>
+<para>portBASE_TYPE xTimerStartFromISR( xTimerHandle xTimer, portBASE_TYPE *pxHigherPriorityTaskWoken ); </para>        </briefdescription>
+        <detaileddescription>
+<para>A version of xTimerStart() that can be called from an interrupt service routine.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xTimer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle of the timer being started/restarted.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pxHigherPriorityTaskWoken</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The timer service/daemon task spends most of its time in the Blocked state, waiting for messages to arrive on the timer command queue. Calling xTimerStartFromISR() writes a message to the timer command queue, so has the potential to transition the timer service/daemon task out of the Blocked state. If calling xTimerStartFromISR() causes the timer service/daemon task to leave the Blocked state, and the timer service/ daemon task has a priority equal to or greater than the currently executing task (the task that was interrupted), then *pxHigherPriorityTaskWoken will get set to pdTRUE internally within the xTimerStartFromISR() function. If xTimerStartFromISR() sets this value to pdTRUE then a context switch should be performed before the interrupt exits.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pdFAIL will be returned if the start command could not be sent to the timer command queue. pdPASS will be returned if the command was successfully sent to the timer command queue. When the command is actually processed will depend on the priority of the timer service/daemon task relative to other tasks in the system, although the timers expiry time is relative to when xTimerStartFromISR() is actually called. The timer service/daemon task priority is set by the configTIMER_TASK_PRIORITY configuration constant.</para></simplesect>
+Example usage:</para><para>// This scenario assumes xBacklightTimer has already been created. When a // key is pressed, an LCD back-light is switched on. If 5 seconds pass // without a key being pressed, then the LCD back-light is switched off. In // this case, the timer is a one-shot timer, and unlike the example given for // the xTimerReset() function, the key press event handler is an interrupt // service routine.</para><para>// The callback function assigned to the one-shot timer. In this case the // parameter is not used. void vBacklightTimerCallback( xTIMER *pxTimer ) { // The timer expired, therefore 5 seconds must have passed since a key // was pressed. Switch off the LCD back-light. vSetBacklightState( BACKLIGHT_OFF ); }</para><para>// The key press interrupt service routine. void vKeyPressEventInterruptHandler( void ) { portBASE_TYPE xHigherPriorityTaskWoken = pdFALSE;</para><para>// Ensure the LCD back-light is on, then restart the timer that is // responsible for turning the back-light off after 5 seconds of // key inactivity. This is an interrupt service routine so can only // call FreeRTOS API functions that end in &quot;FromISR&quot;. vSetBacklightState( BACKLIGHT_ON );</para><para>// xTimerStartFromISR() or xTimerResetFromISR() could be called here // as both cause the timer to re-calculate its expiry time. // xHigherPriorityTaskWoken was initialised to pdFALSE when it was // declared (in this function). if( xTimerStartFromISR( xBacklightTimer, &amp;xHigherPriorityTaskWoken ) != pdPASS ) { // The start command was not executed successfully. Take appropriate // action here. }</para><para>// Perform the rest of the key processing here.</para><para>// If xHigherPriorityTaskWoken equals pdTRUE, then a context switch // should be performed. The syntax required to perform a context switch // from inside an ISR varies from port to port, and from compiler to // compiler. Inspect the demos for the port you are using to find the // actual syntax required. if( xHigherPriorityTaskWoken != pdFALSE ) { // Call the interrupt safe yield function here (actual function // depends on the FreeRTOS port being used. } } </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" line="702" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" bodystart="702" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="timers_8h_1aef0f53e7ecfaa881621da83d61072db7" prot="public" static="no">
+        <name>xTimerStopFromISR</name>
+        <param><defname>xTimer</defname></param>
+        <param><defname>pxHigherPriorityTaskWoken</defname></param>
+        <initializer>xTimerGenericCommand( ( xTimer ), tmrCOMMAND_STOP, 0, ( pxHigherPriorityTaskWoken ), 0U )</initializer>
+        <briefdescription>
+<para>portBASE_TYPE xTimerStopFromISR( xTimerHandle xTimer, portBASE_TYPE *pxHigherPriorityTaskWoken ); </para>        </briefdescription>
+        <detaileddescription>
+<para>A version of xTimerStop() that can be called from an interrupt service routine.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xTimer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle of the timer being stopped.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pxHigherPriorityTaskWoken</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The timer service/daemon task spends most of its time in the Blocked state, waiting for messages to arrive on the timer command queue. Calling xTimerStopFromISR() writes a message to the timer command queue, so has the potential to transition the timer service/daemon task out of the Blocked state. If calling xTimerStopFromISR() causes the timer service/daemon task to leave the Blocked state, and the timer service/ daemon task has a priority equal to or greater than the currently executing task (the task that was interrupted), then *pxHigherPriorityTaskWoken will get set to pdTRUE internally within the xTimerStopFromISR() function. If xTimerStopFromISR() sets this value to pdTRUE then a context switch should be performed before the interrupt exits.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pdFAIL will be returned if the stop command could not be sent to the timer command queue. pdPASS will be returned if the command was successfully sent to the timer command queue. When the command is actually processed will depend on the priority of the timer service/daemon task relative to other tasks in the system. The timer service/daemon task priority is set by the configTIMER_TASK_PRIORITY configuration constant.</para></simplesect>
+Example usage:</para><para>// This scenario assumes xTimer has already been created and started. When // an interrupt occurs, the timer should be simply stopped.</para><para>// The interrupt service routine that stops the timer. void vAnExampleInterruptServiceRoutine( void ) { portBASE_TYPE xHigherPriorityTaskWoken = pdFALSE;</para><para>// The interrupt has occurred - simply stop the timer. // xHigherPriorityTaskWoken was set to pdFALSE where it was defined // (within this function). As this is an interrupt service routine, only // FreeRTOS API functions that end in &quot;FromISR&quot; can be used. if( xTimerStopFromISR( xTimer, &amp;xHigherPriorityTaskWoken ) != pdPASS ) { // The stop command was not executed successfully. Take appropriate // action here. }</para><para>// If xHigherPriorityTaskWoken equals pdTRUE, then a context switch // should be performed. The syntax required to perform a context switch // from inside an ISR varies from port to port, and from compiler to // compiler. Inspect the demos for the port you are using to find the // actual syntax required. if( xHigherPriorityTaskWoken != pdFALSE ) { // Call the interrupt safe yield function here (actual function // depends on the FreeRTOS port being used. } } </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" line="764" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" bodystart="764" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="timers_8h_1a6d89ca6afb6e692e98932b5038c9e14a" prot="public" static="no">
+        <name>xTimerChangePeriodFromISR</name>
+        <param><defname>xTimer</defname></param>
+        <param><defname>xNewPeriod</defname></param>
+        <param><defname>pxHigherPriorityTaskWoken</defname></param>
+        <initializer>xTimerGenericCommand( ( xTimer ), tmrCOMMAND_CHANGE_PERIOD, ( xNewPeriod ), ( pxHigherPriorityTaskWoken ), 0U )</initializer>
+        <briefdescription>
+<para>portBASE_TYPE xTimerChangePeriodFromISR( xTimerHandle xTimer, portTickType xNewPeriod, portBASE_TYPE *pxHigherPriorityTaskWoken ); </para>        </briefdescription>
+        <detaileddescription>
+<para>A version of xTimerChangePeriod() that can be called from an interrupt service routine.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xTimer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle of the timer that is having its period changed.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xNewPeriod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new period for xTimer. Timer periods are specified in tick periods, so the constant portTICK_RATE_MS can be used to convert a time that has been specified in milliseconds. For example, if the timer must expire after 100 ticks, then xNewPeriod should be set to 100. Alternatively, if the timer must expire after 500ms, then xNewPeriod can be set to ( 500 / portTICK_RATE_MS ) provided configTICK_RATE_HZ is less than or equal to 1000.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pxHigherPriorityTaskWoken</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The timer service/daemon task spends most of its time in the Blocked state, waiting for messages to arrive on the timer command queue. Calling xTimerChangePeriodFromISR() writes a message to the timer command queue, so has the potential to transition the timer service/ daemon task out of the Blocked state. If calling xTimerChangePeriodFromISR() causes the timer service/daemon task to leave the Blocked state, and the timer service/daemon task has a priority equal to or greater than the currently executing task (the task that was interrupted), then *pxHigherPriorityTaskWoken will get set to pdTRUE internally within the xTimerChangePeriodFromISR() function. If xTimerChangePeriodFromISR() sets this value to pdTRUE then a context switch should be performed before the interrupt exits.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pdFAIL will be returned if the command to change the timers period could not be sent to the timer command queue. pdPASS will be returned if the command was successfully sent to the timer command queue. When the command is actually processed will depend on the priority of the timer service/daemon task relative to other tasks in the system. The timer service/daemon task priority is set by the configTIMER_TASK_PRIORITY configuration constant.</para></simplesect>
+Example usage:</para><para>// This scenario assumes xTimer has already been created and started. When // an interrupt occurs, the period of xTimer should be changed to 500ms.</para><para>// The interrupt service routine that changes the period of xTimer. void vAnExampleInterruptServiceRoutine( void ) { portBASE_TYPE xHigherPriorityTaskWoken = pdFALSE;</para><para>// The interrupt has occurred - change the period of xTimer to 500ms. // xHigherPriorityTaskWoken was set to pdFALSE where it was defined // (within this function). As this is an interrupt service routine, only // FreeRTOS API functions that end in &quot;FromISR&quot; can be used. if( xTimerChangePeriodFromISR( xTimer, &amp;xHigherPriorityTaskWoken ) != pdPASS ) { // The command to change the timers period was not executed // successfully. Take appropriate action here. }</para><para>// If xHigherPriorityTaskWoken equals pdTRUE, then a context switch // should be performed. The syntax required to perform a context switch // from inside an ISR varies from port to port, and from compiler to // compiler. Inspect the demos for the port you are using to find the // actual syntax required. if( xHigherPriorityTaskWoken != pdFALSE ) { // Call the interrupt safe yield function here (actual function // depends on the FreeRTOS port being used. } } </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" line="836" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" bodystart="836" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="timers_8h_1a448138d0cebf76044f107ca56c842230" prot="public" static="no">
+        <name>xTimerResetFromISR</name>
+        <param><defname>xTimer</defname></param>
+        <param><defname>pxHigherPriorityTaskWoken</defname></param>
+        <initializer>xTimerGenericCommand( ( xTimer ), tmrCOMMAND_START, ( xTaskGetTickCountFromISR() ), ( pxHigherPriorityTaskWoken ), 0U )</initializer>
+        <briefdescription>
+<para>portBASE_TYPE xTimerResetFromISR( xTimerHandle xTimer, portBASE_TYPE *pxHigherPriorityTaskWoken ); </para>        </briefdescription>
+        <detaileddescription>
+<para>A version of xTimerReset() that can be called from an interrupt service routine.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xTimer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle of the timer that is to be started, reset, or restarted.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pxHigherPriorityTaskWoken</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The timer service/daemon task spends most of its time in the Blocked state, waiting for messages to arrive on the timer command queue. Calling xTimerResetFromISR() writes a message to the timer command queue, so has the potential to transition the timer service/daemon task out of the Blocked state. If calling xTimerResetFromISR() causes the timer service/daemon task to leave the Blocked state, and the timer service/ daemon task has a priority equal to or greater than the currently executing task (the task that was interrupted), then *pxHigherPriorityTaskWoken will get set to pdTRUE internally within the xTimerResetFromISR() function. If xTimerResetFromISR() sets this value to pdTRUE then a context switch should be performed before the interrupt exits.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pdFAIL will be returned if the reset command could not be sent to the timer command queue. pdPASS will be returned if the command was successfully sent to the timer command queue. When the command is actually processed will depend on the priority of the timer service/daemon task relative to other tasks in the system, although the timers expiry time is relative to when xTimerResetFromISR() is actually called. The timer service/daemon task priority is set by the configTIMER_TASK_PRIORITY configuration constant.</para></simplesect>
+Example usage:</para><para>// This scenario assumes xBacklightTimer has already been created. When a // key is pressed, an LCD back-light is switched on. If 5 seconds pass // without a key being pressed, then the LCD back-light is switched off. In // this case, the timer is a one-shot timer, and unlike the example given for // the xTimerReset() function, the key press event handler is an interrupt // service routine.</para><para>// The callback function assigned to the one-shot timer. In this case the // parameter is not used. void vBacklightTimerCallback( xTIMER *pxTimer ) { // The timer expired, therefore 5 seconds must have passed since a key // was pressed. Switch off the LCD back-light. vSetBacklightState( BACKLIGHT_OFF ); }</para><para>// The key press interrupt service routine. void vKeyPressEventInterruptHandler( void ) { portBASE_TYPE xHigherPriorityTaskWoken = pdFALSE;</para><para>// Ensure the LCD back-light is on, then reset the timer that is // responsible for turning the back-light off after 5 seconds of // key inactivity. This is an interrupt service routine so can only // call FreeRTOS API functions that end in &quot;FromISR&quot;. vSetBacklightState( BACKLIGHT_ON );</para><para>// xTimerStartFromISR() or xTimerResetFromISR() could be called here // as both cause the timer to re-calculate its expiry time. // xHigherPriorityTaskWoken was initialised to pdFALSE when it was // declared (in this function). if( xTimerResetFromISR( xBacklightTimer, &amp;xHigherPriorityTaskWoken ) != pdPASS ) { // The reset command was not executed successfully. Take appropriate // action here. }</para><para>// Perform the rest of the key processing here.</para><para>// If xHigherPriorityTaskWoken equals pdTRUE, then a context switch // should be performed. The syntax required to perform a context switch // from inside an ISR varies from port to port, and from compiler to // compiler. Inspect the demos for the port you are using to find the // actual syntax required. if( xHigherPriorityTaskWoken != pdFALSE ) { // Call the interrupt safe yield function here (actual function // depends on the FreeRTOS port being used. } } </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" line="921" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" bodystart="921" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="timers_8h_1ae889cfa94652a8294a73125af5d69846" prot="public" static="no">
+        <type>void *</type>
+        <definition>typedef void* xTimerHandle</definition>
+        <argsstring></argsstring>
+        <name>xTimerHandle</name>
+        <briefdescription>
+<para>Type by which software timers are referenced. </para>        </briefdescription>
+        <detaileddescription>
+<para>For example, a call to xTimerCreate() returns an xTimerHandle variable that can then be used to reference the subject timer in calls to other software timer API functions (for example, xTimerStart(), xTimerReset(), etc.). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" line="93" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="timers_8h_1aed251fe4d32d219374dc359ce7c84551" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* tmrTIMER_CALLBACK)(xTimerHandle xTimer)</definition>
+        <argsstring>)(xTimerHandle xTimer)</argsstring>
+        <name>tmrTIMER_CALLBACK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" line="96" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="timers_8h_1a359de9e997a89ba931efa0c434583c00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>xTimerHandle</type>
+        <definition>xTimerHandle xTimerCreate</definition>
+        <argsstring>(const signed char *pcTimerName, portTickType xTimerPeriodInTicks, unsigned portBASE_TYPE uxAutoReload, void *pvTimerID, tmrTIMER_CALLBACK pxCallbackFunction) PRIVILEGED_FUNCTION</argsstring>
+        <name>xTimerCreate</name>
+        <param>
+          <type>const signed char *</type>
+          <declname>pcTimerName</declname>
+        </param>
+        <param>
+          <type>portTickType</type>
+          <declname>xTimerPeriodInTicks</declname>
+        </param>
+        <param>
+          <type>unsigned portBASE_TYPE</type>
+          <declname>uxAutoReload</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pvTimerID</declname>
+        </param>
+        <param>
+          <type>tmrTIMER_CALLBACK</type>
+          <declname>pxCallbackFunction</declname>
+        </param>
+        <briefdescription>
+<para>xTimerHandle xTimerCreate( const signed char *pcTimerName, portTickType xTimerPeriod, unsigned portBASE_TYPE uxAutoReload, void * pvTimerID, tmrTIMER_CALLBACK pxCallbackFunction ); </para>        </briefdescription>
+        <detaileddescription>
+<para>Creates a new software timer instance. This allocates the storage required by the new timer, initialises the new timers internal state, and returns a handle by which the new timer can be referenced.</para><para>Timers are created in the dormant state. The xTimerStart(), xTimerReset(), xTimerStartFromISR(), xTimerResetFromISR(), xTimerChangePeriod() and xTimerChangePeriodFromISR() API functions can all be used to transition a timer into the active state.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pcTimerName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A text name that is assigned to the timer. This is done purely to assist debugging. The kernel itself only ever references a timer by its handle, and never by its name.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xTimerPeriod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The timer period. The time is defined in tick periods so the constant portTICK_RATE_MS can be used to convert a time that has been specified in milliseconds. For example, if the timer must expire after 100 ticks, then xTimerPeriod should be set to 100. Alternatively, if the timer must expire after 500ms, then xPeriod can be set to ( 500 / portTICK_RATE_MS ) provided configTICK_RATE_HZ is less than or equal to 1000.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>uxAutoReload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If uxAutoReload is set to pdTRUE then the timer will expire repeatedly with a frequency set by the xTimerPeriod parameter. If uxAutoReload is set to pdFALSE then the timer will be a one-shot timer and enter the dormant state after it expires.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pvTimerID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An identifier that is assigned to the timer being created. Typically this would be used in the timer callback function to identify which timer expired when the same callback function is assigned to more than one timer.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pxCallbackFunction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The function to call when the timer expires. Callback functions must have the prototype defined by tmrTIMER_CALLBACK, which is &quot;void vCallbackFunction( xTIMER *xTimer );&quot;.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>If the timer is successfully create then a handle to the newly created timer is returned. If the timer cannot be created (because either there is insufficient FreeRTOS heap remaining to allocate the timer structures, or the timer period was set to 0) then 0 is returned.</para></simplesect>
+Example usage:</para><para>#define NUM_TIMERS 5</para><para>// An array to hold handles to the created timers. xTimerHandle xTimers[ NUM_TIMERS ];</para><para>// An array to hold a count of the number of times each timer expires. long lExpireCounters[ NUM_TIMERS ] = { 0 };</para><para>// Define a callback function that will be used by multiple timer instances. // The callback function does nothing but count the number of times the // associated timer expires, and stop the timer once the timer has expired // 10 times. void vTimerCallback( xTIMER *pxTimer ) { long lArrayIndex; const long xMaxExpiryCountBeforeStopping = 10;</para><para>// Optionally do something if the pxTimer parameter is NULL. configASSERT( pxTimer );</para><para>// Which timer expired? lArrayIndex = ( long ) pvTimerGetTimerID( pxTimer );</para><para>// Increment the number of times that pxTimer has expired. lExpireCounters[ lArrayIndex ] += 1;</para><para>// If the timer has expired 10 times then stop it from running. if( lExpireCounters[ lArrayIndex ] == xMaxExpiryCountBeforeStopping ) { // Do not use a block time if calling a timer API function from a // timer callback function, as doing so could cause a deadlock! xTimerStop( pxTimer, 0 ); } }</para><para>void main( void ) { long x;</para><para>// Create then start some timers. Starting the timers before the scheduler // has been started means the timers will start running immediately that // the scheduler starts. for( x = 0; x &lt; NUM_TIMERS; x++ ) { xTimers[ x ] = xTimerCreate( &quot;Timer&quot;, // Just a text name, not used by the kernel. ( 100 * x ), // The timer period in ticks. pdTRUE, // The timers will auto-reload themselves when they expire. ( void * ) x, // Assign each timer a unique id equal to its array index. vTimerCallback // Each timer calls the same callback when it expires. );</para><para>if( xTimers[ x ] == NULL ) { // The timer was not created. } else { // Start the timer. No block time is specified, and even if one was // it would be ignored because the scheduler has not yet been // started. if( xTimerStart( xTimers[ x ], 0 ) != pdPASS ) { // The timer could not be set into the Active state. } } }</para><para>// ... // Create tasks here. // ...</para><para>// Starting the scheduler will start the timers running as they have already // been set into the active state. xTaskStartScheduler();</para><para>// Should not reach here. for( ;; ); } </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" line="226"/>
+      </memberdef>
+      <memberdef kind="function" id="timers_8h_1a47e3d71fedaec6a50dda06c1769213ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* pvTimerGetTimerID</definition>
+        <argsstring>(xTimerHandle xTimer) PRIVILEGED_FUNCTION</argsstring>
+        <name>pvTimerGetTimerID</name>
+        <param>
+          <type>xTimerHandle</type>
+          <declname>xTimer</declname>
+        </param>
+        <briefdescription>
+<para>void *pvTimerGetTimerID( xTimerHandle xTimer ); </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns the ID assigned to the timer.</para><para>IDs are assigned to timers using the pvTimerID parameter of the call to xTimerCreated() that was used to create the timer.</para><para>If the same callback function is assigned to multiple timers then the timer ID can be used within the callback function to identify which timer actually expired.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xTimer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The timer being queried.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The ID assigned to the timer being queried.</para></simplesect>
+Example usage:</para><para>See the xTimerCreate() API function example usage scenario. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" line="248"/>
+      </memberdef>
+      <memberdef kind="function" id="timers_8h_1a33c2c89c4c1abd2af94d0a8f3eed34e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>portBASE_TYPE</type>
+        <definition>portBASE_TYPE xTimerIsTimerActive</definition>
+        <argsstring>(xTimerHandle xTimer) PRIVILEGED_FUNCTION</argsstring>
+        <name>xTimerIsTimerActive</name>
+        <param>
+          <type>xTimerHandle</type>
+          <declname>xTimer</declname>
+        </param>
+        <briefdescription>
+<para>portBASE_TYPE xTimerIsTimerActive( xTimerHandle xTimer ); </para>        </briefdescription>
+        <detaileddescription>
+<para>Queries a timer to see if it is active or dormant.</para><para>A timer will be dormant if: 1) It has been created but not started, or 2) It is an expired on-shot timer that has not been restarted.</para><para>Timers are created in the dormant state. The xTimerStart(), xTimerReset(), xTimerStartFromISR(), xTimerResetFromISR(), xTimerChangePeriod() and xTimerChangePeriodFromISR() API functions can all be used to transition a timer into the active state.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xTimer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The timer being queried.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pdFALSE will be returned if the timer is dormant. A value other than pdFALSE will be returned if the timer is active.</para></simplesect>
+Example usage:</para><para>// This function assumes xTimer has already been created. void vAFunction( xTimerHandle xTimer ) { if( xTimerIsTimerActive( xTimer ) != pdFALSE ) // or more simply and equivalently &quot;if( xTimerIsTimerActive( xTimer ) )&quot; { // xTimer is active, do something. } else { // xTimer is not active, do something else. } } </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" line="284"/>
+      </memberdef>
+      <memberdef kind="function" id="timers_8h_1afa1839b93b802bf35d83a517c28a7ddb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>portBASE_TYPE</type>
+        <definition>portBASE_TYPE xTimerCreateTimerTask</definition>
+        <argsstring>(void) PRIVILEGED_FUNCTION</argsstring>
+        <name>xTimerCreateTimerTask</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" line="927"/>
+      </memberdef>
+      <memberdef kind="function" id="timers_8h_1a279e5c3ccec018dcedbd9c0d0d692e70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>portBASE_TYPE</type>
+        <definition>portBASE_TYPE xTimerGenericCommand</definition>
+        <argsstring>(xTimerHandle xTimer, portBASE_TYPE xCommandID, portTickType xOptionalValue, portBASE_TYPE *pxHigherPriorityTaskWoken, portTickType xBlockTime) PRIVILEGED_FUNCTION</argsstring>
+        <name>xTimerGenericCommand</name>
+        <param>
+          <type>xTimerHandle</type>
+          <declname>xTimer</declname>
+        </param>
+        <param>
+          <type>portBASE_TYPE</type>
+          <declname>xCommandID</declname>
+        </param>
+        <param>
+          <type>portTickType</type>
+          <declname>xOptionalValue</declname>
+        </param>
+        <param>
+          <type>portBASE_TYPE *</type>
+          <declname>pxHigherPriorityTaskWoken</declname>
+        </param>
+        <param>
+          <type>portTickType</type>
+          <declname>xBlockTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h" line="928"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>V7.0.1<sp/>-<sp/>Copyright<sp/>(C)<sp/>2011<sp/>Real<sp/>Time<sp/>Engineers<sp/>Ltd.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>supports<sp/>many<sp/>tools<sp/>and<sp/>architectures.<sp/>V7.0.0<sp/>is<sp/>sponsored<sp/>by:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>Atollic<sp/>AB<sp/>-<sp/>Atollic<sp/>provides<sp/>professional<sp/>embedded<sp/>systems<sp/>development<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>tools<sp/>for<sp/>C/C++<sp/>development,<sp/>code<sp/>analysis<sp/>and<sp/>test<sp/>automation.<sp/><sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>See<sp/>http://www.atollic.com</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>***************************************************************************</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>FreeRTOS<sp/>tutorial<sp/>books<sp/>are<sp/>available<sp/>in<sp/>pdf<sp/>and<sp/>paperback.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>Complete,<sp/>revised,<sp/>and<sp/>edited<sp/>pdf<sp/>reference<sp/>manuals<sp/>are<sp/>also<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>available.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>Purchasing<sp/>FreeRTOS<sp/>documentation<sp/>will<sp/>not<sp/>only<sp/>help<sp/>you,<sp/>by<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>ensuring<sp/>you<sp/>get<sp/>running<sp/>as<sp/>quickly<sp/>as<sp/>possible<sp/>and<sp/>with<sp/>an<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>in-depth<sp/>knowledge<sp/>of<sp/>how<sp/>to<sp/>use<sp/>FreeRTOS,<sp/>it<sp/>will<sp/>also<sp/>help<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>the<sp/>FreeRTOS<sp/>project<sp/>to<sp/>continue<sp/>with<sp/>its<sp/>mission<sp/>of<sp/>providing<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>professional<sp/>grade,<sp/>cross<sp/>platform,<sp/>de<sp/>facto<sp/>standard<sp/>solutions<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>for<sp/>microcontrollers<sp/>-<sp/>completely<sp/>free<sp/>of<sp/>charge!<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>&gt;&gt;&gt;<sp/>See<sp/>http://www.FreeRTOS.org/Documentation<sp/>for<sp/>details.<sp/>&lt;&lt;&lt;<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>Thank<sp/>you<sp/>for<sp/>using<sp/>FreeRTOS,<sp/>and<sp/>thank<sp/>you<sp/>for<sp/>your<sp/>support!<sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/>***************************************************************************</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"></highlight></codeline>
+<codeline lineno="30"><highlight class="comment"></highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>FreeRTOS<sp/>distribution.</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"></highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it<sp/>under</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>(version<sp/>2)<sp/>as<sp/>published<sp/>by<sp/>the</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/>Free<sp/>Software<sp/>Foundation<sp/>AND<sp/>MODIFIED<sp/>BY<sp/>the<sp/>FreeRTOS<sp/>exception.</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/>&gt;&gt;&gt;NOTE&lt;&lt;&lt;<sp/>The<sp/>modification<sp/>to<sp/>the<sp/>GPL<sp/>is<sp/>included<sp/>to<sp/>allow<sp/>you<sp/>to</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/>distribute<sp/>a<sp/>combined<sp/>work<sp/>that<sp/>includes<sp/>FreeRTOS<sp/>without<sp/>being<sp/>obliged<sp/>to</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/>provide<sp/>the<sp/>source<sp/>code<sp/>for<sp/>proprietary<sp/>components<sp/>outside<sp/>of<sp/>the<sp/>FreeRTOS</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/>kernel.<sp/><sp/>FreeRTOS<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/>MERCHANTABILITY</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/><sp/><sp/>more<sp/>details.<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/><sp/>License<sp/>and<sp/>the<sp/>FreeRTOS<sp/>license<sp/>exception<sp/>along<sp/>with<sp/>FreeRTOS;<sp/>if<sp/>not<sp/>it</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/><sp/><sp/>can<sp/>be<sp/>viewed<sp/>here:<sp/>http://www.freertos.org/a00114.html<sp/>and<sp/>also<sp/>obtained</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/><sp/><sp/>by<sp/>writing<sp/>to<sp/>Richard<sp/>Barry,<sp/>contact<sp/>details<sp/>for<sp/>whom<sp/>are<sp/>available<sp/>on<sp/>the</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>WEB<sp/>site.</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"></highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/><sp/><sp/>1<sp/>tab<sp/>==<sp/>4<sp/>spaces!</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"></highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.FreeRTOS.org<sp/>-<sp/>Documentation,<sp/>latest<sp/>information,<sp/>license<sp/>and</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/>contact<sp/>details.</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"></highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.SafeRTOS.com<sp/>-<sp/>A<sp/>version<sp/>that<sp/>is<sp/>certified<sp/>for<sp/>use<sp/>in<sp/>safety</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/><sp/><sp/><sp/>critical<sp/>systems.</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"></highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.OpenRTOS.com<sp/>-<sp/>Commercial<sp/>support,<sp/>development,<sp/>porting,</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/><sp/><sp/>licensing<sp/>and<sp/>training<sp/>services.</highlight></codeline>
+<codeline lineno="58"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TIMERS_H</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TIMERS_H</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INC_FREERTOS_H</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#error<sp/>&quot;include<sp/>FreeRTOS.h<sp/>must<sp/>appear<sp/>in<sp/>source<sp/>files<sp/>before<sp/>include<sp/>timers.h&quot;</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;portable.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;list.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>IDs<sp/>for<sp/>commands<sp/>that<sp/>can<sp/>be<sp/>sent/received<sp/>on<sp/>the<sp/>timer<sp/>queue.<sp/><sp/>These<sp/>are<sp/>to</highlight></codeline>
+<codeline lineno="76"><highlight class="comment">be<sp/>used<sp/>solely<sp/>through<sp/>the<sp/>macros<sp/>that<sp/>make<sp/>up<sp/>the<sp/>public<sp/>software<sp/>timer<sp/>API,</highlight></codeline>
+<codeline lineno="77"><highlight class="comment">as<sp/>defined<sp/>below.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>tmrCOMMAND_START<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>tmrCOMMAND_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>tmrCOMMAND_CHANGE_PERIOD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>tmrCOMMAND_DELETE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">/*-----------------------------------------------------------</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/>*<sp/>MACROS<sp/>AND<sp/>DEFINITIONS</highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/>*----------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>xTimerHandle;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>the<sp/>prototype<sp/>to<sp/>which<sp/>timer<sp/>callback<sp/>functions<sp/>must<sp/>conform.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*tmrTIMER_CALLBACK)(<sp/>xTimerHandle<sp/>xTimer<sp/>);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal">xTimerHandle<sp/>xTimerCreate(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pcTimerName,<sp/>portTickType<sp/>xTimerPeriodInTicks,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>uxAutoReload,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>pvTimerID,<sp/>tmrTIMER_CALLBACK<sp/>pxCallbackFunction<sp/>)<sp/>PRIVILEGED_FUNCTION;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pvTimerGetTimerID(<sp/>xTimerHandle<sp/>xTimer<sp/>)<sp/>PRIVILEGED_FUNCTION;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal">portBASE_TYPE<sp/>xTimerIsTimerActive(<sp/>xTimerHandle<sp/>xTimer<sp/>)<sp/>PRIVILEGED_FUNCTION;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="preprocessor">#define<sp/>xTimerStart(<sp/>xTimer,<sp/>xBlockTime<sp/>)<sp/>xTimerGenericCommand(<sp/>(<sp/>xTimer<sp/>),<sp/>tmrCOMMAND_START,<sp/>(<sp/>xTaskGetTickCount()<sp/>),<sp/>NULL,<sp/>(<sp/>xBlockTime<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="337"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="378"><highlight class="preprocessor">#define<sp/>xTimerStop(<sp/>xTimer,<sp/>xBlockTime<sp/>)<sp/>xTimerGenericCommand(<sp/>(<sp/>xTimer<sp/>),<sp/>tmrCOMMAND_STOP,<sp/>0U,<sp/>NULL,<sp/>(<sp/>xBlockTime<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="379"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="457"><highlight class="preprocessor"><sp/>#define<sp/>xTimerChangePeriod(<sp/>xTimer,<sp/>xNewPeriod,<sp/>xBlockTime<sp/>)<sp/>xTimerGenericCommand(<sp/>(<sp/>xTimer<sp/>),<sp/>tmrCOMMAND_CHANGE_PERIOD,<sp/>(<sp/>xNewPeriod<sp/>),<sp/>NULL,<sp/>(<sp/>xBlockTime<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="458"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="495"><highlight class="preprocessor">#define<sp/>xTimerDelete(<sp/>xTimer,<sp/>xBlockTime<sp/>)<sp/>xTimerGenericCommand(<sp/>(<sp/>xTimer<sp/>),<sp/>tmrCOMMAND_DELETE,<sp/>0U,<sp/>NULL,<sp/>(<sp/>xBlockTime<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="496"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="618"><highlight class="preprocessor">#define<sp/>xTimerReset(<sp/>xTimer,<sp/>xBlockTime<sp/>)<sp/>xTimerGenericCommand(<sp/>(<sp/>xTimer<sp/>),<sp/>tmrCOMMAND_START,<sp/>(<sp/>xTaskGetTickCount()<sp/>),<sp/>NULL,<sp/>(<sp/>xBlockTime<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="619"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="702"><highlight class="preprocessor">#define<sp/>xTimerStartFromISR(<sp/>xTimer,<sp/>pxHigherPriorityTaskWoken<sp/>)<sp/>xTimerGenericCommand(<sp/>(<sp/>xTimer<sp/>),<sp/>tmrCOMMAND_START,<sp/>(<sp/>xTaskGetTickCountFromISR()<sp/>),<sp/>(<sp/>pxHigherPriorityTaskWoken<sp/>),<sp/>0U<sp/>)</highlight></codeline>
+<codeline lineno="703"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="764"><highlight class="preprocessor">#define<sp/>xTimerStopFromISR(<sp/>xTimer,<sp/>pxHigherPriorityTaskWoken<sp/>)<sp/>xTimerGenericCommand(<sp/>(<sp/>xTimer<sp/>),<sp/>tmrCOMMAND_STOP,<sp/>0,<sp/>(<sp/>pxHigherPriorityTaskWoken<sp/>),<sp/>0U<sp/>)</highlight></codeline>
+<codeline lineno="765"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="836"><highlight class="preprocessor">#define<sp/>xTimerChangePeriodFromISR(<sp/>xTimer,<sp/>xNewPeriod,<sp/>pxHigherPriorityTaskWoken<sp/>)<sp/>xTimerGenericCommand(<sp/>(<sp/>xTimer<sp/>),<sp/>tmrCOMMAND_CHANGE_PERIOD,<sp/>(<sp/>xNewPeriod<sp/>),<sp/>(<sp/>pxHigherPriorityTaskWoken<sp/>),<sp/>0U<sp/>)</highlight></codeline>
+<codeline lineno="837"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="921"><highlight class="preprocessor">#define<sp/>xTimerResetFromISR(<sp/>xTimer,<sp/>pxHigherPriorityTaskWoken<sp/>)<sp/>xTimerGenericCommand(<sp/>(<sp/>xTimer<sp/>),<sp/>tmrCOMMAND_START,<sp/>(<sp/>xTaskGetTickCountFromISR()<sp/>),<sp/>(<sp/>pxHigherPriorityTaskWoken<sp/>),<sp/>0U<sp/>)</highlight></codeline>
+<codeline lineno="922"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="923"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="924"><highlight class="comment"><sp/>*<sp/>Functions<sp/>beyond<sp/>this<sp/>part<sp/>are<sp/>not<sp/>part<sp/>of<sp/>the<sp/>public<sp/>API<sp/>and<sp/>are<sp/>intended</highlight></codeline>
+<codeline lineno="925"><highlight class="comment"><sp/>*<sp/>for<sp/>use<sp/>by<sp/>the<sp/>kernel<sp/>only.</highlight></codeline>
+<codeline lineno="926"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="927"><highlight class="normal">portBASE_TYPE<sp/>xTimerCreateTimerTask(<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>)<sp/>PRIVILEGED_FUNCTION;</highlight></codeline>
+<codeline lineno="928"><highlight class="normal">portBASE_TYPE<sp/>xTimerGenericCommand(<sp/>xTimerHandle<sp/>xTimer,<sp/>portBASE_TYPE<sp/>xCommandID,<sp/>portTickType<sp/>xOptionalValue,<sp/>portBASE_TYPE<sp/>*pxHigherPriorityTaskWoken,<sp/>portTickType<sp/>xBlockTime<sp/>)<sp/>PRIVILEGED_FUNCTION;</highlight></codeline>
+<codeline lineno="929"><highlight class="normal"></highlight></codeline>
+<codeline lineno="930"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="931"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="932"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="933"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>TIMERS_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="934"><highlight class="normal"></highlight></codeline>
+<codeline lineno="935"><highlight class="normal"></highlight></codeline>
+<codeline lineno="936"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/timers.h"/>
+  </compounddef>
+</doxygen>

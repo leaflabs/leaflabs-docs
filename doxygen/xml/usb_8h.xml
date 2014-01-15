@@ -1,0 +1,701 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="usb_8h" kind="file">
+    <compoundname>usb.h</compoundname>
+    <includes refid="usb__lib_8h" local="yes">usb_lib.h</includes>
+    <includes refid="libmaple_8h" local="yes">libmaple.h</includes>
+    <includedby refid="usb_8c" local="yes">libmaple/usb/usb.c</includedby>
+    <includedby refid="usb__callbacks_8c" local="yes">libmaple/usb/usb_callbacks.c</includedby>
+    <incdepgraph>
+      <node id="741">
+        <label>libmaple/usb/usb.h</label>
+        <link refid="usb.h"/>
+        <childnode refid="742" relation="include">
+        </childnode>
+        <childnode refid="750" relation="include">
+        </childnode>
+      </node>
+      <node id="752">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="751">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="748">
+        <label>usb_mem.h</label>
+        <link refid="usb__mem_8h_source"/>
+      </node>
+      <node id="743">
+        <label>usb_type.h</label>
+        <link refid="usb__type_8h_source"/>
+      </node>
+      <node id="750">
+        <label>libmaple.h</label>
+        <link refid="libmaple_8h"/>
+        <childnode refid="751" relation="include">
+        </childnode>
+        <childnode refid="752" relation="include">
+        </childnode>
+        <childnode refid="753" relation="include">
+        </childnode>
+        <childnode refid="754" relation="include">
+        </childnode>
+      </node>
+      <node id="749">
+        <label>usb_int.h</label>
+        <link refid="usb__int_8h_source"/>
+      </node>
+      <node id="742">
+        <label>usb_lib.h</label>
+        <link refid="usb__lib_8h_source"/>
+        <childnode refid="743" relation="include">
+        </childnode>
+        <childnode refid="744" relation="include">
+        </childnode>
+        <childnode refid="745" relation="include">
+        </childnode>
+        <childnode refid="746" relation="include">
+        </childnode>
+        <childnode refid="747" relation="include">
+        </childnode>
+        <childnode refid="748" relation="include">
+        </childnode>
+        <childnode refid="749" relation="include">
+        </childnode>
+      </node>
+      <node id="747">
+        <label>usb_init.h</label>
+        <link refid="usb__init_8h_source"/>
+      </node>
+      <node id="745">
+        <label>usb_def.h</label>
+        <link refid="usb__def_8h_source"/>
+      </node>
+      <node id="746">
+        <label>usb_core.h</label>
+        <link refid="usb__core_8h_source"/>
+      </node>
+      <node id="754">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="751" relation="include">
+        </childnode>
+        <childnode refid="752" relation="include">
+        </childnode>
+      </node>
+      <node id="744">
+        <label>usb_regs.h</label>
+        <link refid="usb__regs_8h_source"/>
+      </node>
+      <node id="753">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="751" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="756">
+        <label>libmaple/usb/usb.c</label>
+        <link refid="usb_8c_source"/>
+      </node>
+      <node id="755">
+        <label>libmaple/usb/usb.h</label>
+        <link refid="usb.h"/>
+        <childnode refid="756" relation="include">
+        </childnode>
+        <childnode refid="757" relation="include">
+        </childnode>
+      </node>
+      <node id="757">
+        <label>libmaple/usb/usb_callbacks.c</label>
+        <link refid="usb__callbacks_8c_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="usb_8h_1a966c7de24352b08ca3b97572656a9625" prot="public" static="no">
+        <name>RESUME_STATE</name>
+        <enumvalue id="usb_8h_1a966c7de24352b08ca3b97572656a9625ab2a6638b7c28e7207b090bc3c6c0b6c5" prot="public">
+          <name>RESUME_EXTERNAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb_8h_1a966c7de24352b08ca3b97572656a9625afe4949cb11b6fcc1cd3c9b26e86b0b8e" prot="public">
+          <name>RESUME_INTERNAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb_8h_1a966c7de24352b08ca3b97572656a9625a6ee10f79df72ec30ff1d64b8a59f6d88" prot="public">
+          <name>RESUME_LATER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb_8h_1a966c7de24352b08ca3b97572656a9625a51267d4ca34701143000280803ae29a4" prot="public">
+          <name>RESUME_WAIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb_8h_1a966c7de24352b08ca3b97572656a9625a925458019c4a8319d8e8be30cbd1d3f9" prot="public">
+          <name>RESUME_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb_8h_1a966c7de24352b08ca3b97572656a9625ab787dab6dac764f4606e898211ac82f7" prot="public">
+          <name>RESUME_ON</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb_8h_1a966c7de24352b08ca3b97572656a9625a148fc074631497c48d617489fc547a40" prot="public">
+          <name>RESUME_OFF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb_8h_1a966c7de24352b08ca3b97572656a9625a5ed3f4fd6f4c00c4b6a460b7feb35001" prot="public">
+          <name>RESUME_ESOF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h" line="37" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h" bodystart="37" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="enum" id="usb_8h_1a7d677ef40aacc3bbcfdfd4dcfa5ac36f" prot="public" static="no">
+        <name>DEVICE_STATE</name>
+        <enumvalue id="usb_8h_1a7d677ef40aacc3bbcfdfd4dcfa5ac36fa29d18c1b3b6b68b4d20daf998bbd5c29" prot="public">
+          <name>UNCONNECTED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb_8h_1a7d677ef40aacc3bbcfdfd4dcfa5ac36fada18abdc6ce0b347ba4275516d41c9bf" prot="public">
+          <name>ATTACHED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb_8h_1a7d677ef40aacc3bbcfdfd4dcfa5ac36fa40a9c795a3506e39806bbf31ead86255" prot="public">
+          <name>POWERED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb_8h_1a7d677ef40aacc3bbcfdfd4dcfa5ac36fa1c2114335a42993ac5cc5dbf65f83d41" prot="public">
+          <name>SUSPENDED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb_8h_1a7d677ef40aacc3bbcfdfd4dcfa5ac36fab95ac3eaffb7e9680bf1b3d2ac36c60b" prot="public">
+          <name>ADDRESSED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb_8h_1a7d677ef40aacc3bbcfdfd4dcfa5ac36fa0bf587663d046cc18f999b169ca42ae0" prot="public">
+          <name>CONFIGURED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h" line="48" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h" bodystart="48" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="usb_8h_1ae4eedd9f346043cc9e45032cafc9d513" prot="public" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>volatile uint32 bDeviceState</definition>
+        <argsstring></argsstring>
+        <name>bDeviceState</name>
+        <briefdescription>
+<para>usb-specific hardware setup, NVIC, clocks, and usb activities in the pre-attached state. </para>        </briefdescription>
+        <detaileddescription>
+<para>includes some of the lower level callbacks needed by the usb library, like suspend,resume,init,etc </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h" line="57" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.c" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="usb_8h_1abf5a719b20fa8b6c21c4cfc33c76cc5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setupUSB</definition>
+        <argsstring>(void)</argsstring>
+        <name>setupUSB</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h" line="59" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.c" bodystart="102" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="usb_8h_1aa82f524e5f8a6737209b616e928f45ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void disableUSB</definition>
+        <argsstring>(void)</argsstring>
+        <name>disableUSB</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h" line="60" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.c" bodystart="113" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="usb_8h_1a476685b39ecb3b9495a6df4073e82d68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usbSuspend</definition>
+        <argsstring>(void)</argsstring>
+        <name>usbSuspend</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h" line="61" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.c" bodystart="120" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="usb_8h_1a7044262a4d2f43ce779248def85a0d0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usbResumeInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>usbResumeInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h" line="62" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.c" bodystart="130" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="usb_8h_1aa5674985417488d36141aef88c19f790" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usbResume</definition>
+        <argsstring>(RESUME_STATE)</argsstring>
+        <name>usbResume</name>
+        <param>
+          <type>RESUME_STATE</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h" line="63" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.c" bodystart="144" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="usb_8h_1ac8788985f4c334f1f0e1b28c9b744321" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RESULT</type>
+        <definition>RESULT usbPowerOn</definition>
+        <argsstring>(void)</argsstring>
+        <name>usbPowerOn</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h" line="65" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.c" bodystart="193" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="usb_8h_1a859fdaa493c2e2c913bc0932720c7fcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RESULT</type>
+        <definition>RESULT usbPowerOff</definition>
+        <argsstring>(void)</argsstring>
+        <name>usbPowerOff</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h" line="66" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.c" bodystart="208" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="usb_8h_1ae633b4a2ed511e665f7f147a120247e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usbDsbISR</definition>
+        <argsstring>(void)</argsstring>
+        <name>usbDsbISR</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h" line="68" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.c" bodystart="233" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="usb_8h_1afabcf55b36c4f3504ab02cbef1ef42c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usbEnbISR</definition>
+        <argsstring>(void)</argsstring>
+        <name>usbEnbISR</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h" line="69" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.c" bodystart="224" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="usb_8h_1ae95ffcb45c94f34dfdccc5c6c34c6084" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __irq_usb_lp_can_rx0</definition>
+        <argsstring>(void)</argsstring>
+        <name>__irq_usb_lp_can_rx0</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h" line="72" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.c" bodystart="243" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="usb_8h_1a42aa6744ad00c810b2e6a4adad32a2a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usbWaitReset</definition>
+        <argsstring>(void)</argsstring>
+        <name>usbWaitReset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h" line="73" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.c" bodystart="322" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="usb_8h_1acc3d4339192d936e29f85762dd849d25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usbBlockingSendByte</definition>
+        <argsstring>(char ch)</argsstring>
+        <name>usbBlockingSendByte</name>
+        <param>
+          <type>char</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h" line="76" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.c" bodystart="338" bodyend="345"/>
+      </memberdef>
+      <memberdef kind="function" id="usb_8h_1ab0d748425b79bf7032c2925f47ce394d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32</type>
+        <definition>uint32 usbSendBytes</definition>
+        <argsstring>(const uint8 *sendBuf, uint32 len)</argsstring>
+        <name>usbSendBytes</name>
+        <param>
+          <type>const uint8 *</type>
+          <declname>sendBuf</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h" line="77" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.c" bodystart="347" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="usb_8h_1a9d23e47ba8544b8c2e849a928b1f17bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32</type>
+        <definition>uint32 usbBytesAvailable</definition>
+        <argsstring>(void)</argsstring>
+        <name>usbBytesAvailable</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h" line="78" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.c" bodystart="370" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="usb_8h_1a5edda390cf1d7e467c32ac4d985a44f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32</type>
+        <definition>uint32 usbReceiveBytes</definition>
+        <argsstring>(uint8 *recvBuf, uint32 len)</argsstring>
+        <name>usbReceiveBytes</name>
+        <param>
+          <type>uint8 *</type>
+          <declname>recvBuf</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h" line="79" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.c" bodystart="378" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="usb_8h_1a848d59f0f207160e1eb65d778f426e1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8</type>
+        <definition>uint8 usbGetDTR</definition>
+        <argsstring>(void)</argsstring>
+        <name>usbGetDTR</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h" line="80" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.c" bodystart="418" bodyend="420"/>
+      </memberdef>
+      <memberdef kind="function" id="usb_8h_1aa6e35f7aa669991cfc2189b30d424372" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8</type>
+        <definition>uint8 usbGetRTS</definition>
+        <argsstring>(void)</argsstring>
+        <name>usbGetRTS</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h" line="81" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.c" bodystart="422" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="usb_8h_1ae16f0d4da276115e6b3f21d84d83a879" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8</type>
+        <definition>uint8 usbIsConnected</definition>
+        <argsstring>(void)</argsstring>
+        <name>usbIsConnected</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h" line="82" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.c" bodystart="430" bodyend="432"/>
+      </memberdef>
+      <memberdef kind="function" id="usb_8h_1a6455981c039a69731306bc887c3efb40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8</type>
+        <definition>uint8 usbIsConfigured</definition>
+        <argsstring>(void)</argsstring>
+        <name>usbIsConfigured</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h" line="83" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.c" bodystart="426" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="usb_8h_1aece983f8a475d1de4b7ae983711124fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16</type>
+        <definition>uint16 usbGetPending</definition>
+        <argsstring>(void)</argsstring>
+        <name>usbGetPending</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h" line="84" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.c" bodystart="434" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="usb_8h_1af60c326dd6c390ad67343762df44bfe5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usbSendHello</definition>
+        <argsstring>(void)</argsstring>
+        <name>usbSendHello</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h" line="86" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.c" bodystart="403" bodyend="416"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>LeafLabs<sp/>LLC.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_USB_H_</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_USB_H_</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;usb_lib.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libmaple_8h" kindref="compound" tooltip="General include file for libmaple.">libmaple.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>RESUME_EXTERNAL,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>RESUME_INTERNAL,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>RESUME_LATER,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>RESUME_WAIT,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>RESUME_START,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>RESUME_ON,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>RESUME_OFF,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>RESUME_ESOF</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}<sp/>RESUME_STATE;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>UNCONNECTED,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>ATTACHED,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>POWERED,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>SUSPENDED,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>ADDRESSED,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>CONFIGURED</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}<sp/>DEVICE_STATE;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32<sp/>bDeviceState;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setupUSB(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>disableUSB(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>usbSuspend(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>usbResumeInit(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>usbResume(RESUME_STATE);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">RESULT<sp/>usbPowerOn(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">RESULT<sp/>usbPowerOff(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>usbDsbISR(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>usbEnbISR(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>overloaded<sp/>ISR<sp/>routine,<sp/>this<sp/>is<sp/>the<sp/>main<sp/>usb<sp/>ISR<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__irq_usb_lp_can_rx0(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>usbWaitReset(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>blocking<sp/>functions<sp/>for<sp/>send/receive<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/>usbBlockingSendByte(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ch);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">uint32<sp/>usbSendBytes(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8*<sp/>sendBuf,uint32<sp/>len);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">uint32<sp/>usbBytesAvailable(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">uint32<sp/>usbReceiveBytes(uint8*<sp/>recvBuf,<sp/>uint32<sp/>len);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">uint8<sp/>usbGetDTR(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">uint8<sp/>usbGetRTS(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">uint8<sp/>usbIsConnected(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">uint8<sp/>usbIsConfigured(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">uint16<sp/>usbGetPending(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>usbSendHello(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"></highlight><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>extern<sp/>&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_USB_H_</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb.h"/>
+  </compounddef>
+</doxygen>

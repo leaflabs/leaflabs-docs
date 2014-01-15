@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__x_semaphore_give" kind="group">
+    <compoundname>xSemaphoreGive</compoundname>
+    <title>xSemaphoreGive</title>
+    <briefdescription>
+<para>semphr. </para>    </briefdescription>
+    <detaileddescription>
+<para>h <preformatted>xSemaphoreGive( xSemaphoreHandle xSemaphore )</preformatted></para><para><emphasis>Macro</emphasis> to release a semaphore. The semaphore must have previously been created with a call to vSemaphoreCreateBinary(), xSemaphoreCreateMutex() or xSemaphoreCreateCounting(). and obtained using sSemaphoreTake().</para><para>This macro must not be used from an ISR. See xSemaphoreGiveFromISR () for an alternative which can be used from an ISR.</para><para>This macro must also not be used on semaphores created using xSemaphoreCreateRecursiveMutex().</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xSemaphore</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to the semaphore being released. This is the handle returned when the semaphore was created.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pdTRUE if the semaphore was released. pdFALSE if an error occurred. Semaphores are implemented using queues. An error can occur if there is no space on the queue to post a message - indicating that the semaphore was not first obtained correctly.</para></simplesect>
+Example usage: <preformatted>
+ xSemaphoreHandle xSemaphore = NULL;</preformatted></para><para><preformatted> void vATask( void * pvParameters )
+ {
+Create the semaphore to guard a shared resource.
+    vSemaphoreCreateBinary( xSemaphore );</preformatted></para><para><preformatted>    if( xSemaphore != NULL )
+    {
+        if( xSemaphoreGive( xSemaphore ) != pdTRUE )
+        {
+We would expect this call to fail because we cannot give
+a semaphore without first &quot;taking&quot; it!
+        }</preformatted></para><para><preformatted>Obtain the semaphore - don&apos;t block if the semaphore is not
+immediately available.
+        if( xSemaphoreTake( xSemaphore, ( portTickType ) 0 ) )
+        {
+We now have the semaphore and can access the shared resource.</preformatted></para><para><preformatted>...</preformatted></para><para><preformatted>We have finished accessing the shared resource so can free the
+semaphore.
+            if( xSemaphoreGive( xSemaphore ) != pdTRUE )
+            {
+We would not expect this call to fail because we must have
+obtained the semaphore to get here.
+            }
+        }
+    }
+ }
+ </preformatted> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

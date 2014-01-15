@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="usb__mem_8c" kind="file">
+    <compoundname>usb_mem.c</compoundname>
+    <includes refid="usb__lib_8h" local="yes">usb_lib.h</includes>
+    <incdepgraph>
+      <node id="946">
+        <label>libmaple/usb/usb_lib/usb_mem.c</label>
+        <link refid="usb_mem.c"/>
+        <childnode refid="947" relation="include">
+        </childnode>
+      </node>
+      <node id="953">
+        <label>usb_mem.h</label>
+        <link refid="usb__mem_8h_source"/>
+      </node>
+      <node id="948">
+        <label>usb_type.h</label>
+        <link refid="usb__type_8h_source"/>
+      </node>
+      <node id="954">
+        <label>usb_int.h</label>
+        <link refid="usb__int_8h_source"/>
+      </node>
+      <node id="947">
+        <label>usb_lib.h</label>
+        <link refid="usb__lib_8h_source"/>
+        <childnode refid="948" relation="include">
+        </childnode>
+        <childnode refid="949" relation="include">
+        </childnode>
+        <childnode refid="950" relation="include">
+        </childnode>
+        <childnode refid="951" relation="include">
+        </childnode>
+        <childnode refid="952" relation="include">
+        </childnode>
+        <childnode refid="953" relation="include">
+        </childnode>
+        <childnode refid="954" relation="include">
+        </childnode>
+      </node>
+      <node id="952">
+        <label>usb_init.h</label>
+        <link refid="usb__init_8h_source"/>
+      </node>
+      <node id="950">
+        <label>usb_def.h</label>
+        <link refid="usb__def_8h_source"/>
+      </node>
+      <node id="951">
+        <label>usb_core.h</label>
+        <link refid="usb__core_8h_source"/>
+      </node>
+      <node id="949">
+        <label>usb_regs.h</label>
+        <link refid="usb__regs_8h_source"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="usb__mem_8c_1a7675dd85eef4ca0ca6522f6df11207fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UserToPMABufferCopy</definition>
+        <argsstring>(const u8 *pbUsrBuf, u16 wPMABufAddr, u16 wNBytes)</argsstring>
+        <name>UserToPMABufferCopy</name>
+        <param>
+          <type>const u8 *</type>
+          <declname>pbUsrBuf</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>wPMABufAddr</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>wNBytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_mem.c" line="36" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_mem.c" bodystart="35" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="usb__mem_8c_1a6c75340a2ff55fe1fb783e6a40c64f06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PMAToUserBufferCopy</definition>
+        <argsstring>(u8 *pbUsrBuf, u16 wPMABufAddr, u16 wNBytes)</argsstring>
+        <name>PMAToUserBufferCopy</name>
+        <param>
+          <type>u8 *</type>
+          <declname>pbUsrBuf</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>wPMABufAddr</declname>
+        </param>
+        <param>
+          <type>u16</type>
+          <declname>wNBytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_mem.c" line="61" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_mem.c" bodystart="60" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/********************<sp/>(C)<sp/>COPYRIGHT<sp/>2008<sp/>STMicroelectronics<sp/>********************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*<sp/>File<sp/>Name<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>usb_mem.c</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/>Author<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>MCD<sp/>Application<sp/>Team</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*<sp/>Version<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>V2.2.1</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/>Date<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>09/22/2008</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/>Description<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Utility<sp/>functions<sp/>for<sp/>memory<sp/>transfers<sp/>to/from<sp/>PMA</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/>THE<sp/>PRESENT<sp/>FIRMWARE<sp/>WHICH<sp/>IS<sp/>FOR<sp/>GUIDANCE<sp/>ONLY<sp/>AIMS<sp/>AT<sp/>PROVIDING<sp/>CUSTOMERS</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*<sp/>WITH<sp/>CODING<sp/>INFORMATION<sp/>REGARDING<sp/>THEIR<sp/>PRODUCTS<sp/>IN<sp/>ORDER<sp/>FOR<sp/>THEM<sp/>TO<sp/>SAVE<sp/>TIME.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/>AS<sp/>A<sp/>RESULT,<sp/>STMICROELECTRONICS<sp/>SHALL<sp/>NOT<sp/>BE<sp/>HELD<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/>INDIRECT<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>WITH<sp/>RESPECT<sp/>TO<sp/>ANY<sp/>CLAIMS<sp/>ARISING<sp/>FROM<sp/>THE</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/>CONTENT<sp/>OF<sp/>SUCH<sp/>FIRMWARE<sp/>AND/OR<sp/>THE<sp/>USE<sp/>MADE<sp/>BY<sp/>CUSTOMERS<sp/>OF<sp/>THE<sp/>CODING</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/>INFORMATION<sp/>CONTAINED<sp/>HEREIN<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THEIR<sp/>PRODUCTS.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;usb_lib.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>typedef<sp/>-----------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>define<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>macro<sp/>-------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>variables<sp/>---------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Extern<sp/>variables<sp/>----------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>function<sp/>prototypes<sp/>-----------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>functions<sp/>---------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">*<sp/>Function<sp/>Name<sp/><sp/>:<sp/>UserToPMABufferCopy</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">*<sp/>Description<sp/><sp/><sp/><sp/>:<sp/>Copy<sp/>a<sp/>buffer<sp/>from<sp/>user<sp/>memory<sp/>area<sp/>to<sp/>packet<sp/>memory<sp/>area<sp/>(PMA)</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">*<sp/>Input<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>-<sp/>pbUsrBuf:<sp/>pointer<sp/>to<sp/>user<sp/>memory<sp/>area.</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>wPMABufAddr:<sp/>address<sp/>into<sp/>PMA.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>wNBytes:<sp/>no.<sp/>of<sp/>bytes<sp/>to<sp/>be<sp/>copied.</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">*<sp/>Output<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>None.</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">*<sp/>Return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>None<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UserToPMABufferCopy(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>u8<sp/>*pbUsrBuf,<sp/>u16<sp/>wPMABufAddr,<sp/>u16<sp/>wNBytes)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>u32<sp/>n<sp/>=<sp/>(wNBytes<sp/>+<sp/>1)<sp/>&gt;&gt;<sp/>1;<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>n<sp/>=<sp/>(wNBytes<sp/>+<sp/>1)<sp/>/<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>u32<sp/>i,<sp/>temp1,<sp/>temp2;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>u16<sp/>*pdwVal;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>pdwVal<sp/>=<sp/>(u16<sp/>*)(wPMABufAddr<sp/>*<sp/>2<sp/>+<sp/>PMAAddr);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>n;<sp/>i<sp/>!=<sp/>0;<sp/>i--)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>temp1<sp/>=<sp/>(u16)<sp/>*<sp/>pbUsrBuf;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>pbUsrBuf++;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>temp2<sp/>=<sp/>temp1<sp/>|<sp/>(u16)<sp/>*<sp/>pbUsrBuf<sp/>&lt;&lt;<sp/>8;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>*pdwVal++<sp/>=<sp/>temp2;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>pdwVal++;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>pbUsrBuf++;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="52"><highlight class="comment">*<sp/>Function<sp/>Name<sp/><sp/>:<sp/>PMAToUserBufferCopy</highlight></codeline>
+<codeline lineno="53"><highlight class="comment">*<sp/>Description<sp/><sp/><sp/><sp/>:<sp/>Copy<sp/>a<sp/>buffer<sp/>from<sp/>user<sp/>memory<sp/>area<sp/>to<sp/>packet<sp/>memory<sp/>area<sp/>(PMA)</highlight></codeline>
+<codeline lineno="54"><highlight class="comment">*<sp/>Input<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>-<sp/>pbUsrBuf<sp/><sp/><sp/><sp/>=<sp/>pointer<sp/>to<sp/>user<sp/>memory<sp/>area.</highlight></codeline>
+<codeline lineno="55"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>wPMABufAddr<sp/>=<sp/>address<sp/>into<sp/>PMA.</highlight></codeline>
+<codeline lineno="56"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>wNBytes<sp/><sp/><sp/><sp/><sp/>=<sp/>no.<sp/>of<sp/>bytes<sp/>to<sp/>be<sp/>copied.</highlight></codeline>
+<codeline lineno="57"><highlight class="comment">*<sp/>Output<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>None.</highlight></codeline>
+<codeline lineno="58"><highlight class="comment">*<sp/>Return<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>None.</highlight></codeline>
+<codeline lineno="59"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>PMAToUserBufferCopy(u8<sp/>*pbUsrBuf,<sp/>u16<sp/>wPMABufAddr,<sp/>u16<sp/>wNBytes)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>u32<sp/>n<sp/>=<sp/>(wNBytes<sp/>+<sp/>1)<sp/>&gt;&gt;<sp/>1;</highlight><highlight class="comment">/*<sp/>/2*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>u32<sp/>i;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>u32<sp/>*pdwVal;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>pdwVal<sp/>=<sp/>(u32<sp/>*)(wPMABufAddr<sp/>*<sp/>2<sp/>+<sp/>PMAAddr);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>n;<sp/>i<sp/>!=<sp/>0;<sp/>i--)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>*(u16*)pbUsrBuf++<sp/>=<sp/>*pdwVal++;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>pbUsrBuf++;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">/*******************<sp/>(C)<sp/>COPYRIGHT<sp/>2008<sp/>STMicroelectronics<sp/>*****END<sp/>OF<sp/>FILE****/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_mem.c"/>
+  </compounddef>
+</doxygen>

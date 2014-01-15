@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="ext__interrupts_8h" kind="file">
+    <compoundname>ext_interrupts.h</compoundname>
+    <includes refid="libmaple__types_8h" local="yes">libmaple_types.h</includes>
+    <includes refid="nvic_8h" local="yes">nvic.h</includes>
+    <includedby refid="wirish_8h" local="yes">wirish/wirish.h</includedby>
+    <incdepgraph>
+      <node id="1520">
+        <label>nvic.h</label>
+        <link refid="nvic_8h"/>
+        <childnode refid="1519" relation="include">
+        </childnode>
+        <childnode refid="1521" relation="include">
+        </childnode>
+      </node>
+      <node id="1519">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="1518">
+        <label>wirish/ext_interrupts.h</label>
+        <link refid="ext_interrupts.h"/>
+        <childnode refid="1519" relation="include">
+        </childnode>
+        <childnode refid="1520" relation="include">
+        </childnode>
+      </node>
+      <node id="1521">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="1519" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1523">
+        <label>wirish/wirish.h</label>
+        <link refid="wirish_8h_source"/>
+        <childnode refid="1524" relation="include">
+        </childnode>
+        <childnode refid="1525" relation="include">
+        </childnode>
+        <childnode refid="1526" relation="include">
+        </childnode>
+        <childnode refid="1527" relation="include">
+        </childnode>
+      </node>
+      <node id="1526">
+        <label>libraries/LiquidCrystal/LiquidCrystal.h</label>
+        <link refid="_liquid_crystal_8h_source"/>
+      </node>
+      <node id="1522">
+        <label>wirish/ext_interrupts.h</label>
+        <link refid="ext_interrupts.h"/>
+        <childnode refid="1523" relation="include">
+        </childnode>
+      </node>
+      <node id="1527">
+        <label>libraries/Wire/Wire.h</label>
+        <link refid="_wire_8h_source"/>
+      </node>
+      <node id="1524">
+        <label>wirish/WProgram.h</label>
+        <link refid="_w_program_8h_source"/>
+      </node>
+      <node id="1525">
+        <label>libraries/FreeRTOS/MapleFreeRTOS.h</label>
+        <link refid="_maple_free_r_t_o_s_8h_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="ext__interrupts_8h_1abacafe8ae080fe4515ae6927ce1003fc" prot="public" static="no">
+        <name>ExtIntTriggerMode</name>
+        <enumvalue id="ext__interrupts_8h_1abacafe8ae080fe4515ae6927ce1003fcad93abe7aced82e9a4fcac4127a36ece3" prot="public">
+          <name>RISING</name>
+          <briefdescription>
+<para>To trigger an interrupt when the pin transitions LOW to HIGH. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ext__interrupts_8h_1abacafe8ae080fe4515ae6927ce1003fcad24712a6a30c1d431b927d1ba2f84b66" prot="public">
+          <name>FALLING</name>
+          <briefdescription>
+<para>To trigger an interrupt when the pin transitions HIGH to LOW. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="ext__interrupts_8h_1abacafe8ae080fe4515ae6927ce1003fcaada6cf2b086af8fd5f84e946d2bd145d" prot="public">
+          <name>CHANGE</name>
+          <briefdescription>
+<para>To trigger an interrupt when the pin transitions from LOW to HIGH or HIGH to LOW (i.e., when the pin changes). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The kind of transition on an external pin which should trigger an interrupt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/ext_interrupts.h" line="43" bodyfile="/home/mbolivar/leaf/libmaple/wirish/ext_interrupts.h" bodystart="43" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ext__interrupts_8h_1a9ec85f48bf84251b7bf7aad0247e5ea1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void attachInterrupt</definition>
+        <argsstring>(uint8 pin, voidFuncPtr handler, ExtIntTriggerMode mode)</argsstring>
+        <name>attachInterrupt</name>
+        <param>
+          <type>uint8</type>
+          <declname>pin</declname>
+        </param>
+        <param>
+          <type>voidFuncPtr</type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type><ref refid="ext__interrupts_8h_1abacafe8ae080fe4515ae6927ce1003fc" kindref="member">ExtIntTriggerMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Registers an interrupt handler on a pin. </para>        </briefdescription>
+        <detaileddescription>
+<para>The interrupt will be triggered on a given transition on the pin, as specified by the mode parameter. The handler runs in interrupt context. The new handler will replace whatever handler is currently registered for the pin, if any.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maple pin number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to run upon external interrupt trigger. The handler should take no arguments, and have void return type. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of transition to trigger on, e.g. falling, rising, etc.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Side Effects:</title><para>Registers a handler </para></simplesect>
+<simplesect kind="see"><para><ref refid="ext__interrupts_8h_1a24733295aef88c629d08272698a7ad79" kindref="member">detachInterrupt()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/ext_interrupts.h" line="69"/>
+      </memberdef>
+      <memberdef kind="function" id="ext__interrupts_8h_1a24733295aef88c629d08272698a7ad79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void detachInterrupt</definition>
+        <argsstring>(uint8 pin)</argsstring>
+        <name>detachInterrupt</name>
+        <param>
+          <type>uint8</type>
+          <declname>pin</declname>
+        </param>
+        <briefdescription>
+<para>Disable any registered external interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maple pin number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Side Effects:</title><para>unregisters external interrupt handler </para></simplesect>
+<simplesect kind="see"><para><ref refid="ext__interrupts_8h_1a9ec85f48bf84251b7bf7aad0247e5ea1" kindref="member">attachInterrupt()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/ext_interrupts.h" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="ext__interrupts_8h_1a31074dfc26429d7bed41a77e734bc8ba" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void interrupts</definition>
+        <argsstring>()</argsstring>
+        <name>interrupts</name>
+        <briefdescription>
+<para>Re-enable interrupts. </para>        </briefdescription>
+        <detaileddescription>
+<para>Call this after <ref refid="ext__interrupts_8h_1a515203d1dc785590928e02b30545e5fb" kindref="member">noInterrupts()</ref> to re-enable interrupt handling, after you have finished with a timing-critical section of code.</para><para><simplesect kind="see"><para><ref refid="ext__interrupts_8h_1a515203d1dc785590928e02b30545e5fb" kindref="member">noInterrupts()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/ext_interrupts.h" line="87" bodyfile="/home/mbolivar/leaf/libmaple/wirish/ext_interrupts.h" bodystart="87" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="ext__interrupts_8h_1a515203d1dc785590928e02b30545e5fb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void noInterrupts</definition>
+        <argsstring>()</argsstring>
+        <name>noInterrupts</name>
+        <briefdescription>
+<para>Disable interrupts. </para>        </briefdescription>
+        <detaileddescription>
+<para>After calling this function, all user-programmable interrupts will be disabled. You can call this function before a timing-critical section of code, then call <ref refid="ext__interrupts_8h_1a31074dfc26429d7bed41a77e734bc8ba" kindref="member">interrupts()</ref> to re-enable interrupt handling.</para><para><simplesect kind="see"><para><ref refid="ext__interrupts_8h_1a31074dfc26429d7bed41a77e734bc8ba" kindref="member">interrupts()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/ext_interrupts.h" line="101" bodyfile="/home/mbolivar/leaf/libmaple/wirish/ext_interrupts.h" bodystart="101" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Wiring-like external interrupt prototypes and types. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Perry<sp/>Hung.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libmaple__types_8h" kindref="compound" tooltip="libmaple types">libmaple_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="nvic_8h" kindref="compound" tooltip="Nested vector interrupt controller support.">nvic.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor">#ifndef<sp/>_EXT_INTERRUPTS_H_</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_EXT_INTERRUPTS_H_</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="43" refid="ext__interrupts_8h_1abacafe8ae080fe4515ae6927ce1003fc" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="ext__interrupts_8h_1abacafe8ae080fe4515ae6927ce1003fc" kindref="member" tooltip="The kind of transition on an external pin which should trigger an interrupt.">ExtIntTriggerMode</ref><sp/>{</highlight></codeline>
+<codeline lineno="44" refid="ext__interrupts_8h_1abacafe8ae080fe4515ae6927ce1003fcad93abe7aced82e9a4fcac4127a36ece3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ext__interrupts_8h_1abacafe8ae080fe4515ae6927ce1003fcad93abe7aced82e9a4fcac4127a36ece3" kindref="member" tooltip="To trigger an interrupt when the pin transitions LOW to HIGH.">RISING</ref>,<sp/></highlight></codeline>
+<codeline lineno="46" refid="ext__interrupts_8h_1abacafe8ae080fe4515ae6927ce1003fcad24712a6a30c1d431b927d1ba2f84b66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ext__interrupts_8h_1abacafe8ae080fe4515ae6927ce1003fcad24712a6a30c1d431b927d1ba2f84b66" kindref="member" tooltip="To trigger an interrupt when the pin transitions HIGH to LOW.">FALLING</ref>,<sp/></highlight></codeline>
+<codeline lineno="48" refid="ext__interrupts_8h_1abacafe8ae080fe4515ae6927ce1003fcaada6cf2b086af8fd5f84e946d2bd145d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ext__interrupts_8h_1abacafe8ae080fe4515ae6927ce1003fcaada6cf2b086af8fd5f84e946d2bd145d" kindref="member" tooltip="To trigger an interrupt when the pin transitions from LOW to HIGH or HIGH to LOW (i.e., when the pin changes).">CHANGE</ref><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}<sp/><ref refid="ext__interrupts_8h_1abacafe8ae080fe4515ae6927ce1003fc" kindref="member" tooltip="The kind of transition on an external pin which should trigger an interrupt.">ExtIntTriggerMode</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ext__interrupts_8h_1a9ec85f48bf84251b7bf7aad0247e5ea1" kindref="member" tooltip="Registers an interrupt handler on a pin.">attachInterrupt</ref>(uint8<sp/>pin,<sp/>voidFuncPtr<sp/>handler,<sp/><ref refid="ext__interrupts_8h_1abacafe8ae080fe4515ae6927ce1003fc" kindref="member" tooltip="The kind of transition on an external pin which should trigger an interrupt.">ExtIntTriggerMode</ref><sp/>mode);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ext__interrupts_8h_1a24733295aef88c629d08272698a7ad79" kindref="member" tooltip="Disable any registered external interrupt.">detachInterrupt</ref>(uint8<sp/>pin);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="ext__interrupts_8h_1a31074dfc26429d7bed41a77e734bc8ba" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ext__interrupts_8h_1a31074dfc26429d7bed41a77e734bc8ba" kindref="member" tooltip="Re-enable interrupts.">interrupts</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a78613b2a184eb439b183efb02cca9aeb" kindref="member" tooltip="Enables interrupts and configurable fault handlers (clear PRIMASK).">nvic_globalirq_enable</ref>();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="ext__interrupts_8h_1a515203d1dc785590928e02b30545e5fb" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ext__interrupts_8h_1a515203d1dc785590928e02b30545e5fb" kindref="member" tooltip="Disable interrupts.">noInterrupts</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a762b781d44f6afc1c13dedf32ebd35df" kindref="member" tooltip="Disable interrupts and configurable fault handlers (set PRIMASK).">nvic_globalirq_disable</ref>();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/wirish/ext_interrupts.h"/>
+  </compounddef>
+</doxygen>

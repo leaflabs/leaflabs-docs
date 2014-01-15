@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="class_servo" kind="class" prot="public">
+    <compoundname>Servo</compoundname>
+    <includes refid="_servo_8h" local="no">Servo.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_servo_1aabd904a1373b391aadb91129f57e6243" prot="private" static="no" mutable="no">
+        <type>int16</type>
+        <definition>int16 Servo::pin</definition>
+        <argsstring></argsstring>
+        <name>pin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" line="191" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_servo_1ad7f01394d6b748df39bb571f95e4b8fa" prot="private" static="no" mutable="no">
+        <type>uint16</type>
+        <definition>uint16 Servo::minPW</definition>
+        <argsstring></argsstring>
+        <name>minPW</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" line="192" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_servo_1a370524fd5161cbb0a90d639e976434d5" prot="private" static="no" mutable="no">
+        <type>uint16</type>
+        <definition>uint16 Servo::maxPW</definition>
+        <argsstring></argsstring>
+        <name>maxPW</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" line="193" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_servo_1a8504056a79fed53f63ea22f32738947c" prot="private" static="no" mutable="no">
+        <type>int16</type>
+        <definition>int16 Servo::minAngle</definition>
+        <argsstring></argsstring>
+        <name>minAngle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" line="194" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_servo_1ada5cc58bbe42be8811d2823c08889810" prot="private" static="no" mutable="no">
+        <type>int16</type>
+        <definition>int16 Servo::maxAngle</definition>
+        <argsstring></argsstring>
+        <name>maxAngle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" line="195" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_servo_1a70b2b17657cf258cdcb57503bcf62cd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Servo::Servo</definition>
+        <argsstring>()</argsstring>
+        <name>Servo</name>
+        <briefdescription>
+<para>Construct a new <ref refid="class_servo" kindref="compound">Servo</ref> instance. </para>        </briefdescription>
+        <detaileddescription>
+<para>The new instance will not be attached to any pin. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" line="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_servo_1aa8a75e68a28d6934b16a777c1731641e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Servo::attach</definition>
+        <argsstring>(uint8 pin, uint16 minPulseWidth=SERVO_DEFAULT_MIN_PW, uint16 maxPulseWidth=SERVO_DEFAULT_MAX_PW, int16 minAngle=SERVO_DEFAULT_MIN_ANGLE, int16 maxAngle=SERVO_DEFAULT_MAX_ANGLE)</argsstring>
+        <name>attach</name>
+        <param>
+          <type>uint8</type>
+          <declname>pin</declname>
+        </param>
+        <param>
+          <type>uint16</type>
+          <declname>minPulseWidth</declname>
+          <defval>SERVO_DEFAULT_MIN_PW</defval>
+        </param>
+        <param>
+          <type>uint16</type>
+          <declname>maxPulseWidth</declname>
+          <defval>SERVO_DEFAULT_MAX_PW</defval>
+        </param>
+        <param>
+          <type>int16</type>
+          <declname>minAngle</declname>
+          <defval>SERVO_DEFAULT_MIN_ANGLE</defval>
+        </param>
+        <param>
+          <type>int16</type>
+          <declname>maxAngle</declname>
+          <defval>SERVO_DEFAULT_MAX_ANGLE</defval>
+        </param>
+        <briefdescription>
+<para>Associate this instance with a servomotor whose input is connected to pin. </para>        </briefdescription>
+        <detaileddescription>
+<para>If this instance is already attached to a pin, it will be detached before being attached to the new pin. This function doesn&apos;t detach any interrupt attached with the pin&apos;s timer channel.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pin connected to the servo pulse wave input. This pin must be capable of PWM output.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minPulseWidth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum pulse width to write to pin, in microseconds. This will be associated with a minAngle degree angle. Defaults to SERVO_DEFAULT_MIN_PW = 544.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxPulseWidth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum pulse width to write to pin, in microseconds. This will be associated with a maxAngle degree angle. Defaults to SERVO_DEFAULT_MAX_PW = 2400.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target angle (in degrees) associated with minPulseWidth. Defaults to SERVO_DEFAULT_MIN_ANGLE = 0.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxAngle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target angle (in degrees) associated with maxPulseWidth. Defaults to SERVO_DEFAULT_MAX_ANGLE = 180.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Side Effects:</title><para>May set pinMode(pin, PWM).</para></simplesect>
+<simplesect kind="return"><para>true if successful, false when pin doesn&apos;t support PWM. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" line="124"/>
+      </memberdef>
+      <memberdef kind="function" id="class_servo_1a098181c41d52a24a30d4c0d1e829fac8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Servo::attached</definition>
+        <argsstring>() const </argsstring>
+        <name>attached</name>
+        <briefdescription>
+<para>Check if this instance is attached to a servo. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if this instance is attached to a servo, false otherwise. </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_servo_1a9201fe678b7ebeb50b74646838798847" kindref="member">Servo::attachedPin()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" line="131" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" bodystart="131" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_servo_1a9201fe678b7ebeb50b74646838798847" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Servo::attachedPin</definition>
+        <argsstring>() const </argsstring>
+        <name>attachedPin</name>
+        <briefdescription>
+<para>Get the pin this instance is attached to. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pin number if currently attached to a pin, NOT_ATTACHED otherwise. </para></simplesect>
+<simplesect kind="see"><para><ref refid="class_servo_1aa8a75e68a28d6934b16a777c1731641e" kindref="member">Servo::attach()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" line="139" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" bodystart="139" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_servo_1afa4042feca3c79ba934798961d202bea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Servo::detach</definition>
+        <argsstring>()</argsstring>
+        <name>detach</name>
+        <briefdescription>
+<para>Stop driving the servo pulse train. </para>        </briefdescription>
+        <detaileddescription>
+<para>If not currently attached to a motor, this function has no effect.</para><para><simplesect kind="return"><para>true if this call did anything, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" line="148"/>
+      </memberdef>
+      <memberdef kind="function" id="class_servo_1af69aba052f5907ef7fc3b6159e3b7726" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Servo::write</definition>
+        <argsstring>(int angle)</argsstring>
+        <name>write</name>
+        <param>
+          <type>int</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>Set the servomotor target angle. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target angle, in degrees. If the target angle is outside the range specified at <ref refid="class_servo_1aa8a75e68a28d6934b16a777c1731641e" kindref="member">attach()</ref> time, it will be clamped to lie in that range.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="class_servo_1aa8a75e68a28d6934b16a777c1731641e" kindref="member">Servo::attach()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" line="159"/>
+      </memberdef>
+      <memberdef kind="function" id="class_servo_1a4b4d0f67163e983813f2db1c834ad7c2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Servo::read</definition>
+        <argsstring>() const </argsstring>
+        <name>read</name>
+        <briefdescription>
+<para>Get the servomotor&apos;s target angle, in degrees. </para>        </briefdescription>
+        <detaileddescription>
+<para>This will lie inside the range specified at <ref refid="class_servo_1aa8a75e68a28d6934b16a777c1731641e" kindref="member">attach()</ref> time.</para><para><simplesect kind="see"><para><ref refid="class_servo_1aa8a75e68a28d6934b16a777c1731641e" kindref="member">Servo::attach()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" line="168"/>
+      </memberdef>
+      <memberdef kind="function" id="class_servo_1a7d35c33a26697722dc0c7e6cdb66d299" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Servo::writeMicroseconds</definition>
+        <argsstring>(uint16 pulseWidth)</argsstring>
+        <name>writeMicroseconds</name>
+        <param>
+          <type>uint16</type>
+          <declname>pulseWidth</declname>
+        </param>
+        <briefdescription>
+<para>Set the pulse width, in microseconds. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pulseWidth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pulse width to send to the servomotor, in microseconds. If outside of the range specified at <ref refid="class_servo_1aa8a75e68a28d6934b16a777c1731641e" kindref="member">attach()</ref> time, it is clamped to lie in that range.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="class_servo_1aa8a75e68a28d6934b16a777c1731641e" kindref="member">Servo::attach()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" line="180"/>
+      </memberdef>
+      <memberdef kind="function" id="class_servo_1a925de51eb1c8d0b241476df747662311" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16</type>
+        <definition>uint16 Servo::readMicroseconds</definition>
+        <argsstring>() const </argsstring>
+        <name>readMicroseconds</name>
+        <briefdescription>
+<para>Get the current pulse width, in microseconds. </para>        </briefdescription>
+        <detaileddescription>
+<para>This will lie within the range specified at <ref refid="class_servo_1aa8a75e68a28d6934b16a777c1731641e" kindref="member">attach()</ref> time.</para><para><simplesect kind="see"><para><ref refid="class_servo_1aa8a75e68a28d6934b16a777c1731641e" kindref="member">Servo::attach()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" line="188"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_servo_1afe93cf982b228ea3a5510147de951a94" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Servo::resetFields</definition>
+        <argsstring>(void)</argsstring>
+        <name>resetFields</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" line="197"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class for interfacing with RC servomotors. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" line="77" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Servo/Servo.h" bodystart="77" bodyend="198"/>
+    <listofallmembers>
+      <member refid="class_servo_1aa8a75e68a28d6934b16a777c1731641e" prot="public" virt="non-virtual"><scope>Servo</scope><name>attach</name></member>
+      <member refid="class_servo_1a098181c41d52a24a30d4c0d1e829fac8" prot="public" virt="non-virtual"><scope>Servo</scope><name>attached</name></member>
+      <member refid="class_servo_1a9201fe678b7ebeb50b74646838798847" prot="public" virt="non-virtual"><scope>Servo</scope><name>attachedPin</name></member>
+      <member refid="class_servo_1afa4042feca3c79ba934798961d202bea" prot="public" virt="non-virtual"><scope>Servo</scope><name>detach</name></member>
+      <member refid="class_servo_1ada5cc58bbe42be8811d2823c08889810" prot="private" virt="non-virtual"><scope>Servo</scope><name>maxAngle</name></member>
+      <member refid="class_servo_1a370524fd5161cbb0a90d639e976434d5" prot="private" virt="non-virtual"><scope>Servo</scope><name>maxPW</name></member>
+      <member refid="class_servo_1a8504056a79fed53f63ea22f32738947c" prot="private" virt="non-virtual"><scope>Servo</scope><name>minAngle</name></member>
+      <member refid="class_servo_1ad7f01394d6b748df39bb571f95e4b8fa" prot="private" virt="non-virtual"><scope>Servo</scope><name>minPW</name></member>
+      <member refid="class_servo_1aabd904a1373b391aadb91129f57e6243" prot="private" virt="non-virtual"><scope>Servo</scope><name>pin</name></member>
+      <member refid="class_servo_1a4b4d0f67163e983813f2db1c834ad7c2" prot="public" virt="non-virtual"><scope>Servo</scope><name>read</name></member>
+      <member refid="class_servo_1a925de51eb1c8d0b241476df747662311" prot="public" virt="non-virtual"><scope>Servo</scope><name>readMicroseconds</name></member>
+      <member refid="class_servo_1afe93cf982b228ea3a5510147de951a94" prot="private" virt="non-virtual"><scope>Servo</scope><name>resetFields</name></member>
+      <member refid="class_servo_1a70b2b17657cf258cdcb57503bcf62cd2" prot="public" virt="non-virtual"><scope>Servo</scope><name>Servo</name></member>
+      <member refid="class_servo_1af69aba052f5907ef7fc3b6159e3b7726" prot="public" virt="non-virtual"><scope>Servo</scope><name>write</name></member>
+      <member refid="class_servo_1a7d35c33a26697722dc0c7e6cdb66d299" prot="public" virt="non-virtual"><scope>Servo</scope><name>writeMicroseconds</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

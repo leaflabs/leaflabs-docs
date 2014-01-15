@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structrcc__dev__info" kind="struct" prot="public">
+    <compoundname>rcc_dev_info</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrcc__dev__info_1a318d808cfd7043468d99a267fd17d6fd" prot="public" static="no" mutable="no">
+        <type>const rcc_clk_domain</type>
+        <definition>const rcc_clk_domain rcc_dev_info::clk_domain</definition>
+        <argsstring></argsstring>
+        <name>clk_domain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/rcc.c" line="42" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/rcc.c" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrcc__dev__info_1a6a63679d9d001ffa7bb587f925965789" prot="public" static="no" mutable="no">
+        <type>const uint8</type>
+        <definition>const uint8 rcc_dev_info::line_num</definition>
+        <argsstring></argsstring>
+        <name>line_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/rcc.c" line="43" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/rcc.c" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/rcc.c" line="41" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/rcc.c" bodystart="41" bodyend="44"/>
+    <listofallmembers>
+      <member refid="structrcc__dev__info_1a318d808cfd7043468d99a267fd17d6fd" prot="public" virt="non-virtual"><scope>rcc_dev_info</scope><name>clk_domain</name></member>
+      <member refid="structrcc__dev__info_1a6a63679d9d001ffa7bb587f925965789" prot="public" virt="non-virtual"><scope>rcc_dev_info</scope><name>line_num</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

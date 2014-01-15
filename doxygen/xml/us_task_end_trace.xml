@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="us_task_end_trace" kind="page">
+    <compoundname>usTaskEndTrace</compoundname>
+    <title>usTaskEndTrace</title>
+    <detaileddescription>
+<para>task.</para><para>h <preformatted>unsigned long ulTaskEndTrace( void );</preformatted></para><para>Stops a kernel activity trace. See vTaskStartTrace ().</para><para><simplesect kind="return"><para>The number of bytes that have been written into the trace buffer. </para></simplesect>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__x_task_resume_all" kind="group">
+    <compoundname>xTaskResumeAll</compoundname>
+    <title>xTaskResumeAll</title>
+    <briefdescription>
+<para>task. </para>    </briefdescription>
+    <detaileddescription>
+<para>h <preformatted>char xTaskResumeAll( void );</preformatted></para><para>Resumes real time kernel activity following a call to vTaskSuspendAll (). After a call to vTaskSuspendAll () the kernel will take control of which task is executing at any time.</para><para><simplesect kind="return"><para>If resuming the scheduler caused a context switch then pdTRUE is returned, otherwise pdFALSE is returned.</para></simplesect>
+Example usage: <preformatted>
+ void vTask1( void * pvParameters )
+ {
+	 for( ;; )
+	 {
+Task code goes here.</preformatted></para><para><preformatted>...</preformatted></para><para><preformatted>At some point the task wants to perform a long operation during
+which it does not want to get swapped out.  It cannot use
+taskENTER_CRITICAL ()/taskEXIT_CRITICAL () as the length of the
+operation may cause interrupts to be missed - including the
+ticks.</preformatted></para><para><preformatted>Prevent the real time kernel swapping out the task.
+		 vTaskSuspendAll ();</preformatted></para><para><preformatted>Perform the operation here.  There is no need to use critical
+sections as we have all the microcontroller processing time.
+During this time interrupts will still operate and the real
+time kernel tick count will be maintained.</preformatted></para><para><preformatted>...</preformatted></para><para><preformatted>The operation is complete.  Restart the kernel.  We want to force
+a context switch - but there is no point if resuming the scheduler
+caused a context switch already.
+		 if( !xTaskResumeAll () )
+		 {
+			  taskYIELD ();
+		 }
+	 }
+ }
+   </preformatted> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

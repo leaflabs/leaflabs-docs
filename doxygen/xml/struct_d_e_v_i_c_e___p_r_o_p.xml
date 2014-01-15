@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="struct_d_e_v_i_c_e___p_r_o_p" kind="struct" prot="public">
+    <compoundname>DEVICE_PROP</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_d_e_v_i_c_e___p_r_o_p_1a4b46295377ca20b9d692cce4cdbc97ec" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* DEVICE_PROP::Init)(void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>Init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="130" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_e_v_i_c_e___p_r_o_p_1a19a348d076f92c166e9869d5a88c229b" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* DEVICE_PROP::Reset)(void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>Reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="131" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_e_v_i_c_e___p_r_o_p_1a1de7d2acbadfb2bbadbadfb8e644e55d" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* DEVICE_PROP::Process_Status_IN)(void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>Process_Status_IN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="134" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_e_v_i_c_e___p_r_o_p_1a94bcaf01d2d8b4d44cda54e1801c2b7e" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* DEVICE_PROP::Process_Status_OUT)(void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>Process_Status_OUT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="135" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_e_v_i_c_e___p_r_o_p_1a9a701655231200d80c8fff2e1d633060" prot="public" static="no" mutable="no">
+        <type>RESULT(*</type>
+        <definition>RESULT(* DEVICE_PROP::Class_Data_Setup)(u8 RequestNo)</definition>
+        <argsstring>)(u8 RequestNo)</argsstring>
+        <name>Class_Data_Setup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="153" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_e_v_i_c_e___p_r_o_p_1ace8d19860767b503b203f6d372983f6a" prot="public" static="no" mutable="no">
+        <type>RESULT(*</type>
+        <definition>RESULT(* DEVICE_PROP::Class_NoData_Setup)(u8 RequestNo)</definition>
+        <argsstring>)(u8 RequestNo)</argsstring>
+        <name>Class_NoData_Setup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="164" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_e_v_i_c_e___p_r_o_p_1a251cb443249cf618c5a073582c343270" prot="public" static="no" mutable="no">
+        <type>RESULT(*</type>
+        <definition>RESULT(* DEVICE_PROP::Class_Get_Interface_Setting)(u8 Interface, u8 AlternateSetting)</definition>
+        <argsstring>)(u8 Interface, u8 AlternateSetting)</argsstring>
+        <name>Class_Get_Interface_Setting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="174" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_e_v_i_c_e___p_r_o_p_1ad83233b4d43f84faa50ca8efe44e198b" prot="public" static="no" mutable="no">
+        <type>u8 *(*</type>
+        <definition>u8*(* DEVICE_PROP::GetDeviceDescriptor)(u16 Length)</definition>
+        <argsstring>)(u16 Length)</argsstring>
+        <name>GetDeviceDescriptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="176" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_e_v_i_c_e___p_r_o_p_1a6be9c40b31d6812ddcb85f826c6e144f" prot="public" static="no" mutable="no">
+        <type>u8 *(*</type>
+        <definition>u8*(* DEVICE_PROP::GetConfigDescriptor)(u16 Length)</definition>
+        <argsstring>)(u16 Length)</argsstring>
+        <name>GetConfigDescriptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="177" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_e_v_i_c_e___p_r_o_p_1a25354fd53eb8f67b03fb3d3a13e6925b" prot="public" static="no" mutable="no">
+        <type>u8 *(*</type>
+        <definition>u8*(* DEVICE_PROP::GetStringDescriptor)(u16 Length)</definition>
+        <argsstring>)(u16 Length)</argsstring>
+        <name>GetStringDescriptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="178" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_e_v_i_c_e___p_r_o_p_1aa715f103adfef481d2dcaac22901a897" prot="public" static="no" mutable="no">
+        <type>u8 *</type>
+        <definition>u8* DEVICE_PROP::RxEP_buffer</definition>
+        <argsstring></argsstring>
+        <name>RxEP_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="180" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_e_v_i_c_e___p_r_o_p_1a74862ff8e3bdaa41b789b79d4e77c7ac" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 DEVICE_PROP::MaxPacketSize</definition>
+        <argsstring></argsstring>
+        <name>MaxPacketSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="181" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="129" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="128" bodyend="183"/>
+    <listofallmembers>
+      <member refid="struct_d_e_v_i_c_e___p_r_o_p_1a9a701655231200d80c8fff2e1d633060" prot="public" virt="non-virtual"><scope>DEVICE_PROP</scope><name>Class_Data_Setup</name></member>
+      <member refid="struct_d_e_v_i_c_e___p_r_o_p_1a251cb443249cf618c5a073582c343270" prot="public" virt="non-virtual"><scope>DEVICE_PROP</scope><name>Class_Get_Interface_Setting</name></member>
+      <member refid="struct_d_e_v_i_c_e___p_r_o_p_1ace8d19860767b503b203f6d372983f6a" prot="public" virt="non-virtual"><scope>DEVICE_PROP</scope><name>Class_NoData_Setup</name></member>
+      <member refid="struct_d_e_v_i_c_e___p_r_o_p_1a6be9c40b31d6812ddcb85f826c6e144f" prot="public" virt="non-virtual"><scope>DEVICE_PROP</scope><name>GetConfigDescriptor</name></member>
+      <member refid="struct_d_e_v_i_c_e___p_r_o_p_1ad83233b4d43f84faa50ca8efe44e198b" prot="public" virt="non-virtual"><scope>DEVICE_PROP</scope><name>GetDeviceDescriptor</name></member>
+      <member refid="struct_d_e_v_i_c_e___p_r_o_p_1a25354fd53eb8f67b03fb3d3a13e6925b" prot="public" virt="non-virtual"><scope>DEVICE_PROP</scope><name>GetStringDescriptor</name></member>
+      <member refid="struct_d_e_v_i_c_e___p_r_o_p_1a4b46295377ca20b9d692cce4cdbc97ec" prot="public" virt="non-virtual"><scope>DEVICE_PROP</scope><name>Init</name></member>
+      <member refid="struct_d_e_v_i_c_e___p_r_o_p_1a74862ff8e3bdaa41b789b79d4e77c7ac" prot="public" virt="non-virtual"><scope>DEVICE_PROP</scope><name>MaxPacketSize</name></member>
+      <member refid="struct_d_e_v_i_c_e___p_r_o_p_1a1de7d2acbadfb2bbadbadfb8e644e55d" prot="public" virt="non-virtual"><scope>DEVICE_PROP</scope><name>Process_Status_IN</name></member>
+      <member refid="struct_d_e_v_i_c_e___p_r_o_p_1a94bcaf01d2d8b4d44cda54e1801c2b7e" prot="public" virt="non-virtual"><scope>DEVICE_PROP</scope><name>Process_Status_OUT</name></member>
+      <member refid="struct_d_e_v_i_c_e___p_r_o_p_1a19a348d076f92c166e9869d5a88c229b" prot="public" virt="non-virtual"><scope>DEVICE_PROP</scope><name>Reset</name></member>
+      <member refid="struct_d_e_v_i_c_e___p_r_o_p_1aa715f103adfef481d2dcaac22901a897" prot="public" virt="non-virtual"><scope>DEVICE_PROP</scope><name>RxEP_buffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

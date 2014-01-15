@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structspi__dev" kind="struct" prot="public">
+    <compoundname>spi_dev</compoundname>
+    <includes refid="spi_8h" local="no">spi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structspi__dev_1ab52cd44b07b6a45710fcd3e901685dee" prot="public" static="no" mutable="no">
+        <type><ref refid="structspi__reg__map" kindref="compound">spi_reg_map</ref> *</type>
+        <definition>spi_reg_map* spi_dev::regs</definition>
+        <argsstring></argsstring>
+        <name>regs</name>
+        <briefdescription>
+<para>Register map. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.h" line="207" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structspi__dev_1adf902385fe904b97e960670613ee9372" prot="public" static="no" mutable="no">
+        <type><ref refid="rcc_8h_1ae3722d2d8eff5283fb0388429953640f" kindref="member">rcc_clk_id</ref></type>
+        <definition>rcc_clk_id spi_dev::clk_id</definition>
+        <argsstring></argsstring>
+        <name>clk_id</name>
+        <briefdescription>
+<para>RCC clock information. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.h" line="208" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structspi__dev_1aec20ba8d07504dfbf5ea9fae3bc185ff" prot="public" static="no" mutable="no">
+        <type><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83" kindref="member">nvic_irq_num</ref></type>
+        <definition>nvic_irq_num spi_dev::irq_num</definition>
+        <argsstring></argsstring>
+        <name>irq_num</name>
+        <briefdescription>
+<para>NVIC interrupt number. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.h" line="209" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>SPI device type. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="115">
+        <label>spi_dev</label>
+        <link refid="structspi__dev"/>
+        <childnode refid="116" relation="usage">
+          <edgelabel>regs</edgelabel>
+        </childnode>
+      </node>
+      <node id="116">
+        <label>spi_reg_map</label>
+        <link refid="structspi__reg__map"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.h" line="206" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.h" bodystart="206" bodyend="210"/>
+    <listofallmembers>
+      <member refid="structspi__dev_1adf902385fe904b97e960670613ee9372" prot="public" virt="non-virtual"><scope>spi_dev</scope><name>clk_id</name></member>
+      <member refid="structspi__dev_1aec20ba8d07504dfbf5ea9fae3bc185ff" prot="public" virt="non-virtual"><scope>spi_dev</scope><name>irq_num</name></member>
+      <member refid="structspi__dev_1ab52cd44b07b6a45710fcd3e901685dee" prot="public" virt="non-virtual"><scope>spi_dev</scope><name>regs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

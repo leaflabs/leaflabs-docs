@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__cr_s_t_a_r_t" kind="group">
+    <compoundname>crSTART</compoundname>
+    <title>crSTART</title>
+    <briefdescription>
+<para>croutine. </para>    </briefdescription>
+    <detaileddescription>
+<para>h <preformatted>
+ crSTART( xCoRoutineHandle xHandle );</preformatted></para><para>This macro MUST always be called at the start of a co-routine function.</para><para>Example usage: <preformatted>
+Co-routine to be created.
+ void vACoRoutine( xCoRoutineHandle xHandle, unsigned portBASE_TYPE uxIndex )
+ {
+Variables in co-routines must be declared static if they must maintain value across a blocking call.
+ static long ulAVariable;</preformatted></para><para><preformatted>Must start every co-routine with a call to crSTART();
+     crSTART( xHandle );</preformatted></para><para><preformatted>     for( ;; )
+     {
+Co-routine functionality goes here.
+     }</preformatted></para><para><preformatted>Must end every co-routine with a call to crEND();
+     crEND();
+ }</preformatted></para><para>h <preformatted>
+ crEND();</preformatted></para><para>This macro MUST always be called at the end of a co-routine function.</para><para>Example usage: <preformatted>
+Co-routine to be created.
+ void vACoRoutine( xCoRoutineHandle xHandle, unsigned portBASE_TYPE uxIndex )
+ {
+Variables in co-routines must be declared static if they must maintain value across a blocking call.
+ static long ulAVariable;</preformatted></para><para><preformatted>Must start every co-routine with a call to crSTART();
+     crSTART( xHandle );</preformatted></para><para><preformatted>     for( ;; )
+     {
+Co-routine functionality goes here.
+     }</preformatted></para><para><preformatted>Must end every co-routine with a call to crEND();
+     crEND();
+ }</preformatted> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

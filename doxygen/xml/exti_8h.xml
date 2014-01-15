@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="exti_8h" kind="file">
+    <compoundname>exti.h</compoundname>
+    <includes refid="libmaple_8h" local="yes">libmaple.h</includes>
+    <includes refid="gpio_8h" local="yes">gpio.h</includes>
+    <includedby refid="exti_8c" local="yes">libmaple/exti.c</includedby>
+    <incdepgraph>
+      <node id="172">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="167" relation="include">
+        </childnode>
+      </node>
+      <node id="168">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="167">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="166">
+        <label>libmaple.h</label>
+        <link refid="libmaple_8h"/>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+      </node>
+      <node id="170">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="168" relation="include">
+        </childnode>
+      </node>
+      <node id="165">
+        <label>libmaple/exti.h</label>
+        <link refid="exti.h"/>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+      </node>
+      <node id="169">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="167" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="174">
+        <label>libmaple/exti.c</label>
+        <link refid="exti_8c"/>
+      </node>
+      <node id="173">
+        <label>libmaple/exti.h</label>
+        <link refid="exti.h"/>
+        <childnode refid="174" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structexti__reg__map" prot="public">exti_reg_map</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="exti_8h_1a87371508b3bcdcd98cd1ec629be29061" prot="public" static="no">
+        <name>EXTI_BASE</name>
+        <initializer>((struct <ref refid="structexti__reg__map" kindref="compound">exti_reg_map</ref>*)0x40010400)</initializer>
+        <briefdescription>
+<para>EXTI register map base pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.h" line="55" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="exti_8h_1ad887fbd72d4310a768c05688bb7113bd" prot="public" static="no">
+        <name>exti_trigger_mode</name>
+        <enumvalue id="exti_8h_1ad887fbd72d4310a768c05688bb7113bda0f4aba10f123514f27120ae63ab8a40c" prot="public">
+          <name>EXTI_RISING</name>
+          <briefdescription>
+<para>Trigger on the rising edge. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="exti_8h_1ad887fbd72d4310a768c05688bb7113bda82ee40687454f207023a4679fe0f6ccd" prot="public">
+          <name>EXTI_FALLING</name>
+          <briefdescription>
+<para>Trigger on the falling edge. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="exti_8h_1ad887fbd72d4310a768c05688bb7113bdadb52284de9f94c0677fe2cc5ffd9e3f2" prot="public">
+          <name>EXTI_RISING_FALLING</name>
+          <briefdescription>
+<para>Trigger on both the rising and falling edges. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>External interrupt trigger mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.h" line="58" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.h" bodystart="58" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="exti_8h_1a426bedfa921d4c070ea1ea146deec910" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void exti_attach_interrupt</definition>
+        <argsstring>(afio_exti_num num, afio_exti_port port, voidFuncPtr handler, exti_trigger_mode mode)</argsstring>
+        <name>exti_attach_interrupt</name>
+        <param>
+          <type><ref refid="gpio_8h_1a155a78e19d9a90cf0cc63b1e1ce4d04c" kindref="member">afio_exti_num</ref></type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type><ref refid="gpio_8h_1a2575e4635087025b9c3077176aeb5e61" kindref="member">afio_exti_port</ref></type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>voidFuncPtr</type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type><ref refid="exti_8h_1ad887fbd72d4310a768c05688bb7113bd" kindref="member">exti_trigger_mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Register a handler to run upon external interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function assumes that the interrupt request corresponding to the given external interrupt is masked.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>External interrupt line number. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_port" kindref="compound">Port</ref> to use as source input for external interrupt. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function handler to execute when interrupt is triggered. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of transition to trigger on, one of: EXTI_RISING, EXTI_FALLING, EXTI_RISING_FALLING. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="gpio_8h_1a155a78e19d9a90cf0cc63b1e1ce4d04c" kindref="member">afio_exti_num</ref> </para><simplesectsep/><para><ref refid="gpio_8h_1a2575e4635087025b9c3077176aeb5e61" kindref="member">afio_exti_port</ref> </para><simplesectsep/><para>voidFuncPtr </para><simplesectsep/><para><ref refid="exti_8h_1ad887fbd72d4310a768c05688bb7113bd" kindref="member">exti_trigger_mode</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.h" line="67" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.c" bodystart="88" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="exti_8h_1abb44b7038a9549418cdfff9d01b36600" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void exti_detach_interrupt</definition>
+        <argsstring>(afio_exti_num num)</argsstring>
+        <name>exti_detach_interrupt</name>
+        <param>
+          <type><ref refid="gpio_8h_1a155a78e19d9a90cf0cc63b1e1ce4d04c" kindref="member">afio_exti_num</ref></type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+<para>Unregister an external interrupt handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of the external interrupt line to disable. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="gpio_8h_1a155a78e19d9a90cf0cc63b1e1ce4d04c" kindref="member">afio_exti_num</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.h" line="68" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.c" bodystart="126" bodyend="136"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>External interrupt control prototypes and defines. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Perry<sp/>Hung.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="comment">/*<sp/>See<sp/>notes/exti.txt<sp/>for<sp/>more<sp/>info<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libmaple_8h" kindref="compound" tooltip="General include file for libmaple.">libmaple.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gpio_8h" kindref="compound" tooltip="General purpose I/O (GPIO) and Alternate Function I/O (AFIO) prototypes, defines, and inlined access ...">gpio.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_EXTI_H_</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_EXTI_H_</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="45" refid="structexti__reg__map" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structexti__reg__map" kindref="compound" tooltip="EXTI register map type.">exti_reg_map</ref><sp/>{</highlight></codeline>
+<codeline lineno="46" refid="structexti__reg__map_1aef364e8ff542ee10c9142841d1bae7a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structexti__reg__map_1aef364e8ff542ee10c9142841d1bae7a9" kindref="member" tooltip="Interrupt mask register.">IMR</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="structexti__reg__map_1a1af3af3fda4d24ae2c1f8720be092488" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structexti__reg__map_1a1af3af3fda4d24ae2c1f8720be092488" kindref="member" tooltip="Event mask register.">EMR</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48" refid="structexti__reg__map_1aee6293129d2ebb2d571d24d6bd54f93d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structexti__reg__map_1aee6293129d2ebb2d571d24d6bd54f93d" kindref="member" tooltip="Rising trigger selection register.">RTSR</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="structexti__reg__map_1a12ab3c490f412570b135a242bd98d4a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structexti__reg__map_1a12ab3c490f412570b135a242bd98d4a1" kindref="member" tooltip="Falling trigger selection register.">FTSR</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="50" refid="structexti__reg__map_1abf3457ff13f1528ec5a0de102c600121" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structexti__reg__map_1abf3457ff13f1528ec5a0de102c600121" kindref="member" tooltip="Software interrupt event register.">SWIER</ref>;<sp/></highlight></codeline>
+<codeline lineno="51" refid="structexti__reg__map_1a87735c086d2cbf502e0b9a8c28cbc2b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structexti__reg__map_1a87735c086d2cbf502e0b9a8c28cbc2b6" kindref="member" tooltip="Pending register.">PR</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}<sp/><ref refid="structexti__reg__map" kindref="compound" tooltip="EXTI register map type.">exti_reg_map</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="exti_8h_1a87371508b3bcdcd98cd1ec629be29061" refkind="member"><highlight class="preprocessor">#define<sp/>EXTI_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((struct<sp/>exti_reg_map*)0x40010400)</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="58" refid="exti_8h_1ad887fbd72d4310a768c05688bb7113bd" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="exti_8h_1ad887fbd72d4310a768c05688bb7113bd" kindref="member" tooltip="External interrupt trigger mode.">exti_trigger_mode</ref><sp/>{</highlight></codeline>
+<codeline lineno="59" refid="exti_8h_1ad887fbd72d4310a768c05688bb7113bda0f4aba10f123514f27120ae63ab8a40c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="exti_8h_1ad887fbd72d4310a768c05688bb7113bda0f4aba10f123514f27120ae63ab8a40c" kindref="member" tooltip="Trigger on the rising edge.">EXTI_RISING</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60" refid="exti_8h_1ad887fbd72d4310a768c05688bb7113bda82ee40687454f207023a4679fe0f6ccd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="exti_8h_1ad887fbd72d4310a768c05688bb7113bda82ee40687454f207023a4679fe0f6ccd" kindref="member" tooltip="Trigger on the falling edge.">EXTI_FALLING</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61" refid="exti_8h_1ad887fbd72d4310a768c05688bb7113bdadb52284de9f94c0677fe2cc5ffd9e3f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="exti_8h_1ad887fbd72d4310a768c05688bb7113bdadb52284de9f94c0677fe2cc5ffd9e3f2" kindref="member" tooltip="Trigger on both the rising and falling edges.">EXTI_RISING_FALLING</ref><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}<sp/><ref refid="exti_8h_1ad887fbd72d4310a768c05688bb7113bd" kindref="member" tooltip="External interrupt trigger mode.">exti_trigger_mode</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="exti_8c_1a426bedfa921d4c070ea1ea146deec910" kindref="member" tooltip="Register a handler to run upon external interrupt.">exti_attach_interrupt</ref>(<ref refid="gpio_8h_1a155a78e19d9a90cf0cc63b1e1ce4d04c" kindref="member" tooltip="External interrupt line numbers.">afio_exti_num</ref><sp/>num,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gpio_8h_1a2575e4635087025b9c3077176aeb5e61" kindref="member" tooltip="External interrupt line port selector.">afio_exti_port</ref><sp/>port,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>voidFuncPtr<sp/>handler,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="exti_8h_1ad887fbd72d4310a768c05688bb7113bd" kindref="member" tooltip="External interrupt trigger mode.">exti_trigger_mode</ref><sp/>mode);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="exti_8c_1abb44b7038a9549418cdfff9d01b36600" kindref="member" tooltip="Unregister an external interrupt handler.">exti_detach_interrupt</ref>(<ref refid="gpio_8h_1a155a78e19d9a90cf0cc63b1e1ce4d04c" kindref="member" tooltip="External interrupt line numbers.">afio_exti_num</ref><sp/>num);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>extern<sp/>&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.h"/>
+  </compounddef>
+</doxygen>

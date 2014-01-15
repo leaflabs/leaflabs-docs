@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structtimer__dev" kind="struct" prot="public">
+    <compoundname>timer_dev</compoundname>
+    <includes refid="timer_8h" local="no">timer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtimer__dev_1a2bb0cda9590b90f2d767ceb540633d8e" prot="public" static="no" mutable="no">
+        <type><ref refid="uniontimer__reg__map" kindref="compound">timer_reg_map</ref></type>
+        <definition>timer_reg_map timer_dev::regs</definition>
+        <argsstring></argsstring>
+        <name>regs</name>
+        <briefdescription>
+<para>Register map. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="165" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__dev_1a9f76fb96b4ee0e2081b81cd859475d1f" prot="public" static="no" mutable="no">
+        <type><ref refid="rcc_8h_1ae3722d2d8eff5283fb0388429953640f" kindref="member">rcc_clk_id</ref></type>
+        <definition>rcc_clk_id timer_dev::clk_id</definition>
+        <argsstring></argsstring>
+        <name>clk_id</name>
+        <briefdescription>
+<para>RCC clock information. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="166" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__dev_1a178dad71538821d7119ba07d209100c6" prot="public" static="no" mutable="no">
+        <type><ref refid="timer_8h_1a96d92a0967e019b8223089e7968971c1" kindref="member">timer_type</ref></type>
+        <definition>timer_type timer_dev::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Timer&apos;s type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="167" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtimer__dev_1a6612456d9af23142eb0b9c595528c34a" prot="public" static="no" mutable="no">
+        <type>voidFuncPtr</type>
+        <definition>voidFuncPtr timer_dev::handlers[]</definition>
+        <argsstring>[]</argsstring>
+        <name>handlers</name>
+        <briefdescription>
+<para>User IRQ handlers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="168" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Timer device type. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="139">
+        <label>timer_adv_reg_map</label>
+        <link refid="structtimer__adv__reg__map"/>
+      </node>
+      <node id="137">
+        <label>timer_dev</label>
+        <link refid="structtimer__dev"/>
+        <childnode refid="138" relation="usage">
+          <edgelabel>regs</edgelabel>
+        </childnode>
+      </node>
+      <node id="141">
+        <label>timer_gen_reg_map</label>
+        <link refid="structtimer__gen__reg__map"/>
+      </node>
+      <node id="140">
+        <label>timer_bas_reg_map</label>
+        <link refid="structtimer__bas__reg__map"/>
+      </node>
+      <node id="138">
+        <label>timer_reg_map</label>
+        <link refid="uniontimer__reg__map"/>
+        <childnode refid="139" relation="usage">
+          <edgelabel>adv</edgelabel>
+        </childnode>
+        <childnode refid="140" relation="usage">
+          <edgelabel>bas</edgelabel>
+        </childnode>
+        <childnode refid="141" relation="usage">
+          <edgelabel>gen</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="164" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="164" bodyend="169"/>
+    <listofallmembers>
+      <member refid="structtimer__dev_1a9f76fb96b4ee0e2081b81cd859475d1f" prot="public" virt="non-virtual"><scope>timer_dev</scope><name>clk_id</name></member>
+      <member refid="structtimer__dev_1a6612456d9af23142eb0b9c595528c34a" prot="public" virt="non-virtual"><scope>timer_dev</scope><name>handlers</name></member>
+      <member refid="structtimer__dev_1a2bb0cda9590b90f2d767ceb540633d8e" prot="public" virt="non-virtual"><scope>timer_dev</scope><name>regs</name></member>
+      <member refid="structtimer__dev_1a178dad71538821d7119ba07d209100c6" prot="public" virt="non-virtual"><scope>timer_dev</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

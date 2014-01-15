@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="struct_r_c_c___reg_struct" kind="struct" prot="public">
+    <compoundname>RCC_RegStruct</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_c_c___reg_struct_1a84cc09b15b5e8e5d67a3cfc935ef46e0" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 RCC_RegStruct::CR</definition>
+        <argsstring></argsstring>
+        <name>CR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="75" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_struct_1ab8c8823eb036bc23f127f35331f857b2" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 RCC_RegStruct::CFGR</definition>
+        <argsstring></argsstring>
+        <name>CFGR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="76" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_struct_1a8a46cc89c9ab68d495ca4d7354893806" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 RCC_RegStruct::CIR</definition>
+        <argsstring></argsstring>
+        <name>CIR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="77" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_struct_1ad0e5bd30007216d53477bd43b1904bc2" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 RCC_RegStruct::APB2RSTR</definition>
+        <argsstring></argsstring>
+        <name>APB2RSTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="78" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_struct_1a1b5270df0119dd5705709e2e6cdef81e" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 RCC_RegStruct::APB1RSTR</definition>
+        <argsstring></argsstring>
+        <name>APB1RSTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="79" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_struct_1a423a67b0f148c146a141c6122188ee15" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 RCC_RegStruct::AHBENR</definition>
+        <argsstring></argsstring>
+        <name>AHBENR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="80" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_struct_1a1ad5768ba093b3a0522e83d0f3bbf42e" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 RCC_RegStruct::APB2ENR</definition>
+        <argsstring></argsstring>
+        <name>APB2ENR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="81" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_struct_1a269a3821cfaa3765de4d5adc065b8d42" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 RCC_RegStruct::APB1ENR</definition>
+        <argsstring></argsstring>
+        <name>APB1ENR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="82" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_struct_1a21de8969dd6e0c9c6af611e5a1dea78a" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 RCC_RegStruct::BDCR</definition>
+        <argsstring></argsstring>
+        <name>BDCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="83" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___reg_struct_1a05363f6424dd7eda3ab307fd11b90a91" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 RCC_RegStruct::CSR</definition>
+        <argsstring></argsstring>
+        <name>CSR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="84" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="74" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="73" bodyend="85"/>
+    <listofallmembers>
+      <member refid="struct_r_c_c___reg_struct_1a423a67b0f148c146a141c6122188ee15" prot="public" virt="non-virtual"><scope>RCC_RegStruct</scope><name>AHBENR</name></member>
+      <member refid="struct_r_c_c___reg_struct_1a269a3821cfaa3765de4d5adc065b8d42" prot="public" virt="non-virtual"><scope>RCC_RegStruct</scope><name>APB1ENR</name></member>
+      <member refid="struct_r_c_c___reg_struct_1a1b5270df0119dd5705709e2e6cdef81e" prot="public" virt="non-virtual"><scope>RCC_RegStruct</scope><name>APB1RSTR</name></member>
+      <member refid="struct_r_c_c___reg_struct_1a1ad5768ba093b3a0522e83d0f3bbf42e" prot="public" virt="non-virtual"><scope>RCC_RegStruct</scope><name>APB2ENR</name></member>
+      <member refid="struct_r_c_c___reg_struct_1ad0e5bd30007216d53477bd43b1904bc2" prot="public" virt="non-virtual"><scope>RCC_RegStruct</scope><name>APB2RSTR</name></member>
+      <member refid="struct_r_c_c___reg_struct_1a21de8969dd6e0c9c6af611e5a1dea78a" prot="public" virt="non-virtual"><scope>RCC_RegStruct</scope><name>BDCR</name></member>
+      <member refid="struct_r_c_c___reg_struct_1ab8c8823eb036bc23f127f35331f857b2" prot="public" virt="non-virtual"><scope>RCC_RegStruct</scope><name>CFGR</name></member>
+      <member refid="struct_r_c_c___reg_struct_1a8a46cc89c9ab68d495ca4d7354893806" prot="public" virt="non-virtual"><scope>RCC_RegStruct</scope><name>CIR</name></member>
+      <member refid="struct_r_c_c___reg_struct_1a84cc09b15b5e8e5d67a3cfc935ef46e0" prot="public" virt="non-virtual"><scope>RCC_RegStruct</scope><name>CR</name></member>
+      <member refid="struct_r_c_c___reg_struct_1a05363f6424dd7eda3ab307fd11b90a91" prot="public" virt="non-virtual"><scope>RCC_RegStruct</scope><name>CSR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

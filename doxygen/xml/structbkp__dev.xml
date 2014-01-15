@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structbkp__dev" kind="struct" prot="public">
+    <compoundname>bkp_dev</compoundname>
+    <includes refid="bkp_8h" local="no">bkp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbkp__dev_1a65e546d5661280ad7d27c9ae0840e178" prot="public" static="no" mutable="no">
+        <type><ref refid="structbkp__reg__map" kindref="compound">bkp_reg_map</ref> *</type>
+        <definition>bkp_reg_map* bkp_dev::regs</definition>
+        <argsstring></argsstring>
+        <name>regs</name>
+        <briefdescription>
+<para>Register map. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="106" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Backup peripheral device type. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9">
+        <label>bkp_reg_map</label>
+        <link refid="structbkp__reg__map"/>
+      </node>
+      <node id="8">
+        <label>bkp_dev</label>
+        <link refid="structbkp__dev"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>regs</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="105" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="105" bodyend="107"/>
+    <listofallmembers>
+      <member refid="structbkp__dev_1a65e546d5661280ad7d27c9ae0840e178" prot="public" virt="non-virtual"><scope>bkp_dev</scope><name>regs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

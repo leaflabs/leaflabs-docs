@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structi2c__msg" kind="struct" prot="public">
+    <compoundname>i2c_msg</compoundname>
+    <includes refid="i2c_8h" local="no">i2c.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structi2c__msg_1a66b30535a9a11588b2eb88475940c40c" prot="public" static="no" mutable="no">
+        <type>uint16</type>
+        <definition>uint16 i2c_msg::addr</definition>
+        <argsstring></argsstring>
+        <name>addr</name>
+        <briefdescription>
+<para>Address. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="66" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structi2c__msg_1ae69339535712eeb396cc1e3d71340c23" prot="public" static="no" mutable="no">
+        <type>uint16</type>
+        <definition>uint16 i2c_msg::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+<para>Bitwise OR of I2C_MSG_READ and I2C_MSG_10BIT_ADDR. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="70" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structi2c__msg_1a5f0907550fa4e8455e8ab9faeaebf340" prot="public" static="no" mutable="no">
+        <type>uint16</type>
+        <definition>uint16 i2c_msg::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+<para>Message length. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="71" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structi2c__msg_1adba24d9b7f6f5873472bfc5d70b8a207" prot="public" static="no" mutable="no">
+        <type>uint16</type>
+        <definition>uint16 i2c_msg::xferred</definition>
+        <argsstring></argsstring>
+        <name>xferred</name>
+        <briefdescription>
+<para>Messages transferred. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="72" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structi2c__msg_1a33aa3bea77e6db64bfee3ee49e6213f9" prot="public" static="no" mutable="no">
+        <type>uint8 *</type>
+        <definition>uint8* i2c_msg::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>Data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="73" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>I2C message type. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="65" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="65" bodyend="74"/>
+    <listofallmembers>
+      <member refid="structi2c__msg_1a66b30535a9a11588b2eb88475940c40c" prot="public" virt="non-virtual"><scope>i2c_msg</scope><name>addr</name></member>
+      <member refid="structi2c__msg_1a33aa3bea77e6db64bfee3ee49e6213f9" prot="public" virt="non-virtual"><scope>i2c_msg</scope><name>data</name></member>
+      <member refid="structi2c__msg_1ae69339535712eeb396cc1e3d71340c23" prot="public" virt="non-virtual"><scope>i2c_msg</scope><name>flags</name></member>
+      <member refid="structi2c__msg_1a5f0907550fa4e8455e8ab9faeaebf340" prot="public" virt="non-virtual"><scope>i2c_msg</scope><name>length</name></member>
+      <member refid="structi2c__msg_1adba24d9b7f6f5873472bfc5d70b8a207" prot="public" virt="non-virtual"><scope>i2c_msg</scope><name>xferred</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

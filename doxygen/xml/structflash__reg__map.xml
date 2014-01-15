@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structflash__reg__map" kind="struct" prot="public">
+    <compoundname>flash_reg_map</compoundname>
+    <includes refid="flash_8h" local="no">flash.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structflash__reg__map_1a43cb24fec8276d00c42d418451837162" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 flash_reg_map::ACR</definition>
+        <argsstring></argsstring>
+        <name>ACR</name>
+        <briefdescription>
+<para>Access control register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="44" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structflash__reg__map_1aca3b328dedfbfdaea9bbab354a5252cb" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 flash_reg_map::KEYR</definition>
+        <argsstring></argsstring>
+        <name>KEYR</name>
+        <briefdescription>
+<para>Key register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="45" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structflash__reg__map_1a71580c8cce3320b2c6919a4c8be316f6" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 flash_reg_map::OPTKEYR</definition>
+        <argsstring></argsstring>
+        <name>OPTKEYR</name>
+        <briefdescription>
+<para>OPTKEY register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="46" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structflash__reg__map_1a42af4d4677a06f5a853d62ac01ea3130" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 flash_reg_map::SR</definition>
+        <argsstring></argsstring>
+        <name>SR</name>
+        <briefdescription>
+<para>Status register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="47" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structflash__reg__map_1acc1014e17f2fa7ec7214ccf95b77c9a5" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 flash_reg_map::CR</definition>
+        <argsstring></argsstring>
+        <name>CR</name>
+        <briefdescription>
+<para>Control register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="48" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structflash__reg__map_1aa277aaef7f182c236881347c8c64265c" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 flash_reg_map::AR</definition>
+        <argsstring></argsstring>
+        <name>AR</name>
+        <briefdescription>
+<para>Address register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="49" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structflash__reg__map_1a1428e0286bc209e16a7b9d92a46b6470" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 flash_reg_map::OBR</definition>
+        <argsstring></argsstring>
+        <name>OBR</name>
+        <briefdescription>
+<para>Option byte register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="50" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structflash__reg__map_1a689af8ace6616441e6307977eee5552b" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 flash_reg_map::WRPR</definition>
+        <argsstring></argsstring>
+        <name>WRPR</name>
+        <briefdescription>
+<para>Write protection register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="51" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Flash register map type. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="43" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="43" bodyend="52"/>
+    <listofallmembers>
+      <member refid="structflash__reg__map_1a43cb24fec8276d00c42d418451837162" prot="public" virt="non-virtual"><scope>flash_reg_map</scope><name>ACR</name></member>
+      <member refid="structflash__reg__map_1aa277aaef7f182c236881347c8c64265c" prot="public" virt="non-virtual"><scope>flash_reg_map</scope><name>AR</name></member>
+      <member refid="structflash__reg__map_1acc1014e17f2fa7ec7214ccf95b77c9a5" prot="public" virt="non-virtual"><scope>flash_reg_map</scope><name>CR</name></member>
+      <member refid="structflash__reg__map_1aca3b328dedfbfdaea9bbab354a5252cb" prot="public" virt="non-virtual"><scope>flash_reg_map</scope><name>KEYR</name></member>
+      <member refid="structflash__reg__map_1a1428e0286bc209e16a7b9d92a46b6470" prot="public" virt="non-virtual"><scope>flash_reg_map</scope><name>OBR</name></member>
+      <member refid="structflash__reg__map_1a71580c8cce3320b2c6919a4c8be316f6" prot="public" virt="non-virtual"><scope>flash_reg_map</scope><name>OPTKEYR</name></member>
+      <member refid="structflash__reg__map_1a42af4d4677a06f5a853d62ac01ea3130" prot="public" virt="non-virtual"><scope>flash_reg_map</scope><name>SR</name></member>
+      <member refid="structflash__reg__map_1a689af8ace6616441e6307977eee5552b" prot="public" virt="non-virtual"><scope>flash_reg_map</scope><name>WRPR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

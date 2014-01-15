@@ -1,0 +1,607 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="io_8h" kind="file">
+    <compoundname>io.h</compoundname>
+    <includes refid="gpio_8h" local="yes">gpio.h</includes>
+    <includes refid="adc_8h" local="yes">adc.h</includes>
+    <includes refid="wirish__time_8h" local="yes">wirish_time.h</includes>
+    <includedby refid="wirish_8h" local="yes">wirish/wirish.h</includedby>
+    <incdepgraph>
+      <node id="1557">
+        <label>boards.h</label>
+        <link refid="boards_8h"/>
+        <childnode refid="1546" relation="include">
+        </childnode>
+        <childnode refid="1545" relation="include">
+        </childnode>
+        <childnode refid="1558" relation="include">
+        </childnode>
+        <childnode refid="1559" relation="include">
+        </childnode>
+      </node>
+      <node id="1555">
+        <label>nvic.h</label>
+        <link refid="nvic_8h"/>
+        <childnode refid="1547" relation="include">
+        </childnode>
+        <childnode refid="1549" relation="include">
+        </childnode>
+      </node>
+      <node id="1544">
+        <label>wirish/io.h</label>
+        <link refid="io.h"/>
+        <childnode refid="1545" relation="include">
+        </childnode>
+        <childnode refid="1552" relation="include">
+        </childnode>
+        <childnode refid="1554" relation="include">
+        </childnode>
+      </node>
+      <node id="1551">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="1547" relation="include">
+        </childnode>
+      </node>
+      <node id="1548">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="1547">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="1546">
+        <label>libmaple.h</label>
+        <link refid="libmaple_8h"/>
+        <childnode refid="1547" relation="include">
+        </childnode>
+        <childnode refid="1548" relation="include">
+        </childnode>
+        <childnode refid="1549" relation="include">
+        </childnode>
+        <childnode refid="1550" relation="include">
+        </childnode>
+      </node>
+      <node id="1554">
+        <label>wirish_time.h</label>
+        <link refid="wirish__time_8h"/>
+        <childnode refid="1546" relation="include">
+        </childnode>
+        <childnode refid="1555" relation="include">
+        </childnode>
+        <childnode refid="1556" relation="include">
+        </childnode>
+        <childnode refid="1557" relation="include">
+        </childnode>
+      </node>
+      <node id="1559">
+        <label>wirish_types.h</label>
+        <link refid="wirish__types_8h"/>
+        <childnode refid="1547" relation="include">
+        </childnode>
+        <childnode refid="1545" relation="include">
+        </childnode>
+        <childnode refid="1558" relation="include">
+        </childnode>
+        <childnode refid="1552" relation="include">
+        </childnode>
+      </node>
+      <node id="1552">
+        <label>adc.h</label>
+        <link refid="adc_8h"/>
+        <childnode refid="1546" relation="include">
+        </childnode>
+        <childnode refid="1553" relation="include">
+        </childnode>
+        <childnode refid="1551" relation="include">
+        </childnode>
+      </node>
+      <node id="1556">
+        <label>systick.h</label>
+        <link refid="systick_8h"/>
+        <childnode refid="1547" relation="include">
+        </childnode>
+        <childnode refid="1549" relation="include">
+        </childnode>
+      </node>
+      <node id="1553">
+        <label>bitband.h</label>
+        <link refid="bitband_8h"/>
+        <childnode refid="1547" relation="include">
+        </childnode>
+      </node>
+      <node id="1545">
+        <label>gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="1546" relation="include">
+        </childnode>
+        <childnode refid="1551" relation="include">
+        </childnode>
+      </node>
+      <node id="1558">
+        <label>timer.h</label>
+        <link refid="timer_8h"/>
+        <childnode refid="1546" relation="include">
+        </childnode>
+        <childnode refid="1551" relation="include">
+        </childnode>
+        <childnode refid="1555" relation="include">
+        </childnode>
+        <childnode refid="1553" relation="include">
+        </childnode>
+      </node>
+      <node id="1550">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="1547" relation="include">
+        </childnode>
+        <childnode refid="1548" relation="include">
+        </childnode>
+      </node>
+      <node id="1549">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="1547" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1561">
+        <label>wirish/wirish.h</label>
+        <link refid="wirish_8h_source"/>
+        <childnode refid="1562" relation="include">
+        </childnode>
+        <childnode refid="1563" relation="include">
+        </childnode>
+        <childnode refid="1564" relation="include">
+        </childnode>
+        <childnode refid="1565" relation="include">
+        </childnode>
+      </node>
+      <node id="1560">
+        <label>wirish/io.h</label>
+        <link refid="io.h"/>
+        <childnode refid="1561" relation="include">
+        </childnode>
+      </node>
+      <node id="1564">
+        <label>libraries/LiquidCrystal/LiquidCrystal.h</label>
+        <link refid="_liquid_crystal_8h_source"/>
+      </node>
+      <node id="1565">
+        <label>libraries/Wire/Wire.h</label>
+        <link refid="_wire_8h_source"/>
+      </node>
+      <node id="1562">
+        <label>wirish/WProgram.h</label>
+        <link refid="_w_program_8h_source"/>
+      </node>
+      <node id="1563">
+        <label>libraries/FreeRTOS/MapleFreeRTOS.h</label>
+        <link refid="_maple_free_r_t_o_s_8h_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1" prot="public" static="no">
+        <name>WiringPinMode</name>
+        <enumvalue id="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1a2ab08d3e103968f5f4f26b66a52e99d6" prot="public">
+          <name>OUTPUT</name>
+          <briefdescription>
+<para>Basic digital output: when the pin is HIGH, the voltage is held at +3.3v (Vcc) and when it is LOW, it is pulled down to ground. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1a013c1c19e286015bf493f5dc6bdd246b" prot="public">
+          <name>OUTPUT_OPEN_DRAIN</name>
+          <briefdescription>
+<para>In open drain mode, the pin indicates &quot;low&quot; by accepting current flow to ground and &quot;high&quot; by providing increased impedance. </para>          </briefdescription>
+          <detaileddescription>
+<para>An example use would be to connect a pin to a bus line (which is pulled up to a positive voltage by a separate supply through a large resistor). When the pin is high, not much current flows through to ground and the line stays at positive voltage; when the pin is low, the bus &quot;drains&quot; to ground with a small amount of current constantly flowing through the large resistor from the external supply. In this mode, no current is ever actually sourced from the pin. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1ae310c909d76b003d016bef8bdf16936a" prot="public">
+          <name>INPUT</name>
+          <briefdescription>
+<para>Basic digital input. </para>          </briefdescription>
+          <detaileddescription>
+<para>The pin voltage is sampled; when it is closer to 3.3v (Vcc) the pin status is high, and when it is closer to 0v (ground) it is low. If no external circuit is pulling the pin voltage to high or low, it will tend to randomly oscillate and be very sensitive to noise (e.g., a breath of air across the pin might cause the state to flip). </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1a4790094e6004d7ba65d6b662c99058d7" prot="public">
+          <name>INPUT_ANALOG</name>
+          <briefdescription>
+<para>This is a special mode for when the pin will be used for analog (not digital) reads. </para>          </briefdescription>
+          <detaileddescription>
+<para>Enables ADC conversion to be performed on the voltage at the pin. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1a851c2ac60276ada62e8d9ba216c7a487" prot="public">
+          <name>INPUT_PULLUP</name>
+          <briefdescription>
+<para>The state of the pin in this mode is reported the same way as with INPUT, but the pin voltage is gently &quot;pulled up&quot; towards +3.3v. </para>          </briefdescription>
+          <detaileddescription>
+<para>This means the state will be high unless an external device is specifically pulling the pin down to ground, in which case the &quot;gentle&quot; pull up will not affect the state of the input. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1a58b097229d3b2a4afa0eb445c1334927" prot="public">
+          <name>INPUT_PULLDOWN</name>
+          <briefdescription>
+<para>The state of the pin in this mode is reported the same way as with INPUT, but the pin voltage is gently &quot;pulled down&quot; towards 0v. </para>          </briefdescription>
+          <detaileddescription>
+<para>This means the state will be low unless an external device is specifically pulling the pin up to 3.3v, in which case the &quot;gentle&quot; pull down will not affect the state of the input. </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1a0ef18149ebd1d9936fe599e0ba5ae43d" prot="public">
+          <name>INPUT_FLOATING</name>
+          <briefdescription>
+<para>Synonym for INPUT. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1aef99a276e1f3b62b5df98acc27b38028" prot="public">
+          <name>PWM</name>
+          <briefdescription>
+<para>This is a special mode for when the pin will be used for PWM output (a special case of digital output). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1a3dfd30fe24b82bbe33645d16da71739d" prot="public">
+          <name>PWM_OPEN_DRAIN</name>
+          <briefdescription>
+<para>Like PWM, except that instead of alternating cycles of LOW and HIGH, the voltage on the pin consists of alternating cycles of LOW and floating (disconnected). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Specifies a GPIO pin behavior. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="io_8h_1ae4c31233dfda1c1f966e3665b9cbd98c" kindref="member">pinMode()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/io.h" line="45" bodyfile="/home/mbolivar/leaf/libmaple/wirish/io.h" bodystart="45" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="io_8h_1ae4c31233dfda1c1f966e3665b9cbd98c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pinMode</definition>
+        <argsstring>(uint8 pin, WiringPinMode mode)</argsstring>
+        <name>pinMode</name>
+        <param>
+          <type>uint8</type>
+          <declname>pin</declname>
+        </param>
+        <param>
+          <type><ref refid="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1" kindref="member">WiringPinMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Configure behavior of a GPIO pin. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of pin to configure. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mode corresponding to desired pin behavior. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1" kindref="member">WiringPinMode</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/io.h" line="113"/>
+      </memberdef>
+      <memberdef kind="function" id="io_8h_1ae5ca477e74e72720fd7b2b7b3abfda8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void digitalWrite</definition>
+        <argsstring>(uint8 pin, uint8 value)</argsstring>
+        <name>digitalWrite</name>
+        <param>
+          <type>uint8</type>
+          <declname>pin</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Writes a (digital) value to a pin. </para>        </briefdescription>
+        <detaileddescription>
+<para>The pin must have its mode set to OUTPUT or OUTPUT_OPEN_DRAIN.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pin to write to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Either LOW (write a 0) or HIGH (write a 1). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="io_8h_1ae4c31233dfda1c1f966e3665b9cbd98c" kindref="member">pinMode()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/io.h" line="123"/>
+      </memberdef>
+      <memberdef kind="function" id="io_8h_1a16917b3ca789eb1d2f6d7c05bf3f3c75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32</type>
+        <definition>uint32 digitalRead</definition>
+        <argsstring>(uint8 pin)</argsstring>
+        <name>digitalRead</name>
+        <param>
+          <type>uint8</type>
+          <declname>pin</declname>
+        </param>
+        <briefdescription>
+<para>Read a digital value from a pin. </para>        </briefdescription>
+        <detaileddescription>
+<para>The pin must have its mode set to one of INPUT, INPUT_PULLUP, and INPUT_PULLDOWN.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pin to read from. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LOW or HIGH. </para></simplesect>
+<simplesect kind="see"><para><ref refid="io_8h_1ae4c31233dfda1c1f966e3665b9cbd98c" kindref="member">pinMode()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/io.h" line="133"/>
+      </memberdef>
+      <memberdef kind="function" id="io_8h_1a451a4c6310329827cc82a8349877f1fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16</type>
+        <definition>uint16 analogRead</definition>
+        <argsstring>(uint8 pin)</argsstring>
+        <name>analogRead</name>
+        <param>
+          <type>uint8</type>
+          <declname>pin</declname>
+        </param>
+        <briefdescription>
+<para>Read an analog value from pin. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function blocks during ADC conversion, and has 12 bits of resolution. The pin must have its mode set to INPUT_ANALOG.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pin to read from. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Converted voltage, in the range 0--4095, (i.e. a 12-bit ADC conversion). </para></simplesect>
+<simplesect kind="see"><para><ref refid="io_8h_1ae4c31233dfda1c1f966e3665b9cbd98c" kindref="member">pinMode()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/io.h" line="145"/>
+      </memberdef>
+      <memberdef kind="function" id="io_8h_1ae1a4dd6e29a82ebe2107779fa94da45d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void togglePin</definition>
+        <argsstring>(uint8 pin)</argsstring>
+        <name>togglePin</name>
+        <param>
+          <type>uint8</type>
+          <declname>pin</declname>
+        </param>
+        <briefdescription>
+<para>Toggles the digital value at the given pin. </para>        </briefdescription>
+        <detaileddescription>
+<para>The pin must have its mode set to OUTPUT.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the pin to toggle. If the pin is HIGH, set it LOW. If it is LOW, set it HIGH.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="io_8h_1ae4c31233dfda1c1f966e3665b9cbd98c" kindref="member">pinMode()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/io.h" line="157"/>
+      </memberdef>
+      <memberdef kind="function" id="io_8h_1ab0571d9a08be5af83523bbdd9f3710e0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void toggleLED</definition>
+        <argsstring>()</argsstring>
+        <name>toggleLED</name>
+        <briefdescription>
+<para>Toggle the LED. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the LED is on, turn it off. If it is off, turn it on.</para><para>The LED must its mode set to OUTPUT. This can be accomplished portably over all LeafLabs boards by calling pinMode(BOARD_LED_PIN, OUTPUT) before calling this function.</para><para><simplesect kind="see"><para><ref refid="io_8h_1ae4c31233dfda1c1f966e3665b9cbd98c" kindref="member">pinMode()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/io.h" line="170" bodyfile="/home/mbolivar/leaf/libmaple/wirish/io.h" bodystart="170" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="io_8h_1a4b051289897ffdde8dc0bd5a81762615" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8</type>
+        <definition>uint8 isButtonPressed</definition>
+        <argsstring>()</argsstring>
+        <name>isButtonPressed</name>
+        <briefdescription>
+<para>If the button is currently pressed, waits until the button is no longer being pressed, and returns true. </para>        </briefdescription>
+        <detaileddescription>
+<para>Otherwise, returns false.</para><para>The button pin must have its mode set to INPUT. This can be accomplished portably over all LeafLabs boards by calling pinMode(BOARD_BUTTON_PIN, INPUT).</para><para><simplesect kind="see"><para><ref refid="io_8h_1ae4c31233dfda1c1f966e3665b9cbd98c" kindref="member">pinMode()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/io.h" line="184"/>
+      </memberdef>
+      <memberdef kind="function" id="io_8h_1a8f9732fd06bd9d262b1ed6822bed2f6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8</type>
+        <definition>uint8 waitForButtonPress</definition>
+        <argsstring>(uint32 timeout_millis=0)</argsstring>
+        <name>waitForButtonPress</name>
+        <param>
+          <type>uint32</type>
+          <declname>timeout_millis</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Wait until the button is pressed and released, timing out if no press occurs. </para>        </briefdescription>
+        <detaileddescription>
+<para>The button pin must have its mode set to INPUT. This can be accomplished portably over all LeafLabs boards by calling pinMode(BOARD_BUTTON_PIN, INPUT).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timeout_millis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of milliseconds to wait until the button is pressed. If timeout_millis is left out (or 0), wait forever.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true, if the button was pressed; false, if the timeout was reached.</para></simplesect>
+<simplesect kind="see"><para><ref refid="io_8h_1ae4c31233dfda1c1f966e3665b9cbd98c" kindref="member">pinMode()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/io.h" line="203"/>
+      </memberdef>
+      <memberdef kind="function" id="io_8h_1a24b9026abdee344e611270b7960445cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shiftOut</definition>
+        <argsstring>(uint8 dataPin, uint8 clockPin, uint8 bitOrder, uint8 value)</argsstring>
+        <name>shiftOut</name>
+        <param>
+          <type>uint8</type>
+          <declname>dataPin</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>clockPin</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>bitOrder</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Shift out a byte of data, one bit at a time. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function starts at either the most significant or least significant bit in a byte value, and shifts out each byte in order onto a data pin. After each bit is written to the data pin, a separate clock pin is pulsed to indicate that the new bit is available.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataPin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pin to shift data out on </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clockPin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pin to pulse after each bit is shifted out </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitOrder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Either MSBFIRST (big-endian) or LSBFIRST (little-endian). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to shift out </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/io.h" line="219"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Arduino-compatible digital pin I/O interface. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Perry<sp/>Hung.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor">#ifndef<sp/>_IO_H_</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_IO_H_</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gpio_8h" kindref="compound" tooltip="General purpose I/O (GPIO) and Alternate Function I/O (AFIO) prototypes, defines, and inlined access ...">gpio.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="adc_8h" kindref="compound" tooltip="Analog-to-Digital Conversion (ADC) header.">adc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wirish__time_8h" kindref="compound" tooltip="Timing and delay functions.">wirish_time.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1" kindref="member" tooltip="Specifies a GPIO pin behavior.">WiringPinMode</ref><sp/>{</highlight></codeline>
+<codeline lineno="46" refid="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1a2ab08d3e103968f5f4f26b66a52e99d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1a2ab08d3e103968f5f4f26b66a52e99d6" kindref="member" tooltip="Basic digital output: when the pin is HIGH, the voltage is held at +3.3v (Vcc) and when it is LOW...">OUTPUT</ref>,<sp/></highlight></codeline>
+<codeline lineno="50" refid="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1a013c1c19e286015bf493f5dc6bdd246b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1a013c1c19e286015bf493f5dc6bdd246b" kindref="member" tooltip="In open drain mode, the pin indicates &amp;quot;low&amp;quot; by accepting current flow to ground and &amp;quot;high&amp;quot; by providi...">OUTPUT_OPEN_DRAIN</ref>,<sp/></highlight></codeline>
+<codeline lineno="66" refid="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1ae310c909d76b003d016bef8bdf16936a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1ae310c909d76b003d016bef8bdf16936a" kindref="member" tooltip="Basic digital input.">INPUT</ref>,<sp/></highlight></codeline>
+<codeline lineno="74" refid="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1a4790094e6004d7ba65d6b662c99058d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1a4790094e6004d7ba65d6b662c99058d7" kindref="member" tooltip="This is a special mode for when the pin will be used for analog (not digital) reads.">INPUT_ANALOG</ref>,<sp/></highlight></codeline>
+<codeline lineno="79" refid="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1a851c2ac60276ada62e8d9ba216c7a487" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1a851c2ac60276ada62e8d9ba216c7a487" kindref="member" tooltip="The state of the pin in this mode is reported the same way as with INPUT, but the pin voltage is gent...">INPUT_PULLUP</ref>,<sp/></highlight></codeline>
+<codeline lineno="87" refid="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1a58b097229d3b2a4afa0eb445c1334927" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1a58b097229d3b2a4afa0eb445c1334927" kindref="member" tooltip="The state of the pin in this mode is reported the same way as with INPUT, but the pin voltage is gent...">INPUT_PULLDOWN</ref>,<sp/></highlight></codeline>
+<codeline lineno="95" refid="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1a0ef18149ebd1d9936fe599e0ba5ae43d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1a0ef18149ebd1d9936fe599e0ba5ae43d" kindref="member" tooltip="Synonym for INPUT.">INPUT_FLOATING</ref>,<sp/></highlight></codeline>
+<codeline lineno="97" refid="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1aef99a276e1f3b62b5df98acc27b38028" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1aef99a276e1f3b62b5df98acc27b38028" kindref="member" tooltip="This is a special mode for when the pin will be used for PWM output (a special case of digital output...">PWM</ref>,<sp/></highlight></codeline>
+<codeline lineno="100" refid="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1a3dfd30fe24b82bbe33645d16da71739d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1a3dfd30fe24b82bbe33645d16da71739d" kindref="member" tooltip="Like PWM, except that instead of alternating cycles of LOW and HIGH, the voltage on the pin consists ...">PWM_OPEN_DRAIN</ref>,<sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}<sp/><ref refid="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1" kindref="member" tooltip="Specifies a GPIO pin behavior.">WiringPinMode</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="io_8h_1ae4c31233dfda1c1f966e3665b9cbd98c" kindref="member" tooltip="Configure behavior of a GPIO pin.">pinMode</ref>(uint8<sp/>pin,<sp/><ref refid="io_8h_1a3e6ca6f0b3c7bbe79de5d3ec07877da1" kindref="member" tooltip="Specifies a GPIO pin behavior.">WiringPinMode</ref><sp/>mode);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="io_8h_1ae5ca477e74e72720fd7b2b7b3abfda8f" kindref="member" tooltip="Writes a (digital) value to a pin.">digitalWrite</ref>(uint8<sp/>pin,<sp/>uint8<sp/>value);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">uint32<sp/><ref refid="io_8h_1a16917b3ca789eb1d2f6d7c05bf3f3c75" kindref="member" tooltip="Read a digital value from a pin.">digitalRead</ref>(uint8<sp/>pin);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal">uint16<sp/><ref refid="io_8h_1a451a4c6310329827cc82a8349877f1fa" kindref="member" tooltip="Read an analog value from pin.">analogRead</ref>(uint8<sp/>pin);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="io_8h_1ae1a4dd6e29a82ebe2107779fa94da45d" kindref="member" tooltip="Toggles the digital value at the given pin.">togglePin</ref>(uint8<sp/>pin);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="io_8h_1ab0571d9a08be5af83523bbdd9f3710e0" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="io_8h_1ab0571d9a08be5af83523bbdd9f3710e0" kindref="member" tooltip="Toggle the LED.">toggleLED</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="io_8h_1ae1a4dd6e29a82ebe2107779fa94da45d" kindref="member" tooltip="Toggles the digital value at the given pin.">togglePin</ref>(BOARD_LED_PIN);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal">uint8<sp/><ref refid="io_8h_1a4b051289897ffdde8dc0bd5a81762615" kindref="member" tooltip="If the button is currently pressed, waits until the button is no longer being pressed, and returns true.">isButtonPressed</ref>();</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal">uint8<sp/><ref refid="io_8h_1a8f9732fd06bd9d262b1ed6822bed2f6e" kindref="member" tooltip="Wait until the button is pressed and released, timing out if no press occurs.">waitForButtonPress</ref>(uint32<sp/>timeout_millis=0);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="io_8h_1a24b9026abdee344e611270b7960445cd" kindref="member" tooltip="Shift out a byte of data, one bit at a time.">shiftOut</ref>(uint8<sp/>dataPin,<sp/>uint8<sp/>clockPin,<sp/>uint8<sp/>bitOrder,<sp/>uint8<sp/>value);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="222"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/wirish/io.h"/>
+  </compounddef>
+</doxygen>

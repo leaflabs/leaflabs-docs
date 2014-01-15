@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structx_task_parameters" kind="struct" prot="public">
+    <compoundname>xTaskParameters</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structx_task_parameters_1a80105061c53bbc37bbaf9c623df4b1b8" prot="public" static="no" mutable="no">
+        <type>pdTASK_CODE</type>
+        <definition>pdTASK_CODE xTaskParameters::pvTaskCode</definition>
+        <argsstring></argsstring>
+        <name>pvTaskCode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" line="117" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_task_parameters_1ab5f57198ae0a48445830f9ba61a64177" prot="public" static="no" mutable="no">
+        <type>const signed char *const</type>
+        <definition>const signed char* const xTaskParameters::pcName</definition>
+        <argsstring></argsstring>
+        <name>pcName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" line="118" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_task_parameters_1a83d6979e2a195c0cbdfdc1921138ee61" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short xTaskParameters::usStackDepth</definition>
+        <argsstring></argsstring>
+        <name>usStackDepth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" line="119" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_task_parameters_1adf7c454b266156a0068fa85e3db927de" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* xTaskParameters::pvParameters</definition>
+        <argsstring></argsstring>
+        <name>pvParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" line="120" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_task_parameters_1a8d331db4b4f7a0f6f39340f4ba682008" prot="public" static="no" mutable="no">
+        <type>unsigned portBASE_TYPE</type>
+        <definition>unsigned portBASE_TYPE xTaskParameters::uxPriority</definition>
+        <argsstring></argsstring>
+        <name>uxPriority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" line="121" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_task_parameters_1aeb934b35c6539406252843c08daf5efa" prot="public" static="no" mutable="no">
+        <type>portSTACK_TYPE *</type>
+        <definition>portSTACK_TYPE* xTaskParameters::puxStackBuffer</definition>
+        <argsstring></argsstring>
+        <name>puxStackBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" line="122" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_task_parameters_1acaa2ea873a5fbcbb839ba4d82369904e" prot="public" static="no" mutable="no">
+        <type><ref refid="structx_memory_region" kindref="compound">xMemoryRegion</ref></type>
+        <definition>xMemoryRegion xTaskParameters::xRegions[portNUM_CONFIGURABLE_REGIONS]</definition>
+        <argsstring>[portNUM_CONFIGURABLE_REGIONS]</argsstring>
+        <name>xRegions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" line="123" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="201">
+        <label>xMemoryRegion</label>
+        <link refid="structx_memory_region"/>
+      </node>
+      <node id="200">
+        <label>xTaskParameters</label>
+        <link refid="structx_task_parameters"/>
+        <childnode refid="201" relation="usage">
+          <edgelabel>xRegions</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" line="116" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" bodystart="115" bodyend="124"/>
+    <listofallmembers>
+      <member refid="structx_task_parameters_1ab5f57198ae0a48445830f9ba61a64177" prot="public" virt="non-virtual"><scope>xTaskParameters</scope><name>pcName</name></member>
+      <member refid="structx_task_parameters_1aeb934b35c6539406252843c08daf5efa" prot="public" virt="non-virtual"><scope>xTaskParameters</scope><name>puxStackBuffer</name></member>
+      <member refid="structx_task_parameters_1adf7c454b266156a0068fa85e3db927de" prot="public" virt="non-virtual"><scope>xTaskParameters</scope><name>pvParameters</name></member>
+      <member refid="structx_task_parameters_1a80105061c53bbc37bbaf9c623df4b1b8" prot="public" virt="non-virtual"><scope>xTaskParameters</scope><name>pvTaskCode</name></member>
+      <member refid="structx_task_parameters_1a83d6979e2a195c0cbdfdc1921138ee61" prot="public" virt="non-virtual"><scope>xTaskParameters</scope><name>usStackDepth</name></member>
+      <member refid="structx_task_parameters_1a8d331db4b4f7a0f6f39340f4ba682008" prot="public" virt="non-virtual"><scope>xTaskParameters</scope><name>uxPriority</name></member>
+      <member refid="structx_task_parameters_1acaa2ea873a5fbcbb839ba4d82369904e" prot="public" virt="non-virtual"><scope>xTaskParameters</scope><name>xRegions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

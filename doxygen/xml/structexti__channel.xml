@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structexti__channel" kind="struct" prot="public">
+    <compoundname>exti_channel</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structexti__channel_1ab1e9fec578eecd7d8c869855c7419081" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* exti_channel::handler)(void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.c" line="45" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.c" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexti__channel_1a6f0600b3bc0c90e34e2f8fec7a0527ee" prot="public" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>uint32 exti_channel::irq_line</definition>
+        <argsstring></argsstring>
+        <name>irq_line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.c" line="46" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.c" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.c" line="44" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.c" bodystart="44" bodyend="47"/>
+    <listofallmembers>
+      <member refid="structexti__channel_1ab1e9fec578eecd7d8c869855c7419081" prot="public" virt="non-virtual"><scope>exti_channel</scope><name>handler</name></member>
+      <member refid="structexti__channel_1a6f0600b3bc0c90e34e2f8fec7a0527ee" prot="public" virt="non-virtual"><scope>exti_channel</scope><name>irq_line</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

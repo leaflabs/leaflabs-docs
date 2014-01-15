@@ -1,0 +1,660 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="_wire_8h" kind="file">
+    <compoundname>Wire.h</compoundname>
+    <includes refid="wirish_8h" local="yes">wirish.h</includes>
+    <incdepgraph>
+      <node id="1435">
+        <label>usb_serial.h</label>
+        <link refid="usb__serial_8h_source"/>
+        <childnode refid="1433" relation="include">
+        </childnode>
+      </node>
+      <node id="1426">
+        <label>wirish_math.h</label>
+        <link refid="wirish__math_8h"/>
+        <childnode refid="1427" relation="include">
+        </childnode>
+      </node>
+      <node id="1434">
+        <label>HardwareTimer.h</label>
+        <link refid="_hardware_timer_8h_source"/>
+        <childnode refid="1413" relation="include">
+        </childnode>
+      </node>
+      <node id="1404">
+        <label>wirish.h</label>
+        <link refid="wirish_8h_source"/>
+        <childnode refid="1405" relation="include">
+        </childnode>
+        <childnode refid="1410" relation="include">
+        </childnode>
+        <childnode refid="1417" relation="include">
+        </childnode>
+        <childnode refid="1418" relation="include">
+        </childnode>
+        <childnode refid="1421" relation="include">
+        </childnode>
+        <childnode refid="1423" relation="include">
+        </childnode>
+        <childnode refid="1424" relation="include">
+        </childnode>
+        <childnode refid="1425" relation="include">
+        </childnode>
+        <childnode refid="1426" relation="include">
+        </childnode>
+        <childnode refid="1419" relation="include">
+        </childnode>
+        <childnode refid="1428" relation="include">
+        </childnode>
+        <childnode refid="1430" relation="include">
+        </childnode>
+        <childnode refid="1434" relation="include">
+        </childnode>
+        <childnode refid="1435" relation="include">
+        </childnode>
+      </node>
+      <node id="1430">
+        <label>HardwareSerial.h</label>
+        <link refid="_hardware_serial_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+        <childnode refid="1431" relation="include">
+        </childnode>
+        <childnode refid="1433" relation="include">
+        </childnode>
+      </node>
+      <node id="1417">
+        <label>boards.h</label>
+        <link refid="boards_8h"/>
+        <childnode refid="1405" relation="include">
+        </childnode>
+        <childnode refid="1411" relation="include">
+        </childnode>
+        <childnode refid="1413" relation="include">
+        </childnode>
+        <childnode refid="1410" relation="include">
+        </childnode>
+      </node>
+      <node id="1414">
+        <label>nvic.h</label>
+        <link refid="nvic_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+        <childnode refid="1408" relation="include">
+        </childnode>
+      </node>
+      <node id="1431">
+        <label>usart.h</label>
+        <link refid="usart_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+        <childnode refid="1408" relation="include">
+        </childnode>
+        <childnode refid="1412" relation="include">
+        </childnode>
+        <childnode refid="1414" relation="include">
+        </childnode>
+        <childnode refid="1432" relation="include">
+        </childnode>
+      </node>
+      <node id="1418">
+        <label>io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="1411" relation="include">
+        </childnode>
+        <childnode refid="1416" relation="include">
+        </childnode>
+        <childnode refid="1419" relation="include">
+        </childnode>
+      </node>
+      <node id="1412">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+      </node>
+      <node id="1429">
+        <label>spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+        <childnode refid="1412" relation="include">
+        </childnode>
+        <childnode refid="1414" relation="include">
+        </childnode>
+        <childnode refid="1411" relation="include">
+        </childnode>
+        <childnode refid="1408" relation="include">
+        </childnode>
+      </node>
+      <node id="1428">
+        <label>HardwareSPI.h</label>
+        <link refid="_hardware_s_p_i_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+        <childnode refid="1429" relation="include">
+        </childnode>
+        <childnode refid="1417" relation="include">
+        </childnode>
+      </node>
+      <node id="1433">
+        <label>Print.h</label>
+        <link refid="_print_8h_source"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+      </node>
+      <node id="1407">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="1406">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="1405">
+        <label>libmaple.h</label>
+        <link refid="libmaple_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+        <childnode refid="1407" relation="include">
+        </childnode>
+        <childnode refid="1408" relation="include">
+        </childnode>
+        <childnode refid="1409" relation="include">
+        </childnode>
+      </node>
+      <node id="1423">
+        <label>pwm.h</label>
+        <link refid="pwm_8h"/>
+      </node>
+      <node id="1419">
+        <label>wirish_time.h</label>
+        <link refid="wirish__time_8h"/>
+        <childnode refid="1405" relation="include">
+        </childnode>
+        <childnode refid="1414" relation="include">
+        </childnode>
+        <childnode refid="1420" relation="include">
+        </childnode>
+        <childnode refid="1417" relation="include">
+        </childnode>
+      </node>
+      <node id="1410">
+        <label>wirish_types.h</label>
+        <link refid="wirish__types_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+        <childnode refid="1411" relation="include">
+        </childnode>
+        <childnode refid="1413" relation="include">
+        </childnode>
+        <childnode refid="1416" relation="include">
+        </childnode>
+      </node>
+      <node id="1422">
+        <label>bit_constants.h</label>
+        <link refid="bit__constants_8h_source"/>
+      </node>
+      <node id="1416">
+        <label>adc.h</label>
+        <link refid="adc_8h"/>
+        <childnode refid="1405" relation="include">
+        </childnode>
+        <childnode refid="1415" relation="include">
+        </childnode>
+        <childnode refid="1412" relation="include">
+        </childnode>
+      </node>
+      <node id="1425">
+        <label>wirish_debug.h</label>
+        <link refid="wirish__debug_8h"/>
+      </node>
+      <node id="1432">
+        <label>ring_buffer.h</label>
+        <link refid="ring__buffer_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+      </node>
+      <node id="1420">
+        <label>systick.h</label>
+        <link refid="systick_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+        <childnode refid="1408" relation="include">
+        </childnode>
+      </node>
+      <node id="1415">
+        <label>bitband.h</label>
+        <link refid="bitband_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+      </node>
+      <node id="1411">
+        <label>gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="1405" relation="include">
+        </childnode>
+        <childnode refid="1412" relation="include">
+        </childnode>
+      </node>
+      <node id="1413">
+        <label>timer.h</label>
+        <link refid="timer_8h"/>
+        <childnode refid="1405" relation="include">
+        </childnode>
+        <childnode refid="1412" relation="include">
+        </childnode>
+        <childnode refid="1414" relation="include">
+        </childnode>
+        <childnode refid="1415" relation="include">
+        </childnode>
+      </node>
+      <node id="1424">
+        <label>ext_interrupts.h</label>
+        <link refid="ext__interrupts_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+        <childnode refid="1414" relation="include">
+        </childnode>
+      </node>
+      <node id="1403">
+        <label>libraries/Wire/Wire.h</label>
+        <link refid="Wire.h"/>
+        <childnode refid="1404" relation="include">
+        </childnode>
+      </node>
+      <node id="1427">
+        <label>math.h</label>
+      </node>
+      <node id="1409">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+        <childnode refid="1407" relation="include">
+        </childnode>
+      </node>
+      <node id="1408">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="1406" relation="include">
+        </childnode>
+      </node>
+      <node id="1421">
+        <label>bits.h</label>
+        <link refid="bits_8h_source"/>
+        <childnode refid="1422" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_port" prot="public">Port</innerclass>
+    <innerclass refid="class_two_wire" prot="public">TwoWire</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_wire_8h_1a84d5ab06c4682718fc00c8644e940baf" prot="public" static="no">
+        <name>WIRE_BUFSIZ</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="43" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_wire_8h_1aa90cac659d18e8ef6294c7ae337f6b58" prot="public" static="no">
+        <name>SUCCESS</name>
+        <initializer>0        /* transmission was successful */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="46" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_wire_8h_1a8c4b01cc673d0a3349bf7f5208990161" prot="public" static="no">
+        <name>EDATA</name>
+        <initializer>1        /* too much data */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="47" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_wire_8h_1a1e9a168553b06dacf1e4ec6f518494b8" prot="public" static="no">
+        <name>ENACKADDR</name>
+        <initializer>2        /* received nack on transmit of address */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="48" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_wire_8h_1aa998831c5e9a71431bc12decb625712c" prot="public" static="no">
+        <name>ENACKTRNS</name>
+        <initializer>3        /* received nack on transmit of data */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="49" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_wire_8h_1a03cea4fbae90e1c571b3ea6f46dd0781" prot="public" static="no">
+        <name>EOTHER</name>
+        <initializer>4        /* other error */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="50" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_wire_8h_1a6890442e1cc24a0d61597a13576b8727" prot="public" static="no">
+        <name>SDA</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="52" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_wire_8h_1ab5ffc4751921608954bb7a5687566b2d" prot="public" static="no">
+        <name>SCL</name>
+        <initializer>21</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="53" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_wire_8h_1a9536bf85bced4f4e549a82fb18eb6140" prot="public" static="no">
+        <name>I2C_WRITE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="55" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_wire_8h_1ab5c0fbe837494c5f9130a5914854250d" prot="public" static="no">
+        <name>I2C_READ</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="56" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_wire_8h_1afefce7c71a0201a3c53b6f78d57cf66e" prot="public" static="no">
+        <name>I2C_DELAY</name>
+        <initializer>do{for(int i=0;i&lt;50;i++) {asm volatile(&quot;nop&quot;);}}while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="58" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_wire_8h_1a35bd3de386d23ba02c35f820303db472" prot="public" static="no" mutable="no">
+        <type><ref refid="class_two_wire" kindref="compound">TwoWire</ref></type>
+        <definition>TwoWire Wire</definition>
+        <argsstring></argsstring>
+        <name>Wire</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="99"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_wire_8h_1a46c17e4242a85ed6ab5a48e0dacaf211" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void i2c_start</definition>
+        <argsstring>(Port port)</argsstring>
+        <name>i2c_start</name>
+        <param>
+          <type><ref refid="struct_port" kindref="compound">Port</ref></type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="91"/>
+      </memberdef>
+      <memberdef kind="function" id="_wire_8h_1a9ecdf4a295bb1883ce97be4f127b0da3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void i2c_stop</definition>
+        <argsstring>(Port port)</argsstring>
+        <name>i2c_stop</name>
+        <param>
+          <type><ref refid="struct_port" kindref="compound">Port</ref></type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="92"/>
+      </memberdef>
+      <memberdef kind="function" id="_wire_8h_1a5852431e230807e70263a9a3b6dd7c2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean i2c_get_ack</definition>
+        <argsstring>(Port port)</argsstring>
+        <name>i2c_get_ack</name>
+        <param>
+          <type><ref refid="struct_port" kindref="compound">Port</ref></type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="93"/>
+      </memberdef>
+      <memberdef kind="function" id="_wire_8h_1af4f75abf079ea69b28d932dfaf23fdb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void i2c_send_ack</definition>
+        <argsstring>(Port port)</argsstring>
+        <name>i2c_send_ack</name>
+        <param>
+          <type><ref refid="struct_port" kindref="compound">Port</ref></type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="94"/>
+      </memberdef>
+      <memberdef kind="function" id="_wire_8h_1a68150e51f53282569e797a0f699ccf59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void i2c_send_nack</definition>
+        <argsstring>(Port port)</argsstring>
+        <name>i2c_send_nack</name>
+        <param>
+          <type><ref refid="struct_port" kindref="compound">Port</ref></type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="95"/>
+      </memberdef>
+      <memberdef kind="function" id="_wire_8h_1aee9435a1b90690518a5cdbed444b206a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8</type>
+        <definition>uint8 i2c_shift_in</definition>
+        <argsstring>(Port port)</argsstring>
+        <name>i2c_shift_in</name>
+        <param>
+          <type><ref refid="struct_port" kindref="compound">Port</ref></type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="96"/>
+      </memberdef>
+      <memberdef kind="function" id="_wire_8h_1a9f0bbcf404a9e8d04e118e68962480cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void i2c_shift_out</definition>
+        <argsstring>(Port port, uint8 val)</argsstring>
+        <name>i2c_shift_out</name>
+        <param>
+          <type><ref refid="struct_port" kindref="compound">Port</ref></type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="97"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>LeafLabs<sp/>LLC.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor">#include<sp/>&quot;wirish.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_WIRE_H_</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_WIRE_H_</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="struct_port" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>uint8<sp/>scl;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>uint8<sp/>sda;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}<sp/><ref refid="struct_port" kindref="compound" tooltip="Wire library, ported from Arduino.">Port</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>You<sp/>must<sp/>update<sp/>the<sp/>online<sp/>docs<sp/>if<sp/>you<sp/>change<sp/>this<sp/>value.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WIRE_BUFSIZ<sp/>32</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>return<sp/>codes<sp/>from<sp/>endTransmission()<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SUCCESS<sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>transmission<sp/>was<sp/>successful<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EDATA<sp/><sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>too<sp/>much<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENACKADDR<sp/>2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>received<sp/>nack<sp/>on<sp/>transmit<sp/>of<sp/>address<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENACKTRNS<sp/>3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>received<sp/>nack<sp/>on<sp/>transmit<sp/>of<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EOTHER<sp/><sp/><sp/><sp/>4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>other<sp/>error<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SDA<sp/>20</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SCL<sp/>21</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_WRITE<sp/>0</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_READ<sp/><sp/>1</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_DELAY<sp/>do{for(int<sp/>i=0;i&lt;50;i++)<sp/>{asm<sp/>volatile(&quot;nop&quot;);}}while(0)</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="class_two_wire" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_two_wire" kindref="compound">TwoWire</ref><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>rx_buf[WIRE_BUFSIZ];<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>receive<sp/>buffer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>rx_buf_idx;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>first<sp/>unread<sp/>idx<sp/>in<sp/>rx_buf<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>rx_buf_len;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>number<sp/>of<sp/>bytes<sp/>read<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>tx_addr;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>address<sp/>transmitting<sp/>to<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>tx_buf[WIRE_BUFSIZ];<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>transmit<sp/>buffer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>tx_buf_idx;<sp/><sp/></highlight><highlight class="comment">/*<sp/>next<sp/>idx<sp/>available<sp/>in<sp/>tx_buf,<sp/>-1<sp/>overflow<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>tx_buf_overflow;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_port" kindref="compound" tooltip="Wire library, ported from Arduino.">Port</ref><sp/>port;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>writeOneByte(uint8);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>readOneByte(uint8,<sp/>uint8*);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_two_wire" kindref="compound">TwoWire</ref>();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>begin();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>begin(uint8,<sp/>uint8);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>beginTransmission(uint8);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>beginTransmission(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>endTransmission(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>requestFrom(uint8,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>requestFrom(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>send(uint8);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>send(uint8*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>send(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>send(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>send(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>available();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>receive();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>i2c_start(<ref refid="struct_port" kindref="compound" tooltip="Wire library, ported from Arduino.">Port</ref><sp/>port);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>i2c_stop(<ref refid="struct_port" kindref="compound" tooltip="Wire library, ported from Arduino.">Port</ref><sp/>port);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>i2c_get_ack(<ref refid="struct_port" kindref="compound" tooltip="Wire library, ported from Arduino.">Port</ref><sp/>port);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>i2c_send_ack(<ref refid="struct_port" kindref="compound" tooltip="Wire library, ported from Arduino.">Port</ref><sp/>port);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>i2c_send_nack(<ref refid="struct_port" kindref="compound" tooltip="Wire library, ported from Arduino.">Port</ref><sp/>port);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">uint8<sp/><sp/><sp/>i2c_shift_in(<ref refid="struct_port" kindref="compound" tooltip="Wire library, ported from Arduino.">Port</ref><sp/>port);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>i2c_shift_out(<ref refid="struct_port" kindref="compound" tooltip="Wire library, ported from Arduino.">Port</ref><sp/>port,<sp/>uint8<sp/>val);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="class_two_wire" kindref="compound">TwoWire</ref><sp/>Wire;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_WIRE_H_</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h"/>
+  </compounddef>
+</doxygen>

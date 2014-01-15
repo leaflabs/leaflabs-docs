@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__v_task_start_scheduler" kind="group">
+    <compoundname>vTaskStartScheduler</compoundname>
+    <title>vTaskStartScheduler</title>
+    <briefdescription>
+<para>task. </para>    </briefdescription>
+    <detaileddescription>
+<para>h <preformatted>void vTaskStartScheduler( void );</preformatted></para><para>Starts the real time kernel tick processing. After calling the kernel has control over which tasks are executed and when. This function does not return until an executing task calls vTaskEndScheduler ().</para><para>At least one task should be created via a call to xTaskCreate () before calling vTaskStartScheduler (). The idle task is created automatically when the first application task is created.</para><para>See the demo application file main.c for an example of creating tasks and starting the kernel.</para><para>Example usage: <preformatted>
+ void vAFunction( void )
+ {
+Create at least one task before starting the kernel.
+	 xTaskCreate( vTaskCode, &quot;NAME&quot;, STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );</preformatted></para><para><preformatted>Start the real time kernel with preemption.
+	 vTaskStartScheduler ();</preformatted></para><para><preformatted>Will not get here unless a task calls vTaskEndScheduler ()
+ }
+   </preformatted> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

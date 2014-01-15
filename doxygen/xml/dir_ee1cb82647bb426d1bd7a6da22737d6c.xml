@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_ee1cb82647bb426d1bd7a6da22737d6c" kind="dir">
+    <compoundname>wirish/</compoundname>
+    <innerdir refid="dir_3d5ccde53fb8e35989036bc3f9d5cd3e">wirish/boards/</innerdir>
+    <innerdir refid="dir_87fbdb3fb88c5387ee640bda614ef70c">wirish/comm/</innerdir>
+    <innerfile refid="bit__constants_8h">bit_constants.h</innerfile>
+    <innerfile refid="bits_8h">bits.h</innerfile>
+    <innerfile refid="boards_8h">boards.h</innerfile>
+    <innerfile refid="ext__interrupts_8h">ext_interrupts.h</innerfile>
+    <innerfile refid="_hardware_timer_8h">HardwareTimer.h</innerfile>
+    <innerfile refid="io_8h">io.h</innerfile>
+    <innerfile refid="_print_8h">Print.h</innerfile>
+    <innerfile refid="pwm_8h">pwm.h</innerfile>
+    <innerfile refid="usb__serial_8h">usb_serial.h</innerfile>
+    <innerfile refid="wirish_8h">wirish.h</innerfile>
+    <innerfile refid="wirish__debug_8h">wirish_debug.h</innerfile>
+    <innerfile refid="wirish__math_8h">wirish_math.h</innerfile>
+    <innerfile refid="wirish__time_8h">wirish_time.h</innerfile>
+    <innerfile refid="wirish__types_8h">wirish_types.h</innerfile>
+    <innerfile refid="_w_program_8h">WProgram.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/wirish/"/>
+  </compounddef>
+</doxygen>

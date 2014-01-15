@@ -1,0 +1,1666 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="fsmc_8h" kind="file">
+    <compoundname>fsmc.h</compoundname>
+    <includes refid="libmaple__types_8h" local="yes">libmaple_types.h</includes>
+    <includedby refid="fsmc_8c" local="yes">libmaple/fsmc.c</includedby>
+    <incdepgraph>
+      <node id="200">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="199">
+        <label>libmaple/fsmc.h</label>
+        <link refid="fsmc.h"/>
+        <childnode refid="200" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="202">
+        <label>libmaple/fsmc.c</label>
+        <link refid="fsmc_8c_source"/>
+      </node>
+      <node id="201">
+        <label>libmaple/fsmc.h</label>
+        <link refid="fsmc.h"/>
+        <childnode refid="202" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structfsmc__reg__map" prot="public">fsmc_reg_map</innerclass>
+    <innerclass refid="structfsmc__nor__psram__reg__map" prot="public">fsmc_nor_psram_reg_map</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="fsmc_8h_1af0d456a1f0d56940ec895ff8b1a9c0c3" prot="public" static="no">
+        <name>__FSMCB</name>
+        <initializer>0xA0000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="90" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a679200df61ecb0695d72c030fdeb50a9" prot="public" static="no">
+        <name>FSMC_BASE</name>
+        <initializer>((struct <ref refid="structfsmc__reg__map" kindref="compound">fsmc_reg_map</ref>*)__FSMCB)</initializer>
+        <briefdescription>
+<para>FSMC register map base pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="93" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a2071582ec9585c31d26091fdb498169b" prot="public" static="no">
+        <name>FSMC_NOR_PSRAM1_BASE</name>
+        <initializer>((struct <ref refid="structfsmc__nor__psram__reg__map" kindref="compound">fsmc_nor_psram_reg_map</ref>*)__FSMCB)</initializer>
+        <briefdescription>
+<para>FSMC NOR/PSRAM base pointer 1. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="104" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1ab73acf8438c8734cfe79e2c5d8a3309d" prot="public" static="no">
+        <name>FSMC_NOR_PSRAM2_BASE</name>
+        <initializer>((struct <ref refid="structfsmc__nor__psram__reg__map" kindref="compound">fsmc_nor_psram_reg_map</ref>*)(__FSMCB + 0x8))</initializer>
+        <briefdescription>
+<para>FSMC NOR/PSRAM base pointer 2. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="107" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a9af3ff5e93ef30664b4a57c624a93110" prot="public" static="no">
+        <name>FSMC_NOR_PSRAM3_BASE</name>
+        <initializer>((struct <ref refid="structfsmc__nor__psram__reg__map" kindref="compound">fsmc_nor_psram_reg_map</ref>*)(__FSMCB + 0x10))</initializer>
+        <briefdescription>
+<para>FSMC NOR/PSRAM base pointer 3. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="110" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1ac5c381d78d459b45813fbcbc996892c2" prot="public" static="no">
+        <name>FSMC_NOR_PSRAM4_BASE</name>
+        <initializer>((struct <ref refid="structfsmc__nor__psram__reg__map" kindref="compound">fsmc_nor_psram_reg_map</ref>*)(__FSMCB + 0x18))</initializer>
+        <briefdescription>
+<para>FSMC NOR/PSRAM base pointer 4. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="113" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1ad7bf18dc753bf40d4c4ed74ad45a5379" prot="public" static="no">
+        <name>FSMC_BCR_CBURSTRW_BIT</name>
+        <initializer>19</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="121" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1ab4b9a1008f5fd050cbb3bba66569bf4b" prot="public" static="no">
+        <name>FSMC_BCR_ASYNCWAIT_BIT</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="122" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a2f9293832cf91c07a46ab36c337adf46" prot="public" static="no">
+        <name>FSMC_BCR_EXTMOD_BIT</name>
+        <initializer>14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="123" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a2950a6fbaa885b76be4ae66ca80aa965" prot="public" static="no">
+        <name>FSMC_BCR_WAITEN_BIT</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="124" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1aa86287595a58cf66a259d40557b7bc05" prot="public" static="no">
+        <name>FSMC_BCR_WREN_BIT</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="125" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a9f418a451ab18dbf1382ecad43efa724" prot="public" static="no">
+        <name>FSMC_BCR_WAITCFG_BIT</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="126" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a059ec69b53421e5fa93115e524cc4188" prot="public" static="no">
+        <name>FSMC_BCR_WRAPMOD_BIT</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="127" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a0a73bdf3e0af097947a0db6f2d53983a" prot="public" static="no">
+        <name>FSMC_BCR_WAITPOL_BIT</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="128" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1abe8d7bb268d9df346d3f6bda08f2cb89" prot="public" static="no">
+        <name>FSMC_BCR_BURSTEN_BIT</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="129" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a801f0d46fb801811b547c3b5150f71e6" prot="public" static="no">
+        <name>FSMC_BCR_FACCEN_BIT</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="130" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a7ee18819c4b46e837db31287713baa3d" prot="public" static="no">
+        <name>FSMC_BCR_MUXEN_BIT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="131" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a5a7af7dbbe67bc95054854196e89221a" prot="public" static="no">
+        <name>FSMC_BCR_MBKEN_BIT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="132" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a7fde6c4e11c5dd933244cb182de67508" prot="public" static="no">
+        <name>FSMC_BCR_CBURSTRW</name>
+        <initializer>BIT(FSMC_BCR_CBURSTRW_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="134" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1afeb2eae95f704fd4c381cf60463dce5a" prot="public" static="no">
+        <name>FSMC_BCR_ASYNCWAIT</name>
+        <initializer>BIT(FSMC_BCR_ASYNCWAIT_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="135" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a2d344a0b6002e96ef2bdbf2f026d6f08" prot="public" static="no">
+        <name>FSMC_BCR_EXTMOD</name>
+        <initializer>BIT(FSMC_BCR_EXTMOD_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="136" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a207d7ed8e83856d47dd24f4f2f47cba6" prot="public" static="no">
+        <name>FSMC_BCR_WAITEN</name>
+        <initializer>BIT(FSMC_BCR_WAITEN_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="137" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a2d034e156907f24216a2b0a34959ece4" prot="public" static="no">
+        <name>FSMC_BCR_WREN</name>
+        <initializer>BIT(FSMC_BCR_WREN_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="138" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a3ff4b524c1374326edec64aebea34c50" prot="public" static="no">
+        <name>FSMC_BCR_WAITCFG</name>
+        <initializer>BIT(FSMC_BCR_WAITCFG_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="139" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1aa3eacf12a011d92ec9710056019c26af" prot="public" static="no">
+        <name>FSMC_BCR_WRAPMOD</name>
+        <initializer>BIT(FSMC_BCR_WRAPMOD_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="140" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a3ba2e90d1c312f99b0a049f5f9ec4f16" prot="public" static="no">
+        <name>FSMC_BCR_WAITPOL</name>
+        <initializer>BIT(FSMC_BCR_WAITPOL_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="141" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1af1c0148c6cbdfceccf7adb40201d202d" prot="public" static="no">
+        <name>FSMC_BCR_BURSTEN</name>
+        <initializer>BIT(FSMC_BCR_BURSTEN_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="142" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a3039281d46059d9bed587bb37e2bc783" prot="public" static="no">
+        <name>FSMC_BCR_FACCEN</name>
+        <initializer>BIT(FSMC_BCR_FACCEN_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="143" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1ad5ab07b5209851fcdd7e497f31905ff5" prot="public" static="no">
+        <name>FSMC_BCR_MWID</name>
+        <initializer>(0x3 &lt;&lt; 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="144" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1aeeb5717aaef6ca9a347086f46e20e17c" prot="public" static="no">
+        <name>FSMC_BCR_MWID_8BITS</name>
+        <initializer>(0x0 &lt;&lt; 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="145" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a745269ab5a8184af2741351e1dfa2df1" prot="public" static="no">
+        <name>FSMC_BCR_MWID_16BITS</name>
+        <initializer>(0x1 &lt;&lt; 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="146" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a73c572cb45ba48b8417924218ec45267" prot="public" static="no">
+        <name>FSMC_BCR_MTYP</name>
+        <initializer>(0x3 &lt;&lt; 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="147" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a543bdd97eacc8e19095cc770bccb8bf9" prot="public" static="no">
+        <name>FSMC_BCR_MTYP_SRAM</name>
+        <initializer>(0x0 &lt;&lt; 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="148" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1ab6ab4b85352efeb51ccd3c3cb51c1983" prot="public" static="no">
+        <name>FSMC_BCR_MTYP_PSRAM</name>
+        <initializer>(0x1 &lt;&lt; 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="149" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1af982c4cca3409b2f58d5593fa0839964" prot="public" static="no">
+        <name>FSMC_BCR_MTYP_NOR_FLASH</name>
+        <initializer>(0x2 &lt;&lt; 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="150" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1ae956812f1a7e7b008c43c321929f15c8" prot="public" static="no">
+        <name>FSMC_BCR_MUXEN</name>
+        <initializer>BIT(FSMC_BCR_MUXEN_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="151" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a37c26a22565f8dde41b215c78c60a715" prot="public" static="no">
+        <name>FSMC_BCR_MBKEN</name>
+        <initializer>BIT(FSMC_BCR_MBKEN_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="152" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a9e7a0edf096092a46b742ca3020bdbf4" prot="public" static="no">
+        <name>FSMC_BTR_ACCMOD</name>
+        <initializer>(0x3 &lt;&lt; 28)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="156" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1afb15129d09054dbdc0504c9c7692cff9" prot="public" static="no">
+        <name>FSMC_BTR_ACCMOD_A</name>
+        <initializer>(0x0 &lt;&lt; 28)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="157" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a12b9a79199fa142e8d45389d436d8dfc" prot="public" static="no">
+        <name>FSMC_BTR_ACCMOD_B</name>
+        <initializer>(0x1 &lt;&lt; 28)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="158" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1acc9f85bc3455eef4ae7f2e3cfd02906a" prot="public" static="no">
+        <name>FSMC_BTR_ACCMOD_C</name>
+        <initializer>(0x2 &lt;&lt; 28)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="159" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1ad0572e67d0437bc6765d66203d1dc1ea" prot="public" static="no">
+        <name>FSMC_BTR_ACCMOD_D</name>
+        <initializer>(0x3 &lt;&lt; 28)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="160" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a6ec8d5297863643be64cf952c386b505" prot="public" static="no">
+        <name>FSMC_BTR_DATLAT</name>
+        <initializer>(0xF &lt;&lt; 24)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="161" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a68cb01801fc102ed04c21777d1f7c424" prot="public" static="no">
+        <name>FSMC_BTR_CLKDIV</name>
+        <initializer>(0xF &lt;&lt; 20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="162" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1aaffc35111f2117e51ca5bbcc8bbe7d76" prot="public" static="no">
+        <name>FSMC_BTR_BUSTURN</name>
+        <initializer>(0xF &lt;&lt; 16)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="163" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a3c4320b8d0ec3382c79a3c2c8bda26d8" prot="public" static="no">
+        <name>FSMC_BTR_DATAST</name>
+        <initializer>(0xFF &lt;&lt; 8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="164" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1ac4d97dd49f8bd7b46d2dcb8d518037d8" prot="public" static="no">
+        <name>FSMC_BTR_ADDHLD</name>
+        <initializer>(0xF &lt;&lt; 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="165" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a23276415700c65b2fb29639c0dbcdb5f" prot="public" static="no">
+        <name>FSMC_BTR_ADDSET</name>
+        <initializer>0xF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="166" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a2694b2a67f71325a749ddc18260f2907" prot="public" static="no">
+        <name>FSMC_BWTR_ACCMOD</name>
+        <initializer>(0x3 &lt;&lt; 28)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="170" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a1ae8fec90c40148a18787d481550e0ce" prot="public" static="no">
+        <name>FSMC_BWTR_ACCMOD_A</name>
+        <initializer>(0x0 &lt;&lt; 28)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="171" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a27075a405b54d2e5fc4e803c7ff99521" prot="public" static="no">
+        <name>FSMC_BWTR_ACCMOD_B</name>
+        <initializer>(0x1 &lt;&lt; 28)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="172" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1ab4d5879968b34596bdd00e86e87092c0" prot="public" static="no">
+        <name>FSMC_BWTR_ACCMOD_C</name>
+        <initializer>(0x2 &lt;&lt; 28)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="173" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a965b5754ee7510c3ae868a65f08d5e57" prot="public" static="no">
+        <name>FSMC_BWTR_ACCMOD_D</name>
+        <initializer>(0x3 &lt;&lt; 28)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="174" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a3be06361b0a2afa888e1fabccedac6e5" prot="public" static="no">
+        <name>FSMC_BWTR_DATLAT</name>
+        <initializer>(0xF &lt;&lt; 24)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="175" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1af7cfb85c56249315e3bcdd09d5ad2b12" prot="public" static="no">
+        <name>FSMC_BWTR_CLKDIV</name>
+        <initializer>(0xF &lt;&lt; 20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="176" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a3efe7ba82dcce94d02488cf02e63a964" prot="public" static="no">
+        <name>FSMC_BWTR_DATAST</name>
+        <initializer>(0xFF &lt;&lt; 8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="177" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1ac3abd6b8c79a5d0052964605382f826a" prot="public" static="no">
+        <name>FSMC_BWTR_ADDHLD</name>
+        <initializer>(0xF &lt;&lt; 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="178" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a2311f6cba52595c7d94f87527f103573" prot="public" static="no">
+        <name>FSMC_BWTR_ADDSET</name>
+        <initializer>0xF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="179" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1af8419b2b3adf14b7a75039029e8d21f1" prot="public" static="no">
+        <name>FSMC_PCR_ECCEN_BIT</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="183" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1aafff1829f4a355b65d0829d99e42a1b1" prot="public" static="no">
+        <name>FSMC_PCR_PTYP_BIT</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="184" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a3083be38aab22e0291fb8967ddd780d2" prot="public" static="no">
+        <name>FSMC_PCR_PBKEN_BIT</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="185" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1ab11442dea502e02539dbb345aea0114c" prot="public" static="no">
+        <name>FSMC_PCR_PWAITEN_BIT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="186" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a5cc275efd34a9fa0f799d94864ad2e0e" prot="public" static="no">
+        <name>FSMC_PCR_ECCPS</name>
+        <initializer>(0x7 &lt;&lt; 17)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="188" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1ad2c3871272f2dbd426bf100eb7f48679" prot="public" static="no">
+        <name>FSMC_PCR_ECCPS_256B</name>
+        <initializer>(0x0 &lt;&lt; 17)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="189" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a338880d0c46b14b2adb462a604a1c4be" prot="public" static="no">
+        <name>FSMC_PCR_ECCPS_512B</name>
+        <initializer>(0x1 &lt;&lt; 17)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="190" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a1221c2bdf78f47c00c3cc68746124c7f" prot="public" static="no">
+        <name>FSMC_PCR_ECCPS_1024B</name>
+        <initializer>(0x2 &lt;&lt; 17)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="191" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a765fd53f196f2ebc998c37e78f117716" prot="public" static="no">
+        <name>FSMC_PCR_ECCPS_2048B</name>
+        <initializer>(0x3 &lt;&lt; 17)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="192" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a88e053b76f17ec57c878f0ada5cd875f" prot="public" static="no">
+        <name>FSMC_PCR_ECCPS_4096B</name>
+        <initializer>(0x4 &lt;&lt; 17)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="193" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1ab18704bc5af4f81cca86df7c64ecf726" prot="public" static="no">
+        <name>FSMC_PCR_ECCPS_8192B</name>
+        <initializer>(0x5 &lt;&lt; 17)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="194" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a8ff0b105a2d33a236acd77b84d95f946" prot="public" static="no">
+        <name>FSMC_PCR_TAR</name>
+        <initializer>(0xF &lt;&lt; 13)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="195" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a215083ae81441f8875865459b620cfbc" prot="public" static="no">
+        <name>FSMC_PCR_TCLR</name>
+        <initializer>(0xF &lt;&lt; 9)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="196" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a1edae2c7cb0f021c8a21387c3c043f3c" prot="public" static="no">
+        <name>FSMC_PCR_ECCEN</name>
+        <initializer>BIT(FSMC_PCR_ECCEN_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="197" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a5a1b48a696d3d8e36b1e9583a4f031a0" prot="public" static="no">
+        <name>FSMC_PCR_PWID</name>
+        <initializer>(0x3 &lt;&lt; 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="198" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a06d0b85f148f0d2c8f84db35669dd83e" prot="public" static="no">
+        <name>FSMC_PCR_PWID_8BITS</name>
+        <initializer>(0x0 &lt;&lt; 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="199" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a92f6e4def690995e713270ada65b92f3" prot="public" static="no">
+        <name>FSMC_PCR_PWID_16BITS</name>
+        <initializer>(0x1 &lt;&lt; 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="200" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a2c257d65aa8176ebac0df466660db6d1" prot="public" static="no">
+        <name>FSMC_PCR_PTYP</name>
+        <initializer>BIT(FSMC_PCR_PTYP_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="201" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1aee39639a84c848a71e0e138691c68f2d" prot="public" static="no">
+        <name>FSMC_PCR_PTYP_PC_CF_PCMCIA</name>
+        <initializer>(0x0 &lt;&lt; FSMC_PCR_PTYP_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="202" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1ae3c08bd57aefccfc3ee0e6a9f35db18f" prot="public" static="no">
+        <name>FSMC_PCR_PTYP_NAND</name>
+        <initializer>(0x1 &lt;&lt; FSMC_PCR_PTYP_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="203" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1aefa95e839ff003340394d16c4ea2355d" prot="public" static="no">
+        <name>FSMC_PCR_PBKEN</name>
+        <initializer>BIT(FSMC_PCR_PBKEN_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="204" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a2e95c48fc2ef8b32b0563725fbb2bf13" prot="public" static="no">
+        <name>FSMC_PCR_PWAITEN</name>
+        <initializer>BIT(FSMC_PCR_PWAITEN_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="205" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a3c7304a4d24c45e364011d323ab2d52e" prot="public" static="no">
+        <name>FSMC_SR_FEMPT_BIT</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="209" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a9232d0b80166931927c9bc68bf84bddb" prot="public" static="no">
+        <name>FSMC_SR_IFEN_BIT</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="210" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a30b6b00a8370a757979d495d552e10c5" prot="public" static="no">
+        <name>FSMC_SR_ILEN_BIT</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="211" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1ac9a5eac0084e2857fb2e53ae90e60fbd" prot="public" static="no">
+        <name>FSMC_SR_IREN_BIT</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="212" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a98e0f84245c45c9b770be9667ad19620" prot="public" static="no">
+        <name>FSMC_SR_IFS_BIT</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="213" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a3ca7a2268873cb3fa416aca5659480be" prot="public" static="no">
+        <name>FSMC_SR_ILS_BIT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="214" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1ad56b5e9d32ef144a626c23ed53cae0e7" prot="public" static="no">
+        <name>FSMC_SR_IRS_BIT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="215" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a092685524fbfe25c59311aeefba2ff87" prot="public" static="no">
+        <name>FSMC_SR_FEMPT</name>
+        <initializer>BIT(FSMC_SR_FEMPT_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="217" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a8b6310da1ae61a25736532018472bbf6" prot="public" static="no">
+        <name>FSMC_SR_IFEN</name>
+        <initializer>BIT(FSMC_SR_IFEN_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="218" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a5bf598f61a0707edd9b23bd5ae4d29e0" prot="public" static="no">
+        <name>FSMC_SR_ILEN</name>
+        <initializer>BIT(FSMC_SR_ILEN_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="219" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a3ec784556db4b628b69f99259021948a" prot="public" static="no">
+        <name>FSMC_SR_IREN</name>
+        <initializer>BIT(FSMC_SR_IREN_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="220" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a3b7e60b3a7441887de4491b8353061d4" prot="public" static="no">
+        <name>FSMC_SR_IFS</name>
+        <initializer>BIT(FSMC_SR_IFS_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="221" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a0159a84ad1e9f3500575440bceb652f3" prot="public" static="no">
+        <name>FSMC_SR_ILS</name>
+        <initializer>BIT(FSMC_SR_ILS_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="222" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a4427fc341c3c989cb8ae0916c04a3d40" prot="public" static="no">
+        <name>FSMC_SR_IRS</name>
+        <initializer>BIT(FSMC_SR_IRS_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="223" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1ae919a0acbe8bb09b925140e87d012bef" prot="public" static="no">
+        <name>FSMC_PMEM_MEMHIZ</name>
+        <initializer>(0xFF &lt;&lt; 24)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="227" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1ae731a99a8184eeb450d503faa4ae2e48" prot="public" static="no">
+        <name>FSMC_PMEM_MEMHOLD</name>
+        <initializer>(0xFF &lt;&lt; 16)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="228" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a6c1a19914122054ebb2b80c50b9b3290" prot="public" static="no">
+        <name>FSMC_PMEM_MEMWAIT</name>
+        <initializer>(0xFF &lt;&lt; 8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="229" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1aa16d76c844e17aa68c3f581017ecab7c" prot="public" static="no">
+        <name>FSMC_PMEM_MEMSET</name>
+        <initializer>0xFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="230" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a6885ea6aef4685d27f96914e69950288" prot="public" static="no">
+        <name>FSMC_PATT_ATTHIZ</name>
+        <initializer>(0xFF &lt;&lt; 24)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="234" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1ab7ca2ee5f8b1a7e193df0835735e674e" prot="public" static="no">
+        <name>FSMC_PATT_ATTHOLD</name>
+        <initializer>(0xFF &lt;&lt; 16)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="235" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a2741920e624dfcf014a50e820bb48536" prot="public" static="no">
+        <name>FSMC_PATT_ATTWAIT</name>
+        <initializer>(0xFF &lt;&lt; 8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="236" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a1e14bdbac65861808833b32ed6ed1860" prot="public" static="no">
+        <name>FSMC_PATT_ATTSET</name>
+        <initializer>0xFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="237" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1ada7fed9bd53cf9e526bb2d0d834cfc92" prot="public" static="no">
+        <name>FSMC_PIO_IOHIZ</name>
+        <initializer>(0xFF &lt;&lt; 24)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="241" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a7cd0b4b82ba84e5e4f093ac321a25f7e" prot="public" static="no">
+        <name>FSMC_PIO_IOHOLD</name>
+        <initializer>(0xFF &lt;&lt; 16)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="242" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a8596b5bfee3801554ea9ea6b6c4f6cea" prot="public" static="no">
+        <name>FSMC_PIO_IOWAIT</name>
+        <initializer>(0xFF &lt;&lt; 8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="243" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a1de8be6bde3249f9a5c966d033f7fa4b" prot="public" static="no">
+        <name>FSMC_PIO_IOSET</name>
+        <initializer>0xFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="244" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1ad9f1205bd4a5a87047167cfd08c621be" prot="public" static="no">
+        <name>FSMC_BANK1</name>
+        <initializer>((void*)0x60000000)</initializer>
+        <briefdescription>
+<para>Pointer to base address of FSMC memory bank 1 (split into 4 regions, each supporting 1 NOR Flash, SRAM, or PSRAM chip) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="252" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a7210ba71477a2d84d5736bb0a3aeef0b" prot="public" static="no">
+        <name>FSMC_NOR_PSRAM_REGION1</name>
+        <initializer><ref refid="fsmc_8h_1ad9f1205bd4a5a87047167cfd08c621be" kindref="member">FSMC_BANK1</ref></initializer>
+        <briefdescription>
+<para>Pointer to base address of FSMC memory bank 1, region 1 (for NOR/PSRAM) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="255" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a3d40dccc875a277b39e27886070aaff7" prot="public" static="no">
+        <name>FSMC_NOR_PSRAM_REGION2</name>
+        <initializer>((void*)0x64000000)</initializer>
+        <briefdescription>
+<para>Pointer to base address of FSMC memory bank 1, region 2 (for NOR/PSRAM) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="258" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a320694afe2ecb79846ed16416ea6447b" prot="public" static="no">
+        <name>FSMC_NOR_PSRAM_REGION3</name>
+        <initializer>((void*)0x68000000)</initializer>
+        <briefdescription>
+<para>Pointer to base address of FSMC memory bank 1, region 3 (for NOR/PSRAM) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="261" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a18b861aab6a27c3c3461c6966efb5d36" prot="public" static="no">
+        <name>FSMC_NOR_PSRAM_REGION4</name>
+        <initializer>((void*)0x6C000000)</initializer>
+        <briefdescription>
+<para>Pointer to base address of FSMC memory bank 1, region 4 (for NOR/PSRAM) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="264" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1ab93ba8c33d13343280413dbd7831a76f" prot="public" static="no">
+        <name>FSMC_BANK2</name>
+        <initializer>((void*)0x70000000)</initializer>
+        <briefdescription>
+<para>Pointer to base address of FSMC memory bank 2 (for NAND Flash) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="267" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a163dcfdb018a377ac2876f9d3d3c1479" prot="public" static="no">
+        <name>FSMC_BANK3</name>
+        <initializer>((void*)0x80000000)</initializer>
+        <briefdescription>
+<para>Pointer to base address of FSMC memory bank 3 (for NAND Flash) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="270" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fsmc_8h_1a308474546151289034d64f28132546a6" prot="public" static="no">
+        <name>FSMC_BANK4</name>
+        <initializer>((void*)0x90000000)</initializer>
+        <briefdescription>
+<para>Pointer to base address of FSMC memory bank 4 (for PC card devices. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="273" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="fsmc_8h_1af32e7c405291351d1a82e01f4f5ebcb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fsmc_sram_init_gpios</definition>
+        <argsstring>(void)</argsstring>
+        <name>fsmc_sram_init_gpios</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Configure FSMC GPIOs for use with SRAM. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="279" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.c" bodystart="39" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="fsmc_8h_1abe478a0634204dd22a748efb93a2254b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void fsmc_nor_psram_set_datast</definition>
+        <argsstring>(fsmc_nor_psram_reg_map *regs, uint8 datast)</argsstring>
+        <name>fsmc_nor_psram_set_datast</name>
+        <param>
+          <type><ref refid="structfsmc__nor__psram__reg__map" kindref="compound">fsmc_nor_psram_reg_map</ref> *</type>
+          <declname>regs</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>datast</declname>
+        </param>
+        <briefdescription>
+<para>Set the DATAST bits in the given NOR/PSRAM register map&apos;s chip-select timing register (FSMC_BTR). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>regs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NOR Flash/PSRAM register map whose chip-select timing register to set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>datast</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to use for DATAST bits. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="290" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="289" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="fsmc_8h_1afb45f160edc2d2fc16ce5affa5182658" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void fsmc_nor_psram_set_addset</definition>
+        <argsstring>(fsmc_nor_psram_reg_map *regs, uint8 addset)</argsstring>
+        <name>fsmc_nor_psram_set_addset</name>
+        <param>
+          <type><ref refid="structfsmc__nor__psram__reg__map" kindref="compound">fsmc_nor_psram_reg_map</ref> *</type>
+          <declname>regs</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>addset</declname>
+        </param>
+        <briefdescription>
+<para>Set the ADDHLD bits in the given NOR/PSRAM register map&apos;s chip select timing register (FSMC_BTRx). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>regs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NOR Flash/PSRAM register map whose chip-select timing register to set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>addset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to use for ADDSET bits. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="304" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="303" bodyend="307"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Bryan<sp/>Newbold.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>See<sp/>../notes/fsmc.txt<sp/>for<sp/>more<sp/>info</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libmaple__types_8h" kindref="compound" tooltip="libmaple types">libmaple_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor">#ifndef<sp/>_FSMC_H_</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_FSMC_H_</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>STM32_HIGH_DENSITY</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/>Register<sp/>maps<sp/>and<sp/>devices</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="structfsmc__reg__map" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structfsmc__reg__map" kindref="compound" tooltip="FSMC register map type.">fsmc_reg_map</ref><sp/>{</highlight></codeline>
+<codeline lineno="52" refid="structfsmc__reg__map_1a1fb48e034948173448747eccced8bd9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1a1fb48e034948173448747eccced8bd9e" kindref="member" tooltip="SRAM/NOR-Flash chip-select control register 1.">BCR1</ref>;<sp/></highlight></codeline>
+<codeline lineno="53" refid="structfsmc__reg__map_1a6104d7ec09dac60e2beba9f2d6898509" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1a6104d7ec09dac60e2beba9f2d6898509" kindref="member" tooltip="SRAM/NOR-Flash chip-select timing register 1.">BTR1</ref>;<sp/></highlight></codeline>
+<codeline lineno="54" refid="structfsmc__reg__map_1ac573320102c85a0ae5b596dce8760c97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1ac573320102c85a0ae5b596dce8760c97" kindref="member" tooltip="SRAM/NOR-Flash chip-select control register 2.">BCR2</ref>;<sp/></highlight></codeline>
+<codeline lineno="55" refid="structfsmc__reg__map_1af553413fcf809df0844d8b8d33e52b61" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1af553413fcf809df0844d8b8d33e52b61" kindref="member" tooltip="SRAM/NOR-Flash chip-select timing register 2.">BTR2</ref>;<sp/></highlight></codeline>
+<codeline lineno="56" refid="structfsmc__reg__map_1afbe794f0ff6e603754e5d6bb22e4b6b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1afbe794f0ff6e603754e5d6bb22e4b6b1" kindref="member" tooltip="SRAM/NOR-Flash chip-select control register 3.">BCR3</ref>;<sp/></highlight></codeline>
+<codeline lineno="57" refid="structfsmc__reg__map_1aa3e5c766358bae3e60de2e51620606a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1aa3e5c766358bae3e60de2e51620606a3" kindref="member" tooltip="SRAM/NOR-Flash chip-select timing register 3.">BTR3</ref>;<sp/></highlight></codeline>
+<codeline lineno="58" refid="structfsmc__reg__map_1a6aca9be911a63b6df93408b3911b72c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1a6aca9be911a63b6df93408b3911b72c3" kindref="member" tooltip="SRAM/NOR-Flash chip-select control register 4.">BCR4</ref>;<sp/></highlight></codeline>
+<codeline lineno="59" refid="structfsmc__reg__map_1a8d12b82fc36e18c844c580f8d7d6cfad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1a8d12b82fc36e18c844c580f8d7d6cfad" kindref="member" tooltip="SRAM/NOR-Flash chip-select timing register 4.">BTR4</ref>;<sp/></highlight></codeline>
+<codeline lineno="60" refid="structfsmc__reg__map_1aeb4d9aceebeef1323d440b29c5d65815" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8<sp/><ref refid="structfsmc__reg__map_1aeb4d9aceebeef1323d440b29c5d65815" kindref="member" tooltip="Reserved.">RESERVED1</ref>[64];<sp/><sp/></highlight></codeline>
+<codeline lineno="61" refid="structfsmc__reg__map_1af9e46da6a7fc03adf4d1525de3ee5659" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1af9e46da6a7fc03adf4d1525de3ee5659" kindref="member" tooltip="PC Card/NAND Flash control register 2.">PCR2</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="62" refid="structfsmc__reg__map_1a1da0e8f63f95aeb309393e575a337f30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1a1da0e8f63f95aeb309393e575a337f30" kindref="member" tooltip="FIFO status and interrupt register 2.">SR2</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63" refid="structfsmc__reg__map_1a0f0c5cba630f43b512d1c82eaf2e22df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1a0f0c5cba630f43b512d1c82eaf2e22df" kindref="member" tooltip="Common memory space timing register 2.">PMEM2</ref>;<sp/></highlight></codeline>
+<codeline lineno="64" refid="structfsmc__reg__map_1a7fbff7e9eaba4e0aa3fe9aeaba3a5da5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1a7fbff7e9eaba4e0aa3fe9aeaba3a5da5" kindref="member" tooltip="Attribute memory space timing register 2.">PATT2</ref>;<sp/></highlight></codeline>
+<codeline lineno="65" refid="structfsmc__reg__map_1ad478df36124a4646897f8efaf4d93733" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8<sp/><ref refid="structfsmc__reg__map_1ad478df36124a4646897f8efaf4d93733" kindref="member" tooltip="Reserved.">RESERVED2</ref>[4];<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66" refid="structfsmc__reg__map_1a8f231c889b3353bd5018f38414d66f31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1a8f231c889b3353bd5018f38414d66f31" kindref="member" tooltip="ECC result register 2.">ECCR2</ref>;<sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8<sp/>RESERVED3[2];</highlight></codeline>
+<codeline lineno="68" refid="structfsmc__reg__map_1a27cce5c0b4a9161feb30a5344ef6cf31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1a27cce5c0b4a9161feb30a5344ef6cf31" kindref="member" tooltip="PC Card/NAND Flash control register 3.">PCR3</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="69" refid="structfsmc__reg__map_1a7f99c956bfce77f43067af5cea2f33fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1a7f99c956bfce77f43067af5cea2f33fd" kindref="member" tooltip="FIFO status and interrupt register 3.">SR3</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70" refid="structfsmc__reg__map_1aa1316797a30423294e360191d55e5b50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1aa1316797a30423294e360191d55e5b50" kindref="member" tooltip="Common memory space timing register 3.">PMEM3</ref>;<sp/></highlight></codeline>
+<codeline lineno="71" refid="structfsmc__reg__map_1a7d8391975d90fb42ed414d7d893b90b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1a7d8391975d90fb42ed414d7d893b90b6" kindref="member" tooltip="Attribute memory space timing register 3.">PATT3</ref>;<sp/></highlight></codeline>
+<codeline lineno="72" refid="structfsmc__reg__map_1a32b4b4455ae2df6881febb0bb1cd1ee8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32<sp/><ref refid="structfsmc__reg__map_1a32b4b4455ae2df6881febb0bb1cd1ee8" kindref="member" tooltip="Reserved.">RESERVED4</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73" refid="structfsmc__reg__map_1a801025934631ccf7d26f281ef52d849b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1a801025934631ccf7d26f281ef52d849b" kindref="member" tooltip="ECC result register 3.">ECCR3</ref>;<sp/></highlight></codeline>
+<codeline lineno="74" refid="structfsmc__reg__map_1a0a0a9f18a263149b236884979d82713e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8<sp/><ref refid="structfsmc__reg__map_1a0a0a9f18a263149b236884979d82713e" kindref="member" tooltip="Reserved.">RESERVED5</ref>[8];<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75" refid="structfsmc__reg__map_1a69409eba6e7892aecfbeead3ad2eb016" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1a69409eba6e7892aecfbeead3ad2eb016" kindref="member" tooltip="PC Card/NAND Flash control register 4.">PCR4</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="76" refid="structfsmc__reg__map_1acccc4334509ac8c5ca42a5d5be4dbe03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1acccc4334509ac8c5ca42a5d5be4dbe03" kindref="member" tooltip="FIFO status and interrupt register 4.">SR4</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77" refid="structfsmc__reg__map_1a84c7294d067d074fc47f3f4e061b3547" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1a84c7294d067d074fc47f3f4e061b3547" kindref="member" tooltip="Common memory space timing register 4.">PMEM4</ref>;<sp/></highlight></codeline>
+<codeline lineno="78" refid="structfsmc__reg__map_1ad98fa434538a2a95c63804e40b7c2c6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1ad98fa434538a2a95c63804e40b7c2c6b" kindref="member" tooltip="Attribute memory space timing register 4.">PATT4</ref>;<sp/></highlight></codeline>
+<codeline lineno="79" refid="structfsmc__reg__map_1a4bbeb0119d0db4b808973fbbdd066af1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1a4bbeb0119d0db4b808973fbbdd066af1" kindref="member" tooltip="I/O space timing register 4.">PIO4</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="80" refid="structfsmc__reg__map_1a6e8a50ac2993e4c8c44d3bea1efb2c7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8<sp/><ref refid="structfsmc__reg__map_1a6e8a50ac2993e4c8c44d3bea1efb2c7f" kindref="member" tooltip="Reserved.">RESERVED6</ref>[80];<sp/><sp/></highlight></codeline>
+<codeline lineno="81" refid="structfsmc__reg__map_1a5e8c07e1931430460a5ce6d51e089912" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1a5e8c07e1931430460a5ce6d51e089912" kindref="member" tooltip="SRAM/NOR-Flash write timing register 1.">BWTR1</ref>;<sp/></highlight></codeline>
+<codeline lineno="82" refid="structfsmc__reg__map_1afb3f18c1b9c0fc5af6cf72ccc06ee069" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32<sp/><ref refid="structfsmc__reg__map_1afb3f18c1b9c0fc5af6cf72ccc06ee069" kindref="member" tooltip="Reserved.">RESERVED7</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83" refid="structfsmc__reg__map_1a1c639af5b7ea4910ba9b260a24a45c55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1a1c639af5b7ea4910ba9b260a24a45c55" kindref="member" tooltip="SRAM/NOR-Flash write timing register 2.">BWTR2</ref>;<sp/></highlight></codeline>
+<codeline lineno="84" refid="structfsmc__reg__map_1a67f9857951107c739431942a2c7850f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32<sp/><ref refid="structfsmc__reg__map_1a67f9857951107c739431942a2c7850f0" kindref="member" tooltip="Reserved.">RESERVED8</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85" refid="structfsmc__reg__map_1a9dcd0773179079721c06b2563fdcafdf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1a9dcd0773179079721c06b2563fdcafdf" kindref="member" tooltip="SRAM/NOR-Flash write timing register 3.">BWTR3</ref>;<sp/></highlight></codeline>
+<codeline lineno="86" refid="structfsmc__reg__map_1a46bbd38fb981993b82aaffa2a1b9af9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32<sp/><ref refid="structfsmc__reg__map_1a46bbd38fb981993b82aaffa2a1b9af9c" kindref="member" tooltip="Reserved.">RESERVED9</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87" refid="structfsmc__reg__map_1ad3793af341d7b7b557eabfbccf62386c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__reg__map_1ad3793af341d7b7b557eabfbccf62386c" kindref="member" tooltip="SRAM/NOR-Flash write timing register 4.">BWTR4</ref>;<sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}<sp/>__attribute__((packed))<sp/><ref refid="structfsmc__reg__map" kindref="compound" tooltip="FSMC register map type.">fsmc_reg_map</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__FSMCB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xA0000000</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="93" refid="fsmc_8h_1a679200df61ecb0695d72c030fdeb50a9" refkind="member"><highlight class="preprocessor">#define<sp/>FSMC_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((struct<sp/>fsmc_reg_map*)__FSMCB)</highlight></codeline>
+<codeline lineno="94"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="96" refid="structfsmc__nor__psram__reg__map" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structfsmc__nor__psram__reg__map" kindref="compound" tooltip="FSMC NOR/PSRAM register map type.">fsmc_nor_psram_reg_map</ref><sp/>{</highlight></codeline>
+<codeline lineno="97" refid="structfsmc__nor__psram__reg__map_1a6c39f75e2dc630dd97164090107b8470" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__nor__psram__reg__map_1a6c39f75e2dc630dd97164090107b8470" kindref="member" tooltip="Chip-select control register.">BCR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98" refid="structfsmc__nor__psram__reg__map_1aebf04a77ade5475d58c6d659e1b0326d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__nor__psram__reg__map_1aebf04a77ade5475d58c6d659e1b0326d" kindref="member" tooltip="Chip-select timing register.">BTR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99" refid="structfsmc__nor__psram__reg__map_1a7f3c7b293d109f8164833121bef572e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8<sp/><ref refid="structfsmc__nor__psram__reg__map_1a7f3c7b293d109f8164833121bef572e7" kindref="member" tooltip="Reserved.">RESERVED</ref>[252];<sp/><sp/></highlight></codeline>
+<codeline lineno="100" refid="structfsmc__nor__psram__reg__map_1a84d51bc7ce573e4110a2cbe68790e5cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structfsmc__nor__psram__reg__map_1a84d51bc7ce573e4110a2cbe68790e5cf" kindref="member" tooltip="Write timing register.">BWTR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}<sp/><ref refid="structfsmc__nor__psram__reg__map" kindref="compound" tooltip="FSMC NOR/PSRAM register map type.">fsmc_nor_psram_reg_map</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="fsmc_8h_1a2071582ec9585c31d26091fdb498169b" refkind="member"><highlight class="preprocessor">#define<sp/>FSMC_NOR_PSRAM1_BASE<sp/>((struct<sp/>fsmc_nor_psram_reg_map*)__FSMCB)</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="107" refid="fsmc_8h_1ab73acf8438c8734cfe79e2c5d8a3309d" refkind="member"><highlight class="preprocessor">#define<sp/>FSMC_NOR_PSRAM2_BASE<sp/>((struct<sp/>fsmc_nor_psram_reg_map*)(__FSMCB<sp/>+<sp/>0x8))</highlight></codeline>
+<codeline lineno="108"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="110" refid="fsmc_8h_1a9af3ff5e93ef30664b4a57c624a93110" refkind="member"><highlight class="preprocessor">#define<sp/>FSMC_NOR_PSRAM3_BASE<sp/>((struct<sp/>fsmc_nor_psram_reg_map*)(__FSMCB<sp/>+<sp/>0x10))</highlight></codeline>
+<codeline lineno="111"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="113" refid="fsmc_8h_1ac5c381d78d459b45813fbcbc996892c2" refkind="member"><highlight class="preprocessor">#define<sp/>FSMC_NOR_PSRAM4_BASE<sp/>((struct<sp/>fsmc_nor_psram_reg_map*)(__FSMCB<sp/>+<sp/>0x18))</highlight></codeline>
+<codeline lineno="114"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="116"><highlight class="comment"><sp/>*<sp/>Register<sp/>bit<sp/>definitions</highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>NOR/PSRAM<sp/>chip-select<sp/>control<sp/>registers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_CBURSTRW_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>19</highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_ASYNCWAIT_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>15</highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_EXTMOD_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>14</highlight></codeline>
+<codeline lineno="124"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_WAITEN_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>13</highlight></codeline>
+<codeline lineno="125"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_WREN_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight></codeline>
+<codeline lineno="126"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_WAITCFG_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>11</highlight></codeline>
+<codeline lineno="127"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_WRAPMOD_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10</highlight></codeline>
+<codeline lineno="128"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_WAITPOL_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>9</highlight></codeline>
+<codeline lineno="129"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_BURSTEN_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight></codeline>
+<codeline lineno="130"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_FACCEN_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight></codeline>
+<codeline lineno="131"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_MUXEN_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="132"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_MBKEN_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="133"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_CBURSTRW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FSMC_BCR_CBURSTRW_BIT)</highlight></codeline>
+<codeline lineno="135"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_ASYNCWAIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FSMC_BCR_ASYNCWAIT_BIT)</highlight></codeline>
+<codeline lineno="136"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_EXTMOD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FSMC_BCR_EXTMOD_BIT)</highlight></codeline>
+<codeline lineno="137"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_WAITEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FSMC_BCR_WAITEN_BIT)</highlight></codeline>
+<codeline lineno="138"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_WREN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FSMC_BCR_WREN_BIT)</highlight></codeline>
+<codeline lineno="139"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_WAITCFG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FSMC_BCR_WAITCFG_BIT)</highlight></codeline>
+<codeline lineno="140"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_WRAPMOD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FSMC_BCR_WRAPMOD_BIT)</highlight></codeline>
+<codeline lineno="141"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_WAITPOL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FSMC_BCR_WAITPOL_BIT)</highlight></codeline>
+<codeline lineno="142"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_BURSTEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FSMC_BCR_BURSTEN_BIT)</highlight></codeline>
+<codeline lineno="143"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_FACCEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FSMC_BCR_FACCEN_BIT)</highlight></codeline>
+<codeline lineno="144"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_MWID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x3<sp/>&lt;&lt;<sp/>4)</highlight></codeline>
+<codeline lineno="145"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_MWID_8BITS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0<sp/>&lt;&lt;<sp/>4)</highlight></codeline>
+<codeline lineno="146"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_MWID_16BITS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1<sp/>&lt;&lt;<sp/>4)</highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_MTYP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x3<sp/>&lt;&lt;<sp/>2)</highlight></codeline>
+<codeline lineno="148"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_MTYP_SRAM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0<sp/>&lt;&lt;<sp/>2)</highlight></codeline>
+<codeline lineno="149"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_MTYP_PSRAM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1<sp/>&lt;&lt;<sp/>2)</highlight></codeline>
+<codeline lineno="150"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_MTYP_NOR_FLASH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x2<sp/>&lt;&lt;<sp/>2)</highlight></codeline>
+<codeline lineno="151"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_MUXEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FSMC_BCR_MUXEN_BIT)</highlight></codeline>
+<codeline lineno="152"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BCR_MBKEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FSMC_BCR_MBKEN_BIT)</highlight></codeline>
+<codeline lineno="153"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>SRAM/NOR-Flash<sp/>chip-select<sp/>timing<sp/>registers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BTR_ACCMOD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x3<sp/>&lt;&lt;<sp/>28)</highlight></codeline>
+<codeline lineno="157"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BTR_ACCMOD_A<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0<sp/>&lt;&lt;<sp/>28)</highlight></codeline>
+<codeline lineno="158"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BTR_ACCMOD_B<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1<sp/>&lt;&lt;<sp/>28)</highlight></codeline>
+<codeline lineno="159"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BTR_ACCMOD_C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x2<sp/>&lt;&lt;<sp/>28)</highlight></codeline>
+<codeline lineno="160"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BTR_ACCMOD_D<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x3<sp/>&lt;&lt;<sp/>28)</highlight></codeline>
+<codeline lineno="161"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BTR_DATLAT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xF<sp/>&lt;&lt;<sp/>24)</highlight></codeline>
+<codeline lineno="162"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BTR_CLKDIV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xF<sp/>&lt;&lt;<sp/>20)</highlight></codeline>
+<codeline lineno="163"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BTR_BUSTURN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xF<sp/>&lt;&lt;<sp/>16)</highlight></codeline>
+<codeline lineno="164"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BTR_DATAST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xFF<sp/>&lt;&lt;<sp/>8)</highlight></codeline>
+<codeline lineno="165"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BTR_ADDHLD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xF<sp/>&lt;&lt;<sp/>4)</highlight></codeline>
+<codeline lineno="166"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BTR_ADDSET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xF</highlight></codeline>
+<codeline lineno="167"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>SRAM/NOR-Flash<sp/>write<sp/>timing<sp/>registers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BWTR_ACCMOD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x3<sp/>&lt;&lt;<sp/>28)</highlight></codeline>
+<codeline lineno="171"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BWTR_ACCMOD_A<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0<sp/>&lt;&lt;<sp/>28)</highlight></codeline>
+<codeline lineno="172"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BWTR_ACCMOD_B<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1<sp/>&lt;&lt;<sp/>28)</highlight></codeline>
+<codeline lineno="173"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BWTR_ACCMOD_C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x2<sp/>&lt;&lt;<sp/>28)</highlight></codeline>
+<codeline lineno="174"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BWTR_ACCMOD_D<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x3<sp/>&lt;&lt;<sp/>28)</highlight></codeline>
+<codeline lineno="175"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BWTR_DATLAT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xF<sp/>&lt;&lt;<sp/>24)</highlight></codeline>
+<codeline lineno="176"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BWTR_CLKDIV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xF<sp/>&lt;&lt;<sp/>20)</highlight></codeline>
+<codeline lineno="177"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BWTR_DATAST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xFF<sp/>&lt;&lt;<sp/>8)</highlight></codeline>
+<codeline lineno="178"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BWTR_ADDHLD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xF<sp/>&lt;&lt;<sp/>4)</highlight></codeline>
+<codeline lineno="179"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_BWTR_ADDSET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xF</highlight></codeline>
+<codeline lineno="180"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>NAND<sp/>Flash/PC<sp/>Card<sp/>controller<sp/>registers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PCR_ECCEN_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight></codeline>
+<codeline lineno="184"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PCR_PTYP_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="185"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PCR_PBKEN_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="186"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PCR_PWAITEN_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="187"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PCR_ECCPS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x7<sp/>&lt;&lt;<sp/>17)</highlight></codeline>
+<codeline lineno="189"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PCR_ECCPS_256B<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0<sp/>&lt;&lt;<sp/>17)</highlight></codeline>
+<codeline lineno="190"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PCR_ECCPS_512B<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1<sp/>&lt;&lt;<sp/>17)</highlight></codeline>
+<codeline lineno="191"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PCR_ECCPS_1024B<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x2<sp/>&lt;&lt;<sp/>17)</highlight></codeline>
+<codeline lineno="192"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PCR_ECCPS_2048B<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x3<sp/>&lt;&lt;<sp/>17)</highlight></codeline>
+<codeline lineno="193"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PCR_ECCPS_4096B<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x4<sp/>&lt;&lt;<sp/>17)</highlight></codeline>
+<codeline lineno="194"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PCR_ECCPS_8192B<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x5<sp/>&lt;&lt;<sp/>17)</highlight></codeline>
+<codeline lineno="195"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PCR_TAR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xF<sp/>&lt;&lt;<sp/>13)</highlight></codeline>
+<codeline lineno="196"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PCR_TCLR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xF<sp/>&lt;&lt;<sp/>9)</highlight></codeline>
+<codeline lineno="197"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PCR_ECCEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FSMC_PCR_ECCEN_BIT)</highlight></codeline>
+<codeline lineno="198"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PCR_PWID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x3<sp/>&lt;&lt;<sp/>4)</highlight></codeline>
+<codeline lineno="199"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PCR_PWID_8BITS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0<sp/>&lt;&lt;<sp/>4)</highlight></codeline>
+<codeline lineno="200"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PCR_PWID_16BITS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1<sp/>&lt;&lt;<sp/>4)</highlight></codeline>
+<codeline lineno="201"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PCR_PTYP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FSMC_PCR_PTYP_BIT)</highlight></codeline>
+<codeline lineno="202"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PCR_PTYP_PC_CF_PCMCIA<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0<sp/>&lt;&lt;<sp/>FSMC_PCR_PTYP_BIT)</highlight></codeline>
+<codeline lineno="203"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PCR_PTYP_NAND<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1<sp/>&lt;&lt;<sp/>FSMC_PCR_PTYP_BIT)</highlight></codeline>
+<codeline lineno="204"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PCR_PBKEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FSMC_PCR_PBKEN_BIT)</highlight></codeline>
+<codeline lineno="205"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PCR_PWAITEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FSMC_PCR_PWAITEN_BIT)</highlight></codeline>
+<codeline lineno="206"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>FIFO<sp/>status<sp/>and<sp/>interrupt<sp/>registers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FSMC_SR_FEMPT_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight></codeline>
+<codeline lineno="210"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_SR_IFEN_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight></codeline>
+<codeline lineno="211"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_SR_ILEN_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight></codeline>
+<codeline lineno="212"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_SR_IREN_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="213"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_SR_IFS_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="214"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_SR_ILS_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="215"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_SR_IRS_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="216"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FSMC_SR_FEMPT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FSMC_SR_FEMPT_BIT)</highlight></codeline>
+<codeline lineno="218"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_SR_IFEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FSMC_SR_IFEN_BIT)</highlight></codeline>
+<codeline lineno="219"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_SR_ILEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FSMC_SR_ILEN_BIT)</highlight></codeline>
+<codeline lineno="220"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_SR_IREN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FSMC_SR_IREN_BIT)</highlight></codeline>
+<codeline lineno="221"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_SR_IFS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FSMC_SR_IFS_BIT)</highlight></codeline>
+<codeline lineno="222"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_SR_ILS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FSMC_SR_ILS_BIT)</highlight></codeline>
+<codeline lineno="223"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_SR_IRS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FSMC_SR_IRS_BIT)</highlight></codeline>
+<codeline lineno="224"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Common<sp/>memory<sp/>space<sp/>timing<sp/>registers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PMEM_MEMHIZ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xFF<sp/>&lt;&lt;<sp/>24)</highlight></codeline>
+<codeline lineno="228"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PMEM_MEMHOLD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xFF<sp/>&lt;&lt;<sp/>16)</highlight></codeline>
+<codeline lineno="229"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PMEM_MEMWAIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xFF<sp/>&lt;&lt;<sp/>8)</highlight></codeline>
+<codeline lineno="230"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PMEM_MEMSET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xFF</highlight></codeline>
+<codeline lineno="231"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Attribute<sp/>memory<sp/>space<sp/>timing<sp/>registers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PATT_ATTHIZ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xFF<sp/>&lt;&lt;<sp/>24)</highlight></codeline>
+<codeline lineno="235"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PATT_ATTHOLD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xFF<sp/>&lt;&lt;<sp/>16)</highlight></codeline>
+<codeline lineno="236"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PATT_ATTWAIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xFF<sp/>&lt;&lt;<sp/>8)</highlight></codeline>
+<codeline lineno="237"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PATT_ATTSET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xFF</highlight></codeline>
+<codeline lineno="238"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>I/O<sp/>space<sp/>timing<sp/>register<sp/>4<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PIO_IOHIZ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xFF<sp/>&lt;&lt;<sp/>24)</highlight></codeline>
+<codeline lineno="242"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PIO_IOHOLD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xFF<sp/>&lt;&lt;<sp/>16)</highlight></codeline>
+<codeline lineno="243"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PIO_IOWAIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xFF<sp/>&lt;&lt;<sp/>8)</highlight></codeline>
+<codeline lineno="244"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FSMC_PIO_IOSET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xFF</highlight></codeline>
+<codeline lineno="245"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="247"><highlight class="comment"><sp/>*<sp/>Memory<sp/>bank<sp/>boundary<sp/>addresses</highlight></codeline>
+<codeline lineno="248"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252" refid="fsmc_8h_1ad9f1205bd4a5a87047167cfd08c621be" refkind="member"><highlight class="preprocessor">#define<sp/>FSMC_BANK1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((void*)0x60000000)</highlight></codeline>
+<codeline lineno="253"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="255" refid="fsmc_8h_1a7210ba71477a2d84d5736bb0a3aeef0b" refkind="member"><highlight class="preprocessor">#define<sp/>FSMC_NOR_PSRAM_REGION1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FSMC_BANK1</highlight></codeline>
+<codeline lineno="256"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="258" refid="fsmc_8h_1a3d40dccc875a277b39e27886070aaff7" refkind="member"><highlight class="preprocessor">#define<sp/>FSMC_NOR_PSRAM_REGION2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((void*)0x64000000)</highlight></codeline>
+<codeline lineno="259"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="261" refid="fsmc_8h_1a320694afe2ecb79846ed16416ea6447b" refkind="member"><highlight class="preprocessor">#define<sp/>FSMC_NOR_PSRAM_REGION3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((void*)0x68000000)</highlight></codeline>
+<codeline lineno="262"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="264" refid="fsmc_8h_1a18b861aab6a27c3c3461c6966efb5d36" refkind="member"><highlight class="preprocessor">#define<sp/>FSMC_NOR_PSRAM_REGION4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((void*)0x6C000000)</highlight></codeline>
+<codeline lineno="265"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="267" refid="fsmc_8h_1ab93ba8c33d13343280413dbd7831a76f" refkind="member"><highlight class="preprocessor">#define<sp/>FSMC_BANK2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((void*)0x70000000)</highlight></codeline>
+<codeline lineno="268"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="270" refid="fsmc_8h_1a163dcfdb018a377ac2876f9d3d3c1479" refkind="member"><highlight class="preprocessor">#define<sp/>FSMC_BANK3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((void*)0x80000000)</highlight></codeline>
+<codeline lineno="271"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="273" refid="fsmc_8h_1a308474546151289034d64f28132546a6" refkind="member"><highlight class="preprocessor">#define<sp/>FSMC_BANK4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((void*)0x90000000)</highlight></codeline>
+<codeline lineno="274"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="276"><highlight class="comment"><sp/>*<sp/>SRAM/NOR<sp/>Flash<sp/>routines</highlight></codeline>
+<codeline lineno="277"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fsmc_sram_init_gpios(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289" refid="fsmc_8h_1abe478a0634204dd22a748efb93a2254b" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="fsmc_8h_1abe478a0634204dd22a748efb93a2254b" kindref="member" tooltip="Set the DATAST bits in the given NOR/PSRAM register map&amp;#39;s chip-select timing register (FSMC_BTR)...">fsmc_nor_psram_set_datast</ref>(<ref refid="structfsmc__nor__psram__reg__map" kindref="compound" tooltip="FSMC NOR/PSRAM register map type.">fsmc_nor_psram_reg_map</ref><sp/>*regs,</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8<sp/>datast)<sp/>{</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>regs-&gt;<ref refid="structfsmc__nor__psram__reg__map_1aebf04a77ade5475d58c6d659e1b0326d" kindref="member" tooltip="Chip-select timing register.">BTR</ref><sp/>&amp;=<sp/>~FSMC_BTR_DATAST;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>regs-&gt;<ref refid="structfsmc__nor__psram__reg__map_1aebf04a77ade5475d58c6d659e1b0326d" kindref="member" tooltip="Chip-select timing register.">BTR</ref><sp/>|=<sp/>datast<sp/>&lt;&lt;<sp/>8;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303" refid="fsmc_8h_1afb45f160edc2d2fc16ce5affa5182658" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="fsmc_8h_1afb45f160edc2d2fc16ce5affa5182658" kindref="member" tooltip="Set the ADDHLD bits in the given NOR/PSRAM register map&amp;#39;s chip select timing register (FSMC_BTRx)...">fsmc_nor_psram_set_addset</ref>(<ref refid="structfsmc__nor__psram__reg__map" kindref="compound" tooltip="FSMC NOR/PSRAM register map type.">fsmc_nor_psram_reg_map</ref><sp/>*regs,</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8<sp/>addset)<sp/>{</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/>regs-&gt;<ref refid="structfsmc__nor__psram__reg__map_1aebf04a77ade5475d58c6d659e1b0326d" kindref="member" tooltip="Chip-select timing register.">BTR</ref><sp/>&amp;=<sp/>~FSMC_BTR_ADDSET;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>regs-&gt;<ref refid="structfsmc__nor__psram__reg__map_1aebf04a77ade5475d58c6d659e1b0326d" kindref="member" tooltip="Chip-select timing register.">BTR</ref><sp/>|=<sp/>addset<sp/>&amp;<sp/>0xF;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>STM32_HIGH_DENSITY<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="312"><highlight class="preprocessor"></highlight><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>extern<sp/>&quot;C&quot;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="314"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h"/>
+  </compounddef>
+</doxygen>

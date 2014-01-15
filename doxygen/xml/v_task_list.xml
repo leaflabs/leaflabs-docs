@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="v_task_list" kind="page">
+    <compoundname>vTaskList</compoundname>
+    <title>vTaskList</title>
+    <detaileddescription>
+<para>task.</para><para>h <preformatted>void vTaskList( char *pcWriteBuffer );</preformatted></para><para>configUSE_TRACE_FACILITY must be defined as 1 for this function to be available. See the configuration section for more information.</para><para>NOTE: This function will disable interrupts for its duration. It is not intended for normal application runtime use but as a debug aid.</para><para>Lists all the current tasks, along with their current state and stack usage high water mark.</para><para>Tasks are reported as blocked (&apos;B&apos;), ready (&apos;R&apos;), deleted (&apos;D&apos;) or suspended (&apos;S&apos;).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pcWriteBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A buffer into which the above mentioned details will be written, in ascii form. This buffer is assumed to be large enough to contain the generated report. Approximately 40 bytes per task should be sufficient. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

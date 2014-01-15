@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structadc__dev" kind="struct" prot="public">
+    <compoundname>adc_dev</compoundname>
+    <includes refid="adc_8h" local="no">adc.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structadc__dev_1a05f4fc782026e3b163ba49b771d8ab9f" prot="public" static="no" mutable="no">
+        <type><ref refid="structadc__reg__map" kindref="compound">adc_reg_map</ref> *</type>
+        <definition>adc_reg_map* adc_dev::regs</definition>
+        <argsstring></argsstring>
+        <name>regs</name>
+        <briefdescription>
+<para>Register map. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="70" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structadc__dev_1a9c34f932000c9008303a8d2c69965324" prot="public" static="no" mutable="no">
+        <type><ref refid="rcc_8h_1ae3722d2d8eff5283fb0388429953640f" kindref="member">rcc_clk_id</ref></type>
+        <definition>rcc_clk_id adc_dev::clk_id</definition>
+        <argsstring></argsstring>
+        <name>clk_id</name>
+        <briefdescription>
+<para>RCC clock information. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="71" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ADC device type. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>adc_reg_map</label>
+        <link refid="structadc__reg__map"/>
+      </node>
+      <node id="1">
+        <label>adc_dev</label>
+        <link refid="structadc__dev"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>regs</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="69" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="69" bodyend="72"/>
+    <listofallmembers>
+      <member refid="structadc__dev_1a9c34f932000c9008303a8d2c69965324" prot="public" virt="non-virtual"><scope>adc_dev</scope><name>clk_id</name></member>
+      <member refid="structadc__dev_1a05f4fc782026e3b163ba49b771d8ab9f" prot="public" virt="non-virtual"><scope>adc_dev</scope><name>regs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

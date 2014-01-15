@@ -1,0 +1,534 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structdma__reg__map" kind="struct" prot="public">
+    <compoundname>dma_reg_map</compoundname>
+    <includes refid="dma_8h" local="no">dma.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdma__reg__map_1ab4a80843413c137819b883dda371523b" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::ISR</definition>
+        <argsstring></argsstring>
+        <name>ISR</name>
+        <briefdescription>
+<para>Interrupt status register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="62" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1a90b7fa3d11d3c2f7c9dd8ee14aa61480" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::IFCR</definition>
+        <argsstring></argsstring>
+        <name>IFCR</name>
+        <briefdescription>
+<para>Interrupt flag clear register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="63" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1ad99f173dd14e32b036c3d270945a8a58" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CCR1</definition>
+        <argsstring></argsstring>
+        <name>CCR1</name>
+        <briefdescription>
+<para>Channel 1 configuration register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="64" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1a46f85282208b1c908a5c0383b43929ce" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CNDTR1</definition>
+        <argsstring></argsstring>
+        <name>CNDTR1</name>
+        <briefdescription>
+<para>Channel 1 number of data register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="65" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1a8c68c0f74a96063ceef75fda0f12a85d" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CPAR1</definition>
+        <argsstring></argsstring>
+        <name>CPAR1</name>
+        <briefdescription>
+<para>Channel 1 peripheral address register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="66" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1a9c40eebcf23165b8228dd87a1da272c3" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CMAR1</definition>
+        <argsstring></argsstring>
+        <name>CMAR1</name>
+        <briefdescription>
+<para>Channel 1 memory address register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="67" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1a902917bc37b2f3ab60d1005b784c60cc" prot="public" static="no" mutable="no">
+        <type>const uint32</type>
+        <definition>const uint32 dma_reg_map::RESERVED1</definition>
+        <argsstring></argsstring>
+        <name>RESERVED1</name>
+        <briefdescription>
+<para>Reserved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="68" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1a8c9c92149e8c7894e92e4c487df3bb61" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CCR2</definition>
+        <argsstring></argsstring>
+        <name>CCR2</name>
+        <briefdescription>
+<para>Channel 2 configuration register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="69" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1a04fa4c579f276c22e4e880b7ea26ebeb" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CNDTR2</definition>
+        <argsstring></argsstring>
+        <name>CNDTR2</name>
+        <briefdescription>
+<para>Channel 2 number of data register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="70" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1ac056142559715405aeb5e7917f786611" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CPAR2</definition>
+        <argsstring></argsstring>
+        <name>CPAR2</name>
+        <briefdescription>
+<para>Channel 2 peripheral address register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="71" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1a56423ea61789ff342d075f863af90e2a" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CMAR2</definition>
+        <argsstring></argsstring>
+        <name>CMAR2</name>
+        <briefdescription>
+<para>Channel 2 memory address register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="72" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1a2a55b2c23f5ee5b60e882f76cee915e8" prot="public" static="no" mutable="no">
+        <type>const uint32</type>
+        <definition>const uint32 dma_reg_map::RESERVED2</definition>
+        <argsstring></argsstring>
+        <name>RESERVED2</name>
+        <briefdescription>
+<para>Reserved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="73" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1acfdd7ea1f1a100333babc184b6eb1a6e" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CCR3</definition>
+        <argsstring></argsstring>
+        <name>CCR3</name>
+        <briefdescription>
+<para>Channel 3 configuration register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="74" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1affc2b558ee9652d2ab82258423569618" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CNDTR3</definition>
+        <argsstring></argsstring>
+        <name>CNDTR3</name>
+        <briefdescription>
+<para>Channel 3 number of data register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="75" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1a04c0629bb6e593b4c60401c44186f867" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CPAR3</definition>
+        <argsstring></argsstring>
+        <name>CPAR3</name>
+        <briefdescription>
+<para>Channel 3 peripheral address register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="76" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1ac1e8fbece9fcd262d7488b6c19f7f5e1" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CMAR3</definition>
+        <argsstring></argsstring>
+        <name>CMAR3</name>
+        <briefdescription>
+<para>Channel 3 memory address register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="77" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1a4bc5f64586815c37f82c272cf2a683fd" prot="public" static="no" mutable="no">
+        <type>const uint32</type>
+        <definition>const uint32 dma_reg_map::RESERVED3</definition>
+        <argsstring></argsstring>
+        <name>RESERVED3</name>
+        <briefdescription>
+<para>Reserved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="78" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1aa395061bcb6eab2424c9871f4db8520c" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CCR4</definition>
+        <argsstring></argsstring>
+        <name>CCR4</name>
+        <briefdescription>
+<para>Channel 4 configuration register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="79" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1acd66d3c2fd6f34eec001184e0c97ff33" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CNDTR4</definition>
+        <argsstring></argsstring>
+        <name>CNDTR4</name>
+        <briefdescription>
+<para>Channel 4 number of data register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="80" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1a8a48e6d8a991a5f614d9a0f30e7afc1a" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CPAR4</definition>
+        <argsstring></argsstring>
+        <name>CPAR4</name>
+        <briefdescription>
+<para>Channel 4 peripheral address register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="81" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1a0cb91599cc4345f8ee3e319c5e7f87aa" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CMAR4</definition>
+        <argsstring></argsstring>
+        <name>CMAR4</name>
+        <briefdescription>
+<para>Channel 4 memory address register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="82" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1abea6688373e5c705f6bb854046704b5f" prot="public" static="no" mutable="no">
+        <type>const uint32</type>
+        <definition>const uint32 dma_reg_map::RESERVED4</definition>
+        <argsstring></argsstring>
+        <name>RESERVED4</name>
+        <briefdescription>
+<para>Reserved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="83" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1ad37b7403e61b70ecaf12fed1bc8ffcc7" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CCR5</definition>
+        <argsstring></argsstring>
+        <name>CCR5</name>
+        <briefdescription>
+<para>Channel 5 configuration register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="84" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1a61d9bc61528af9d042793115879e7e85" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CNDTR5</definition>
+        <argsstring></argsstring>
+        <name>CNDTR5</name>
+        <briefdescription>
+<para>Channel 5 number of data register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="85" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1a02827d4eb9654aeb697c04cf0a146d39" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CPAR5</definition>
+        <argsstring></argsstring>
+        <name>CPAR5</name>
+        <briefdescription>
+<para>Channel 5 peripheral address register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="86" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1ac4b15aa259bb294ac9dec76c33fb6d9a" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CMAR5</definition>
+        <argsstring></argsstring>
+        <name>CMAR5</name>
+        <briefdescription>
+<para>Channel 5 memory address register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="87" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1add650dc6d16e1ee2adb0299e1cd527b3" prot="public" static="no" mutable="no">
+        <type>const uint32</type>
+        <definition>const uint32 dma_reg_map::RESERVED5</definition>
+        <argsstring></argsstring>
+        <name>RESERVED5</name>
+        <briefdescription>
+<para>Reserved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="88" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1ad0be7c87431c10a74d3726358d5887ca" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CCR6</definition>
+        <argsstring></argsstring>
+        <name>CCR6</name>
+        <briefdescription>
+<para>Channel 6 configuration register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="89" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1a547c0241e966f6eb9473e6be80838d9b" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CNDTR6</definition>
+        <argsstring></argsstring>
+        <name>CNDTR6</name>
+        <briefdescription>
+<para>Channel 6 number of data register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="90" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1a30ccabdeda09a70e5dc4b9b9fb5ef0f1" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CPAR6</definition>
+        <argsstring></argsstring>
+        <name>CPAR6</name>
+        <briefdescription>
+<para>Channel 6 peripheral address register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="91" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1ae38ef508908feef6bb391a91db1f1b93" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CMAR6</definition>
+        <argsstring></argsstring>
+        <name>CMAR6</name>
+        <briefdescription>
+<para>Channel 6 memory address register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="92" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1a7f4ec1ad95da300d5a3eae8e463d9a2b" prot="public" static="no" mutable="no">
+        <type>const uint32</type>
+        <definition>const uint32 dma_reg_map::RESERVED6</definition>
+        <argsstring></argsstring>
+        <name>RESERVED6</name>
+        <briefdescription>
+<para>Reserved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="93" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1a19a5a35dc06c08b50c5863427df0d378" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CCR7</definition>
+        <argsstring></argsstring>
+        <name>CCR7</name>
+        <briefdescription>
+<para>Channel 7 configuration register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="94" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1a30bf487cdb85121bd5a5a6a1fbdf2b6b" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CNDTR7</definition>
+        <argsstring></argsstring>
+        <name>CNDTR7</name>
+        <briefdescription>
+<para>Channel 7 number of data register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="95" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1a1bffc3650bb489cebacece325234737e" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CPAR7</definition>
+        <argsstring></argsstring>
+        <name>CPAR7</name>
+        <briefdescription>
+<para>Channel 7 peripheral address register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="96" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1a754fe00f89c3b11881521c78c484a3a1" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_reg_map::CMAR7</definition>
+        <argsstring></argsstring>
+        <name>CMAR7</name>
+        <briefdescription>
+<para>Channel 7 memory address register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="97" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__reg__map_1afad146cc30a21f7e8d5afe8c099dd2fb" prot="public" static="no" mutable="no">
+        <type>const uint32</type>
+        <definition>const uint32 dma_reg_map::RESERVED7</definition>
+        <argsstring></argsstring>
+        <name>RESERVED7</name>
+        <briefdescription>
+<para>Reserved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="98" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>DMA register map type. </para>    </briefdescription>
+    <detaileddescription>
+<para>Note that DMA controller 2 (register map base pointer DMA2_BASE) only supports channels 1--5. </para>    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="61" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="61" bodyend="99"/>
+    <listofallmembers>
+      <member refid="structdma__reg__map_1ad99f173dd14e32b036c3d270945a8a58" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CCR1</name></member>
+      <member refid="structdma__reg__map_1a8c9c92149e8c7894e92e4c487df3bb61" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CCR2</name></member>
+      <member refid="structdma__reg__map_1acfdd7ea1f1a100333babc184b6eb1a6e" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CCR3</name></member>
+      <member refid="structdma__reg__map_1aa395061bcb6eab2424c9871f4db8520c" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CCR4</name></member>
+      <member refid="structdma__reg__map_1ad37b7403e61b70ecaf12fed1bc8ffcc7" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CCR5</name></member>
+      <member refid="structdma__reg__map_1ad0be7c87431c10a74d3726358d5887ca" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CCR6</name></member>
+      <member refid="structdma__reg__map_1a19a5a35dc06c08b50c5863427df0d378" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CCR7</name></member>
+      <member refid="structdma__reg__map_1a9c40eebcf23165b8228dd87a1da272c3" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CMAR1</name></member>
+      <member refid="structdma__reg__map_1a56423ea61789ff342d075f863af90e2a" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CMAR2</name></member>
+      <member refid="structdma__reg__map_1ac1e8fbece9fcd262d7488b6c19f7f5e1" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CMAR3</name></member>
+      <member refid="structdma__reg__map_1a0cb91599cc4345f8ee3e319c5e7f87aa" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CMAR4</name></member>
+      <member refid="structdma__reg__map_1ac4b15aa259bb294ac9dec76c33fb6d9a" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CMAR5</name></member>
+      <member refid="structdma__reg__map_1ae38ef508908feef6bb391a91db1f1b93" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CMAR6</name></member>
+      <member refid="structdma__reg__map_1a754fe00f89c3b11881521c78c484a3a1" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CMAR7</name></member>
+      <member refid="structdma__reg__map_1a46f85282208b1c908a5c0383b43929ce" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CNDTR1</name></member>
+      <member refid="structdma__reg__map_1a04fa4c579f276c22e4e880b7ea26ebeb" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CNDTR2</name></member>
+      <member refid="structdma__reg__map_1affc2b558ee9652d2ab82258423569618" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CNDTR3</name></member>
+      <member refid="structdma__reg__map_1acd66d3c2fd6f34eec001184e0c97ff33" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CNDTR4</name></member>
+      <member refid="structdma__reg__map_1a61d9bc61528af9d042793115879e7e85" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CNDTR5</name></member>
+      <member refid="structdma__reg__map_1a547c0241e966f6eb9473e6be80838d9b" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CNDTR6</name></member>
+      <member refid="structdma__reg__map_1a30bf487cdb85121bd5a5a6a1fbdf2b6b" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CNDTR7</name></member>
+      <member refid="structdma__reg__map_1a8c68c0f74a96063ceef75fda0f12a85d" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CPAR1</name></member>
+      <member refid="structdma__reg__map_1ac056142559715405aeb5e7917f786611" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CPAR2</name></member>
+      <member refid="structdma__reg__map_1a04c0629bb6e593b4c60401c44186f867" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CPAR3</name></member>
+      <member refid="structdma__reg__map_1a8a48e6d8a991a5f614d9a0f30e7afc1a" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CPAR4</name></member>
+      <member refid="structdma__reg__map_1a02827d4eb9654aeb697c04cf0a146d39" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CPAR5</name></member>
+      <member refid="structdma__reg__map_1a30ccabdeda09a70e5dc4b9b9fb5ef0f1" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CPAR6</name></member>
+      <member refid="structdma__reg__map_1a1bffc3650bb489cebacece325234737e" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>CPAR7</name></member>
+      <member refid="structdma__reg__map_1a90b7fa3d11d3c2f7c9dd8ee14aa61480" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>IFCR</name></member>
+      <member refid="structdma__reg__map_1ab4a80843413c137819b883dda371523b" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>ISR</name></member>
+      <member refid="structdma__reg__map_1a902917bc37b2f3ab60d1005b784c60cc" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>RESERVED1</name></member>
+      <member refid="structdma__reg__map_1a2a55b2c23f5ee5b60e882f76cee915e8" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>RESERVED2</name></member>
+      <member refid="structdma__reg__map_1a4bc5f64586815c37f82c272cf2a683fd" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>RESERVED3</name></member>
+      <member refid="structdma__reg__map_1abea6688373e5c705f6bb854046704b5f" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>RESERVED4</name></member>
+      <member refid="structdma__reg__map_1add650dc6d16e1ee2adb0299e1cd527b3" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>RESERVED5</name></member>
+      <member refid="structdma__reg__map_1a7f4ec1ad95da300d5a3eae8e463d9a2b" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>RESERVED6</name></member>
+      <member refid="structdma__reg__map_1afad146cc30a21f7e8d5afe8c099dd2fb" prot="public" virt="non-virtual"><scope>dma_reg_map</scope><name>RESERVED7</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

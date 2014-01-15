@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structrcc__reg__map" kind="struct" prot="public">
+    <compoundname>rcc_reg_map</compoundname>
+    <includes refid="rcc_8h" local="no">rcc.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrcc__reg__map_1a5b6e32d372fe218af5895c7ac9de65b1" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 rcc_reg_map::CR</definition>
+        <argsstring></argsstring>
+        <name>CR</name>
+        <briefdescription>
+<para>Clock control register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/rcc.h" line="43" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/rcc.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrcc__reg__map_1a0deeb7534725341d3bfa4915598df804" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 rcc_reg_map::CFGR</definition>
+        <argsstring></argsstring>
+        <name>CFGR</name>
+        <briefdescription>
+<para>Clock configuration register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/rcc.h" line="44" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/rcc.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrcc__reg__map_1a452fcfe7232f41c75f13358c3d77d561" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 rcc_reg_map::CIR</definition>
+        <argsstring></argsstring>
+        <name>CIR</name>
+        <briefdescription>
+<para>Clock interrupt register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/rcc.h" line="45" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/rcc.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrcc__reg__map_1ae81970ac6f4f700853dd603822b3a037" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 rcc_reg_map::APB2RSTR</definition>
+        <argsstring></argsstring>
+        <name>APB2RSTR</name>
+        <briefdescription>
+<para>APB2 peripheral reset register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/rcc.h" line="46" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/rcc.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrcc__reg__map_1afb72eb335ec86e537e4e89967fec39a2" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 rcc_reg_map::APB1RSTR</definition>
+        <argsstring></argsstring>
+        <name>APB1RSTR</name>
+        <briefdescription>
+<para>APB1 peripheral reset register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/rcc.h" line="47" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/rcc.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrcc__reg__map_1a3849bb7881ffdad7b9455760025ebcf9" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 rcc_reg_map::AHBENR</definition>
+        <argsstring></argsstring>
+        <name>AHBENR</name>
+        <briefdescription>
+<para>AHB peripheral clock enable register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/rcc.h" line="48" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/rcc.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrcc__reg__map_1a167f13e673c69d505a6831efe9d6d878" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 rcc_reg_map::APB2ENR</definition>
+        <argsstring></argsstring>
+        <name>APB2ENR</name>
+        <briefdescription>
+<para>APB2 peripheral clock enable register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/rcc.h" line="49" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/rcc.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrcc__reg__map_1adf7efabb245f67bf0eec16168af69805" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 rcc_reg_map::APB1ENR</definition>
+        <argsstring></argsstring>
+        <name>APB1ENR</name>
+        <briefdescription>
+<para>APB1 peripheral clock enable register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/rcc.h" line="50" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/rcc.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrcc__reg__map_1a4db089ce36375c3897e5e3d671bfc409" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 rcc_reg_map::BDCR</definition>
+        <argsstring></argsstring>
+        <name>BDCR</name>
+        <briefdescription>
+<para>Backup domain control register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/rcc.h" line="51" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/rcc.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrcc__reg__map_1aee4542cbcb60a94e0986d8afa49f991e" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 rcc_reg_map::CSR</definition>
+        <argsstring></argsstring>
+        <name>CSR</name>
+        <briefdescription>
+<para>Control/status register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/rcc.h" line="52" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/rcc.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>RCC register map type. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/rcc.h" line="42" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/rcc.h" bodystart="42" bodyend="53"/>
+    <listofallmembers>
+      <member refid="structrcc__reg__map_1a3849bb7881ffdad7b9455760025ebcf9" prot="public" virt="non-virtual"><scope>rcc_reg_map</scope><name>AHBENR</name></member>
+      <member refid="structrcc__reg__map_1adf7efabb245f67bf0eec16168af69805" prot="public" virt="non-virtual"><scope>rcc_reg_map</scope><name>APB1ENR</name></member>
+      <member refid="structrcc__reg__map_1afb72eb335ec86e537e4e89967fec39a2" prot="public" virt="non-virtual"><scope>rcc_reg_map</scope><name>APB1RSTR</name></member>
+      <member refid="structrcc__reg__map_1a167f13e673c69d505a6831efe9d6d878" prot="public" virt="non-virtual"><scope>rcc_reg_map</scope><name>APB2ENR</name></member>
+      <member refid="structrcc__reg__map_1ae81970ac6f4f700853dd603822b3a037" prot="public" virt="non-virtual"><scope>rcc_reg_map</scope><name>APB2RSTR</name></member>
+      <member refid="structrcc__reg__map_1a4db089ce36375c3897e5e3d671bfc409" prot="public" virt="non-virtual"><scope>rcc_reg_map</scope><name>BDCR</name></member>
+      <member refid="structrcc__reg__map_1a0deeb7534725341d3bfa4915598df804" prot="public" virt="non-virtual"><scope>rcc_reg_map</scope><name>CFGR</name></member>
+      <member refid="structrcc__reg__map_1a452fcfe7232f41c75f13358c3d77d561" prot="public" virt="non-virtual"><scope>rcc_reg_map</scope><name>CIR</name></member>
+      <member refid="structrcc__reg__map_1a5b6e32d372fe218af5895c7ac9de65b1" prot="public" virt="non-virtual"><scope>rcc_reg_map</scope><name>CR</name></member>
+      <member refid="structrcc__reg__map_1aee4542cbcb60a94e0986d8afa49f991e" prot="public" virt="non-virtual"><scope>rcc_reg_map</scope><name>CSR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

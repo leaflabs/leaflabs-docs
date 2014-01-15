@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="v_task_get_run_time_stats" kind="page">
+    <compoundname>vTaskGetRunTimeStats</compoundname>
+    <title>vTaskGetRunTimeStats</title>
+    <detaileddescription>
+<para>task.</para><para>h <preformatted>void vTaskGetRunTimeStats( char *pcWriteBuffer );</preformatted></para><para>configGENERATE_RUN_TIME_STATS must be defined as 1 for this function to be available. The application must also then provide definitions for portCONFIGURE_TIMER_FOR_RUN_TIME_STATS() and portGET_RUN_TIME_COUNTER_VALUE to configure a peripheral timer/counter and return the timers current count value respectively. The counter should be at least 10 times the frequency of the tick count.</para><para>NOTE: This function will disable interrupts for its duration. It is not intended for normal application runtime use but as a debug aid.</para><para>Setting configGENERATE_RUN_TIME_STATS to 1 will result in a total accumulated execution time being stored for each task. The resolution of the accumulated time value depends on the frequency of the timer configured by the portCONFIGURE_TIMER_FOR_RUN_TIME_STATS() macro. Calling vTaskGetRunTimeStats() writes the total execution time of each task into a buffer, both as an absolute count value and as a percentage of the total system execution time.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pcWriteBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A buffer into which the execution times will be written, in ascii form. This buffer is assumed to be large enough to contain the generated report. Approximately 40 bytes per task should be sufficient. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

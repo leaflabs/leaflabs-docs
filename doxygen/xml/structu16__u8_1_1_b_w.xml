@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structu16__u8_1_1_b_w" kind="struct" prot="public">
+    <compoundname>u16_u8::BW</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structu16__u8_1_1_b_w_1a3516bd0376f2a56ea21d4a38b33180d0" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 u16_u8::BW::bb1</definition>
+        <argsstring></argsstring>
+        <name>bb1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="104" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structu16__u8_1_1_b_w_1a4ace5b8e793d541cf095ccbdd2264162" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 u16_u8::BW::bb0</definition>
+        <argsstring></argsstring>
+        <name>bb0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="105" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="103" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="102" bodyend="106"/>
+    <listofallmembers>
+      <member refid="structu16__u8_1_1_b_w_1a4ace5b8e793d541cf095ccbdd2264162" prot="public" virt="non-virtual"><scope>u16_u8::BW</scope><name>bb0</name></member>
+      <member refid="structu16__u8_1_1_b_w_1a3516bd0376f2a56ea21d4a38b33180d0" prot="public" virt="non-virtual"><scope>u16_u8::BW</scope><name>bb1</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

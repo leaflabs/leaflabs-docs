@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="flash_8c" kind="file">
+    <compoundname>flash.c</compoundname>
+    <includes refid="libmaple_8h" local="yes">libmaple.h</includes>
+    <includes refid="flash_8h" local="yes">flash.h</includes>
+    <includes refid="bitband_8h" local="yes">bitband.h</includes>
+    <incdepgraph>
+      <node id="175">
+        <label>libmaple/flash.c</label>
+        <link refid="flash.c"/>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+      </node>
+      <node id="181">
+        <label>flash.h</label>
+        <link refid="flash_8h"/>
+        <childnode refid="177" relation="include">
+        </childnode>
+      </node>
+      <node id="178">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="177">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="176">
+        <label>libmaple.h</label>
+        <link refid="libmaple_8h"/>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+      </node>
+      <node id="182">
+        <label>bitband.h</label>
+        <link refid="bitband_8h"/>
+        <childnode refid="177" relation="include">
+        </childnode>
+      </node>
+      <node id="180">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="177" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="flash_8c_1ae1a8e23f9850a6ae07e6bf1e94968b1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void flash_enable_prefetch</definition>
+        <argsstring>(void)</argsstring>
+        <name>flash_enable_prefetch</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Turn on the hardware prefetcher. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.c" line="39" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.c" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="flash_8c_1ad43efe3233808b59c6a7af6a0599e905" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void flash_set_latency</definition>
+        <argsstring>(uint32 wait_states)</argsstring>
+        <name>flash_set_latency</name>
+        <param>
+          <type>uint32</type>
+          <declname>wait_states</declname>
+        </param>
+        <briefdescription>
+<para>Set flash wait states. </para>        </briefdescription>
+        <detaileddescription>
+<para>See ST PM0042, section 3.1 for restrictions on the acceptable value of wait_states for a given SYSCLK configuration.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wait_states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of wait states (one of FLASH_WAIT_STATE_0, FLASH_WAIT_STATE_1, FLASH_WAIT_STATE_2). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.c" line="53" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.c" bodystart="53" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Flash management functions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Perry<sp/>Hung.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libmaple_8h" kindref="compound" tooltip="General include file for libmaple.">libmaple.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="flash_8h" kindref="compound" tooltip="STM32 Medium and high density Flash register map and setup routines.">flash.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bitband_8h" kindref="compound" tooltip="Bit-banding utility functions.">bitband.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="flash_8h_1ae1a8e23f9850a6ae07e6bf1e94968b1b" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="flash_8c_1ae1a8e23f9850a6ae07e6bf1e94968b1b" kindref="member" tooltip="Turn on the hardware prefetcher.">flash_enable_prefetch</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="bitband_8h_1a090d1c0629caa58e2e783578591378d5" kindref="member" tooltip="Obtain a pointer to the bit-band address corresponding to a bit in a peripheral address.">bb_perip</ref>(&amp;<ref refid="flash_8h_1a23a9099a5f8fc9c6e253c0eecb2be8db" kindref="member" tooltip="Flash register map base pointer.">FLASH_BASE</ref>-&gt;ACR,<sp/>FLASH_ACR_PRFTBE_BIT)<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="flash_8h_1ad43efe3233808b59c6a7af6a0599e905" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="flash_8c_1ad43efe3233808b59c6a7af6a0599e905" kindref="member" tooltip="Set flash wait states.">flash_set_latency</ref>(uint32<sp/>wait_states)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>val<sp/>=<sp/><ref refid="flash_8h_1a23a9099a5f8fc9c6e253c0eecb2be8db" kindref="member" tooltip="Flash register map base pointer.">FLASH_BASE</ref>-&gt;ACR;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>val<sp/>&amp;=<sp/>~FLASH_ACR_LATENCY;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>val<sp/>|=<sp/>wait_states;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="flash_8h_1a23a9099a5f8fc9c6e253c0eecb2be8db" kindref="member" tooltip="Flash register map base pointer.">FLASH_BASE</ref>-&gt;ACR<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.c"/>
+  </compounddef>
+</doxygen>

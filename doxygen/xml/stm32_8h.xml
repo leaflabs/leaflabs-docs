@@ -1,0 +1,657 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="stm32_8h" kind="file">
+    <compoundname>stm32.h</compoundname>
+    <includedby refid="libmaple_8h" local="yes">libmaple/libmaple.h</includedby>
+    <includedby refid="delay_8h" local="yes">libmaple/delay.h</includedby>
+    <includedby refid="nvic_8c" local="yes">libmaple/nvic.c</includedby>
+    <invincdepgraph>
+      <node id="586">
+        <label>libmaple/usb/usb.c</label>
+        <link refid="usb_8c_source"/>
+      </node>
+      <node id="596">
+        <label>libmaple/usb/usb.h</label>
+        <link refid="usb_8h_source"/>
+        <childnode refid="586" relation="include">
+        </childnode>
+        <childnode refid="588" relation="include">
+        </childnode>
+      </node>
+      <node id="594">
+        <label>wirish/HardwareTimer.h</label>
+        <link refid="_hardware_timer_8h_source"/>
+        <childnode refid="562" relation="include">
+        </childnode>
+      </node>
+      <node id="571">
+        <label>libmaple/bkp.c</label>
+        <link refid="bkp_8c_source"/>
+      </node>
+      <node id="570">
+        <label>libmaple/bkp.h</label>
+        <link refid="bkp_8h"/>
+        <childnode refid="571" relation="include">
+        </childnode>
+      </node>
+      <node id="574">
+        <label>libmaple/dac.c</label>
+        <link refid="dac_8c_source"/>
+      </node>
+      <node id="562">
+        <label>wirish/wirish.h</label>
+        <link refid="wirish_8h_source"/>
+        <childnode refid="563" relation="include">
+        </childnode>
+        <childnode refid="564" relation="include">
+        </childnode>
+        <childnode refid="565" relation="include">
+        </childnode>
+        <childnode refid="566" relation="include">
+        </childnode>
+      </node>
+      <node id="560">
+        <label>wirish/boards.h</label>
+        <link refid="boards_8h"/>
+        <childnode refid="561" relation="include">
+        </childnode>
+        <childnode refid="567" relation="include">
+        </childnode>
+        <childnode refid="562" relation="include">
+        </childnode>
+      </node>
+      <node id="573">
+        <label>libmaple/pwr.c</label>
+        <link refid="pwr_8c_source"/>
+      </node>
+      <node id="598">
+        <label>libmaple/nvic.c</label>
+        <link refid="nvic_8c_source"/>
+      </node>
+      <node id="572">
+        <label>libmaple/pwr.h</label>
+        <link refid="pwr_8h"/>
+        <childnode refid="571" relation="include">
+        </childnode>
+        <childnode refid="573" relation="include">
+        </childnode>
+      </node>
+      <node id="589">
+        <label>libmaple/flash.c</label>
+        <link refid="flash_8c"/>
+      </node>
+      <node id="568">
+        <label>wirish/io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="562" relation="include">
+        </childnode>
+      </node>
+      <node id="590">
+        <label>libmaple/rcc.c</label>
+        <link refid="rcc_8c_source"/>
+      </node>
+      <node id="583">
+        <label>libmaple/spi.c</label>
+        <link refid="spi_8c"/>
+      </node>
+      <node id="582">
+        <label>libmaple/spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="583" relation="include">
+        </childnode>
+        <childnode refid="561" relation="include">
+        </childnode>
+      </node>
+      <node id="561">
+        <label>wirish/comm/HardwareSPI.h</label>
+        <link refid="_hardware_s_p_i_8h"/>
+        <childnode refid="562" relation="include">
+        </childnode>
+      </node>
+      <node id="580">
+        <label>libmaple/i2c.c</label>
+        <link refid="i2c_8c"/>
+      </node>
+      <node id="581">
+        <label>libmaple/i2c.h</label>
+        <link refid="i2c_8h"/>
+        <childnode refid="580" relation="include">
+        </childnode>
+      </node>
+      <node id="554">
+        <label>libmaple/stm32.h</label>
+        <link refid="stm32.h"/>
+        <childnode refid="555" relation="include">
+        </childnode>
+        <childnode refid="597" relation="include">
+        </childnode>
+        <childnode refid="598" relation="include">
+        </childnode>
+      </node>
+      <node id="565">
+        <label>libraries/LiquidCrystal/LiquidCrystal.h</label>
+        <link refid="_liquid_crystal_8h_source"/>
+      </node>
+      <node id="555">
+        <label>libmaple/libmaple.h</label>
+        <link refid="libmaple_8h"/>
+        <childnode refid="556" relation="include">
+        </childnode>
+        <childnode refid="557" relation="include">
+        </childnode>
+        <childnode refid="570" relation="include">
+        </childnode>
+        <childnode refid="572" relation="include">
+        </childnode>
+        <childnode refid="574" relation="include">
+        </childnode>
+        <childnode refid="575" relation="include">
+        </childnode>
+        <childnode refid="576" relation="include">
+        </childnode>
+        <childnode refid="577" relation="include">
+        </childnode>
+        <childnode refid="589" relation="include">
+        </childnode>
+        <childnode refid="580" relation="include">
+        </childnode>
+        <childnode refid="590" relation="include">
+        </childnode>
+        <childnode refid="591" relation="include">
+        </childnode>
+        <childnode refid="592" relation="include">
+        </childnode>
+        <childnode refid="595" relation="include">
+        </childnode>
+        <childnode refid="585" relation="include">
+        </childnode>
+        <childnode refid="596" relation="include">
+        </childnode>
+        <childnode refid="586" relation="include">
+        </childnode>
+        <childnode refid="587" relation="include">
+        </childnode>
+        <childnode refid="558" relation="include">
+        </childnode>
+        <childnode refid="560" relation="include">
+        </childnode>
+        <childnode refid="567" relation="include">
+        </childnode>
+        <childnode refid="562" relation="include">
+        </childnode>
+      </node>
+      <node id="584">
+        <label>libmaple/usb/usb_config.h</label>
+        <link refid="usb__config_8h_source"/>
+        <childnode refid="585" relation="include">
+        </childnode>
+        <childnode refid="586" relation="include">
+        </childnode>
+        <childnode refid="587" relation="include">
+        </childnode>
+        <childnode refid="588" relation="include">
+        </childnode>
+      </node>
+      <node id="567">
+        <label>wirish/wirish_time.h</label>
+        <link refid="wirish__time_8h"/>
+        <childnode refid="568" relation="include">
+        </childnode>
+        <childnode refid="562" relation="include">
+        </childnode>
+      </node>
+      <node id="559">
+        <label>wirish/wirish_types.h</label>
+        <link refid="wirish__types_8h"/>
+        <childnode refid="560" relation="include">
+        </childnode>
+        <childnode refid="562" relation="include">
+        </childnode>
+        <childnode refid="569" relation="include">
+        </childnode>
+      </node>
+      <node id="569">
+        <label>libraries/Servo/Servo.h</label>
+        <link refid="_servo_8h_source"/>
+      </node>
+      <node id="556">
+        <label>libmaple/adc.c</label>
+        <link refid="adc_8c"/>
+      </node>
+      <node id="557">
+        <label>libmaple/adc.h</label>
+        <link refid="adc_8h"/>
+        <childnode refid="556" relation="include">
+        </childnode>
+        <childnode refid="558" relation="include">
+        </childnode>
+        <childnode refid="559" relation="include">
+        </childnode>
+        <childnode refid="568" relation="include">
+        </childnode>
+      </node>
+      <node id="579">
+        <label>libmaple/gpio.c</label>
+        <link refid="gpio_8c_source"/>
+      </node>
+      <node id="575">
+        <label>libmaple/gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="574" relation="include">
+        </childnode>
+        <childnode refid="576" relation="include">
+        </childnode>
+        <childnode refid="578" relation="include">
+        </childnode>
+        <childnode refid="579" relation="include">
+        </childnode>
+        <childnode refid="580" relation="include">
+        </childnode>
+        <childnode refid="581" relation="include">
+        </childnode>
+        <childnode refid="582" relation="include">
+        </childnode>
+        <childnode refid="584" relation="include">
+        </childnode>
+        <childnode refid="586" relation="include">
+        </childnode>
+        <childnode refid="558" relation="include">
+        </childnode>
+        <childnode refid="560" relation="include">
+        </childnode>
+        <childnode refid="559" relation="include">
+        </childnode>
+        <childnode refid="568" relation="include">
+        </childnode>
+      </node>
+      <node id="593">
+        <label>libmaple/timer.c</label>
+        <link refid="timer_8c"/>
+      </node>
+      <node id="592">
+        <label>libmaple/timer.h</label>
+        <link refid="timer_8h"/>
+        <childnode refid="593" relation="include">
+        </childnode>
+        <childnode refid="558" relation="include">
+        </childnode>
+        <childnode refid="560" relation="include">
+        </childnode>
+        <childnode refid="559" relation="include">
+        </childnode>
+        <childnode refid="594" relation="include">
+        </childnode>
+        <childnode refid="569" relation="include">
+        </childnode>
+      </node>
+      <node id="566">
+        <label>libraries/Wire/Wire.h</label>
+        <link refid="_wire_8h_source"/>
+      </node>
+      <node id="597">
+        <label>libmaple/delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="555" relation="include">
+        </childnode>
+        <childnode refid="586" relation="include">
+        </childnode>
+      </node>
+      <node id="578">
+        <label>libmaple/fsmc.c</label>
+        <link refid="fsmc_8c_source"/>
+      </node>
+      <node id="563">
+        <label>wirish/WProgram.h</label>
+        <link refid="_w_program_8h_source"/>
+      </node>
+      <node id="591">
+        <label>libmaple/syscalls.c</label>
+        <link refid="syscalls_8c_source"/>
+      </node>
+      <node id="564">
+        <label>libraries/FreeRTOS/MapleFreeRTOS.h</label>
+        <link refid="_maple_free_r_t_o_s_8h_source"/>
+      </node>
+      <node id="577">
+        <label>libmaple/exti.c</label>
+        <link refid="exti_8c"/>
+      </node>
+      <node id="576">
+        <label>libmaple/exti.h</label>
+        <link refid="exti_8h"/>
+        <childnode refid="577" relation="include">
+        </childnode>
+      </node>
+      <node id="558">
+        <label>libmaple/util.c</label>
+        <link refid="util_8c_source"/>
+      </node>
+      <node id="585">
+        <label>libmaple/usb/descriptors.c</label>
+        <link refid="descriptors_8c_source"/>
+      </node>
+      <node id="595">
+        <label>libmaple/usb/descriptors.h</label>
+        <link refid="descriptors_8h_source"/>
+        <childnode refid="585" relation="include">
+        </childnode>
+        <childnode refid="588" relation="include">
+        </childnode>
+      </node>
+      <node id="588">
+        <label>libmaple/usb/usb_callbacks.c</label>
+        <link refid="usb__callbacks_8c_source"/>
+      </node>
+      <node id="587">
+        <label>libmaple/usb/usb_callbacks.h</label>
+        <link refid="usb__callbacks_8h_source"/>
+        <childnode refid="586" relation="include">
+        </childnode>
+        <childnode refid="588" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="stm32_8h_1a79d8b0164de9c4437da78024b0ed94cb" prot="public" static="no">
+        <name>STM32_PCLK1</name>
+        <briefdescription>
+<para>APB1 clock speed, in Hz. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/stm32.h" line="46" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/stm32.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32_8h_1a2a19a811dd0dadfed94695a579997cec" prot="public" static="no">
+        <name>STM32_PCLK2</name>
+        <briefdescription>
+<para>APB2 clock speed, in Hz. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/stm32.h" line="48" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/stm32.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32_8h_1a1437a76e34cca7e97da2f708e00b855f" prot="public" static="no">
+        <name>PCLK1</name>
+        <briefdescription>
+<para>Deprecated. </para>        </briefdescription>
+        <detaileddescription>
+<para>Use STM32_PCLK1 instead. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/stm32.h" line="51" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/stm32.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32_8h_1a33c7f5454a2dafd4be256a400852c333" prot="public" static="no">
+        <name>PCLK2</name>
+        <briefdescription>
+<para>Deprecated. </para>        </briefdescription>
+        <detaileddescription>
+<para>Use STM32_PCLK2 instead. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/stm32.h" line="53" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/stm32.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32_8h_1a5e7e389e40d430eacb6cca06e413a7a4" prot="public" static="no">
+        <name>STM32_NR_INTERRUPTS</name>
+        <briefdescription>
+<para>Number of interrupts in the NVIC. </para>        </briefdescription>
+        <detaileddescription>
+<para>This define is automatically generated whenever the proper density is defined (currently, this is restricted to defining one of STM32_MEDIUM_DENSITY and STM32_HIGH_DENSITY). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/stm32.h" line="90" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/stm32.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32_8h_1a9f4ff2adc5f5f51646678a47f0a9a4eb" prot="public" static="no">
+        <name>NR_INTERRUPTS</name>
+        <briefdescription>
+<para>Deprecated. </para>        </briefdescription>
+        <detaileddescription>
+<para>Use STM32_NR_INTERRUPTS instead. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/stm32.h" line="93" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/stm32.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32_8h_1a5e7e389e40d430eacb6cca06e413a7a4" prot="public" static="no">
+        <name>STM32_NR_INTERRUPTS</name>
+        <initializer>43</initializer>
+        <briefdescription>
+<para>Number of interrupts in the NVIC. </para>        </briefdescription>
+        <detaileddescription>
+<para>This define is automatically generated whenever the proper density is defined (currently, this is restricted to defining one of STM32_MEDIUM_DENSITY and STM32_HIGH_DENSITY). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/stm32.h" line="98" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/stm32.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32_8h_1a9f4ff2adc5f5f51646678a47f0a9a4eb" prot="public" static="no">
+        <name>NR_INTERRUPTS</name>
+        <initializer><ref refid="stm32_8h_1a5e7e389e40d430eacb6cca06e413a7a4" kindref="member">STM32_NR_INTERRUPTS</ref></initializer>
+        <briefdescription>
+<para>Deprecated. </para>        </briefdescription>
+        <detaileddescription>
+<para>Use STM32_NR_INTERRUPTS instead. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/stm32.h" line="105" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/stm32.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32_8h_1a7a470ed2ddf6f0cf83cd52c94f477dae" prot="public" static="no">
+        <name>STM32_NR_GPIO_PORTS</name>
+        <briefdescription>
+<para>Number of GPIO ports. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/stm32.h" line="116" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/stm32.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32_8h_1a34d4e23005992146c3539335887ba4f6" prot="public" static="no">
+        <name>STM32_DELAY_US_MULT</name>
+        <briefdescription>
+<para>Multiplier to convert microseconds into loop iterations in <ref refid="delay_8h_1ab6a09ce7e805fd3c213ba6d2d5921a59" kindref="member">delay_us()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="delay_8h_1ab6a09ce7e805fd3c213ba6d2d5921a59" kindref="member">delay_us()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/stm32.h" line="124" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/stm32.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32_8h_1a1869e26cba287d5520e452f6275c1b3a" prot="public" static="no">
+        <name>STM32_SRAM_END</name>
+        <briefdescription>
+<para>Pointer to end of built-in SRAM. </para>        </briefdescription>
+        <detaileddescription>
+<para>Points to the address which is 1 byte past the last valid SRAM address. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/stm32.h" line="132" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/stm32.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32_8h_1a38001635914448a743e5c79c36fee72c" prot="public" static="no">
+        <name>NR_GPIO_PORTS</name>
+        <briefdescription>
+<para>Deprecated. </para>        </briefdescription>
+        <detaileddescription>
+<para>Use STM32_NR_GPIO_PORTS instead. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/stm32.h" line="135" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/stm32.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stm32_8h_1a7afa2411bd0843ac02ba274e55901ca3" prot="public" static="no">
+        <name>DELAY_US_MULT</name>
+        <briefdescription>
+<para>Deprecated. </para>        </briefdescription>
+        <detaileddescription>
+<para>Use STM32_DELAY_US_MULT instead. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/stm32.h" line="137" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/stm32.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>STM32 chip-specific definitions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>LeafLabs,<sp/>LLC.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor">#ifndef<sp/>_STM32_H_</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_STM32_H_</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/>User-specific<sp/>configuration.</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/>The<sp/>#defines<sp/>here<sp/>depend<sp/>upon<sp/>how<sp/>libmaple<sp/>is<sp/>used.<sp/><sp/>Because<sp/>of<sp/>the</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/>potential<sp/>for<sp/>a<sp/>mismatch<sp/>between<sp/>them<sp/>and<sp/>the<sp/>actual<sp/>libmaple</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/>usage,<sp/>you<sp/>should<sp/>try<sp/>to<sp/>keep<sp/>their<sp/>number<sp/>to<sp/>an<sp/>absolute<sp/>minimum.</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__DOXYGEN_PREDEFINED_HACK</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="46" refid="stm32_8h_1a79d8b0164de9c4437da78024b0ed94cb" refkind="member"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>STM32_PCLK1</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="48" refid="stm32_8h_1a2a19a811dd0dadfed94695a579997cec" refkind="member"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>STM32_PCLK2</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="51" refid="stm32_8h_1a1437a76e34cca7e97da2f708e00b855f" refkind="member"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>PCLK1</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="53" refid="stm32_8h_1a33c7f5454a2dafd4be256a400852c333" refkind="member"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>PCLK2</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>STM32_PCLK1</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_PCLK1<sp/><sp/><sp/>36000000U</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifndef<sp/>PCLK1</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCLK1<sp/>STM32_PCLK1</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#if<sp/>PCLK1<sp/>!=<sp/>STM32_PCLK1</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#error<sp/>&quot;(Deprecated)<sp/>PCLK1<sp/>differs<sp/>from<sp/>STM32_PCLK1&quot;</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>STM32_PCLK2</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STM32_PCLK2<sp/><sp/><sp/>72000000U</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifndef<sp/>PCLK2</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PCLK2<sp/>STM32_PCLK2</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#if<sp/>PCLK2<sp/>!=<sp/>STM32_PCLK2</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#error<sp/>&quot;(Deprecated)<sp/>PCLK2<sp/>differs<sp/>from<sp/>STM32_PCLK2&quot;</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*<sp/>Density-specific<sp/>configuration.</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__DOXYGEN_PREDEFINED_HACK</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>STM32_NR_INTERRUPTS</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>NR_INTERRUPTS</highlight></codeline>
+<codeline lineno="94"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="96"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>STM32_MEDIUM_DENSITY</highlight></codeline>
+<codeline lineno="98" refid="stm32_8h_1a5e7e389e40d430eacb6cca06e413a7a4" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>STM32_NR_INTERRUPTS<sp/>43</highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>defined(STM32_HIGH_DENSITY)</highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>STM32_NR_INTERRUPTS<sp/>60</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#error<sp/>&quot;No<sp/>STM32<sp/>board<sp/>type<sp/>defined!&quot;</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="stm32_8h_1a9f4ff2adc5f5f51646678a47f0a9a4eb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NR_INTERRUPTS<sp/>STM32_NR_INTERRUPTS</highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="108"><highlight class="comment"><sp/>*<sp/>MCU-specific<sp/>configuration.</highlight></codeline>
+<codeline lineno="109"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__DOXYGEN_PREDEFINED_HACK</highlight></codeline>
+<codeline lineno="112"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="116" refid="stm32_8h_1a7a470ed2ddf6f0cf83cd52c94f477dae" refkind="member"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>STM32_NR_GPIO_PORTS</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="124" refid="stm32_8h_1a34d4e23005992146c3539335887ba4f6" refkind="member"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>STM32_DELAY_US_MULT</highlight></codeline>
+<codeline lineno="125"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="132" refid="stm32_8h_1a1869e26cba287d5520e452f6275c1b3a" refkind="member"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>STM32_SRAM_END</highlight></codeline>
+<codeline lineno="133"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="135" refid="stm32_8h_1a38001635914448a743e5c79c36fee72c" refkind="member"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>NR_GPIO_PORTS</highlight></codeline>
+<codeline lineno="136"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="137" refid="stm32_8h_1a7afa2411bd0843ac02ba274e55901ca3" refkind="member"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>DELAY_US_MULT</highlight></codeline>
+<codeline lineno="138"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="140"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(MCU_STM32F103RB)</highlight></codeline>
+<codeline lineno="142"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>e.g.,<sp/>LeafLabs<sp/>Maple<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>STM32_NR_GPIO_PORTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight></codeline>
+<codeline lineno="145"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>STM32_DELAY_US_MULT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight></codeline>
+<codeline lineno="146"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>STM32_SRAM_END<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((void*)0x20005000)</highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>NR_GPIO_PORTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STM32_NR_GPIO_PORTS</highlight></codeline>
+<codeline lineno="149"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>DELAY_US_MULT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STM32_DELAY_US_MULT</highlight></codeline>
+<codeline lineno="150"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(MCU_STM32F103ZE)</highlight></codeline>
+<codeline lineno="152"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>e.g.,<sp/>LeafLabs<sp/>Maple<sp/>Native<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>STM32_NR_GPIO_PORTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7</highlight></codeline>
+<codeline lineno="155"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>STM32_DELAY_US_MULT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight></codeline>
+<codeline lineno="156"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>STM32_SRAM_END<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((void*)0x20010000)</highlight></codeline>
+<codeline lineno="157"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>NR_GPIO_PORTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STM32_NR_GPIO_PORTS</highlight></codeline>
+<codeline lineno="159"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>DELAY_US_MULT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STM32_DELAY_US_MULT</highlight></codeline>
+<codeline lineno="160"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(MCU_STM32F103CB)</highlight></codeline>
+<codeline lineno="162"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>e.g.,<sp/>LeafLabs<sp/>Maple<sp/>Mini<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>This<sp/>STM32_NR_GPIO_PORTS<sp/>value<sp/>is<sp/>not,<sp/>strictly<sp/>speaking,<sp/>true.</highlight></codeline>
+<codeline lineno="165"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>But<sp/>only<sp/>pins<sp/>0<sp/>and<sp/>1<sp/>exist,<sp/>and<sp/>they&apos;re<sp/>used<sp/>for<sp/>OSC<sp/>on<sp/>the</highlight></codeline>
+<codeline lineno="166"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Mini,<sp/>so<sp/>we&apos;ll<sp/>live<sp/>with<sp/>this<sp/>for<sp/>now.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>STM32_NR_GPIO_PORTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="168"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>STM32_DELAY_US_MULT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight></codeline>
+<codeline lineno="169"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>STM32_SRAM_END<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((void*)0x20005000)</highlight></codeline>
+<codeline lineno="170"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>NR_GPIO_PORTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STM32_NR_GPIO_PORTS</highlight></codeline>
+<codeline lineno="172"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>DELAY_US_MULT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STM32_DELAY_US_MULT</highlight></codeline>
+<codeline lineno="173"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(MCU_STM32F103RE)</highlight></codeline>
+<codeline lineno="175"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>e.g.,<sp/>LeafLabs<sp/>Maple<sp/>RET6<sp/>edition<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>STM32_NR_GPIO_PORTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight></codeline>
+<codeline lineno="178"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>STM32_DELAY_US_MULT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight></codeline>
+<codeline lineno="179"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>STM32_SRAM_END<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((void*)0x20010000)</highlight></codeline>
+<codeline lineno="180"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>NR_GPIO_PORTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STM32_NR_GPIO_PORTS</highlight></codeline>
+<codeline lineno="182"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>DELAY_US_MULT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>STM32_DELAY_US_MULT</highlight></codeline>
+<codeline lineno="183"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="185"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>&quot;No<sp/>MCU<sp/>type<sp/>specified.<sp/>Add<sp/>something<sp/>like<sp/>-DMCU_STM32F103RB<sp/>&quot;<sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="187"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;to<sp/>your<sp/>compiler<sp/>arguments<sp/>(probably<sp/>in<sp/>a<sp/>Makefile).&quot;</highlight></codeline>
+<codeline lineno="188"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="190"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>_STM32_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/stm32.h"/>
+  </compounddef>
+</doxygen>

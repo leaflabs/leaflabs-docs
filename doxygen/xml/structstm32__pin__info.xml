@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structstm32__pin__info" kind="struct" prot="public">
+    <compoundname>stm32_pin_info</compoundname>
+    <includes refid="wirish__types_8h" local="no">wirish_types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structstm32__pin__info_1a8258f118b311f0ee54bfd23382a32f2c" prot="public" static="no" mutable="no">
+        <type><ref refid="structgpio__dev" kindref="compound">gpio_dev</ref> *</type>
+        <definition>gpio_dev* stm32_pin_info::gpio_device</definition>
+        <argsstring></argsstring>
+        <name>gpio_device</name>
+        <briefdescription>
+<para>Maple pin&apos;s GPIO device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_types.h" line="52" bodyfile="/home/mbolivar/leaf/libmaple/wirish/wirish_types.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstm32__pin__info_1a116f06f46ba57f6de19c765465306537" prot="public" static="no" mutable="no">
+        <type><ref refid="structtimer__dev" kindref="compound">timer_dev</ref> *</type>
+        <definition>timer_dev* stm32_pin_info::timer_device</definition>
+        <argsstring></argsstring>
+        <name>timer_device</name>
+        <briefdescription>
+<para>Pin&apos;s timer device, if any. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_types.h" line="53" bodyfile="/home/mbolivar/leaf/libmaple/wirish/wirish_types.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstm32__pin__info_1a14088fe4f20fbf5cbc58ec998cc541ee" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structadc__dev" kindref="compound">adc_dev</ref> *</type>
+        <definition>const adc_dev* stm32_pin_info::adc_device</definition>
+        <argsstring></argsstring>
+        <name>adc_device</name>
+        <briefdescription>
+<para>ADC device, if any. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_types.h" line="54" bodyfile="/home/mbolivar/leaf/libmaple/wirish/wirish_types.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstm32__pin__info_1a7764f5aed15a126e91d9ed747c4f56a0" prot="public" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 stm32_pin_info::gpio_bit</definition>
+        <argsstring></argsstring>
+        <name>gpio_bit</name>
+        <briefdescription>
+<para>Pin&apos;s GPIO port bit. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_types.h" line="55" bodyfile="/home/mbolivar/leaf/libmaple/wirish/wirish_types.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstm32__pin__info_1a3d0447eb7ee7cfdfee36e2fed2f4299b" prot="public" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 stm32_pin_info::timer_channel</definition>
+        <argsstring></argsstring>
+        <name>timer_channel</name>
+        <briefdescription>
+<para>Timer channel, or 0 if none. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_types.h" line="56" bodyfile="/home/mbolivar/leaf/libmaple/wirish/wirish_types.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structstm32__pin__info_1a0f085d8f257cac371796f7d74e2a2a6e" prot="public" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 stm32_pin_info::adc_channel</definition>
+        <argsstring></argsstring>
+        <name>adc_channel</name>
+        <briefdescription>
+<para>Pin ADC channel, or ADCx if none. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_types.h" line="57" bodyfile="/home/mbolivar/leaf/libmaple/wirish/wirish_types.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Stores STM32-specific information related to a given Maple pin. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="boards_8h_1abe7c312b45813fd54f41209790693b98" kindref="member">PIN_MAP</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="121">
+        <label>gpio_dev</label>
+        <link refid="structgpio__dev"/>
+        <childnode refid="122" relation="usage">
+          <edgelabel>regs</edgelabel>
+        </childnode>
+      </node>
+      <node id="120">
+        <label>stm32_pin_info</label>
+        <link refid="structstm32__pin__info"/>
+        <childnode refid="121" relation="usage">
+          <edgelabel>gpio_device</edgelabel>
+        </childnode>
+        <childnode refid="123" relation="usage">
+          <edgelabel>adc_device</edgelabel>
+        </childnode>
+        <childnode refid="125" relation="usage">
+          <edgelabel>timer_device</edgelabel>
+        </childnode>
+      </node>
+      <node id="127">
+        <label>timer_adv_reg_map</label>
+        <link refid="structtimer__adv__reg__map"/>
+      </node>
+      <node id="125">
+        <label>timer_dev</label>
+        <link refid="structtimer__dev"/>
+        <childnode refid="126" relation="usage">
+          <edgelabel>regs</edgelabel>
+        </childnode>
+      </node>
+      <node id="124">
+        <label>adc_reg_map</label>
+        <link refid="structadc__reg__map"/>
+      </node>
+      <node id="122">
+        <label>gpio_reg_map</label>
+        <link refid="structgpio__reg__map"/>
+      </node>
+      <node id="129">
+        <label>timer_gen_reg_map</label>
+        <link refid="structtimer__gen__reg__map"/>
+      </node>
+      <node id="123">
+        <label>adc_dev</label>
+        <link refid="structadc__dev"/>
+        <childnode refid="124" relation="usage">
+          <edgelabel>regs</edgelabel>
+        </childnode>
+      </node>
+      <node id="128">
+        <label>timer_bas_reg_map</label>
+        <link refid="structtimer__bas__reg__map"/>
+      </node>
+      <node id="126">
+        <label>timer_reg_map</label>
+        <link refid="uniontimer__reg__map"/>
+        <childnode refid="127" relation="usage">
+          <edgelabel>adv</edgelabel>
+        </childnode>
+        <childnode refid="128" relation="usage">
+          <edgelabel>bas</edgelabel>
+        </childnode>
+        <childnode refid="129" relation="usage">
+          <edgelabel>gen</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_types.h" line="51" bodyfile="/home/mbolivar/leaf/libmaple/wirish/wirish_types.h" bodystart="51" bodyend="58"/>
+    <listofallmembers>
+      <member refid="structstm32__pin__info_1a0f085d8f257cac371796f7d74e2a2a6e" prot="public" virt="non-virtual"><scope>stm32_pin_info</scope><name>adc_channel</name></member>
+      <member refid="structstm32__pin__info_1a14088fe4f20fbf5cbc58ec998cc541ee" prot="public" virt="non-virtual"><scope>stm32_pin_info</scope><name>adc_device</name></member>
+      <member refid="structstm32__pin__info_1a7764f5aed15a126e91d9ed747c4f56a0" prot="public" virt="non-virtual"><scope>stm32_pin_info</scope><name>gpio_bit</name></member>
+      <member refid="structstm32__pin__info_1a8258f118b311f0ee54bfd23382a32f2c" prot="public" virt="non-virtual"><scope>stm32_pin_info</scope><name>gpio_device</name></member>
+      <member refid="structstm32__pin__info_1a3d0447eb7ee7cfdfee36e2fed2f4299b" prot="public" virt="non-virtual"><scope>stm32_pin_info</scope><name>timer_channel</name></member>
+      <member refid="structstm32__pin__info_1a116f06f46ba57f6de19c765465306537" prot="public" virt="non-virtual"><scope>stm32_pin_info</scope><name>timer_device</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

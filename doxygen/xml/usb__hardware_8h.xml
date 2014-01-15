@@ -1,0 +1,520 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="usb__hardware_8h" kind="file">
+    <compoundname>usb_hardware.h</compoundname>
+    <includes refid="rcc_8h" local="yes">rcc.h</includes>
+    <includes refid="usb__type_8h" local="yes">usb_type.h</includes>
+    <includedby refid="usb_8c" local="yes">libmaple/usb/usb.c</includedby>
+    <includedby refid="usb__callbacks_8c" local="yes">libmaple/usb/usb_callbacks.c</includedby>
+    <includedby refid="usb__hardware_8c" local="yes">libmaple/usb/usb_hardware.c</includedby>
+    <incdepgraph>
+      <node id="828">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="829" relation="include">
+        </childnode>
+      </node>
+      <node id="827">
+        <label>libmaple/usb/usb_hardware.h</label>
+        <link refid="usb_hardware.h"/>
+        <childnode refid="828" relation="include">
+        </childnode>
+        <childnode refid="830" relation="include">
+        </childnode>
+      </node>
+      <node id="829">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="830">
+        <label>usb_type.h</label>
+        <link refid="usb__type_8h_source"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="832">
+        <label>libmaple/usb/usb.c</label>
+        <link refid="usb_8c_source"/>
+      </node>
+      <node id="834">
+        <label>libmaple/usb/usb_hardware.c</label>
+        <link refid="usb__hardware_8c"/>
+      </node>
+      <node id="831">
+        <label>libmaple/usb/usb_hardware.h</label>
+        <link refid="usb_hardware.h"/>
+        <childnode refid="832" relation="include">
+        </childnode>
+        <childnode refid="833" relation="include">
+        </childnode>
+        <childnode refid="834" relation="include">
+        </childnode>
+      </node>
+      <node id="833">
+        <label>libmaple/usb/usb_callbacks.c</label>
+        <link refid="usb__callbacks_8c_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_r_c_c___reg_struct" prot="public">RCC_RegStruct</innerclass>
+    <innerclass refid="struct_n_v_i_c___type_def" prot="public">NVIC_TypeDef</innerclass>
+    <innerclass refid="struct_n_v_i_c___init_type_def" prot="public">NVIC_InitTypeDef</innerclass>
+    <innerclass refid="struct_s_c_b___type_def" prot="public">SCB_TypeDef</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="usb__hardware_8h_1aaf93739bb183f177cb1d6d2d4f421481" prot="public" static="no">
+        <name>EXC_RETURN</name>
+        <initializer>0xFFFFFFF9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="32" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__hardware_8h_1a04f5a354b8c018dfd46f4c5de5c79d73" prot="public" static="no">
+        <name>DEFAULT_CPSR</name>
+        <initializer>0x61000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="33" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__hardware_8h_1a844ea28ba1e0a5a0e497f16b61ea306b" prot="public" static="no">
+        <name>FLASH</name>
+        <initializer>((u32)0x40022000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="35" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__hardware_8h_1a00f706f46c4f234c50d570d9d648a7b7" prot="public" static="no">
+        <name>USB_PACKET_BUFFER</name>
+        <initializer>((u32)0x40006000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="37" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__hardware_8h_1a3c14ed93192c8d9143322bbf77ebf770" prot="public" static="no">
+        <name>SCS_BASE</name>
+        <initializer>((u32)0xE000E000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="39" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__hardware_8h_1aa0288691785a5f868238e0468b39523d" prot="public" static="no">
+        <name>NVIC_BASE</name>
+        <initializer>(SCS_BASE + 0x0100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="40" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__hardware_8h_1ad55a7ddb8d4b2398b0c1cfec76c0d9fd" prot="public" static="no">
+        <name>SCB_BASE</name>
+        <initializer>(SCS_BASE + 0x0D00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="41" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__hardware_8h_1a57d06a9e6a8f5abc296f987d4552894c" prot="public" static="no">
+        <name>SCS</name>
+        <initializer>0xE000E000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="43" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__hardware_8h_1ac8e97e8ce56ae9f57da1363a937f8a17" prot="public" static="no">
+        <name>NVIC</name>
+        <initializer>(SCS+0x100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="44" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__hardware_8h_1aaaf6477c2bde2f00f99e3c2fd1060b01" prot="public" static="no">
+        <name>SCB</name>
+        <initializer>(SCS+0xD00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="45" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__hardware_8h_1abbfd9a2b36c64f065ab28c8330bc5010" prot="public" static="no">
+        <name>STK</name>
+        <initializer>(SCS+0x10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="46" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__hardware_8h_1a4b62b78bccb6fe6afabe8f4969f58908" prot="public" static="no">
+        <name>SCB_VTOR</name>
+        <initializer>(SCB+0x08)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="48" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__hardware_8h_1a4cff03f1bbb43e57798d6321e8bb966d" prot="public" static="no">
+        <name>STK_CTRL</name>
+        <initializer>(STK+0x00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="49" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__hardware_8h_1a893ddfa106e68a2c7b4d987dbdedf7d5" prot="public" static="no">
+        <name>USB_HP_IRQ</name>
+        <initializer>((u8)0x13)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="51" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__hardware_8h_1a1a426230c7720c672b3a79752a47a537" prot="public" static="no">
+        <name>USB_LP_IRQ</name>
+        <initializer>((u8)0x14)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="52" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__hardware_8h_1a9e1386fe9300ab147e7eb05e58ca4a66" prot="public" static="no">
+        <name>AIRCR_RESET</name>
+        <initializer>0x05FA0000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="55" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__hardware_8h_1ad4a982002ece9ce0af96e01dc50f66b5" prot="public" static="no">
+        <name>AIRCR_RESET_REQ</name>
+        <initializer>(AIRCR_RESET | (u32)0x04);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="56" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__hardware_8h_1a7bd12f921f17e12dc93370c76488242a" prot="public" static="no">
+        <name>__VAL</name>
+        <param><defname>__TIMCLK</defname></param>
+        <param><defname>__PERIOD</defname></param>
+        <initializer>((__TIMCLK/1000000UL)*__PERIOD)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="59" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__hardware_8h_1a68d3e6122b4b027d7d5b4e7f58e49f10" prot="public" static="no">
+        <name>__PSC</name>
+        <param><defname>__TIMCLK</defname></param>
+        <param><defname>__PERIOD</defname></param>
+        <initializer>(((__VAL(__TIMCLK, __PERIOD)+49999UL)/50000UL) - 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="60" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__hardware_8h_1a7ddf57adddfa63b0cb7e179c93b3f44c" prot="public" static="no">
+        <name>__ARR</name>
+        <param><defname>__TIMCLK</defname></param>
+        <param><defname>__PERIOD</defname></param>
+        <initializer>((__VAL(__TIMCLK, __PERIOD)/(__PSC(__TIMCLK, __PERIOD)+1)) - 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="61" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__hardware_8h_1a43d0ddd43965ae2d072e5fe874077f5f" prot="public" static="no">
+        <name>SET_REG</name>
+        <param><defname>addr</defname></param>
+        <param><defname>val</defname></param>
+        <initializer>do { *(vu32*)(addr)=val; } while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="63" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__hardware_8h_1a03e68fe9bebe935ca7e2dd2c9860aa5b" prot="public" static="no">
+        <name>GET_REG</name>
+        <param><defname>addr</defname></param>
+        <initializer>do { *(vu32*)(addr); } while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="64" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__hardware_8h_1a6c4015fbc940191913a66a9bb5104604" prot="public" static="no">
+        <name>pRCC</name>
+        <initializer>((<ref refid="struct_r_c_c___reg_struct" kindref="compound">RCC_RegStruct</ref> *) <ref refid="rcc_8h_1a0e681b03f364532055d88f63fec0d99d" kindref="member">RCC_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="86" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="usb__hardware_8h_1a76855055e98c77cab30f0ceb1045de7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void systemHardReset</definition>
+        <argsstring>(void)</argsstring>
+        <name>systemHardReset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="127" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.c" bodystart="85" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="usb__hardware_8h_1a9f26737993754ba721d8964b4a5758d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvicInit</definition>
+        <argsstring>(NVIC_InitTypeDef *)</argsstring>
+        <name>nvicInit</name>
+        <param>
+          <type><ref refid="struct_n_v_i_c___init_type_def" kindref="compound">NVIC_InitTypeDef</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="129" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.c" bodystart="36" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="usb__hardware_8h_1a0175f95597e2977af9a70f5e58f030fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvicDisableInterrupts</definition>
+        <argsstring>(void)</argsstring>
+        <name>nvicDisableInterrupts</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="130" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.c" bodystart="74" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>*****************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>LeafLabs<sp/>LLC.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rcc_8h" kindref="compound" tooltip="reset and clock control definitions and prototypes">rcc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;usb_type.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_USB_HARDWARE_H_</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_USB_HARDWARE_H_</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>macro&apos;d<sp/>register<sp/>and<sp/>peripheral<sp/>definitions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EXC_RETURN<sp/>0xFFFFFFF9</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DEFAULT_CPSR<sp/>0x61000000</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH<sp/>((u32)0x40022000)</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USB_PACKET_BUFFER<sp/>((u32)0x40006000)</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCS_BASE<sp/><sp/><sp/>((u32)0xE000E000)</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>NVIC_BASE<sp/><sp/>(SCS_BASE<sp/>+<sp/>0x0100)</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SCB_BASE<sp/><sp/><sp/>(SCS_BASE<sp/>+<sp/>0x0D00)</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCS<sp/><sp/><sp/><sp/><sp/><sp/>0xE000E000</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>NVIC<sp/><sp/><sp/><sp/><sp/>(SCS+0x100)</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SCB<sp/><sp/><sp/><sp/><sp/><sp/>(SCS+0xD00)</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STK<sp/><sp/><sp/><sp/><sp/><sp/>(SCS+0x10)</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCB_VTOR<sp/>(SCB+0x08)</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STK_CTRL<sp/>(STK+0x00)</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USB_HP_IRQ<sp/><sp/>((u8)0x13)</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_LP_IRQ<sp/><sp/>((u8)0x14)</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>AIRCR<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AIRCR_RESET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x05FA0000</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>AIRCR_RESET_REQ<sp/><sp/><sp/><sp/><sp/>(AIRCR_RESET<sp/>|<sp/>(u32)0x04);</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>temporary<sp/>copyage<sp/>of<sp/>example<sp/>from<sp/>kiel<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__VAL(__TIMCLK,<sp/>__PERIOD)<sp/>((__TIMCLK/1000000UL)*__PERIOD)</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__PSC(__TIMCLK,<sp/>__PERIOD)<sp/><sp/>(((__VAL(__TIMCLK,<sp/>__PERIOD)+49999UL)/50000UL)<sp/>-<sp/>1)</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__ARR(__TIMCLK,<sp/>__PERIOD)<sp/>((__VAL(__TIMCLK,<sp/>__PERIOD)/(__PSC(__TIMCLK,<sp/>__PERIOD)+1))<sp/>-<sp/>1)</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SET_REG(addr,val)<sp/><sp/>do<sp/>{<sp/>*(vu32*)(addr)=val;<sp/>}<sp/>while<sp/>(0)</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GET_REG(addr)<sp/><sp/><sp/><sp/><sp/><sp/>do<sp/>{<sp/>*(vu32*)(addr);<sp/>}<sp/>while<sp/>(0)</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__cplusplus)</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>todo:<sp/>there<sp/>must<sp/>be<sp/>some<sp/>major<sp/>misunderstanding<sp/>in<sp/>how<sp/>we<sp/>access<sp/>regs.<sp/>The<sp/>direct<sp/>access<sp/>approach<sp/>(GET_REG)</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/><sp/><sp/>causes<sp/>the<sp/>usb<sp/>init<sp/>to<sp/>fail<sp/>upon<sp/>trying<sp/>to<sp/>activate<sp/>RCC_APB1<sp/>|=<sp/>0x00800000.<sp/>However,<sp/>using<sp/>the<sp/>struct<sp/>approach</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/><sp/><sp/>from<sp/>ST,<sp/>it<sp/>works<sp/>fine...temporarily<sp/>switching<sp/>to<sp/>that<sp/>approach<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="struct_r_c_c___reg_struct" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>vu32<sp/>CR;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>vu32<sp/>CFGR;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>vu32<sp/>CIR;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>vu32<sp/>APB2RSTR;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>vu32<sp/>APB1RSTR;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>vu32<sp/>AHBENR;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>vu32<sp/>APB2ENR;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>vu32<sp/>APB1ENR;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>vu32<sp/>BDCR;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>vu32<sp/>CSR;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}<sp/><ref refid="struct_r_c_c___reg_struct" kindref="compound">RCC_RegStruct</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pRCC<sp/>((RCC_RegStruct<sp/>*)<sp/>RCC_BASE)</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="struct_n_v_i_c___type_def" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>vu32<sp/>ISER[2];</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>u32<sp/><sp/>RESERVED0[30];</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>vu32<sp/>ICER[2];</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>u32<sp/><sp/>RSERVED1[30];</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>vu32<sp/>ISPR[2];</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>u32<sp/><sp/>RESERVED2[30];</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>vu32<sp/>ICPR[2];</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>u32<sp/><sp/>RESERVED3[30];</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>vu32<sp/>IABR[2];</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>u32<sp/><sp/>RESERVED4[62];</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>vu32<sp/>IPR[15];</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}<sp/><ref refid="struct_n_v_i_c___type_def" kindref="compound">NVIC_TypeDef</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="struct_n_v_i_c___init_type_def" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>u8<sp/>NVIC_IRQChannel;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>u8<sp/>NVIC_IRQChannelPreemptionPriority;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>u8<sp/>NVIC_IRQChannelSubPriority;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>USB_Bool<sp/>NVIC_IRQChannelCmd;<sp/></highlight><highlight class="comment">/*<sp/>TRUE<sp/>for<sp/>enable<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}<sp/><ref refid="struct_n_v_i_c___init_type_def" kindref="compound">NVIC_InitTypeDef</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="struct_s_c_b___type_def" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>vuc32<sp/>CPUID;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>vu32<sp/>ICSR;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>vu32<sp/>VTOR;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>vu32<sp/>AIRCR;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>vu32<sp/>SCR;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>vu32<sp/>CCR;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>vu32<sp/>SHPR[3];</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>vu32<sp/>SHCSR;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>vu32<sp/>CFSR;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>vu32<sp/>HFSR;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>vu32<sp/>DFSR;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>vu32<sp/>MMFAR;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>vu32<sp/>BFAR;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>vu32<sp/>AFSR;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}<sp/><ref refid="struct_s_c_b___type_def" kindref="compound">SCB_TypeDef</ref>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>systemHardReset(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>nvicInit<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="struct_n_v_i_c___init_type_def" kindref="compound">NVIC_InitTypeDef</ref>*);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>nvicDisableInterrupts(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__cplusplus)</highlight></codeline>
+<codeline lineno="133"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="135"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h"/>
+  </compounddef>
+</doxygen>

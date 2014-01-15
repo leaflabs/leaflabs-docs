@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="x_task_handle" kind="page">
+    <compoundname>xTaskHandle</compoundname>
+    <title>xTaskHandle</title>
+    <detaileddescription>
+<para>task.</para><para>h</para><para>Type by which tasks are referenced. For example, a call to xTaskCreate returns (via a pointer parameter) an xTaskHandle variable that can then be used as a parameter to vTaskDelete to delete the task. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

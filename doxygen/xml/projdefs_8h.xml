@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="projdefs_8h" kind="file">
+    <compoundname>projdefs.h</compoundname>
+    <includedby refid="_free_r_t_o_s_8h" local="yes">libraries/FreeRTOS/utility/FreeRTOS.h</includedby>
+    <invincdepgraph>
+      <node id="1268">
+        <label>libraries/FreeRTOS/utility/FreeRTOS.h</label>
+        <link refid="_free_r_t_o_s_8h_source"/>
+        <childnode refid="1269" relation="include">
+        </childnode>
+        <childnode refid="1270" relation="include">
+        </childnode>
+        <childnode refid="1271" relation="include">
+        </childnode>
+        <childnode refid="1272" relation="include">
+        </childnode>
+        <childnode refid="1273" relation="include">
+        </childnode>
+        <childnode refid="1274" relation="include">
+        </childnode>
+        <childnode refid="1275" relation="include">
+        </childnode>
+        <childnode refid="1276" relation="include">
+        </childnode>
+      </node>
+      <node id="1275">
+        <label>libraries/FreeRTOS/utility/tasks.c</label>
+        <link refid="tasks_8c_source"/>
+      </node>
+      <node id="1274">
+        <label>libraries/FreeRTOS/utility/queue.c</label>
+        <link refid="queue_8c_source"/>
+      </node>
+      <node id="1267">
+        <label>libraries/FreeRTOS/utility/projdefs.h</label>
+        <link refid="projdefs.h"/>
+        <childnode refid="1268" relation="include">
+        </childnode>
+      </node>
+      <node id="1271">
+        <label>libraries/FreeRTOS/utility/heap_2.c</label>
+        <link refid="heap__2_8c_source"/>
+      </node>
+      <node id="1273">
+        <label>libraries/FreeRTOS/utility/port.c</label>
+        <link refid="port_8c_source"/>
+      </node>
+      <node id="1270">
+        <label>libraries/FreeRTOS/utility/croutine.c</label>
+        <link refid="croutine_8c_source"/>
+      </node>
+      <node id="1272">
+        <label>libraries/FreeRTOS/utility/list.c</label>
+        <link refid="list_8c_source"/>
+      </node>
+      <node id="1269">
+        <label>libraries/FreeRTOS/MapleFreeRTOS.h</label>
+        <link refid="_maple_free_r_t_o_s_8h_source"/>
+      </node>
+      <node id="1276">
+        <label>libraries/FreeRTOS/utility/timers.c</label>
+        <link refid="timers_8c_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="projdefs_8h_1af268cf937960eb029256bd9c4d949fbe" prot="public" static="no">
+        <name>pdTRUE</name>
+        <initializer>( 1 )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/projdefs.h" line="66" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/projdefs.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="projdefs_8h_1aa56260e937e7e203026707e5ba944273" prot="public" static="no">
+        <name>pdFALSE</name>
+        <initializer>( 0 )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/projdefs.h" line="67" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/projdefs.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="projdefs_8h_1a07848d3078849bd32353c69d30a479b3" prot="public" static="no">
+        <name>pdPASS</name>
+        <initializer>( 1 )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/projdefs.h" line="69" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/projdefs.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="projdefs_8h_1a99e2866c8cf4fe86db87dab62e7d6aa6" prot="public" static="no">
+        <name>pdFAIL</name>
+        <initializer>( 0 )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/projdefs.h" line="70" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/projdefs.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="projdefs_8h_1a4d79b09954b1efa73ad8d87a36b4a575" prot="public" static="no">
+        <name>errQUEUE_EMPTY</name>
+        <initializer>( 0 )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/projdefs.h" line="71" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/projdefs.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="projdefs_8h_1ae40de11e4044a83a97d2cb5d00ce608b" prot="public" static="no">
+        <name>errQUEUE_FULL</name>
+        <initializer>( 0 )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/projdefs.h" line="72" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/projdefs.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="projdefs_8h_1a0b024e12cbca6f5018f5f1a43818b03d" prot="public" static="no">
+        <name>errCOULD_NOT_ALLOCATE_REQUIRED_MEMORY</name>
+        <initializer>( -1 )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/projdefs.h" line="75" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/projdefs.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="projdefs_8h_1af942122d82ca4635e30fded198307fd3" prot="public" static="no">
+        <name>errNO_TASK_TO_RUN</name>
+        <initializer>( -2 )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/projdefs.h" line="76" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/projdefs.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="projdefs_8h_1a4a7ca54ee5527cd7a14830956e05ea55" prot="public" static="no">
+        <name>errQUEUE_BLOCKED</name>
+        <initializer>( -4 )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/projdefs.h" line="77" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/projdefs.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="projdefs_8h_1a3b2e2afaa2851576dfc2779a7fea59b4" prot="public" static="no">
+        <name>errQUEUE_YIELD</name>
+        <initializer>( -5 )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/projdefs.h" line="78" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/projdefs.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="projdefs_8h_1ae74d12a2f9cb1fcae89532830b5413ac" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* pdTASK_CODE)(void *)</definition>
+        <argsstring>)(void *)</argsstring>
+        <name>pdTASK_CODE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/projdefs.h" line="64" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/projdefs.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>V7.0.1<sp/>-<sp/>Copyright<sp/>(C)<sp/>2011<sp/>Real<sp/>Time<sp/>Engineers<sp/>Ltd.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>supports<sp/>many<sp/>tools<sp/>and<sp/>architectures.<sp/>V7.0.0<sp/>is<sp/>sponsored<sp/>by:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>Atollic<sp/>AB<sp/>-<sp/>Atollic<sp/>provides<sp/>professional<sp/>embedded<sp/>systems<sp/>development<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>tools<sp/>for<sp/>C/C++<sp/>development,<sp/>code<sp/>analysis<sp/>and<sp/>test<sp/>automation.<sp/><sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>See<sp/>http://www.atollic.com</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>***************************************************************************</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>FreeRTOS<sp/>tutorial<sp/>books<sp/>are<sp/>available<sp/>in<sp/>pdf<sp/>and<sp/>paperback.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>Complete,<sp/>revised,<sp/>and<sp/>edited<sp/>pdf<sp/>reference<sp/>manuals<sp/>are<sp/>also<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>available.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>Purchasing<sp/>FreeRTOS<sp/>documentation<sp/>will<sp/>not<sp/>only<sp/>help<sp/>you,<sp/>by<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>ensuring<sp/>you<sp/>get<sp/>running<sp/>as<sp/>quickly<sp/>as<sp/>possible<sp/>and<sp/>with<sp/>an<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>in-depth<sp/>knowledge<sp/>of<sp/>how<sp/>to<sp/>use<sp/>FreeRTOS,<sp/>it<sp/>will<sp/>also<sp/>help<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>the<sp/>FreeRTOS<sp/>project<sp/>to<sp/>continue<sp/>with<sp/>its<sp/>mission<sp/>of<sp/>providing<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>professional<sp/>grade,<sp/>cross<sp/>platform,<sp/>de<sp/>facto<sp/>standard<sp/>solutions<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>for<sp/>microcontrollers<sp/>-<sp/>completely<sp/>free<sp/>of<sp/>charge!<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>&gt;&gt;&gt;<sp/>See<sp/>http://www.FreeRTOS.org/Documentation<sp/>for<sp/>details.<sp/>&lt;&lt;&lt;<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>Thank<sp/>you<sp/>for<sp/>using<sp/>FreeRTOS,<sp/>and<sp/>thank<sp/>you<sp/>for<sp/>your<sp/>support!<sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/>***************************************************************************</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"></highlight></codeline>
+<codeline lineno="30"><highlight class="comment"></highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>FreeRTOS<sp/>distribution.</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"></highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it<sp/>under</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>(version<sp/>2)<sp/>as<sp/>published<sp/>by<sp/>the</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/>Free<sp/>Software<sp/>Foundation<sp/>AND<sp/>MODIFIED<sp/>BY<sp/>the<sp/>FreeRTOS<sp/>exception.</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/>&gt;&gt;&gt;NOTE&lt;&lt;&lt;<sp/>The<sp/>modification<sp/>to<sp/>the<sp/>GPL<sp/>is<sp/>included<sp/>to<sp/>allow<sp/>you<sp/>to</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/>distribute<sp/>a<sp/>combined<sp/>work<sp/>that<sp/>includes<sp/>FreeRTOS<sp/>without<sp/>being<sp/>obliged<sp/>to</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/>provide<sp/>the<sp/>source<sp/>code<sp/>for<sp/>proprietary<sp/>components<sp/>outside<sp/>of<sp/>the<sp/>FreeRTOS</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/>kernel.<sp/><sp/>FreeRTOS<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/>MERCHANTABILITY</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/><sp/><sp/>more<sp/>details.<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/><sp/>License<sp/>and<sp/>the<sp/>FreeRTOS<sp/>license<sp/>exception<sp/>along<sp/>with<sp/>FreeRTOS;<sp/>if<sp/>not<sp/>it</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/><sp/><sp/>can<sp/>be<sp/>viewed<sp/>here:<sp/>http://www.freertos.org/a00114.html<sp/>and<sp/>also<sp/>obtained</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/><sp/><sp/>by<sp/>writing<sp/>to<sp/>Richard<sp/>Barry,<sp/>contact<sp/>details<sp/>for<sp/>whom<sp/>are<sp/>available<sp/>on<sp/>the</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>WEB<sp/>site.</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"></highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/><sp/><sp/>1<sp/>tab<sp/>==<sp/>4<sp/>spaces!</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"></highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.FreeRTOS.org<sp/>-<sp/>Documentation,<sp/>latest<sp/>information,<sp/>license<sp/>and</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/>contact<sp/>details.</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"></highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.SafeRTOS.com<sp/>-<sp/>A<sp/>version<sp/>that<sp/>is<sp/>certified<sp/>for<sp/>use<sp/>in<sp/>safety</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/><sp/><sp/><sp/>critical<sp/>systems.</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"></highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.OpenRTOS.com<sp/>-<sp/>Commercial<sp/>support,<sp/>development,<sp/>porting,</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/><sp/><sp/>licensing<sp/>and<sp/>training<sp/>services.</highlight></codeline>
+<codeline lineno="58"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PROJDEFS_H</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PROJDEFS_H</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Defines<sp/>the<sp/>prototype<sp/>to<sp/>which<sp/>task<sp/>functions<sp/>must<sp/>conform.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*pdTASK_CODE)(<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pdTRUE<sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>1<sp/>)</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>pdFALSE<sp/><sp/><sp/><sp/><sp/>(<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pdPASS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>1<sp/>)</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>pdFAIL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>errQUEUE_EMPTY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>errQUEUE_FULL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Error<sp/>definitions.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>errCOULD_NOT_ALLOCATE_REQUIRED_MEMORY<sp/><sp/><sp/>(<sp/>-1<sp/>)</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>errNO_TASK_TO_RUN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>-2<sp/>)</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>errQUEUE_BLOCKED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>-4<sp/>)</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>errQUEUE_YIELD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>-5<sp/>)</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>PROJDEFS_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/projdefs.h"/>
+  </compounddef>
+</doxygen>

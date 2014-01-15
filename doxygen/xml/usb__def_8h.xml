@@ -1,0 +1,481 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="usb__def_8h" kind="file">
+    <compoundname>usb_def.h</compoundname>
+    <includedby refid="usb__lib_8h" local="yes">libmaple/usb/usb_lib/usb_lib.h</includedby>
+    <invincdepgraph>
+      <node id="867">
+        <label>libmaple/usb/usb.c</label>
+        <link refid="usb_8c_source"/>
+      </node>
+      <node id="869">
+        <label>libmaple/usb/usb.h</label>
+        <link refid="usb_8h_source"/>
+        <childnode refid="867" relation="include">
+        </childnode>
+        <childnode refid="865" relation="include">
+        </childnode>
+      </node>
+      <node id="873">
+        <label>libmaple/usb/usb_lib/usb_mem.c</label>
+        <link refid="usb__mem_8c_source"/>
+      </node>
+      <node id="872">
+        <label>libmaple/usb/usb_lib/usb_int.c</label>
+        <link refid="usb__int_8c_source"/>
+      </node>
+      <node id="862">
+        <label>libmaple/usb/usb_lib/usb_lib.h</label>
+        <link refid="usb__lib_8h_source"/>
+        <childnode refid="863" relation="include">
+        </childnode>
+        <childnode refid="866" relation="include">
+        </childnode>
+        <childnode refid="869" relation="include">
+        </childnode>
+        <childnode refid="867" relation="include">
+        </childnode>
+        <childnode refid="868" relation="include">
+        </childnode>
+        <childnode refid="865" relation="include">
+        </childnode>
+        <childnode refid="870" relation="include">
+        </childnode>
+        <childnode refid="871" relation="include">
+        </childnode>
+        <childnode refid="872" relation="include">
+        </childnode>
+        <childnode refid="873" relation="include">
+        </childnode>
+        <childnode refid="874" relation="include">
+        </childnode>
+      </node>
+      <node id="866">
+        <label>libmaple/usb/usb_config.h</label>
+        <link refid="usb__config_8h_source"/>
+        <childnode refid="864" relation="include">
+        </childnode>
+        <childnode refid="867" relation="include">
+        </childnode>
+        <childnode refid="868" relation="include">
+        </childnode>
+        <childnode refid="865" relation="include">
+        </childnode>
+      </node>
+      <node id="871">
+        <label>libmaple/usb/usb_lib/usb_init.c</label>
+        <link refid="usb__init_8c_source"/>
+      </node>
+      <node id="861">
+        <label>libmaple/usb/usb_lib/usb_def.h</label>
+        <link refid="usb_def.h"/>
+        <childnode refid="862" relation="include">
+        </childnode>
+      </node>
+      <node id="870">
+        <label>libmaple/usb/usb_lib/usb_core.c</label>
+        <link refid="usb__core_8c_source"/>
+      </node>
+      <node id="874">
+        <label>libmaple/usb/usb_lib/usb_regs.c</label>
+        <link refid="usb__regs_8c_source"/>
+      </node>
+      <node id="864">
+        <label>libmaple/usb/descriptors.c</label>
+        <link refid="descriptors_8c_source"/>
+      </node>
+      <node id="863">
+        <label>libmaple/usb/descriptors.h</label>
+        <link refid="descriptors_8h_source"/>
+        <childnode refid="864" relation="include">
+        </childnode>
+        <childnode refid="865" relation="include">
+        </childnode>
+      </node>
+      <node id="865">
+        <label>libmaple/usb/usb_callbacks.c</label>
+        <link refid="usb__callbacks_8c_source"/>
+      </node>
+      <node id="868">
+        <label>libmaple/usb/usb_callbacks.h</label>
+        <link refid="usb__callbacks_8h_source"/>
+        <childnode refid="867" relation="include">
+        </childnode>
+        <childnode refid="865" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="usb__def_8h_1a77263d461d2c46ff6fbd2a5b7080e2a8" prot="public" static="no">
+        <name>REQUEST_TYPE</name>
+        <initializer>0x60  /* Mask to get request type */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_def.h" line="72" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_def.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__def_8h_1abfd76e9094fb9eeba0e2c4b833c786ee" prot="public" static="no">
+        <name>STANDARD_REQUEST</name>
+        <initializer>0x00  /* Standard request */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_def.h" line="73" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_def.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__def_8h_1ad632ac26e194060105368812efefdcc9" prot="public" static="no">
+        <name>CLASS_REQUEST</name>
+        <initializer>0x20  /* Class request */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_def.h" line="74" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_def.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__def_8h_1ab0875fa924861c6dabbe1df6ca6ca24c" prot="public" static="no">
+        <name>VENDOR_REQUEST</name>
+        <initializer>0x40  /* Vendor request */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_def.h" line="75" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_def.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__def_8h_1a004d7ea2b6cb5b39b4867ce520e75a0a" prot="public" static="no">
+        <name>RECIPIENT</name>
+        <initializer>0x1F  /* Mask to get recipient */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_def.h" line="77" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_def.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="usb__def_8h_1aa2aaf7bf8170327154785b983b5640c8" prot="public" static="no">
+        <name>RECIPIENT_TYPE</name>
+        <enumvalue id="usb__def_8h_1aa2aaf7bf8170327154785b983b5640c8aa303d0293cdb367f0cb3a1b26092b630" prot="public">
+          <name>DEVICE_RECIPIENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb__def_8h_1aa2aaf7bf8170327154785b983b5640c8a52cd1cb1db3903653f54211d12b69ab8" prot="public">
+          <name>INTERFACE_RECIPIENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb__def_8h_1aa2aaf7bf8170327154785b983b5640c8ab5007d8261db7e8fd2b840465241e494" prot="public">
+          <name>ENDPOINT_RECIPIENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb__def_8h_1aa2aaf7bf8170327154785b983b5640c8a4fdb5e02f6f6d75db7a603ccd2b772bd" prot="public">
+          <name>OTHER_RECIPIENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_def.h" line="27" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_def.h" bodystart="26" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="enum" id="usb__def_8h_1af1b14fa24e39e07f51c24c88c1341dd0" prot="public" static="no">
+        <name>STANDARD_REQUESTS</name>
+        <enumvalue id="usb__def_8h_1af1b14fa24e39e07f51c24c88c1341dd0ae03c702769ae2009942c89ec72cf2852" prot="public">
+          <name>GET_STATUS</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb__def_8h_1af1b14fa24e39e07f51c24c88c1341dd0a053320670633ec996cfbc45327ae1622" prot="public">
+          <name>CLEAR_FEATURE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb__def_8h_1af1b14fa24e39e07f51c24c88c1341dd0a3401f88113645c341c269d49d044a020" prot="public">
+          <name>RESERVED1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb__def_8h_1af1b14fa24e39e07f51c24c88c1341dd0a0b993b46c953347b36ceb0f7f3631f96" prot="public">
+          <name>SET_FEATURE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb__def_8h_1af1b14fa24e39e07f51c24c88c1341dd0a41ae559bcd93bd57005b00f3b8cf4d3d" prot="public">
+          <name>RESERVED2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb__def_8h_1af1b14fa24e39e07f51c24c88c1341dd0a4db0b0c3e46f65ee98e282974369e9ea" prot="public">
+          <name>SET_ADDRESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb__def_8h_1af1b14fa24e39e07f51c24c88c1341dd0a6695f5a50d282a945f4f1bb5e85e8dd1" prot="public">
+          <name>GET_DESCRIPTOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb__def_8h_1af1b14fa24e39e07f51c24c88c1341dd0a035ed6e745be60c13df29a77b7b7be04" prot="public">
+          <name>SET_DESCRIPTOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb__def_8h_1af1b14fa24e39e07f51c24c88c1341dd0a92a3c4900f2065ad5f938db07891cce5" prot="public">
+          <name>GET_CONFIGURATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb__def_8h_1af1b14fa24e39e07f51c24c88c1341dd0a18ae5638eb68ff59811e52dfeea1db89" prot="public">
+          <name>SET_CONFIGURATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb__def_8h_1af1b14fa24e39e07f51c24c88c1341dd0a41dadc500e4e0a4e795d2dc5ae40d4dc" prot="public">
+          <name>GET_INTERFACE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb__def_8h_1af1b14fa24e39e07f51c24c88c1341dd0a04e1a84d5ce129e25790abe98d448599" prot="public">
+          <name>SET_INTERFACE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb__def_8h_1af1b14fa24e39e07f51c24c88c1341dd0a776ca7cf295c4cae24b496c8cdf42412" prot="public">
+          <name>TOTAL_sREQUEST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb__def_8h_1af1b14fa24e39e07f51c24c88c1341dd0a199aa52f0817427f0a4dada87aed84ec" prot="public">
+          <name>SYNCH_FRAME</name>
+          <initializer> 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_def.h" line="36" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_def.h" bodystart="35" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="enum" id="usb__def_8h_1ad98d932bbd968ab320e6445e9c1ad3a2" prot="public" static="no">
+        <name>DESCRIPTOR_TYPE</name>
+        <enumvalue id="usb__def_8h_1ad98d932bbd968ab320e6445e9c1ad3a2a945d0b7c0473fa3150e843f8ddb14b32" prot="public">
+          <name>DEVICE_DESCRIPTOR</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb__def_8h_1ad98d932bbd968ab320e6445e9c1ad3a2a9078328bc7f57bb6f1aacd99d537d74b" prot="public">
+          <name>CONFIG_DESCRIPTOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb__def_8h_1ad98d932bbd968ab320e6445e9c1ad3a2ab317ab53e04ca152465741a478f21e4f" prot="public">
+          <name>STRING_DESCRIPTOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb__def_8h_1ad98d932bbd968ab320e6445e9c1ad3a2a0e056406c57139be822f8120abe0cef3" prot="public">
+          <name>INTERFACE_DESCRIPTOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb__def_8h_1ad98d932bbd968ab320e6445e9c1ad3a2ae5d7c73a88607779b5841927eced3da2" prot="public">
+          <name>ENDPOINT_DESCRIPTOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_def.h" line="55" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_def.h" bodystart="54" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="enum" id="usb__def_8h_1a51e04f0d8c4cbd1bc2de184d3de582a6" prot="public" static="no">
+        <name>FEATURE_SELECTOR</name>
+        <enumvalue id="usb__def_8h_1a51e04f0d8c4cbd1bc2de184d3de582a6a2e88b06c05f091bd82f74f4805ea3a16" prot="public">
+          <name>ENDPOINT_STALL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="usb__def_8h_1a51e04f0d8c4cbd1bc2de184d3de582a6a16182205b24ef2a773482add6948ad4d" prot="public">
+          <name>DEVICE_REMOTE_WAKEUP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_def.h" line="65" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_def.h" bodystart="64" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/********************<sp/>(C)<sp/>COPYRIGHT<sp/>2008<sp/>STMicroelectronics<sp/>********************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*<sp/>File<sp/>Name<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>usb_def.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/>Author<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>MCD<sp/>Application<sp/>Team</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*<sp/>Version<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>V2.2.1</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/>Date<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>09/22/2008</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/>Description<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Definitions<sp/>related<sp/>to<sp/>USB<sp/>Core</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/>THE<sp/>PRESENT<sp/>FIRMWARE<sp/>WHICH<sp/>IS<sp/>FOR<sp/>GUIDANCE<sp/>ONLY<sp/>AIMS<sp/>AT<sp/>PROVIDING<sp/>CUSTOMERS</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*<sp/>WITH<sp/>CODING<sp/>INFORMATION<sp/>REGARDING<sp/>THEIR<sp/>PRODUCTS<sp/>IN<sp/>ORDER<sp/>FOR<sp/>THEM<sp/>TO<sp/>SAVE<sp/>TIME.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/>AS<sp/>A<sp/>RESULT,<sp/>STMICROELECTRONICS<sp/>SHALL<sp/>NOT<sp/>BE<sp/>HELD<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/>INDIRECT<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>WITH<sp/>RESPECT<sp/>TO<sp/>ANY<sp/>CLAIMS<sp/>ARISING<sp/>FROM<sp/>THE</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/>CONTENT<sp/>OF<sp/>SUCH<sp/>FIRMWARE<sp/>AND/OR<sp/>THE<sp/>USE<sp/>MADE<sp/>BY<sp/>CUSTOMERS<sp/>OF<sp/>THE<sp/>CODING</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/>INFORMATION<sp/>CONTAINED<sp/>HEREIN<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THEIR<sp/>PRODUCTS.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>prevent<sp/>recursive<sp/>inclusion<sp/>-------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__USB_DEF_H</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__USB_DEF_H</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__cplusplus)</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>types<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>_RECIPIENT_TYPE</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>DEVICE_RECIPIENT,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Recipient<sp/>device<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>INTERFACE_RECIPIENT,<sp/><sp/></highlight><highlight class="comment">/*<sp/>Recipient<sp/>interface<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>ENDPOINT_RECIPIENT,<sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Recipient<sp/>endpoint<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>OTHER_RECIPIENT</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}<sp/>RECIPIENT_TYPE;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>_STANDARD_REQUESTS</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>GET_STATUS<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>CLEAR_FEATURE,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>RESERVED1,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>SET_FEATURE,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>RESERVED2,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>SET_ADDRESS,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>GET_DESCRIPTOR,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>SET_DESCRIPTOR,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>GET_CONFIGURATION,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>SET_CONFIGURATION,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>GET_INTERFACE,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>SET_INTERFACE,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>TOTAL_sREQUEST,<sp/><sp/></highlight><highlight class="comment">/*<sp/>Total<sp/>number<sp/>of<sp/>Standard<sp/>request<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>SYNCH_FRAME<sp/>=<sp/>12</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}<sp/>STANDARD_REQUESTS;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Definition<sp/>of<sp/>&quot;USBwValue&quot;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>_DESCRIPTOR_TYPE</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>DEVICE_DESCRIPTOR<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>CONFIG_DESCRIPTOR,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>STRING_DESCRIPTOR,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>INTERFACE_DESCRIPTOR,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>ENDPOINT_DESCRIPTOR</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}<sp/>DESCRIPTOR_TYPE;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Feature<sp/>selector<sp/>of<sp/>a<sp/>SET_FEATURE<sp/>or<sp/>CLEAR_FEATURE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>_FEATURE_SELECTOR</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>ENDPOINT_STALL,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>DEVICE_REMOTE_WAKEUP</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}<sp/>FEATURE_SELECTOR;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>constants<sp/>--------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Definition<sp/>of<sp/>&quot;USBbmRequestType&quot;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>REQUEST_TYPE<sp/><sp/><sp/><sp/><sp/><sp/>0x60<sp/><sp/></highlight><highlight class="comment">/*<sp/>Mask<sp/>to<sp/>get<sp/>request<sp/>type<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STANDARD_REQUEST<sp/><sp/>0x00<sp/><sp/></highlight><highlight class="comment">/*<sp/>Standard<sp/>request<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLASS_REQUEST<sp/><sp/><sp/><sp/><sp/>0x20<sp/><sp/></highlight><highlight class="comment">/*<sp/>Class<sp/>request<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VENDOR_REQUEST<sp/><sp/><sp/><sp/>0x40<sp/><sp/></highlight><highlight class="comment">/*<sp/>Vendor<sp/>request<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RECIPIENT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1F<sp/><sp/></highlight><highlight class="comment">/*<sp/>Mask<sp/>to<sp/>get<sp/>recipient<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>macro<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>functions<sp/>-------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__cplusplus)</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__USB_DEF_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">/*******************<sp/>(C)<sp/>COPYRIGHT<sp/>2008<sp/>STMicroelectronics<sp/>*****END<sp/>OF<sp/>FILE****/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_def.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__v_task_delete" kind="group">
+    <compoundname>vTaskDelete</compoundname>
+    <title>vTaskDelete</title>
+    <briefdescription>
+<para>task. </para>    </briefdescription>
+    <detaileddescription>
+<para>h <preformatted>void vTaskDelete( xTaskHandle pxTask );</preformatted></para><para>INCLUDE_vTaskDelete must be defined as 1 for this function to be available. See the configuration section for more information.</para><para>Remove a task from the RTOS real time kernels management. The task being deleted will be removed from all ready, blocked, suspended and event lists.</para><para>NOTE: The idle task is responsible for freeing the kernel allocated memory from tasks that have been deleted. It is therefore important that the idle task is not starved of microcontroller processing time if your application makes any calls to vTaskDelete (). Memory allocated by the task code is not automatically freed, and should be freed before the task is deleted.</para><para>See the demo application file death.c for sample code that utilises vTaskDelete ().</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pxTask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle of the task to be deleted. Passing NULL will cause the calling task to be deleted.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Example usage: <preformatted>
+ void vOtherFunction( void )
+ {
+ xTaskHandle xHandle;</preformatted></para><para><preformatted>Create the task, storing the handle.
+	 xTaskCreate( vTaskCode, &quot;NAME&quot;, STACK_SIZE, NULL, tskIDLE_PRIORITY, &amp;xHandle );</preformatted></para><para><preformatted>Use the handle to delete the task.
+	 vTaskDelete( xHandle );
+ }
+   </preformatted> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

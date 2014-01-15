@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structpwr__reg__map" kind="struct" prot="public">
+    <compoundname>pwr_reg_map</compoundname>
+    <includes refid="pwr_8h" local="no">pwr.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpwr__reg__map_1aefa40a41984b8765e14dcfda7bad6dba" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 pwr_reg_map::CR</definition>
+        <argsstring></argsstring>
+        <name>CR</name>
+        <briefdescription>
+<para>Control register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" line="40" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpwr__reg__map_1a49753d0516064cc005edebe6045b3741" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 pwr_reg_map::CSR</definition>
+        <argsstring></argsstring>
+        <name>CSR</name>
+        <briefdescription>
+<para>Control and status register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" line="41" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Power interface register map. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" line="39" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" bodystart="39" bodyend="42"/>
+    <listofallmembers>
+      <member refid="structpwr__reg__map_1aefa40a41984b8765e14dcfda7bad6dba" prot="public" virt="non-virtual"><scope>pwr_reg_map</scope><name>CR</name></member>
+      <member refid="structpwr__reg__map_1a49753d0516064cc005edebe6045b3741" prot="public" virt="non-virtual"><scope>pwr_reg_map</scope><name>CSR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,828 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="class_liquid_crystal" kind="class" prot="public">
+    <compoundname>LiquidCrystal</compoundname>
+    <basecompoundref refid="class_print" prot="public" virt="non-virtual">Print</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_liquid_crystal_1a0a0a6268051a0b4013a654232ca61e1c" prot="private" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 LiquidCrystal::_rs_pin</definition>
+        <argsstring></argsstring>
+        <name>_rs_pin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="91" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_liquid_crystal_1ac9724cb90b39cdbe76cbcc1bb5fda7cc" prot="private" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 LiquidCrystal::_rw_pin</definition>
+        <argsstring></argsstring>
+        <name>_rw_pin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="92" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_liquid_crystal_1a98e3573a069628f12f21461e2709e739" prot="private" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 LiquidCrystal::_enable_pin</definition>
+        <argsstring></argsstring>
+        <name>_enable_pin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="93" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_liquid_crystal_1a0308577feb409cf45369e03d1e8772cf" prot="private" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 LiquidCrystal::_data_pins[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>_data_pins</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="94" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_liquid_crystal_1a396f23cb758f778c696aa5332ceef055" prot="private" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 LiquidCrystal::_displayfunction</definition>
+        <argsstring></argsstring>
+        <name>_displayfunction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="96" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_liquid_crystal_1a5a1ec548a6b0d7204217128a459e694a" prot="private" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 LiquidCrystal::_displaycontrol</definition>
+        <argsstring></argsstring>
+        <name>_displaycontrol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="97" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_liquid_crystal_1a79fb334426e46626d317c4636bee3238" prot="private" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 LiquidCrystal::_displaymode</definition>
+        <argsstring></argsstring>
+        <name>_displaymode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="98" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_liquid_crystal_1a79b80c7474561911eb22a989dd3d5923" prot="private" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 LiquidCrystal::_initialized</definition>
+        <argsstring></argsstring>
+        <name>_initialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="100" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_liquid_crystal_1acf52a23f6da24ace237b7891f32470f3" prot="private" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 LiquidCrystal::_numlines</definition>
+        <argsstring></argsstring>
+        <name>_numlines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="102" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_liquid_crystal_1aabb44ba008ea277ad92998918a08e332" prot="private" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 LiquidCrystal::_currline</definition>
+        <argsstring></argsstring>
+        <name>_currline</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="102" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_liquid_crystal_1aa852e8dda707efd9eae5ff07bb8aba2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LiquidCrystal::LiquidCrystal</definition>
+        <argsstring>(uint8 rs, uint8 enable, uint8 d0, uint8 d1, uint8 d2, uint8 d3, uint8 d4, uint8 d5, uint8 d6, uint8 d7)</argsstring>
+        <name>LiquidCrystal</name>
+        <param>
+          <type>uint8</type>
+          <declname>rs</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>enable</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d0</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d1</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d2</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d3</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d4</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d5</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d6</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d7</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_liquid_crystal_1ac0dfbbe6477e61f8d21401faa87e028d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LiquidCrystal::LiquidCrystal</definition>
+        <argsstring>(uint8 rs, uint8 rw, uint8 enable, uint8 d0, uint8 d1, uint8 d2, uint8 d3, uint8 d4, uint8 d5, uint8 d6, uint8 d7)</argsstring>
+        <name>LiquidCrystal</name>
+        <param>
+          <type>uint8</type>
+          <declname>rs</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>rw</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>enable</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d0</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d1</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d2</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d3</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d4</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d5</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d6</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d7</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_liquid_crystal_1a95ac5dbbeb7c9cd1f6c9183e62cdc713" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LiquidCrystal::LiquidCrystal</definition>
+        <argsstring>(uint8 rs, uint8 rw, uint8 enable, uint8 d0, uint8 d1, uint8 d2, uint8 d3)</argsstring>
+        <name>LiquidCrystal</name>
+        <param>
+          <type>uint8</type>
+          <declname>rs</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>rw</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>enable</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d0</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d1</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d2</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_liquid_crystal_1a185f7a1549667b34b39857dd254fb4aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LiquidCrystal::LiquidCrystal</definition>
+        <argsstring>(uint8 rs, uint8 enable, uint8 d0, uint8 d1, uint8 d2, uint8 d3)</argsstring>
+        <name>LiquidCrystal</name>
+        <param>
+          <type>uint8</type>
+          <declname>rs</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>enable</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d0</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d1</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d2</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_liquid_crystal_1a4dccb26c9fed8bf71c16a8b70a0e3124" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LiquidCrystal::init</definition>
+        <argsstring>(uint8 fourbitmode, uint8 rs, uint8 rw, uint8 enable, uint8 d0, uint8 d1, uint8 d2, uint8 d3, uint8 d4, uint8 d5, uint8 d6, uint8 d7)</argsstring>
+        <name>init</name>
+        <param>
+          <type>uint8</type>
+          <declname>fourbitmode</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>rs</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>rw</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>enable</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d0</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d1</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d2</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d3</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d4</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d5</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d6</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>d7</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_liquid_crystal_1a1d1911c0acf7581aabb4d1b14a7d2fc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LiquidCrystal::begin</definition>
+        <argsstring>(uint8 cols, uint8 rows, uint8 charsize=LCD_5x8DOTS)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>uint8</type>
+          <declname>cols</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>charsize</declname>
+          <defval>LCD_5x8DOTS</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_liquid_crystal_1a8c2ee5196df87db7a3541f947135df13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LiquidCrystal::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_liquid_crystal_1aeabdf852b59e8155ef7df8db008c8d55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LiquidCrystal::home</definition>
+        <argsstring>()</argsstring>
+        <name>home</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_liquid_crystal_1a85bbecc7cebc6e44972b191fbd175c23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LiquidCrystal::noDisplay</definition>
+        <argsstring>()</argsstring>
+        <name>noDisplay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_liquid_crystal_1a81bb76db1b82a8e55a07de6cb0a262b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LiquidCrystal::display</definition>
+        <argsstring>()</argsstring>
+        <name>display</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_liquid_crystal_1a05d4fa9025c421a833081090cb8039ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LiquidCrystal::noBlink</definition>
+        <argsstring>()</argsstring>
+        <name>noBlink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_liquid_crystal_1a3eadecb726b55a400f08d5e520f9cb9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LiquidCrystal::blink</definition>
+        <argsstring>()</argsstring>
+        <name>blink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_liquid_crystal_1ab2ec8e89fe805e3e0e842e53a45aaeae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LiquidCrystal::noCursor</definition>
+        <argsstring>()</argsstring>
+        <name>noCursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_liquid_crystal_1a31f590023c937a6faabdfc50dfb18717" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LiquidCrystal::cursor</definition>
+        <argsstring>()</argsstring>
+        <name>cursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_liquid_crystal_1afa91cf6e72bfc07537a3ad79f4864f29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LiquidCrystal::scrollDisplayLeft</definition>
+        <argsstring>()</argsstring>
+        <name>scrollDisplayLeft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_liquid_crystal_1a271b5da2427321ae09da303b83567e90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LiquidCrystal::scrollDisplayRight</definition>
+        <argsstring>()</argsstring>
+        <name>scrollDisplayRight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_liquid_crystal_1ae489f88dfac1680cbe61caf355026874" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LiquidCrystal::leftToRight</definition>
+        <argsstring>()</argsstring>
+        <name>leftToRight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_liquid_crystal_1a19018898bae01eb687442258cc60ffc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LiquidCrystal::rightToLeft</definition>
+        <argsstring>()</argsstring>
+        <name>rightToLeft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_liquid_crystal_1aa5ac50d6a2053eb1c06abe62614131b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LiquidCrystal::autoscroll</definition>
+        <argsstring>()</argsstring>
+        <name>autoscroll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_liquid_crystal_1ad4c142852e49b6fc2284a0fbc234172c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LiquidCrystal::noAutoscroll</definition>
+        <argsstring>()</argsstring>
+        <name>noAutoscroll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_liquid_crystal_1a561076df1a33582a3917f405eabe7d4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LiquidCrystal::createChar</definition>
+        <argsstring>(uint8, uint8[])</argsstring>
+        <name>createChar</name>
+        <param>
+          <type>uint8</type>
+        </param>
+        <param>
+          <type>uint8</type>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_liquid_crystal_1abb0c75439464f0418352f3e49da63d13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LiquidCrystal::setCursor</definition>
+        <argsstring>(uint8, uint8)</argsstring>
+        <name>setCursor</name>
+        <param>
+          <type>uint8</type>
+        </param>
+        <param>
+          <type>uint8</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_liquid_crystal_1a9e590063c0825f1bc9e098f63c13c2f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void LiquidCrystal::write</definition>
+        <argsstring>(uint8)</argsstring>
+        <name>write</name>
+        <reimplements refid="class_print_1a75695b6605b4c21ba26073b4139283d8">write</reimplements>
+        <param>
+          <type>uint8</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_liquid_crystal_1a830b69c02b613b7e7bd9a32488277b3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LiquidCrystal::command</definition>
+        <argsstring>(uint8)</argsstring>
+        <name>command</name>
+        <param>
+          <type>uint8</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="84"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_liquid_crystal_1a572e4d158868b6fd9c027c2a6b3ef29e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LiquidCrystal::send</definition>
+        <argsstring>(uint8, uint8)</argsstring>
+        <name>send</name>
+        <param>
+          <type>uint8</type>
+        </param>
+        <param>
+          <type>uint8</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_liquid_crystal_1a3fa68ca761b3a4677095bd67c16098b9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LiquidCrystal::write4bits</definition>
+        <argsstring>(uint8)</argsstring>
+        <name>write4bits</name>
+        <param>
+          <type>uint8</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_liquid_crystal_1a68dd094e6bdc50214761dbd3172272dd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LiquidCrystal::write8bits</definition>
+        <argsstring>(uint8)</argsstring>
+        <name>write8bits</name>
+        <param>
+          <type>uint8</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="88"/>
+      </memberdef>
+      <memberdef kind="function" id="class_liquid_crystal_1a44d84c010396c993f124d2feb9dc794d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LiquidCrystal::pulseEnable</definition>
+        <argsstring>()</argsstring>
+        <name>pulseEnable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="89"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="80">
+        <label>Print</label>
+        <link refid="class_print"/>
+      </node>
+      <node id="79">
+        <label>LiquidCrystal</label>
+        <link refid="class_liquid_crystal"/>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="82">
+        <label>Print</label>
+        <link refid="class_print"/>
+      </node>
+      <node id="81">
+        <label>LiquidCrystal</label>
+        <link refid="class_liquid_crystal"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="46" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="46" bodyend="103"/>
+    <listofallmembers>
+      <member refid="class_liquid_crystal_1aabb44ba008ea277ad92998918a08e332" prot="private" virt="non-virtual"><scope>LiquidCrystal</scope><name>_currline</name></member>
+      <member refid="class_liquid_crystal_1a0308577feb409cf45369e03d1e8772cf" prot="private" virt="non-virtual"><scope>LiquidCrystal</scope><name>_data_pins</name></member>
+      <member refid="class_liquid_crystal_1a5a1ec548a6b0d7204217128a459e694a" prot="private" virt="non-virtual"><scope>LiquidCrystal</scope><name>_displaycontrol</name></member>
+      <member refid="class_liquid_crystal_1a396f23cb758f778c696aa5332ceef055" prot="private" virt="non-virtual"><scope>LiquidCrystal</scope><name>_displayfunction</name></member>
+      <member refid="class_liquid_crystal_1a79fb334426e46626d317c4636bee3238" prot="private" virt="non-virtual"><scope>LiquidCrystal</scope><name>_displaymode</name></member>
+      <member refid="class_liquid_crystal_1a98e3573a069628f12f21461e2709e739" prot="private" virt="non-virtual"><scope>LiquidCrystal</scope><name>_enable_pin</name></member>
+      <member refid="class_liquid_crystal_1a79b80c7474561911eb22a989dd3d5923" prot="private" virt="non-virtual"><scope>LiquidCrystal</scope><name>_initialized</name></member>
+      <member refid="class_liquid_crystal_1acf52a23f6da24ace237b7891f32470f3" prot="private" virt="non-virtual"><scope>LiquidCrystal</scope><name>_numlines</name></member>
+      <member refid="class_liquid_crystal_1a0a0a6268051a0b4013a654232ca61e1c" prot="private" virt="non-virtual"><scope>LiquidCrystal</scope><name>_rs_pin</name></member>
+      <member refid="class_liquid_crystal_1ac9724cb90b39cdbe76cbcc1bb5fda7cc" prot="private" virt="non-virtual"><scope>LiquidCrystal</scope><name>_rw_pin</name></member>
+      <member refid="class_liquid_crystal_1aa5ac50d6a2053eb1c06abe62614131b4" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>autoscroll</name></member>
+      <member refid="class_liquid_crystal_1a1d1911c0acf7581aabb4d1b14a7d2fc8" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>begin</name></member>
+      <member refid="class_liquid_crystal_1a3eadecb726b55a400f08d5e520f9cb9b" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>blink</name></member>
+      <member refid="class_liquid_crystal_1a8c2ee5196df87db7a3541f947135df13" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>clear</name></member>
+      <member refid="class_liquid_crystal_1a830b69c02b613b7e7bd9a32488277b3c" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>command</name></member>
+      <member refid="class_liquid_crystal_1a561076df1a33582a3917f405eabe7d4f" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>createChar</name></member>
+      <member refid="class_liquid_crystal_1a31f590023c937a6faabdfc50dfb18717" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>cursor</name></member>
+      <member refid="class_liquid_crystal_1a81bb76db1b82a8e55a07de6cb0a262b2" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>display</name></member>
+      <member refid="class_liquid_crystal_1aeabdf852b59e8155ef7df8db008c8d55" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>home</name></member>
+      <member refid="class_liquid_crystal_1a4dccb26c9fed8bf71c16a8b70a0e3124" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>init</name></member>
+      <member refid="class_liquid_crystal_1ae489f88dfac1680cbe61caf355026874" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>leftToRight</name></member>
+      <member refid="class_liquid_crystal_1aa852e8dda707efd9eae5ff07bb8aba2f" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>LiquidCrystal</name></member>
+      <member refid="class_liquid_crystal_1ac0dfbbe6477e61f8d21401faa87e028d" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>LiquidCrystal</name></member>
+      <member refid="class_liquid_crystal_1a95ac5dbbeb7c9cd1f6c9183e62cdc713" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>LiquidCrystal</name></member>
+      <member refid="class_liquid_crystal_1a185f7a1549667b34b39857dd254fb4aa" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>LiquidCrystal</name></member>
+      <member refid="class_liquid_crystal_1ad4c142852e49b6fc2284a0fbc234172c" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>noAutoscroll</name></member>
+      <member refid="class_liquid_crystal_1a05d4fa9025c421a833081090cb8039ac" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>noBlink</name></member>
+      <member refid="class_liquid_crystal_1ab2ec8e89fe805e3e0e842e53a45aaeae" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>noCursor</name></member>
+      <member refid="class_liquid_crystal_1a85bbecc7cebc6e44972b191fbd175c23" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>noDisplay</name></member>
+      <member refid="class_print_1a6309cc0fb10c5f50517069ae86bf60d7" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>print</name></member>
+      <member refid="class_print_1aa7b0a6dc63e3d27effd8459e3d443b83" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>print</name></member>
+      <member refid="class_print_1a3cf3e9608f1d3f8541234a4f20a47fc1" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>print</name></member>
+      <member refid="class_print_1a35a6196999c85e5afc5fd852d088e886" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>print</name></member>
+      <member refid="class_print_1a5f8df5d4f941b411ce9d660b48996bea" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>print</name></member>
+      <member refid="class_print_1afab3f8d07a58a8d37fec32d7fcb67b56" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>print</name></member>
+      <member refid="class_print_1a4be58e920bdddcaf5496d0ba2ae4ea81" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>print</name></member>
+      <member refid="class_print_1a598ac48b52f7ce46a1b5b1d8c6de8fdd" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>print</name></member>
+      <member refid="class_print_1a362ac4126fe8d3cf3061bc4408002d1f" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>print</name></member>
+      <member refid="class_print_1aa5fe80d3a3e8d2dc64f346eb08dcb43f" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>print</name></member>
+      <member refid="class_print_1a525b37c566658ff8113a067f6e8d5bf1" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>println</name></member>
+      <member refid="class_print_1afde6ae226acae7c07f07b2ac674418b9" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>println</name></member>
+      <member refid="class_print_1a09db74a8d51c6b2420c478267f958a51" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>println</name></member>
+      <member refid="class_print_1a20e39d1025276140ce3070860316fc66" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>println</name></member>
+      <member refid="class_print_1a350bdfe3569acb05a2fdefb7c54e292d" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>println</name></member>
+      <member refid="class_print_1af0aeb581689c6e9c9f8331b342a91e20" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>println</name></member>
+      <member refid="class_print_1a1999020b07369721caa16c52fdba4341" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>println</name></member>
+      <member refid="class_print_1aacf64fb9630526fb6c666f038a9dc4e6" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>println</name></member>
+      <member refid="class_print_1a7aafbd73fb788daf40f6154678b0289d" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>println</name></member>
+      <member refid="class_print_1aef90f1b88f702cebcf8ab52c25b49b25" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>println</name></member>
+      <member refid="class_print_1a4302b58946b9355b0491118227beed07" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>println</name></member>
+      <member refid="class_liquid_crystal_1a44d84c010396c993f124d2feb9dc794d" prot="private" virt="non-virtual"><scope>LiquidCrystal</scope><name>pulseEnable</name></member>
+      <member refid="class_liquid_crystal_1a19018898bae01eb687442258cc60ffc9" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>rightToLeft</name></member>
+      <member refid="class_liquid_crystal_1afa91cf6e72bfc07537a3ad79f4864f29" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>scrollDisplayLeft</name></member>
+      <member refid="class_liquid_crystal_1a271b5da2427321ae09da303b83567e90" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>scrollDisplayRight</name></member>
+      <member refid="class_liquid_crystal_1a572e4d158868b6fd9c027c2a6b3ef29e" prot="private" virt="non-virtual"><scope>LiquidCrystal</scope><name>send</name></member>
+      <member refid="class_liquid_crystal_1abb0c75439464f0418352f3e49da63d13" prot="public" virt="non-virtual"><scope>LiquidCrystal</scope><name>setCursor</name></member>
+      <member refid="class_liquid_crystal_1a9e590063c0825f1bc9e098f63c13c2f3" prot="public" virt="virtual"><scope>LiquidCrystal</scope><name>write</name></member>
+      <member refid="class_print_1aa6d255e68e0527f189aa7c44cb28037f" prot="public" virt="virtual" ambiguityscope="Print::"><scope>LiquidCrystal</scope><name>write</name></member>
+      <member refid="class_print_1a0569902a9ad573d017048e68d786ba35" prot="public" virt="virtual" ambiguityscope="Print::"><scope>LiquidCrystal</scope><name>write</name></member>
+      <member refid="class_liquid_crystal_1a3fa68ca761b3a4677095bd67c16098b9" prot="private" virt="non-virtual"><scope>LiquidCrystal</scope><name>write4bits</name></member>
+      <member refid="class_liquid_crystal_1a68dd094e6bdc50214761dbd3172272dd" prot="private" virt="non-virtual"><scope>LiquidCrystal</scope><name>write8bits</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

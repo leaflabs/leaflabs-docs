@@ -1,0 +1,479 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="libmaple_8h" kind="file">
+    <compoundname>libmaple.h</compoundname>
+    <includes refid="libmaple__types_8h" local="yes">libmaple_types.h</includes>
+    <includes refid="stm32_8h" local="yes">stm32.h</includes>
+    <includes refid="util_8h" local="yes">util.h</includes>
+    <includes refid="delay_8h" local="yes">delay.h</includes>
+    <includedby refid="adc_8c" local="yes">libmaple/adc.c</includedby>
+    <includedby refid="adc_8h" local="yes">libmaple/adc.h</includedby>
+    <includedby refid="bkp_8h" local="yes">libmaple/bkp.h</includedby>
+    <includedby refid="pwr_8h" local="yes">libmaple/pwr.h</includedby>
+    <includedby refid="dac_8c" local="yes">libmaple/dac.c</includedby>
+    <includedby refid="gpio_8h" local="yes">libmaple/gpio.h</includedby>
+    <includedby refid="exti_8h" local="yes">libmaple/exti.h</includedby>
+    <includedby refid="exti_8c" local="yes">libmaple/exti.c</includedby>
+    <includedby refid="flash_8c" local="yes">libmaple/flash.c</includedby>
+    <includedby refid="i2c_8c" local="yes">libmaple/i2c.c</includedby>
+    <includedby refid="rcc_8c" local="yes">libmaple/rcc.c</includedby>
+    <includedby refid="syscalls_8c" local="yes">libmaple/syscalls.c</includedby>
+    <includedby refid="timer_8h" local="yes">libmaple/timer.h</includedby>
+    <includedby refid="descriptors_8h" local="yes">libmaple/usb/descriptors.h</includedby>
+    <includedby refid="descriptors_8c" local="yes">libmaple/usb/descriptors.c</includedby>
+    <includedby refid="usb_8h" local="yes">libmaple/usb/usb.h</includedby>
+    <includedby refid="usb_8c" local="yes">libmaple/usb/usb.c</includedby>
+    <includedby refid="usb__callbacks_8h" local="yes">libmaple/usb/usb_callbacks.h</includedby>
+    <includedby refid="util_8c" local="yes">libmaple/util.c</includedby>
+    <includedby refid="boards_8h" local="yes">wirish/boards.h</includedby>
+    <includedby refid="wirish__time_8h" local="yes">wirish/wirish_time.h</includedby>
+    <includedby refid="wirish_8h" local="yes">wirish/wirish.h</includedby>
+    <incdepgraph>
+      <node id="282">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="281">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="280">
+        <label>libmaple/libmaple.h</label>
+        <link refid="libmaple.h"/>
+        <childnode refid="281" relation="include">
+        </childnode>
+        <childnode refid="282" relation="include">
+        </childnode>
+        <childnode refid="283" relation="include">
+        </childnode>
+        <childnode refid="284" relation="include">
+        </childnode>
+      </node>
+      <node id="284">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="281" relation="include">
+        </childnode>
+        <childnode refid="282" relation="include">
+        </childnode>
+      </node>
+      <node id="283">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="281" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="316">
+        <label>libmaple/usb/usb.c</label>
+        <link refid="usb_8c_source"/>
+      </node>
+      <node id="326">
+        <label>libmaple/usb/usb.h</label>
+        <link refid="usb_8h_source"/>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="318" relation="include">
+        </childnode>
+      </node>
+      <node id="324">
+        <label>wirish/HardwareTimer.h</label>
+        <link refid="_hardware_timer_8h_source"/>
+        <childnode refid="292" relation="include">
+        </childnode>
+      </node>
+      <node id="301">
+        <label>libmaple/bkp.c</label>
+        <link refid="bkp_8c_source"/>
+      </node>
+      <node id="300">
+        <label>libmaple/bkp.h</label>
+        <link refid="bkp_8h"/>
+        <childnode refid="301" relation="include">
+        </childnode>
+      </node>
+      <node id="304">
+        <label>libmaple/dac.c</label>
+        <link refid="dac_8c_source"/>
+      </node>
+      <node id="292">
+        <label>wirish/wirish.h</label>
+        <link refid="wirish_8h_source"/>
+        <childnode refid="293" relation="include">
+        </childnode>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="290">
+        <label>wirish/boards.h</label>
+        <link refid="boards_8h"/>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="297" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+      </node>
+      <node id="303">
+        <label>libmaple/pwr.c</label>
+        <link refid="pwr_8c_source"/>
+      </node>
+      <node id="302">
+        <label>libmaple/pwr.h</label>
+        <link refid="pwr_8h"/>
+        <childnode refid="301" relation="include">
+        </childnode>
+        <childnode refid="303" relation="include">
+        </childnode>
+      </node>
+      <node id="319">
+        <label>libmaple/flash.c</label>
+        <link refid="flash_8c"/>
+      </node>
+      <node id="298">
+        <label>wirish/io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="292" relation="include">
+        </childnode>
+      </node>
+      <node id="320">
+        <label>libmaple/rcc.c</label>
+        <link refid="rcc_8c_source"/>
+      </node>
+      <node id="313">
+        <label>libmaple/spi.c</label>
+        <link refid="spi_8c"/>
+      </node>
+      <node id="312">
+        <label>libmaple/spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="313" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+      </node>
+      <node id="291">
+        <label>wirish/comm/HardwareSPI.h</label>
+        <link refid="_hardware_s_p_i_8h"/>
+        <childnode refid="292" relation="include">
+        </childnode>
+      </node>
+      <node id="310">
+        <label>libmaple/i2c.c</label>
+        <link refid="i2c_8c"/>
+      </node>
+      <node id="311">
+        <label>libmaple/i2c.h</label>
+        <link refid="i2c_8h"/>
+        <childnode refid="310" relation="include">
+        </childnode>
+      </node>
+      <node id="295">
+        <label>libraries/LiquidCrystal/LiquidCrystal.h</label>
+        <link refid="_liquid_crystal_8h_source"/>
+      </node>
+      <node id="285">
+        <label>libmaple/libmaple.h</label>
+        <link refid="libmaple.h"/>
+        <childnode refid="286" relation="include">
+        </childnode>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="300" relation="include">
+        </childnode>
+        <childnode refid="302" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="306" relation="include">
+        </childnode>
+        <childnode refid="307" relation="include">
+        </childnode>
+        <childnode refid="319" relation="include">
+        </childnode>
+        <childnode refid="310" relation="include">
+        </childnode>
+        <childnode refid="320" relation="include">
+        </childnode>
+        <childnode refid="321" relation="include">
+        </childnode>
+        <childnode refid="322" relation="include">
+        </childnode>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
+        </childnode>
+        <childnode refid="326" relation="include">
+        </childnode>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="297" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+      </node>
+      <node id="314">
+        <label>libmaple/usb/usb_config.h</label>
+        <link refid="usb__config_8h_source"/>
+        <childnode refid="315" relation="include">
+        </childnode>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+        <childnode refid="318" relation="include">
+        </childnode>
+      </node>
+      <node id="297">
+        <label>wirish/wirish_time.h</label>
+        <link refid="wirish__time_8h"/>
+        <childnode refid="298" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+      </node>
+      <node id="289">
+        <label>wirish/wirish_types.h</label>
+        <link refid="wirish__types_8h"/>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="299" relation="include">
+        </childnode>
+      </node>
+      <node id="299">
+        <label>libraries/Servo/Servo.h</label>
+        <link refid="_servo_8h_source"/>
+      </node>
+      <node id="286">
+        <label>libmaple/adc.c</label>
+        <link refid="adc_8c"/>
+      </node>
+      <node id="287">
+        <label>libmaple/adc.h</label>
+        <link refid="adc_8h"/>
+        <childnode refid="286" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="298" relation="include">
+        </childnode>
+      </node>
+      <node id="309">
+        <label>libmaple/gpio.c</label>
+        <link refid="gpio_8c_source"/>
+      </node>
+      <node id="305">
+        <label>libmaple/gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="304" relation="include">
+        </childnode>
+        <childnode refid="306" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="310" relation="include">
+        </childnode>
+        <childnode refid="311" relation="include">
+        </childnode>
+        <childnode refid="312" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="298" relation="include">
+        </childnode>
+      </node>
+      <node id="323">
+        <label>libmaple/timer.c</label>
+        <link refid="timer_8c"/>
+      </node>
+      <node id="322">
+        <label>libmaple/timer.h</label>
+        <link refid="timer_8h"/>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="324" relation="include">
+        </childnode>
+        <childnode refid="299" relation="include">
+        </childnode>
+      </node>
+      <node id="296">
+        <label>libraries/Wire/Wire.h</label>
+        <link refid="_wire_8h_source"/>
+      </node>
+      <node id="308">
+        <label>libmaple/fsmc.c</label>
+        <link refid="fsmc_8c_source"/>
+      </node>
+      <node id="293">
+        <label>wirish/WProgram.h</label>
+        <link refid="_w_program_8h_source"/>
+      </node>
+      <node id="321">
+        <label>libmaple/syscalls.c</label>
+        <link refid="syscalls_8c_source"/>
+      </node>
+      <node id="294">
+        <label>libraries/FreeRTOS/MapleFreeRTOS.h</label>
+        <link refid="_maple_free_r_t_o_s_8h_source"/>
+      </node>
+      <node id="307">
+        <label>libmaple/exti.c</label>
+        <link refid="exti_8c"/>
+      </node>
+      <node id="306">
+        <label>libmaple/exti.h</label>
+        <link refid="exti_8h"/>
+        <childnode refid="307" relation="include">
+        </childnode>
+      </node>
+      <node id="288">
+        <label>libmaple/util.c</label>
+        <link refid="util_8c_source"/>
+      </node>
+      <node id="315">
+        <label>libmaple/usb/descriptors.c</label>
+        <link refid="descriptors_8c_source"/>
+      </node>
+      <node id="325">
+        <label>libmaple/usb/descriptors.h</label>
+        <link refid="descriptors_8h_source"/>
+        <childnode refid="315" relation="include">
+        </childnode>
+        <childnode refid="318" relation="include">
+        </childnode>
+      </node>
+      <node id="318">
+        <label>libmaple/usb/usb_callbacks.c</label>
+        <link refid="usb__callbacks_8c_source"/>
+      </node>
+      <node id="317">
+        <label>libmaple/usb/usb_callbacks.h</label>
+        <link refid="usb__callbacks_8h_source"/>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="318" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="libmaple_8h_1aadd54aaa22b58f605754fa0d28c529c2" prot="public" static="no">
+        <name>USER_ADDR_ROM</name>
+        <initializer>0x08005000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/libmaple.h" line="45" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/libmaple.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libmaple_8h_1af462ff9044310f421863d6da54a1e2ac" prot="public" static="no">
+        <name>USER_ADDR_RAM</name>
+        <initializer>0x20000C00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/libmaple.h" line="46" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/libmaple.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="libmaple_8h_1a7c586ff49f2d6a6d4d4034ea15285529" prot="public" static="no">
+        <name>STACK_TOP</name>
+        <initializer>0x20000800</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/libmaple.h" line="47" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/libmaple.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>General include file for libmaple. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Perry<sp/>Hung.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor">#ifndef<sp/>_LIBMAPLE_H_</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_LIBMAPLE_H_</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libmaple__types_8h" kindref="compound" tooltip="libmaple types">libmaple_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="stm32_8h" kindref="compound" tooltip="STM32 chip-specific definitions.">stm32.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="util_8h" kindref="compound" tooltip="Miscellaneous utility macros and procedures.">util.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="delay_8h" kindref="compound" tooltip="Delay implementation.">delay.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>Where<sp/>to<sp/>put<sp/>usercode,<sp/>based<sp/>on<sp/>space<sp/>reserved<sp/>for<sp/>bootloader.</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*<sp/>FIXME<sp/>this<sp/>has<sp/>no<sp/>business<sp/>being<sp/>here</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USER_ADDR_ROM<sp/>0x08005000</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USER_ADDR_RAM<sp/>0x20000C00</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STACK_TOP<sp/><sp/><sp/><sp/><sp/>0x20000800</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/libmaple.h"/>
+  </compounddef>
+</doxygen>

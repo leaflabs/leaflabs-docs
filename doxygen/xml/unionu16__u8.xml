@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="unionu16__u8" kind="union" prot="public">
+    <compoundname>u16_u8</compoundname>
+    <innerclass refid="structu16__u8_1_1_b_w" prot="public">u16_u8::BW</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionu16__u8_1acce981dee13b35d25ed1093a11653b81" prot="public" static="no" mutable="no">
+        <type>u16</type>
+        <definition>u16 u16_u8::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="101" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionu16__u8_1a2843971a07fd22f7c0478fd2705ec6fd" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structu16__u8_1_1_b_w" kindref="compound">u16_u8::BW</ref></type>
+        <definition>struct u16_u8::BW
+   u16_u8::bw</definition>
+        <argsstring></argsstring>
+        <name>bw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="107"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="155">
+        <label>u16_u8::BW</label>
+        <link refid="structu16__u8_1_1_b_w"/>
+      </node>
+      <node id="154">
+        <label>u16_u8</label>
+        <link refid="unionu16__u8"/>
+        <childnode refid="155" relation="usage">
+          <edgelabel>bw</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="100" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="99" bodyend="108"/>
+    <listofallmembers>
+      <member refid="unionu16__u8_1a2843971a07fd22f7c0478fd2705ec6fd" prot="public" virt="non-virtual"><scope>u16_u8</scope><name>bw</name></member>
+      <member refid="unionu16__u8_1acce981dee13b35d25ed1093a11653b81" prot="public" virt="non-virtual"><scope>u16_u8</scope><name>w</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

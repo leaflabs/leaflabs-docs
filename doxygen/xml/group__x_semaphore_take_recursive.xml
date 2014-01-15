@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__x_semaphore_take_recursive" kind="group">
+    <compoundname>xSemaphoreTakeRecursive</compoundname>
+    <title>xSemaphoreTakeRecursive</title>
+    <briefdescription>
+<para>semphr. </para>    </briefdescription>
+    <detaileddescription>
+<para>h xSemaphoreTakeRecursive( xSemaphoreHandle xMutex, portTickType xBlockTime )</para><para><emphasis>Macro</emphasis> to recursively obtain, or &apos;take&apos;, a mutex type semaphore. The mutex must have previously been created using a call to xSemaphoreCreateRecursiveMutex();</para><para>configUSE_RECURSIVE_MUTEXES must be set to 1 in <ref refid="_free_r_t_o_s_config_8h_source" kindref="compound">FreeRTOSConfig.h</ref> for this macro to be available.</para><para>This macro must not be used on mutexes created using xSemaphoreCreateMutex().</para><para>A mutex used recursively can be &apos;taken&apos; repeatedly by the owner. The mutex doesn&apos;t become available again until the owner has called xSemaphoreGiveRecursive() for each successful &apos;take&apos; request. For example, if a task successfully &apos;takes&apos; the same mutex 5 times then the mutex will not be available to any other task until it has also &apos;given&apos; the mutex back exactly five times.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xMutex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to the mutex being obtained. This is the handle returned by xSemaphoreCreateRecursiveMutex();</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xBlockTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time in ticks to wait for the semaphore to become available. The macro portTICK_RATE_MS can be used to convert this to a real time. A block time of zero can be used to poll the semaphore. If the task already owns the semaphore then xSemaphoreTakeRecursive() will return immediately no matter what the value of xBlockTime.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pdTRUE if the semaphore was obtained. pdFALSE if xBlockTime expired without the semaphore becoming available.</para></simplesect>
+Example usage: <preformatted>
+ xSemaphoreHandle xMutex = NULL;</preformatted></para><para><preformatted>A task that creates a mutex.
+ void vATask( void * pvParameters )
+ {
+Create the mutex to guard a shared resource.
+    xMutex = xSemaphoreCreateRecursiveMutex();
+ }</preformatted></para><para><preformatted>A task that uses the mutex.
+ void vAnotherTask( void * pvParameters )
+ {
+... Do other things.</preformatted></para><para><preformatted>    if( xMutex != NULL )
+    {
+See if we can obtain the mutex.  If the mutex is not available
+wait 10 ticks to see if it becomes free.	
+        if( xSemaphoreTakeRecursive( xSemaphore, ( portTickType ) 10 ) == pdTRUE )
+        {
+We were able to obtain the mutex and can now access the
+shared resource.</preformatted></para><para><preformatted>...
+For some reason due to the nature of the code further calls to 
+xSemaphoreTakeRecursive() are made on the same mutex.  In real
+code these would not be just sequential calls as this would make
+no sense.  Instead the calls are likely to be buried inside
+a more complex call structure.
+            xSemaphoreTakeRecursive( xMutex, ( portTickType ) 10 );
+            xSemaphoreTakeRecursive( xMutex, ( portTickType ) 10 );</preformatted></para><para><preformatted>The mutex has now been &apos;taken&apos; three times, so will not be 
+available to another task until it has also been given back
+three times.  Again it is unlikely that real code would have
+these calls sequentially, but instead buried in a more complex
+call structure.  This is just for illustrative purposes.
+            xSemaphoreGiveRecursive( xMutex );
+			xSemaphoreGiveRecursive( xMutex );
+			xSemaphoreGiveRecursive( xMutex );</preformatted></para><para><preformatted>Now the mutex can be taken by other tasks.
+        }
+        else
+        {
+We could not obtain the mutex and can therefore not access
+the shared resource safely.
+        }
+    }
+ }
+ </preformatted> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

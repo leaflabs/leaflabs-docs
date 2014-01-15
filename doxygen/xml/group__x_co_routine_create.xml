@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__x_co_routine_create" kind="group">
+    <compoundname>xCoRoutineCreate</compoundname>
+    <title>xCoRoutineCreate</title>
+    <briefdescription>
+<para>croutine. </para>    </briefdescription>
+    <detaileddescription>
+<para>h <preformatted>
+ portBASE_TYPE xCoRoutineCreate(
+                                 crCOROUTINE_CODE pxCoRoutineCode,
+                                 unsigned portBASE_TYPE uxPriority,
+                                 unsigned portBASE_TYPE uxIndex
+                               );</preformatted></para><para>Create a new co-routine and add it to the list of co-routines that are ready to run.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pxCoRoutineCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the co-routine function. Co-routine functions require special syntax - see the co-routine section of the WEB documentation for more information.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>uxPriority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The priority with respect to other co-routines at which the co-routine will run.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>uxIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Used to distinguish between different co-routines that execute the same function. See the example below and the co-routine section of the WEB documentation for further information.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pdPASS if the co-routine was successfully created and added to a ready list, otherwise an error code defined with ProjDefs.h.</para></simplesect>
+Example usage: <preformatted>
+Co-routine to be created.
+ void vFlashCoRoutine( xCoRoutineHandle xHandle, unsigned portBASE_TYPE uxIndex )
+ {
+Variables in co-routines must be declared static if they must maintain value across a blocking call.
+This may not be necessary for const variables.
+ static const char cLedToFlash[ 2 ] = { 5, 6 };
+ static const portTickType uxFlashRates[ 2 ] = { 200, 400 };</preformatted></para><para><preformatted>Must start every co-routine with a call to crSTART();
+     crSTART( xHandle );</preformatted></para><para><preformatted>     for( ;; )
+     {
+This co-routine just delays for a fixed period, then toggles
+an LED.  Two co-routines are created using this function, so
+the uxIndex parameter is used to tell the co-routine which
+LED to flash and how long to delay.  This assumes xQueue has
+already been created.
+         vParTestToggleLED( cLedToFlash[ uxIndex ] );
+         crDELAY( xHandle, uxFlashRates[ uxIndex ] );
+     }</preformatted></para><para><preformatted>Must end every co-routine with a call to crEND();
+     crEND();
+ }</preformatted></para><para><preformatted>Function that creates two co-routines.
+ void vOtherFunction( void )
+ {
+ unsigned char ucParameterToPass;
+ xTaskHandle xHandle;</preformatted></para><para><preformatted>Create two co-routines at priority 0.  The first is given index 0
+so (from the code above) toggles LED 5 every 200 ticks.  The second
+is given index 1 so toggles LED 6 every 400 ticks.
+     for( uxIndex = 0; uxIndex &lt; 2; uxIndex++ )
+     {
+         xCoRoutineCreate( vFlashCoRoutine, 0, uxIndex );
+     }
+ }
+   </preformatted> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

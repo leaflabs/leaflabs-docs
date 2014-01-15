@@ -1,0 +1,988 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="usb__callbacks_8c" kind="file">
+    <compoundname>usb_callbacks.c</compoundname>
+    <includes refid="usb__callbacks_8h" local="yes">usb_callbacks.h</includes>
+    <includes refid="usb__lib_8h" local="yes">usb_lib.h</includes>
+    <includes refid="descriptors_8h" local="yes">descriptors.h</includes>
+    <includes refid="usb__config_8h" local="yes">usb_config.h</includes>
+    <includes refid="usb_8h" local="yes">usb.h</includes>
+    <includes refid="usb__hardware_8h" local="yes">usb_hardware.h</includes>
+    <incdepgraph>
+      <node id="777">
+        <label>usb.h</label>
+        <link refid="usb_8h_source"/>
+        <childnode refid="765" relation="include">
+        </childnode>
+        <childnode refid="760" relation="include">
+        </childnode>
+      </node>
+      <node id="775">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="761" relation="include">
+        </childnode>
+      </node>
+      <node id="778">
+        <label>usb_hardware.h</label>
+        <link refid="usb__hardware_8h_source"/>
+        <childnode refid="775" relation="include">
+        </childnode>
+        <childnode refid="766" relation="include">
+        </childnode>
+      </node>
+      <node id="762">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="761">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="771">
+        <label>usb_mem.h</label>
+        <link refid="usb__mem_8h_source"/>
+      </node>
+      <node id="766">
+        <label>usb_type.h</label>
+        <link refid="usb__type_8h_source"/>
+      </node>
+      <node id="772">
+        <label>usb_int.h</label>
+        <link refid="usb__int_8h_source"/>
+      </node>
+      <node id="760">
+        <label>libmaple.h</label>
+        <link refid="libmaple_8h"/>
+        <childnode refid="761" relation="include">
+        </childnode>
+        <childnode refid="762" relation="include">
+        </childnode>
+        <childnode refid="763" relation="include">
+        </childnode>
+        <childnode refid="764" relation="include">
+        </childnode>
+      </node>
+      <node id="765">
+        <label>usb_lib.h</label>
+        <link refid="usb__lib_8h_source"/>
+        <childnode refid="766" relation="include">
+        </childnode>
+        <childnode refid="767" relation="include">
+        </childnode>
+        <childnode refid="768" relation="include">
+        </childnode>
+        <childnode refid="769" relation="include">
+        </childnode>
+        <childnode refid="770" relation="include">
+        </childnode>
+        <childnode refid="771" relation="include">
+        </childnode>
+        <childnode refid="772" relation="include">
+        </childnode>
+      </node>
+      <node id="773">
+        <label>usb_config.h</label>
+        <link refid="usb__config_8h_source"/>
+        <childnode refid="765" relation="include">
+        </childnode>
+        <childnode refid="774" relation="include">
+        </childnode>
+      </node>
+      <node id="770">
+        <label>usb_init.h</label>
+        <link refid="usb__init_8h_source"/>
+      </node>
+      <node id="768">
+        <label>usb_def.h</label>
+        <link refid="usb__def_8h_source"/>
+      </node>
+      <node id="774">
+        <label>gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="760" relation="include">
+        </childnode>
+        <childnode refid="775" relation="include">
+        </childnode>
+      </node>
+      <node id="769">
+        <label>usb_core.h</label>
+        <link refid="usb__core_8h_source"/>
+      </node>
+      <node id="764">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="761" relation="include">
+        </childnode>
+        <childnode refid="762" relation="include">
+        </childnode>
+      </node>
+      <node id="767">
+        <label>usb_regs.h</label>
+        <link refid="usb__regs_8h_source"/>
+      </node>
+      <node id="763">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="761" relation="include">
+        </childnode>
+      </node>
+      <node id="776">
+        <label>descriptors.h</label>
+        <link refid="descriptors_8h_source"/>
+        <childnode refid="760" relation="include">
+        </childnode>
+        <childnode refid="765" relation="include">
+        </childnode>
+      </node>
+      <node id="758">
+        <label>libmaple/usb/usb_callbacks.c</label>
+        <link refid="usb_callbacks.c"/>
+        <childnode refid="759" relation="include">
+        </childnode>
+        <childnode refid="765" relation="include">
+        </childnode>
+        <childnode refid="776" relation="include">
+        </childnode>
+        <childnode refid="773" relation="include">
+        </childnode>
+        <childnode refid="777" relation="include">
+        </childnode>
+        <childnode refid="778" relation="include">
+        </childnode>
+      </node>
+      <node id="759">
+        <label>usb_callbacks.h</label>
+        <link refid="usb__callbacks_8h_source"/>
+        <childnode refid="760" relation="include">
+        </childnode>
+        <childnode refid="765" relation="include">
+        </childnode>
+        <childnode refid="773" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="usb__callbacks_8c_1abbd1eb77cd6e763955668495c7917a4e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_o_n_e___d_e_s_c_r_i_p_t_o_r" kindref="compound">ONE_DESCRIPTOR</ref></type>
+        <definition>ONE_DESCRIPTOR Device_Descriptor</definition>
+        <argsstring></argsstring>
+        <name>Device_Descriptor</name>
+        <initializer> {
+    (uint8*)&amp;usbVcomDescriptor_Device,
+    sizeof(<ref refid="struct_u_s_b___descriptor___device" kindref="compound">USB_Descriptor_Device</ref>)
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="13" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usb__callbacks_8c_1a781a71615bbb620714a8074939a70a8e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_o_n_e___d_e_s_c_r_i_p_t_o_r" kindref="compound">ONE_DESCRIPTOR</ref></type>
+        <definition>ONE_DESCRIPTOR Config_Descriptor</definition>
+        <argsstring></argsstring>
+        <name>Config_Descriptor</name>
+        <initializer> {
+    (uint8*)&amp;usbVcomDescriptor_Config,
+    0x43
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="18" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usb__callbacks_8c_1ab3f7dc3a574fb16ce03b1e4ce6f3b655" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_o_n_e___d_e_s_c_r_i_p_t_o_r" kindref="compound">ONE_DESCRIPTOR</ref></type>
+        <definition>ONE_DESCRIPTOR String_Descriptor[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>String_Descriptor</name>
+        <initializer> {
+    {(uint8*)&amp;usbVcomDescriptor_LangID,       USB_DESCRIPTOR_STRING_LEN(1)},
+    {(uint8*)&amp;usbVcomDescriptor_iManufacturer,USB_DESCRIPTOR_STRING_LEN(8)},
+    {(uint8*)&amp;usbVcomDescriptor_iProduct,     USB_DESCRIPTOR_STRING_LEN(8)}
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="24" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usb__callbacks_8c_1a1083aeb87ba8194b2fc09e810f63d948" prot="public" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 last_request</definition>
+        <argsstring></argsstring>
+        <name>last_request</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="26" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usb__callbacks_8c_1a85bf602266a17cab4d51a161f6d31b7c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_u_s_b___line___coding" kindref="compound">USB_Line_Coding</ref></type>
+        <definition>USB_Line_Coding line_coding</definition>
+        <argsstring></argsstring>
+        <name>line_coding</name>
+        <initializer> {
+ bitrate:     115200,
+ format:      0x00, 
+ paritytype:  0x00,
+ datatype:    0x08
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="33" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usb__callbacks_8c_1ae2442f8c4e5ac626352d0f5ee07b5cc5" prot="public" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 vcomBufferRx[VCOM_RX_BUFLEN]</definition>
+        <argsstring>[VCOM_RX_BUFLEN]</argsstring>
+        <name>vcomBufferRx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="35" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usb__callbacks_8c_1a1588b9e056e98fe694e1903c32406dab" prot="public" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>volatile uint32 countTx</definition>
+        <argsstring></argsstring>
+        <name>countTx</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="36" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usb__callbacks_8c_1a24a687d231c07c3e26674ec59687a73f" prot="public" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>volatile uint32 recvBufIn</definition>
+        <argsstring></argsstring>
+        <name>recvBufIn</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="37" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usb__callbacks_8c_1a1ce8ff16ab561abbe97d898fa4fee918" prot="public" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>volatile uint32 recvBufOut</definition>
+        <argsstring></argsstring>
+        <name>recvBufOut</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="38" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usb__callbacks_8c_1a32e6024c708ac412f2c222099141d304" prot="public" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>volatile uint32 maxNewBytes</definition>
+        <argsstring></argsstring>
+        <name>maxNewBytes</name>
+        <initializer> VCOM_RX_BUFLEN</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="39" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usb__callbacks_8c_1a26dace0b57a8ed27f4964909a8ec17cd" prot="public" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>volatile uint32 newBytes</definition>
+        <argsstring></argsstring>
+        <name>newBytes</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="40" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usb__callbacks_8c_1a53970f5863b25a502781c8ec8e22ffa0" prot="public" static="no" mutable="no">
+        <type>RESET_STATE</type>
+        <definition>RESET_STATE reset_state</definition>
+        <argsstring></argsstring>
+        <name>reset_state</name>
+        <initializer> DTR_UNSET</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="41" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usb__callbacks_8c_1a3cfb101d432d73ab36463f322217e36c" prot="public" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 line_dtr_rts</definition>
+        <argsstring></argsstring>
+        <name>line_dtr_rts</name>
+        <initializer> 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="42" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="usb__callbacks_8c_1a906bdbf9f6516e89c085b757bd17c3a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vcomDataTxCb</definition>
+        <argsstring>(void)</argsstring>
+        <name>vcomDataTxCb</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="44" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="44" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="usb__callbacks_8c_1ac1ee0d3db6d20c629664dd7eba902cb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vcomDataRxCb</definition>
+        <argsstring>(void)</argsstring>
+        <name>vcomDataRxCb</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="58" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="58" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="usb__callbacks_8c_1a97e22db966cb8ebe6ed8b652dff65789" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vcomManagementCb</definition>
+        <argsstring>(void)</argsstring>
+        <name>vcomManagementCb</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="120" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="120" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="usb__callbacks_8c_1a3b6f94e85f63ee0b4b89fdd710d0d141" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8 *</type>
+        <definition>u8* vcomGetSetLineCoding</definition>
+        <argsstring>(uint16 length)</argsstring>
+        <name>vcomGetSetLineCoding</name>
+        <param>
+          <type>uint16</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="125" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="125" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="usb__callbacks_8c_1ae5cbfc5419b461617acffec340b3984d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vcomSetLineState</definition>
+        <argsstring>(void)</argsstring>
+        <name>vcomSetLineState</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="132" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="132" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="usb__callbacks_8c_1a4552b1c9fe142a402c84c15444d3d927" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usbInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>usbInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="135" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="135" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="usb__callbacks_8c_1ae16625ffb5c84985780770236ad77009" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usbReset</definition>
+        <argsstring>(void)</argsstring>
+        <name>usbReset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="147" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="147" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="usb__callbacks_8c_1ae4318dc08658940a2932aba2340817fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usbStatusIn</definition>
+        <argsstring>(void)</argsstring>
+        <name>usbStatusIn</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="201" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="201" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="usb__callbacks_8c_1a7667a8081965e02faf2ba17b7654bf9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usbStatusOut</definition>
+        <argsstring>(void)</argsstring>
+        <name>usbStatusOut</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="207" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="207" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="usb__callbacks_8c_1a3f88794f08726567c1407a43a533a30f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RESULT</type>
+        <definition>RESULT usbDataSetup</definition>
+        <argsstring>(uint8 request)</argsstring>
+        <name>usbDataSetup</name>
+        <param>
+          <type>uint8</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="210" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="210" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="usb__callbacks_8c_1a9c54a5c8001b822473e6027fe0c87c87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RESULT</type>
+        <definition>RESULT usbNoDataSetup</definition>
+        <argsstring>(u8 request)</argsstring>
+        <name>usbNoDataSetup</name>
+        <param>
+          <type>u8</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="238" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="238" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="usb__callbacks_8c_1ae5f09780c34bdd1ac2469e52b798d55c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>RESULT</type>
+        <definition>RESULT usbGetInterfaceSetting</definition>
+        <argsstring>(uint8 interface, uint8 alt_setting)</argsstring>
+        <name>usbGetInterfaceSetting</name>
+        <param>
+          <type>uint8</type>
+          <declname>interface</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>alt_setting</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="294" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="294" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="usb__callbacks_8c_1ae1161136aa4a37715743c2135bb01150" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8 *</type>
+        <definition>u8* usbGetDeviceDescriptor</definition>
+        <argsstring>(u16 length)</argsstring>
+        <name>usbGetDeviceDescriptor</name>
+        <param>
+          <type>u16</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="305" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="305" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="usb__callbacks_8c_1a03c1042bdb2031799b4ef6993c849b40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8 *</type>
+        <definition>u8* usbGetConfigDescriptor</definition>
+        <argsstring>(u16 length)</argsstring>
+        <name>usbGetConfigDescriptor</name>
+        <param>
+          <type>u16</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="309" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="309" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="usb__callbacks_8c_1aa105837893dbf6ff64072f59e36d4f23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>u8 *</type>
+        <definition>u8* usbGetStringDescriptor</definition>
+        <argsstring>(u16 length)</argsstring>
+        <name>usbGetStringDescriptor</name>
+        <param>
+          <type>u16</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="313" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="313" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="usb__callbacks_8c_1a65ad0a3b510538720ad917cc882a63a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usbSetConfiguration</definition>
+        <argsstring>(void)</argsstring>
+        <name>usbSetConfiguration</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="323" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="323" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="usb__callbacks_8c_1a3a22b6347154f889bef438ffcda0d673" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usbSetDeviceAddress</definition>
+        <argsstring>(void)</argsstring>
+        <name>usbSetDeviceAddress</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" line="329" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c" bodystart="329" bodyend="331"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>insert<sp/>license<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;usb_callbacks.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;usb_lib.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;descriptors.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;usb_config.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;usb.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;usb_hardware.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><ref refid="struct_o_n_e___d_e_s_c_r_i_p_t_o_r" kindref="compound">ONE_DESCRIPTOR</ref><sp/>Device_Descriptor<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>(uint8*)&amp;usbVcomDescriptor_Device,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_u_s_b___descriptor___device" kindref="compound">USB_Descriptor_Device</ref>)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><ref refid="struct_o_n_e___d_e_s_c_r_i_p_t_o_r" kindref="compound">ONE_DESCRIPTOR</ref><sp/>Config_Descriptor<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>(uint8*)&amp;usbVcomDescriptor_Config,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>0x43</highlight><highlight class="comment">//sizeof(USB_Descriptor_Config)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><ref refid="struct_o_n_e___d_e_s_c_r_i_p_t_o_r" kindref="compound">ONE_DESCRIPTOR</ref><sp/>String_Descriptor[3]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{(uint8*)&amp;usbVcomDescriptor_LangID,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>USB_DESCRIPTOR_STRING_LEN(1)},</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{(uint8*)&amp;usbVcomDescriptor_iManufacturer,USB_DESCRIPTOR_STRING_LEN(8)},</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{(uint8*)&amp;usbVcomDescriptor_iProduct,<sp/><sp/><sp/><sp/><sp/>USB_DESCRIPTOR_STRING_LEN(8)}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">uint8<sp/>last_request<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><ref refid="struct_u_s_b___line___coding" kindref="compound">USB_Line_Coding</ref><sp/>line_coding<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/>bitrate:<sp/><sp/><sp/><sp/><sp/>115200,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/>format:<sp/><sp/><sp/><sp/><sp/><sp/>0x00,<sp/></highlight><highlight class="comment">/*<sp/>stop<sp/>bits-1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/>paritytype:<sp/><sp/>0x00,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/>datatype:<sp/><sp/><sp/><sp/>0x08</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">uint8<sp/>vcomBufferRx[VCOM_RX_BUFLEN];</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32<sp/>countTx<sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32<sp/>recvBufIn<sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32<sp/>recvBufOut<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32<sp/>maxNewBytes<sp/><sp/><sp/>=<sp/>VCOM_RX_BUFLEN;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32<sp/>newBytes<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">RESET_STATE<sp/>reset_state<sp/>=<sp/>DTR_UNSET;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/>line_dtr_rts<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vcomDataTxCb(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>do<sp/>whatever<sp/>after<sp/>data<sp/>has<sp/>been<sp/>sent<sp/>to<sp/>host<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>allows<sp/>usbSendBytes<sp/>to<sp/>stop<sp/>blocking<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>assumes<sp/>tx<sp/>transactions<sp/>are<sp/>atomic<sp/>64<sp/>bytes<sp/>(nearly<sp/>certain<sp/>they<sp/>are)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>countTx<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>we<sp/>could<sp/>get<sp/>arbitrarily<sp/>complicated<sp/>here<sp/>for<sp/>speed<sp/>purposes</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/><sp/><sp/>however,<sp/>the<sp/>simple<sp/>scheme<sp/>here<sp/>is<sp/>to<sp/>implement<sp/>a<sp/>receive<sp/>fifo</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/><sp/><sp/>and<sp/>always<sp/>set<sp/>the<sp/>maximum<sp/>to<sp/>new<sp/>bytes<sp/>to<sp/>the<sp/>space<sp/>remaining</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/><sp/>in<sp/>the<sp/>fifo.<sp/>this<sp/>number<sp/>will<sp/>be<sp/>reincremented<sp/>after<sp/>calls</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/><sp/>to<sp/>usbReceiveBytes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vcomDataRxCb(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>do<sp/>whatever<sp/>after<sp/>data<sp/>has<sp/>been<sp/>received<sp/>from<sp/>host<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>setEPRxCount<sp/>on<sp/>the<sp/>previous<sp/>cycle<sp/>should<sp/>garuntee</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>we<sp/>havnt<sp/>received<sp/>more<sp/>bytes<sp/>than<sp/>we<sp/>can<sp/>fit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>newBytes<sp/>=<sp/>GetEPRxCount(VCOM_RX_ENDP);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>SetEPRxStatus(VCOM_RX_ENDP,EP_RX_NAK);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>todo,<sp/>not<sp/>checking<sp/>very<sp/>carefully<sp/>for<sp/>edge<sp/>cases.<sp/>USUALLY,</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>if<sp/>we<sp/>emit<sp/>the<sp/>reset<sp/>pulse<sp/>and<sp/>send<sp/>4<sp/>bytes,<sp/>then<sp/>newBytes</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>should<sp/>be<sp/>4.<sp/>But<sp/>its<sp/>POSSIBLE<sp/>that<sp/>this<sp/>would<sp/>be<sp/>violated</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>in<sp/>some<sp/>cases<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>magic<sp/>number,<sp/>{0x31,<sp/>0x45,<sp/>0x41,<sp/>0x46}<sp/>is<sp/>&quot;1EAF&quot;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>uint8<sp/>chkBuf[4];</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>uint8<sp/>cmpBuf[4]<sp/>=<sp/>{0x31,<sp/>0x45,<sp/>0x41,<sp/>0x46};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(reset_state<sp/>==<sp/>DTR_NEGEDGE)<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>reset_state<sp/>=<sp/>DTR_LOW;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(newBytes<sp/>&gt;=<sp/>4)<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>target<sp/>=<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>int)usbWaitReset<sp/>|<sp/>0x1;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>PMAToUserBufferCopy(chkBuf,VCOM_RX_ADDR,4);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>USB_Bool<sp/>cmpMatch<sp/>=<sp/>TRUE;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i=0;<sp/>i&lt;4;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(chkBuf[i]<sp/>!=<sp/>cmpBuf[i])<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cmpMatch<sp/>=<sp/>FALSE;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cmpMatch)<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">asm</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal">(</highlight><highlight class="stringliteral">&quot;mov<sp/>r0,<sp/>%[stack_top]<sp/><sp/><sp/><sp/><sp/><sp/>\n\t&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reset<sp/>the<sp/>stack</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;mov<sp/>sp,<sp/>r0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;mov<sp/>r0,<sp/>#1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;mov<sp/>r1,<sp/>%[target_addr]<sp/><sp/><sp/><sp/>\n\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;mov<sp/>r2,<sp/>%[cpsr]<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;push<sp/>{r2}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n\t&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Fake<sp/>xPSR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;push<sp/>{r1}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n\t&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Target<sp/>address<sp/>for<sp/>PC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;push<sp/>{r0}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n\t&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Fake<sp/>LR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;push<sp/>{r0}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n\t&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Fake<sp/>R12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;push<sp/>{r0}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n\t&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Fake<sp/>R3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;push<sp/>{r0}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n\t&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Fake<sp/>R2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;push<sp/>{r0}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n\t&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Fake<sp/>R1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;push<sp/>{r0}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\n\t&quot;</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Fake<sp/>R0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;mov<sp/>lr,<sp/>%[exc_return]<sp/><sp/><sp/><sp/><sp/>\n\t&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;bx<sp/>lr&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>[stack_top]<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal"><sp/>(STACK_TOP),</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[target_addr]<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal"><sp/>(target),</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[exc_return]<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal"><sp/>(EXC_RETURN),</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[cpsr]<sp/></highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal"><sp/>(DEFAULT_CPSR)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;r0&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;r1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;r2&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>should<sp/>never<sp/>get<sp/>here<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>PMAToUserBufferCopy(&amp;vcomBufferRx[0],VCOM_RX_ADDR,newBytes);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vcomManagementCb(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>unused.<sp/>This<sp/>enpoint<sp/>would<sp/>callback<sp/>if<sp/>we<sp/>had<sp/>sent<sp/>a<sp/>linestate</highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>changed<sp/>notification<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal">u8*<sp/>vcomGetSetLineCoding(uint16<sp/>length)<sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(length<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pInformation-&gt;Ctrl_Info.Usb_wLength<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_u_s_b___line___coding" kindref="compound">USB_Line_Coding</ref>);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(uint8*)&amp;line_coding;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vcomSetLineState(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>usbInit(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>pInformation-&gt;Current_Configuration<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>usbPowerOn();</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>_SetISTR(0);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>wInterrupt_Mask<sp/>=<sp/>ISR_MSK;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>_SetCNTR(wInterrupt_Mask);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>usbEnbISR();</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>bDeviceState<sp/>=<sp/>UNCONNECTED;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>usbReset(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>pInformation-&gt;Current_Configuration<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>current<sp/>feature<sp/>is<sp/>current<sp/>bmAttributes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>pInformation-&gt;Current_Feature<sp/>=<sp/>(USB_CONFIG_ATTR_BUSPOWERED<sp/>|<sp/>USB_CONFIG_ATTR_SELF_POWERED);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>_SetBTABLE(USB_BTABLE_ADDRESS);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>setup<sp/>control<sp/>endpoint<sp/>0<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>_SetEPType(ENDP0,<sp/>EP_CONTROL);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>_SetEPTxStatus(ENDP0,<sp/>EP_TX_STALL);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>_SetEPRxAddr(ENDP0,VCOM_CTRL_RX_ADDR);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>_SetEPTxAddr(ENDP0,VCOM_CTRL_TX_ADDR);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>Clear_Status_Out(ENDP0);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>SetEPRxCount(ENDP0,<sp/>pProperty-&gt;MaxPacketSize);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>SetEPRxValid(ENDP0);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>setup<sp/>management<sp/>endpoint<sp/>1<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>SetEPType<sp/><sp/><sp/><sp/><sp/>(VCOM_NOTIFICATION_ENDP,<sp/><sp/><sp/><sp/><sp/>EP_INTERRUPT);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>SetEPTxAddr<sp/><sp/><sp/>(VCOM_NOTIFICATION_ENDP,<sp/><sp/><sp/><sp/><sp/>VCOM_NOTIFICATION_ADDR);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>SetEPTxStatus<sp/>(VCOM_NOTIFICATION_ENDP,<sp/><sp/><sp/><sp/><sp/>EP_TX_NAK);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>SetEPRxStatus<sp/>(VCOM_NOTIFICATION_ENDP,<sp/><sp/><sp/><sp/><sp/>EP_RX_DIS);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>setup<sp/>data<sp/>endpoint<sp/>OUT<sp/>(rx)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/>SetEPType<sp/><sp/><sp/><sp/><sp/>(VCOM_RX_ENDP,<sp/>EP_BULK);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/>SetEPRxAddr<sp/><sp/><sp/>(VCOM_RX_ENDP,<sp/>VCOM_RX_ADDR);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/>SetEPRxCount<sp/><sp/>(VCOM_RX_ENDP,<sp/>VCOM_RX_EPSIZE);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/>//<sp/>SetEPTxStatus<sp/>(VCOM_RX_ENDP,<sp/>EP_TX_DIS);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/><sp/>SetEPRxStatus<sp/>(VCOM_RX_ENDP,<sp/>EP_RX_VALID);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>SetEPType<sp/><sp/><sp/><sp/><sp/>(3,<sp/>EP_BULK);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>SetEPRxAddr<sp/><sp/><sp/>(3,<sp/>0x110);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>SetEPRxCount<sp/><sp/>(3,64);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>SetEPTxStatus<sp/>(VCOM_RX_ENDP,<sp/>EP_TX_DIS);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>SetEPRxStatus<sp/>(3,<sp/>EP_RX_VALID);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>setup<sp/>data<sp/>endpoint<sp/>IN<sp/>(tx)<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>SetEPType<sp/><sp/><sp/><sp/><sp/>(VCOM_TX_ENDP,<sp/>EP_BULK);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>SetEPTxAddr<sp/><sp/><sp/>(VCOM_TX_ENDP,<sp/>VCOM_TX_ADDR);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>SetEPTxStatus<sp/>(VCOM_TX_ENDP,<sp/>EP_TX_NAK);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>SetEPRxStatus<sp/>(VCOM_TX_ENDP,<sp/>EP_RX_DIS);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>bDeviceState<sp/>=<sp/>ATTACHED;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>SetDeviceAddress(0);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>reset<sp/>the<sp/>rx<sp/>fifo<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>recvBufIn<sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>recvBufOut<sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>maxNewBytes<sp/>=<sp/>VCOM_RX_EPSIZE;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>countTx<sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>usbStatusIn(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>adjust<sp/>the<sp/>usart<sp/>line<sp/>coding</highlight></codeline>
+<codeline lineno="203"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>we<sp/>wish<sp/>to<sp/>couple<sp/>the<sp/>CDC<sp/>line<sp/>coding</highlight></codeline>
+<codeline lineno="204"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>with<sp/>the<sp/>real<sp/>usart<sp/>port<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>usbStatusOut(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal">RESULT<sp/>usbDataSetup(uint8<sp/>request)<sp/>{</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>*(*CopyRoutine)(uint16);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>CopyRoutine<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Type_Recipient<sp/>==<sp/>(CLASS_REQUEST<sp/>|<sp/>INTERFACE_RECIPIENT))<sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(request)<sp/>{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>(GET_LINE_CODING):</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CopyRoutine<sp/>=<sp/>vcomGetSetLineCoding;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>last_request<sp/>=<sp/>GET_LINE_CODING;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>(SET_LINE_CODING):</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CopyRoutine<sp/>=<sp/>vcomGetSetLineCoding;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>last_request<sp/>=<sp/>SET_LINE_CODING;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(CopyRoutine<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>USB_UNSUPPORT;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>pInformation-&gt;Ctrl_Info.CopyData<sp/>=<sp/>CopyRoutine;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>pInformation-&gt;Ctrl_Info.Usb_wOffset<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>(*CopyRoutine)(0);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>USB_SUCCESS;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal">RESULT<sp/>usbNoDataSetup(u8<sp/>request)<sp/>{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>new_signal;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>we<sp/>support<sp/>set<sp/>com<sp/>feature<sp/>but<sp/>dont<sp/>handle<sp/>it<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Type_Recipient<sp/>==<sp/>(CLASS_REQUEST<sp/>|<sp/>INTERFACE_RECIPIENT))<sp/>{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(request)<sp/>{</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>(SET_COMM_FEATURE):</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>USB_SUCCESS;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>(SET_CONTROL_LINE_STATE):</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>to<sp/>reset<sp/>the<sp/>board,<sp/>pull<sp/>both<sp/>dtr<sp/>and<sp/>rts<sp/>low</highlight></codeline>
+<codeline lineno="249"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>then<sp/>pulse<sp/>dtr<sp/>by<sp/>itself<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>new_signal<sp/>=<sp/>pInformation-&gt;USBwValues.bw.bb0<sp/>&amp;<sp/>(CONTROL_LINE_DTR<sp/>|<sp/>CONTROL_LINE_RTS);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>line_dtr_rts<sp/>=<sp/>new_signal<sp/>&amp;<sp/>0x03;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(reset_state)<sp/>{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>no<sp/>default,<sp/>covered<sp/>enum<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>DTR_UNSET:</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((new_signal<sp/>&amp;<sp/>CONTROL_LINE_DTR)<sp/>==<sp/>0<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reset_state<sp/>=<sp/>DTR_LOW;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reset_state<sp/>=<sp/>DTR_HIGH;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>DTR_HIGH:</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((new_signal<sp/>&amp;<sp/>CONTROL_LINE_DTR)<sp/>==<sp/>0<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reset_state<sp/>=<sp/>DTR_NEGEDGE;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reset_state<sp/>=<sp/>DTR_HIGH;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>DTR_NEGEDGE:</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((new_signal<sp/>&amp;<sp/>CONTROL_LINE_DTR)<sp/>==<sp/>0<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reset_state<sp/>=<sp/>DTR_LOW;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reset_state<sp/>=<sp/>DTR_HIGH;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>DTR_LOW:</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((new_signal<sp/>&amp;<sp/>CONTROL_LINE_DTR)<sp/>==<sp/>0<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reset_state<sp/>=<sp/>DTR_LOW;</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reset_state<sp/>=<sp/>DTR_HIGH;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>USB_SUCCESS;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>USB_UNSUPPORT;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal">RESULT<sp/>usbGetInterfaceSetting(uint8<sp/>interface,<sp/>uint8<sp/>alt_setting)<sp/>{</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(alt_setting<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>USB_UNSUPPORT;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(interface<sp/>&gt;<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>USB_UNSUPPORT;</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>USB_SUCCESS;</highlight></codeline>
+<codeline lineno="302"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal">u8*<sp/>usbGetDeviceDescriptor(u16<sp/>length)<sp/>{</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Standard_GetDescriptorData(length,<sp/>&amp;Device_Descriptor);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal">u8*<sp/>usbGetConfigDescriptor(u16<sp/>length)<sp/>{</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Standard_GetDescriptorData(length,<sp/>&amp;Config_Descriptor);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal">u8*<sp/>usbGetStringDescriptor(u16<sp/>length)<sp/>{</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>wValue0<sp/>=<sp/>pInformation-&gt;USBwValue0;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(wValue0<sp/>&gt;<sp/>2)<sp/>{</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Standard_GetDescriptorData(length,<sp/>&amp;String_Descriptor[wValue0]);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>internal<sp/>callbacks<sp/>to<sp/>respond<sp/>to<sp/>standard<sp/>requests<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>usbSetConfiguration(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pInformation-&gt;Current_Configuration<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bDeviceState<sp/>=<sp/>CONFIGURED;</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="327"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>usbSetDeviceAddress(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/>bDeviceState<sp/>=<sp/>ADDRESSED;</highlight></codeline>
+<codeline lineno="331"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="unionx_r_t_o_s___h_e_a_p" kind="union" prot="public">
+    <compoundname>xRTOS_HEAP</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionx_r_t_o_s___h_e_a_p_1add5b2bbc9fd7c137f2e39c51d7551604" prot="public" static="no" mutable="no">
+        <type>portDOUBLE</type>
+        <definition>volatile portDOUBLE xRTOS_HEAP::dDummy</definition>
+        <argsstring></argsstring>
+        <name>dDummy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/heap_2.c" line="79" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/heap_2.c" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionx_r_t_o_s___h_e_a_p_1a86877802366132fcc90b15286c6ee871" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char xRTOS_HEAP::ucHeap[configTOTAL_HEAP_SIZE]</definition>
+        <argsstring>[configTOTAL_HEAP_SIZE]</argsstring>
+        <name>ucHeap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/heap_2.c" line="83" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/heap_2.c" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/heap_2.c" line="77" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/heap_2.c" bodystart="76" bodyend="84"/>
+    <listofallmembers>
+      <member refid="unionx_r_t_o_s___h_e_a_p_1add5b2bbc9fd7c137f2e39c51d7551604" prot="public" virt="non-virtual"><scope>xRTOS_HEAP</scope><name>dDummy</name></member>
+      <member refid="unionx_r_t_o_s___h_e_a_p_1a86877802366132fcc90b15286c6ee871" prot="public" virt="non-virtual"><scope>xRTOS_HEAP</scope><name>ucHeap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

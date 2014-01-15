@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="v_queue_delete" kind="page">
+    <compoundname>vQueueDelete</compoundname>
+    <title>vQueueDelete</title>
+    <detaileddescription>
+<para>queue.</para><para>h <preformatted>void vQueueDelete( xQueueHandle xQueue );</preformatted></para><para>Delete a queue - freeing all the memory allocated for storing of items placed on the queue.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xQueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A handle to the queue to be deleted. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

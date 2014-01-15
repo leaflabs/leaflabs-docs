@@ -1,0 +1,407 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="util_8c" kind="file">
+    <compoundname>util.c</compoundname>
+    <includes refid="libmaple_8h" local="yes">libmaple.h</includes>
+    <includes refid="usart_8h" local="yes">usart.h</includes>
+    <includes refid="gpio_8h" local="yes">gpio.h</includes>
+    <includes refid="nvic_8h" local="yes">nvic.h</includes>
+    <includes refid="adc_8h" local="yes">adc.h</includes>
+    <includes refid="timer_8h" local="yes">timer.h</includes>
+    <incdepgraph>
+      <node id="1021">
+        <label>nvic.h</label>
+        <link refid="nvic_8h"/>
+        <childnode refid="1015" relation="include">
+        </childnode>
+        <childnode refid="1017" relation="include">
+        </childnode>
+      </node>
+      <node id="1019">
+        <label>usart.h</label>
+        <link refid="usart_8h"/>
+        <childnode refid="1015" relation="include">
+        </childnode>
+        <childnode refid="1017" relation="include">
+        </childnode>
+        <childnode refid="1020" relation="include">
+        </childnode>
+        <childnode refid="1021" relation="include">
+        </childnode>
+        <childnode refid="1022" relation="include">
+        </childnode>
+      </node>
+      <node id="1020">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="1015" relation="include">
+        </childnode>
+      </node>
+      <node id="1016">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="1015">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="1014">
+        <label>libmaple.h</label>
+        <link refid="libmaple_8h"/>
+        <childnode refid="1015" relation="include">
+        </childnode>
+        <childnode refid="1016" relation="include">
+        </childnode>
+        <childnode refid="1017" relation="include">
+        </childnode>
+        <childnode refid="1018" relation="include">
+        </childnode>
+      </node>
+      <node id="1024">
+        <label>adc.h</label>
+        <link refid="adc_8h"/>
+        <childnode refid="1014" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1020" relation="include">
+        </childnode>
+      </node>
+      <node id="1022">
+        <label>ring_buffer.h</label>
+        <link refid="ring__buffer_8h"/>
+        <childnode refid="1015" relation="include">
+        </childnode>
+      </node>
+      <node id="1025">
+        <label>bitband.h</label>
+        <link refid="bitband_8h"/>
+        <childnode refid="1015" relation="include">
+        </childnode>
+      </node>
+      <node id="1023">
+        <label>gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="1014" relation="include">
+        </childnode>
+        <childnode refid="1020" relation="include">
+        </childnode>
+      </node>
+      <node id="1026">
+        <label>timer.h</label>
+        <link refid="timer_8h"/>
+        <childnode refid="1014" relation="include">
+        </childnode>
+        <childnode refid="1020" relation="include">
+        </childnode>
+        <childnode refid="1021" relation="include">
+        </childnode>
+        <childnode refid="1025" relation="include">
+        </childnode>
+      </node>
+      <node id="1018">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="1015" relation="include">
+        </childnode>
+        <childnode refid="1016" relation="include">
+        </childnode>
+      </node>
+      <node id="1013">
+        <label>libmaple/util.c</label>
+        <link refid="util.c"/>
+        <childnode refid="1014" relation="include">
+        </childnode>
+        <childnode refid="1019" relation="include">
+        </childnode>
+        <childnode refid="1023" relation="include">
+        </childnode>
+        <childnode refid="1021" relation="include">
+        </childnode>
+        <childnode refid="1024" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+      <node id="1017">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="1015" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="util_8c_1a74ddfc916a78e99cc85adc85729abd28" prot="public" static="no">
+        <name>ERROR_USART</name>
+        <initializer><ref refid="usart_8h_1ae413e6bb2ff2c87336aefd387294169b" kindref="member">USART2</ref></initializer>
+        <briefdescription>
+<para>Utility procedures for debugging, mostly an error LED fade and messages dumped over a UART for failed asserts. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/util.c" line="41" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/util.c" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="util_8c_1a0cbe41c6910c6cb30d5eba9629dc8e58" prot="public" static="no">
+        <name>ERROR_USART_CLK_SPEED</name>
+        <initializer><ref refid="stm32_8h_1a79d8b0164de9c4437da78024b0ed94cb" kindref="member">STM32_PCLK1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/util.c" line="42" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/util.c" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="util_8c_1a0076bf1ef9604cc94a31b20241454ba1" prot="public" static="no">
+        <name>ERROR_USART_BAUD</name>
+        <initializer>9600</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/util.c" line="43" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/util.c" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="util_8c_1a4704cf1d012d55c989926739d381539c" prot="public" static="no">
+        <name>ERROR_TX_PORT</name>
+        <initializer><ref refid="gpio_8h_1a829bf31b6c69ae7e61f14416692a6709" kindref="member">GPIOA</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/util.c" line="44" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/util.c" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="util_8c_1ad672121680c07639c507f92999394ab7" prot="public" static="no">
+        <name>ERROR_TX_PIN</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/util.c" line="45" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/util.c" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="util_8c_1a02650f8e5e6d447a6dc77d76fdb07351" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __error</definition>
+        <argsstring>(void)</argsstring>
+        <name>__error</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Disables all peripheral interrupts except USB and fades the error LED. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/util.c" line="60" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/util.c" bodystart="60" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8c_1a3435787af3d0e3afabf8594acaaf6b5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void _fail</definition>
+        <argsstring>(const char *file, int line, const char *exp)</argsstring>
+        <name>_fail</name>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>exp</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="class_print" kindref="compound">Print</ref> an error message on a UART upon a failed assertion and throb the error LED, if there is one defined. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source file of failed assertion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source line of failed assertion </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String representation of failed assertion </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="par"><title>Side Effects:</title><para>Turns of all peripheral interrupts except USB. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/util.c" line="90" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/util.c" bodystart="90" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="util_8c_1a371ced8f6d31157d3583311faa2a0d8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void throb</definition>
+        <argsstring>(void)</argsstring>
+        <name>throb</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Fades the error LED on and off. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Side Effects:</title><para>Sets output push-pull on ERROR_LED_PIN. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/util.c" line="114" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/util.c" bodystart="114" bodyend="147"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Perry<sp/>Hung.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libmaple_8h" kindref="compound" tooltip="General include file for libmaple.">libmaple.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="usart_8h" kindref="compound" tooltip="USART definitions and prototypes.">usart.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gpio_8h" kindref="compound" tooltip="General purpose I/O (GPIO) and Alternate Function I/O (AFIO) prototypes, defines, and inlined access ...">gpio.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="nvic_8h" kindref="compound" tooltip="Nested vector interrupt controller support.">nvic.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="adc_8h" kindref="compound" tooltip="Analog-to-Digital Conversion (ADC) header.">adc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="timer_8h" kindref="compound" tooltip="New-style timer interface.">timer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Failed<sp/>ASSERT()s<sp/>send<sp/>out<sp/>a<sp/>message<sp/>using<sp/>this<sp/>USART<sp/>config.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ERROR_USART</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ERROR_USART<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>USART2</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ERROR_USART_CLK_SPEED<sp/><sp/>STM32_PCLK1</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ERROR_USART_BAUD<sp/><sp/><sp/><sp/><sp/><sp/><sp/>9600</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ERROR_TX_PORT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GPIOA</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ERROR_TX_PIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>If<sp/>you<sp/>define<sp/>ERROR_LED_PORT<sp/>and<sp/>ERROR_LED_PIN,<sp/>then<sp/>a<sp/>failed</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*<sp/>ASSERT()<sp/>will<sp/>also<sp/>throb()<sp/>an<sp/>LED<sp/>connected<sp/>to<sp/>that<sp/>port<sp/>and<sp/>pin.</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(ERROR_LED_PORT)<sp/>&amp;&amp;<sp/>defined(ERROR_LED_PIN)</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HAVE_ERROR_LED</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="59"><highlight class="comment">/*<sp/>(Called<sp/>from<sp/>exc.S<sp/>with<sp/>global<sp/>interrupts<sp/>disabled.)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="util_8h_1a02650f8e5e6d447a6dc77d76fdb07351" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__error(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Turn<sp/>off<sp/>peripheral<sp/>interrupts<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a50451c96b511f68fb670b90fe9beb699" kindref="member" tooltip="Quickly disable all interrupts.">nvic_irq_disable_all</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Turn<sp/>off<sp/>timers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="timer_8h_1a9d13b9d3e63fa7d21b1fd3d117fae402" kindref="member" tooltip="Disables all timers on the device.">timer_disable_all</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Turn<sp/>off<sp/>ADC<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1a4478bc9acdba36e0bbc026221996f538" kindref="member" tooltip="Disable all ADC peripherals.">adc_disable_all</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Turn<sp/>off<sp/>all<sp/>USARTs<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8h_1a978fd153d351e4d05e42d5da8356e297" kindref="member" tooltip="Disable all serial ports.">usart_disable_all</ref>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Turn<sp/>the<sp/>USB<sp/>interrupt<sp/>back<sp/>on<sp/>so<sp/>the<sp/>bootloader<sp/>keeps<sp/>on<sp/>functioning<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a51e6b1b0e83aac5cd8f1a50255db6b45" kindref="member" tooltip="Enable interrupt irq_num.">nvic_irq_enable</ref>(<ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a7deb5729c162a14f980cd4ab782d1422" kindref="member" tooltip="USB high priority or CAN TX.">NVIC_USB_HP_CAN_TX</ref>);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a51e6b1b0e83aac5cd8f1a50255db6b45" kindref="member" tooltip="Enable interrupt irq_num.">nvic_irq_enable</ref>(<ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a3cbf3dc626f933f5238ebe57a61afc0c" kindref="member" tooltip="USB low priority or CAN RX0.">NVIC_USB_LP_CAN_RX0</ref>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reenable<sp/>global<sp/>interrupts<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a78613b2a184eb439b183efb02cca9aeb" kindref="member" tooltip="Enables interrupts and configurable fault handlers (clear PRIMASK).">nvic_globalirq_enable</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>throb();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="util_8h_1a6fb0d7abf66cf4b80408f888191708bd" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_fail(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>file,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>exp)<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Initialize<sp/>the<sp/>error<sp/>USART<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(ERROR_TX_PORT,<sp/>ERROR_TX_PIN,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8c_1a4e681821539d76f652db1f96e1cab966" kindref="member" tooltip="Initialize a serial port.">usart_init</ref>(ERROR_USART);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8c_1acb3dad2577b5add75dc061c12cddf3fe" kindref="member" tooltip="Configure a serial port&amp;#39;s baud rate.">usart_set_baud_rate</ref>(ERROR_USART,<sp/>ERROR_USART_CLK_SPEED,<sp/>ERROR_USART_BAUD);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Print<sp/>failed<sp/>assert<sp/>message<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8h_1adfd73cdc84463809e6938b0328532fbe" kindref="member" tooltip="Transmit a character string on a serial port.">usart_putstr</ref>(ERROR_USART,<sp/></highlight><highlight class="stringliteral">&quot;ERROR:<sp/>FAILED<sp/>ASSERT(&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8h_1adfd73cdc84463809e6938b0328532fbe" kindref="member" tooltip="Transmit a character string on a serial port.">usart_putstr</ref>(ERROR_USART,<sp/>exp);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8h_1adfd73cdc84463809e6938b0328532fbe" kindref="member" tooltip="Transmit a character string on a serial port.">usart_putstr</ref>(ERROR_USART,<sp/></highlight><highlight class="stringliteral">&quot;):<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8h_1adfd73cdc84463809e6938b0328532fbe" kindref="member" tooltip="Transmit a character string on a serial port.">usart_putstr</ref>(ERROR_USART,<sp/>file);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8h_1adfd73cdc84463809e6938b0328532fbe" kindref="member" tooltip="Transmit a character string on a serial port.">usart_putstr</ref>(ERROR_USART,<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8c_1adc07cc9819ac5baa43e4639d88a296a7" kindref="member" tooltip="Transmit an unsigned integer to the specified serial port in decimal format.">usart_putudec</ref>(ERROR_USART,<sp/>line);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8h_1a76f511d4799bfc2ad702eb5b03b72f8b" kindref="member" tooltip="Transmit one character on a serial port.">usart_putc</ref>(ERROR_USART,<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8h_1a76f511d4799bfc2ad702eb5b03b72f8b" kindref="member" tooltip="Transmit one character on a serial port.">usart_putc</ref>(ERROR_USART,<sp/></highlight><highlight class="charliteral">&apos;\r&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Error<sp/>fade<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>__error();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="util_8h_1a371ced8f6d31157d3583311faa2a0d8f" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>throb(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_ERROR_LED</highlight></codeline>
+<codeline lineno="116"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>int32<sp/><sp/>slope<sp/><sp/><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>CC<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0000;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>TOP_CNT<sp/>=<sp/>0x0200;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>i<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(ERROR_LED_PORT,<sp/>ERROR_LED_PIN,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaae00b5085249861846c28290ee6de1859" kindref="member" tooltip="Output push-pull.">GPIO_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Error<sp/>fade.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)<sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(CC<sp/>==<sp/>TOP_CNT)<sp/><sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>slope<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(CC<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>slope<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>==<sp/>TOP_CNT)<sp/><sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CC<sp/>+=<sp/>slope;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>&lt;<sp/>CC)<sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gpio_8h_1a58adb02a517a5d32cc686df5bb2764a6" kindref="member" tooltip="Set or reset a GPIO pin.">gpio_write_bit</ref>(ERROR_LED_PORT,<sp/>ERROR_LED_PIN,<sp/>1);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gpio_8h_1a58adb02a517a5d32cc686df5bb2764a6" kindref="member" tooltip="Set or reset a GPIO pin.">gpio_write_bit</ref>(ERROR_LED_PORT,<sp/>ERROR_LED_PIN,<sp/>0);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="143"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>No<sp/>error<sp/>LED<sp/>is<sp/>defined;<sp/>do<sp/>nothing.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/util.c"/>
+  </compounddef>
+</doxygen>

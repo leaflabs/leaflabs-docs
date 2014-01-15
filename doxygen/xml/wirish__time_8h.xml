@@ -1,0 +1,357 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="wirish__time_8h" kind="file">
+    <compoundname>wirish_time.h</compoundname>
+    <includes refid="libmaple_8h" local="yes">libmaple.h</includes>
+    <includes refid="nvic_8h" local="yes">nvic.h</includes>
+    <includes refid="systick_8h" local="yes">systick.h</includes>
+    <includes refid="boards_8h" local="yes">boards.h</includes>
+    <includedby refid="io_8h" local="yes">wirish/io.h</includedby>
+    <includedby refid="wirish_8h" local="yes">wirish/wirish.h</includedby>
+    <incdepgraph>
+      <node id="1652">
+        <label>boards.h</label>
+        <link refid="boards_8h"/>
+        <childnode refid="1645" relation="include">
+        </childnode>
+        <childnode refid="1653" relation="include">
+        </childnode>
+        <childnode refid="1655" relation="include">
+        </childnode>
+        <childnode refid="1657" relation="include">
+        </childnode>
+      </node>
+      <node id="1650">
+        <label>nvic.h</label>
+        <link refid="nvic_8h"/>
+        <childnode refid="1646" relation="include">
+        </childnode>
+        <childnode refid="1648" relation="include">
+        </childnode>
+      </node>
+      <node id="1654">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="1646" relation="include">
+        </childnode>
+      </node>
+      <node id="1647">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="1646">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="1645">
+        <label>libmaple.h</label>
+        <link refid="libmaple_8h"/>
+        <childnode refid="1646" relation="include">
+        </childnode>
+        <childnode refid="1647" relation="include">
+        </childnode>
+        <childnode refid="1648" relation="include">
+        </childnode>
+        <childnode refid="1649" relation="include">
+        </childnode>
+      </node>
+      <node id="1644">
+        <label>wirish/wirish_time.h</label>
+        <link refid="wirish_time.h"/>
+        <childnode refid="1645" relation="include">
+        </childnode>
+        <childnode refid="1650" relation="include">
+        </childnode>
+        <childnode refid="1651" relation="include">
+        </childnode>
+        <childnode refid="1652" relation="include">
+        </childnode>
+      </node>
+      <node id="1657">
+        <label>wirish_types.h</label>
+        <link refid="wirish__types_8h"/>
+        <childnode refid="1646" relation="include">
+        </childnode>
+        <childnode refid="1653" relation="include">
+        </childnode>
+        <childnode refid="1655" relation="include">
+        </childnode>
+        <childnode refid="1658" relation="include">
+        </childnode>
+      </node>
+      <node id="1658">
+        <label>adc.h</label>
+        <link refid="adc_8h"/>
+        <childnode refid="1645" relation="include">
+        </childnode>
+        <childnode refid="1656" relation="include">
+        </childnode>
+        <childnode refid="1654" relation="include">
+        </childnode>
+      </node>
+      <node id="1651">
+        <label>systick.h</label>
+        <link refid="systick_8h"/>
+        <childnode refid="1646" relation="include">
+        </childnode>
+        <childnode refid="1648" relation="include">
+        </childnode>
+      </node>
+      <node id="1656">
+        <label>bitband.h</label>
+        <link refid="bitband_8h"/>
+        <childnode refid="1646" relation="include">
+        </childnode>
+      </node>
+      <node id="1653">
+        <label>gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="1645" relation="include">
+        </childnode>
+        <childnode refid="1654" relation="include">
+        </childnode>
+      </node>
+      <node id="1655">
+        <label>timer.h</label>
+        <link refid="timer_8h"/>
+        <childnode refid="1645" relation="include">
+        </childnode>
+        <childnode refid="1654" relation="include">
+        </childnode>
+        <childnode refid="1650" relation="include">
+        </childnode>
+        <childnode refid="1656" relation="include">
+        </childnode>
+      </node>
+      <node id="1649">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="1646" relation="include">
+        </childnode>
+        <childnode refid="1647" relation="include">
+        </childnode>
+      </node>
+      <node id="1648">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="1646" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1661">
+        <label>wirish/wirish.h</label>
+        <link refid="wirish_8h_source"/>
+        <childnode refid="1662" relation="include">
+        </childnode>
+        <childnode refid="1663" relation="include">
+        </childnode>
+        <childnode refid="1664" relation="include">
+        </childnode>
+        <childnode refid="1665" relation="include">
+        </childnode>
+      </node>
+      <node id="1660">
+        <label>wirish/io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="1661" relation="include">
+        </childnode>
+      </node>
+      <node id="1664">
+        <label>libraries/LiquidCrystal/LiquidCrystal.h</label>
+        <link refid="_liquid_crystal_8h_source"/>
+      </node>
+      <node id="1659">
+        <label>wirish/wirish_time.h</label>
+        <link refid="wirish_time.h"/>
+        <childnode refid="1660" relation="include">
+        </childnode>
+        <childnode refid="1661" relation="include">
+        </childnode>
+      </node>
+      <node id="1665">
+        <label>libraries/Wire/Wire.h</label>
+        <link refid="_wire_8h_source"/>
+      </node>
+      <node id="1662">
+        <label>wirish/WProgram.h</label>
+        <link refid="_w_program_8h_source"/>
+      </node>
+      <node id="1663">
+        <label>libraries/FreeRTOS/MapleFreeRTOS.h</label>
+        <link refid="_maple_free_r_t_o_s_8h_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wirish__time_8h_1a31ae5fdfe8827f4d8def045948d3986e" prot="public" static="no">
+        <name>US_PER_MS</name>
+        <initializer>1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_time.h" line="40" bodyfile="/home/mbolivar/leaf/libmaple/wirish/wirish_time.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wirish__time_8h_1aa3b895b47653368d7ee5f3f2dd10bc41" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32</type>
+        <definition>static uint32 millis</definition>
+        <argsstring>(void)</argsstring>
+        <name>millis</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns time (in milliseconds) since the beginning of program execution. </para>        </briefdescription>
+        <detaileddescription>
+<para>On overflow, restarts at 0. <simplesect kind="see"><para><ref refid="wirish__time_8h_1a8145bb352e6ee6d420da2885bc6ecc40" kindref="member">micros()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_time.h" line="47" bodyfile="/home/mbolivar/leaf/libmaple/wirish/wirish_time.h" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="wirish__time_8h_1a8145bb352e6ee6d420da2885bc6ecc40" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32</type>
+        <definition>static uint32 micros</definition>
+        <argsstring>(void)</argsstring>
+        <name>micros</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns time (in microseconds) since the beginning of program execution. </para>        </briefdescription>
+        <detaileddescription>
+<para>On overflow, restarts at 0. <simplesect kind="see"><para><ref refid="wirish__time_8h_1aa3b895b47653368d7ee5f3f2dd10bc41" kindref="member">millis()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_time.h" line="56" bodyfile="/home/mbolivar/leaf/libmaple/wirish/wirish_time.h" bodystart="56" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="wirish__time_8h_1a6bc5f943544a887f8b23cadfb26a5e30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void delay</definition>
+        <argsstring>(unsigned long ms)</argsstring>
+        <name>delay</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>ms</declname>
+        </param>
+        <briefdescription>
+<para>Delay for at least the given number of milliseconds. </para>        </briefdescription>
+        <detaileddescription>
+<para>Interrupts, etc. may cause the actual number of milliseconds to exceed ms. However, this function will return no less than ms milliseconds from the time it is called.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of milliseconds to delay. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="wirish__time_8h_1ab9e7a63dabe4e122e188f5c41d0c531e" kindref="member">delayMicroseconds()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_time.h" line="84"/>
+      </memberdef>
+      <memberdef kind="function" id="wirish__time_8h_1ab9e7a63dabe4e122e188f5c41d0c531e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void delayMicroseconds</definition>
+        <argsstring>(uint32 us)</argsstring>
+        <name>delayMicroseconds</name>
+        <param>
+          <type>uint32</type>
+          <declname>us</declname>
+        </param>
+        <briefdescription>
+<para>Delay for at least the given number of microseconds. </para>        </briefdescription>
+        <detaileddescription>
+<para>Interrupts, etc. may cause the actual number of microseconds to exceed us. However, this function will return no less than us microseconds from the time it is called.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>us</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number of microseconds to delay. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="wirish__time_8h_1a6bc5f943544a887f8b23cadfb26a5e30" kindref="member">delay()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_time.h" line="96"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Timing and delay functions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Perry<sp/>Hung.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor">#ifndef<sp/>_TIME_H_</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_TIME_H_</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libmaple_8h" kindref="compound" tooltip="General include file for libmaple.">libmaple.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="nvic_8h" kindref="compound" tooltip="Nested vector interrupt controller support.">nvic.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="systick_8h" kindref="compound" tooltip="Various system timer definitions.">systick.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="boards_8h" kindref="compound" tooltip="Board-specific pin information.">boards.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>US_PER_MS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1000</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="47" refid="wirish__time_8h_1aa3b895b47653368d7ee5f3f2dd10bc41" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32<sp/><ref refid="wirish__time_8h_1aa3b895b47653368d7ee5f3f2dd10bc41" kindref="member" tooltip="Returns time (in milliseconds) since the beginning of program execution.">millis</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="systick_8h_1a8d9e8be23ed5bcf7ee68333180d1e8ec" kindref="member" tooltip="Returns the system uptime, in milliseconds.">systick_uptime</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="wirish__time_8h_1a8145bb352e6ee6d420da2885bc6ecc40" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32<sp/><ref refid="wirish__time_8h_1a8145bb352e6ee6d420da2885bc6ecc40" kindref="member" tooltip="Returns time (in microseconds) since the beginning of program execution.">micros</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>ms;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>cycle_cnt;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>res;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cycle_cnt<sp/>=<sp/><ref refid="systick_8h_1a30ec980344b2f608b40eb67d6ffeed4d" kindref="member" tooltip="Returns the current value of the SysTick counter.">systick_get_count</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ms<sp/>=<sp/><ref refid="wirish__time_8h_1aa3b895b47653368d7ee5f3f2dd10bc41" kindref="member" tooltip="Returns time (in milliseconds) since the beginning of program execution.">millis</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(ms<sp/>!=<sp/><ref refid="wirish__time_8h_1aa3b895b47653368d7ee5f3f2dd10bc41" kindref="member" tooltip="Returns time (in milliseconds) since the beginning of program execution.">millis</ref>());</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>SYSTICK_RELOAD_VAL<sp/>is<sp/>1<sp/>less<sp/>than<sp/>the<sp/>number<sp/>of<sp/>cycles<sp/>it</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actually<sp/>takes<sp/>to<sp/>complete<sp/>a<sp/>SysTick<sp/>reload<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>res<sp/>=<sp/>(ms<sp/>*<sp/>US_PER_MS)<sp/>+</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SYSTICK_RELOAD_VAL<sp/>+<sp/>1<sp/>-<sp/>cycle_cnt)<sp/>/<sp/>CYCLES_PER_MICROSECOND;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wirish__time_8h_1a6bc5f943544a887f8b23cadfb26a5e30" kindref="member" tooltip="Delay for at least the given number of milliseconds.">delay</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>ms);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wirish__time_8h_1ab9e7a63dabe4e122e188f5c41d0c531e" kindref="member" tooltip="Delay for at least the given number of microseconds.">delayMicroseconds</ref>(uint32<sp/>us);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_time.h"/>
+  </compounddef>
+</doxygen>

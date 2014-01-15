@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_dd90bd778be90a513c9f8b2c160b9c94" kind="dir">
+    <compoundname>libraries/FreeRTOS/utility/</compoundname>
+    <innerfile refid="croutine_8c">croutine.c</innerfile>
+    <innerfile refid="croutine_8h">croutine.h</innerfile>
+    <innerfile refid="_free_r_t_o_s_8h">FreeRTOS.h</innerfile>
+    <innerfile refid="_free_r_t_o_s_config_8h">FreeRTOSConfig.h</innerfile>
+    <innerfile refid="heap__2_8c">heap_2.c</innerfile>
+    <innerfile refid="list_8c">list.c</innerfile>
+    <innerfile refid="list_8h">list.h</innerfile>
+    <innerfile refid="mpu__wrappers_8h">mpu_wrappers.h</innerfile>
+    <innerfile refid="port_8c">port.c</innerfile>
+    <innerfile refid="portable_8h">portable.h</innerfile>
+    <innerfile refid="portmacro_8h">portmacro.h</innerfile>
+    <innerfile refid="projdefs_8h">projdefs.h</innerfile>
+    <innerfile refid="queue_8c">queue.c</innerfile>
+    <innerfile refid="queue_8h">queue.h</innerfile>
+    <innerfile refid="semphr_8h">semphr.h</innerfile>
+    <innerfile refid="_stack_macros_8h">StackMacros.h</innerfile>
+    <innerfile refid="task_8h">task.h</innerfile>
+    <innerfile refid="tasks_8c">tasks.c</innerfile>
+    <innerfile refid="timers_8c">timers.c</innerfile>
+    <innerfile refid="timers_8h">timers.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/"/>
+  </compounddef>
+</doxygen>

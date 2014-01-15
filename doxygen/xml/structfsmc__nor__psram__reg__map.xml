@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structfsmc__nor__psram__reg__map" kind="struct" prot="public">
+    <compoundname>fsmc_nor_psram_reg_map</compoundname>
+    <includes refid="fsmc_8h" local="no">fsmc.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structfsmc__nor__psram__reg__map_1a6c39f75e2dc630dd97164090107b8470" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_nor_psram_reg_map::BCR</definition>
+        <argsstring></argsstring>
+        <name>BCR</name>
+        <briefdescription>
+<para>Chip-select control register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="97" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__nor__psram__reg__map_1aebf04a77ade5475d58c6d659e1b0326d" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_nor_psram_reg_map::BTR</definition>
+        <argsstring></argsstring>
+        <name>BTR</name>
+        <briefdescription>
+<para>Chip-select timing register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="98" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__nor__psram__reg__map_1a7f3c7b293d109f8164833121bef572e7" prot="public" static="no" mutable="no">
+        <type>const uint8</type>
+        <definition>const uint8 fsmc_nor_psram_reg_map::RESERVED[252]</definition>
+        <argsstring>[252]</argsstring>
+        <name>RESERVED</name>
+        <briefdescription>
+<para>Reserved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="99" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfsmc__nor__psram__reg__map_1a84d51bc7ce573e4110a2cbe68790e5cf" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 fsmc_nor_psram_reg_map::BWTR</definition>
+        <argsstring></argsstring>
+        <name>BWTR</name>
+        <briefdescription>
+<para>Write timing register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="100" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>FSMC NOR/PSRAM register map type. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" line="96" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.h" bodystart="96" bodyend="101"/>
+    <listofallmembers>
+      <member refid="structfsmc__nor__psram__reg__map_1a6c39f75e2dc630dd97164090107b8470" prot="public" virt="non-virtual"><scope>fsmc_nor_psram_reg_map</scope><name>BCR</name></member>
+      <member refid="structfsmc__nor__psram__reg__map_1aebf04a77ade5475d58c6d659e1b0326d" prot="public" virt="non-virtual"><scope>fsmc_nor_psram_reg_map</scope><name>BTR</name></member>
+      <member refid="structfsmc__nor__psram__reg__map_1a84d51bc7ce573e4110a2cbe68790e5cf" prot="public" virt="non-virtual"><scope>fsmc_nor_psram_reg_map</scope><name>BWTR</name></member>
+      <member refid="structfsmc__nor__psram__reg__map_1a7f3c7b293d109f8164833121bef572e7" prot="public" virt="non-virtual"><scope>fsmc_nor_psram_reg_map</scope><name>RESERVED</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

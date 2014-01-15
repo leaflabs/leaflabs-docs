@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structiwdg__reg__map" kind="struct" prot="public">
+    <compoundname>iwdg_reg_map</compoundname>
+    <includes refid="iwdg_8h" local="no">iwdg.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structiwdg__reg__map_1a0aa03a15accfc721f146f314e7704bf7" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 iwdg_reg_map::KR</definition>
+        <argsstring></argsstring>
+        <name>KR</name>
+        <briefdescription>
+<para>Key register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/iwdg.h" line="57" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/iwdg.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structiwdg__reg__map_1a72556aa9a0791338e485f9e026b43f09" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 iwdg_reg_map::PR</definition>
+        <argsstring></argsstring>
+        <name>PR</name>
+        <briefdescription>
+<para>Prescaler register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/iwdg.h" line="58" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/iwdg.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structiwdg__reg__map_1a06b676fc1b5103ea12027eb18a2e6aed" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 iwdg_reg_map::RLR</definition>
+        <argsstring></argsstring>
+        <name>RLR</name>
+        <briefdescription>
+<para>Reload register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/iwdg.h" line="59" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/iwdg.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structiwdg__reg__map_1a5a3f5cafed6cce724f6634dea3378842" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 iwdg_reg_map::SR</definition>
+        <argsstring></argsstring>
+        <name>SR</name>
+        <briefdescription>
+<para>Status register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/iwdg.h" line="60" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/iwdg.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Independent watchdog register map type. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/iwdg.h" line="56" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/iwdg.h" bodystart="56" bodyend="61"/>
+    <listofallmembers>
+      <member refid="structiwdg__reg__map_1a0aa03a15accfc721f146f314e7704bf7" prot="public" virt="non-virtual"><scope>iwdg_reg_map</scope><name>KR</name></member>
+      <member refid="structiwdg__reg__map_1a72556aa9a0791338e485f9e026b43f09" prot="public" virt="non-virtual"><scope>iwdg_reg_map</scope><name>PR</name></member>
+      <member refid="structiwdg__reg__map_1a06b676fc1b5103ea12027eb18a2e6aed" prot="public" virt="non-virtual"><scope>iwdg_reg_map</scope><name>RLR</name></member>
+      <member refid="structiwdg__reg__map_1a5a3f5cafed6cce724f6634dea3378842" prot="public" virt="non-virtual"><scope>iwdg_reg_map</scope><name>SR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

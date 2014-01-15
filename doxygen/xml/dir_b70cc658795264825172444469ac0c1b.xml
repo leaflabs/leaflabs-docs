@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_b70cc658795264825172444469ac0c1b" kind="dir">
+    <compoundname>libraries/FreeRTOS/</compoundname>
+    <innerdir refid="dir_dd90bd778be90a513c9f8b2c160b9c94">libraries/FreeRTOS/utility/</innerdir>
+    <innerfile refid="_maple_free_r_t_o_s_8h">MapleFreeRTOS.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/"/>
+  </compounddef>
+</doxygen>

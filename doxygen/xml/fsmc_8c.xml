@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="fsmc_8c" kind="file">
+    <compoundname>fsmc.c</compoundname>
+    <includes refid="fsmc_8h" local="yes">fsmc.h</includes>
+    <includes refid="gpio_8h" local="yes">gpio.h</includes>
+    <incdepgraph>
+      <node id="197">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+      </node>
+      <node id="194">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="191">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="193">
+        <label>libmaple.h</label>
+        <link refid="libmaple_8h"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="192">
+        <label>gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+      </node>
+      <node id="196">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+      </node>
+      <node id="189">
+        <label>libmaple/fsmc.c</label>
+        <link refid="fsmc.c"/>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+      </node>
+      <node id="190">
+        <label>fsmc.h</label>
+        <link refid="fsmc_8h"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+      </node>
+      <node id="195">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="fsmc_8c_1af32e7c405291351d1a82e01f4f5ebcb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fsmc_sram_init_gpios</definition>
+        <argsstring>(void)</argsstring>
+        <name>fsmc_sram_init_gpios</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Configure FSMC GPIOs for use with SRAM. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.c" line="39" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/fsmc.c" bodystart="39" bodyend="90"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Bryan<sp/>Newbold.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="fsmc_8h" kindref="compound">fsmc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gpio_8h" kindref="compound" tooltip="General purpose I/O (GPIO) and Alternate Function I/O (AFIO) prototypes, defines, and inlined access ...">gpio.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>STM32_HIGH_DENSITY</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="39" refid="fsmc_8h_1af32e7c405291351d1a82e01f4f5ebcb8" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fsmc_sram_init_gpios(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Data<sp/>lines...<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOD,<sp/><sp/>0,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOD,<sp/><sp/>1,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOD,<sp/><sp/>8,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOD,<sp/><sp/>9,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOD,<sp/>10,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOD,<sp/>14,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOD,<sp/>15,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOE,<sp/><sp/>7,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOE,<sp/><sp/>8,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOE,<sp/><sp/>9,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOE,<sp/>10,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOE,<sp/>11,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOE,<sp/>12,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOE,<sp/>13,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOE,<sp/>14,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOE,<sp/>15,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Address<sp/>lines...<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOD,<sp/>11,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOD,<sp/>12,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOD,<sp/>13,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOF,<sp/><sp/>0,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOF,<sp/><sp/>1,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOF,<sp/><sp/>2,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOF,<sp/><sp/>3,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOF,<sp/><sp/>4,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOF,<sp/><sp/>5,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOF,<sp/>12,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOF,<sp/>13,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOF,<sp/>14,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOF,<sp/>15,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOG,<sp/><sp/>0,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOG,<sp/><sp/>1,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOG,<sp/><sp/>2,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOG,<sp/><sp/>3,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOG,<sp/><sp/>4,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOG,<sp/><sp/>5,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>And<sp/>control<sp/>lines...<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOD,<sp/><sp/>4,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>NOE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOD,<sp/><sp/>5,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>NWE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOD,<sp/><sp/>7,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>NE1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOG,<sp/><sp/>9,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>NE2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOG,<sp/>10,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>NE3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOG,<sp/>12,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>NE4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOE,<sp/><sp/>0,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>NBL0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_set_mode(GPIOE,<sp/><sp/>1,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>NBL1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>STM32_HIGH_DENSITY<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/fsmc.c"/>
+  </compounddef>
+</doxygen>

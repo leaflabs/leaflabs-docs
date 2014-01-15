@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structx_memory_region" kind="struct" prot="public">
+    <compoundname>xMemoryRegion</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structx_memory_region_1acc4ee389a90d89d7abd84dd1eb73789c" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* xMemoryRegion::pvBaseAddress</definition>
+        <argsstring></argsstring>
+        <name>pvBaseAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" line="107" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_memory_region_1a06b5a7b43d4382486dd203a444344b0b" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long xMemoryRegion::ulLengthInBytes</definition>
+        <argsstring></argsstring>
+        <name>ulLengthInBytes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" line="108" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_memory_region_1ad11338ebbd5b04377e2442371a2b72e1" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long xMemoryRegion::ulParameters</definition>
+        <argsstring></argsstring>
+        <name>ulParameters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" line="109" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" line="106" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" bodystart="105" bodyend="110"/>
+    <listofallmembers>
+      <member refid="structx_memory_region_1acc4ee389a90d89d7abd84dd1eb73789c" prot="public" virt="non-virtual"><scope>xMemoryRegion</scope><name>pvBaseAddress</name></member>
+      <member refid="structx_memory_region_1a06b5a7b43d4382486dd203a444344b0b" prot="public" virt="non-virtual"><scope>xMemoryRegion</scope><name>ulLengthInBytes</name></member>
+      <member refid="structx_memory_region_1ad11338ebbd5b04377e2442371a2b72e1" prot="public" virt="non-virtual"><scope>xMemoryRegion</scope><name>ulParameters</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

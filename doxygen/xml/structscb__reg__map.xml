@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structscb__reg__map" kind="struct" prot="public">
+    <compoundname>scb_reg_map</compoundname>
+    <includes refid="scb_8h" local="no">scb.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structscb__reg__map_1a71ad92772031622576c39653617c59d0" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 scb_reg_map::CPUID</definition>
+        <argsstring></argsstring>
+        <name>CPUID</name>
+        <briefdescription>
+<para>CPU ID Base Register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/scb.h" line="39" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/scb.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscb__reg__map_1ab462f1803c7b14d96d56b19423013ad6" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 scb_reg_map::ICSR</definition>
+        <argsstring></argsstring>
+        <name>ICSR</name>
+        <briefdescription>
+<para>Interrupt Control State Register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/scb.h" line="40" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/scb.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscb__reg__map_1ac809ea58765b452d0c4e49e6a1a21042" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 scb_reg_map::VTOR</definition>
+        <argsstring></argsstring>
+        <name>VTOR</name>
+        <briefdescription>
+<para>Vector Table Offset Register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/scb.h" line="41" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/scb.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscb__reg__map_1a0a4cb700dcd49e004027925ba6e34d90" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 scb_reg_map::AIRCR</definition>
+        <argsstring></argsstring>
+        <name>AIRCR</name>
+        <briefdescription>
+<para>Application Interrupt / Reset Control Register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/scb.h" line="42" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/scb.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscb__reg__map_1a9e2731e34ecd91164ef3f6dac80be0b9" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 scb_reg_map::SCR</definition>
+        <argsstring></argsstring>
+        <name>SCR</name>
+        <briefdescription>
+<para>System Control Register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/scb.h" line="43" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/scb.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscb__reg__map_1a1373c33e0b109ad9fb61adbee2a5527b" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 scb_reg_map::CCR</definition>
+        <argsstring></argsstring>
+        <name>CCR</name>
+        <briefdescription>
+<para>Configuration Control Register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/scb.h" line="44" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/scb.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscb__reg__map_1a747811293243545f7727aab4d958e8c8" prot="public" static="no" mutable="no">
+        <type>__io uint8</type>
+        <definition>__io uint8 scb_reg_map::SHP[12]</definition>
+        <argsstring>[12]</argsstring>
+        <name>SHP</name>
+        <briefdescription>
+<para>System Handlers Priority Registers (4-7, 8-11, 12-15) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/scb.h" line="46" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/scb.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscb__reg__map_1aac6eee2bea8da59ea013dfdb80d62feb" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 scb_reg_map::SHCSR</definition>
+        <argsstring></argsstring>
+        <name>SHCSR</name>
+        <briefdescription>
+<para>System Handler Control and State Register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/scb.h" line="47" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/scb.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscb__reg__map_1a993af30c0d5d343c0c39ce6acf0ac744" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 scb_reg_map::CFSR</definition>
+        <argsstring></argsstring>
+        <name>CFSR</name>
+        <briefdescription>
+<para>Configurable Fault Status Register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/scb.h" line="48" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/scb.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscb__reg__map_1a411af4a029d8a7ab2f654faf2c235301" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 scb_reg_map::HFSR</definition>
+        <argsstring></argsstring>
+        <name>HFSR</name>
+        <briefdescription>
+<para>Hard Fault Status Register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/scb.h" line="49" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/scb.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscb__reg__map_1a51acdbe8de9f34cdcb1ec7c3014059b3" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 scb_reg_map::DFSR</definition>
+        <argsstring></argsstring>
+        <name>DFSR</name>
+        <briefdescription>
+<para>Debug Fault Status Register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/scb.h" line="50" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/scb.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscb__reg__map_1a51277a286c399df73409e3e2048864dd" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 scb_reg_map::MMFAR</definition>
+        <argsstring></argsstring>
+        <name>MMFAR</name>
+        <briefdescription>
+<para>Mem Manage Address Register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/scb.h" line="51" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/scb.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscb__reg__map_1aa860341ac569efa6a406ea183602c570" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 scb_reg_map::BFAR</definition>
+        <argsstring></argsstring>
+        <name>BFAR</name>
+        <briefdescription>
+<para>Bus Fault Address Register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/scb.h" line="52" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/scb.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscb__reg__map_1a5838df096f59c602ca37e61fdd4c67a6" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 scb_reg_map::AFSR</definition>
+        <argsstring></argsstring>
+        <name>AFSR</name>
+        <briefdescription>
+<para>Auxiliary Fault Status Register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/scb.h" line="53" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/scb.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscb__reg__map_1afdd06d0d5179da58576f49d09f9c810a" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 scb_reg_map::PFR[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>PFR</name>
+        <briefdescription>
+<para>Processor Feature Register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/scb.h" line="54" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/scb.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscb__reg__map_1a3893c5ca13bb136a4f56c88c538823ad" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 scb_reg_map::DFR</definition>
+        <argsstring></argsstring>
+        <name>DFR</name>
+        <briefdescription>
+<para>Debug Feature Register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/scb.h" line="55" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/scb.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscb__reg__map_1a9bd8201822de91f9bc6c844edab1691c" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 scb_reg_map::ADR</definition>
+        <argsstring></argsstring>
+        <name>ADR</name>
+        <briefdescription>
+<para>Auxiliary Feature Register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/scb.h" line="56" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/scb.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscb__reg__map_1a8ce5a09eb8eb075af29155585d7b2300" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 scb_reg_map::MMFR[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>MMFR</name>
+        <briefdescription>
+<para>Memory Model Feature Register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/scb.h" line="57" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/scb.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structscb__reg__map_1a4888139d0f8fd57136ea9bc1b7d240a8" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 scb_reg_map::ISAR[5]</definition>
+        <argsstring>[5]</argsstring>
+        <name>ISAR</name>
+        <briefdescription>
+<para>ISA Feature Register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/scb.h" line="58" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/scb.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>System control block register map type. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/scb.h" line="38" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/scb.h" bodystart="38" bodyend="59"/>
+    <listofallmembers>
+      <member refid="structscb__reg__map_1a9bd8201822de91f9bc6c844edab1691c" prot="public" virt="non-virtual"><scope>scb_reg_map</scope><name>ADR</name></member>
+      <member refid="structscb__reg__map_1a5838df096f59c602ca37e61fdd4c67a6" prot="public" virt="non-virtual"><scope>scb_reg_map</scope><name>AFSR</name></member>
+      <member refid="structscb__reg__map_1a0a4cb700dcd49e004027925ba6e34d90" prot="public" virt="non-virtual"><scope>scb_reg_map</scope><name>AIRCR</name></member>
+      <member refid="structscb__reg__map_1aa860341ac569efa6a406ea183602c570" prot="public" virt="non-virtual"><scope>scb_reg_map</scope><name>BFAR</name></member>
+      <member refid="structscb__reg__map_1a1373c33e0b109ad9fb61adbee2a5527b" prot="public" virt="non-virtual"><scope>scb_reg_map</scope><name>CCR</name></member>
+      <member refid="structscb__reg__map_1a993af30c0d5d343c0c39ce6acf0ac744" prot="public" virt="non-virtual"><scope>scb_reg_map</scope><name>CFSR</name></member>
+      <member refid="structscb__reg__map_1a71ad92772031622576c39653617c59d0" prot="public" virt="non-virtual"><scope>scb_reg_map</scope><name>CPUID</name></member>
+      <member refid="structscb__reg__map_1a3893c5ca13bb136a4f56c88c538823ad" prot="public" virt="non-virtual"><scope>scb_reg_map</scope><name>DFR</name></member>
+      <member refid="structscb__reg__map_1a51acdbe8de9f34cdcb1ec7c3014059b3" prot="public" virt="non-virtual"><scope>scb_reg_map</scope><name>DFSR</name></member>
+      <member refid="structscb__reg__map_1a411af4a029d8a7ab2f654faf2c235301" prot="public" virt="non-virtual"><scope>scb_reg_map</scope><name>HFSR</name></member>
+      <member refid="structscb__reg__map_1ab462f1803c7b14d96d56b19423013ad6" prot="public" virt="non-virtual"><scope>scb_reg_map</scope><name>ICSR</name></member>
+      <member refid="structscb__reg__map_1a4888139d0f8fd57136ea9bc1b7d240a8" prot="public" virt="non-virtual"><scope>scb_reg_map</scope><name>ISAR</name></member>
+      <member refid="structscb__reg__map_1a51277a286c399df73409e3e2048864dd" prot="public" virt="non-virtual"><scope>scb_reg_map</scope><name>MMFAR</name></member>
+      <member refid="structscb__reg__map_1a8ce5a09eb8eb075af29155585d7b2300" prot="public" virt="non-virtual"><scope>scb_reg_map</scope><name>MMFR</name></member>
+      <member refid="structscb__reg__map_1afdd06d0d5179da58576f49d09f9c810a" prot="public" virt="non-virtual"><scope>scb_reg_map</scope><name>PFR</name></member>
+      <member refid="structscb__reg__map_1a9e2731e34ecd91164ef3f6dac80be0b9" prot="public" virt="non-virtual"><scope>scb_reg_map</scope><name>SCR</name></member>
+      <member refid="structscb__reg__map_1aac6eee2bea8da59ea013dfdb80d62feb" prot="public" virt="non-virtual"><scope>scb_reg_map</scope><name>SHCSR</name></member>
+      <member refid="structscb__reg__map_1a747811293243545f7727aab4d958e8c8" prot="public" virt="non-virtual"><scope>scb_reg_map</scope><name>SHP</name></member>
+      <member refid="structscb__reg__map_1ac809ea58765b452d0c4e49e6a1a21042" prot="public" virt="non-virtual"><scope>scb_reg_map</scope><name>VTOR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

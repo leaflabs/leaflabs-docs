@@ -1,0 +1,943 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="queue_8h" kind="file">
+    <compoundname>queue.h</compoundname>
+    <includes refid="mpu__wrappers_8h" local="yes">mpu_wrappers.h</includes>
+    <includedby refid="_maple_free_r_t_o_s_8h" local="yes">libraries/FreeRTOS/MapleFreeRTOS.h</includedby>
+    <includedby refid="semphr_8h" local="yes">libraries/FreeRTOS/utility/semphr.h</includedby>
+    <includedby refid="timers_8c" local="yes">libraries/FreeRTOS/utility/timers.c</includedby>
+    <incdepgraph>
+      <node id="1291">
+        <label>libraries/FreeRTOS/utility/queue.h</label>
+        <link refid="queue.h"/>
+        <childnode refid="1292" relation="include">
+        </childnode>
+      </node>
+      <node id="1292">
+        <label>mpu_wrappers.h</label>
+        <link refid="mpu__wrappers_8h_source"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1293">
+        <label>libraries/FreeRTOS/utility/queue.h</label>
+        <link refid="queue.h"/>
+        <childnode refid="1294" relation="include">
+        </childnode>
+        <childnode refid="1295" relation="include">
+        </childnode>
+        <childnode refid="1296" relation="include">
+        </childnode>
+      </node>
+      <node id="1295">
+        <label>libraries/FreeRTOS/utility/semphr.h</label>
+        <link refid="semphr_8h_source"/>
+        <childnode refid="1294" relation="include">
+        </childnode>
+      </node>
+      <node id="1294">
+        <label>libraries/FreeRTOS/MapleFreeRTOS.h</label>
+        <link refid="_maple_free_r_t_o_s_8h_source"/>
+      </node>
+      <node id="1296">
+        <label>libraries/FreeRTOS/utility/timers.c</label>
+        <link refid="timers_8c_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="queue_8h_1a4d78fa863fbeb90425a2dda08fae8b12" prot="public" static="no">
+        <name>queueSEND_TO_BACK</name>
+        <initializer>( 0 )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="84" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="queue_8h_1a6bae395a00f1a4455f0e7fe3c9e76c14" prot="public" static="no">
+        <name>queueSEND_TO_FRONT</name>
+        <initializer>( 1 )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="85" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="queue_8h_1aa612fcc2b1ceee0200f34b942e300b41" prot="public" static="no">
+        <name>xQueueSendToFront</name>
+        <param><defname>xQueue</defname></param>
+        <param><defname>pvItemToQueue</defname></param>
+        <param><defname>xTicksToWait</defname></param>
+        <initializer>xQueueGenericSend( ( xQueue ), ( pvItemToQueue ), ( xTicksToWait ), queueSEND_TO_FRONT )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="226" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="queue_8h_1a81d24a2c1199d58efb76fbee15853112" prot="public" static="no">
+        <name>xQueueSendToBack</name>
+        <param><defname>xQueue</defname></param>
+        <param><defname>pvItemToQueue</defname></param>
+        <param><defname>xTicksToWait</defname></param>
+        <initializer>xQueueGenericSend( ( xQueue ), ( pvItemToQueue ), ( xTicksToWait ), queueSEND_TO_BACK )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="308" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="queue_8h_1af7eb49d3249351176992950d9185abe9" prot="public" static="no">
+        <name>xQueueSend</name>
+        <param><defname>xQueue</defname></param>
+        <param><defname>pvItemToQueue</defname></param>
+        <param><defname>xTicksToWait</defname></param>
+        <initializer>xQueueGenericSend( ( xQueue ), ( pvItemToQueue ), ( xTicksToWait ), queueSEND_TO_BACK )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="392" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="queue_8h_1a2df70733bb875477cd9614c5b3446257" prot="public" static="no">
+        <name>xQueuePeek</name>
+        <param><defname>xQueue</defname></param>
+        <param><defname>pvBuffer</defname></param>
+        <param><defname>xTicksToWait</defname></param>
+        <initializer>xQueueGenericReceive( ( xQueue ), ( pvBuffer ), ( xTicksToWait ), pdTRUE )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="574" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" bodystart="574" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="queue_8h_1af1549eac0e7f05694a59a0b967c80be3" prot="public" static="no">
+        <name>xQueueReceive</name>
+        <param><defname>xQueue</defname></param>
+        <param><defname>pvBuffer</defname></param>
+        <param><defname>xTicksToWait</defname></param>
+        <initializer>xQueueGenericReceive( ( xQueue ), ( pvBuffer ), ( xTicksToWait ), pdFALSE )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="667" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" bodystart="667" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="queue_8h_1a849dd669e72bfb12314f4445157c9a04" prot="public" static="no">
+        <name>xQueueSendToFrontFromISR</name>
+        <param><defname>pxQueue</defname></param>
+        <param><defname>pvItemToQueue</defname></param>
+        <param><defname>pxHigherPriorityTaskWoken</defname></param>
+        <initializer>xQueueGenericSendFromISR( ( pxQueue ), ( pvItemToQueue ), ( pxHigherPriorityTaskWoken ), queueSEND_TO_FRONT )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="865" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" bodystart="865" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="queue_8h_1a5a4b46fc55ab9f63b89878b37352f521" prot="public" static="no">
+        <name>xQueueSendToBackFromISR</name>
+        <param><defname>pxQueue</defname></param>
+        <param><defname>pvItemToQueue</defname></param>
+        <param><defname>pxHigherPriorityTaskWoken</defname></param>
+        <initializer>xQueueGenericSendFromISR( ( pxQueue ), ( pvItemToQueue ), ( pxHigherPriorityTaskWoken ), queueSEND_TO_BACK )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="936" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" bodystart="936" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="queue_8h_1a2e8236e9af01eedcbc8b67a9cb56b1db" prot="public" static="no">
+        <name>xQueueSendFromISR</name>
+        <param><defname>pxQueue</defname></param>
+        <param><defname>pvItemToQueue</defname></param>
+        <param><defname>pxHigherPriorityTaskWoken</defname></param>
+        <initializer>xQueueGenericSendFromISR( ( pxQueue ), ( pvItemToQueue ), ( pxHigherPriorityTaskWoken ), queueSEND_TO_BACK )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="1010" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" bodystart="1010" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="queue_8h_1ae45934bb36e02340278a65cf238b9083" prot="public" static="no">
+        <name>xQueueAltSendToFront</name>
+        <param><defname>xQueue</defname></param>
+        <param><defname>pvItemToQueue</defname></param>
+        <param><defname>xTicksToWait</defname></param>
+        <initializer>xQueueAltGenericSend( ( xQueue ), ( pvItemToQueue ), ( xTicksToWait ), queueSEND_TO_FRONT )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="1204" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" bodystart="1204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="queue_8h_1a2e290abdf4d43a7142be16bda4279f68" prot="public" static="no">
+        <name>xQueueAltSendToBack</name>
+        <param><defname>xQueue</defname></param>
+        <param><defname>pvItemToQueue</defname></param>
+        <param><defname>xTicksToWait</defname></param>
+        <initializer>xQueueAltGenericSend( ( xQueue ), ( pvItemToQueue ), ( xTicksToWait ), queueSEND_TO_BACK )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="1205" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" bodystart="1205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="queue_8h_1a4f50206223e1f88f458a3aea4131608d" prot="public" static="no">
+        <name>xQueueAltReceive</name>
+        <param><defname>xQueue</defname></param>
+        <param><defname>pvBuffer</defname></param>
+        <param><defname>xTicksToWait</defname></param>
+        <initializer>xQueueAltGenericReceive( ( xQueue ), ( pvBuffer ), ( xTicksToWait ), pdFALSE )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="1206" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" bodystart="1206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="queue_8h_1af6c605882aa8f9133dc2e98a02f55e62" prot="public" static="no">
+        <name>xQueueAltPeek</name>
+        <param><defname>xQueue</defname></param>
+        <param><defname>pvBuffer</defname></param>
+        <param><defname>xTicksToWait</defname></param>
+        <initializer>xQueueAltGenericReceive( ( xQueue ), ( pvBuffer ), ( xTicksToWait ), pdTRUE )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="1207" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" bodystart="1207" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="queue_8h_1a229037f755b756156e34a440ce134b8b" prot="public" static="no">
+        <type>void *</type>
+        <definition>typedef void* xQueueHandle</definition>
+        <argsstring></argsstring>
+        <name>xQueueHandle</name>
+        <briefdescription>
+<para>Type by which queues are referenced. </para>        </briefdescription>
+        <detaileddescription>
+<para>For example, a call to xQueueCreate returns (via a pointer parameter) an xQueueHandle variable that can then be used as a parameter to xQueueSend(), xQueueReceive(), etc. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="80" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="queue_8h_1ab3b70d2ace0dea373bc8057dc2718046" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref></type>
+        <definition>xQueueHandle xQueueCreate</definition>
+        <argsstring>(unsigned portBASE_TYPE uxQueueLength, unsigned portBASE_TYPE uxItemSize)</argsstring>
+        <name>xQueueCreate</name>
+        <param>
+          <type>unsigned portBASE_TYPE</type>
+          <declname>uxQueueLength</declname>
+        </param>
+        <param>
+          <type>unsigned portBASE_TYPE</type>
+          <declname>uxItemSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="144"/>
+      </memberdef>
+      <memberdef kind="function" id="queue_8h_1a20cce4e7bd234116d67ebcdbe4ef2f3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>signed portBASE_TYPE</type>
+        <definition>signed portBASE_TYPE xQueueGenericSend</definition>
+        <argsstring>(xQueueHandle pxQueue, const void *const pvItemToQueue, portTickType xTicksToWait, portBASE_TYPE xCopyPosition)</argsstring>
+        <name>xQueueGenericSend</name>
+        <param>
+          <type><ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref></type>
+          <declname>pxQueue</declname>
+        </param>
+        <param>
+          <type>const void *const</type>
+          <declname>pvItemToQueue</declname>
+        </param>
+        <param>
+          <type>portTickType</type>
+          <declname>xTicksToWait</declname>
+        </param>
+        <param>
+          <type>portBASE_TYPE</type>
+          <declname>xCopyPosition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="480" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" bodystart="467" bodyend="583"/>
+      </memberdef>
+      <memberdef kind="function" id="queue_8h_1ab6c30bf884a19b31acb4158d04c9c3f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>signed portBASE_TYPE</type>
+        <definition>signed portBASE_TYPE xQueueGenericReceive</definition>
+        <argsstring>(xQueueHandle xQueue, void *const pvBuffer, portTickType xTicksToWait, portBASE_TYPE xJustPeek)</argsstring>
+        <name>xQueueGenericReceive</name>
+        <param>
+          <type><ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref></type>
+          <declname>xQueue</declname>
+        </param>
+        <param>
+          <type>void *const</type>
+          <declname>pvBuffer</declname>
+        </param>
+        <param>
+          <type>portTickType</type>
+          <declname>xTicksToWait</declname>
+        </param>
+        <param>
+          <type>portBASE_TYPE</type>
+          <declname>xJustPeek</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="766" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" bodystart="849" bodyend="996"/>
+      </memberdef>
+      <memberdef kind="function" id="queue_8h_1aceeba9457d0f30b2a1c438e14352d7c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned portBASE_TYPE</type>
+        <definition>unsigned portBASE_TYPE uxQueueMessagesWaiting</definition>
+        <argsstring>(const xQueueHandle xQueue)</argsstring>
+        <name>uxQueueMessagesWaiting</name>
+        <param>
+          <type>const <ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref></type>
+          <declname>xQueue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="781" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" bodystart="1054" bodyend="1065"/>
+      </memberdef>
+      <memberdef kind="function" id="queue_8h_1a6b327259567005ab6f12a02feb8fdc7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vQueueDelete</definition>
+        <argsstring>(xQueueHandle pxQueue)</argsstring>
+        <name>vQueueDelete</name>
+        <param>
+          <type><ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref></type>
+          <declname>pxQueue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="795" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" bodystart="1080" bodyend="1088"/>
+      </memberdef>
+      <memberdef kind="function" id="queue_8h_1a5f3e29eed8f166215648bc6465ebdb04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>signed portBASE_TYPE</type>
+        <definition>signed portBASE_TYPE xQueueGenericSendFromISR</definition>
+        <argsstring>(xQueueHandle pxQueue, const void *const pvItemToQueue, signed portBASE_TYPE *pxHigherPriorityTaskWoken, portBASE_TYPE xCopyPosition)</argsstring>
+        <name>xQueueGenericSendFromISR</name>
+        <param>
+          <type><ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref></type>
+          <declname>pxQueue</declname>
+        </param>
+        <param>
+          <type>const void *const</type>
+          <declname>pvItemToQueue</declname>
+        </param>
+        <param>
+          <type>signed portBASE_TYPE *</type>
+          <declname>pxHigherPriorityTaskWoken</declname>
+        </param>
+        <param>
+          <type>portBASE_TYPE</type>
+          <declname>xCopyPosition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="1088" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" bodystart="792" bodyend="846"/>
+      </memberdef>
+      <memberdef kind="function" id="queue_8h_1a38afa09a1f9a629cbf0f7d6929984fe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>signed portBASE_TYPE</type>
+        <definition>signed portBASE_TYPE xQueueReceiveFromISR</definition>
+        <argsstring>(xQueueHandle pxQueue, void *const pvBuffer, signed portBASE_TYPE *pxTaskWoken)</argsstring>
+        <name>xQueueReceiveFromISR</name>
+        <param>
+          <type><ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref></type>
+          <declname>pxQueue</declname>
+        </param>
+        <param>
+          <type>void *const</type>
+          <declname>pvBuffer</declname>
+        </param>
+        <param>
+          <type>signed portBASE_TYPE *</type>
+          <declname>pxTaskWoken</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="1177" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" bodystart="999" bodyend="1051"/>
+      </memberdef>
+      <memberdef kind="function" id="queue_8h_1adfc1100da88cb404d40359ea591eeb76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>signed portBASE_TYPE</type>
+        <definition>signed portBASE_TYPE xQueueIsQueueEmptyFromISR</definition>
+        <argsstring>(const xQueueHandle pxQueue)</argsstring>
+        <name>xQueueIsQueueEmptyFromISR</name>
+        <param>
+          <type>const <ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref></type>
+          <declname>pxQueue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="1183" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" bodystart="1219" bodyend="1227"/>
+      </memberdef>
+      <memberdef kind="function" id="queue_8h_1ab257893a91f0fba462405b19614cb405" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>signed portBASE_TYPE</type>
+        <definition>signed portBASE_TYPE xQueueIsQueueFullFromISR</definition>
+        <argsstring>(const xQueueHandle pxQueue)</argsstring>
+        <name>xQueueIsQueueFullFromISR</name>
+        <param>
+          <type>const <ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref></type>
+          <declname>pxQueue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="1184" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" bodystart="1242" bodyend="1250"/>
+      </memberdef>
+      <memberdef kind="function" id="queue_8h_1a576ba04bf4abcd971cf784693f485b33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned portBASE_TYPE</type>
+        <definition>unsigned portBASE_TYPE uxQueueMessagesWaitingFromISR</definition>
+        <argsstring>(const xQueueHandle pxQueue)</argsstring>
+        <name>uxQueueMessagesWaitingFromISR</name>
+        <param>
+          <type>const <ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref></type>
+          <declname>pxQueue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="1185" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" bodystart="1068" bodyend="1077"/>
+      </memberdef>
+      <memberdef kind="function" id="queue_8h_1aa9bff76f92251533d45348165c082de7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>signed portBASE_TYPE</type>
+        <definition>signed portBASE_TYPE xQueueAltGenericSend</definition>
+        <argsstring>(xQueueHandle pxQueue, const void *const pvItemToQueue, portTickType xTicksToWait, portBASE_TYPE xCopyPosition)</argsstring>
+        <name>xQueueAltGenericSend</name>
+        <param>
+          <type><ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref></type>
+          <declname>pxQueue</declname>
+        </param>
+        <param>
+          <type>const void *const</type>
+          <declname>pvItemToQueue</declname>
+        </param>
+        <param>
+          <type>portTickType</type>
+          <declname>xTicksToWait</declname>
+        </param>
+        <param>
+          <type>portBASE_TYPE</type>
+          <declname>xCopyPosition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="1202"/>
+      </memberdef>
+      <memberdef kind="function" id="queue_8h_1adf2034938c08ce4ac68edf290e2d6971" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>signed portBASE_TYPE</type>
+        <definition>signed portBASE_TYPE xQueueAltGenericReceive</definition>
+        <argsstring>(xQueueHandle pxQueue, void *const pvBuffer, portTickType xTicksToWait, portBASE_TYPE xJustPeeking)</argsstring>
+        <name>xQueueAltGenericReceive</name>
+        <param>
+          <type><ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref></type>
+          <declname>pxQueue</declname>
+        </param>
+        <param>
+          <type>void *const</type>
+          <declname>pvBuffer</declname>
+        </param>
+        <param>
+          <type>portTickType</type>
+          <declname>xTicksToWait</declname>
+        </param>
+        <param>
+          <type>portBASE_TYPE</type>
+          <declname>xJustPeeking</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="1203"/>
+      </memberdef>
+      <memberdef kind="function" id="queue_8h_1a6336db3a8d0a267780f59163c75fdf74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>signed portBASE_TYPE</type>
+        <definition>signed portBASE_TYPE xQueueCRSendFromISR</definition>
+        <argsstring>(xQueueHandle pxQueue, const void *pvItemToQueue, signed portBASE_TYPE xCoRoutinePreviouslyWoken)</argsstring>
+        <name>xQueueCRSendFromISR</name>
+        <param>
+          <type><ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref></type>
+          <declname>pxQueue</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>pvItemToQueue</declname>
+        </param>
+        <param>
+          <type>signed portBASE_TYPE</type>
+          <declname>xCoRoutinePreviouslyWoken</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="1218"/>
+      </memberdef>
+      <memberdef kind="function" id="queue_8h_1a05f3267ee4737d7929dd485423205c74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>signed portBASE_TYPE</type>
+        <definition>signed portBASE_TYPE xQueueCRReceiveFromISR</definition>
+        <argsstring>(xQueueHandle pxQueue, void *pvBuffer, signed portBASE_TYPE *pxTaskWoken)</argsstring>
+        <name>xQueueCRReceiveFromISR</name>
+        <param>
+          <type><ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref></type>
+          <declname>pxQueue</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pvBuffer</declname>
+        </param>
+        <param>
+          <type>signed portBASE_TYPE *</type>
+          <declname>pxTaskWoken</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="1219"/>
+      </memberdef>
+      <memberdef kind="function" id="queue_8h_1a1d939f7ea1d10b19a57d41143c62adc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>signed portBASE_TYPE</type>
+        <definition>signed portBASE_TYPE xQueueCRSend</definition>
+        <argsstring>(xQueueHandle pxQueue, const void *pvItemToQueue, portTickType xTicksToWait)</argsstring>
+        <name>xQueueCRSend</name>
+        <param>
+          <type><ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref></type>
+          <declname>pxQueue</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>pvItemToQueue</declname>
+        </param>
+        <param>
+          <type>portTickType</type>
+          <declname>xTicksToWait</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="1220"/>
+      </memberdef>
+      <memberdef kind="function" id="queue_8h_1ac683e1a6f46a9b01fe0f3c464240562b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>signed portBASE_TYPE</type>
+        <definition>signed portBASE_TYPE xQueueCRReceive</definition>
+        <argsstring>(xQueueHandle pxQueue, void *pvBuffer, portTickType xTicksToWait)</argsstring>
+        <name>xQueueCRReceive</name>
+        <param>
+          <type><ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref></type>
+          <declname>pxQueue</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>pvBuffer</declname>
+        </param>
+        <param>
+          <type>portTickType</type>
+          <declname>xTicksToWait</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="1221"/>
+      </memberdef>
+      <memberdef kind="function" id="queue_8h_1a637daee588a12cec8db050f7ef3f7fa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref></type>
+        <definition>xQueueHandle xQueueCreateMutex</definition>
+        <argsstring>(void)</argsstring>
+        <name>xQueueCreateMutex</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="1227" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" bodystart="144" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="queue_8h_1a778792256d17b532c0e8d180258b19a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref></type>
+        <definition>xQueueHandle xQueueCreateCountingSemaphore</definition>
+        <argsstring>(unsigned portBASE_TYPE uxCountValue, unsigned portBASE_TYPE uxInitialCount)</argsstring>
+        <name>xQueueCreateCountingSemaphore</name>
+        <param>
+          <type>unsigned portBASE_TYPE</type>
+          <declname>uxCountValue</declname>
+        </param>
+        <param>
+          <type>unsigned portBASE_TYPE</type>
+          <declname>uxInitialCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="1228" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" bodystart="443" bodyend="462"/>
+      </memberdef>
+      <memberdef kind="function" id="queue_8h_1a53bfd3d3de22ee9e9e48deab9df6ab4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>portBASE_TYPE</type>
+        <definition>portBASE_TYPE xQueueTakeMutexRecursive</definition>
+        <argsstring>(xQueueHandle pxMutex, portTickType xBlockTime)</argsstring>
+        <name>xQueueTakeMutexRecursive</name>
+        <param>
+          <type><ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref></type>
+          <declname>pxMutex</declname>
+        </param>
+        <param>
+          <type>portTickType</type>
+          <declname>xBlockTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="1234" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" bodystart="403" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="queue_8h_1ab1d683ce771aee4e65d2bc205d81a645" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>portBASE_TYPE</type>
+        <definition>portBASE_TYPE xQueueGiveMutexRecursive</definition>
+        <argsstring>(xQueueHandle pxMutex)</argsstring>
+        <name>xQueueGiveMutexRecursive</name>
+        <param>
+          <type><ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref></type>
+          <declname>pxMutex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="1235" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" bodystart="354" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="queue_8h_1a3d9e3bc0d64cffa182ddaa6f23a421b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vQueueWaitForMessageRestricted</definition>
+        <argsstring>(xQueueHandle pxQueue, portTickType xTicksToWait)</argsstring>
+        <name>vQueueWaitForMessageRestricted</name>
+        <param>
+          <type><ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref></type>
+          <declname>pxQueue</declname>
+        </param>
+        <param>
+          <type>portTickType</type>
+          <declname>xTicksToWait</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h" line="1262"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>V7.0.1<sp/>-<sp/>Copyright<sp/>(C)<sp/>2011<sp/>Real<sp/>Time<sp/>Engineers<sp/>Ltd.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>supports<sp/>many<sp/>tools<sp/>and<sp/>architectures.<sp/>V7.0.0<sp/>is<sp/>sponsored<sp/>by:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>Atollic<sp/>AB<sp/>-<sp/>Atollic<sp/>provides<sp/>professional<sp/>embedded<sp/>systems<sp/>development<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>tools<sp/>for<sp/>C/C++<sp/>development,<sp/>code<sp/>analysis<sp/>and<sp/>test<sp/>automation.<sp/><sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>See<sp/>http://www.atollic.com</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>***************************************************************************</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>FreeRTOS<sp/>tutorial<sp/>books<sp/>are<sp/>available<sp/>in<sp/>pdf<sp/>and<sp/>paperback.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>Complete,<sp/>revised,<sp/>and<sp/>edited<sp/>pdf<sp/>reference<sp/>manuals<sp/>are<sp/>also<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>available.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>Purchasing<sp/>FreeRTOS<sp/>documentation<sp/>will<sp/>not<sp/>only<sp/>help<sp/>you,<sp/>by<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>ensuring<sp/>you<sp/>get<sp/>running<sp/>as<sp/>quickly<sp/>as<sp/>possible<sp/>and<sp/>with<sp/>an<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>in-depth<sp/>knowledge<sp/>of<sp/>how<sp/>to<sp/>use<sp/>FreeRTOS,<sp/>it<sp/>will<sp/>also<sp/>help<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>the<sp/>FreeRTOS<sp/>project<sp/>to<sp/>continue<sp/>with<sp/>its<sp/>mission<sp/>of<sp/>providing<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>professional<sp/>grade,<sp/>cross<sp/>platform,<sp/>de<sp/>facto<sp/>standard<sp/>solutions<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>for<sp/>microcontrollers<sp/>-<sp/>completely<sp/>free<sp/>of<sp/>charge!<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>&gt;&gt;&gt;<sp/>See<sp/>http://www.FreeRTOS.org/Documentation<sp/>for<sp/>details.<sp/>&lt;&lt;&lt;<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>Thank<sp/>you<sp/>for<sp/>using<sp/>FreeRTOS,<sp/>and<sp/>thank<sp/>you<sp/>for<sp/>your<sp/>support!<sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/>***************************************************************************</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"></highlight></codeline>
+<codeline lineno="30"><highlight class="comment"></highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>FreeRTOS<sp/>distribution.</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"></highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it<sp/>under</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>(version<sp/>2)<sp/>as<sp/>published<sp/>by<sp/>the</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/>Free<sp/>Software<sp/>Foundation<sp/>AND<sp/>MODIFIED<sp/>BY<sp/>the<sp/>FreeRTOS<sp/>exception.</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/>&gt;&gt;&gt;NOTE&lt;&lt;&lt;<sp/>The<sp/>modification<sp/>to<sp/>the<sp/>GPL<sp/>is<sp/>included<sp/>to<sp/>allow<sp/>you<sp/>to</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/>distribute<sp/>a<sp/>combined<sp/>work<sp/>that<sp/>includes<sp/>FreeRTOS<sp/>without<sp/>being<sp/>obliged<sp/>to</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/>provide<sp/>the<sp/>source<sp/>code<sp/>for<sp/>proprietary<sp/>components<sp/>outside<sp/>of<sp/>the<sp/>FreeRTOS</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/>kernel.<sp/><sp/>FreeRTOS<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/>MERCHANTABILITY</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/><sp/><sp/>more<sp/>details.<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/><sp/>License<sp/>and<sp/>the<sp/>FreeRTOS<sp/>license<sp/>exception<sp/>along<sp/>with<sp/>FreeRTOS;<sp/>if<sp/>not<sp/>it</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/><sp/><sp/>can<sp/>be<sp/>viewed<sp/>here:<sp/>http://www.freertos.org/a00114.html<sp/>and<sp/>also<sp/>obtained</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/><sp/><sp/>by<sp/>writing<sp/>to<sp/>Richard<sp/>Barry,<sp/>contact<sp/>details<sp/>for<sp/>whom<sp/>are<sp/>available<sp/>on<sp/>the</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>WEB<sp/>site.</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"></highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/><sp/><sp/>1<sp/>tab<sp/>==<sp/>4<sp/>spaces!</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"></highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.FreeRTOS.org<sp/>-<sp/>Documentation,<sp/>latest<sp/>information,<sp/>license<sp/>and</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/>contact<sp/>details.</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"></highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.SafeRTOS.com<sp/>-<sp/>A<sp/>version<sp/>that<sp/>is<sp/>certified<sp/>for<sp/>use<sp/>in<sp/>safety</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/><sp/><sp/><sp/>critical<sp/>systems.</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"></highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.OpenRTOS.com<sp/>-<sp/>Commercial<sp/>support,<sp/>development,<sp/>porting,</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/><sp/><sp/>licensing<sp/>and<sp/>training<sp/>services.</highlight></codeline>
+<codeline lineno="58"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>QUEUE_H</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>QUEUE_H</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INC_FREERTOS_H</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#error<sp/>&quot;#include<sp/>FreeRTOS.h&quot;<sp/>must<sp/>appear<sp/>in<sp/>source<sp/>files<sp/>before<sp/>&quot;#include<sp/>queue.h&quot;</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;mpu_wrappers.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>For<sp/>internal<sp/>use<sp/>only.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>queueSEND_TO_BACK<sp/><sp/><sp/>(<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>queueSEND_TO_FRONT<sp/><sp/>(<sp/>1<sp/>)</highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal">xQueueHandle<sp/>xQueueCreate(<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>uxQueueLength,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>uxItemSize<sp/>);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="preprocessor">#define<sp/>xQueueSendToFront(<sp/>xQueue,<sp/>pvItemToQueue,<sp/>xTicksToWait<sp/>)<sp/>xQueueGenericSend(<sp/>(<sp/>xQueue<sp/>),<sp/>(<sp/>pvItemToQueue<sp/>),<sp/>(<sp/>xTicksToWait<sp/>),<sp/>queueSEND_TO_FRONT<sp/>)</highlight></codeline>
+<codeline lineno="227"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="308"><highlight class="preprocessor">#define<sp/>xQueueSendToBack(<sp/>xQueue,<sp/>pvItemToQueue,<sp/>xTicksToWait<sp/>)<sp/>xQueueGenericSend(<sp/>(<sp/>xQueue<sp/>),<sp/>(<sp/>pvItemToQueue<sp/>),<sp/>(<sp/>xTicksToWait<sp/>),<sp/>queueSEND_TO_BACK<sp/>)</highlight></codeline>
+<codeline lineno="309"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="392"><highlight class="preprocessor">#define<sp/>xQueueSend(<sp/>xQueue,<sp/>pvItemToQueue,<sp/>xTicksToWait<sp/>)<sp/>xQueueGenericSend(<sp/>(<sp/>xQueue<sp/>),<sp/>(<sp/>pvItemToQueue<sp/>),<sp/>(<sp/>xTicksToWait<sp/>),<sp/>queueSEND_TO_BACK<sp/>)</highlight></codeline>
+<codeline lineno="393"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"></highlight></codeline>
+<codeline lineno="480"><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>xQueueGenericSend(<sp/>xQueueHandle<sp/>pxQueue,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pvItemToQueue,<sp/>portTickType<sp/>xTicksToWait,<sp/>portBASE_TYPE<sp/>xCopyPosition<sp/>);</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"></highlight></codeline>
+<codeline lineno="574"><highlight class="preprocessor">#define<sp/>xQueuePeek(<sp/>xQueue,<sp/>pvBuffer,<sp/>xTicksToWait<sp/>)<sp/>xQueueGenericReceive(<sp/>(<sp/>xQueue<sp/>),<sp/>(<sp/>pvBuffer<sp/>),<sp/>(<sp/>xTicksToWait<sp/>),<sp/>pdTRUE<sp/>)</highlight></codeline>
+<codeline lineno="575"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="667"><highlight class="preprocessor">#define<sp/>xQueueReceive(<sp/>xQueue,<sp/>pvBuffer,<sp/>xTicksToWait<sp/>)<sp/>xQueueGenericReceive(<sp/>(<sp/>xQueue<sp/>),<sp/>(<sp/>pvBuffer<sp/>),<sp/>(<sp/>xTicksToWait<sp/>),<sp/>pdFALSE<sp/>)</highlight></codeline>
+<codeline lineno="668"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="669"><highlight class="normal"></highlight></codeline>
+<codeline lineno="766"><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>xQueueGenericReceive(<sp/>xQueueHandle<sp/>xQueue,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pvBuffer,<sp/>portTickType<sp/>xTicksToWait,<sp/>portBASE_TYPE<sp/>xJustPeek<sp/>);</highlight></codeline>
+<codeline lineno="767"><highlight class="normal"></highlight></codeline>
+<codeline lineno="781"><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>uxQueueMessagesWaiting(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xQueueHandle<sp/>xQueue<sp/>);</highlight></codeline>
+<codeline lineno="782"><highlight class="normal"></highlight></codeline>
+<codeline lineno="795"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vQueueDelete(<sp/>xQueueHandle<sp/>pxQueue<sp/>);</highlight></codeline>
+<codeline lineno="796"><highlight class="normal"></highlight></codeline>
+<codeline lineno="865"><highlight class="preprocessor">#define<sp/>xQueueSendToFrontFromISR(<sp/>pxQueue,<sp/>pvItemToQueue,<sp/>pxHigherPriorityTaskWoken<sp/>)<sp/>xQueueGenericSendFromISR(<sp/>(<sp/>pxQueue<sp/>),<sp/>(<sp/>pvItemToQueue<sp/>),<sp/>(<sp/>pxHigherPriorityTaskWoken<sp/>),<sp/>queueSEND_TO_FRONT<sp/>)</highlight></codeline>
+<codeline lineno="866"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="867"><highlight class="normal"></highlight></codeline>
+<codeline lineno="936"><highlight class="preprocessor">#define<sp/>xQueueSendToBackFromISR(<sp/>pxQueue,<sp/>pvItemToQueue,<sp/>pxHigherPriorityTaskWoken<sp/>)<sp/>xQueueGenericSendFromISR(<sp/>(<sp/>pxQueue<sp/>),<sp/>(<sp/>pvItemToQueue<sp/>),<sp/>(<sp/>pxHigherPriorityTaskWoken<sp/>),<sp/>queueSEND_TO_BACK<sp/>)</highlight></codeline>
+<codeline lineno="937"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="1010"><highlight class="preprocessor">#define<sp/>xQueueSendFromISR(<sp/>pxQueue,<sp/>pvItemToQueue,<sp/>pxHigherPriorityTaskWoken<sp/>)<sp/>xQueueGenericSendFromISR(<sp/>(<sp/>pxQueue<sp/>),<sp/>(<sp/>pvItemToQueue<sp/>),<sp/>(<sp/>pxHigherPriorityTaskWoken<sp/>),<sp/>queueSEND_TO_BACK<sp/>)</highlight></codeline>
+<codeline lineno="1011"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="1088"><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>xQueueGenericSendFromISR(<sp/>xQueueHandle<sp/>pxQueue,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pvItemToQueue,<sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>*pxHigherPriorityTaskWoken,<sp/>portBASE_TYPE<sp/>xCopyPosition<sp/>);</highlight></codeline>
+<codeline lineno="1089"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1177"><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>xQueueReceiveFromISR(<sp/>xQueueHandle<sp/>pxQueue,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pvBuffer,<sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>*pxTaskWoken<sp/>);</highlight></codeline>
+<codeline lineno="1178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1179"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="1180"><highlight class="comment"><sp/>*<sp/>Utilities<sp/>to<sp/>query<sp/>queue<sp/>that<sp/>are<sp/>safe<sp/>to<sp/>use<sp/>from<sp/>an<sp/>ISR.<sp/><sp/>These<sp/>utilities</highlight></codeline>
+<codeline lineno="1181"><highlight class="comment"><sp/>*<sp/>should<sp/>be<sp/>used<sp/>only<sp/>from<sp/>witin<sp/>an<sp/>ISR,<sp/>or<sp/>within<sp/>a<sp/>critical<sp/>section.</highlight></codeline>
+<codeline lineno="1182"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1183"><highlight class="normal"></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>xQueueIsQueueEmptyFromISR(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xQueueHandle<sp/>pxQueue<sp/>);</highlight></codeline>
+<codeline lineno="1184"><highlight class="normal"></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>xQueueIsQueueFullFromISR(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xQueueHandle<sp/>pxQueue<sp/>);</highlight></codeline>
+<codeline lineno="1185"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>uxQueueMessagesWaitingFromISR(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>xQueueHandle<sp/>pxQueue<sp/>);</highlight></codeline>
+<codeline lineno="1186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1188"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="1189"><highlight class="comment"><sp/>*<sp/>xQueueAltGenericSend()<sp/>is<sp/>an<sp/>alternative<sp/>version<sp/>of<sp/>xQueueGenericSend().</highlight></codeline>
+<codeline lineno="1190"><highlight class="comment"><sp/>*<sp/>Likewise<sp/>xQueueAltGenericReceive()<sp/>is<sp/>an<sp/>alternative<sp/>version<sp/>of</highlight></codeline>
+<codeline lineno="1191"><highlight class="comment"><sp/>*<sp/>xQueueGenericReceive().</highlight></codeline>
+<codeline lineno="1192"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="1193"><highlight class="comment"><sp/>*<sp/>The<sp/>source<sp/>code<sp/>that<sp/>implements<sp/>the<sp/>alternative<sp/>(Alt)<sp/>API<sp/>is<sp/>much</highlight></codeline>
+<codeline lineno="1194"><highlight class="comment"><sp/>*<sp/>simpler<sp/><sp/>because<sp/>it<sp/>executes<sp/>everything<sp/>from<sp/>within<sp/>a<sp/>critical<sp/>section.</highlight></codeline>
+<codeline lineno="1195"><highlight class="comment"><sp/>*<sp/>This<sp/>is<sp/><sp/>the<sp/>approach<sp/>taken<sp/>by<sp/>many<sp/>other<sp/>RTOSes,<sp/>but<sp/>FreeRTOS.org<sp/>has<sp/>the</highlight></codeline>
+<codeline lineno="1196"><highlight class="comment"><sp/>*<sp/>preferred<sp/>fully<sp/>featured<sp/>API<sp/>too.<sp/><sp/>The<sp/>fully<sp/>featured<sp/>API<sp/>has<sp/>more</highlight></codeline>
+<codeline lineno="1197"><highlight class="comment"><sp/>*<sp/>complex<sp/><sp/>code<sp/>that<sp/>takes<sp/>longer<sp/>to<sp/>execute,<sp/>but<sp/>makes<sp/>much<sp/>less<sp/>use<sp/>of</highlight></codeline>
+<codeline lineno="1198"><highlight class="comment"><sp/>*<sp/>critical<sp/>sections.<sp/><sp/>Therefore<sp/>the<sp/>alternative<sp/>API<sp/>sacrifices<sp/>interrupt</highlight></codeline>
+<codeline lineno="1199"><highlight class="comment"><sp/>*<sp/>responsiveness<sp/>to<sp/>gain<sp/>execution<sp/>speed,<sp/>whereas<sp/>the<sp/>fully<sp/>featured<sp/>API</highlight></codeline>
+<codeline lineno="1200"><highlight class="comment"><sp/>*<sp/>sacrifices<sp/>execution<sp/>speed<sp/>to<sp/>ensure<sp/>better<sp/>interrupt<sp/>responsiveness.</highlight></codeline>
+<codeline lineno="1201"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1202"><highlight class="normal"></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>xQueueAltGenericSend(<sp/>xQueueHandle<sp/>pxQueue,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pvItemToQueue,<sp/>portTickType<sp/>xTicksToWait,<sp/>portBASE_TYPE<sp/>xCopyPosition<sp/>);</highlight></codeline>
+<codeline lineno="1203"><highlight class="normal"></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>xQueueAltGenericReceive(<sp/>xQueueHandle<sp/>pxQueue,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pvBuffer,<sp/>portTickType<sp/>xTicksToWait,<sp/>portBASE_TYPE<sp/>xJustPeeking<sp/>);</highlight></codeline>
+<codeline lineno="1204"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>xQueueAltSendToFront(<sp/>xQueue,<sp/>pvItemToQueue,<sp/>xTicksToWait<sp/>)<sp/>xQueueAltGenericSend(<sp/>(<sp/>xQueue<sp/>),<sp/>(<sp/>pvItemToQueue<sp/>),<sp/>(<sp/>xTicksToWait<sp/>),<sp/>queueSEND_TO_FRONT<sp/>)</highlight></codeline>
+<codeline lineno="1205"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>xQueueAltSendToBack(<sp/>xQueue,<sp/>pvItemToQueue,<sp/>xTicksToWait<sp/>)<sp/>xQueueAltGenericSend(<sp/>(<sp/>xQueue<sp/>),<sp/>(<sp/>pvItemToQueue<sp/>),<sp/>(<sp/>xTicksToWait<sp/>),<sp/>queueSEND_TO_BACK<sp/>)</highlight></codeline>
+<codeline lineno="1206"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>xQueueAltReceive(<sp/>xQueue,<sp/>pvBuffer,<sp/>xTicksToWait<sp/>)<sp/>xQueueAltGenericReceive(<sp/>(<sp/>xQueue<sp/>),<sp/>(<sp/>pvBuffer<sp/>),<sp/>(<sp/>xTicksToWait<sp/>),<sp/>pdFALSE<sp/>)</highlight></codeline>
+<codeline lineno="1207"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>xQueueAltPeek(<sp/>xQueue,<sp/>pvBuffer,<sp/>xTicksToWait<sp/>)<sp/>xQueueAltGenericReceive(<sp/>(<sp/>xQueue<sp/>),<sp/>(<sp/>pvBuffer<sp/>),<sp/>(<sp/>xTicksToWait<sp/>),<sp/>pdTRUE<sp/>)</highlight></codeline>
+<codeline lineno="1208"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1209"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="1210"><highlight class="comment"><sp/>*<sp/>The<sp/>functions<sp/>defined<sp/>above<sp/>are<sp/>for<sp/>passing<sp/>data<sp/>to<sp/>and<sp/>from<sp/>tasks.<sp/><sp/>The</highlight></codeline>
+<codeline lineno="1211"><highlight class="comment"><sp/>*<sp/>functions<sp/>below<sp/>are<sp/>the<sp/>equivalents<sp/>for<sp/>passing<sp/>data<sp/>to<sp/>and<sp/>from</highlight></codeline>
+<codeline lineno="1212"><highlight class="comment"><sp/>*<sp/>co-routines.</highlight></codeline>
+<codeline lineno="1213"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="1214"><highlight class="comment"><sp/>*<sp/>These<sp/>functions<sp/>are<sp/>called<sp/>from<sp/>the<sp/>co-routine<sp/>macro<sp/>implementation<sp/>and</highlight></codeline>
+<codeline lineno="1215"><highlight class="comment"><sp/>*<sp/>should<sp/>not<sp/>be<sp/>called<sp/>directly<sp/>from<sp/>application<sp/>code.<sp/><sp/>Instead<sp/>use<sp/>the<sp/>macro</highlight></codeline>
+<codeline lineno="1216"><highlight class="comment"><sp/>*<sp/>wrappers<sp/>defined<sp/>within<sp/>croutine.h.</highlight></codeline>
+<codeline lineno="1217"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1218"><highlight class="normal"></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>xQueueCRSendFromISR(<sp/>xQueueHandle<sp/>pxQueue,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pvItemToQueue,<sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>xCoRoutinePreviouslyWoken<sp/>);</highlight></codeline>
+<codeline lineno="1219"><highlight class="normal"></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>xQueueCRReceiveFromISR(<sp/>xQueueHandle<sp/>pxQueue,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pvBuffer,<sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>*pxTaskWoken<sp/>);</highlight></codeline>
+<codeline lineno="1220"><highlight class="normal"></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>xQueueCRSend(<sp/>xQueueHandle<sp/>pxQueue,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pvItemToQueue,<sp/>portTickType<sp/>xTicksToWait<sp/>);</highlight></codeline>
+<codeline lineno="1221"><highlight class="normal"></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>xQueueCRReceive(<sp/>xQueueHandle<sp/>pxQueue,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*pvBuffer,<sp/>portTickType<sp/>xTicksToWait<sp/>);</highlight></codeline>
+<codeline lineno="1222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1223"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="1224"><highlight class="comment"><sp/>*<sp/>For<sp/>internal<sp/>use<sp/>only.<sp/><sp/>Use<sp/>xSemaphoreCreateMutex()<sp/>or</highlight></codeline>
+<codeline lineno="1225"><highlight class="comment"><sp/>*<sp/>xSemaphoreCreateCounting()<sp/>instead<sp/>of<sp/>calling<sp/>these<sp/>functions<sp/>directly.</highlight></codeline>
+<codeline lineno="1226"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1227"><highlight class="normal">xQueueHandle<sp/>xQueueCreateMutex(<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="1228"><highlight class="normal">xQueueHandle<sp/>xQueueCreateCountingSemaphore(<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>uxCountValue,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>uxInitialCount<sp/>);</highlight></codeline>
+<codeline lineno="1229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1230"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="1231"><highlight class="comment"><sp/>*<sp/>For<sp/>internal<sp/>use<sp/>only.<sp/><sp/>Use<sp/>xSemaphoreTakeMutexRecursive()<sp/>or</highlight></codeline>
+<codeline lineno="1232"><highlight class="comment"><sp/>*<sp/>xSemaphoreGiveMutexRecursive()<sp/>instead<sp/>of<sp/>calling<sp/>these<sp/>functions<sp/>directly.</highlight></codeline>
+<codeline lineno="1233"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1234"><highlight class="normal">portBASE_TYPE<sp/>xQueueTakeMutexRecursive(<sp/>xQueueHandle<sp/>pxMutex,<sp/>portTickType<sp/>xBlockTime<sp/>);</highlight></codeline>
+<codeline lineno="1235"><highlight class="normal">portBASE_TYPE<sp/>xQueueGiveMutexRecursive(<sp/>xQueueHandle<sp/>pxMutex<sp/>);</highlight></codeline>
+<codeline lineno="1236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1237"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="1238"><highlight class="comment"><sp/>*<sp/>The<sp/>registry<sp/>is<sp/>provided<sp/>as<sp/>a<sp/>means<sp/>for<sp/>kernel<sp/>aware<sp/>debuggers<sp/>to</highlight></codeline>
+<codeline lineno="1239"><highlight class="comment"><sp/>*<sp/>locate<sp/>queues,<sp/>semaphores<sp/>and<sp/>mutexes.<sp/><sp/>Call<sp/>vQueueAddToRegistry()<sp/>add</highlight></codeline>
+<codeline lineno="1240"><highlight class="comment"><sp/>*<sp/>a<sp/>queue,<sp/>semaphore<sp/>or<sp/>mutex<sp/>handle<sp/>to<sp/>the<sp/>registry<sp/>if<sp/>you<sp/>want<sp/>the<sp/>handle</highlight></codeline>
+<codeline lineno="1241"><highlight class="comment"><sp/>*<sp/>to<sp/>be<sp/>available<sp/>to<sp/>a<sp/>kernel<sp/>aware<sp/>debugger.<sp/><sp/>If<sp/>you<sp/>are<sp/>not<sp/>using<sp/>a<sp/>kernel</highlight></codeline>
+<codeline lineno="1242"><highlight class="comment"><sp/>*<sp/>aware<sp/>debugger<sp/>then<sp/>this<sp/>function<sp/>can<sp/>be<sp/>ignored.</highlight></codeline>
+<codeline lineno="1243"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="1244"><highlight class="comment"><sp/>*<sp/>configQUEUE_REGISTRY_SIZE<sp/>defines<sp/>the<sp/>maximum<sp/>number<sp/>of<sp/>handles<sp/>the</highlight></codeline>
+<codeline lineno="1245"><highlight class="comment"><sp/>*<sp/>registry<sp/>can<sp/>hold.<sp/><sp/>configQUEUE_REGISTRY_SIZE<sp/>must<sp/>be<sp/>greater<sp/>than<sp/>0</highlight></codeline>
+<codeline lineno="1246"><highlight class="comment"><sp/>*<sp/>within<sp/>FreeRTOSConfig.h<sp/>for<sp/>the<sp/>registry<sp/>to<sp/>be<sp/>available.<sp/><sp/>Its<sp/>value</highlight></codeline>
+<codeline lineno="1247"><highlight class="comment"><sp/>*<sp/>does<sp/>not<sp/>effect<sp/>the<sp/>number<sp/>of<sp/>queues,<sp/>semaphores<sp/>and<sp/>mutexes<sp/>that<sp/>can<sp/>be</highlight></codeline>
+<codeline lineno="1248"><highlight class="comment"><sp/>*<sp/>created<sp/>-<sp/>just<sp/>the<sp/>number<sp/>that<sp/>the<sp/>registry<sp/>can<sp/>hold.</highlight></codeline>
+<codeline lineno="1249"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="1250"><highlight class="comment"><sp/>*<sp/>@param<sp/>xQueue<sp/>The<sp/>handle<sp/>of<sp/>the<sp/>queue<sp/>being<sp/>added<sp/>to<sp/>the<sp/>registry.<sp/><sp/>This</highlight></codeline>
+<codeline lineno="1251"><highlight class="comment"><sp/>*<sp/>is<sp/>the<sp/>handle<sp/>returned<sp/>by<sp/>a<sp/>call<sp/>to<sp/>xQueueCreate().<sp/><sp/>Semaphore<sp/>and<sp/>mutex</highlight></codeline>
+<codeline lineno="1252"><highlight class="comment"><sp/>*<sp/>handles<sp/>can<sp/>also<sp/>be<sp/>passed<sp/>in<sp/>here.</highlight></codeline>
+<codeline lineno="1253"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="1254"><highlight class="comment"><sp/>*<sp/>@param<sp/>pcName<sp/>The<sp/>name<sp/>to<sp/>be<sp/>associated<sp/>with<sp/>the<sp/>handle.<sp/><sp/>This<sp/>is<sp/>the</highlight></codeline>
+<codeline lineno="1255"><highlight class="comment"><sp/>*<sp/>name<sp/>that<sp/>the<sp/>kernel<sp/>aware<sp/>debugger<sp/>will<sp/>display.</highlight></codeline>
+<codeline lineno="1256"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1257"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>configQUEUE_REGISTRY_SIZE<sp/>&gt;<sp/>0U</highlight></codeline>
+<codeline lineno="1258"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vQueueAddToRegistry(<sp/>xQueueHandle<sp/>xQueue,<sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pcName<sp/>);</highlight></codeline>
+<codeline lineno="1259"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="1260"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1261"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Not<sp/>a<sp/>public<sp/>API<sp/>function,<sp/>hence<sp/>the<sp/>&apos;Restricted&apos;<sp/>in<sp/>the<sp/>name.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1262"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vQueueWaitForMessageRestricted(<sp/>xQueueHandle<sp/>pxQueue,<sp/>portTickType<sp/>xTicksToWait<sp/>);</highlight></codeline>
+<codeline lineno="1263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1265"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="1266"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1267"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="1268"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1269"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>QUEUE_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1270"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.h"/>
+  </compounddef>
+</doxygen>

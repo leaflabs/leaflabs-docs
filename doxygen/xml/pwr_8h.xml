@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="pwr_8h" kind="file">
+    <compoundname>pwr.h</compoundname>
+    <includes refid="libmaple_8h" local="yes">libmaple.h</includes>
+    <includedby refid="bkp_8c" local="yes">libmaple/bkp.c</includedby>
+    <includedby refid="pwr_8c" local="yes">libmaple/pwr.c</includedby>
+    <incdepgraph>
+      <node id="443">
+        <label>libmaple/pwr.h</label>
+        <link refid="pwr.h"/>
+        <childnode refid="444" relation="include">
+        </childnode>
+      </node>
+      <node id="446">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="445">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="444">
+        <label>libmaple.h</label>
+        <link refid="libmaple_8h"/>
+        <childnode refid="445" relation="include">
+        </childnode>
+        <childnode refid="446" relation="include">
+        </childnode>
+        <childnode refid="447" relation="include">
+        </childnode>
+        <childnode refid="448" relation="include">
+        </childnode>
+      </node>
+      <node id="448">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="445" relation="include">
+        </childnode>
+        <childnode refid="446" relation="include">
+        </childnode>
+      </node>
+      <node id="447">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="445" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="450">
+        <label>libmaple/bkp.c</label>
+        <link refid="bkp_8c_source"/>
+      </node>
+      <node id="451">
+        <label>libmaple/pwr.c</label>
+        <link refid="pwr_8c_source"/>
+      </node>
+      <node id="449">
+        <label>libmaple/pwr.h</label>
+        <link refid="pwr.h"/>
+        <childnode refid="450" relation="include">
+        </childnode>
+        <childnode refid="451" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structpwr__reg__map" prot="public">pwr_reg_map</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="pwr_8h_1ac691ec23dace8b7a649a25acb110217a" prot="public" static="no">
+        <name>PWR_BASE</name>
+        <initializer>((struct <ref refid="structpwr__reg__map" kindref="compound">pwr_reg_map</ref>*)0x40007000)</initializer>
+        <briefdescription>
+<para>Power peripheral register map base pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" line="45" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pwr_8h_1af5c65ab845794ef48f09faa2ee44f718" prot="public" static="no">
+        <name>PWR_CR_DBP</name>
+        <initializer>8</initializer>
+        <briefdescription>
+<para>Disable backup domain write protection bit. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" line="54" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pwr_8h_1a05d5c39759e69a294c0ab9bea8f142e5" prot="public" static="no">
+        <name>PWR_CR_PVDE</name>
+        <initializer>4</initializer>
+        <briefdescription>
+<para>Power voltage detector enable bit. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" line="56" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pwr_8h_1ab44484cacc35c80cf82eb011d6cbe13a" prot="public" static="no">
+        <name>PWR_CR_CSBF</name>
+        <initializer>3</initializer>
+        <briefdescription>
+<para>Clear standby flag bit. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" line="58" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pwr_8h_1a3928de64f633b84770b1cfecea702fa7" prot="public" static="no">
+        <name>PWR_CR_CWUF</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>Clear wakeup flag bit. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" line="60" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pwr_8h_1a8c8075e98772470804c9e3fe74984115" prot="public" static="no">
+        <name>PWR_CR_PDDS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Power down deepsleep bit. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" line="62" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pwr_8h_1a3aeb8d6f2539b0a3a4b851aeba0eea66" prot="public" static="no">
+        <name>PWR_CR_LPDS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>Low-power deepsleep bit. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" line="64" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pwr_8h_1a7ac8c15a08bbee754ea720b0d4a4f580" prot="public" static="no">
+        <name>PWR_CSR_EWUP</name>
+        <initializer>8</initializer>
+        <briefdescription>
+<para>Enable wakeup pin bit. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" line="69" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pwr_8h_1a3535ce181895cc00afeb28dcac68d04c" prot="public" static="no">
+        <name>PWR_CSR_PVDO</name>
+        <initializer>2</initializer>
+        <briefdescription>
+<para>PVD output bit. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" line="71" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pwr_8h_1ab4fd42f153660593cad6f4fe22ff76bb" prot="public" static="no">
+        <name>PWR_CSR_SBF</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Standby flag bit. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" line="73" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pwr_8h_1a9465bb7ad9ca936688344e2a077539e6" prot="public" static="no">
+        <name>PWR_CSR_WUF</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>Wakeup flag bit. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" line="75" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="pwr_8h_1a41b2b079f1cf1b04048337e1662e6281" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pwr_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>pwr_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enables the power interface clock, and resets the power device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/pwr.h" line="81" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/pwr.c" bodystart="33" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Power control (PWR) defines. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>LeafLabs,<sp/>LLC.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libmaple_8h" kindref="compound" tooltip="General include file for libmaple.">libmaple.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="39" refid="structpwr__reg__map" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpwr__reg__map" kindref="compound" tooltip="Power interface register map.">pwr_reg_map</ref><sp/>{</highlight></codeline>
+<codeline lineno="40" refid="structpwr__reg__map_1aefa40a41984b8765e14dcfda7bad6dba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structpwr__reg__map_1aefa40a41984b8765e14dcfda7bad6dba" kindref="member" tooltip="Control register.">CR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41" refid="structpwr__reg__map_1a49753d0516064cc005edebe6045b3741" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structpwr__reg__map_1a49753d0516064cc005edebe6045b3741" kindref="member" tooltip="Control and status register.">CSR</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}<sp/><ref refid="structpwr__reg__map" kindref="compound" tooltip="Power interface register map.">pwr_reg_map</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="pwr_8h_1ac691ec23dace8b7a649a25acb110217a" refkind="member"><highlight class="preprocessor">#define<sp/>PWR_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((struct<sp/>pwr_reg_map*)0x40007000)</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*<sp/>Register<sp/>bit<sp/>definitions</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Control<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="pwr_8h_1af5c65ab845794ef48f09faa2ee44f718" refkind="member"><highlight class="preprocessor">#define<sp/>PWR_CR_DBP<sp/><sp/>8</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="56" refid="pwr_8h_1a05d5c39759e69a294c0ab9bea8f142e5" refkind="member"><highlight class="preprocessor">#define<sp/>PWR_CR_PVDE<sp/>4</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="58" refid="pwr_8h_1ab44484cacc35c80cf82eb011d6cbe13a" refkind="member"><highlight class="preprocessor">#define<sp/>PWR_CR_CSBF<sp/>3</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="60" refid="pwr_8h_1a3928de64f633b84770b1cfecea702fa7" refkind="member"><highlight class="preprocessor">#define<sp/>PWR_CR_CWUF<sp/>2</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="62" refid="pwr_8h_1a8c8075e98772470804c9e3fe74984115" refkind="member"><highlight class="preprocessor">#define<sp/>PWR_CR_PDDS<sp/>1</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="64" refid="pwr_8h_1a3aeb8d6f2539b0a3a4b851aeba0eea66" refkind="member"><highlight class="preprocessor">#define<sp/>PWR_CR_LPDS<sp/>0</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Control<sp/>and<sp/>status<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="pwr_8h_1a7ac8c15a08bbee754ea720b0d4a4f580" refkind="member"><highlight class="preprocessor">#define<sp/>PWR_CSR_EWUP<sp/>8</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="71" refid="pwr_8h_1a3535ce181895cc00afeb28dcac68d04c" refkind="member"><highlight class="preprocessor">#define<sp/>PWR_CSR_PVDO<sp/>2</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="73" refid="pwr_8h_1ab4fd42f153660593cad6f4fe22ff76bb" refkind="member"><highlight class="preprocessor">#define<sp/>PWR_CSR_SBF<sp/><sp/>1</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="75" refid="pwr_8h_1a9465bb7ad9ca936688344e2a077539e6" refkind="member"><highlight class="preprocessor">#define<sp/>PWR_CSR_WUF<sp/><sp/>0</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*<sp/>Convenience<sp/>functions</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pwr_init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/pwr.h"/>
+  </compounddef>
+</doxygen>

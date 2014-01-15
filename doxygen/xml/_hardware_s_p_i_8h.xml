@@ -1,0 +1,388 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="_hardware_s_p_i_8h" kind="file">
+    <compoundname>HardwareSPI.h</compoundname>
+    <includes refid="libmaple__types_8h" local="yes">libmaple_types.h</includes>
+    <includes refid="spi_8h" local="yes">spi.h</includes>
+    <includes refid="boards_8h" local="yes">boards.h</includes>
+    <includedby refid="wirish_8h" local="yes">wirish/wirish.h</includedby>
+    <incdepgraph>
+      <node id="1507">
+        <label>boards.h</label>
+        <link refid="boards_8h"/>
+        <childnode refid="1504" relation="include">
+        </childnode>
+        <childnode refid="1503" relation="include">
+        </childnode>
+        <childnode refid="1508" relation="include">
+        </childnode>
+        <childnode refid="1510" relation="include">
+        </childnode>
+      </node>
+      <node id="1501">
+        <label>nvic.h</label>
+        <link refid="nvic_8h"/>
+        <childnode refid="1498" relation="include">
+        </childnode>
+        <childnode refid="1502" relation="include">
+        </childnode>
+      </node>
+      <node id="1500">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="1498" relation="include">
+        </childnode>
+      </node>
+      <node id="1499">
+        <label>spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="1498" relation="include">
+        </childnode>
+        <childnode refid="1500" relation="include">
+        </childnode>
+        <childnode refid="1501" relation="include">
+        </childnode>
+        <childnode refid="1503" relation="include">
+        </childnode>
+        <childnode refid="1502" relation="include">
+        </childnode>
+      </node>
+      <node id="1497">
+        <label>wirish/comm/HardwareSPI.h</label>
+        <link refid="HardwareSPI.h"/>
+        <childnode refid="1498" relation="include">
+        </childnode>
+        <childnode refid="1499" relation="include">
+        </childnode>
+        <childnode refid="1507" relation="include">
+        </childnode>
+      </node>
+      <node id="1505">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="1498">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="1504">
+        <label>libmaple.h</label>
+        <link refid="libmaple_8h"/>
+        <childnode refid="1498" relation="include">
+        </childnode>
+        <childnode refid="1505" relation="include">
+        </childnode>
+        <childnode refid="1502" relation="include">
+        </childnode>
+        <childnode refid="1506" relation="include">
+        </childnode>
+      </node>
+      <node id="1510">
+        <label>wirish_types.h</label>
+        <link refid="wirish__types_8h"/>
+        <childnode refid="1498" relation="include">
+        </childnode>
+        <childnode refid="1503" relation="include">
+        </childnode>
+        <childnode refid="1508" relation="include">
+        </childnode>
+        <childnode refid="1511" relation="include">
+        </childnode>
+      </node>
+      <node id="1511">
+        <label>adc.h</label>
+        <link refid="adc_8h"/>
+        <childnode refid="1504" relation="include">
+        </childnode>
+        <childnode refid="1509" relation="include">
+        </childnode>
+        <childnode refid="1500" relation="include">
+        </childnode>
+      </node>
+      <node id="1509">
+        <label>bitband.h</label>
+        <link refid="bitband_8h"/>
+        <childnode refid="1498" relation="include">
+        </childnode>
+      </node>
+      <node id="1503">
+        <label>gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="1504" relation="include">
+        </childnode>
+        <childnode refid="1500" relation="include">
+        </childnode>
+      </node>
+      <node id="1508">
+        <label>timer.h</label>
+        <link refid="timer_8h"/>
+        <childnode refid="1504" relation="include">
+        </childnode>
+        <childnode refid="1500" relation="include">
+        </childnode>
+        <childnode refid="1501" relation="include">
+        </childnode>
+        <childnode refid="1509" relation="include">
+        </childnode>
+      </node>
+      <node id="1506">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="1498" relation="include">
+        </childnode>
+        <childnode refid="1505" relation="include">
+        </childnode>
+      </node>
+      <node id="1502">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="1498" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1513">
+        <label>wirish/wirish.h</label>
+        <link refid="wirish_8h_source"/>
+        <childnode refid="1514" relation="include">
+        </childnode>
+        <childnode refid="1515" relation="include">
+        </childnode>
+        <childnode refid="1516" relation="include">
+        </childnode>
+        <childnode refid="1517" relation="include">
+        </childnode>
+      </node>
+      <node id="1512">
+        <label>wirish/comm/HardwareSPI.h</label>
+        <link refid="HardwareSPI.h"/>
+        <childnode refid="1513" relation="include">
+        </childnode>
+      </node>
+      <node id="1516">
+        <label>libraries/LiquidCrystal/LiquidCrystal.h</label>
+        <link refid="_liquid_crystal_8h_source"/>
+      </node>
+      <node id="1517">
+        <label>libraries/Wire/Wire.h</label>
+        <link refid="_wire_8h_source"/>
+      </node>
+      <node id="1514">
+        <label>wirish/WProgram.h</label>
+        <link refid="_w_program_8h_source"/>
+      </node>
+      <node id="1515">
+        <label>libraries/FreeRTOS/MapleFreeRTOS.h</label>
+        <link refid="_maple_free_r_t_o_s_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_hardware_s_p_i" prot="public">HardwareSPI</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_hardware_s_p_i_8h_1a077b3aa4124a0f2a5c3de73ea926331c" prot="public" static="no">
+        <name>MAX_SPI_FREQS</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h" line="58" bodyfile="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012e" prot="public" static="no">
+        <name>SPIFrequency</name>
+        <enumvalue id="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012ea7e5fd0857b9f28e4483a619b709a9740" prot="public">
+          <name>SPI_18MHZ</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>18 MHz </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012ea2d9dc5efc7e9c16c8db1870cad193cf9" prot="public">
+          <name>SPI_9MHZ</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+<para>9 MHz </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012eaa2978ac07b9f0b662f33d77c04f4e16a" prot="public">
+          <name>SPI_4_5MHZ</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+<para>4.5 MHz </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012ea88f8b88d333015a24f44851e1bac1d8f" prot="public">
+          <name>SPI_2_25MHZ</name>
+          <initializer> 3</initializer>
+          <briefdescription>
+<para>2.25 MHz </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012eaff79c81739078cd5dd3d8b7d5eafd5e5" prot="public">
+          <name>SPI_1_125MHZ</name>
+          <initializer> 4</initializer>
+          <briefdescription>
+<para>1.125 MHz </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012ea948566ccb01f6c2e00ac554edcf48d01" prot="public">
+          <name>SPI_562_500KHZ</name>
+          <initializer> 5</initializer>
+          <briefdescription>
+<para>562.500 KHz </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012ea0b0c69428f61fb28f8d7c31a0eac2389" prot="public">
+          <name>SPI_281_250KHZ</name>
+          <initializer> 6</initializer>
+          <briefdescription>
+<para>281.250 KHz </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012ea174d1f73f46904bd53be2f5ae2ef2352" prot="public">
+          <name>SPI_140_625KHZ</name>
+          <initializer> 7</initializer>
+          <briefdescription>
+<para>140.625 KHz </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines the possible SPI communication speeds. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h" line="47" bodyfile="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h" bodystart="47" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>High-level SPI interface. </para>    </briefdescription>
+    <detaileddescription>
+<para>This is a &quot;bare essentials&quot; polling driver for now. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Perry<sp/>Hung.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="comment">/*<sp/>TODO<sp/>[0.1.0]<sp/>Remove<sp/>deprecated<sp/>methods.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libmaple__types_8h" kindref="compound" tooltip="libmaple types">libmaple_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="spi_8h" kindref="compound" tooltip="Serial Peripheral Interface (SPI) and Integrated Interchip Sound (I2S) peripheral support...">spi.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="boards_8h" kindref="compound" tooltip="Board-specific pin information.">boards.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_HARDWARESPI_H_</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_HARDWARESPI_H_</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="47" refid="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012e" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012e" kindref="member" tooltip="Defines the possible SPI communication speeds.">SPIFrequency</ref><sp/>{</highlight></codeline>
+<codeline lineno="48" refid="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012ea7e5fd0857b9f28e4483a619b709a9740" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012ea7e5fd0857b9f28e4483a619b709a9740" kindref="member" tooltip="18 MHz">SPI_18MHZ</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="49" refid="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012ea2d9dc5efc7e9c16c8db1870cad193cf9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012ea2d9dc5efc7e9c16c8db1870cad193cf9" kindref="member" tooltip="9 MHz">SPI_9MHZ</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="50" refid="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012eaa2978ac07b9f0b662f33d77c04f4e16a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012eaa2978ac07b9f0b662f33d77c04f4e16a" kindref="member" tooltip="4.5 MHz">SPI_4_5MHZ</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/></highlight></codeline>
+<codeline lineno="51" refid="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012ea88f8b88d333015a24f44851e1bac1d8f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012ea88f8b88d333015a24f44851e1bac1d8f" kindref="member" tooltip="2.25 MHz">SPI_2_25MHZ</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/></highlight></codeline>
+<codeline lineno="52" refid="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012eaff79c81739078cd5dd3d8b7d5eafd5e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012eaff79c81739078cd5dd3d8b7d5eafd5e5" kindref="member" tooltip="1.125 MHz">SPI_1_125MHZ</ref><sp/><sp/><sp/><sp/>=<sp/>4,<sp/></highlight></codeline>
+<codeline lineno="53" refid="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012ea948566ccb01f6c2e00ac554edcf48d01" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012ea948566ccb01f6c2e00ac554edcf48d01" kindref="member" tooltip="562.500 KHz">SPI_562_500KHZ</ref><sp/><sp/>=<sp/>5,<sp/></highlight></codeline>
+<codeline lineno="54" refid="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012ea0b0c69428f61fb28f8d7c31a0eac2389" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012ea0b0c69428f61fb28f8d7c31a0eac2389" kindref="member" tooltip="281.250 KHz">SPI_281_250KHZ</ref><sp/><sp/>=<sp/>6,<sp/></highlight></codeline>
+<codeline lineno="55" refid="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012ea174d1f73f46904bd53be2f5ae2ef2352" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012ea174d1f73f46904bd53be2f5ae2ef2352" kindref="member" tooltip="140.625 KHz">SPI_140_625KHZ</ref><sp/><sp/>=<sp/>7,<sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}<sp/><ref refid="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012e" kindref="member" tooltip="Defines the possible SPI communication speeds.">SPIFrequency</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_SPI_FREQS<sp/>8</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>CYCLES_PER_MICROSECOND<sp/>!=<sp/>72</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>TODO<sp/>[0.2.0?]<sp/>something<sp/>smarter<sp/>than<sp/>this<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#warning<sp/>&quot;Unexpected<sp/>clock<sp/>speed;<sp/>SPI<sp/>frequency<sp/>calculation<sp/>will<sp/>be<sp/>incorrect&quot;</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="71" refid="class_hardware_s_p_i" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_hardware_s_p_i" kindref="compound" tooltip="Wirish SPI interface.">HardwareSPI</ref><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_hardware_s_p_i_1ab2f7d1d773cb1fd5c1fb7f6d23693137" kindref="member">HardwareSPI</ref>(uint32<sp/>spiPortNumber);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Set<sp/>up/tear<sp/>down</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_hardware_s_p_i_1a4035e41124ca71fb5e2c8837b7f3c19a" kindref="member" tooltip="Equivalent to begin(SPI_1_125MHZ, MSBFIRST, 0).">begin</ref>(<ref refid="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012e" kindref="member" tooltip="Defines the possible SPI communication speeds.">SPIFrequency</ref><sp/>frequency,<sp/>uint32<sp/>bitOrder,<sp/>uint32<sp/>mode);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_hardware_s_p_i_1a4035e41124ca71fb5e2c8837b7f3c19a" kindref="member" tooltip="Equivalent to begin(SPI_1_125MHZ, MSBFIRST, 0).">begin</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_hardware_s_p_i_1a5f4ea1ee7e51e4a52a9c3dfb18a4c21c" kindref="member" tooltip="Equivalent to beginSlave(MSBFIRST, 0).">beginSlave</ref>(uint32<sp/>bitOrder,<sp/>uint32<sp/>mode);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_hardware_s_p_i_1a5f4ea1ee7e51e4a52a9c3dfb18a4c21c" kindref="member" tooltip="Equivalent to beginSlave(MSBFIRST, 0).">beginSlave</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_hardware_s_p_i_1a1924db0236ed90724dbe9982d7844cca" kindref="member" tooltip="Disables the SPI port, but leaves its GPIO pin modes unchanged.">end</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>I/O</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/><ref refid="class_hardware_s_p_i_1a4ad896161ab5ddf39a716f75c6013f2d" kindref="member" tooltip="Return the next unread byte.">read</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_hardware_s_p_i_1a4ad896161ab5ddf39a716f75c6013f2d" kindref="member" tooltip="Return the next unread byte.">read</ref>(uint8<sp/>*buffer,<sp/>uint32<sp/>length);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_hardware_s_p_i_1ac81da22ee223d0994887aa9020855923" kindref="member" tooltip="Transmit a byte.">write</ref>(uint8<sp/>data);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_hardware_s_p_i_1ac81da22ee223d0994887aa9020855923" kindref="member" tooltip="Transmit a byte.">write</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8<sp/>*buffer,<sp/>uint32<sp/>length);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/><ref refid="class_hardware_s_p_i_1aa317111bd382e7b201d13f369d2fd85a" kindref="member" tooltip="Transmit a byte, then return the next unread byte.">transfer</ref>(uint8<sp/>data);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="164"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Pin<sp/>accessors</highlight></codeline>
+<codeline lineno="165"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/><ref refid="class_hardware_s_p_i_1a516aff5127beaa45ac54169ab901121c" kindref="member" tooltip="Return the number of the MISO (master in, slave out) pin.">misoPin</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/><ref refid="class_hardware_s_p_i_1a5b8edf02933921960a3de79eec3c69b6" kindref="member" tooltip="Return the number of the MOSI (master out, slave in) pin.">mosiPin</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/><ref refid="class_hardware_s_p_i_1ad8bc6986a367ef9bf3d538f02f41309b" kindref="member" tooltip="Return the number of the SCK (serial clock) pin.">sckPin</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/><ref refid="class_hardware_s_p_i_1a2514f1aa5a0638c421e24e1f7829f367" kindref="member" tooltip="Return the number of the NSS (slave select) pin.">nssPin</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>--<sp/>The<sp/>following<sp/>methods<sp/>are<sp/>deprecated<sp/>---------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/><ref refid="class_hardware_s_p_i_1a89e485636f99449fc14a0ef5ad2cc5d8" kindref="member" tooltip="Deprecated.">send</ref>(uint8<sp/>data);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/><ref refid="class_hardware_s_p_i_1a89e485636f99449fc14a0ef5ad2cc5d8" kindref="member" tooltip="Deprecated.">send</ref>(uint8<sp/>*data,<sp/>uint32<sp/>length);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/><ref refid="class_hardware_s_p_i_1af27d3515c07928a55d30cc3c0a1d6679" kindref="member" tooltip="Deprecated.">recv</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structspi__dev" kindref="compound" tooltip="SPI device type.">spi_dev</ref><sp/>*spi_d;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="223"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h"/>
+  </compounddef>
+</doxygen>

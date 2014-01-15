@@ -1,0 +1,1181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="nvic_8h" kind="file">
+    <compoundname>nvic.h</compoundname>
+    <includes refid="libmaple__types_8h" local="yes">libmaple_types.h</includes>
+    <includes refid="util_8h" local="yes">util.h</includes>
+    <includedby refid="dma_8h" local="yes">libmaple/dma.h</includedby>
+    <includedby refid="exti_8c" local="yes">libmaple/exti.c</includedby>
+    <includedby refid="i2c_8c" local="yes">libmaple/i2c.c</includedby>
+    <includedby refid="i2c_8h" local="yes">libmaple/i2c.h</includedby>
+    <includedby refid="nvic_8c" local="yes">libmaple/nvic.c</includedby>
+    <includedby refid="spi_8h" local="yes">libmaple/spi.h</includedby>
+    <includedby refid="timer_8h" local="yes">libmaple/timer.h</includedby>
+    <includedby refid="usart_8h" local="yes">libmaple/usart.h</includedby>
+    <includedby refid="util_8c" local="yes">libmaple/util.c</includedby>
+    <includedby refid="ext__interrupts_8h" local="yes">wirish/ext_interrupts.h</includedby>
+    <includedby refid="wirish__time_8h" local="yes">wirish/wirish_time.h</includedby>
+    <incdepgraph>
+      <node id="403">
+        <label>libmaple/nvic.h</label>
+        <link refid="nvic.h"/>
+        <childnode refid="404" relation="include">
+        </childnode>
+        <childnode refid="405" relation="include">
+        </childnode>
+      </node>
+      <node id="404">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="405">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="404" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="429">
+        <label>wirish/HardwareTimer.h</label>
+        <link refid="_hardware_timer_8h_source"/>
+        <childnode refid="416" relation="include">
+        </childnode>
+      </node>
+      <node id="416">
+        <label>wirish/wirish.h</label>
+        <link refid="wirish_8h_source"/>
+        <childnode refid="417" relation="include">
+        </childnode>
+        <childnode refid="418" relation="include">
+        </childnode>
+        <childnode refid="419" relation="include">
+        </childnode>
+        <childnode refid="420" relation="include">
+        </childnode>
+      </node>
+      <node id="432">
+        <label>wirish/comm/HardwareSerial.h</label>
+        <link refid="_hardware_serial_8h"/>
+        <childnode refid="416" relation="include">
+        </childnode>
+      </node>
+      <node id="424">
+        <label>wirish/boards.h</label>
+        <link refid="boards_8h"/>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="425" relation="include">
+        </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
+      </node>
+      <node id="412">
+        <label>libmaple/nvic.c</label>
+        <link refid="nvic_8c_source"/>
+      </node>
+      <node id="431">
+        <label>libmaple/usart.c</label>
+        <link refid="usart_8c"/>
+      </node>
+      <node id="406">
+        <label>libmaple/nvic.h</label>
+        <link refid="nvic.h"/>
+        <childnode refid="407" relation="include">
+        </childnode>
+        <childnode refid="409" relation="include">
+        </childnode>
+        <childnode refid="410" relation="include">
+        </childnode>
+        <childnode refid="411" relation="include">
+        </childnode>
+        <childnode refid="412" relation="include">
+        </childnode>
+        <childnode refid="413" relation="include">
+        </childnode>
+        <childnode refid="421" relation="include">
+        </childnode>
+        <childnode refid="430" relation="include">
+        </childnode>
+        <childnode refid="423" relation="include">
+        </childnode>
+        <childnode refid="433" relation="include">
+        </childnode>
+        <childnode refid="425" relation="include">
+        </childnode>
+      </node>
+      <node id="430">
+        <label>libmaple/usart.h</label>
+        <link refid="usart_8h"/>
+        <childnode refid="431" relation="include">
+        </childnode>
+        <childnode refid="423" relation="include">
+        </childnode>
+        <childnode refid="432" relation="include">
+        </childnode>
+      </node>
+      <node id="426">
+        <label>wirish/io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="416" relation="include">
+        </childnode>
+      </node>
+      <node id="414">
+        <label>libmaple/spi.c</label>
+        <link refid="spi_8c"/>
+      </node>
+      <node id="413">
+        <label>libmaple/spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="414" relation="include">
+        </childnode>
+        <childnode refid="415" relation="include">
+        </childnode>
+      </node>
+      <node id="415">
+        <label>wirish/comm/HardwareSPI.h</label>
+        <link refid="_hardware_s_p_i_8h"/>
+        <childnode refid="416" relation="include">
+        </childnode>
+      </node>
+      <node id="410">
+        <label>libmaple/i2c.c</label>
+        <link refid="i2c_8c"/>
+      </node>
+      <node id="411">
+        <label>libmaple/i2c.h</label>
+        <link refid="i2c_8h"/>
+        <childnode refid="410" relation="include">
+        </childnode>
+      </node>
+      <node id="408">
+        <label>libmaple/dma.c</label>
+        <link refid="dma_8c"/>
+      </node>
+      <node id="407">
+        <label>libmaple/dma.h</label>
+        <link refid="dma_8h"/>
+        <childnode refid="408" relation="include">
+        </childnode>
+      </node>
+      <node id="419">
+        <label>libraries/LiquidCrystal/LiquidCrystal.h</label>
+        <link refid="_liquid_crystal_8h_source"/>
+      </node>
+      <node id="425">
+        <label>wirish/wirish_time.h</label>
+        <link refid="wirish__time_8h"/>
+        <childnode refid="426" relation="include">
+        </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
+      </node>
+      <node id="427">
+        <label>wirish/wirish_types.h</label>
+        <link refid="wirish__types_8h"/>
+        <childnode refid="424" relation="include">
+        </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
+        <childnode refid="428" relation="include">
+        </childnode>
+      </node>
+      <node id="428">
+        <label>libraries/Servo/Servo.h</label>
+        <link refid="_servo_8h_source"/>
+      </node>
+      <node id="422">
+        <label>libmaple/timer.c</label>
+        <link refid="timer_8c"/>
+      </node>
+      <node id="421">
+        <label>libmaple/timer.h</label>
+        <link refid="timer_8h"/>
+        <childnode refid="422" relation="include">
+        </childnode>
+        <childnode refid="423" relation="include">
+        </childnode>
+        <childnode refid="424" relation="include">
+        </childnode>
+        <childnode refid="427" relation="include">
+        </childnode>
+        <childnode refid="429" relation="include">
+        </childnode>
+        <childnode refid="428" relation="include">
+        </childnode>
+      </node>
+      <node id="433">
+        <label>wirish/ext_interrupts.h</label>
+        <link refid="ext__interrupts_8h"/>
+        <childnode refid="416" relation="include">
+        </childnode>
+      </node>
+      <node id="420">
+        <label>libraries/Wire/Wire.h</label>
+        <link refid="_wire_8h_source"/>
+      </node>
+      <node id="417">
+        <label>wirish/WProgram.h</label>
+        <link refid="_w_program_8h_source"/>
+      </node>
+      <node id="418">
+        <label>libraries/FreeRTOS/MapleFreeRTOS.h</label>
+        <link refid="_maple_free_r_t_o_s_8h_source"/>
+      </node>
+      <node id="409">
+        <label>libmaple/exti.c</label>
+        <link refid="exti_8c"/>
+      </node>
+      <node id="423">
+        <label>libmaple/util.c</label>
+        <link refid="util_8c_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structnvic__reg__map" prot="public">nvic_reg_map</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="nvic_8h_1aa0288691785a5f868238e0468b39523d" prot="public" static="no">
+        <name>NVIC_BASE</name>
+        <initializer>((struct <ref refid="structnvic__reg__map" kindref="compound">nvic_reg_map</ref>*)0xE000E100)</initializer>
+        <briefdescription>
+<para>NVIC register map base pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" line="60" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83" prot="public" static="no">
+        <name>nvic_irq_num</name>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a20f49f8889f837851ef39f6be3d79f01" prot="public">
+          <name>NVIC_NMI</name>
+          <initializer> -14</initializer>
+          <briefdescription>
+<para>Non-maskable interrupt. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ae65da77202072e6fa2b26acccd766b31" prot="public">
+          <name>NVIC_HARDFAULT</name>
+          <initializer> -13</initializer>
+          <briefdescription>
+<para>Hard fault (all class of fault) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83aa60cd6def63e24c38efb27dffcd3eadd" prot="public">
+          <name>NVIC_MEM_MANAGE</name>
+          <initializer> -12</initializer>
+          <briefdescription>
+<para>Memory management. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a6d762d5d42ff49c0571489ee4191f602" prot="public">
+          <name>NVIC_BUS_FAULT</name>
+          <initializer> -11</initializer>
+          <briefdescription>
+<para>Bus fault: prefetch fault, memory access fault. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a95cff34451a019772faebdbba32be990" prot="public">
+          <name>NVIC_USAGE_FAULT</name>
+          <initializer> -10</initializer>
+          <briefdescription>
+<para>Usage fault: Undefined instruction or illegal state. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a7ee944749e01f1a48ceddf8a53331a7d" prot="public">
+          <name>NVIC_SVC</name>
+          <initializer> -5</initializer>
+          <briefdescription>
+<para>System service call via SWI insruction. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a1fb8093d8242bc3c7f5f9d1089a999e8" prot="public">
+          <name>NVIC_DEBUG_MON</name>
+          <initializer> -4</initializer>
+          <briefdescription>
+<para>Debug monitor. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ae27dbc1c02f11779f9337679fa48f390" prot="public">
+          <name>NVIC_PEND_SVC</name>
+          <initializer> -2</initializer>
+          <briefdescription>
+<para>Pendable request for system service. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a0f4af4aa81216de905041b64a3a511eb" prot="public">
+          <name>NVIC_SYSTICK</name>
+          <initializer> -1</initializer>
+          <briefdescription>
+<para>System tick timer. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a524017ffb37b2ee129b00edb666385b7" prot="public">
+          <name>NVIC_WWDG</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>Window watchdog interrupt. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a86ad9a14da01bd97f5b60ca4c4acb449" prot="public">
+          <name>NVIC_PVD</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+<para>PVD through EXTI line detection. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a6876b7e9ca097a0d283c7b8942d0fd55" prot="public">
+          <name>NVIC_TAMPER</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+<para>Tamper. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a6fecceb6e43bfc81130563a757001144" prot="public">
+          <name>NVIC_RTC</name>
+          <initializer> 3</initializer>
+          <briefdescription>
+<para>Real-time clock. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a582ef745b5a67b03e816082615a498fb" prot="public">
+          <name>NVIC_FLASH</name>
+          <initializer> 4</initializer>
+          <briefdescription>
+<para>Flash. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a1b49767ea20172f3d8142e5957d1b4d6" prot="public">
+          <name>NVIC_RCC</name>
+          <initializer> 5</initializer>
+          <briefdescription>
+<para>Reset and clock control. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ae8682487e9160a6fc1ab8481f5272683" prot="public">
+          <name>NVIC_EXTI0</name>
+          <initializer> 6</initializer>
+          <briefdescription>
+<para>EXTI line 0. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a77be88c5985357fe7ef3fcf6ffe3fc90" prot="public">
+          <name>NVIC_EXTI1</name>
+          <initializer> 7</initializer>
+          <briefdescription>
+<para>EXTI line 1. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ac3bb8adf1a451bf9a5ea90ea41ae3154" prot="public">
+          <name>NVIC_EXTI2</name>
+          <initializer> 8</initializer>
+          <briefdescription>
+<para>EXTI line 2. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83af2226dee9874d0769810efba92ea0eb5" prot="public">
+          <name>NVIC_EXTI3</name>
+          <initializer> 9</initializer>
+          <briefdescription>
+<para>EXTI line 3. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a4e8c99ea32d63686fd6c044b9837c308" prot="public">
+          <name>NVIC_EXTI4</name>
+          <initializer> 10</initializer>
+          <briefdescription>
+<para>EXTI line 4. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a22a0c760f526174a94cc86bd72d2b89f" prot="public">
+          <name>NVIC_DMA_CH1</name>
+          <initializer> 11</initializer>
+          <briefdescription>
+<para>DMA1 channel 1. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a4d74a4b6b73a4405f373079c0d1feb93" prot="public">
+          <name>NVIC_DMA_CH2</name>
+          <initializer> 12</initializer>
+          <briefdescription>
+<para>DMA1 channel 2. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83afbe138534ebc954ed573413448d1156e" prot="public">
+          <name>NVIC_DMA_CH3</name>
+          <initializer> 13</initializer>
+          <briefdescription>
+<para>DMA1 channel 3. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a4b1be77f458cefd1016bf82295d34e79" prot="public">
+          <name>NVIC_DMA_CH4</name>
+          <initializer> 14</initializer>
+          <briefdescription>
+<para>DMA1 channel 4. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a4f51a32f7d0f0377052b8363640f982a" prot="public">
+          <name>NVIC_DMA_CH5</name>
+          <initializer> 15</initializer>
+          <briefdescription>
+<para>DMA1 channel 5. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a7a4ca45525650ed873d60fc9f8f2729d" prot="public">
+          <name>NVIC_DMA_CH6</name>
+          <initializer> 16</initializer>
+          <briefdescription>
+<para>DMA1 channel 6. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ac059ac418fc501559f77bc413aedf463" prot="public">
+          <name>NVIC_DMA_CH7</name>
+          <initializer> 17</initializer>
+          <briefdescription>
+<para>DMA1 channel 7. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a0cbeb8851429c440ace52aa0436d9d00" prot="public">
+          <name>NVIC_ADC_1_2</name>
+          <initializer> 18</initializer>
+          <briefdescription>
+<para>ADC1 and ADC2. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a7deb5729c162a14f980cd4ab782d1422" prot="public">
+          <name>NVIC_USB_HP_CAN_TX</name>
+          <initializer> 19</initializer>
+          <briefdescription>
+<para>USB high priority or CAN TX. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a3cbf3dc626f933f5238ebe57a61afc0c" prot="public">
+          <name>NVIC_USB_LP_CAN_RX0</name>
+          <initializer> 20</initializer>
+          <briefdescription>
+<para>USB low priority or CAN RX0. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a1ff50c9a095c5c80420b112544aa23a6" prot="public">
+          <name>NVIC_CAN_RX1</name>
+          <initializer> 21</initializer>
+          <briefdescription>
+<para>CAN RX1. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83adab592254c74068eb3c5f856635502e8" prot="public">
+          <name>NVIC_CAN_SCE</name>
+          <initializer> 22</initializer>
+          <briefdescription>
+<para>CAN SCE. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a1b99945914ee92c7907c135de842d9c0" prot="public">
+          <name>NVIC_EXTI_9_5</name>
+          <initializer> 23</initializer>
+          <briefdescription>
+<para>EXTI line [9:5]. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a3418573ecf7d27ea37ae8f3c37cc5e4a" prot="public">
+          <name>NVIC_TIMER1_BRK</name>
+          <initializer> 24</initializer>
+          <briefdescription>
+<para>Timer 1 break. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a48d8e2c338763c39d78ef04e9d8d5a41" prot="public">
+          <name>NVIC_TIMER1_UP</name>
+          <initializer> 25</initializer>
+          <briefdescription>
+<para>Timer 1 update. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a93f5ec8874c1b9f919317cfd4a92445c" prot="public">
+          <name>NVIC_TIMER1_TRG_COM</name>
+          <initializer> 26</initializer>
+          <briefdescription>
+<para>Timer 1 trigger and commutation. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a90dc4f7d1d573b50feb7a6707f34389b" prot="public">
+          <name>NVIC_TIMER1_CC</name>
+          <initializer> 27</initializer>
+          <briefdescription>
+<para>Timer 1 capture/compare. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a6720b4bb58a02dee2eb47e216ac28978" prot="public">
+          <name>NVIC_TIMER2</name>
+          <initializer> 28</initializer>
+          <briefdescription>
+<para>Timer 2. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a9df9a7fac0e497f2524886c35c586f5f" prot="public">
+          <name>NVIC_TIMER3</name>
+          <initializer> 29</initializer>
+          <briefdescription>
+<para>Timer 3. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a47d6b863e91749da87a842feb5df4586" prot="public">
+          <name>NVIC_TIMER4</name>
+          <initializer> 30</initializer>
+          <briefdescription>
+<para>Timer 4. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a8e44c6f62f38fde44083f2856eb65685" prot="public">
+          <name>NVIC_I2C1_EV</name>
+          <initializer> 31</initializer>
+          <briefdescription>
+<para>I2C1 event. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ad044e2f91f863d1b5666f470b54e476b" prot="public">
+          <name>NVIC_I2C1_ER</name>
+          <initializer> 32</initializer>
+          <briefdescription>
+<para>I2C1 error. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a36e8fddd9d7e47460b4377d3f16953bd" prot="public">
+          <name>NVIC_I2C2_EV</name>
+          <initializer> 33</initializer>
+          <briefdescription>
+<para>I2C2 event. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a957d976bf8e2b3f0a374b3b5f41fa0ca" prot="public">
+          <name>NVIC_I2C2_ER</name>
+          <initializer> 34</initializer>
+          <briefdescription>
+<para>I2C2 error. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83aa0c8757e0b809371ba2419530f8cafbe" prot="public">
+          <name>NVIC_SPI1</name>
+          <initializer> 35</initializer>
+          <briefdescription>
+<para>SPI1. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ae5839b610bb8ff658cef0100b00df2dd" prot="public">
+          <name>NVIC_SPI2</name>
+          <initializer> 36</initializer>
+          <briefdescription>
+<para>SPI2. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83aaa1a454cf3c61d9bcbe869d293b85e9b" prot="public">
+          <name>NVIC_USART1</name>
+          <initializer> 37</initializer>
+          <briefdescription>
+<para>USART1. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a387d691414c56fae087308eb38454d79" prot="public">
+          <name>NVIC_USART2</name>
+          <initializer> 38</initializer>
+          <briefdescription>
+<para>USART2. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83aaeec2b13ce7e24e747cd0c6b6c3ff67b" prot="public">
+          <name>NVIC_USART3</name>
+          <initializer> 39</initializer>
+          <briefdescription>
+<para>USART3. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ab37902fafd8500b53850cc4979960fcb" prot="public">
+          <name>NVIC_EXTI_15_10</name>
+          <initializer> 40</initializer>
+          <briefdescription>
+<para>EXTI line [15:10]. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83adee6b554bca8cc7d25a3c13d76aae5a3" prot="public">
+          <name>NVIC_RTCALARM</name>
+          <initializer> 41</initializer>
+          <briefdescription>
+<para>RTC alarm through EXTI line. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a8e13a192cac2f4e58543c04f17340b23" prot="public">
+          <name>NVIC_USBWAKEUP</name>
+          <initializer> 42</initializer>
+          <briefdescription>
+<para>USB wakeup from suspend through EXTI line. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a13472b160b3ea76adea75aabae0db016" prot="public">
+          <name>NVIC_TIMER8_BRK</name>
+          <initializer> 43</initializer>
+          <briefdescription>
+<para>Timer 8 break. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ace993c0c6ff437fb06b4a1d8bd7297ae" prot="public">
+          <name>NVIC_TIMER8_UP</name>
+          <initializer> 44</initializer>
+          <briefdescription>
+<para>Timer 8 update. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83acbe640928dc6c3ca717b2a0f73e68621" prot="public">
+          <name>NVIC_TIMER8_TRG_COM</name>
+          <initializer> 45</initializer>
+          <briefdescription>
+<para>Timer 8 trigger and commutation. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ad34c5dd6833dd6862fc1957e21551488" prot="public">
+          <name>NVIC_TIMER8_CC</name>
+          <initializer> 46</initializer>
+          <briefdescription>
+<para>Timer 8 capture/compare. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ad8d1203158ea682a930ab4d6cbde59b1" prot="public">
+          <name>NVIC_ADC3</name>
+          <initializer> 47</initializer>
+          <briefdescription>
+<para>ADC3. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83af994689f10da16fa235ce5b4b7daa662" prot="public">
+          <name>NVIC_FSMC</name>
+          <initializer> 48</initializer>
+          <briefdescription>
+<para>FSMC. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a99aaa9fa78fce9f84a9e59f6db238b2f" prot="public">
+          <name>NVIC_SDIO</name>
+          <initializer> 49</initializer>
+          <briefdescription>
+<para>SDIO. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a06da88bda9fb69b730d40709909cd9b2" prot="public">
+          <name>NVIC_TIMER5</name>
+          <initializer> 50</initializer>
+          <briefdescription>
+<para>Timer 5. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83aa7b641a9a3c2ee63a5f6389aa9d02829" prot="public">
+          <name>NVIC_SPI3</name>
+          <initializer> 51</initializer>
+          <briefdescription>
+<para>SPI3. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a4a5f5915924cdf95032af028d9ec6da2" prot="public">
+          <name>NVIC_UART4</name>
+          <initializer> 52</initializer>
+          <briefdescription>
+<para>UART4. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a7072049c5c0aefe112c656ef42a9aa99" prot="public">
+          <name>NVIC_UART5</name>
+          <initializer> 53</initializer>
+          <briefdescription>
+<para>UART5. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a19b13a93cc869a43b52e8959744e6882" prot="public">
+          <name>NVIC_TIMER6</name>
+          <initializer> 54</initializer>
+          <briefdescription>
+<para>Timer 6. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83af7f4ecb0cf957b9334eb2960ccf86176" prot="public">
+          <name>NVIC_TIMER7</name>
+          <initializer> 55</initializer>
+          <briefdescription>
+<para>Timer 7. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ae91724dc4e6d6eb703d7abeb65876247" prot="public">
+          <name>NVIC_DMA2_CH1</name>
+          <initializer> 56</initializer>
+          <briefdescription>
+<para>DMA2 channel 1. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a0706d26ca8dba7916b8308f3082a3958" prot="public">
+          <name>NVIC_DMA2_CH2</name>
+          <initializer> 57</initializer>
+          <briefdescription>
+<para>DMA2 channel 2. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a227868cba6a935eb919f4697b62bab1b" prot="public">
+          <name>NVIC_DMA2_CH3</name>
+          <initializer> 58</initializer>
+          <briefdescription>
+<para>DMA2 channel 3. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ac69ab723e573f422fff8840a38d64696" prot="public">
+          <name>NVIC_DMA2_CH_4_5</name>
+          <initializer> 59</initializer>
+          <briefdescription>
+<para>DMA2 channels 4 and 5. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Interrupt vector table interrupt numbers. </para>        </briefdescription>
+        <detaileddescription>
+<para>Each positive-valued enumerator is the position of the corresponding interrupt in the vector table. Negative-valued enumerators correspond to interrupts controlled by the system handler block.</para><para><simplesect kind="see"><para><ref refid="scb_8h" kindref="compound">scb.h</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" line="72" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" bodystart="72" bodyend="147"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="nvic_8h_1a96b7467a19b905a304c6bd498b8c4dc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvic_init</definition>
+        <argsstring>(uint32 vector_table_address, uint32 offset)</argsstring>
+        <name>nvic_init</name>
+        <param>
+          <type>uint32</type>
+          <declname>vector_table_address</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the NVIC. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vector_table_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector table base address. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Offset from vector_table_address. Some restrictions apply to the use of nonzero offsets; see ST RM0008 and the ARM Cortex M3 Technical Reference Manual. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" line="149" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.c" bodystart="62" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="nvic_8h_1a07a5f148a05fc3900f869c5a6f077537" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvic_set_vector_table</definition>
+        <argsstring>(uint32 address, uint32 offset)</argsstring>
+        <name>nvic_set_vector_table</name>
+        <param>
+          <type>uint32</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Reset the vector table address. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" line="150" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.c" bodystart="82" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="nvic_8h_1a784a3763b98c412b032754845848627b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvic_irq_set_priority</definition>
+        <argsstring>(nvic_irq_num irqn, uint8 priority)</argsstring>
+        <name>nvic_irq_set_priority</name>
+        <param>
+          <type><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83" kindref="member">nvic_irq_num</ref></type>
+          <declname>irqn</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>priority</declname>
+        </param>
+        <briefdescription>
+<para>Nested interrupt controller routines. </para>        </briefdescription>
+        <detaileddescription>
+<para>Set interrupt priority for an interrupt line</para><para>Note: The STM32 only implements 4 bits of priority, ignoring the lower 4 bits. This means there are only 16 levels of priority. Bits[3:0] read as zero and ignore writes.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>irqn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>device to set </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>priority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Priority to set, 0 being highest priority and 15 being lowest. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" line="151" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.c" bodystart="46" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="nvic_8h_1a78613b2a184eb439b183efb02cca9aeb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void nvic_globalirq_enable</definition>
+        <argsstring>()</argsstring>
+        <name>nvic_globalirq_enable</name>
+        <briefdescription>
+<para>Enables interrupts and configurable fault handlers (clear PRIMASK). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" line="156" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" bodystart="156" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="nvic_8h_1a762b781d44f6afc1c13dedf32ebd35df" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void nvic_globalirq_disable</definition>
+        <argsstring>()</argsstring>
+        <name>nvic_globalirq_disable</name>
+        <briefdescription>
+<para>Disable interrupts and configurable fault handlers (set PRIMASK). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" line="163" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" bodystart="163" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="nvic_8h_1a51e6b1b0e83aac5cd8f1a50255db6b45" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void nvic_irq_enable</definition>
+        <argsstring>(nvic_irq_num irq_num)</argsstring>
+        <name>nvic_irq_enable</name>
+        <param>
+          <type><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83" kindref="member">nvic_irq_num</ref></type>
+          <declname>irq_num</declname>
+        </param>
+        <briefdescription>
+<para>Enable interrupt irq_num. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>irq_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt to enable </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" line="171" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" bodystart="171" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="nvic_8h_1a4802c52b347c70f7cf0da4e699591b04" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void nvic_irq_disable</definition>
+        <argsstring>(nvic_irq_num irq_num)</argsstring>
+        <name>nvic_irq_disable</name>
+        <param>
+          <type><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83" kindref="member">nvic_irq_num</ref></type>
+          <declname>irq_num</declname>
+        </param>
+        <briefdescription>
+<para>Disable interrupt irq_num. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>irq_num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interrupt to disable </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" line="182" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" bodystart="182" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="nvic_8h_1a50451c96b511f68fb670b90fe9beb699" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void nvic_irq_disable_all</definition>
+        <argsstring>(void)</argsstring>
+        <name>nvic_irq_disable_all</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Quickly disable all interrupts. </para>        </briefdescription>
+        <detaileddescription>
+<para>Calling this function is significantly faster than calling <ref refid="nvic_8h_1a4802c52b347c70f7cf0da4e699591b04" kindref="member">nvic_irq_disable()</ref> in a loop. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" line="195" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" bodystart="195" bodyend="206"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Nested vector interrupt controller support. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Perry<sp/>Hung.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor">#ifndef<sp/>_NVIC_H_</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_NVIC_H_</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libmaple__types_8h" kindref="compound" tooltip="libmaple types">libmaple_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="util_8h" kindref="compound" tooltip="Miscellaneous utility macros and procedures.">util.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="43" refid="structnvic__reg__map" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structnvic__reg__map" kindref="compound" tooltip="NVIC register map type.">nvic_reg_map</ref><sp/>{</highlight></codeline>
+<codeline lineno="44" refid="structnvic__reg__map_1aba770bac20c1762dd00b3dbb2d20b05f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structnvic__reg__map_1aba770bac20c1762dd00b3dbb2d20b05f" kindref="member" tooltip="Interrupt Set Enable Registers.">ISER</ref>[8];<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45" refid="structnvic__reg__map_1acaf913667b365150d783d7592f1178b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/><ref refid="structnvic__reg__map_1acaf913667b365150d783d7592f1178b8" kindref="member" tooltip="Reserved.">RESERVED0</ref>[24];<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46" refid="structnvic__reg__map_1ad7e689aec80eceaf669b85d9122afeb1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structnvic__reg__map_1ad7e689aec80eceaf669b85d9122afeb1" kindref="member" tooltip="Interrupt Clear Enable Registers.">ICER</ref>[8];<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="structnvic__reg__map_1a1b38bd48c71a34321cab8cf32166b469" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/><ref refid="structnvic__reg__map_1a1b38bd48c71a34321cab8cf32166b469" kindref="member" tooltip="Reserved.">RSERVED1</ref>[24];<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48" refid="structnvic__reg__map_1a35c3fcde139936b005f0715eac547109" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structnvic__reg__map_1a35c3fcde139936b005f0715eac547109" kindref="member" tooltip="Interrupt Set Pending Registers.">ISPR</ref>[8];<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="structnvic__reg__map_1a2bb1671ff6b9ac9c193a9b1681bee200" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/><ref refid="structnvic__reg__map_1a2bb1671ff6b9ac9c193a9b1681bee200" kindref="member" tooltip="Reserved.">RESERVED2</ref>[24];<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50" refid="structnvic__reg__map_1adbd2912401e45b839d4c20e56220ae71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structnvic__reg__map_1adbd2912401e45b839d4c20e56220ae71" kindref="member" tooltip="Interrupt Clear Pending Registers.">ICPR</ref>[8];<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51" refid="structnvic__reg__map_1aeb89acbadf3494838b372dd1e0957778" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/><ref refid="structnvic__reg__map_1aeb89acbadf3494838b372dd1e0957778" kindref="member" tooltip="Reserved.">RESERVED3</ref>[24];<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52" refid="structnvic__reg__map_1acb2a8c2534f4d07492f53dd6684e6a5c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structnvic__reg__map_1acb2a8c2534f4d07492f53dd6684e6a5c" kindref="member" tooltip="Interrupt Active bit Registers.">IABR</ref>[8];<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53" refid="structnvic__reg__map_1ae9f3fb981c9fb69c5491c93734241b90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/><ref refid="structnvic__reg__map_1ae9f3fb981c9fb69c5491c93734241b90" kindref="member" tooltip="Reserved.">RESERVED4</ref>[56];<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54" refid="structnvic__reg__map_1a8235db3d5e033cb4bb398ea4bf3819c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint8<sp/><sp/><ref refid="structnvic__reg__map_1a8235db3d5e033cb4bb398ea4bf3819c5" kindref="member" tooltip="Interrupt Priority Registers.">IP</ref>[240];<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55" refid="structnvic__reg__map_1a7b733b2a2bec1433a185183ede94d04d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/><ref refid="structnvic__reg__map_1a7b733b2a2bec1433a185183ede94d04d" kindref="member" tooltip="Reserved.">RESERVED5</ref>[644];<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56" refid="structnvic__reg__map_1a5c6e47dcd72da8f2f589a7156d44e190" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structnvic__reg__map_1a5c6e47dcd72da8f2f589a7156d44e190" kindref="member" tooltip="Software Trigger Interrupt Registers.">STIR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}<sp/><ref refid="structnvic__reg__map" kindref="compound" tooltip="NVIC register map type.">nvic_reg_map</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="nvic_8h_1aa0288691785a5f868238e0468b39523d" refkind="member"><highlight class="preprocessor">#define<sp/>NVIC_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((struct<sp/>nvic_reg_map*)0xE000E100)</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="72" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83" kindref="member" tooltip="Interrupt vector table interrupt numbers.">nvic_irq_num</ref><sp/>{</highlight></codeline>
+<codeline lineno="73" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a20f49f8889f837851ef39f6be3d79f01" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a20f49f8889f837851ef39f6be3d79f01" kindref="member" tooltip="Non-maskable interrupt.">NVIC_NMI</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>-14,<sp/><sp/></highlight></codeline>
+<codeline lineno="74" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ae65da77202072e6fa2b26acccd766b31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ae65da77202072e6fa2b26acccd766b31" kindref="member" tooltip="Hard fault (all class of fault)">NVIC_HARDFAULT</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>-13,<sp/><sp/></highlight></codeline>
+<codeline lineno="75" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83aa60cd6def63e24c38efb27dffcd3eadd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83aa60cd6def63e24c38efb27dffcd3eadd" kindref="member" tooltip="Memory management.">NVIC_MEM_MANAGE</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>-12,<sp/><sp/></highlight></codeline>
+<codeline lineno="76" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a6d762d5d42ff49c0571489ee4191f602" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a6d762d5d42ff49c0571489ee4191f602" kindref="member" tooltip="Bus fault: prefetch fault, memory access fault.">NVIC_BUS_FAULT</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>-11,<sp/><sp/></highlight></codeline>
+<codeline lineno="78" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a95cff34451a019772faebdbba32be990" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a95cff34451a019772faebdbba32be990" kindref="member" tooltip="Usage fault: Undefined instruction or illegal state.">NVIC_USAGE_FAULT</ref><sp/><sp/><sp/><sp/>=<sp/>-10,<sp/><sp/></highlight></codeline>
+<codeline lineno="80" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a7ee944749e01f1a48ceddf8a53331a7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a7ee944749e01f1a48ceddf8a53331a7d" kindref="member" tooltip="System service call via SWI insruction.">NVIC_SVC</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>-5,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a1fb8093d8242bc3c7f5f9d1089a999e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a1fb8093d8242bc3c7f5f9d1089a999e8" kindref="member" tooltip="Debug monitor.">NVIC_DEBUG_MON</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>-4,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ae27dbc1c02f11779f9337679fa48f390" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ae27dbc1c02f11779f9337679fa48f390" kindref="member" tooltip="Pendable request for system service.">NVIC_PEND_SVC</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>-2,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a0f4af4aa81216de905041b64a3a511eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a0f4af4aa81216de905041b64a3a511eb" kindref="member" tooltip="System tick timer.">NVIC_SYSTICK</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>-1,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a524017ffb37b2ee129b00edb666385b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a524017ffb37b2ee129b00edb666385b7" kindref="member" tooltip="Window watchdog interrupt.">NVIC_WWDG</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a86ad9a14da01bd97f5b60ca4c4acb449" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a86ad9a14da01bd97f5b60ca4c4acb449" kindref="member" tooltip="PVD through EXTI line detection.">NVIC_PVD</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a6876b7e9ca097a0d283c7b8942d0fd55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a6876b7e9ca097a0d283c7b8942d0fd55" kindref="member" tooltip="Tamper.">NVIC_TAMPER</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a6fecceb6e43bfc81130563a757001144" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a6fecceb6e43bfc81130563a757001144" kindref="member" tooltip="Real-time clock.">NVIC_RTC</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a582ef745b5a67b03e816082615a498fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a582ef745b5a67b03e816082615a498fb" kindref="member" tooltip="Flash.">NVIC_FLASH</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a1b49767ea20172f3d8142e5957d1b4d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a1b49767ea20172f3d8142e5957d1b4d6" kindref="member" tooltip="Reset and clock control.">NVIC_RCC</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>5,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ae8682487e9160a6fc1ab8481f5272683" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ae8682487e9160a6fc1ab8481f5272683" kindref="member" tooltip="EXTI line 0.">NVIC_EXTI0</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>6,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a77be88c5985357fe7ef3fcf6ffe3fc90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a77be88c5985357fe7ef3fcf6ffe3fc90" kindref="member" tooltip="EXTI line 1.">NVIC_EXTI1</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>7,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ac3bb8adf1a451bf9a5ea90ea41ae3154" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ac3bb8adf1a451bf9a5ea90ea41ae3154" kindref="member" tooltip="EXTI line 2.">NVIC_EXTI2</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>8,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83af2226dee9874d0769810efba92ea0eb5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83af2226dee9874d0769810efba92ea0eb5" kindref="member" tooltip="EXTI line 3.">NVIC_EXTI3</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>9,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a4e8c99ea32d63686fd6c044b9837c308" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a4e8c99ea32d63686fd6c044b9837c308" kindref="member" tooltip="EXTI line 4.">NVIC_EXTI4</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>10,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a22a0c760f526174a94cc86bd72d2b89f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a22a0c760f526174a94cc86bd72d2b89f" kindref="member" tooltip="DMA1 channel 1.">NVIC_DMA_CH1</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>11,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a4d74a4b6b73a4405f373079c0d1feb93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a4d74a4b6b73a4405f373079c0d1feb93" kindref="member" tooltip="DMA1 channel 2.">NVIC_DMA_CH2</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>12,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83afbe138534ebc954ed573413448d1156e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83afbe138534ebc954ed573413448d1156e" kindref="member" tooltip="DMA1 channel 3.">NVIC_DMA_CH3</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>13,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a4b1be77f458cefd1016bf82295d34e79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a4b1be77f458cefd1016bf82295d34e79" kindref="member" tooltip="DMA1 channel 4.">NVIC_DMA_CH4</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>14,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a4f51a32f7d0f0377052b8363640f982a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a4f51a32f7d0f0377052b8363640f982a" kindref="member" tooltip="DMA1 channel 5.">NVIC_DMA_CH5</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>15,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a7a4ca45525650ed873d60fc9f8f2729d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a7a4ca45525650ed873d60fc9f8f2729d" kindref="member" tooltip="DMA1 channel 6.">NVIC_DMA_CH6</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>16,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ac059ac418fc501559f77bc413aedf463" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ac059ac418fc501559f77bc413aedf463" kindref="member" tooltip="DMA1 channel 7.">NVIC_DMA_CH7</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>17,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a0cbeb8851429c440ace52aa0436d9d00" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a0cbeb8851429c440ace52aa0436d9d00" kindref="member" tooltip="ADC1 and ADC2.">NVIC_ADC_1_2</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>18,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a7deb5729c162a14f980cd4ab782d1422" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a7deb5729c162a14f980cd4ab782d1422" kindref="member" tooltip="USB high priority or CAN TX.">NVIC_USB_HP_CAN_TX</ref><sp/><sp/>=<sp/>19,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a3cbf3dc626f933f5238ebe57a61afc0c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a3cbf3dc626f933f5238ebe57a61afc0c" kindref="member" tooltip="USB low priority or CAN RX0.">NVIC_USB_LP_CAN_RX0</ref><sp/>=<sp/>20,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a1ff50c9a095c5c80420b112544aa23a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a1ff50c9a095c5c80420b112544aa23a6" kindref="member" tooltip="CAN RX1.">NVIC_CAN_RX1</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>21,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83adab592254c74068eb3c5f856635502e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83adab592254c74068eb3c5f856635502e8" kindref="member" tooltip="CAN SCE.">NVIC_CAN_SCE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>22,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="107" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a1b99945914ee92c7907c135de842d9c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a1b99945914ee92c7907c135de842d9c0" kindref="member" tooltip="EXTI line [9:5].">NVIC_EXTI_9_5</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>23,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="108" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a3418573ecf7d27ea37ae8f3c37cc5e4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a3418573ecf7d27ea37ae8f3c37cc5e4a" kindref="member" tooltip="Timer 1 break.">NVIC_TIMER1_BRK</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>24,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a48d8e2c338763c39d78ef04e9d8d5a41" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a48d8e2c338763c39d78ef04e9d8d5a41" kindref="member" tooltip="Timer 1 update.">NVIC_TIMER1_UP</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>25,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="110" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a93f5ec8874c1b9f919317cfd4a92445c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a93f5ec8874c1b9f919317cfd4a92445c" kindref="member" tooltip="Timer 1 trigger and commutation.">NVIC_TIMER1_TRG_COM</ref><sp/>=<sp/>26,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a90dc4f7d1d573b50feb7a6707f34389b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a90dc4f7d1d573b50feb7a6707f34389b" kindref="member" tooltip="Timer 1 capture/compare.">NVIC_TIMER1_CC</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>27,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a6720b4bb58a02dee2eb47e216ac28978" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a6720b4bb58a02dee2eb47e216ac28978" kindref="member" tooltip="Timer 2.">NVIC_TIMER2</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>28,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="113" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a9df9a7fac0e497f2524886c35c586f5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a9df9a7fac0e497f2524886c35c586f5f" kindref="member" tooltip="Timer 3.">NVIC_TIMER3</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>29,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a47d6b863e91749da87a842feb5df4586" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a47d6b863e91749da87a842feb5df4586" kindref="member" tooltip="Timer 4.">NVIC_TIMER4</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>30,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a8e44c6f62f38fde44083f2856eb65685" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a8e44c6f62f38fde44083f2856eb65685" kindref="member" tooltip="I2C1 event.">NVIC_I2C1_EV</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>31,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="116" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ad044e2f91f863d1b5666f470b54e476b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ad044e2f91f863d1b5666f470b54e476b" kindref="member" tooltip="I2C1 error.">NVIC_I2C1_ER</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>32,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="117" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a36e8fddd9d7e47460b4377d3f16953bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a36e8fddd9d7e47460b4377d3f16953bd" kindref="member" tooltip="I2C2 event.">NVIC_I2C2_EV</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>33,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a957d976bf8e2b3f0a374b3b5f41fa0ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a957d976bf8e2b3f0a374b3b5f41fa0ca" kindref="member" tooltip="I2C2 error.">NVIC_I2C2_ER</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>34,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83aa0c8757e0b809371ba2419530f8cafbe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83aa0c8757e0b809371ba2419530f8cafbe" kindref="member" tooltip="SPI1.">NVIC_SPI1</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>35,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="120" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ae5839b610bb8ff658cef0100b00df2dd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ae5839b610bb8ff658cef0100b00df2dd" kindref="member" tooltip="SPI2.">NVIC_SPI2</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>36,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="121" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83aaa1a454cf3c61d9bcbe869d293b85e9b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83aaa1a454cf3c61d9bcbe869d293b85e9b" kindref="member" tooltip="USART1.">NVIC_USART1</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>37,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="122" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a387d691414c56fae087308eb38454d79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a387d691414c56fae087308eb38454d79" kindref="member" tooltip="USART2.">NVIC_USART2</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>38,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="123" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83aaeec2b13ce7e24e747cd0c6b6c3ff67b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83aaeec2b13ce7e24e747cd0c6b6c3ff67b" kindref="member" tooltip="USART3.">NVIC_USART3</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>39,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="124" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ab37902fafd8500b53850cc4979960fcb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ab37902fafd8500b53850cc4979960fcb" kindref="member" tooltip="EXTI line [15:10].">NVIC_EXTI_15_10</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>40,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="125" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83adee6b554bca8cc7d25a3c13d76aae5a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83adee6b554bca8cc7d25a3c13d76aae5a3" kindref="member" tooltip="RTC alarm through EXTI line.">NVIC_RTCALARM</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>41,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="126" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a8e13a192cac2f4e58543c04f17340b23" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a8e13a192cac2f4e58543c04f17340b23" kindref="member" tooltip="USB wakeup from suspend through EXTI line.">NVIC_USBWAKEUP</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>42,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="128" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a13472b160b3ea76adea75aabae0db016" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a13472b160b3ea76adea75aabae0db016" kindref="member" tooltip="Timer 8 break.">NVIC_TIMER8_BRK</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>43,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ace993c0c6ff437fb06b4a1d8bd7297ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ace993c0c6ff437fb06b4a1d8bd7297ae" kindref="member" tooltip="Timer 8 update.">NVIC_TIMER8_UP</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>44,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="130" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83acbe640928dc6c3ca717b2a0f73e68621" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83acbe640928dc6c3ca717b2a0f73e68621" kindref="member" tooltip="Timer 8 trigger and commutation.">NVIC_TIMER8_TRG_COM</ref><sp/>=<sp/>45,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="131" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ad34c5dd6833dd6862fc1957e21551488" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ad34c5dd6833dd6862fc1957e21551488" kindref="member" tooltip="Timer 8 capture/compare.">NVIC_TIMER8_CC</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>46,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="132"><highlight class="preprocessor">#ifdef<sp/>STM32_HIGH_DENSITY</highlight></codeline>
+<codeline lineno="133" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ad8d1203158ea682a930ab4d6cbde59b1" refkind="member"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ad8d1203158ea682a930ab4d6cbde59b1" kindref="member" tooltip="ADC3.">NVIC_ADC3</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>47,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="134" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83af994689f10da16fa235ce5b4b7daa662" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83af994689f10da16fa235ce5b4b7daa662" kindref="member" tooltip="FSMC.">NVIC_FSMC</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>48,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="135" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a99aaa9fa78fce9f84a9e59f6db238b2f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a99aaa9fa78fce9f84a9e59f6db238b2f" kindref="member" tooltip="SDIO.">NVIC_SDIO</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>49,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="136" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a06da88bda9fb69b730d40709909cd9b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a06da88bda9fb69b730d40709909cd9b2" kindref="member" tooltip="Timer 5.">NVIC_TIMER5</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>50,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="137" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83aa7b641a9a3c2ee63a5f6389aa9d02829" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83aa7b641a9a3c2ee63a5f6389aa9d02829" kindref="member" tooltip="SPI3.">NVIC_SPI3</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>51,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="138" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a4a5f5915924cdf95032af028d9ec6da2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a4a5f5915924cdf95032af028d9ec6da2" kindref="member" tooltip="UART4.">NVIC_UART4</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>52,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="139" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a7072049c5c0aefe112c656ef42a9aa99" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a7072049c5c0aefe112c656ef42a9aa99" kindref="member" tooltip="UART5.">NVIC_UART5</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>53,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="140" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a19b13a93cc869a43b52e8959744e6882" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a19b13a93cc869a43b52e8959744e6882" kindref="member" tooltip="Timer 6.">NVIC_TIMER6</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>54,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="141" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83af7f4ecb0cf957b9334eb2960ccf86176" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83af7f4ecb0cf957b9334eb2960ccf86176" kindref="member" tooltip="Timer 7.">NVIC_TIMER7</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>55,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="142" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ae91724dc4e6d6eb703d7abeb65876247" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ae91724dc4e6d6eb703d7abeb65876247" kindref="member" tooltip="DMA2 channel 1.">NVIC_DMA2_CH1</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>56,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="143" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a0706d26ca8dba7916b8308f3082a3958" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a0706d26ca8dba7916b8308f3082a3958" kindref="member" tooltip="DMA2 channel 2.">NVIC_DMA2_CH2</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>57,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="144" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a227868cba6a935eb919f4697b62bab1b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a227868cba6a935eb919f4697b62bab1b" kindref="member" tooltip="DMA2 channel 3.">NVIC_DMA2_CH3</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>58,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="145" refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ac69ab723e573f422fff8840a38d64696" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ac69ab723e573f422fff8840a38d64696" kindref="member" tooltip="DMA2 channels 4 and 5.">NVIC_DMA2_CH_4_5</ref><sp/><sp/><sp/><sp/>=<sp/>59,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="146"><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor"></highlight><highlight class="normal">}<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83" kindref="member" tooltip="Interrupt vector table interrupt numbers.">nvic_irq_num</ref>;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>nvic_init(uint32<sp/>vector_table_address,<sp/>uint32<sp/>offset);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>nvic_set_vector_table(uint32<sp/>address,<sp/>uint32<sp/>offset);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>nvic_irq_set_priority(<ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83" kindref="member" tooltip="Interrupt vector table interrupt numbers.">nvic_irq_num</ref><sp/>irqn,<sp/>uint8<sp/>priority);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="nvic_8h_1a78613b2a184eb439b183efb02cca9aeb" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="nvic_8h_1a78613b2a184eb439b183efb02cca9aeb" kindref="member" tooltip="Enables interrupts and configurable fault handlers (clear PRIMASK).">nvic_globalirq_enable</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">asm</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal">(</highlight><highlight class="stringliteral">&quot;cpsie<sp/>i&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="nvic_8h_1a762b781d44f6afc1c13dedf32ebd35df" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="nvic_8h_1a762b781d44f6afc1c13dedf32ebd35df" kindref="member" tooltip="Disable interrupts and configurable fault handlers (set PRIMASK).">nvic_globalirq_disable</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">asm</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal">(</highlight><highlight class="stringliteral">&quot;cpsid<sp/>i&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="nvic_8h_1a51e6b1b0e83aac5cd8f1a50255db6b45" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="nvic_8h_1a51e6b1b0e83aac5cd8f1a50255db6b45" kindref="member" tooltip="Enable interrupt irq_num.">nvic_irq_enable</ref>(<ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83" kindref="member" tooltip="Interrupt vector table interrupt numbers.">nvic_irq_num</ref><sp/>irq_num)<sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(irq_num<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1aa0288691785a5f868238e0468b39523d" kindref="member" tooltip="NVIC register map base pointer.">NVIC_BASE</ref>-&gt;ISER[irq_num<sp/>/<sp/>32]<sp/>=<sp/>BIT(irq_num<sp/>%<sp/>32);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182" refid="nvic_8h_1a4802c52b347c70f7cf0da4e699591b04" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="nvic_8h_1a4802c52b347c70f7cf0da4e699591b04" kindref="member" tooltip="Disable interrupt irq_num.">nvic_irq_disable</ref>(<ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83" kindref="member" tooltip="Interrupt vector table interrupt numbers.">nvic_irq_num</ref><sp/>irq_num)<sp/>{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(irq_num<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1aa0288691785a5f868238e0468b39523d" kindref="member" tooltip="NVIC register map base pointer.">NVIC_BASE</ref>-&gt;ICER[irq_num<sp/>/<sp/>32]<sp/>=<sp/>BIT(irq_num<sp/>%<sp/>32);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195" refid="nvic_8h_1a50451c96b511f68fb670b90fe9beb699" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="nvic_8h_1a50451c96b511f68fb670b90fe9beb699" kindref="member" tooltip="Quickly disable all interrupts.">nvic_irq_disable_all</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Note:<sp/>This<sp/>only<sp/>works<sp/>up<sp/>to<sp/>XL<sp/>density.<sp/><sp/>The<sp/>fix<sp/>for</highlight></codeline>
+<codeline lineno="197"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>connectivity<sp/>line<sp/>is:</highlight></codeline>
+<codeline lineno="198"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="199"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/>NVIC_BASE-&gt;ICER[2]<sp/>=<sp/>0xF;</highlight></codeline>
+<codeline lineno="200"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="201"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>We<sp/>don&apos;t<sp/>support<sp/>connectivity<sp/>line<sp/>devices<sp/>(yet),<sp/>so<sp/>leave<sp/>it</highlight></codeline>
+<codeline lineno="202"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>alone<sp/>for<sp/>now.</highlight></codeline>
+<codeline lineno="203"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1aa0288691785a5f868238e0468b39523d" kindref="member" tooltip="NVIC register map base pointer.">NVIC_BASE</ref>-&gt;ICER[0]<sp/>=<sp/>0xFFFFFFFF;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1aa0288691785a5f868238e0468b39523d" kindref="member" tooltip="NVIC register map base pointer.">NVIC_BASE</ref>-&gt;ICER[1]<sp/>=<sp/>0xFFFFFFFF;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="209"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="211"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="213"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structafio__reg__map" kind="struct" prot="public">
+    <compoundname>afio_reg_map</compoundname>
+    <includes refid="gpio_8h" local="no">gpio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structafio__reg__map_1aa3796784bcab38cbb07ee4adb816e13d" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 afio_reg_map::EVCR</definition>
+        <argsstring></argsstring>
+        <name>EVCR</name>
+        <briefdescription>
+<para>Event control register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" line="226" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structafio__reg__map_1a4c6f947ded8fe0e289a5e2d719ce6b03" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 afio_reg_map::MAPR</definition>
+        <argsstring></argsstring>
+        <name>MAPR</name>
+        <briefdescription>
+<para>AF remap and debug I/O configuration register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" line="228" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structafio__reg__map_1a373d9c690bdb82b3961013fc19ea0a86" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 afio_reg_map::EXTICR1</definition>
+        <argsstring></argsstring>
+        <name>EXTICR1</name>
+        <briefdescription>
+<para>External interrupt configuration register 1. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" line="230" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structafio__reg__map_1ad241830866602b291f4000900243d852" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 afio_reg_map::EXTICR2</definition>
+        <argsstring></argsstring>
+        <name>EXTICR2</name>
+        <briefdescription>
+<para>External interrupt configuration register 2. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" line="232" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structafio__reg__map_1a4cae3be143602e95f0cb59b918dcca8d" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 afio_reg_map::EXTICR3</definition>
+        <argsstring></argsstring>
+        <name>EXTICR3</name>
+        <briefdescription>
+<para>External interrupt configuration register 3. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" line="234" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structafio__reg__map_1a3cb3ad309a526697c0afa333eb5a4bf2" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 afio_reg_map::EXTICR4</definition>
+        <argsstring></argsstring>
+        <name>EXTICR4</name>
+        <briefdescription>
+<para>External interrupt configuration register 4. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" line="236" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structafio__reg__map_1a47545981d25301bd276244274aaec56c" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 afio_reg_map::MAPR2</definition>
+        <argsstring></argsstring>
+        <name>MAPR2</name>
+        <briefdescription>
+<para>AF remap and debug I/O configuration register 2. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" line="238" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>AFIO register map. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" line="225" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" bodystart="225" bodyend="239"/>
+    <listofallmembers>
+      <member refid="structafio__reg__map_1aa3796784bcab38cbb07ee4adb816e13d" prot="public" virt="non-virtual"><scope>afio_reg_map</scope><name>EVCR</name></member>
+      <member refid="structafio__reg__map_1a373d9c690bdb82b3961013fc19ea0a86" prot="public" virt="non-virtual"><scope>afio_reg_map</scope><name>EXTICR1</name></member>
+      <member refid="structafio__reg__map_1ad241830866602b291f4000900243d852" prot="public" virt="non-virtual"><scope>afio_reg_map</scope><name>EXTICR2</name></member>
+      <member refid="structafio__reg__map_1a4cae3be143602e95f0cb59b918dcca8d" prot="public" virt="non-virtual"><scope>afio_reg_map</scope><name>EXTICR3</name></member>
+      <member refid="structafio__reg__map_1a3cb3ad309a526697c0afa333eb5a4bf2" prot="public" virt="non-virtual"><scope>afio_reg_map</scope><name>EXTICR4</name></member>
+      <member refid="structafio__reg__map_1a4c6f947ded8fe0e289a5e2d719ce6b03" prot="public" virt="non-virtual"><scope>afio_reg_map</scope><name>MAPR</name></member>
+      <member refid="structafio__reg__map_1a47545981d25301bd276244274aaec56c" prot="public" virt="non-virtual"><scope>afio_reg_map</scope><name>MAPR2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

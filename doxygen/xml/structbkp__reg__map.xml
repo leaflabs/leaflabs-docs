@@ -1,0 +1,688 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structbkp__reg__map" kind="struct" prot="public">
+    <compoundname>bkp_reg_map</compoundname>
+    <includes refid="bkp_8h" local="no">bkp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbkp__reg__map_1aae6698070fb0d736ec3eded8b43dd285" prot="public" static="no" mutable="no">
+        <type>const uint32</type>
+        <definition>const uint32 bkp_reg_map::RESERVED1</definition>
+        <argsstring></argsstring>
+        <name>RESERVED1</name>
+        <briefdescription>
+<para>Reserved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="49" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a2f8e8745336966783b49eac48903def1" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR1</definition>
+        <argsstring></argsstring>
+        <name>DR1</name>
+        <briefdescription>
+<para>Data register 1. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="50" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a8994588780a2f17de60fb6bcb8aa8966" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR2</definition>
+        <argsstring></argsstring>
+        <name>DR2</name>
+        <briefdescription>
+<para>Data register 2. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="51" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a0000816c07a9ebc4c53cb98c337451a9" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR3</definition>
+        <argsstring></argsstring>
+        <name>DR3</name>
+        <briefdescription>
+<para>Data register 3. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="52" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a5288ddc87dc05c6228e23f0edf667360" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR4</definition>
+        <argsstring></argsstring>
+        <name>DR4</name>
+        <briefdescription>
+<para>Data register 4. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="53" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a7c9a8216b376ff5602348dff5cc2644b" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR5</definition>
+        <argsstring></argsstring>
+        <name>DR5</name>
+        <briefdescription>
+<para>Data register 5. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="54" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a8eea661cb923ea47405bf7e00d312c9e" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR6</definition>
+        <argsstring></argsstring>
+        <name>DR6</name>
+        <briefdescription>
+<para>Data register 6. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="55" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1ae2e535d2a7539326175b0c014d5ae61d" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR7</definition>
+        <argsstring></argsstring>
+        <name>DR7</name>
+        <briefdescription>
+<para>Data register 7. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="56" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1adc1cb2bd8c56a12b3f0feb98026fad87" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR8</definition>
+        <argsstring></argsstring>
+        <name>DR8</name>
+        <briefdescription>
+<para>Data register 8. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="57" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a4e68c93187aaa384cb4139930c43e831" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR9</definition>
+        <argsstring></argsstring>
+        <name>DR9</name>
+        <briefdescription>
+<para>Data register 9. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="58" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a696aad3eea6687f5956677789aa1b90a" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR10</definition>
+        <argsstring></argsstring>
+        <name>DR10</name>
+        <briefdescription>
+<para>Data register 10. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="59" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1ae45de833c3653aefae7b3456095c7680" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::RTCCR</definition>
+        <argsstring></argsstring>
+        <name>RTCCR</name>
+        <briefdescription>
+<para>RTC control register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="60" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a3b4487c28b3fe5fab200e1d36654b228" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::CR</definition>
+        <argsstring></argsstring>
+        <name>CR</name>
+        <briefdescription>
+<para>Control register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="61" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a4ed71d83e8fa003e4a9f1b5d969a470b" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::CSR</definition>
+        <argsstring></argsstring>
+        <name>CSR</name>
+        <briefdescription>
+<para>Control and status register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="62" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1aea2102a45f3b98897deea2599be23cfa" prot="public" static="no" mutable="no">
+        <type>const uint32</type>
+        <definition>const uint32 bkp_reg_map::RESERVED2</definition>
+        <argsstring></argsstring>
+        <name>RESERVED2</name>
+        <briefdescription>
+<para>Reserved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="64" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a8d1ba55596a7b51342d9d439b111e855" prot="public" static="no" mutable="no">
+        <type>const uint32</type>
+        <definition>const uint32 bkp_reg_map::RESERVED3</definition>
+        <argsstring></argsstring>
+        <name>RESERVED3</name>
+        <briefdescription>
+<para>Reserved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="65" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a0e222d09201e8f0aa135ec86f070ca55" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR11</definition>
+        <argsstring></argsstring>
+        <name>DR11</name>
+        <briefdescription>
+<para>Data register 11. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="66" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1aa057817f8b068907001f739779aea88c" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR12</definition>
+        <argsstring></argsstring>
+        <name>DR12</name>
+        <briefdescription>
+<para>Data register 12. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="67" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1abf8a0eaa4cf049c319ca7908d9015db7" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR13</definition>
+        <argsstring></argsstring>
+        <name>DR13</name>
+        <briefdescription>
+<para>Data register 13. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="68" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a9ec9a546c5ba84f7602849291c728cdb" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR14</definition>
+        <argsstring></argsstring>
+        <name>DR14</name>
+        <briefdescription>
+<para>Data register 14. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="69" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a6e41e05f393a413fed7e4fab13f14cdc" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR15</definition>
+        <argsstring></argsstring>
+        <name>DR15</name>
+        <briefdescription>
+<para>Data register 15. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="70" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a138c55b3c770ba46b780a7fc074173f0" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR16</definition>
+        <argsstring></argsstring>
+        <name>DR16</name>
+        <briefdescription>
+<para>Data register 16. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="71" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a203b890a372754cf16cc7cba2ccaf497" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR17</definition>
+        <argsstring></argsstring>
+        <name>DR17</name>
+        <briefdescription>
+<para>Data register 17. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="72" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a90864b4d0f704b1476c8c4c4dd7c7e16" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR18</definition>
+        <argsstring></argsstring>
+        <name>DR18</name>
+        <briefdescription>
+<para>Data register 18. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="73" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1aa56bfd366ea70306b795e41dc59043f1" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR19</definition>
+        <argsstring></argsstring>
+        <name>DR19</name>
+        <briefdescription>
+<para>Data register 19. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="74" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a197367e4b6d16ae55973744114c09b40" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR20</definition>
+        <argsstring></argsstring>
+        <name>DR20</name>
+        <briefdescription>
+<para>Data register 20. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="75" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a49f4935365b46c629672dc0f5ee71e8d" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR21</definition>
+        <argsstring></argsstring>
+        <name>DR21</name>
+        <briefdescription>
+<para>Data register 21. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="76" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a33168ec6aa62a1e566dcb8703c9962f9" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR22</definition>
+        <argsstring></argsstring>
+        <name>DR22</name>
+        <briefdescription>
+<para>Data register 22. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="77" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a7a1a5974e605aaa96db66186b10d9a75" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR23</definition>
+        <argsstring></argsstring>
+        <name>DR23</name>
+        <briefdescription>
+<para>Data register 23. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="78" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a6b57aecec03395ff8a1423c40752b05e" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR24</definition>
+        <argsstring></argsstring>
+        <name>DR24</name>
+        <briefdescription>
+<para>Data register 24. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="79" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a8fe44b2ead03fcbfae1156bbd510d089" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR25</definition>
+        <argsstring></argsstring>
+        <name>DR25</name>
+        <briefdescription>
+<para>Data register 25. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="80" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a2f16d7c499dec82c71babae32f7e18f6" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR26</definition>
+        <argsstring></argsstring>
+        <name>DR26</name>
+        <briefdescription>
+<para>Data register 26. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="81" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a139ef97b08f7c7638e73407a67e3cae4" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR27</definition>
+        <argsstring></argsstring>
+        <name>DR27</name>
+        <briefdescription>
+<para>Data register 27. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="82" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a5d74fb39d758986f8eb78fc7a6727bd9" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR28</definition>
+        <argsstring></argsstring>
+        <name>DR28</name>
+        <briefdescription>
+<para>Data register 28. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="83" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a1fbe51a60a7cf3d6c2bddd4b971aec2b" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR29</definition>
+        <argsstring></argsstring>
+        <name>DR29</name>
+        <briefdescription>
+<para>Data register 29. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="84" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a4e840605948626a2ca8bc7acd3bbc873" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR30</definition>
+        <argsstring></argsstring>
+        <name>DR30</name>
+        <briefdescription>
+<para>Data register 30. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="85" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1aee8fe1adc1bc6d20baff8ac7a7ea3dac" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR31</definition>
+        <argsstring></argsstring>
+        <name>DR31</name>
+        <briefdescription>
+<para>Data register 31. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="86" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a15cfbbff1c7f66ce20f81fe7f03ba70b" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR32</definition>
+        <argsstring></argsstring>
+        <name>DR32</name>
+        <briefdescription>
+<para>Data register 32. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="87" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a38bbaaa1411b250420cd1a0cadf97986" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR33</definition>
+        <argsstring></argsstring>
+        <name>DR33</name>
+        <briefdescription>
+<para>Data register 33. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="88" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a9d1441789ccd41b90279e7d7c9e1cf25" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR34</definition>
+        <argsstring></argsstring>
+        <name>DR34</name>
+        <briefdescription>
+<para>Data register 34. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="89" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1aa08ef4661acd9ec332b2b97b5546f189" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR35</definition>
+        <argsstring></argsstring>
+        <name>DR35</name>
+        <briefdescription>
+<para>Data register 35. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="90" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a7919f82e05c1ab6522c244753b6777a3" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR36</definition>
+        <argsstring></argsstring>
+        <name>DR36</name>
+        <briefdescription>
+<para>Data register 36. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="91" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a60e9e9612ef4a50831c8279d9d3a233f" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR37</definition>
+        <argsstring></argsstring>
+        <name>DR37</name>
+        <briefdescription>
+<para>Data register 37. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="92" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1abf216ec7039c893d09a86845e2be162a" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR38</definition>
+        <argsstring></argsstring>
+        <name>DR38</name>
+        <briefdescription>
+<para>Data register 38. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="93" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a4004c3d251320a9b5e5b71a55daf68a6" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR39</definition>
+        <argsstring></argsstring>
+        <name>DR39</name>
+        <briefdescription>
+<para>Data register 39. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="94" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a7647f1ab5490aaec22eb36abc2e42771" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR40</definition>
+        <argsstring></argsstring>
+        <name>DR40</name>
+        <briefdescription>
+<para>Data register 40. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="95" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1afa17864d32455a4c39e9343529135520" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR41</definition>
+        <argsstring></argsstring>
+        <name>DR41</name>
+        <briefdescription>
+<para>Data register 41. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="96" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbkp__reg__map_1a1ed45e9d017fc77cd6885e373d3b855f" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 bkp_reg_map::DR42</definition>
+        <argsstring></argsstring>
+        <name>DR42</name>
+        <briefdescription>
+<para>Data register 42. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="97" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Backup peripheral register map type. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="48" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="48" bodyend="99"/>
+    <listofallmembers>
+      <member refid="structbkp__reg__map_1a3b4487c28b3fe5fab200e1d36654b228" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>CR</name></member>
+      <member refid="structbkp__reg__map_1a4ed71d83e8fa003e4a9f1b5d969a470b" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>CSR</name></member>
+      <member refid="structbkp__reg__map_1a2f8e8745336966783b49eac48903def1" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR1</name></member>
+      <member refid="structbkp__reg__map_1a696aad3eea6687f5956677789aa1b90a" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR10</name></member>
+      <member refid="structbkp__reg__map_1a0e222d09201e8f0aa135ec86f070ca55" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR11</name></member>
+      <member refid="structbkp__reg__map_1aa057817f8b068907001f739779aea88c" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR12</name></member>
+      <member refid="structbkp__reg__map_1abf8a0eaa4cf049c319ca7908d9015db7" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR13</name></member>
+      <member refid="structbkp__reg__map_1a9ec9a546c5ba84f7602849291c728cdb" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR14</name></member>
+      <member refid="structbkp__reg__map_1a6e41e05f393a413fed7e4fab13f14cdc" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR15</name></member>
+      <member refid="structbkp__reg__map_1a138c55b3c770ba46b780a7fc074173f0" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR16</name></member>
+      <member refid="structbkp__reg__map_1a203b890a372754cf16cc7cba2ccaf497" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR17</name></member>
+      <member refid="structbkp__reg__map_1a90864b4d0f704b1476c8c4c4dd7c7e16" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR18</name></member>
+      <member refid="structbkp__reg__map_1aa56bfd366ea70306b795e41dc59043f1" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR19</name></member>
+      <member refid="structbkp__reg__map_1a8994588780a2f17de60fb6bcb8aa8966" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR2</name></member>
+      <member refid="structbkp__reg__map_1a197367e4b6d16ae55973744114c09b40" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR20</name></member>
+      <member refid="structbkp__reg__map_1a49f4935365b46c629672dc0f5ee71e8d" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR21</name></member>
+      <member refid="structbkp__reg__map_1a33168ec6aa62a1e566dcb8703c9962f9" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR22</name></member>
+      <member refid="structbkp__reg__map_1a7a1a5974e605aaa96db66186b10d9a75" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR23</name></member>
+      <member refid="structbkp__reg__map_1a6b57aecec03395ff8a1423c40752b05e" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR24</name></member>
+      <member refid="structbkp__reg__map_1a8fe44b2ead03fcbfae1156bbd510d089" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR25</name></member>
+      <member refid="structbkp__reg__map_1a2f16d7c499dec82c71babae32f7e18f6" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR26</name></member>
+      <member refid="structbkp__reg__map_1a139ef97b08f7c7638e73407a67e3cae4" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR27</name></member>
+      <member refid="structbkp__reg__map_1a5d74fb39d758986f8eb78fc7a6727bd9" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR28</name></member>
+      <member refid="structbkp__reg__map_1a1fbe51a60a7cf3d6c2bddd4b971aec2b" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR29</name></member>
+      <member refid="structbkp__reg__map_1a0000816c07a9ebc4c53cb98c337451a9" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR3</name></member>
+      <member refid="structbkp__reg__map_1a4e840605948626a2ca8bc7acd3bbc873" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR30</name></member>
+      <member refid="structbkp__reg__map_1aee8fe1adc1bc6d20baff8ac7a7ea3dac" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR31</name></member>
+      <member refid="structbkp__reg__map_1a15cfbbff1c7f66ce20f81fe7f03ba70b" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR32</name></member>
+      <member refid="structbkp__reg__map_1a38bbaaa1411b250420cd1a0cadf97986" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR33</name></member>
+      <member refid="structbkp__reg__map_1a9d1441789ccd41b90279e7d7c9e1cf25" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR34</name></member>
+      <member refid="structbkp__reg__map_1aa08ef4661acd9ec332b2b97b5546f189" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR35</name></member>
+      <member refid="structbkp__reg__map_1a7919f82e05c1ab6522c244753b6777a3" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR36</name></member>
+      <member refid="structbkp__reg__map_1a60e9e9612ef4a50831c8279d9d3a233f" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR37</name></member>
+      <member refid="structbkp__reg__map_1abf216ec7039c893d09a86845e2be162a" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR38</name></member>
+      <member refid="structbkp__reg__map_1a4004c3d251320a9b5e5b71a55daf68a6" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR39</name></member>
+      <member refid="structbkp__reg__map_1a5288ddc87dc05c6228e23f0edf667360" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR4</name></member>
+      <member refid="structbkp__reg__map_1a7647f1ab5490aaec22eb36abc2e42771" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR40</name></member>
+      <member refid="structbkp__reg__map_1afa17864d32455a4c39e9343529135520" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR41</name></member>
+      <member refid="structbkp__reg__map_1a1ed45e9d017fc77cd6885e373d3b855f" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR42</name></member>
+      <member refid="structbkp__reg__map_1a7c9a8216b376ff5602348dff5cc2644b" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR5</name></member>
+      <member refid="structbkp__reg__map_1a8eea661cb923ea47405bf7e00d312c9e" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR6</name></member>
+      <member refid="structbkp__reg__map_1ae2e535d2a7539326175b0c014d5ae61d" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR7</name></member>
+      <member refid="structbkp__reg__map_1adc1cb2bd8c56a12b3f0feb98026fad87" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR8</name></member>
+      <member refid="structbkp__reg__map_1a4e68c93187aaa384cb4139930c43e831" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>DR9</name></member>
+      <member refid="structbkp__reg__map_1aae6698070fb0d736ec3eded8b43dd285" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>RESERVED1</name></member>
+      <member refid="structbkp__reg__map_1aea2102a45f3b98897deea2599be23cfa" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>RESERVED2</name></member>
+      <member refid="structbkp__reg__map_1a8d1ba55596a7b51342d9d439b111e855" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>RESERVED3</name></member>
+      <member refid="structbkp__reg__map_1ae45de833c3653aefae7b3456095c7680" prot="public" virt="non-virtual"><scope>bkp_reg_map</scope><name>RTCCR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

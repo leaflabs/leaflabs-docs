@@ -1,0 +1,623 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="bkp_8h" kind="file">
+    <compoundname>bkp.h</compoundname>
+    <includes refid="libmaple_8h" local="yes">libmaple.h</includes>
+    <includedby refid="bkp_8c" local="yes">libmaple/bkp.c</includedby>
+    <incdepgraph>
+      <node id="69">
+        <label>libmaple/bkp.h</label>
+        <link refid="bkp.h"/>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="71">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="70">
+        <label>libmaple.h</label>
+        <link refid="libmaple_8h"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="76">
+        <label>libmaple/bkp.c</label>
+        <link refid="bkp_8c_source"/>
+      </node>
+      <node id="75">
+        <label>libmaple/bkp.h</label>
+        <link refid="bkp.h"/>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structbkp__reg__map" prot="public">bkp_reg_map</innerclass>
+    <innerclass refid="structbkp__dev" prot="public">bkp_dev</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="bkp_8h_1aafcfea53a099e072d249f17d371c3361" prot="public" static="no">
+        <name>BKP_NR_DATA_REGS</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="42" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bkp_8h_1aa15d5a9f40794105397ba5ea567c4ae1" prot="public" static="no">
+        <name>BKP_BASE</name>
+        <initializer>((struct <ref refid="structbkp__reg__map" kindref="compound">bkp_reg_map</ref>*)0x40006C00)</initializer>
+        <briefdescription>
+<para>Backup peripheral register map base pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="102" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bkp_8h_1a5cb5348a3afb52c57a4c2189908afd47" prot="public" static="no">
+        <name>BKP_DR_D</name>
+        <initializer>0xFFFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="117" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bkp_8h_1a27594fdd29cd6cc9d5eb426ffdee8024" prot="public" static="no">
+        <name>BKP_RTCCR_ASOS_BIT</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="121" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bkp_8h_1a2acecc3a9e0b9b70959e2bd7c3d36bf5" prot="public" static="no">
+        <name>BKP_RTCCR_ASOE_BIT</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="122" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bkp_8h_1ac0a16acf33ea46b6e639cee3ad4bcb8c" prot="public" static="no">
+        <name>BKP_RTCCR_CCO_BIT</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="123" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bkp_8h_1a8d017e8f3c09696cd74e170a95966be4" prot="public" static="no">
+        <name>BKP_RTCCR_ASOS</name>
+        <initializer>BIT(BKP_RTCCR_ASOS_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="125" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bkp_8h_1a924692225ba4db945660687fe47f50b4" prot="public" static="no">
+        <name>BKP_RTCCR_ASOE</name>
+        <initializer>BIT(BKP_RTCCR_ASOE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="126" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bkp_8h_1a639d569ffd9211519b910c1e6304f7b3" prot="public" static="no">
+        <name>BKP_RTCCR_CCO</name>
+        <initializer>BIT(BKP_RTCCR_CCO_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="127" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bkp_8h_1a4f2eeeef42c2f7a59d28a9d5eb4c6857" prot="public" static="no">
+        <name>BKP_RTCCR_CAL</name>
+        <initializer>0x7F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="128" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bkp_8h_1a59bff4eead6aea40ba7dbfaaa45d965f" prot="public" static="no">
+        <name>BKP_CR_TPAL_BIT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="132" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bkp_8h_1ace7d18a9180ae7dbf6cdd70421f63b27" prot="public" static="no">
+        <name>BKP_CR_TPE_BIT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="133" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bkp_8h_1a28cd1469212463d8a772b0b67543d320" prot="public" static="no">
+        <name>BKP_CR_TPAL</name>
+        <initializer>BIT(BKP_CR_TPAL_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="135" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bkp_8h_1adbb835fd9fbe4d74e598d15de3c12e63" prot="public" static="no">
+        <name>BKP_CR_TPE</name>
+        <initializer>BIT(BKP_CR_TPE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="136" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bkp_8h_1ac61d62b704123e20ce7af29bc67b5816" prot="public" static="no">
+        <name>BKP_CSR_TIF_BIT</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="140" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bkp_8h_1a52b1d818e9610e6259639632af5a06aa" prot="public" static="no">
+        <name>BKP_CSR_TEF_BIT</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="141" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bkp_8h_1ad23253b8379208418c2914e6415eb367" prot="public" static="no">
+        <name>BKP_CSR_TPIE_BIT</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="142" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bkp_8h_1ae65f3d9539341801a3e87008ad94fa02" prot="public" static="no">
+        <name>BKP_CSR_CTI_BIT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="143" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bkp_8h_1a053ed000cc07c0cce80c1330fd9bf61d" prot="public" static="no">
+        <name>BKP_CSR_CTE_BIT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="144" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bkp_8h_1a3a8317e460ec3e18c78869beacd0bac8" prot="public" static="no">
+        <name>BKP_CSR_TIF</name>
+        <initializer>BIT(BKP_CSR_TIF_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="146" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bkp_8h_1a71a05fe4e45b0dc0b1f970e51085678d" prot="public" static="no">
+        <name>BKP_CSR_TEF</name>
+        <initializer>BIT(BKP_CSR_TEF_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="147" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bkp_8h_1a38baaf48576f4b3ab209369e04d468ad" prot="public" static="no">
+        <name>BKP_CSR_TPIE</name>
+        <initializer>BIT(BKP_CSR_TPIE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="148" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bkp_8h_1ad7dc97ae504ef58fb2137c1fdd02fc4e" prot="public" static="no">
+        <name>BKP_CSR_CTI</name>
+        <initializer>BIT(BKP_CSR_CTI_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="149" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bkp_8h_1ad8cec91d3c30db07961227bcea5c5452" prot="public" static="no">
+        <name>BKP_CSR_CTE</name>
+        <initializer>BIT(BKP_CSR_CTE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="150" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="bkp_8h_1a86a6728fdbe1740312f56bf3a5615d1d" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structbkp__dev" kindref="compound">bkp_dev</ref> *</type>
+        <definition>const bkp_dev* BKP</definition>
+        <argsstring></argsstring>
+        <name>BKP</name>
+        <briefdescription>
+<para>Backup device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="109" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.c" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="bkp_8h_1aee5911833015d982af28f82f3af160d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bkp_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>bkp_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize backup interface. </para>        </briefdescription>
+        <detaileddescription>
+<para>Enables the power and backup interface clocks, and resets the backup device. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="156" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.c" bodystart="46" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="bkp_8h_1acc8b1f5ab8a0f1eeb8ecf401471565ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bkp_enable_writes</definition>
+        <argsstring>(void)</argsstring>
+        <name>bkp_enable_writes</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable write access to the backup registers. </para>        </briefdescription>
+        <detaileddescription>
+<para>Backup interface must be initialized for subsequent register writes to work. <simplesect kind="see"><para><ref refid="bkp_8h_1aee5911833015d982af28f82f3af160d3" kindref="member">bkp_init()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="157" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.c" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="bkp_8h_1ae9bc65b6a640ee0fa49214e566c4884c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bkp_disable_writes</definition>
+        <argsstring>(void)</argsstring>
+        <name>bkp_disable_writes</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Disable write access to the backup registers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="158" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.c" bodystart="66" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="bkp_8h_1a94e8b1a11d37c178192eccd420d02b9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16</type>
+        <definition>uint16 bkp_read</definition>
+        <argsstring>(uint8 reg)</argsstring>
+        <name>bkp_read</name>
+        <param>
+          <type>uint8</type>
+          <declname>reg</declname>
+        </param>
+        <briefdescription>
+<para>Read a value from given backup data register. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data register to read, from 1 to BKP_NR_DATA_REGS (10 on medium-density devices, 42 on high-density devices). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="159" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.c" bodystart="75" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="bkp_8h_1aef5fc05af5c4cadc08dd79d028c8c434" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bkp_write</definition>
+        <argsstring>(uint8 reg, uint16 val)</argsstring>
+        <name>bkp_write</name>
+        <param>
+          <type>uint8</type>
+          <declname>reg</declname>
+        </param>
+        <param>
+          <type>uint16</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Write a value to given data register. </para>        </briefdescription>
+        <detaileddescription>
+<para>Write access to backup registers must be enabled.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data register to write, from 1 to BKP_NR_DATA_REGS (10 on medium-density devices, 42 on high-density devices). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to write into the register. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="bkp_8h_1acc8b1f5ab8a0f1eeb8ecf401471565ea" kindref="member">bkp_enable_writes()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h" line="160" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bkp.c" bodystart="94" bodyend="101"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Backup register support. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>LeafLabs,<sp/>LLC.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor">#ifndef<sp/>_BKP_H_</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_BKP_H_</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libmaple_8h" kindref="compound" tooltip="General include file for libmaple.">libmaple.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(STM32_MEDIUM_DENSITY)</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BKP_NR_DATA_REGS<sp/>10</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>defined(STM32_HIGH_DENSITY)</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BKP_NR_DATA_REGS<sp/>42</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="48" refid="structbkp__reg__map" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbkp__reg__map" kindref="compound" tooltip="Backup peripheral register map type.">bkp_reg_map</ref><sp/>{</highlight></codeline>
+<codeline lineno="49" refid="structbkp__reg__map_1aae6698070fb0d736ec3eded8b43dd285" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32<sp/><ref refid="structbkp__reg__map_1aae6698070fb0d736ec3eded8b43dd285" kindref="member" tooltip="Reserved.">RESERVED1</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50" refid="structbkp__reg__map_1a2f8e8745336966783b49eac48903def1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a2f8e8745336966783b49eac48903def1" kindref="member" tooltip="Data register 1.">DR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51" refid="structbkp__reg__map_1a8994588780a2f17de60fb6bcb8aa8966" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a8994588780a2f17de60fb6bcb8aa8966" kindref="member" tooltip="Data register 2.">DR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52" refid="structbkp__reg__map_1a0000816c07a9ebc4c53cb98c337451a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a0000816c07a9ebc4c53cb98c337451a9" kindref="member" tooltip="Data register 3.">DR3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53" refid="structbkp__reg__map_1a5288ddc87dc05c6228e23f0edf667360" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a5288ddc87dc05c6228e23f0edf667360" kindref="member" tooltip="Data register 4.">DR4</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54" refid="structbkp__reg__map_1a7c9a8216b376ff5602348dff5cc2644b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a7c9a8216b376ff5602348dff5cc2644b" kindref="member" tooltip="Data register 5.">DR5</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55" refid="structbkp__reg__map_1a8eea661cb923ea47405bf7e00d312c9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a8eea661cb923ea47405bf7e00d312c9e" kindref="member" tooltip="Data register 6.">DR6</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56" refid="structbkp__reg__map_1ae2e535d2a7539326175b0c014d5ae61d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1ae2e535d2a7539326175b0c014d5ae61d" kindref="member" tooltip="Data register 7.">DR7</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57" refid="structbkp__reg__map_1adc1cb2bd8c56a12b3f0feb98026fad87" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1adc1cb2bd8c56a12b3f0feb98026fad87" kindref="member" tooltip="Data register 8.">DR8</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58" refid="structbkp__reg__map_1a4e68c93187aaa384cb4139930c43e831" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a4e68c93187aaa384cb4139930c43e831" kindref="member" tooltip="Data register 9.">DR9</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59" refid="structbkp__reg__map_1a696aad3eea6687f5956677789aa1b90a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a696aad3eea6687f5956677789aa1b90a" kindref="member" tooltip="Data register 10.">DR10</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60" refid="structbkp__reg__map_1ae45de833c3653aefae7b3456095c7680" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1ae45de833c3653aefae7b3456095c7680" kindref="member" tooltip="RTC control register.">RTCCR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61" refid="structbkp__reg__map_1a3b4487c28b3fe5fab200e1d36654b228" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a3b4487c28b3fe5fab200e1d36654b228" kindref="member" tooltip="Control register.">CR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62" refid="structbkp__reg__map_1a4ed71d83e8fa003e4a9f1b5d969a470b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a4ed71d83e8fa003e4a9f1b5d969a470b" kindref="member" tooltip="Control and status register.">CSR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>STM32_HIGH_DENSITY</highlight></codeline>
+<codeline lineno="64" refid="structbkp__reg__map_1aea2102a45f3b98897deea2599be23cfa" refkind="member"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32<sp/><ref refid="structbkp__reg__map_1aea2102a45f3b98897deea2599be23cfa" kindref="member" tooltip="Reserved.">RESERVED2</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65" refid="structbkp__reg__map_1a8d1ba55596a7b51342d9d439b111e855" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32<sp/><ref refid="structbkp__reg__map_1a8d1ba55596a7b51342d9d439b111e855" kindref="member" tooltip="Reserved.">RESERVED3</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66" refid="structbkp__reg__map_1a0e222d09201e8f0aa135ec86f070ca55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a0e222d09201e8f0aa135ec86f070ca55" kindref="member" tooltip="Data register 11.">DR11</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67" refid="structbkp__reg__map_1aa057817f8b068907001f739779aea88c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1aa057817f8b068907001f739779aea88c" kindref="member" tooltip="Data register 12.">DR12</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68" refid="structbkp__reg__map_1abf8a0eaa4cf049c319ca7908d9015db7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1abf8a0eaa4cf049c319ca7908d9015db7" kindref="member" tooltip="Data register 13.">DR13</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69" refid="structbkp__reg__map_1a9ec9a546c5ba84f7602849291c728cdb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a9ec9a546c5ba84f7602849291c728cdb" kindref="member" tooltip="Data register 14.">DR14</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70" refid="structbkp__reg__map_1a6e41e05f393a413fed7e4fab13f14cdc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a6e41e05f393a413fed7e4fab13f14cdc" kindref="member" tooltip="Data register 15.">DR15</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71" refid="structbkp__reg__map_1a138c55b3c770ba46b780a7fc074173f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a138c55b3c770ba46b780a7fc074173f0" kindref="member" tooltip="Data register 16.">DR16</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72" refid="structbkp__reg__map_1a203b890a372754cf16cc7cba2ccaf497" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a203b890a372754cf16cc7cba2ccaf497" kindref="member" tooltip="Data register 17.">DR17</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73" refid="structbkp__reg__map_1a90864b4d0f704b1476c8c4c4dd7c7e16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a90864b4d0f704b1476c8c4c4dd7c7e16" kindref="member" tooltip="Data register 18.">DR18</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74" refid="structbkp__reg__map_1aa56bfd366ea70306b795e41dc59043f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1aa56bfd366ea70306b795e41dc59043f1" kindref="member" tooltip="Data register 19.">DR19</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75" refid="structbkp__reg__map_1a197367e4b6d16ae55973744114c09b40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a197367e4b6d16ae55973744114c09b40" kindref="member" tooltip="Data register 20.">DR20</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76" refid="structbkp__reg__map_1a49f4935365b46c629672dc0f5ee71e8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a49f4935365b46c629672dc0f5ee71e8d" kindref="member" tooltip="Data register 21.">DR21</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77" refid="structbkp__reg__map_1a33168ec6aa62a1e566dcb8703c9962f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a33168ec6aa62a1e566dcb8703c9962f9" kindref="member" tooltip="Data register 22.">DR22</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78" refid="structbkp__reg__map_1a7a1a5974e605aaa96db66186b10d9a75" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a7a1a5974e605aaa96db66186b10d9a75" kindref="member" tooltip="Data register 23.">DR23</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="79" refid="structbkp__reg__map_1a6b57aecec03395ff8a1423c40752b05e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a6b57aecec03395ff8a1423c40752b05e" kindref="member" tooltip="Data register 24.">DR24</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80" refid="structbkp__reg__map_1a8fe44b2ead03fcbfae1156bbd510d089" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a8fe44b2ead03fcbfae1156bbd510d089" kindref="member" tooltip="Data register 25.">DR25</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81" refid="structbkp__reg__map_1a2f16d7c499dec82c71babae32f7e18f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a2f16d7c499dec82c71babae32f7e18f6" kindref="member" tooltip="Data register 26.">DR26</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82" refid="structbkp__reg__map_1a139ef97b08f7c7638e73407a67e3cae4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a139ef97b08f7c7638e73407a67e3cae4" kindref="member" tooltip="Data register 27.">DR27</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83" refid="structbkp__reg__map_1a5d74fb39d758986f8eb78fc7a6727bd9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a5d74fb39d758986f8eb78fc7a6727bd9" kindref="member" tooltip="Data register 28.">DR28</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84" refid="structbkp__reg__map_1a1fbe51a60a7cf3d6c2bddd4b971aec2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a1fbe51a60a7cf3d6c2bddd4b971aec2b" kindref="member" tooltip="Data register 29.">DR29</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85" refid="structbkp__reg__map_1a4e840605948626a2ca8bc7acd3bbc873" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a4e840605948626a2ca8bc7acd3bbc873" kindref="member" tooltip="Data register 30.">DR30</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86" refid="structbkp__reg__map_1aee8fe1adc1bc6d20baff8ac7a7ea3dac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1aee8fe1adc1bc6d20baff8ac7a7ea3dac" kindref="member" tooltip="Data register 31.">DR31</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87" refid="structbkp__reg__map_1a15cfbbff1c7f66ce20f81fe7f03ba70b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a15cfbbff1c7f66ce20f81fe7f03ba70b" kindref="member" tooltip="Data register 32.">DR32</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88" refid="structbkp__reg__map_1a38bbaaa1411b250420cd1a0cadf97986" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a38bbaaa1411b250420cd1a0cadf97986" kindref="member" tooltip="Data register 33.">DR33</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89" refid="structbkp__reg__map_1a9d1441789ccd41b90279e7d7c9e1cf25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a9d1441789ccd41b90279e7d7c9e1cf25" kindref="member" tooltip="Data register 34.">DR34</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90" refid="structbkp__reg__map_1aa08ef4661acd9ec332b2b97b5546f189" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1aa08ef4661acd9ec332b2b97b5546f189" kindref="member" tooltip="Data register 35.">DR35</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91" refid="structbkp__reg__map_1a7919f82e05c1ab6522c244753b6777a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a7919f82e05c1ab6522c244753b6777a3" kindref="member" tooltip="Data register 36.">DR36</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92" refid="structbkp__reg__map_1a60e9e9612ef4a50831c8279d9d3a233f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a60e9e9612ef4a50831c8279d9d3a233f" kindref="member" tooltip="Data register 37.">DR37</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93" refid="structbkp__reg__map_1abf216ec7039c893d09a86845e2be162a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1abf216ec7039c893d09a86845e2be162a" kindref="member" tooltip="Data register 38.">DR38</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94" refid="structbkp__reg__map_1a4004c3d251320a9b5e5b71a55daf68a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a4004c3d251320a9b5e5b71a55daf68a6" kindref="member" tooltip="Data register 39.">DR39</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95" refid="structbkp__reg__map_1a7647f1ab5490aaec22eb36abc2e42771" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a7647f1ab5490aaec22eb36abc2e42771" kindref="member" tooltip="Data register 40.">DR40</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96" refid="structbkp__reg__map_1afa17864d32455a4c39e9343529135520" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1afa17864d32455a4c39e9343529135520" kindref="member" tooltip="Data register 41.">DR41</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97" refid="structbkp__reg__map_1a1ed45e9d017fc77cd6885e373d3b855f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structbkp__reg__map_1a1ed45e9d017fc77cd6885e373d3b855f" kindref="member" tooltip="Data register 42.">DR42</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor"></highlight><highlight class="normal">}<sp/><ref refid="structbkp__reg__map" kindref="compound" tooltip="Backup peripheral register map type.">bkp_reg_map</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="bkp_8h_1aa15d5a9f40794105397ba5ea567c4ae1" refkind="member"><highlight class="preprocessor">#define<sp/>BKP_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((struct<sp/>bkp_reg_map*)0x40006C00)</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="105" refid="structbkp__dev" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbkp__dev" kindref="compound" tooltip="Backup peripheral device type.">bkp_dev</ref><sp/>{</highlight></codeline>
+<codeline lineno="106" refid="structbkp__dev_1a65e546d5661280ad7d27c9ae0840e178" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbkp__reg__map" kindref="compound" tooltip="Backup peripheral register map type.">bkp_reg_map</ref><sp/>*<ref refid="structbkp__dev_1a65e546d5661280ad7d27c9ae0840e178" kindref="member" tooltip="Register map.">regs</ref>;<sp/></highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}<sp/><ref refid="structbkp__dev" kindref="compound" tooltip="Backup peripheral device type.">bkp_dev</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structbkp__dev" kindref="compound" tooltip="Backup peripheral device type.">bkp_dev</ref><sp/>*BKP;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/>*<sp/>Register<sp/>bit<sp/>definitions</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Data<sp/>Registers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BKP_DR_D<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xFFFF</highlight></codeline>
+<codeline lineno="118"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>RTC<sp/>Clock<sp/>Calibration<sp/>Register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BKP_RTCCR_ASOS_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>9</highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BKP_RTCCR_ASOE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BKP_RTCCR_CCO_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7</highlight></codeline>
+<codeline lineno="124"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BKP_RTCCR_ASOS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(BKP_RTCCR_ASOS_BIT)</highlight></codeline>
+<codeline lineno="126"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BKP_RTCCR_ASOE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(BKP_RTCCR_ASOE_BIT)</highlight></codeline>
+<codeline lineno="127"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BKP_RTCCR_CCO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(BKP_RTCCR_CCO_BIT)</highlight></codeline>
+<codeline lineno="128"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BKP_RTCCR_CAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x7F</highlight></codeline>
+<codeline lineno="129"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Backup<sp/>control<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BKP_CR_TPAL_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="133"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BKP_CR_TPE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="134"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BKP_CR_TPAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(BKP_CR_TPAL_BIT)</highlight></codeline>
+<codeline lineno="136"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BKP_CR_TPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(BKP_CR_TPE_BIT)</highlight></codeline>
+<codeline lineno="137"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Backup<sp/>control/status<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BKP_CSR_TIF_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>9</highlight></codeline>
+<codeline lineno="141"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BKP_CSR_TEF_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight></codeline>
+<codeline lineno="142"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BKP_CSR_TPIE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="143"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BKP_CSR_CTI_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="144"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BKP_CSR_CTE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="145"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BKP_CSR_TIF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(BKP_CSR_TIF_BIT)</highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BKP_CSR_TEF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(BKP_CSR_TEF_BIT)</highlight></codeline>
+<codeline lineno="148"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BKP_CSR_TPIE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(BKP_CSR_TPIE_BIT)</highlight></codeline>
+<codeline lineno="149"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BKP_CSR_CTI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(BKP_CSR_CTI_BIT)</highlight></codeline>
+<codeline lineno="150"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BKP_CSR_CTE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(BKP_CSR_CTE_BIT)</highlight></codeline>
+<codeline lineno="151"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="153"><highlight class="comment"><sp/>*<sp/>Convenience<sp/>functions</highlight></codeline>
+<codeline lineno="154"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>bkp_init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>bkp_enable_writes(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>bkp_disable_writes(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">uint16<sp/>bkp_read(uint8<sp/>reg);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>bkp_write(uint8<sp/>reg,<sp/>uint16<sp/>val);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="163"><highlight class="preprocessor"></highlight><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>extern<sp/>&quot;C&quot;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="165"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/bkp.h"/>
+  </compounddef>
+</doxygen>

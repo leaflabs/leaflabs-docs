@@ -1,0 +1,416 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="maple_8h" kind="file">
+    <compoundname>maple.h</compoundname>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="maple_8h_1aaee9393466ffd1ed569da015edf67882" prot="public" static="no">
+        <name>CYCLES_PER_MICROSECOND</name>
+        <initializer>72</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="36" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1ab198b331dca6b9435e7385a2bc6ec497" prot="public" static="no">
+        <name>SYSTICK_RELOAD_VAL</name>
+        <initializer>71999 /* takes a cycle to reload */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="37" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1aa4cd65d8b2e2a964c7baec1bfaff0365" prot="public" static="no">
+        <name>BOARD_BUTTON_PIN</name>
+        <initializer>38</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="39" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1a2cc600954192f9508dccfa4ff5d76b05" prot="public" static="no">
+        <name>BOARD_LED_PIN</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="40" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1a07a55cbc4bf04d254ed1b353b4713515" prot="public" static="no">
+        <name>BOARD_NR_USARTS</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="43" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1ad68d7036f76a09bc19f125aeb8cedb9c" prot="public" static="no">
+        <name>BOARD_USART1_TX_PIN</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="46" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1af8b5c319682d33add72b66dcb7833dd0" prot="public" static="no">
+        <name>BOARD_USART1_RX_PIN</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="47" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1aabbccce3bd06e7bd4b6fa8e993f8b494" prot="public" static="no">
+        <name>BOARD_USART2_TX_PIN</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="48" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1a0ab26b7651514b909170de213ded91b5" prot="public" static="no">
+        <name>BOARD_USART2_RX_PIN</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="49" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1a9d777e7208c55ba43f5525eab8d66548" prot="public" static="no">
+        <name>BOARD_USART3_TX_PIN</name>
+        <initializer>29</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="50" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1a4d7875f82c4be66a82668b7c85837be5" prot="public" static="no">
+        <name>BOARD_USART3_RX_PIN</name>
+        <initializer>30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="51" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1ad1715c3a4f2a15eaf6a0f66c05b80956" prot="public" static="no">
+        <name>BOARD_NR_SPI</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="54" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1a7b4553afb009abf3e7d003e64b4881e9" prot="public" static="no">
+        <name>BOARD_SPI1_NSS_PIN</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="57" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1a2a940f0c5ae69a993f5fe04014428895" prot="public" static="no">
+        <name>BOARD_SPI1_MOSI_PIN</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="58" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1a52e01e293fd93d65f1abeaf25cd77c86" prot="public" static="no">
+        <name>BOARD_SPI1_MISO_PIN</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="59" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1a1ec407eb39fc99949c0fea10ce0f998c" prot="public" static="no">
+        <name>BOARD_SPI1_SCK_PIN</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="60" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1ab2c8429f7fe12addd1c3fc1a3558568d" prot="public" static="no">
+        <name>BOARD_SPI2_NSS_PIN</name>
+        <initializer>31</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="61" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1a6e3001bf3b15914c4223c516027dd199" prot="public" static="no">
+        <name>BOARD_SPI2_MOSI_PIN</name>
+        <initializer>34</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="62" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1aa65896045e1a14f08392fc086842a650" prot="public" static="no">
+        <name>BOARD_SPI2_MISO_PIN</name>
+        <initializer>33</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="63" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1a1fc4e300a6e7d423a93a2cc831b5bb2f" prot="public" static="no">
+        <name>BOARD_SPI2_SCK_PIN</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="64" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1ae61940b1dacc12c437f11082a6018a1c" prot="public" static="no">
+        <name>BOARD_NR_GPIO_PINS</name>
+        <initializer>44</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="68" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1a6eaa14ec7c22c72d8cacaf726a452a2a" prot="public" static="no">
+        <name>BOARD_NR_PWM_PINS</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="71" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1ae0f99ae5d6aae10845f04e642560e702" prot="public" static="no">
+        <name>BOARD_NR_ADC_PINS</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="74" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1a05bb1bacb344442d09acdd8293598056" prot="public" static="no">
+        <name>BOARD_NR_USED_PINS</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="78" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1a1134fd4064c03bc2373580f1b6176120" prot="public" static="no">
+        <name>BOARD_JTMS_SWDIO_PIN</name>
+        <initializer>39</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="81" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1acb0b4ea66fd01251a4954121f4ac5b88" prot="public" static="no">
+        <name>BOARD_JTCK_SWCLK_PIN</name>
+        <initializer>40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="82" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1a03ee4cc8e7c8b081eab9c4a0cdc8662d" prot="public" static="no">
+        <name>BOARD_JTDI_PIN</name>
+        <initializer>41</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="83" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1a043fec0d6f5859adfb5aa2a51a5e3afe" prot="public" static="no">
+        <name>BOARD_JTDO_PIN</name>
+        <initializer>42</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="84" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="maple_8h_1a5432b13a0e5a7d0f24f3a3b551ae01e1" prot="public" static="no">
+        <name>BOARD_NJTRST_PIN</name>
+        <initializer>43</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" line="85" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Private include file for Maple in <ref refid="boards_8h" kindref="compound">boards.h</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Marti Bolivar &lt;<ulink url="mailto:mbolivar@leaflabs.com">mbolivar@leaflabs.com</ulink>&gt; </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2011<sp/>LeafLabs,<sp/>LLC.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor">#ifndef<sp/>_BOARD_MAPLE_H_</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_BOARD_MAPLE_H_</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CYCLES_PER_MICROSECOND<sp/><sp/>72</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SYSTICK_RELOAD_VAL<sp/><sp/><sp/><sp/><sp/><sp/>71999<sp/></highlight><highlight class="comment">/*<sp/>takes<sp/>a<sp/>cycle<sp/>to<sp/>reload<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BOARD_BUTTON_PIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>38</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BOARD_LED_PIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>13</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Number<sp/>of<sp/>USARTs/UARTs<sp/>whose<sp/>pins<sp/>are<sp/>broken<sp/>out<sp/>to<sp/>headers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BOARD_NR_USARTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Default<sp/>USART<sp/>pin<sp/>numbers<sp/>(not<sp/>considering<sp/>AFIO<sp/>remap)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BOARD_USART1_TX_PIN<sp/><sp/><sp/><sp/><sp/>7</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BOARD_USART1_RX_PIN<sp/><sp/><sp/><sp/><sp/>8</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BOARD_USART2_TX_PIN<sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BOARD_USART2_RX_PIN<sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BOARD_USART3_TX_PIN<sp/><sp/><sp/><sp/><sp/>29</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BOARD_USART3_RX_PIN<sp/><sp/><sp/><sp/><sp/>30</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Number<sp/>of<sp/>SPI<sp/>ports<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BOARD_NR_SPI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Default<sp/>SPI<sp/>pin<sp/>numbers<sp/>(not<sp/>considering<sp/>AFIO<sp/>remap)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BOARD_SPI1_NSS_PIN<sp/><sp/><sp/><sp/><sp/><sp/>10</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BOARD_SPI1_MOSI_PIN<sp/><sp/><sp/><sp/><sp/>11</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BOARD_SPI1_MISO_PIN<sp/><sp/><sp/><sp/><sp/>12</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BOARD_SPI1_SCK_PIN<sp/><sp/><sp/><sp/><sp/><sp/>13</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BOARD_SPI2_NSS_PIN<sp/><sp/><sp/><sp/><sp/><sp/>31</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BOARD_SPI2_MOSI_PIN<sp/><sp/><sp/><sp/><sp/>34</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BOARD_SPI2_MISO_PIN<sp/><sp/><sp/><sp/><sp/>33</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BOARD_SPI2_SCK_PIN<sp/><sp/><sp/><sp/><sp/><sp/>32</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Total<sp/>number<sp/>of<sp/>GPIO<sp/>pins<sp/>that<sp/>are<sp/>broken<sp/>out<sp/>to<sp/>headers<sp/>and</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>*<sp/>intended<sp/>for<sp/>general<sp/>use.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BOARD_NR_GPIO_PINS<sp/><sp/><sp/><sp/><sp/><sp/>44</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Number<sp/>of<sp/>pins<sp/>capable<sp/>of<sp/>PWM<sp/>output<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BOARD_NR_PWM_PINS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>15</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Number<sp/>of<sp/>pins<sp/>capable<sp/>of<sp/>ADC<sp/>conversion<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BOARD_NR_ADC_PINS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>15</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Number<sp/>of<sp/>pins<sp/>already<sp/>connected<sp/>to<sp/>external<sp/>hardware.<sp/><sp/>For<sp/>Maple,</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*<sp/>these<sp/>are<sp/>just<sp/>BOARD_LED_PIN<sp/>and<sp/>BOARD_BUTTON_PIN.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BOARD_NR_USED_PINS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>7</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Debug<sp/>port<sp/>pins<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BOARD_JTMS_SWDIO_PIN<sp/><sp/><sp/><sp/>39</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BOARD_JTCK_SWCLK_PIN<sp/><sp/><sp/><sp/>40</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BOARD_JTDI_PIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>41</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BOARD_JTDO_PIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>42</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BOARD_NJTRST_PIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>43</highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/wirish/boards/maple.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__v_task_priority_set" kind="group">
+    <compoundname>vTaskPrioritySet</compoundname>
+    <title>vTaskPrioritySet</title>
+    <briefdescription>
+<para>task. </para>    </briefdescription>
+    <detaileddescription>
+<para>h <preformatted>void vTaskPrioritySet( xTaskHandle pxTask, unsigned portBASE_TYPE uxNewPriority );</preformatted></para><para>INCLUDE_vTaskPrioritySet must be defined as 1 for this function to be available. See the configuration section for more information.</para><para>Set the priority of any task.</para><para>A context switch will occur before the function returns if the priority being set is higher than the currently executing task.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pxTask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the task for which the priority is being set. Passing a NULL handle results in the priority of the calling task being set.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>uxNewPriority</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The priority to which the task will be set.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Example usage: <preformatted>
+ void vAFunction( void )
+ {
+ xTaskHandle xHandle;</preformatted></para><para><preformatted>Create a task, storing the handle.
+	 xTaskCreate( vTaskCode, &quot;NAME&quot;, STACK_SIZE, NULL, tskIDLE_PRIORITY, &amp;xHandle );</preformatted></para><para><preformatted>...</preformatted></para><para><preformatted>Use the handle to raise the priority of the created task.
+	 vTaskPrioritySet( xHandle, tskIDLE_PRIORITY + 1 );</preformatted></para><para><preformatted>...</preformatted></para><para><preformatted>Use a NULL handle to raise our priority to the same value.
+	 vTaskPrioritySet( NULL, tskIDLE_PRIORITY + 1 );
+ }
+   </preformatted> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

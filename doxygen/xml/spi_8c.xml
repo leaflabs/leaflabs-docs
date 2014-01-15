@@ -1,0 +1,826 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="spi_8c" kind="file">
+    <compoundname>spi.c</compoundname>
+    <includes refid="spi_8h" local="yes">spi.h</includes>
+    <includes refid="bitband_8h" local="yes">bitband.h</includes>
+    <incdepgraph>
+      <node id="528">
+        <label>nvic.h</label>
+        <link refid="nvic_8h"/>
+        <childnode refid="526" relation="include">
+        </childnode>
+        <childnode refid="529" relation="include">
+        </childnode>
+      </node>
+      <node id="527">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="526" relation="include">
+        </childnode>
+      </node>
+      <node id="524">
+        <label>libmaple/spi.c</label>
+        <link refid="spi.c"/>
+        <childnode refid="525" relation="include">
+        </childnode>
+        <childnode refid="534" relation="include">
+        </childnode>
+      </node>
+      <node id="525">
+        <label>spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="526" relation="include">
+        </childnode>
+        <childnode refid="527" relation="include">
+        </childnode>
+        <childnode refid="528" relation="include">
+        </childnode>
+        <childnode refid="530" relation="include">
+        </childnode>
+        <childnode refid="529" relation="include">
+        </childnode>
+      </node>
+      <node id="532">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="526">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="531">
+        <label>libmaple.h</label>
+        <link refid="libmaple_8h"/>
+        <childnode refid="526" relation="include">
+        </childnode>
+        <childnode refid="532" relation="include">
+        </childnode>
+        <childnode refid="529" relation="include">
+        </childnode>
+        <childnode refid="533" relation="include">
+        </childnode>
+      </node>
+      <node id="534">
+        <label>bitband.h</label>
+        <link refid="bitband_8h"/>
+        <childnode refid="526" relation="include">
+        </childnode>
+      </node>
+      <node id="530">
+        <label>gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="531" relation="include">
+        </childnode>
+        <childnode refid="527" relation="include">
+        </childnode>
+      </node>
+      <node id="533">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="526" relation="include">
+        </childnode>
+        <childnode refid="532" relation="include">
+        </childnode>
+      </node>
+      <node id="529">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="526" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="spi_8c_1a9791ca14d2318ffb54dd9f6cdaa5749a" prot="public" static="yes" mutable="no">
+        <type><ref refid="structspi__dev" kindref="compound">spi_dev</ref></type>
+        <definition>spi_dev spi1</definition>
+        <argsstring></argsstring>
+        <name>spi1</name>
+        <initializer> {
+    .regs     = <ref refid="spi_8h_1a50cd8b47929f18b05efbd0f41253bf8d" kindref="member">SPI1_BASE</ref>,
+    .clk_id   = RCC_SPI1,
+    .irq_num  = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83aa0c8757e0b809371ba2419530f8cafbe" kindref="member">NVIC_SPI1</ref>,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.c" line="47" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.c" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="spi_8c_1a30825cf5cbd0052ab93b651884c4150e" prot="public" static="no" mutable="no">
+        <type><ref refid="structspi__dev" kindref="compound">spi_dev</ref> *</type>
+        <definition>spi_dev* SPI1</definition>
+        <argsstring></argsstring>
+        <name>SPI1</name>
+        <initializer> &amp;spi1</initializer>
+        <briefdescription>
+<para>SPI device 1. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.c" line="49" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.c" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="spi_8c_1a8a4344516e3184d5fc8914e83ab21ba8" prot="public" static="yes" mutable="no">
+        <type><ref refid="structspi__dev" kindref="compound">spi_dev</ref></type>
+        <definition>spi_dev spi2</definition>
+        <argsstring></argsstring>
+        <name>spi2</name>
+        <initializer> {
+    .regs     = <ref refid="spi_8h_1ac3e357b4c25106ed375fb1affab6bb86" kindref="member">SPI2_BASE</ref>,
+    .clk_id   = RCC_SPI2,
+    .irq_num  = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ae5839b610bb8ff658cef0100b00df2dd" kindref="member">NVIC_SPI2</ref>,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.c" line="55" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.c" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="spi_8c_1a098ad092bc00d7c97f5d5f72cfa4855b" prot="public" static="no" mutable="no">
+        <type><ref refid="structspi__dev" kindref="compound">spi_dev</ref> *</type>
+        <definition>spi_dev* SPI2</definition>
+        <argsstring></argsstring>
+        <name>SPI2</name>
+        <initializer> &amp;spi2</initializer>
+        <briefdescription>
+<para>SPI device 2. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.c" line="57" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.c" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="spi_8c_1aed35b8886c35c355d28ddf65ca3db1de" prot="public" static="yes" mutable="no">
+        <type><ref refid="structspi__dev" kindref="compound">spi_dev</ref></type>
+        <definition>spi_dev spi3</definition>
+        <argsstring></argsstring>
+        <name>spi3</name>
+        <initializer> {
+    .regs     = <ref refid="spi_8h_1ae634fe8faa6922690e90fbec2fc86162" kindref="member">SPI3_BASE</ref>,
+    .clk_id   = RCC_SPI3,
+    .irq_num  = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83aa7b641a9a3c2ee63a5f6389aa9d02829" kindref="member">NVIC_SPI3</ref>,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.c" line="64" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.c" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="spi_8c_1a892565b67a63d875709ee7b9a248a29d" prot="public" static="no" mutable="no">
+        <type><ref refid="structspi__dev" kindref="compound">spi_dev</ref> *</type>
+        <definition>spi_dev* SPI3</definition>
+        <argsstring></argsstring>
+        <name>SPI3</name>
+        <initializer> &amp;spi3</initializer>
+        <briefdescription>
+<para>SPI device 3. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.c" line="66" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.c" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="spi_8c_1a682c3c0b0cb5be677b41abbc7c65b531" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void spi_reconfigure</definition>
+        <argsstring>(spi_dev *dev, uint32 cr1_config)</argsstring>
+        <name>spi_reconfigure</name>
+        <param>
+          <type><ref refid="structspi__dev" kindref="compound">spi_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>cr1_config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.c" line="37" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.c" bodystart="231" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="spi_8c_1a3bbf7b455ae30832564df02708ce4c25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void spi_init</definition>
+        <argsstring>(spi_dev *dev)</argsstring>
+        <name>spi_init</name>
+        <param>
+          <type><ref refid="structspi__dev" kindref="compound">spi_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Initialize and reset a SPI device. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device to initialize and reset. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.c" line="77" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.c" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="spi_8c_1ae8080004c0b14d1f38608deb5868257c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void spi_gpio_cfg</definition>
+        <argsstring>(uint8 as_master, gpio_dev *nss_dev, uint8 nss_bit, gpio_dev *comm_dev, uint8 sck_bit, uint8 miso_bit, uint8 mosi_bit)</argsstring>
+        <name>spi_gpio_cfg</name>
+        <param>
+          <type>uint8</type>
+          <declname>as_master</declname>
+        </param>
+        <param>
+          <type><ref refid="structgpio__dev" kindref="compound">gpio_dev</ref> *</type>
+          <declname>nss_dev</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>nss_bit</declname>
+        </param>
+        <param>
+          <type><ref refid="structgpio__dev" kindref="compound">gpio_dev</ref> *</type>
+          <declname>comm_dev</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>sck_bit</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>miso_bit</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>mosi_bit</declname>
+        </param>
+        <briefdescription>
+<para>Configure GPIO bit modes for use as a SPI port&apos;s pins. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>as_master</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, configure bits for use as a bus master. Otherwise, configure bits for use as slave. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nss_dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NSS pin&apos;s GPIO device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>comm_dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SCK, MISO, MOSI pins&apos; GPIO device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nss_bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NSS pin&apos;s GPIO bit on nss_dev </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sck_bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SCK pin&apos;s GPIO bit on comm_dev </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>miso_bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MISO pin&apos;s GPIO bit on comm_dev </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mosi_bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MOSI pin&apos;s GPIO bit on comm_dev </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.c" line="99" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.c" bodystart="93" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="spi_8c_1a273d338b593ef0ae00d10609927157f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void spi_master_enable</definition>
+        <argsstring>(spi_dev *dev, spi_baud_rate baud, spi_mode mode, uint32 flags)</argsstring>
+        <name>spi_master_enable</name>
+        <param>
+          <type><ref refid="structspi__dev" kindref="compound">spi_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type><ref refid="spi_8h_1a380406d624f554828cc7ade376c59a4a" kindref="member">spi_baud_rate</ref></type>
+          <declname>baud</declname>
+        </param>
+        <param>
+          <type><ref refid="spi_8h_1a78c1313670220bedfecdb138d4c27903" kindref="member">spi_mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+<para>Configure and enable a SPI device as bus master. </para>        </briefdescription>
+        <detaileddescription>
+<para>The device&apos;s peripheral will be disabled before being reconfigured.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device to configure as bus master </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>baud</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bus baud rate </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SPI mode </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Logical OR of spi_cfg_flag values. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="spi_8h_1a188902efbdb620e36c15eb8445251a96" kindref="member">spi_cfg_flag</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.c" line="127" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.c" bodystart="124" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="spi_8c_1ac16ce5aacd3b362a039175dfc6e6a03c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void spi_slave_enable</definition>
+        <argsstring>(spi_dev *dev, spi_mode mode, uint32 flags)</argsstring>
+        <name>spi_slave_enable</name>
+        <param>
+          <type><ref refid="structspi__dev" kindref="compound">spi_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type><ref refid="spi_8h_1a78c1313670220bedfecdb138d4c27903" kindref="member">spi_mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+<para>Configure and enable a SPI device as a bus slave. </para>        </briefdescription>
+        <detaileddescription>
+<para>The device&apos;s peripheral will be disabled before being reconfigured.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device to configure as a bus slave </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SPI mode </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Logical OR of spi_cfg_flag values. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="spi_8h_1a188902efbdb620e36c15eb8445251a96" kindref="member">spi_cfg_flag</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.c" line="141" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.c" bodystart="141" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="spi_8c_1a8d4b6fdbc7dbb801f20c24bda34be5c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32</type>
+        <definition>uint32 spi_tx</definition>
+        <argsstring>(spi_dev *dev, const void *buf, uint32 len)</argsstring>
+        <name>spi_tx</name>
+        <param>
+          <type><ref refid="structspi__dev" kindref="compound">spi_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Nonblocking SPI transmit. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SPI port to use for transmission </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer to transmit. The sizeof buf&apos;s elements are inferred from dev&apos;s data frame format (i.e., are correctly treated as 8-bit or 16-bit quantities). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum number of elements to transmit. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of elements transmitted. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.c" line="154" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.c" bodystart="154" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="spi_8c_1afbd5cfb4d50b3d03c6e4a2ea3b05fa14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void spi_foreach</definition>
+        <argsstring>(void(*fn)(spi_dev *))</argsstring>
+        <name>spi_foreach</name>
+        <param>
+          <type>void(*)(<ref refid="structspi__dev" kindref="compound">spi_dev</ref> *)</type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+<para>Call a function on each SPI port. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to call. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.c" line="171" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.c" bodystart="171" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="spi_8c_1af56d6ff262ed53c9cdf7e6d4bb3fbc67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void spi_peripheral_enable</definition>
+        <argsstring>(spi_dev *dev)</argsstring>
+        <name>spi_peripheral_enable</name>
+        <param>
+          <type><ref refid="structspi__dev" kindref="compound">spi_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Enable a SPI peripheral. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device to enable </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.c" line="183" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.c" bodystart="183" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="spi_8c_1acbd6bbe297ef76e84cf828767f602162" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void spi_peripheral_disable</definition>
+        <argsstring>(spi_dev *dev)</argsstring>
+        <name>spi_peripheral_disable</name>
+        <param>
+          <type><ref refid="structspi__dev" kindref="compound">spi_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Disable a SPI peripheral. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device to disable </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.c" line="191" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.c" bodystart="191" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="spi_8c_1a5d0adb2c972c873c7f3d7020440623d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void spi_tx_dma_enable</definition>
+        <argsstring>(spi_dev *dev)</argsstring>
+        <name>spi_tx_dma_enable</name>
+        <param>
+          <type><ref refid="structspi__dev" kindref="compound">spi_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Enable DMA requests whenever the transmit buffer is empty. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SPI device on which to enable TX DMA requests </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.c" line="199" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.c" bodystart="199" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="spi_8c_1aaf93bcf114fa8dc79767d9ac05646586" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void spi_tx_dma_disable</definition>
+        <argsstring>(spi_dev *dev)</argsstring>
+        <name>spi_tx_dma_disable</name>
+        <param>
+          <type><ref refid="structspi__dev" kindref="compound">spi_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Disable DMA requests whenever the transmit buffer is empty. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SPI device on which to disable TX DMA requests </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.c" line="207" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.c" bodystart="207" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="spi_8c_1a71bb96c3cb33bd0faf09c66b000b0621" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void spi_rx_dma_enable</definition>
+        <argsstring>(spi_dev *dev)</argsstring>
+        <name>spi_rx_dma_enable</name>
+        <param>
+          <type><ref refid="structspi__dev" kindref="compound">spi_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Enable DMA requests whenever the receive buffer is empty. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SPI device on which to enable RX DMA requests </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.c" line="215" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.c" bodystart="215" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="spi_8c_1a2bf798112d57fd60a9a410c595323078" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void spi_rx_dma_disable</definition>
+        <argsstring>(spi_dev *dev)</argsstring>
+        <name>spi_rx_dma_disable</name>
+        <param>
+          <type><ref refid="structspi__dev" kindref="compound">spi_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Disable DMA requests whenever the receive buffer is empty. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SPI device on which to disable RX DMA requests </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.c" line="223" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.c" bodystart="223" bodyend="225"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Serial Peripheral Interface (SPI) support. Currently, there is no Integrated Interchip Sound (I2S) support. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Marti Bolivar &lt;<ulink url="mailto:mbolivar@leaflabs.com">mbolivar@leaflabs.com</ulink>&gt; </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Perry<sp/>Hung.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="spi_8h" kindref="compound" tooltip="Serial Peripheral Interface (SPI) and Integrated Interchip Sound (I2S) peripheral support...">spi.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bitband_8h" kindref="compound" tooltip="Bit-banding utility functions.">bitband.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>spi_reconfigure(<ref refid="structspi__dev" kindref="compound" tooltip="SPI device type.">spi_dev</ref><sp/>*dev,<sp/>uint32<sp/>cr1_config);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/>SPI<sp/>devices</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structspi__dev" kindref="compound" tooltip="SPI device type.">spi_dev</ref><sp/>spi1<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="structspi__dev_1ab52cd44b07b6a45710fcd3e901685dee" kindref="member" tooltip="Register map.">regs</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="spi_8h_1a50cd8b47929f18b05efbd0f41253bf8d" kindref="member" tooltip="SPI1 register map base pointer.">SPI1_BASE</ref>,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>.clk_id<sp/><sp/><sp/>=<sp/>RCC_SPI1,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>.irq_num<sp/><sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83aa0c8757e0b809371ba2419530f8cafbe" kindref="member" tooltip="SPI1.">NVIC_SPI1</ref>,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="49" refid="spi_8h_1a30825cf5cbd0052ab93b651884c4150e" refkind="member"><highlight class="normal"><ref refid="structspi__dev" kindref="compound" tooltip="SPI device type.">spi_dev</ref><sp/>*<ref refid="spi_8c_1a30825cf5cbd0052ab93b651884c4150e" kindref="member" tooltip="SPI device 1.">SPI1</ref><sp/>=<sp/>&amp;spi1;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structspi__dev" kindref="compound" tooltip="SPI device type.">spi_dev</ref><sp/>spi2<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="structspi__dev_1ab52cd44b07b6a45710fcd3e901685dee" kindref="member" tooltip="Register map.">regs</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="spi_8h_1ac3e357b4c25106ed375fb1affab6bb86" kindref="member" tooltip="SPI2 register map base pointer.">SPI2_BASE</ref>,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>.clk_id<sp/><sp/><sp/>=<sp/>RCC_SPI2,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>.irq_num<sp/><sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ae5839b610bb8ff658cef0100b00df2dd" kindref="member" tooltip="SPI2.">NVIC_SPI2</ref>,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="57" refid="spi_8h_1a098ad092bc00d7c97f5d5f72cfa4855b" refkind="member"><highlight class="normal"><ref refid="structspi__dev" kindref="compound" tooltip="SPI device type.">spi_dev</ref><sp/>*<ref refid="spi_8c_1a098ad092bc00d7c97f5d5f72cfa4855b" kindref="member" tooltip="SPI device 2.">SPI2</ref><sp/>=<sp/>&amp;spi2;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>STM32_HIGH_DENSITY</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structspi__dev" kindref="compound" tooltip="SPI device type.">spi_dev</ref><sp/>spi3<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="structspi__dev_1ab52cd44b07b6a45710fcd3e901685dee" kindref="member" tooltip="Register map.">regs</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="spi_8h_1ae634fe8faa6922690e90fbec2fc86162" kindref="member" tooltip="SPI3 register map base pointer.">SPI3_BASE</ref>,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>.clk_id<sp/><sp/><sp/>=<sp/>RCC_SPI3,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>.irq_num<sp/><sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83aa7b641a9a3c2ee63a5f6389aa9d02829" kindref="member" tooltip="SPI3.">NVIC_SPI3</ref>,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="66" refid="spi_8h_1a892565b67a63d875709ee7b9a248a29d" refkind="member"><highlight class="normal"><ref refid="structspi__dev" kindref="compound" tooltip="SPI device type.">spi_dev</ref><sp/>*<ref refid="spi_8c_1a892565b67a63d875709ee7b9a248a29d" kindref="member" tooltip="SPI device 3.">SPI3</ref><sp/>=<sp/>&amp;spi3;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/>*<sp/>SPI<sp/>convenience<sp/>routines</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="spi_8h_1a3bbf7b455ae30832564df02708ce4c25" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="spi_8c_1a3bbf7b455ae30832564df02708ce4c25" kindref="member" tooltip="Initialize and reset a SPI device.">spi_init</ref>(<ref refid="structspi__dev" kindref="compound" tooltip="SPI device type.">spi_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>rcc_clk_enable(dev-&gt;<ref refid="structspi__dev_1adf902385fe904b97e960670613ee9372" kindref="member" tooltip="RCC clock information.">clk_id</ref>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>rcc_reset_dev(dev-&gt;<ref refid="structspi__dev_1adf902385fe904b97e960670613ee9372" kindref="member" tooltip="RCC clock information.">clk_id</ref>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="spi_8h_1ae8080004c0b14d1f38608deb5868257c" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="spi_8c_1ae8080004c0b14d1f38608deb5868257c" kindref="member" tooltip="Configure GPIO bit modes for use as a SPI port&amp;#39;s pins.">spi_gpio_cfg</ref>(uint8<sp/>as_master,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgpio__dev" kindref="compound" tooltip="GPIO device type.">gpio_dev</ref><sp/>*nss_dev,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8<sp/>nss_bit,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structgpio__dev" kindref="compound" tooltip="GPIO device type.">gpio_dev</ref><sp/>*comm_dev,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8<sp/>sck_bit,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8<sp/>miso_bit,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8<sp/>mosi_bit)<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(as_master)<sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gpio_set_mode(nss_dev,<sp/>nss_bit,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gpio_set_mode(comm_dev,<sp/>sck_bit,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gpio_set_mode(comm_dev,<sp/>miso_bit,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaaa0c8593833ca3a4b2da35cd5fabe2839" kindref="member" tooltip="Input floating.">GPIO_INPUT_FLOATING</ref>);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gpio_set_mode(comm_dev,<sp/>mosi_bit,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gpio_set_mode(nss_dev,<sp/>nss_bit,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaaa0c8593833ca3a4b2da35cd5fabe2839" kindref="member" tooltip="Input floating.">GPIO_INPUT_FLOATING</ref>);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gpio_set_mode(comm_dev,<sp/>sck_bit,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaaa0c8593833ca3a4b2da35cd5fabe2839" kindref="member" tooltip="Input floating.">GPIO_INPUT_FLOATING</ref>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gpio_set_mode(comm_dev,<sp/>miso_bit,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa58aa4e6733a643c84b59f564b16136a5" kindref="member" tooltip="Alternate function output push-pull.">GPIO_AF_OUTPUT_PP</ref>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gpio_set_mode(comm_dev,<sp/>mosi_bit,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaaa0c8593833ca3a4b2da35cd5fabe2839" kindref="member" tooltip="Input floating.">GPIO_INPUT_FLOATING</ref>);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="spi_8h_1a273d338b593ef0ae00d10609927157f8" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="spi_8c_1a273d338b593ef0ae00d10609927157f8" kindref="member" tooltip="Configure and enable a SPI device as bus master.">spi_master_enable</ref>(<ref refid="structspi__dev" kindref="compound" tooltip="SPI device type.">spi_dev</ref><sp/>*dev,</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="spi_8h_1a380406d624f554828cc7ade376c59a4a" kindref="member" tooltip="SPI baud rate configuration, as a divisor of f_PCLK, the PCLK clock frequency.">spi_baud_rate</ref><sp/>baud,</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="spi_8h_1a78c1313670220bedfecdb138d4c27903" kindref="member" tooltip="SPI mode configuration.">spi_mode</ref><sp/>mode,</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32<sp/>flags)<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>spi_reconfigure(dev,<sp/>baud<sp/>|<sp/>flags<sp/>|<sp/>SPI_CR1_MSTR<sp/>|<sp/>mode);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="spi_8h_1ac16ce5aacd3b362a039175dfc6e6a03c" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="spi_8c_1ac16ce5aacd3b362a039175dfc6e6a03c" kindref="member" tooltip="Configure and enable a SPI device as a bus slave.">spi_slave_enable</ref>(<ref refid="structspi__dev" kindref="compound" tooltip="SPI device type.">spi_dev</ref><sp/>*dev,<sp/><ref refid="spi_8h_1a78c1313670220bedfecdb138d4c27903" kindref="member" tooltip="SPI mode configuration.">spi_mode</ref><sp/>mode,<sp/>uint32<sp/>flags)<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>spi_reconfigure(dev,<sp/>flags<sp/>|<sp/>mode);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="spi_8h_1a8d4b6fdbc7dbb801f20c24bda34be5c4" refkind="member"><highlight class="normal">uint32<sp/><ref refid="spi_8c_1a8d4b6fdbc7dbb801f20c24bda34be5c4" kindref="member" tooltip="Nonblocking SPI transmit.">spi_tx</ref>(<ref refid="structspi__dev" kindref="compound" tooltip="SPI device type.">spi_dev</ref><sp/>*dev,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buf,<sp/>uint32<sp/>len)<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>txed<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>byte_frame<sp/>=<sp/><ref refid="spi_8h_1aeac6137cde29e25db1532eb69b2f389c" kindref="member" tooltip="Get the data frame format flags with which a SPI port is configured.">spi_dff</ref>(dev)<sp/>==<sp/><ref refid="spi_8h_1a188902efbdb620e36c15eb8445251a96a9b8b01a04c1b550f39d0acfc0297231c" kindref="member" tooltip="8-bit data frame format (this is the default)">SPI_DFF_8_BIT</ref>;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="spi_8h_1a084370ed4f18563ec42a0b378eb9009c" kindref="member" tooltip="Determine whether the device&amp;#39;s peripheral transmit (TX) register is empty.">spi_is_tx_empty</ref>(dev)<sp/>&amp;&amp;<sp/>(txed<sp/>&lt;<sp/>len))<sp/>{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(byte_frame)<sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dev-&gt;<ref refid="structspi__dev_1ab52cd44b07b6a45710fcd3e901685dee" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structspi__reg__map_1a1c43896ca4ad11a166ede0e3fef16f27" kindref="member" tooltip="Data register.">DR</ref><sp/>=<sp/>((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8*)buf)[txed++];</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dev-&gt;<ref refid="structspi__dev_1ab52cd44b07b6a45710fcd3e901685dee" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structspi__reg__map_1a1c43896ca4ad11a166ede0e3fef16f27" kindref="member" tooltip="Data register.">DR</ref><sp/>=<sp/>((</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16*)buf)[txed++];</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>txed;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="spi_8c_1afbd5cfb4d50b3d03c6e4a2ea3b05fa14" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="spi_8c_1afbd5cfb4d50b3d03c6e4a2ea3b05fa14" kindref="member" tooltip="Call a function on each SPI port.">spi_foreach</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*fn)(<ref refid="structspi__dev" kindref="compound" tooltip="SPI device type.">spi_dev</ref>*))<sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>fn(SPI1);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>fn(SPI2);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>STM32_HIGH_DENSITY</highlight></codeline>
+<codeline lineno="175"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>fn(SPI3);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="177"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="spi_8h_1af56d6ff262ed53c9cdf7e6d4bb3fbc67" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="spi_8c_1af56d6ff262ed53c9cdf7e6d4bb3fbc67" kindref="member" tooltip="Enable a SPI peripheral.">spi_peripheral_enable</ref>(<ref refid="structspi__dev" kindref="compound" tooltip="SPI device type.">spi_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bitband_8h_1a20fc9d0655ba9ecfd07045b759729942" kindref="member" tooltip="Set a bit in an address in the peripheral bit-band region.">bb_peri_set_bit</ref>(&amp;dev-&gt;<ref refid="structspi__dev_1ab52cd44b07b6a45710fcd3e901685dee" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structspi__reg__map_1a8672e7959cbb3fcc688ba28354743b95" kindref="member" tooltip="Control register 1.">CR1</ref>,<sp/>SPI_CR1_SPE_BIT,<sp/>1);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191" refid="spi_8h_1acbd6bbe297ef76e84cf828767f602162" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="spi_8c_1acbd6bbe297ef76e84cf828767f602162" kindref="member" tooltip="Disable a SPI peripheral.">spi_peripheral_disable</ref>(<ref refid="structspi__dev" kindref="compound" tooltip="SPI device type.">spi_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bitband_8h_1a20fc9d0655ba9ecfd07045b759729942" kindref="member" tooltip="Set a bit in an address in the peripheral bit-band region.">bb_peri_set_bit</ref>(&amp;dev-&gt;<ref refid="structspi__dev_1ab52cd44b07b6a45710fcd3e901685dee" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structspi__reg__map_1a8672e7959cbb3fcc688ba28354743b95" kindref="member" tooltip="Control register 1.">CR1</ref>,<sp/>SPI_CR1_SPE_BIT,<sp/>0);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="spi_8h_1a5d0adb2c972c873c7f3d7020440623d3" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="spi_8c_1a5d0adb2c972c873c7f3d7020440623d3" kindref="member" tooltip="Enable DMA requests whenever the transmit buffer is empty.">spi_tx_dma_enable</ref>(<ref refid="structspi__dev" kindref="compound" tooltip="SPI device type.">spi_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bitband_8h_1a20fc9d0655ba9ecfd07045b759729942" kindref="member" tooltip="Set a bit in an address in the peripheral bit-band region.">bb_peri_set_bit</ref>(&amp;dev-&gt;<ref refid="structspi__dev_1ab52cd44b07b6a45710fcd3e901685dee" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structspi__reg__map_1aff8bd8690325acc4188951a29dda3544" kindref="member" tooltip="Control register 2.">CR2</ref>,<sp/>SPI_CR2_TXDMAEN_BIT,<sp/>1);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207" refid="spi_8h_1aaf93bcf114fa8dc79767d9ac05646586" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="spi_8c_1aaf93bcf114fa8dc79767d9ac05646586" kindref="member" tooltip="Disable DMA requests whenever the transmit buffer is empty.">spi_tx_dma_disable</ref>(<ref refid="structspi__dev" kindref="compound" tooltip="SPI device type.">spi_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bitband_8h_1a20fc9d0655ba9ecfd07045b759729942" kindref="member" tooltip="Set a bit in an address in the peripheral bit-band region.">bb_peri_set_bit</ref>(&amp;dev-&gt;<ref refid="structspi__dev_1ab52cd44b07b6a45710fcd3e901685dee" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structspi__reg__map_1aff8bd8690325acc4188951a29dda3544" kindref="member" tooltip="Control register 2.">CR2</ref>,<sp/>SPI_CR2_TXDMAEN_BIT,<sp/>0);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215" refid="spi_8h_1a71bb96c3cb33bd0faf09c66b000b0621" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="spi_8c_1a71bb96c3cb33bd0faf09c66b000b0621" kindref="member" tooltip="Enable DMA requests whenever the receive buffer is empty.">spi_rx_dma_enable</ref>(<ref refid="structspi__dev" kindref="compound" tooltip="SPI device type.">spi_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bitband_8h_1a20fc9d0655ba9ecfd07045b759729942" kindref="member" tooltip="Set a bit in an address in the peripheral bit-band region.">bb_peri_set_bit</ref>(&amp;dev-&gt;<ref refid="structspi__dev_1ab52cd44b07b6a45710fcd3e901685dee" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structspi__reg__map_1aff8bd8690325acc4188951a29dda3544" kindref="member" tooltip="Control register 2.">CR2</ref>,<sp/>SPI_CR2_RXDMAEN_BIT,<sp/>1);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223" refid="spi_8h_1a2bf798112d57fd60a9a410c595323078" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="spi_8c_1a2bf798112d57fd60a9a410c595323078" kindref="member" tooltip="Disable DMA requests whenever the receive buffer is empty.">spi_rx_dma_disable</ref>(<ref refid="structspi__dev" kindref="compound" tooltip="SPI device type.">spi_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bitband_8h_1a20fc9d0655ba9ecfd07045b759729942" kindref="member" tooltip="Set a bit in an address in the peripheral bit-band region.">bb_peri_set_bit</ref>(&amp;dev-&gt;<ref refid="structspi__dev_1ab52cd44b07b6a45710fcd3e901685dee" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structspi__reg__map_1aff8bd8690325acc4188951a29dda3544" kindref="member" tooltip="Control register 2.">CR2</ref>,<sp/>SPI_CR2_RXDMAEN_BIT,<sp/>0);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="228"><highlight class="comment"><sp/>*<sp/>SPI<sp/>auxiliary<sp/>routines</highlight></codeline>
+<codeline lineno="229"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>spi_reconfigure(<ref refid="structspi__dev" kindref="compound" tooltip="SPI device type.">spi_dev</ref><sp/>*dev,<sp/>uint32<sp/>cr1_config)<sp/>{</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="spi_8h_1a0e59d8ab3ad1b557aa162e992c7dd4e4" kindref="member" tooltip="Disable SPI interrupt requests.">spi_irq_disable</ref>(dev,<sp/><ref refid="spi_8h_1a5ae2ded3634418c2f73d19d984425662" kindref="member" tooltip="Mask for all spi_interrupt values.">SPI_INTERRUPTS_ALL</ref>);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="spi_8c_1acbd6bbe297ef76e84cf828767f602162" kindref="member" tooltip="Disable a SPI peripheral.">spi_peripheral_disable</ref>(dev);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>dev-&gt;<ref refid="structspi__dev_1ab52cd44b07b6a45710fcd3e901685dee" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structspi__reg__map_1a8672e7959cbb3fcc688ba28354743b95" kindref="member" tooltip="Control register 1.">CR1</ref><sp/>=<sp/>cr1_config;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="spi_8c_1af56d6ff262ed53c9cdf7e6d4bb3fbc67" kindref="member" tooltip="Enable a SPI peripheral.">spi_peripheral_enable</ref>(dev);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="239"><highlight class="comment"><sp/>*<sp/>IRQ<sp/>handlers<sp/>(TODO)</highlight></codeline>
+<codeline lineno="240"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.c"/>
+  </compounddef>
+</doxygen>

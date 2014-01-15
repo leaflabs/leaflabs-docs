@@ -1,0 +1,632 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="gpio_8c" kind="file">
+    <compoundname>gpio.c</compoundname>
+    <includes refid="gpio_8h" local="yes">gpio.h</includes>
+    <includes refid="rcc_8h" local="yes">rcc.h</includes>
+    <incdepgraph>
+      <node id="210">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="206" relation="include">
+        </childnode>
+      </node>
+      <node id="207">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="206">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="205">
+        <label>libmaple.h</label>
+        <link refid="libmaple_8h"/>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+      </node>
+      <node id="203">
+        <label>libmaple/gpio.c</label>
+        <link refid="gpio.c"/>
+        <childnode refid="204" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+      </node>
+      <node id="204">
+        <label>gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+      </node>
+      <node id="209">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="207" relation="include">
+        </childnode>
+      </node>
+      <node id="208">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="206" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="gpio_8c_1a32704137065ab42cab0ce2dfc8e09cbc" prot="public" static="no">
+        <name>AFIO_EXTI_SEL_MASK</name>
+        <initializer>0xF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" line="164" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="gpio_8c_1ab981b13e8b0ccdb144d7078abc4992e9" prot="public" static="no" mutable="no">
+        <type><ref refid="structgpio__dev" kindref="compound">gpio_dev</ref></type>
+        <definition>gpio_dev gpioa</definition>
+        <argsstring></argsstring>
+        <name>gpioa</name>
+        <initializer> {
+    .regs      = <ref refid="gpio_8h_1ad7723846cc5db8e43a44d78cf21f6efa" kindref="member">GPIOA_BASE</ref>,
+    .clk_id    = RCC_GPIOA,
+    .exti_port = <ref refid="gpio_8h_1a2575e4635087025b9c3077176aeb5e61ac11197638e6e0e1930954150d402750d" kindref="member">AFIO_EXTI_PA</ref>,
+}</initializer>
+        <briefdescription>
+<para>GPIO initialization routine. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" line="42" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gpio_8c_1a829bf31b6c69ae7e61f14416692a6709" prot="public" static="no" mutable="no">
+        <type><ref refid="structgpio__dev" kindref="compound">gpio_dev</ref> *const</type>
+        <definition>gpio_dev* const GPIOA</definition>
+        <argsstring></argsstring>
+        <name>GPIOA</name>
+        <initializer> &amp;<ref refid="gpio_8h_1ab981b13e8b0ccdb144d7078abc4992e9" kindref="member">gpioa</ref></initializer>
+        <briefdescription>
+<para>GPIO port A device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" line="44" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gpio_8c_1a7778775a1f0c4c81f22ca4e8f762bc0c" prot="public" static="no" mutable="no">
+        <type><ref refid="structgpio__dev" kindref="compound">gpio_dev</ref></type>
+        <definition>gpio_dev gpiob</definition>
+        <argsstring></argsstring>
+        <name>gpiob</name>
+        <initializer> {
+    .regs      = <ref refid="gpio_8h_1ac944a89eb789000ece920c0f89cb6a68" kindref="member">GPIOB_BASE</ref>,
+    .clk_id    = RCC_GPIOB,
+    .exti_port = <ref refid="gpio_8h_1a2575e4635087025b9c3077176aeb5e61a45171ca515be461b18b80f02ca2c4d8e" kindref="member">AFIO_EXTI_PB</ref>,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" line="50" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gpio_8c_1a00edb46953be7f97f1d39978fe5c0d47" prot="public" static="no" mutable="no">
+        <type><ref refid="structgpio__dev" kindref="compound">gpio_dev</ref> *const</type>
+        <definition>gpio_dev* const GPIOB</definition>
+        <argsstring></argsstring>
+        <name>GPIOB</name>
+        <initializer> &amp;gpiob</initializer>
+        <briefdescription>
+<para>GPIO port B device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" line="52" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gpio_8c_1ac1cada262700726b39a3ef2271a979e4" prot="public" static="no" mutable="no">
+        <type><ref refid="structgpio__dev" kindref="compound">gpio_dev</ref></type>
+        <definition>gpio_dev gpioc</definition>
+        <argsstring></argsstring>
+        <name>gpioc</name>
+        <initializer> {
+    .regs      = <ref refid="gpio_8h_1a26f267dc35338eef219544c51f1e6b3f" kindref="member">GPIOC_BASE</ref>,
+    .clk_id    = RCC_GPIOC,
+    .exti_port = <ref refid="gpio_8h_1a2575e4635087025b9c3077176aeb5e61a16ec83e935d054998029311f240bb15e" kindref="member">AFIO_EXTI_PC</ref>,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" line="58" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gpio_8c_1a71c54805c47ff56813e1bfee09fddb83" prot="public" static="no" mutable="no">
+        <type><ref refid="structgpio__dev" kindref="compound">gpio_dev</ref> *const</type>
+        <definition>gpio_dev* const GPIOC</definition>
+        <argsstring></argsstring>
+        <name>GPIOC</name>
+        <initializer> &amp;gpioc</initializer>
+        <briefdescription>
+<para>GPIO port C device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" line="60" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gpio_8c_1a41995d332de28ae592f3e6bdd10427c9" prot="public" static="no" mutable="no">
+        <type><ref refid="structgpio__dev" kindref="compound">gpio_dev</ref></type>
+        <definition>gpio_dev gpiod</definition>
+        <argsstring></argsstring>
+        <name>gpiod</name>
+        <initializer> {
+    .regs      = <ref refid="gpio_8h_1a1a93ab27129f04064089616910c296ec" kindref="member">GPIOD_BASE</ref>,
+    .clk_id    = RCC_GPIOD,
+    .exti_port = <ref refid="gpio_8h_1a2575e4635087025b9c3077176aeb5e61a1c118eac16163270bf18f319a3233608" kindref="member">AFIO_EXTI_PD</ref>,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" line="66" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gpio_8c_1a4c16dc7119606ef6e0f74e27c9d9699e" prot="public" static="no" mutable="no">
+        <type><ref refid="structgpio__dev" kindref="compound">gpio_dev</ref> *const</type>
+        <definition>gpio_dev* const GPIOD</definition>
+        <argsstring></argsstring>
+        <name>GPIOD</name>
+        <initializer> &amp;gpiod</initializer>
+        <briefdescription>
+<para>GPIO port D device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" line="68" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gpio_8c_1aeb8f85123f25e24dd8b87bf65bf3e858" prot="public" static="no" mutable="no">
+        <type><ref refid="structgpio__dev" kindref="compound">gpio_dev</ref></type>
+        <definition>gpio_dev gpioe</definition>
+        <argsstring></argsstring>
+        <name>gpioe</name>
+        <initializer> {
+    .regs      = <ref refid="gpio_8h_1ab487b1983d936c4fee3e9e88b95aad9d" kindref="member">GPIOE_BASE</ref>,
+    .clk_id    = RCC_GPIOE,
+    .exti_port = <ref refid="gpio_8h_1a2575e4635087025b9c3077176aeb5e61a015e471b1b28ea7424ae14fd8f5b1c43" kindref="member">AFIO_EXTI_PE</ref>,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" line="75" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gpio_8c_1a7c93206f59ed7fea345ec5794f83e7ce" prot="public" static="no" mutable="no">
+        <type><ref refid="structgpio__dev" kindref="compound">gpio_dev</ref> *const</type>
+        <definition>gpio_dev* const GPIOE</definition>
+        <argsstring></argsstring>
+        <name>GPIOE</name>
+        <initializer> &amp;gpioe</initializer>
+        <briefdescription>
+<para>GPIO port E device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" line="77" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gpio_8c_1a1c76e046c2987787fd5ea271c1896e33" prot="public" static="no" mutable="no">
+        <type><ref refid="structgpio__dev" kindref="compound">gpio_dev</ref></type>
+        <definition>gpio_dev gpiof</definition>
+        <argsstring></argsstring>
+        <name>gpiof</name>
+        <initializer> {
+    .regs      = <ref refid="gpio_8h_1a7f9a3f4223a1a784af464a114978d26e" kindref="member">GPIOF_BASE</ref>,
+    .clk_id    = RCC_GPIOF,
+    .exti_port = <ref refid="gpio_8h_1a2575e4635087025b9c3077176aeb5e61a9c09b2fbf6b16ae2fe147880f8cb7e67" kindref="member">AFIO_EXTI_PF</ref>,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" line="83" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gpio_8c_1abb10f5e5583e38eabd6ae0e8bbb605fa" prot="public" static="no" mutable="no">
+        <type><ref refid="structgpio__dev" kindref="compound">gpio_dev</ref> *const</type>
+        <definition>gpio_dev* const GPIOF</definition>
+        <argsstring></argsstring>
+        <name>GPIOF</name>
+        <initializer> &amp;gpiof</initializer>
+        <briefdescription>
+<para>GPIO port F device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" line="85" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gpio_8c_1a93a5d0742b52d1189e8f2cfabda10f25" prot="public" static="no" mutable="no">
+        <type><ref refid="structgpio__dev" kindref="compound">gpio_dev</ref></type>
+        <definition>gpio_dev gpiog</definition>
+        <argsstring></argsstring>
+        <name>gpiog</name>
+        <initializer> {
+    .regs      = <ref refid="gpio_8h_1a5d8ca4020f2e8c00bde974e8e7c13cfe" kindref="member">GPIOG_BASE</ref>,
+    .clk_id    = RCC_GPIOG,
+    .exti_port = <ref refid="gpio_8h_1a2575e4635087025b9c3077176aeb5e61a5d38c160da45700398c01fb9baca6f19" kindref="member">AFIO_EXTI_PG</ref>,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" line="91" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="gpio_8c_1abdcf83c70e57087c11d56184815353c0" prot="public" static="no" mutable="no">
+        <type><ref refid="structgpio__dev" kindref="compound">gpio_dev</ref> *const</type>
+        <definition>gpio_dev* const GPIOG</definition>
+        <argsstring></argsstring>
+        <name>GPIOG</name>
+        <initializer> &amp;gpiog</initializer>
+        <briefdescription>
+<para>GPIO port G device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" line="93" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gpio_8c_1aadbbf17b8457242c7c7cc27353072ea9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gpio_init</definition>
+        <argsstring>(gpio_dev *dev)</argsstring>
+        <name>gpio_init</name>
+        <param>
+          <type><ref refid="structgpio__dev" kindref="compound">gpio_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Initialize a GPIO device. </para>        </briefdescription>
+        <detaileddescription>
+<para>Enables the clock for and resets the given device.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GPIO device to initialize. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" line="107" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" bodystart="107" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="gpio_8c_1ad24719387894174a0c8984c39777bf64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gpio_init_all</definition>
+        <argsstring>(void)</argsstring>
+        <name>gpio_init_all</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize and reset all available GPIO devices. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" line="115" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" bodystart="115" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="gpio_8c_1a4d54c6b38efc90961d5a374ea7d4d9f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gpio_set_mode</definition>
+        <argsstring>(gpio_dev *dev, uint8 pin, gpio_pin_mode mode)</argsstring>
+        <name>gpio_set_mode</name>
+        <param>
+          <type><ref refid="structgpio__dev" kindref="compound">gpio_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>pin</declname>
+        </param>
+        <param>
+          <type><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7ea" kindref="member">gpio_pin_mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Set the mode of a GPIO pin. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GPIO device. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pin on the device whose mode to set, 0--15. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>General purpose or alternate function mode to set the pin to. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7ea" kindref="member">gpio_pin_mode</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" line="135" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" bodystart="135" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="gpio_8c_1a57ab591123c908ebf160a06ebedac92e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void afio_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>afio_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize the AFIO clock, and reset the AFIO registers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" line="159" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" bodystart="159" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="gpio_8c_1a56640f28636267cc1292047116092056" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void afio_exti_select</definition>
+        <argsstring>(afio_exti_num exti, afio_exti_port gpio_port)</argsstring>
+        <name>afio_exti_select</name>
+        <param>
+          <type><ref refid="gpio_8h_1a155a78e19d9a90cf0cc63b1e1ce4d04c" kindref="member">afio_exti_num</ref></type>
+          <declname>exti</declname>
+        </param>
+        <param>
+          <type><ref refid="gpio_8h_1a2575e4635087025b9c3077176aeb5e61" kindref="member">afio_exti_port</ref></type>
+          <declname>gpio_port</declname>
+        </param>
+        <briefdescription>
+<para>Select a source input for an external interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>exti</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>External interrupt. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gpio_port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_port" kindref="compound">Port</ref> which contains pin to use as source input. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="gpio_8h_1a155a78e19d9a90cf0cc63b1e1ce4d04c" kindref="member">afio_exti_num</ref> </para><simplesectsep/><para><ref refid="gpio_8h_1a2575e4635087025b9c3077176aeb5e61" kindref="member">afio_exti_port</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" line="174" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" bodystart="174" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="gpio_8c_1a6bb17cc8e794941fe5e1536ed2a392f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void afio_remap</definition>
+        <argsstring>(afio_remap_peripheral remapping)</argsstring>
+        <name>afio_remap</name>
+        <param>
+          <type><ref refid="gpio_8h_1acd23b228f428f4f44bd28287d6f04c29" kindref="member">afio_remap_peripheral</ref></type>
+          <declname>remapping</declname>
+        </param>
+        <briefdescription>
+<para>Perform an alternate function remap. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>remapping</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Remapping to perform. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" line="188" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.c" bodystart="188" bodyend="195"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Perry<sp/>Hung.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gpio_8h" kindref="compound" tooltip="General purpose I/O (GPIO) and Alternate Function I/O (AFIO) prototypes, defines, and inlined access ...">gpio.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rcc_8h" kindref="compound" tooltip="reset and clock control definitions and prototypes">rcc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/>GPIO<sp/>devices</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="gpio_8h_1ab981b13e8b0ccdb144d7078abc4992e9" refkind="member"><highlight class="normal"><ref refid="structgpio__dev" kindref="compound" tooltip="GPIO device type.">gpio_dev</ref><sp/>gpioa<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="structgpio__dev_1abcdcc853748a17207e6008cd019d33cc" kindref="member" tooltip="Register map.">regs</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="gpio_8h_1ad7723846cc5db8e43a44d78cf21f6efa" kindref="member" tooltip="GPIO port A register map base pointer.">GPIOA_BASE</ref>,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>.clk_id<sp/><sp/><sp/><sp/>=<sp/>RCC_GPIOA,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>.exti_port<sp/>=<sp/><ref refid="gpio_8h_1a2575e4635087025b9c3077176aeb5e61ac11197638e6e0e1930954150d402750d" kindref="member" tooltip="Use port A (PAx) pin.">AFIO_EXTI_PA</ref>,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="44" refid="gpio_8h_1a829bf31b6c69ae7e61f14416692a6709" refkind="member"><highlight class="normal"><ref refid="structgpio__dev" kindref="compound" tooltip="GPIO device type.">gpio_dev</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>GPIOA<sp/>=<sp/>&amp;gpioa;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><ref refid="structgpio__dev" kindref="compound" tooltip="GPIO device type.">gpio_dev</ref><sp/>gpiob<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="structgpio__dev_1abcdcc853748a17207e6008cd019d33cc" kindref="member" tooltip="Register map.">regs</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="gpio_8h_1ac944a89eb789000ece920c0f89cb6a68" kindref="member" tooltip="GPIO port B register map base pointer.">GPIOB_BASE</ref>,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>.clk_id<sp/><sp/><sp/><sp/>=<sp/>RCC_GPIOB,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>.exti_port<sp/>=<sp/><ref refid="gpio_8h_1a2575e4635087025b9c3077176aeb5e61a45171ca515be461b18b80f02ca2c4d8e" kindref="member" tooltip="Use port B (PBx) pin.">AFIO_EXTI_PB</ref>,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="52" refid="gpio_8h_1a00edb46953be7f97f1d39978fe5c0d47" refkind="member"><highlight class="normal"><ref refid="structgpio__dev" kindref="compound" tooltip="GPIO device type.">gpio_dev</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>GPIOB<sp/>=<sp/>&amp;gpiob;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><ref refid="structgpio__dev" kindref="compound" tooltip="GPIO device type.">gpio_dev</ref><sp/>gpioc<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="structgpio__dev_1abcdcc853748a17207e6008cd019d33cc" kindref="member" tooltip="Register map.">regs</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="gpio_8h_1a26f267dc35338eef219544c51f1e6b3f" kindref="member" tooltip="GPIO port C register map base pointer.">GPIOC_BASE</ref>,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>.clk_id<sp/><sp/><sp/><sp/>=<sp/>RCC_GPIOC,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>.exti_port<sp/>=<sp/><ref refid="gpio_8h_1a2575e4635087025b9c3077176aeb5e61a16ec83e935d054998029311f240bb15e" kindref="member" tooltip="Use port C (PCx) pin.">AFIO_EXTI_PC</ref>,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="60" refid="gpio_8h_1a71c54805c47ff56813e1bfee09fddb83" refkind="member"><highlight class="normal"><ref refid="structgpio__dev" kindref="compound" tooltip="GPIO device type.">gpio_dev</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>GPIOC<sp/>=<sp/>&amp;gpioc;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><ref refid="structgpio__dev" kindref="compound" tooltip="GPIO device type.">gpio_dev</ref><sp/>gpiod<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="structgpio__dev_1abcdcc853748a17207e6008cd019d33cc" kindref="member" tooltip="Register map.">regs</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="gpio_8h_1a1a93ab27129f04064089616910c296ec" kindref="member" tooltip="GPIO port D register map base pointer.">GPIOD_BASE</ref>,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>.clk_id<sp/><sp/><sp/><sp/>=<sp/>RCC_GPIOD,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>.exti_port<sp/>=<sp/><ref refid="gpio_8h_1a2575e4635087025b9c3077176aeb5e61a1c118eac16163270bf18f319a3233608" kindref="member" tooltip="Use port D (PDx) pin.">AFIO_EXTI_PD</ref>,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="68" refid="gpio_8h_1a4c16dc7119606ef6e0f74e27c9d9699e" refkind="member"><highlight class="normal"><ref refid="structgpio__dev" kindref="compound" tooltip="GPIO device type.">gpio_dev</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>GPIOD<sp/>=<sp/>&amp;gpiod;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>STM32_HIGH_DENSITY</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight><highlight class="normal"><ref refid="structgpio__dev" kindref="compound" tooltip="GPIO device type.">gpio_dev</ref><sp/>gpioe<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="structgpio__dev_1abcdcc853748a17207e6008cd019d33cc" kindref="member" tooltip="Register map.">regs</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="gpio_8h_1ab487b1983d936c4fee3e9e88b95aad9d" kindref="member" tooltip="GPIO port E register map base pointer.">GPIOE_BASE</ref>,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>.clk_id<sp/><sp/><sp/><sp/>=<sp/>RCC_GPIOE,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>.exti_port<sp/>=<sp/><ref refid="gpio_8h_1a2575e4635087025b9c3077176aeb5e61a015e471b1b28ea7424ae14fd8f5b1c43" kindref="member" tooltip="Use port E (PEx) pin.">AFIO_EXTI_PE</ref>,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="77" refid="gpio_8h_1a7c93206f59ed7fea345ec5794f83e7ce" refkind="member"><highlight class="normal"><ref refid="structgpio__dev" kindref="compound" tooltip="GPIO device type.">gpio_dev</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>GPIOE<sp/>=<sp/>&amp;gpioe;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><ref refid="structgpio__dev" kindref="compound" tooltip="GPIO device type.">gpio_dev</ref><sp/>gpiof<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="structgpio__dev_1abcdcc853748a17207e6008cd019d33cc" kindref="member" tooltip="Register map.">regs</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="gpio_8h_1a7f9a3f4223a1a784af464a114978d26e" kindref="member" tooltip="GPIO port F register map base pointer.">GPIOF_BASE</ref>,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>.clk_id<sp/><sp/><sp/><sp/>=<sp/>RCC_GPIOF,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>.exti_port<sp/>=<sp/><ref refid="gpio_8h_1a2575e4635087025b9c3077176aeb5e61a9c09b2fbf6b16ae2fe147880f8cb7e67" kindref="member" tooltip="Use port F (PFx) pin.">AFIO_EXTI_PF</ref>,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="85" refid="gpio_8h_1abb10f5e5583e38eabd6ae0e8bbb605fa" refkind="member"><highlight class="normal"><ref refid="structgpio__dev" kindref="compound" tooltip="GPIO device type.">gpio_dev</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>GPIOF<sp/>=<sp/>&amp;gpiof;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><ref refid="structgpio__dev" kindref="compound" tooltip="GPIO device type.">gpio_dev</ref><sp/>gpiog<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="structgpio__dev_1abcdcc853748a17207e6008cd019d33cc" kindref="member" tooltip="Register map.">regs</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="gpio_8h_1a5d8ca4020f2e8c00bde974e8e7c13cfe" kindref="member" tooltip="GPIO port G register map base pointer.">GPIOG_BASE</ref>,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>.clk_id<sp/><sp/><sp/><sp/>=<sp/>RCC_GPIOG,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>.exti_port<sp/>=<sp/><ref refid="gpio_8h_1a2575e4635087025b9c3077176aeb5e61a5d38c160da45700398c01fb9baca6f19" kindref="member" tooltip="Use port G (PGx) pin.">AFIO_EXTI_PG</ref>,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="93" refid="gpio_8h_1abdcf83c70e57087c11d56184815353c0" refkind="member"><highlight class="normal"><ref refid="structgpio__dev" kindref="compound" tooltip="GPIO device type.">gpio_dev</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>GPIOG<sp/>=<sp/>&amp;gpiog;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/>*<sp/>GPIO<sp/>convenience<sp/>routines</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="gpio_8h_1aadbbf17b8457242c7c7cc27353072ea9" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>gpio_init(<ref refid="structgpio__dev" kindref="compound" tooltip="GPIO device type.">gpio_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>rcc_clk_enable(dev-&gt;<ref refid="structgpio__dev_1ad85f2e5040b063de36ac41d8c6ebce4e" kindref="member" tooltip="RCC clock information.">clk_id</ref>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>rcc_reset_dev(dev-&gt;<ref refid="structgpio__dev_1ad85f2e5040b063de36ac41d8c6ebce4e" kindref="member" tooltip="RCC clock information.">clk_id</ref>);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="gpio_8h_1ad24719387894174a0c8984c39777bf64" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>gpio_init_all(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_init(GPIOA);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_init(GPIOB);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_init(GPIOC);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_init(GPIOD);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>STM32_HIGH_DENSITY</highlight></codeline>
+<codeline lineno="121"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_init(GPIOE);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_init(GPIOF);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>gpio_init(GPIOG);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="125"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="gpio_8h_1a4d54c6b38efc90961d5a374ea7d4d9f1" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>gpio_set_mode(<ref refid="structgpio__dev" kindref="compound" tooltip="GPIO device type.">gpio_dev</ref><sp/>*dev,<sp/>uint8<sp/>pin,<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7ea" kindref="member" tooltip="GPIO Pin modes.">gpio_pin_mode</ref><sp/>mode)<sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgpio__reg__map" kindref="compound" tooltip="GPIO register map type.">gpio_reg_map</ref><sp/>*regs<sp/>=<sp/>dev-&gt;<ref refid="structgpio__dev_1abcdcc853748a17207e6008cd019d33cc" kindref="member" tooltip="Register map.">regs</ref>;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/>*cr<sp/>=<sp/>&amp;regs-&gt;<ref refid="structgpio__reg__map_1aa2b0a9f3d244a108ec63785831a96743" kindref="member" tooltip="Port configuration register low.">CRL</ref><sp/>+<sp/>(pin<sp/>&gt;&gt;<sp/>3);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>shift<sp/>=<sp/>(pin<sp/>&amp;<sp/>0x7)<sp/>*<sp/>4;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>tmp<sp/>=<sp/>*cr;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp<sp/>&amp;=<sp/>~(0xF<sp/>&lt;&lt;<sp/>shift);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp<sp/>|=<sp/>(mode<sp/>==<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa65f2920942c8596a496031e3be01cfc1" kindref="member" tooltip="Input pull-up.">GPIO_INPUT_PU</ref><sp/>?<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa64a549962fe0e9e4073bb8da6a614da9" kindref="member" tooltip="Input pull-down.">GPIO_INPUT_PD</ref><sp/>:<sp/>mode)<sp/>&lt;&lt;<sp/>shift;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>*cr<sp/>=<sp/>tmp;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mode<sp/>==<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa64a549962fe0e9e4073bb8da6a614da9" kindref="member" tooltip="Input pull-down.">GPIO_INPUT_PD</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>regs-&gt;<ref refid="structgpio__reg__map_1a48f3413c08dc99d3a68ea7079641549e" kindref="member" tooltip="Port output data register.">ODR</ref><sp/>&amp;=<sp/>~BIT(pin);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mode<sp/>==<sp/><ref refid="gpio_8h_1a3bb60796972f15de31c709442d82c7eaa65f2920942c8596a496031e3be01cfc1" kindref="member" tooltip="Input pull-up.">GPIO_INPUT_PU</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>regs-&gt;<ref refid="structgpio__reg__map_1a48f3413c08dc99d3a68ea7079641549e" kindref="member" tooltip="Port output data register.">ODR</ref><sp/>|=<sp/>BIT(pin);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="153"><highlight class="comment"><sp/>*<sp/>AFIO</highlight></codeline>
+<codeline lineno="154"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="gpio_8h_1a57ab591123c908ebf160a06ebedac92e" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>afio_init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>rcc_clk_enable(RCC_AFIO);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>rcc_reset_dev(RCC_AFIO);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AFIO_EXTI_SEL_MASK<sp/>0xF</highlight></codeline>
+<codeline lineno="165"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="174" refid="gpio_8h_1a56640f28636267cc1292047116092056" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>afio_exti_select(<ref refid="gpio_8h_1a155a78e19d9a90cf0cc63b1e1ce4d04c" kindref="member" tooltip="External interrupt line numbers.">afio_exti_num</ref><sp/>exti,<sp/><ref refid="gpio_8h_1a2575e4635087025b9c3077176aeb5e61" kindref="member" tooltip="External interrupt line port selector.">afio_exti_port</ref><sp/>gpio_port)<sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/>*exti_cr<sp/>=<sp/>&amp;<ref refid="gpio_8h_1a5f7e3eacfcf4c313c25012795148a680" kindref="member" tooltip="AFIO register map base pointer.">AFIO_BASE</ref>-&gt;EXTICR1<sp/>+<sp/>exti<sp/>/<sp/>4;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>shift<sp/>=<sp/>4<sp/>*<sp/>(exti<sp/>%<sp/>4);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>cr<sp/>=<sp/>*exti_cr;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>cr<sp/>&amp;=<sp/>~(AFIO_EXTI_SEL_MASK<sp/>&lt;&lt;<sp/>shift);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>cr<sp/>|=<sp/>gpio_port<sp/>&lt;&lt;<sp/>shift;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>*exti_cr<sp/>=<sp/>cr;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="gpio_8h_1a168a4ddd78b6ac1270dc69dc54c1cdd1" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>afio_remap(<ref refid="gpio_8h_1acd23b228f428f4f44bd28287d6f04c29" kindref="member" tooltip="Available peripheral remaps.">afio_remap_peripheral</ref><sp/>remapping)<sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(remapping<sp/>&amp;<sp/>AFIO_REMAP_USE_MAPR2)<sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>remapping<sp/>&amp;=<sp/>~AFIO_REMAP_USE_MAPR2;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gpio_8h_1a5f7e3eacfcf4c313c25012795148a680" kindref="member" tooltip="AFIO register map base pointer.">AFIO_BASE</ref>-&gt;MAPR2<sp/>|=<sp/>remapping;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gpio_8h_1a5f7e3eacfcf4c313c25012795148a680" kindref="member" tooltip="AFIO register map base pointer.">AFIO_BASE</ref>-&gt;MAPR<sp/>|=<sp/>remapping;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.c"/>
+  </compounddef>
+</doxygen>

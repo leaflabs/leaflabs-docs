@@ -1,0 +1,2276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="adc_8h" kind="file">
+    <compoundname>adc.h</compoundname>
+    <includes refid="libmaple_8h" local="yes">libmaple.h</includes>
+    <includes refid="bitband_8h" local="yes">bitband.h</includes>
+    <includes refid="rcc_8h" local="yes">rcc.h</includes>
+    <includedby refid="adc_8c" local="yes">libmaple/adc.c</includedby>
+    <includedby refid="util_8c" local="yes">libmaple/util.c</includedby>
+    <includedby refid="wirish__types_8h" local="yes">wirish/wirish_types.h</includedby>
+    <includedby refid="io_8h" local="yes">wirish/io.h</includedby>
+    <incdepgraph>
+      <node id="17">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="12">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="11">
+        <label>libmaple.h</label>
+        <link refid="libmaple_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>libmaple/adc.h</label>
+        <link refid="adc.h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>bitband.h</label>
+        <link refid="bitband_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="24">
+        <label>wirish/wirish.h</label>
+        <link refid="wirish_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>wirish/boards.h</label>
+        <link refid="boards_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>wirish/io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>wirish/comm/HardwareSPI.h</label>
+        <link refid="_hardware_s_p_i_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>libraries/LiquidCrystal/LiquidCrystal.h</label>
+        <link refid="_liquid_crystal_8h_source"/>
+      </node>
+      <node id="29">
+        <label>wirish/wirish_time.h</label>
+        <link refid="wirish__time_8h"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>wirish/wirish_types.h</label>
+        <link refid="wirish__types_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>libraries/Servo/Servo.h</label>
+        <link refid="_servo_8h_source"/>
+      </node>
+      <node id="19">
+        <label>libmaple/adc.c</label>
+        <link refid="adc_8c"/>
+      </node>
+      <node id="18">
+        <label>libmaple/adc.h</label>
+        <link refid="adc.h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>libraries/Wire/Wire.h</label>
+        <link refid="_wire_8h_source"/>
+      </node>
+      <node id="25">
+        <label>wirish/WProgram.h</label>
+        <link refid="_w_program_8h_source"/>
+      </node>
+      <node id="26">
+        <label>libraries/FreeRTOS/MapleFreeRTOS.h</label>
+        <link refid="_maple_free_r_t_o_s_8h_source"/>
+      </node>
+      <node id="20">
+        <label>libmaple/util.c</label>
+        <link refid="util_8c_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structadc__reg__map" prot="public">adc_reg_map</innerclass>
+    <innerclass refid="structadc__dev" prot="public">adc_dev</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="adc_8h_1a695c9a2f892363a1c942405c8d351b91" prot="public" static="no">
+        <name>ADC1_BASE</name>
+        <initializer>((struct <ref refid="structadc__reg__map" kindref="compound">adc_reg_map</ref>*)0x40012400)</initializer>
+        <briefdescription>
+<para>ADC1 register map base pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="85" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a6544abc57f9759f610eee09a02442ae6" prot="public" static="no">
+        <name>ADC2_BASE</name>
+        <initializer>((struct <ref refid="structadc__reg__map" kindref="compound">adc_reg_map</ref>*)0x40012800)</initializer>
+        <briefdescription>
+<para>ADC2 register map base pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="87" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1aca766f86c8e0b00a8e2b0224dcbb4c82" prot="public" static="no">
+        <name>ADC3_BASE</name>
+        <initializer>((struct <ref refid="structadc__reg__map" kindref="compound">adc_reg_map</ref>*)0x40013C00)</initializer>
+        <briefdescription>
+<para>ADC3 register map base pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="90" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a8ccd940680661b2a006b8a1c18039976" prot="public" static="no">
+        <name>ADC_SR_AWD_BIT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="99" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1ac1958843ff1cc758f53cc3dbb8f0dd45" prot="public" static="no">
+        <name>ADC_SR_EOC_BIT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="100" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1ae06cd19d475927164a617a0217fd60c0" prot="public" static="no">
+        <name>ADC_SR_JEOC_BIT</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="101" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1aba53f4a1e8809365ac9b1ca562d41f18" prot="public" static="no">
+        <name>ADC_SR_JSTRT_BIT</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="102" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a9e0471ad1df941f65d64820a893a505d" prot="public" static="no">
+        <name>ADC_SR_STRT_BIT</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="103" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a8b7f27694281e4cad956da567e5583b2" prot="public" static="no">
+        <name>ADC_SR_AWD</name>
+        <initializer>BIT(ADC_SR_AWD_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="105" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a3dc295c5253743aeb2cda582953b7b53" prot="public" static="no">
+        <name>ADC_SR_EOC</name>
+        <initializer>BIT(ADC_SR_EOC_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="106" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1abc9f07589bb1a4e398781df372389b56" prot="public" static="no">
+        <name>ADC_SR_JEOC</name>
+        <initializer>BIT(ADC_SR_JEOC_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="107" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a7340a01ffec051c06e80a037eee58a14" prot="public" static="no">
+        <name>ADC_SR_JSTRT</name>
+        <initializer>BIT(ADC_SR_JSTRT_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="108" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a45eb11ad986d8220cde9fa47a91ed222" prot="public" static="no">
+        <name>ADC_SR_STRT</name>
+        <initializer>BIT(ADC_SR_STRT_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="109" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a17decf2845e21fed20875ef206c22fd2" prot="public" static="no">
+        <name>ADC_CR1_EOCIE_BIT</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="113" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a7fe768cf2bf9f619e304309cf853ca63" prot="public" static="no">
+        <name>ADC_CR1_AWDIE_BIT</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="114" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a5c97ba334a041534dea3167297ce749c" prot="public" static="no">
+        <name>ADC_CR1_JEOCIE_BIT</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="115" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a8559830cb1b76d49fb1dc467d131d89a" prot="public" static="no">
+        <name>ADC_CR1_SCAN_BIT</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="116" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a83c28fc7a3766e0833ff7cdea5fef90b" prot="public" static="no">
+        <name>ADC_CR1_AWDSGL_BIT</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="117" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1adb8f13941679450ff1ec43a33c8de227" prot="public" static="no">
+        <name>ADC_CR1_JAUTO_BIT</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="118" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1afbf79a5737a45a4df208527f35e184a6" prot="public" static="no">
+        <name>ADC_CR1_DISCEN_BIT</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="119" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1ac34bee6bac6864ab30f78c616a2e2de7" prot="public" static="no">
+        <name>ADC_CR1_JDISCEN_BIT</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="120" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a85c92f1bb11d610d3cf6faafda654ad0" prot="public" static="no">
+        <name>ADC_CR1_JAWDEN_BIT</name>
+        <initializer>22</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="121" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a7d8c79e49d11554ea9f0b279a6524430" prot="public" static="no">
+        <name>ADC_CR1_AWDEN_BIT</name>
+        <initializer>23</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="122" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1ad8bb755c7059bb2d4f5e2e999d2a2677" prot="public" static="no">
+        <name>ADC_CR1_AWDCH</name>
+        <initializer>(0x1F)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="124" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1aa39fee2e812a7ca45998cccf32e90aea" prot="public" static="no">
+        <name>ADC_CR1_EOCIE</name>
+        <initializer>BIT(ADC_CR1_EOCIE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="125" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1acd44f86b189696d5a3780342516de722" prot="public" static="no">
+        <name>ADC_CR1_AWDIE</name>
+        <initializer>BIT(ADC_CR1_AWDIE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="126" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a5c46fc1dc6c63acf88821f46a8f6d5e7" prot="public" static="no">
+        <name>ADC_CR1_JEOCIE</name>
+        <initializer>BIT(ADC_CR1_JEOCIE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="127" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1aaeab75ece0c73dd97e8f21911ed22d06" prot="public" static="no">
+        <name>ADC_CR1_SCAN</name>
+        <initializer>BIT(ADC_CR1_SCAN_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="128" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a5c9fc31f19c04033dfa98e982519c451" prot="public" static="no">
+        <name>ADC_CR1_AWDSGL</name>
+        <initializer>BIT(ADC_CR1_AWDSGL_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="129" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a6353cb0d564410358b3a086dd0241f8c" prot="public" static="no">
+        <name>ADC_CR1_JAUTO</name>
+        <initializer>BIT(ADC_CR1_JAUTO_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="130" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1abd690297fc73fca40d797f4c90800b9a" prot="public" static="no">
+        <name>ADC_CR1_DISCEN</name>
+        <initializer>BIT(ADC_CR1_DISCEN_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="131" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1acd06a2840346bf45ff335707db0b6e30" prot="public" static="no">
+        <name>ADC_CR1_JDISCEN</name>
+        <initializer>BIT(ADC_CR1_JDISCEN_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="132" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1aeaa416a291023449ae82e7ef39844075" prot="public" static="no">
+        <name>ADC_CR1_DISCNUM</name>
+        <initializer>(0xE000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="133" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a4886de74bcd3a1e545094089f76fd0b3" prot="public" static="no">
+        <name>ADC_CR1_JAWDEN</name>
+        <initializer>BIT(ADC_CR1_JAWDEN_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="134" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a6e006d43fcb9fe1306745c95a1bdd651" prot="public" static="no">
+        <name>ADC_CR1_AWDEN</name>
+        <initializer>BIT(ADC_CR1_AWDEN_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="135" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a83d2ee10334f593adf6c6540404a3d7b" prot="public" static="no">
+        <name>ADC_CR2_ADON_BIT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="139" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a0e401cff6ca6650ee19a6f77e075f1ca" prot="public" static="no">
+        <name>ADC_CR2_CONT_BIT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="140" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1aa92afaa2c86b11f0e1f5ab29e34926e1" prot="public" static="no">
+        <name>ADC_CR2_CAL_BIT</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="141" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1ab88d99df67674f84a1f9f969f6d37c09" prot="public" static="no">
+        <name>ADC_CR2_RSTCAL_BIT</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="142" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1aba868d12333abd1e15d51eea3c0680a2" prot="public" static="no">
+        <name>ADC_CR2_DMA_BIT</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="143" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a85b263bddee8cb62ea4e881d11808897" prot="public" static="no">
+        <name>ADC_CR2_ALIGN_BIT</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="144" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a78b5a6e88cd3ab80ba64b71e6e49b9dc" prot="public" static="no">
+        <name>ADC_CR2_JEXTTRIG_BIT</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="145" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1aa910ae9c0c6e5682b88f3c12eed7ce72" prot="public" static="no">
+        <name>ADC_CR2_EXTTRIG_BIT</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="146" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a0c3f19721c3527d1b86122ec38868f24" prot="public" static="no">
+        <name>ADC_CR2_JSWSTART_BIT</name>
+        <initializer>21</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="147" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1ab1ac572c7ed309f382c124e23420839e" prot="public" static="no">
+        <name>ADC_CR2_SWSTART_BIT</name>
+        <initializer>22</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="148" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a6bdee33372f1cd36e10e324209c2ab74" prot="public" static="no">
+        <name>ADC_CR2_TSEREFE_BIT</name>
+        <initializer>23</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="149" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a89b646f092b052d8488d2016f6290f0e" prot="public" static="no">
+        <name>ADC_CR2_ADON</name>
+        <initializer>BIT(ADC_CR2_ADON_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="151" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a49bb71a868c9d88a0f7bbe48918b2140" prot="public" static="no">
+        <name>ADC_CR2_CONT</name>
+        <initializer>BIT(ADC_CR2_CONT_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="152" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a2932a0004cf17558c1445f79baac54a1" prot="public" static="no">
+        <name>ADC_CR2_CAL</name>
+        <initializer>BIT(ADC_CR2_CAL_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="153" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a76a91ece4a71450541ef2637fdcdfdea" prot="public" static="no">
+        <name>ADC_CR2_RSTCAL</name>
+        <initializer>BIT(ADC_CR2_RSTCAL_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="154" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a017309ac4b532bc8c607388f4e2cbbec" prot="public" static="no">
+        <name>ADC_CR2_DMA</name>
+        <initializer>BIT(ADC_CR2_DMA_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="155" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1af5950b5a7438a447584f6dd86c343362" prot="public" static="no">
+        <name>ADC_CR2_ALIGN</name>
+        <initializer>BIT(ADC_CR2_ALIGN_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="156" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1aab3aa5d0e2a4b77960ec8f3b425a3eac" prot="public" static="no">
+        <name>ADC_CR2_JEXTSEL</name>
+        <initializer>(0x7000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="157" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1aa17af96980f14bc008357812c13bc4b3" prot="public" static="no">
+        <name>ADC_CR2_JEXTTRIG</name>
+        <initializer>BIT(ADC_CR2_JEXTTRIG_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="158" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a6d1054d6cd017e305cf6e8a864ce96c8" prot="public" static="no">
+        <name>ADC_CR2_EXTSEL</name>
+        <initializer>(0xE0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="159" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a1c0cfed2e6b3dfe7a8794b29822e314c" prot="public" static="no">
+        <name>ADC_CR2_EXTTRIG</name>
+        <initializer>BIT(ADC_CR2_EXTTRIG_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="160" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1ac12fe8a6cc24eef2ed2e1f1525855678" prot="public" static="no">
+        <name>ADC_CR2_JSWSTART</name>
+        <initializer>BIT(ADC_CR2_JSWSTART_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="161" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a5eae65bad1a6c975e1911eb5ba117468" prot="public" static="no">
+        <name>ADC_CR2_SWSTART</name>
+        <initializer>BIT(ADC_CR2_SWSTART_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="162" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a3279c3ab95dd29a74e30ced4c5675bc5" prot="public" static="no">
+        <name>ADC_CR2_TSEREFE</name>
+        <initializer>BIT(ADC_CR2_TSEREFE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="163" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a9867370ecef7b99c32b8ecb44ad9e581" prot="public" static="no">
+        <name>ADC_SMPR1_SMP17</name>
+        <initializer>(0x7 &lt;&lt; 21)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="167" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a2925d05347e46e9c6a970214fa76bbec" prot="public" static="no">
+        <name>ADC_SMPR1_SMP16</name>
+        <initializer>(0x7 &lt;&lt; 18)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="168" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a5ae0043ad863f7710834217bc82c8ecf" prot="public" static="no">
+        <name>ADC_SMPR1_SMP15</name>
+        <initializer>(0x7 &lt;&lt; 15)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="169" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1ab1574fc02a40f22fc751073e02ebb781" prot="public" static="no">
+        <name>ADC_SMPR1_SMP14</name>
+        <initializer>(0x7 &lt;&lt; 12)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="170" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a2df120cd93a177ea17946a656259129e" prot="public" static="no">
+        <name>ADC_SMPR1_SMP13</name>
+        <initializer>(0x7 &lt;&lt; 9)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="171" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a433b5a7d944666fb7abed3b107c352fc" prot="public" static="no">
+        <name>ADC_SMPR1_SMP12</name>
+        <initializer>(0x7 &lt;&lt; 6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="172" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a4c74d559f2a70a2e8c807b7bcaccd800" prot="public" static="no">
+        <name>ADC_SMPR1_SMP11</name>
+        <initializer>(0x7 &lt;&lt; 3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="173" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a32242a2c2156a012a7343bcb43d490d0" prot="public" static="no">
+        <name>ADC_SMPR1_SMP10</name>
+        <initializer>0x7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="174" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a5348f83daaa38060702d7b9cfe2e4005" prot="public" static="no">
+        <name>ADC_SMPR2_SMP9</name>
+        <initializer>(0x7 &lt;&lt; 27)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="178" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a0695c289e658b772070a7f29797e9cc3" prot="public" static="no">
+        <name>ADC_SMPR2_SMP8</name>
+        <initializer>(0x7 &lt;&lt; 24)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="179" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a6ec6ee971fc8b2d1890858df94a5c500" prot="public" static="no">
+        <name>ADC_SMPR2_SMP7</name>
+        <initializer>(0x7 &lt;&lt; 21)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="180" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a64cd99c27d07298913541dbdc31aa8ae" prot="public" static="no">
+        <name>ADC_SMPR2_SMP6</name>
+        <initializer>(0x7 &lt;&lt; 18)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="181" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a9500281fa740994b9cfa6a7df8227849" prot="public" static="no">
+        <name>ADC_SMPR2_SMP5</name>
+        <initializer>(0x7 &lt;&lt; 15)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="182" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1aeab838fcf0aace87b2163b96d208bb64" prot="public" static="no">
+        <name>ADC_SMPR2_SMP4</name>
+        <initializer>(0x7 &lt;&lt; 12)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="183" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a081c3d61e5311a11cb046d56630e1fd0" prot="public" static="no">
+        <name>ADC_SMPR2_SMP3</name>
+        <initializer>(0x7 &lt;&lt; 9)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="184" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1aea6e1e298372596bcdcdf93e763b3683" prot="public" static="no">
+        <name>ADC_SMPR2_SMP2</name>
+        <initializer>(0x7 &lt;&lt; 6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="185" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a5b85dd0b1708cdf1bf403b07ad51da36" prot="public" static="no">
+        <name>ADC_SMPR2_SMP1</name>
+        <initializer>(0x7 &lt;&lt; 3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="186" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a5a13b3c652e5759e2d8bc7e38889bc5e" prot="public" static="no">
+        <name>ADC_SMPR2_SMP0</name>
+        <initializer>0x7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="187" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a5681e409a565a02b382efc5e17a45361" prot="public" static="no">
+        <name>ADC_JOFR_JOFFSET</name>
+        <initializer>0x3FF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="191" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1ad685f031174465e636ef75a5bd7b637d" prot="public" static="no">
+        <name>ADC_HTR_HT</name>
+        <initializer>0x3FF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="195" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1ac7ac18b970378acf726f04ae68232c24" prot="public" static="no">
+        <name>ADC_LTR_LT</name>
+        <initializer>0x3FF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="199" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1ae68a19a18d72f6d87c6f2b8cc8bfc6dc" prot="public" static="no">
+        <name>ADC_SQR1_L</name>
+        <initializer>(0x1F &lt;&lt; 20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="203" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1afecb33099669a080cede6ce0236389e7" prot="public" static="no">
+        <name>ADC_SQR1_SQ16</name>
+        <initializer>(0x1F &lt;&lt; 15)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="204" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a23222c591c6d926f7a741bc9346f1d8f" prot="public" static="no">
+        <name>ADC_SQR1_SQ15</name>
+        <initializer>(0x1F &lt;&lt; 10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="205" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1ab0251199146cb3d0d2c1c0608fbca585" prot="public" static="no">
+        <name>ADC_SQR1_SQ14</name>
+        <initializer>(0x1F &lt;&lt; 5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="206" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a1ae1998c0dd11275958e7347a92852fc" prot="public" static="no">
+        <name>ADC_SQR1_SQ13</name>
+        <initializer>0x1F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="207" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a8731660b1710e63d5423cd31c11be184" prot="public" static="no">
+        <name>ADC_SQR2_SQ12</name>
+        <initializer>(0x1F &lt;&lt; 25)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="211" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a7bf491b9c1542fb0d0b83fc96166362e" prot="public" static="no">
+        <name>ADC_SQR2_SQ11</name>
+        <initializer>(0x1F &lt;&lt; 20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="212" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a22e474b65f217ac21137b1d3f3cbb6bb" prot="public" static="no">
+        <name>ADC_SQR2_SQ10</name>
+        <initializer>(0x1F &lt;&lt; 16)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="213" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1af5d91ecfc3d40cc6b1960544e526eb91" prot="public" static="no">
+        <name>ADC_SQR2_SQ9</name>
+        <initializer>(0x1F &lt;&lt; 10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="214" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a308ec58a8d20dcb3a348c30c332a0a8e" prot="public" static="no">
+        <name>ADC_SQR2_SQ8</name>
+        <initializer>(0x1F &lt;&lt; 5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="215" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1aa9f66f702fc124040956117f20ef8df4" prot="public" static="no">
+        <name>ADC_SQR2_SQ7</name>
+        <initializer>0x1F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="216" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a723792274b16b342d16d6a02fce74ba6" prot="public" static="no">
+        <name>ADC_SQR3_SQ6</name>
+        <initializer>(0x1F &lt;&lt; 25)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="220" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1aae841d68049442e4568b86322ed4be6f" prot="public" static="no">
+        <name>ADC_SQR3_SQ5</name>
+        <initializer>(0x1F &lt;&lt; 20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="221" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a3fc43f70bb3c67c639678b91d852390b" prot="public" static="no">
+        <name>ADC_SQR3_SQ4</name>
+        <initializer>(0x1F &lt;&lt; 16)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="222" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a601f21b7c1e571fb8c5ff310aca021e1" prot="public" static="no">
+        <name>ADC_SQR3_SQ3</name>
+        <initializer>(0x1F &lt;&lt; 10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="223" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a60637fb25c099f8da72a8a36211f7a8c" prot="public" static="no">
+        <name>ADC_SQR3_SQ2</name>
+        <initializer>(0x1F &lt;&lt; 5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="224" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a52491114e8394648559004f3bae718d9" prot="public" static="no">
+        <name>ADC_SQR3_SQ1</name>
+        <initializer>0x1F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="225" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1aa624d1fe34014b88873e2dfa91f79232" prot="public" static="no">
+        <name>ADC_JSQR_JL</name>
+        <initializer>(0x3 &lt;&lt; 20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="229" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a8f2b175347c6329d0b0ec7d66e8a1ffb" prot="public" static="no">
+        <name>ADC_JSQR_JL_1CONV</name>
+        <initializer>(0x0 &lt;&lt; 20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="230" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a787ae2aa40cbe59e7d1b757f074b50f5" prot="public" static="no">
+        <name>ADC_JSQR_JL_2CONV</name>
+        <initializer>(0x1 &lt;&lt; 20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="231" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a54db928d1a50ad27bba350dc085c89ef" prot="public" static="no">
+        <name>ADC_JSQR_JL_3CONV</name>
+        <initializer>(0x2 &lt;&lt; 20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="232" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1ad850261eb7bc2bcf2ee7840606b5b1e8" prot="public" static="no">
+        <name>ADC_JSQR_JL_4CONV</name>
+        <initializer>(0x3 &lt;&lt; 20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="233" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a39a279051ef198ee34cad73743b996f4" prot="public" static="no">
+        <name>ADC_JSQR_JSQ4</name>
+        <initializer>(0x1F &lt;&lt; 15)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="234" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1ae2fbdc1b854a54c4288402c2d3a7fca9" prot="public" static="no">
+        <name>ADC_JSQR_JSQ3</name>
+        <initializer>(0x1F &lt;&lt; 10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="235" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a3e8446a5857e5379cff8cadf822e15d4" prot="public" static="no">
+        <name>ADC_JSQR_JSQ2</name>
+        <initializer>(0x1F &lt;&lt; 5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="236" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1ad7fa15dfe51b084b36cb5df2fbf44bb2" prot="public" static="no">
+        <name>ADC_JSQR_JSQ1</name>
+        <initializer>0x1F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="237" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a40a820c68eb04e0d09980f1595f9de55" prot="public" static="no">
+        <name>ADC_JDR_JDATA</name>
+        <initializer>0xFFFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="241" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1a67c396288ac97bfab2d37017bd536b98" prot="public" static="no">
+        <name>ADC_DR_ADC2DATA</name>
+        <initializer>(0xFFFF &lt;&lt; 16)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="245" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="adc_8h_1ada596183c4087696c486546e88176038" prot="public" static="no">
+        <name>ADC_DR_DATA</name>
+        <initializer>0xFFFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="246" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0f" prot="public" static="no">
+        <name>adc_extsel_event</name>
+        <enumvalue id="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fac87b0264e0c4332f1ed77aa76a422640" prot="public">
+          <name>ADC_ADC12_TIM1_CC1</name>
+          <initializer> (0 &lt;&lt; 17)</initializer>
+          <briefdescription>
+<para>ADC1 and ADC2: Timer 1 CC1 event. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa54a2ff6fd59a577ef6cd8e72219c06b9" prot="public">
+          <name>ADC_ADC12_TIM1_CC2</name>
+          <initializer> (1 &lt;&lt; 17)</initializer>
+          <briefdescription>
+<para>ADC1 and ADC2: Timer 1 CC2 event. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0faed8c287c3084a8a9265feb06bc4d003e" prot="public">
+          <name>ADC_ADC12_TIM1_CC3</name>
+          <initializer> (2 &lt;&lt; 17)</initializer>
+          <briefdescription>
+<para>ADC1 and ADC2: Timer 1 CC3 event. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa55a35d34f56c8f00767feb4a1a747fb0" prot="public">
+          <name>ADC_ADC12_TIM2_CC2</name>
+          <initializer> (3 &lt;&lt; 17)</initializer>
+          <briefdescription>
+<para>ADC1 and ADC2: Timer 2 CC2 event. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa4bdca0f4494a6a1a8eec0336deb4cf67" prot="public">
+          <name>ADC_ADC12_TIM3_TRGO</name>
+          <initializer> (4 &lt;&lt; 17)</initializer>
+          <briefdescription>
+<para>ADC1 and ADC2: Timer 3 TRGO event. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa13cb7e15dc32da1b301250e1ad2a16ce" prot="public">
+          <name>ADC_ADC12_TIM4_CC4</name>
+          <initializer> (5 &lt;&lt; 17)</initializer>
+          <briefdescription>
+<para>ADC1 and ADC2: Timer 4 CC4 event. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0faf745c63ec8382d581dde4b069d0852e0" prot="public">
+          <name>ADC_ADC12_EXTI11</name>
+          <initializer> (6 &lt;&lt; 17)</initializer>
+          <briefdescription>
+<para>ADC1 and ADC2: EXTI11 event. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0faf41233b17fcb2c642a3a00c982d2ae10" prot="public">
+          <name>ADC_ADC12_TIM8_TRGO</name>
+          <initializer> (6 &lt;&lt; 17)</initializer>
+          <briefdescription>
+<para>ADC1 and ADC2: Timer 8 TRGO event (high density only) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa33d60aa3323afa7b561fa1407d28684e" prot="public">
+          <name>ADC_ADC12_SWSTART</name>
+          <initializer> (7 &lt;&lt; 17)</initializer>
+          <briefdescription>
+<para>ADC1 and ADC2: Software start. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0faf25d06edd5feb79db5cfc20dfae9c3b9" prot="public">
+          <name>ADC_ADC3_TIM3_CC1</name>
+          <initializer> (0 &lt;&lt; 17)</initializer>
+          <briefdescription>
+<para>ADC3: Timer 3 CC1 event (high density only) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa6eeed7d25fef7626de9cd14f2ddbafe4" prot="public">
+          <name>ADC_ADC3_TIM2_CC3</name>
+          <initializer> (1 &lt;&lt; 17)</initializer>
+          <briefdescription>
+<para>ADC3: Timer 2 CC3 event (high density only) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa150dd59f4ecf8f366b9511b464c4a9d8" prot="public">
+          <name>ADC_ADC3_TIM1_CC3</name>
+          <initializer> (2 &lt;&lt; 17)</initializer>
+          <briefdescription>
+<para>ADC3: Timer 1 CC3 event (high density only) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fac146fde9640dea92a80bcd1b50af6ee6" prot="public">
+          <name>ADC_ADC3_TIM8_CC1</name>
+          <initializer> (3 &lt;&lt; 17)</initializer>
+          <briefdescription>
+<para>ADC3: Timer 8 CC1 event (high density only) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fadc7ad30125327e3aeb51789f67f7a1ef" prot="public">
+          <name>ADC_ADC3_TIM8_TRGO</name>
+          <initializer> (4 &lt;&lt; 17)</initializer>
+          <briefdescription>
+<para>ADC3: Timer 8 TRGO event (high density only) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa2ec0ccb450c403f1452c8d6d065b97ca" prot="public">
+          <name>ADC_ADC3_TIM5_CC1</name>
+          <initializer> (5 &lt;&lt; 17)</initializer>
+          <briefdescription>
+<para>ADC3: Timer 5 CC1 event (high density only) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa1a97366e6abfe4d32c7abc1932848191" prot="public">
+          <name>ADC_ADC3_TIM5_CC3</name>
+          <initializer> (6 &lt;&lt; 17)</initializer>
+          <briefdescription>
+<para>ADC3: Timer 5 CC3 event (high density only) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0faa36d26045935430c69b1aebbd60ae2de" prot="public">
+          <name>ADC_ADC3_SWSTART</name>
+          <initializer> (7 &lt;&lt; 17)</initializer>
+          <briefdescription>
+<para>ADC3: Software start (high density only) </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fad03943b5b2226b71562a1a7432c4e566" prot="public">
+          <name>ADC_SWSTART</name>
+          <initializer> (7 &lt;&lt; 17)</initializer>
+          <briefdescription>
+<para>ADC1, ADC2, ADC3: Software start. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>External event selector for regular group conversion. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="adc_8h_1a8e63e11beaf9d04b92fd21b728e2aa18" kindref="member">adc_set_extsel</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="254" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="254" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="enum" id="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519" prot="public" static="no">
+        <name>adc_smp_rate</name>
+        <enumvalue id="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519a8960b21c3df0cc0ed2de91bf5120f145" prot="public">
+          <name>ADC_SMPR_1_5</name>
+          <briefdescription>
+<para>1.5 ADC cycles </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519a36dfd5141483e6bff1b386a4f4cea3c3" prot="public">
+          <name>ADC_SMPR_7_5</name>
+          <briefdescription>
+<para>7.5 ADC cycles </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519a4901b11600487c84e02d10dfd14fd21d" prot="public">
+          <name>ADC_SMPR_13_5</name>
+          <briefdescription>
+<para>13.5 ADC cycles </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519ac7ae1dad6125be16d5e14c320f869879" prot="public">
+          <name>ADC_SMPR_28_5</name>
+          <briefdescription>
+<para>28.5 ADC cycles </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519aadda9d8455869251a5b48a752c1e0d48" prot="public">
+          <name>ADC_SMPR_41_5</name>
+          <briefdescription>
+<para>41.5 ADC cycles </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519a301ae4ab61d86eadddb8fe884f7a0fd0" prot="public">
+          <name>ADC_SMPR_55_5</name>
+          <briefdescription>
+<para>55.5 ADC cycles </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519aca11b5238a38ff48ee3dd7364a0db3ae" prot="public">
+          <name>ADC_SMPR_71_5</name>
+          <briefdescription>
+<para>71.5 ADC cycles </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519a2c14c457ed2f2874d77707894ac7bb6a" prot="public">
+          <name>ADC_SMPR_239_5</name>
+          <briefdescription>
+<para>239.5 ADC cycles </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>ADC sample times, in ADC clock cycles. </para>        </briefdescription>
+        <detaileddescription>
+<para>These control the amount of time spent sampling the input voltage. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="296" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="296" bodyend="305"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="adc_8h_1ab2f44c17129eb02974115fb9d44df277" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structadc__dev" kindref="compound">adc_dev</ref> *</type>
+        <definition>const adc_dev* ADC1</definition>
+        <argsstring></argsstring>
+        <name>ADC1</name>
+        <briefdescription>
+<para>ADC1 device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="74" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.c" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="adc_8h_1a3972325ad3f36467628b7e8ce262d638" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structadc__dev" kindref="compound">adc_dev</ref> *</type>
+        <definition>const adc_dev* ADC2</definition>
+        <argsstring></argsstring>
+        <name>ADC2</name>
+        <briefdescription>
+<para>ADC2 device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="75" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.c" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="adc_8h_1a3aa993e3ded670ff5703b3e3ce37ba7a" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structadc__dev" kindref="compound">adc_dev</ref> *</type>
+        <definition>const adc_dev* ADC3</definition>
+        <argsstring></argsstring>
+        <name>ADC3</name>
+        <briefdescription>
+<para>ADC3 device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="77" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.c" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="adc_8h_1a8d588cf22e19f5fc152d509d9b654d40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void adc_init</definition>
+        <argsstring>(const adc_dev *dev)</argsstring>
+        <name>adc_init</name>
+        <param>
+          <type>const <ref refid="structadc__dev" kindref="compound">adc_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Initialize an ADC peripheral. </para>        </briefdescription>
+        <detaileddescription>
+<para>Initializes the RCC clock line for the given peripheral. Resets ADC device registers.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ADC peripheral to initialize </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="248" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.c" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="adc_8h_1a8e63e11beaf9d04b92fd21b728e2aa18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void adc_set_extsel</definition>
+        <argsstring>(const adc_dev *dev, adc_extsel_event event)</argsstring>
+        <name>adc_set_extsel</name>
+        <param>
+          <type>const <ref refid="structadc__dev" kindref="compound">adc_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type><ref refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0f" kindref="member">adc_extsel_event</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Set external event select for regular group. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ADC device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event used to trigger the start of conversion. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0f" kindref="member">adc_extsel_event</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="288" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.c" bodystart="86" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="adc_8h_1adb49446435db6389c73ec4a422b5d09d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void adc_foreach</definition>
+        <argsstring>(void(*fn)(const adc_dev *))</argsstring>
+        <name>adc_foreach</name>
+        <param>
+          <type>void(*)(const <ref refid="structadc__dev" kindref="compound">adc_dev</ref> *)</type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+<para>Call a function on all ADC devices. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to call on each ADC device. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="289" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.c" bodystart="97" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="adc_8h_1a6ccbc8e99ac38893b04d7995631e0473" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void adc_set_sample_rate</definition>
+        <argsstring>(const adc_dev *dev, adc_smp_rate smp_rate)</argsstring>
+        <name>adc_set_sample_rate</name>
+        <param>
+          <type>const <ref refid="structadc__dev" kindref="compound">adc_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type><ref refid="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519" kindref="member">adc_smp_rate</ref></type>
+          <declname>smp_rate</declname>
+        </param>
+        <briefdescription>
+<para>Turn the given sample rate into values for ADC_SMPRx. </para>        </briefdescription>
+        <detaileddescription>
+<para>Don&apos;t call this during conversion. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>adc device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>smp_rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sample rate to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519" kindref="member">adc_smp_rate</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="307" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.c" bodystart="112" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="adc_8h_1afba48cea90f600c2e7c7c4764c8a1582" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void adc_calibrate</definition>
+        <argsstring>(const adc_dev *dev)</argsstring>
+        <name>adc_calibrate</name>
+        <param>
+          <type>const <ref refid="structadc__dev" kindref="compound">adc_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Calibrate an ADC peripheral. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>adc device </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="308" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.c" bodystart="133" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="adc_8h_1a6fecdfa52f889c14238f0631582f88a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16</type>
+        <definition>uint16 adc_read</definition>
+        <argsstring>(const adc_dev *dev, uint8 channel)</argsstring>
+        <name>adc_read</name>
+        <param>
+          <type>const <ref refid="structadc__dev" kindref="compound">adc_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Perform a single synchronous software triggered conversion on a channel. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ADC device to use for reading. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>channel to convert </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>conversion result </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="309" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.c" bodystart="153" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="adc_8h_1a126f43fe7e241b944d2192ddfa637373" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void adc_set_reg_seqlen</definition>
+        <argsstring>(const adc_dev *dev, uint8 length)</argsstring>
+        <name>adc_set_reg_seqlen</name>
+        <param>
+          <type>const <ref refid="structadc__dev" kindref="compound">adc_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Set the regular channel sequence length. </para>        </briefdescription>
+        <detaileddescription>
+<para>Defines the total number of conversions in the regular channel conversion sequence.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ADC device. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Regular channel sequence length, from 1 to 16. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="320" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="320" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="adc_8h_1ab4d49de3b0180f9e637c944ea51987e2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void adc_set_exttrig</definition>
+        <argsstring>(const adc_dev *dev, uint8 enable)</argsstring>
+        <name>adc_set_exttrig</name>
+        <param>
+          <type>const <ref refid="structadc__dev" kindref="compound">adc_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Set external trigger conversion mode event for regular channels. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ADC device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If 1, conversion on external events is enabled; if 0, disabled. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="333" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="333" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="adc_8h_1a39c14342d4f5e841505ecb4d4a2da715" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void adc_enable</definition>
+        <argsstring>(const adc_dev *dev)</argsstring>
+        <name>adc_enable</name>
+        <param>
+          <type>const <ref refid="structadc__dev" kindref="compound">adc_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Enable an adc peripheral. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ADC device to enable </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="341" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="341" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="function" id="adc_8h_1a4dfb1445a8e14d620d32673da4b3dde4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void adc_disable</definition>
+        <argsstring>(const adc_dev *dev)</argsstring>
+        <name>adc_disable</name>
+        <param>
+          <type>const <ref refid="structadc__dev" kindref="compound">adc_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Disable an ADC peripheral. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ADC device to disable </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="349" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="349" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="function" id="adc_8h_1a4478bc9acdba36e0bbc026221996f538" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void adc_disable_all</definition>
+        <argsstring>(void)</argsstring>
+        <name>adc_disable_all</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Disable all ADC peripherals. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="356" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="356" bodyend="358"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Analog-to-Digital Conversion (ADC) header. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Perry<sp/>Hung.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor">#ifndef<sp/>_ADC_H_</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_ADC_H_</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libmaple_8h" kindref="compound" tooltip="General include file for libmaple.">libmaple.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bitband_8h" kindref="compound" tooltip="Bit-banding utility functions.">bitband.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rcc_8h" kindref="compound" tooltip="reset and clock control definitions and prototypes">rcc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="45" refid="structadc__reg__map" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structadc__reg__map" kindref="compound" tooltip="ADC register map type.">adc_reg_map</ref><sp/>{</highlight></codeline>
+<codeline lineno="46" refid="structadc__reg__map_1a6353efa587df48ed29b578bb42e7db0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structadc__reg__map_1a6353efa587df48ed29b578bb42e7db0b" kindref="member" tooltip="Status register.">SR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="structadc__reg__map_1a9c508f1d9f8b60215ea7cc8df4e48a89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structadc__reg__map_1a9c508f1d9f8b60215ea7cc8df4e48a89" kindref="member" tooltip="Control register 1.">CR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48" refid="structadc__reg__map_1a5a59370540ebbf41d1a05ce5645ff1e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structadc__reg__map_1a5a59370540ebbf41d1a05ce5645ff1e6" kindref="member" tooltip="Control register 2.">CR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="structadc__reg__map_1a1783cf2c5217280b1b0353f030f68cfd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structadc__reg__map_1a1783cf2c5217280b1b0353f030f68cfd" kindref="member" tooltip="Sample time register 1.">SMPR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50" refid="structadc__reg__map_1a465ba27397cc1369798a27aaeb43b23c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structadc__reg__map_1a465ba27397cc1369798a27aaeb43b23c" kindref="member" tooltip="Sample time register 2.">SMPR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51" refid="structadc__reg__map_1ac0a911103bc1d64e9d00f2884acf3de7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structadc__reg__map_1ac0a911103bc1d64e9d00f2884acf3de7" kindref="member" tooltip="Injected channel data offset register 1.">JOFR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52" refid="structadc__reg__map_1ab6b7152a392b5272eecd84b4723b4a37" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structadc__reg__map_1ab6b7152a392b5272eecd84b4723b4a37" kindref="member" tooltip="Injected channel data offset register 2.">JOFR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53" refid="structadc__reg__map_1a470f1615b67380d0a2078097dcd6787d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structadc__reg__map_1a470f1615b67380d0a2078097dcd6787d" kindref="member" tooltip="Injected channel data offset register 3.">JOFR3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54" refid="structadc__reg__map_1ae5eafb7719e94d062d9f9df4aa4c90fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structadc__reg__map_1ae5eafb7719e94d062d9f9df4aa4c90fa" kindref="member" tooltip="Injected channel data offset register 4.">JOFR4</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55" refid="structadc__reg__map_1ab9fd6de1f2fced9ee9ff475f51225e8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structadc__reg__map_1ab9fd6de1f2fced9ee9ff475f51225e8a" kindref="member" tooltip="Watchdog high threshold register.">HTR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56" refid="structadc__reg__map_1a4a2353ec9d80b39c8b2b261ab99f8cb9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structadc__reg__map_1a4a2353ec9d80b39c8b2b261ab99f8cb9" kindref="member" tooltip="Watchdog low threshold register.">LTR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57" refid="structadc__reg__map_1abf9ae5ccaf187b92844015dbe5d0e854" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structadc__reg__map_1abf9ae5ccaf187b92844015dbe5d0e854" kindref="member" tooltip="Regular sequence register 1.">SQR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58" refid="structadc__reg__map_1ab81feeca8cd7953d7ba3d58ad4b65f55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structadc__reg__map_1ab81feeca8cd7953d7ba3d58ad4b65f55" kindref="member" tooltip="Regular sequence register 2.">SQR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59" refid="structadc__reg__map_1ab4443c5e93afb9b4e95afaf9fa07fe73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structadc__reg__map_1ab4443c5e93afb9b4e95afaf9fa07fe73" kindref="member" tooltip="Regular sequence register 3.">SQR3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60" refid="structadc__reg__map_1a64ea948da35502344f963a7fa742e122" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structadc__reg__map_1a64ea948da35502344f963a7fa742e122" kindref="member" tooltip="Injected sequence register.">JSQR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61" refid="structadc__reg__map_1aae40f40ad4df09fcc8fa708699f5c861" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structadc__reg__map_1aae40f40ad4df09fcc8fa708699f5c861" kindref="member" tooltip="Injected data register 1.">JDR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62" refid="structadc__reg__map_1a261f8d73474d678dd2f0709a01800d93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structadc__reg__map_1a261f8d73474d678dd2f0709a01800d93" kindref="member" tooltip="Injected data register 2.">JDR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63" refid="structadc__reg__map_1ae685d988faba19f95106f931d3ed15a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structadc__reg__map_1ae685d988faba19f95106f931d3ed15a2" kindref="member" tooltip="Injected data register 3.">JDR3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64" refid="structadc__reg__map_1a6e6ad8427b381243e4fbbe3946d68e88" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structadc__reg__map_1a6e6ad8427b381243e4fbbe3946d68e88" kindref="member" tooltip="Injected data register 4.">JDR4</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65" refid="structadc__reg__map_1ad5f04a2ecbaaf2381169bf5300eabbeb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structadc__reg__map_1ad5f04a2ecbaaf2381169bf5300eabbeb" kindref="member" tooltip="Regular data register.">DR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}<sp/><ref refid="structadc__reg__map" kindref="compound" tooltip="ADC register map type.">adc_reg_map</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="structadc__dev" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref><sp/>{</highlight></codeline>
+<codeline lineno="70" refid="structadc__dev_1a05f4fc782026e3b163ba49b771d8ab9f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structadc__reg__map" kindref="compound" tooltip="ADC register map type.">adc_reg_map</ref><sp/>*<ref refid="structadc__dev_1a05f4fc782026e3b163ba49b771d8ab9f" kindref="member" tooltip="Register map.">regs</ref>;<sp/></highlight></codeline>
+<codeline lineno="71" refid="structadc__dev_1a9c34f932000c9008303a8d2c69965324" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="rcc_8h_1ae3722d2d8eff5283fb0388429953640f" kindref="member" tooltip="Identifies bus and clock line for a peripheral.">rcc_clk_id</ref><sp/><ref refid="structadc__dev_1a9c34f932000c9008303a8d2c69965324" kindref="member" tooltip="RCC clock information.">clk_id</ref>;<sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}<sp/><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref><sp/>*<ref refid="adc_8c_1ab2f44c17129eb02974115fb9d44df277" kindref="member" tooltip="ADC1 device.">ADC1</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref><sp/>*<ref refid="adc_8c_1a3972325ad3f36467628b7e8ce262d638" kindref="member" tooltip="ADC2 device.">ADC2</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>STM32_HIGH_DENSITY</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref><sp/>*<ref refid="adc_8c_1a3aa993e3ded670ff5703b3e3ce37ba7a" kindref="member" tooltip="ADC3 device.">ADC3</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*<sp/>Register<sp/>map<sp/>base<sp/>pointers</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="adc_8h_1a695c9a2f892363a1c942405c8d351b91" refkind="member"><highlight class="preprocessor">#define<sp/>ADC1_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((struct<sp/>adc_reg_map*)0x40012400)</highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="87" refid="adc_8h_1a6544abc57f9759f610eee09a02442ae6" refkind="member"><highlight class="preprocessor">#define<sp/>ADC2_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((struct<sp/>adc_reg_map*)0x40012800)</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifdef<sp/>STM32_HIGH_DENSITY</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="90" refid="adc_8h_1aca766f86c8e0b00a8e2b0224dcbb4c82" refkind="member"><highlight class="preprocessor">#define<sp/>ADC3_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((struct<sp/>adc_reg_map*)0x40013C00)</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/>*<sp/>Register<sp/>bit<sp/>definitions</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Status<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_SR_AWD_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SR_EOC_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SR_JEOC_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SR_JSTRT_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SR_STRT_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_SR_AWD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(ADC_SR_AWD_BIT)</highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SR_EOC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(ADC_SR_EOC_BIT)</highlight></codeline>
+<codeline lineno="107"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SR_JEOC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(ADC_SR_JEOC_BIT)</highlight></codeline>
+<codeline lineno="108"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SR_JSTRT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(ADC_SR_JSTRT_BIT)</highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SR_STRT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(ADC_SR_STRT_BIT)</highlight></codeline>
+<codeline lineno="110"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Control<sp/>register<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR1_EOCIE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight></codeline>
+<codeline lineno="114"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR1_AWDIE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight></codeline>
+<codeline lineno="115"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR1_JEOCIE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7</highlight></codeline>
+<codeline lineno="116"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR1_SCAN_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR1_AWDSGL_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>9</highlight></codeline>
+<codeline lineno="118"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR1_JAUTO_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10</highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR1_DISCEN_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>11</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR1_JDISCEN_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight></codeline>
+<codeline lineno="121"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR1_JAWDEN_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>22</highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR1_AWDEN_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>23</highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR1_AWDCH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1F)</highlight></codeline>
+<codeline lineno="125"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR1_EOCIE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(ADC_CR1_EOCIE_BIT)</highlight></codeline>
+<codeline lineno="126"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR1_AWDIE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(ADC_CR1_AWDIE_BIT)</highlight></codeline>
+<codeline lineno="127"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR1_JEOCIE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(ADC_CR1_JEOCIE_BIT)</highlight></codeline>
+<codeline lineno="128"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR1_SCAN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(ADC_CR1_SCAN_BIT)</highlight></codeline>
+<codeline lineno="129"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR1_AWDSGL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(ADC_CR1_AWDSGL_BIT)</highlight></codeline>
+<codeline lineno="130"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR1_JAUTO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(ADC_CR1_JAUTO_BIT)</highlight></codeline>
+<codeline lineno="131"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR1_DISCEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(ADC_CR1_DISCEN_BIT)</highlight></codeline>
+<codeline lineno="132"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR1_JDISCEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(ADC_CR1_JDISCEN_BIT)</highlight></codeline>
+<codeline lineno="133"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR1_DISCNUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xE000)</highlight></codeline>
+<codeline lineno="134"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR1_JAWDEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(ADC_CR1_JAWDEN_BIT)</highlight></codeline>
+<codeline lineno="135"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR1_AWDEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(ADC_CR1_AWDEN_BIT)</highlight></codeline>
+<codeline lineno="136"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Control<sp/>register<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR2_ADON_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="140"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR2_CONT_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="141"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR2_CAL_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="142"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR2_RSTCAL_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="143"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR2_DMA_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight></codeline>
+<codeline lineno="144"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR2_ALIGN_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>11</highlight></codeline>
+<codeline lineno="145"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR2_JEXTTRIG_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>15</highlight></codeline>
+<codeline lineno="146"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR2_EXTTRIG_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>20</highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR2_JSWSTART_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>21</highlight></codeline>
+<codeline lineno="148"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR2_SWSTART_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>22</highlight></codeline>
+<codeline lineno="149"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR2_TSEREFE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>23</highlight></codeline>
+<codeline lineno="150"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR2_ADON<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(ADC_CR2_ADON_BIT)</highlight></codeline>
+<codeline lineno="152"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR2_CONT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(ADC_CR2_CONT_BIT)</highlight></codeline>
+<codeline lineno="153"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR2_CAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(ADC_CR2_CAL_BIT)</highlight></codeline>
+<codeline lineno="154"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR2_RSTCAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(ADC_CR2_RSTCAL_BIT)</highlight></codeline>
+<codeline lineno="155"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR2_DMA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(ADC_CR2_DMA_BIT)</highlight></codeline>
+<codeline lineno="156"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR2_ALIGN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(ADC_CR2_ALIGN_BIT)</highlight></codeline>
+<codeline lineno="157"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR2_JEXTSEL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x7000)</highlight></codeline>
+<codeline lineno="158"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR2_JEXTTRIG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(ADC_CR2_JEXTTRIG_BIT)</highlight></codeline>
+<codeline lineno="159"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR2_EXTSEL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xE0000)</highlight></codeline>
+<codeline lineno="160"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR2_EXTTRIG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(ADC_CR2_EXTTRIG_BIT)</highlight></codeline>
+<codeline lineno="161"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR2_JSWSTART<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(ADC_CR2_JSWSTART_BIT)</highlight></codeline>
+<codeline lineno="162"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR2_SWSTART<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(ADC_CR2_SWSTART_BIT)</highlight></codeline>
+<codeline lineno="163"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_CR2_TSEREFE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(ADC_CR2_TSEREFE_BIT)</highlight></codeline>
+<codeline lineno="164"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Sample<sp/>time<sp/>register<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_SMPR1_SMP17<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x7<sp/>&lt;&lt;<sp/>21)</highlight></codeline>
+<codeline lineno="168"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SMPR1_SMP16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x7<sp/>&lt;&lt;<sp/>18)</highlight></codeline>
+<codeline lineno="169"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SMPR1_SMP15<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x7<sp/>&lt;&lt;<sp/>15)</highlight></codeline>
+<codeline lineno="170"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SMPR1_SMP14<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x7<sp/>&lt;&lt;<sp/>12)</highlight></codeline>
+<codeline lineno="171"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SMPR1_SMP13<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x7<sp/>&lt;&lt;<sp/>9)</highlight></codeline>
+<codeline lineno="172"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SMPR1_SMP12<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x7<sp/>&lt;&lt;<sp/>6)</highlight></codeline>
+<codeline lineno="173"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SMPR1_SMP11<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x7<sp/>&lt;&lt;<sp/>3)</highlight></codeline>
+<codeline lineno="174"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SMPR1_SMP10<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x7</highlight></codeline>
+<codeline lineno="175"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Sample<sp/>time<sp/>register<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_SMPR2_SMP9<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x7<sp/>&lt;&lt;<sp/>27)</highlight></codeline>
+<codeline lineno="179"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SMPR2_SMP8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x7<sp/>&lt;&lt;<sp/>24)</highlight></codeline>
+<codeline lineno="180"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SMPR2_SMP7<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x7<sp/>&lt;&lt;<sp/>21)</highlight></codeline>
+<codeline lineno="181"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SMPR2_SMP6<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x7<sp/>&lt;&lt;<sp/>18)</highlight></codeline>
+<codeline lineno="182"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SMPR2_SMP5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x7<sp/>&lt;&lt;<sp/>15)</highlight></codeline>
+<codeline lineno="183"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SMPR2_SMP4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x7<sp/>&lt;&lt;<sp/>12)</highlight></codeline>
+<codeline lineno="184"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SMPR2_SMP3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x7<sp/>&lt;&lt;<sp/>9)</highlight></codeline>
+<codeline lineno="185"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SMPR2_SMP2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x7<sp/>&lt;&lt;<sp/>6)</highlight></codeline>
+<codeline lineno="186"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SMPR2_SMP1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x7<sp/>&lt;&lt;<sp/>3)</highlight></codeline>
+<codeline lineno="187"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SMPR2_SMP0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x7</highlight></codeline>
+<codeline lineno="188"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Injected<sp/>channel<sp/>data<sp/>offset<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_JOFR_JOFFSET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x3FF</highlight></codeline>
+<codeline lineno="192"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Watchdog<sp/>high<sp/>threshold<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_HTR_HT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x3FF</highlight></codeline>
+<codeline lineno="196"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Watchdog<sp/>low<sp/>threshold<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_LTR_LT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x3FF</highlight></codeline>
+<codeline lineno="200"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Regular<sp/>sequence<sp/>register<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_SQR1_L<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1F<sp/>&lt;&lt;<sp/>20)</highlight></codeline>
+<codeline lineno="204"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SQR1_SQ16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1F<sp/>&lt;&lt;<sp/>15)</highlight></codeline>
+<codeline lineno="205"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SQR1_SQ15<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1F<sp/>&lt;&lt;<sp/>10)</highlight></codeline>
+<codeline lineno="206"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SQR1_SQ14<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1F<sp/>&lt;&lt;<sp/>5)</highlight></codeline>
+<codeline lineno="207"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SQR1_SQ13<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1F</highlight></codeline>
+<codeline lineno="208"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Regular<sp/>sequence<sp/>register<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_SQR2_SQ12<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1F<sp/>&lt;&lt;<sp/>25)</highlight></codeline>
+<codeline lineno="212"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SQR2_SQ11<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1F<sp/>&lt;&lt;<sp/>20)</highlight></codeline>
+<codeline lineno="213"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SQR2_SQ10<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1F<sp/>&lt;&lt;<sp/>16)</highlight></codeline>
+<codeline lineno="214"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SQR2_SQ9<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1F<sp/>&lt;&lt;<sp/>10)</highlight></codeline>
+<codeline lineno="215"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SQR2_SQ8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1F<sp/>&lt;&lt;<sp/>5)</highlight></codeline>
+<codeline lineno="216"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SQR2_SQ7<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1F</highlight></codeline>
+<codeline lineno="217"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Regular<sp/>sequence<sp/>register<sp/>3<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_SQR3_SQ6<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1F<sp/>&lt;&lt;<sp/>25)</highlight></codeline>
+<codeline lineno="221"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SQR3_SQ5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1F<sp/>&lt;&lt;<sp/>20)</highlight></codeline>
+<codeline lineno="222"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SQR3_SQ4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1F<sp/>&lt;&lt;<sp/>16)</highlight></codeline>
+<codeline lineno="223"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SQR3_SQ3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1F<sp/>&lt;&lt;<sp/>10)</highlight></codeline>
+<codeline lineno="224"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SQR3_SQ2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1F<sp/>&lt;&lt;<sp/>5)</highlight></codeline>
+<codeline lineno="225"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_SQR3_SQ1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1F</highlight></codeline>
+<codeline lineno="226"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Injected<sp/>sequence<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_JSQR_JL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x3<sp/>&lt;&lt;<sp/>20)</highlight></codeline>
+<codeline lineno="230"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_JSQR_JL_1CONV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0<sp/>&lt;&lt;<sp/>20)</highlight></codeline>
+<codeline lineno="231"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_JSQR_JL_2CONV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1<sp/>&lt;&lt;<sp/>20)</highlight></codeline>
+<codeline lineno="232"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_JSQR_JL_3CONV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x2<sp/>&lt;&lt;<sp/>20)</highlight></codeline>
+<codeline lineno="233"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_JSQR_JL_4CONV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x3<sp/>&lt;&lt;<sp/>20)</highlight></codeline>
+<codeline lineno="234"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_JSQR_JSQ4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1F<sp/>&lt;&lt;<sp/>15)</highlight></codeline>
+<codeline lineno="235"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_JSQR_JSQ3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1F<sp/>&lt;&lt;<sp/>10)</highlight></codeline>
+<codeline lineno="236"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_JSQR_JSQ2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1F<sp/>&lt;&lt;<sp/>5)</highlight></codeline>
+<codeline lineno="237"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_JSQR_JSQ1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1F</highlight></codeline>
+<codeline lineno="238"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Injected<sp/>data<sp/>registers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_JDR_JDATA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xFFFF</highlight></codeline>
+<codeline lineno="242"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Regular<sp/>data<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_DR_ADC2DATA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xFFFF<sp/>&lt;&lt;<sp/>16)</highlight></codeline>
+<codeline lineno="246"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ADC_DR_DATA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xFFFF</highlight></codeline>
+<codeline lineno="247"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="adc_8c_1a8d588cf22e19f5fc152d509d9b654d40" kindref="member" tooltip="Initialize an ADC peripheral.">adc_init</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref><sp/>*dev);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254" refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0f" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0f" kindref="member" tooltip="External event selector for regular group conversion.">adc_extsel_event</ref><sp/>{</highlight></codeline>
+<codeline lineno="255" refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fac87b0264e0c4332f1ed77aa76a422640" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fac87b0264e0c4332f1ed77aa76a422640" kindref="member" tooltip="ADC1 and ADC2: Timer 1 CC1 event.">ADC_ADC12_TIM1_CC1</ref><sp/><sp/>=<sp/>(0<sp/>&lt;&lt;<sp/>17),<sp/></highlight></codeline>
+<codeline lineno="256" refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa54a2ff6fd59a577ef6cd8e72219c06b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa54a2ff6fd59a577ef6cd8e72219c06b9" kindref="member" tooltip="ADC1 and ADC2: Timer 1 CC2 event.">ADC_ADC12_TIM1_CC2</ref><sp/><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>17),<sp/></highlight></codeline>
+<codeline lineno="257" refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0faed8c287c3084a8a9265feb06bc4d003e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0faed8c287c3084a8a9265feb06bc4d003e" kindref="member" tooltip="ADC1 and ADC2: Timer 1 CC3 event.">ADC_ADC12_TIM1_CC3</ref><sp/><sp/>=<sp/>(2<sp/>&lt;&lt;<sp/>17),<sp/></highlight></codeline>
+<codeline lineno="258" refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa55a35d34f56c8f00767feb4a1a747fb0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa55a35d34f56c8f00767feb4a1a747fb0" kindref="member" tooltip="ADC1 and ADC2: Timer 2 CC2 event.">ADC_ADC12_TIM2_CC2</ref><sp/><sp/>=<sp/>(3<sp/>&lt;&lt;<sp/>17),<sp/></highlight></codeline>
+<codeline lineno="259" refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa4bdca0f4494a6a1a8eec0336deb4cf67" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa4bdca0f4494a6a1a8eec0336deb4cf67" kindref="member" tooltip="ADC1 and ADC2: Timer 3 TRGO event.">ADC_ADC12_TIM3_TRGO</ref><sp/>=<sp/>(4<sp/>&lt;&lt;<sp/>17),<sp/></highlight></codeline>
+<codeline lineno="260" refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa13cb7e15dc32da1b301250e1ad2a16ce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa13cb7e15dc32da1b301250e1ad2a16ce" kindref="member" tooltip="ADC1 and ADC2: Timer 4 CC4 event.">ADC_ADC12_TIM4_CC4</ref><sp/><sp/>=<sp/>(5<sp/>&lt;&lt;<sp/>17),<sp/></highlight></codeline>
+<codeline lineno="261" refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0faf745c63ec8382d581dde4b069d0852e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0faf745c63ec8382d581dde4b069d0852e0" kindref="member" tooltip="ADC1 and ADC2: EXTI11 event.">ADC_ADC12_EXTI11</ref><sp/><sp/><sp/><sp/>=<sp/>(6<sp/>&lt;&lt;<sp/>17),<sp/></highlight></codeline>
+<codeline lineno="262"><highlight class="normal">#ifdef<sp/>STM32_HIGH_DENSITY</highlight></codeline>
+<codeline lineno="263" refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0faf41233b17fcb2c642a3a00c982d2ae10" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0faf41233b17fcb2c642a3a00c982d2ae10" kindref="member" tooltip="ADC1 and ADC2: Timer 8 TRGO event (high density only)">ADC_ADC12_TIM8_TRGO</ref><sp/>=<sp/>(6<sp/>&lt;&lt;<sp/>17),<sp/></highlight></codeline>
+<codeline lineno="265"><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="266" refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa33d60aa3323afa7b561fa1407d28684e" refkind="member"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa33d60aa3323afa7b561fa1407d28684e" kindref="member" tooltip="ADC1 and ADC2: Software start.">ADC_ADC12_SWSTART</ref><sp/><sp/><sp/>=<sp/>(7<sp/>&lt;&lt;<sp/>17),<sp/></highlight></codeline>
+<codeline lineno="267"><highlight class="normal">#ifdef<sp/>STM32_HIGH_DENSITY</highlight></codeline>
+<codeline lineno="268" refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0faf25d06edd5feb79db5cfc20dfae9c3b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0faf25d06edd5feb79db5cfc20dfae9c3b9" kindref="member" tooltip="ADC3: Timer 3 CC1 event (high density only)">ADC_ADC3_TIM3_CC1</ref><sp/><sp/><sp/>=<sp/>(0<sp/>&lt;&lt;<sp/>17),<sp/></highlight></codeline>
+<codeline lineno="270" refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa6eeed7d25fef7626de9cd14f2ddbafe4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa6eeed7d25fef7626de9cd14f2ddbafe4" kindref="member" tooltip="ADC3: Timer 2 CC3 event (high density only)">ADC_ADC3_TIM2_CC3</ref><sp/><sp/><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>17),<sp/></highlight></codeline>
+<codeline lineno="272" refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa150dd59f4ecf8f366b9511b464c4a9d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa150dd59f4ecf8f366b9511b464c4a9d8" kindref="member" tooltip="ADC3: Timer 1 CC3 event (high density only)">ADC_ADC3_TIM1_CC3</ref><sp/><sp/><sp/>=<sp/>(2<sp/>&lt;&lt;<sp/>17),<sp/></highlight></codeline>
+<codeline lineno="274" refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fac146fde9640dea92a80bcd1b50af6ee6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fac146fde9640dea92a80bcd1b50af6ee6" kindref="member" tooltip="ADC3: Timer 8 CC1 event (high density only)">ADC_ADC3_TIM8_CC1</ref><sp/><sp/><sp/>=<sp/>(3<sp/>&lt;&lt;<sp/>17),<sp/></highlight></codeline>
+<codeline lineno="276" refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fadc7ad30125327e3aeb51789f67f7a1ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fadc7ad30125327e3aeb51789f67f7a1ef" kindref="member" tooltip="ADC3: Timer 8 TRGO event (high density only)">ADC_ADC3_TIM8_TRGO</ref><sp/><sp/>=<sp/>(4<sp/>&lt;&lt;<sp/>17),<sp/></highlight></codeline>
+<codeline lineno="278" refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa2ec0ccb450c403f1452c8d6d065b97ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa2ec0ccb450c403f1452c8d6d065b97ca" kindref="member" tooltip="ADC3: Timer 5 CC1 event (high density only)">ADC_ADC3_TIM5_CC1</ref><sp/><sp/><sp/>=<sp/>(5<sp/>&lt;&lt;<sp/>17),<sp/></highlight></codeline>
+<codeline lineno="280" refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa1a97366e6abfe4d32c7abc1932848191" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fa1a97366e6abfe4d32c7abc1932848191" kindref="member" tooltip="ADC3: Timer 5 CC3 event (high density only)">ADC_ADC3_TIM5_CC3</ref><sp/><sp/><sp/>=<sp/>(6<sp/>&lt;&lt;<sp/>17),<sp/></highlight></codeline>
+<codeline lineno="282" refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0faa36d26045935430c69b1aebbd60ae2de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0faa36d26045935430c69b1aebbd60ae2de" kindref="member" tooltip="ADC3: Software start (high density only)">ADC_ADC3_SWSTART</ref><sp/><sp/><sp/><sp/>=<sp/>(7<sp/>&lt;&lt;<sp/>17),<sp/></highlight></codeline>
+<codeline lineno="284"><highlight class="normal">#endif</highlight></codeline>
+<codeline lineno="285" refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fad03943b5b2226b71562a1a7432c4e566" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0fad03943b5b2226b71562a1a7432c4e566" kindref="member" tooltip="ADC1, ADC2, ADC3: Software start.">ADC_SWSTART</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(7<sp/>&lt;&lt;<sp/>17)<sp/></highlight></codeline>
+<codeline lineno="286"><highlight class="normal">}<sp/><ref refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0f" kindref="member" tooltip="External event selector for regular group conversion.">adc_extsel_event</ref>;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="adc_8c_1a8e63e11beaf9d04b92fd21b728e2aa18" kindref="member" tooltip="Set external event select for regular group.">adc_set_extsel</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref><sp/>*dev,<sp/><ref refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0f" kindref="member" tooltip="External event selector for regular group conversion.">adc_extsel_event</ref><sp/>event);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="adc_8c_1adb49446435db6389c73ec4a422b5d09d" kindref="member" tooltip="Call a function on all ADC devices.">adc_foreach</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*fn)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref>*));</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296" refid="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="297" refid="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519a8960b21c3df0cc0ed2de91bf5120f145" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519a8960b21c3df0cc0ed2de91bf5120f145" kindref="member" tooltip="1.5 ADC cycles">ADC_SMPR_1_5</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="298" refid="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519a36dfd5141483e6bff1b386a4f4cea3c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519a36dfd5141483e6bff1b386a4f4cea3c3" kindref="member" tooltip="7.5 ADC cycles">ADC_SMPR_7_5</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="299" refid="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519a4901b11600487c84e02d10dfd14fd21d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519a4901b11600487c84e02d10dfd14fd21d" kindref="member" tooltip="13.5 ADC cycles">ADC_SMPR_13_5</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="300" refid="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519ac7ae1dad6125be16d5e14c320f869879" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519ac7ae1dad6125be16d5e14c320f869879" kindref="member" tooltip="28.5 ADC cycles">ADC_SMPR_28_5</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="301" refid="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519aadda9d8455869251a5b48a752c1e0d48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519aadda9d8455869251a5b48a752c1e0d48" kindref="member" tooltip="41.5 ADC cycles">ADC_SMPR_41_5</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="302" refid="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519a301ae4ab61d86eadddb8fe884f7a0fd0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519a301ae4ab61d86eadddb8fe884f7a0fd0" kindref="member" tooltip="55.5 ADC cycles">ADC_SMPR_55_5</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="303" refid="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519aca11b5238a38ff48ee3dd7364a0db3ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519aca11b5238a38ff48ee3dd7364a0db3ae" kindref="member" tooltip="71.5 ADC cycles">ADC_SMPR_71_5</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="304" refid="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519a2c14c457ed2f2874d77707894ac7bb6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519a2c14c457ed2f2874d77707894ac7bb6a" kindref="member" tooltip="239.5 ADC cycles">ADC_SMPR_239_5</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="305"><highlight class="normal">}<sp/><ref refid="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519" kindref="member" tooltip="ADC sample times, in ADC clock cycles.">adc_smp_rate</ref>;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="adc_8c_1a6ccbc8e99ac38893b04d7995631e0473" kindref="member" tooltip="Turn the given sample rate into values for ADC_SMPRx.">adc_set_sample_rate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref><sp/>*dev,<sp/><ref refid="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519" kindref="member" tooltip="ADC sample times, in ADC clock cycles.">adc_smp_rate</ref><sp/>smp_rate);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="adc_8c_1afba48cea90f600c2e7c7c4764c8a1582" kindref="member" tooltip="Calibrate an ADC peripheral.">adc_calibrate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref><sp/>*dev);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal">uint16<sp/><ref refid="adc_8c_1a6fecdfa52f889c14238f0631582f88a9" kindref="member" tooltip="Perform a single synchronous software triggered conversion on a channel.">adc_read</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref><sp/>*dev,<sp/>uint8<sp/>channel);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320" refid="adc_8h_1a126f43fe7e241b944d2192ddfa637373" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="adc_8h_1a126f43fe7e241b944d2192ddfa637373" kindref="member" tooltip="Set the regular channel sequence length.">adc_set_reg_seqlen</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref><sp/>*dev,<sp/>uint8<sp/>length)<sp/>{</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>tmp<sp/>=<sp/>dev-&gt;<ref refid="structadc__dev_1a05f4fc782026e3b163ba49b771d8ab9f" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structadc__reg__map_1abf9ae5ccaf187b92844015dbe5d0e854" kindref="member" tooltip="Regular sequence register 1.">SQR1</ref>;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp<sp/>&amp;=<sp/>~ADC_SQR1_L;</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp<sp/>|=<sp/>(length<sp/>-<sp/>1)<sp/>&lt;&lt;<sp/>20;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>dev-&gt;<ref refid="structadc__dev_1a05f4fc782026e3b163ba49b771d8ab9f" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structadc__reg__map_1abf9ae5ccaf187b92844015dbe5d0e854" kindref="member" tooltip="Regular sequence register 1.">SQR1</ref><sp/>=<sp/>tmp;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333" refid="adc_8h_1ab4d49de3b0180f9e637c944ea51987e2" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="adc_8h_1ab4d49de3b0180f9e637c944ea51987e2" kindref="member" tooltip="Set external trigger conversion mode event for regular channels.">adc_set_exttrig</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref><sp/>*dev,<sp/>uint8<sp/>enable)<sp/>{</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="bitband_8h_1a090d1c0629caa58e2e783578591378d5" kindref="member" tooltip="Obtain a pointer to the bit-band address corresponding to a bit in a peripheral address.">bb_perip</ref>(&amp;dev-&gt;<ref refid="structadc__dev_1a05f4fc782026e3b163ba49b771d8ab9f" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structadc__reg__map_1a5a59370540ebbf41d1a05ce5645ff1e6" kindref="member" tooltip="Control register 2.">CR2</ref>,<sp/>ADC_CR2_EXTTRIG_BIT)<sp/>=<sp/>!!enable;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341" refid="adc_8h_1a39c14342d4f5e841505ecb4d4a2da715" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="adc_8h_1a39c14342d4f5e841505ecb4d4a2da715" kindref="member" tooltip="Enable an adc peripheral.">adc_enable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="bitband_8h_1a090d1c0629caa58e2e783578591378d5" kindref="member" tooltip="Obtain a pointer to the bit-band address corresponding to a bit in a peripheral address.">bb_perip</ref>(&amp;dev-&gt;<ref refid="structadc__dev_1a05f4fc782026e3b163ba49b771d8ab9f" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structadc__reg__map_1a5a59370540ebbf41d1a05ce5645ff1e6" kindref="member" tooltip="Control register 2.">CR2</ref>,<sp/>ADC_CR2_ADON_BIT)<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="343"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349" refid="adc_8h_1a4dfb1445a8e14d620d32673da4b3dde4" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="adc_8h_1a4dfb1445a8e14d620d32673da4b3dde4" kindref="member" tooltip="Disable an ADC peripheral.">adc_disable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="bitband_8h_1a090d1c0629caa58e2e783578591378d5" kindref="member" tooltip="Obtain a pointer to the bit-band address corresponding to a bit in a peripheral address.">bb_perip</ref>(&amp;dev-&gt;<ref refid="structadc__dev_1a05f4fc782026e3b163ba49b771d8ab9f" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structadc__reg__map_1a5a59370540ebbf41d1a05ce5645ff1e6" kindref="member" tooltip="Control register 2.">CR2</ref>,<sp/>ADC_CR2_ADON_BIT)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356" refid="adc_8h_1a4478bc9acdba36e0bbc026221996f538" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="adc_8h_1a4478bc9acdba36e0bbc026221996f538" kindref="member" tooltip="Disable all ADC peripherals.">adc_disable_all</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8c_1adb49446435db6389c73ec4a422b5d09d" kindref="member" tooltip="Call a function on all ADC devices.">adc_foreach</ref>(<ref refid="adc_8h_1a4dfb1445a8e14d620d32673da4b3dde4" kindref="member" tooltip="Disable an ADC peripheral.">adc_disable</ref>);</highlight></codeline>
+<codeline lineno="358"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="361"><highlight class="preprocessor"></highlight><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>extern<sp/>&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="363"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h"/>
+  </compounddef>
+</doxygen>

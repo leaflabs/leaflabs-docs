@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="iwdg_8c" kind="file">
+    <compoundname>iwdg.c</compoundname>
+    <includes refid="iwdg_8h" local="yes">iwdg.h</includes>
+    <incdepgraph>
+      <node id="270">
+        <label>libmaple/iwdg.c</label>
+        <link refid="iwdg.c"/>
+        <childnode refid="271" relation="include">
+        </childnode>
+      </node>
+      <node id="271">
+        <label>iwdg.h</label>
+        <link refid="iwdg_8h"/>
+        <childnode refid="272" relation="include">
+        </childnode>
+        <childnode refid="273" relation="include">
+        </childnode>
+      </node>
+      <node id="272">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="273">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="272" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="iwdg_8c_1acc17f5f8847727c5933d2a89bf44211e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void iwdg_init</definition>
+        <argsstring>(iwdg_prescaler prescaler, uint16 reload)</argsstring>
+        <name>iwdg_init</name>
+        <param>
+          <type><ref refid="iwdg_8h_1a84e249a1ddf068387f47dd55ef0cd2a5" kindref="member">iwdg_prescaler</ref></type>
+          <declname>prescaler</declname>
+        </param>
+        <param>
+          <type>uint16</type>
+          <declname>reload</declname>
+        </param>
+        <briefdescription>
+<para>Initialise and start the watchdog. </para>        </briefdescription>
+        <detaileddescription>
+<para>The prescaler and reload set the timeout. For example, a prescaler of IWDG_PRE_32 divides the 40 kHz clock by 32 and gives roughly 1 ms per reload.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prescaler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Prescaler for the 40 kHz IWDG clock. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>reload</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Independent watchdog counter reload value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/iwdg.c" line="44" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/iwdg.c" bodystart="44" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="iwdg_8c_1ac2029cb0a470321a0fc31790d5e6aa5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void iwdg_feed</definition>
+        <argsstring>(void)</argsstring>
+        <name>iwdg_feed</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Reset the IWDG counter. </para>        </briefdescription>
+        <detaileddescription>
+<para>Calling this function will cause the IWDG counter to be reset to its reload value. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/iwdg.c" line="60" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/iwdg.c" bodystart="60" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Independent watchdog (IWDG) support. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Michael<sp/>Hope.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="iwdg_8h" kindref="compound" tooltip="Independent watchdog support.">iwdg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="iwdg_8h_1acc17f5f8847727c5933d2a89bf44211e" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="iwdg_8c_1acc17f5f8847727c5933d2a89bf44211e" kindref="member" tooltip="Initialise and start the watchdog.">iwdg_init</ref>(<ref refid="iwdg_8h_1a84e249a1ddf068387f47dd55ef0cd2a5" kindref="member" tooltip="Independent watchdog prescalers.">iwdg_prescaler</ref><sp/>prescaler,<sp/>uint16<sp/>reload)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><ref refid="iwdg_8h_1a8543ee4997296af5536b007cd4748f55" kindref="member" tooltip="Independent watchdog base pointer.">IWDG_BASE</ref>-&gt;KR<sp/>=<sp/>IWDG_KR_UNLOCK;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><ref refid="iwdg_8h_1a8543ee4997296af5536b007cd4748f55" kindref="member" tooltip="Independent watchdog base pointer.">IWDG_BASE</ref>-&gt;PR<sp/>=<sp/>prescaler;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><ref refid="iwdg_8h_1a8543ee4997296af5536b007cd4748f55" kindref="member" tooltip="Independent watchdog base pointer.">IWDG_BASE</ref>-&gt;RLR<sp/>=<sp/>reload;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Start<sp/>things<sp/>off<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><ref refid="iwdg_8h_1a8543ee4997296af5536b007cd4748f55" kindref="member" tooltip="Independent watchdog base pointer.">IWDG_BASE</ref>-&gt;KR<sp/>=<sp/>IWDG_KR_START;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><ref refid="iwdg_8c_1ac2029cb0a470321a0fc31790d5e6aa5e" kindref="member" tooltip="Reset the IWDG counter.">iwdg_feed</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="iwdg_8h_1ac2029cb0a470321a0fc31790d5e6aa5e" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="iwdg_8c_1ac2029cb0a470321a0fc31790d5e6aa5e" kindref="member" tooltip="Reset the IWDG counter.">iwdg_feed</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="iwdg_8h_1a8543ee4997296af5536b007cd4748f55" kindref="member" tooltip="Independent watchdog base pointer.">IWDG_BASE</ref>-&gt;KR<sp/>=<sp/>IWDG_KR_FEED;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/iwdg.c"/>
+  </compounddef>
+</doxygen>

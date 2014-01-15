@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="struct_d_e_v_i_c_e___i_n_f_o" kind="struct" prot="public">
+    <compoundname>DEVICE_INFO</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_d_e_v_i_c_e___i_n_f_o_1a61e66da94a8bd82d23c394b1043b1bf6" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 DEVICE_INFO::USBbmRequestType</definition>
+        <argsstring></argsstring>
+        <name>USBbmRequestType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="112" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_e_v_i_c_e___i_n_f_o_1a908462442dbc7527cbfcc550ea5084dd" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 DEVICE_INFO::USBbRequest</definition>
+        <argsstring></argsstring>
+        <name>USBbRequest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="113" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_e_v_i_c_e___i_n_f_o_1a0ea3520d273e0db5a011fdc838c59720" prot="public" static="no" mutable="no">
+        <type><ref refid="unionu16__u8" kindref="compound">u16_u8</ref></type>
+        <definition>u16_u8 DEVICE_INFO::USBwValues</definition>
+        <argsstring></argsstring>
+        <name>USBwValues</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="114" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_e_v_i_c_e___i_n_f_o_1ad36435e05c5d45497c35c1bd252622c4" prot="public" static="no" mutable="no">
+        <type><ref refid="unionu16__u8" kindref="compound">u16_u8</ref></type>
+        <definition>u16_u8 DEVICE_INFO::USBwIndexs</definition>
+        <argsstring></argsstring>
+        <name>USBwIndexs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="115" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_e_v_i_c_e___i_n_f_o_1a80ed49cab97aef2ccb43fea5ba960459" prot="public" static="no" mutable="no">
+        <type><ref refid="unionu16__u8" kindref="compound">u16_u8</ref></type>
+        <definition>u16_u8 DEVICE_INFO::USBwLengths</definition>
+        <argsstring></argsstring>
+        <name>USBwLengths</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="116" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_e_v_i_c_e___i_n_f_o_1acaaec0215b612ca69b8fba4a8695d986" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 DEVICE_INFO::ControlState</definition>
+        <argsstring></argsstring>
+        <name>ControlState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="118" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_e_v_i_c_e___i_n_f_o_1a1a312cf4f8204a3ba9c80d731fb76cf9" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 DEVICE_INFO::Current_Feature</definition>
+        <argsstring></argsstring>
+        <name>Current_Feature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="119" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_e_v_i_c_e___i_n_f_o_1a268af2bfdd1c7ee19158dd413fbbfa70" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 DEVICE_INFO::Current_Configuration</definition>
+        <argsstring></argsstring>
+        <name>Current_Configuration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="120" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_e_v_i_c_e___i_n_f_o_1aa7d8d4ea8428a4c5e0640bce73aa7419" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 DEVICE_INFO::Current_Interface</definition>
+        <argsstring></argsstring>
+        <name>Current_Interface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="121" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_e_v_i_c_e___i_n_f_o_1aeeca699e43146bf71f1bbed0f7394c3c" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 DEVICE_INFO::Current_AlternateSetting</definition>
+        <argsstring></argsstring>
+        <name>Current_AlternateSetting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="122" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_d_e_v_i_c_e___i_n_f_o_1ae82609da2d44151c07a131f142580f86" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_e_n_d_p_o_i_n_t___i_n_f_o" kindref="compound">ENDPOINT_INFO</ref></type>
+        <definition>ENDPOINT_INFO DEVICE_INFO::Ctrl_Info</definition>
+        <argsstring></argsstring>
+        <name>Ctrl_Info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="125" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="27">
+        <label>ENDPOINT_INFO</label>
+        <link refid="struct_e_n_d_p_o_i_n_t___i_n_f_o"/>
+      </node>
+      <node id="26">
+        <label>DEVICE_INFO</label>
+        <link refid="struct_d_e_v_i_c_e___i_n_f_o"/>
+        <childnode refid="27" relation="usage">
+          <edgelabel>Ctrl_Info</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>USBwIndexs</edgelabel>
+          <edgelabel>USBwValues</edgelabel>
+          <edgelabel>USBwLengths</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>u16_u8::BW</label>
+        <link refid="structu16__u8_1_1_b_w"/>
+      </node>
+      <node id="28">
+        <label>u16_u8</label>
+        <link refid="unionu16__u8"/>
+        <childnode refid="29" relation="usage">
+          <edgelabel>bw</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" line="111" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_core.h" bodystart="110" bodyend="126"/>
+    <listofallmembers>
+      <member refid="struct_d_e_v_i_c_e___i_n_f_o_1acaaec0215b612ca69b8fba4a8695d986" prot="public" virt="non-virtual"><scope>DEVICE_INFO</scope><name>ControlState</name></member>
+      <member refid="struct_d_e_v_i_c_e___i_n_f_o_1ae82609da2d44151c07a131f142580f86" prot="public" virt="non-virtual"><scope>DEVICE_INFO</scope><name>Ctrl_Info</name></member>
+      <member refid="struct_d_e_v_i_c_e___i_n_f_o_1aeeca699e43146bf71f1bbed0f7394c3c" prot="public" virt="non-virtual"><scope>DEVICE_INFO</scope><name>Current_AlternateSetting</name></member>
+      <member refid="struct_d_e_v_i_c_e___i_n_f_o_1a268af2bfdd1c7ee19158dd413fbbfa70" prot="public" virt="non-virtual"><scope>DEVICE_INFO</scope><name>Current_Configuration</name></member>
+      <member refid="struct_d_e_v_i_c_e___i_n_f_o_1a1a312cf4f8204a3ba9c80d731fb76cf9" prot="public" virt="non-virtual"><scope>DEVICE_INFO</scope><name>Current_Feature</name></member>
+      <member refid="struct_d_e_v_i_c_e___i_n_f_o_1aa7d8d4ea8428a4c5e0640bce73aa7419" prot="public" virt="non-virtual"><scope>DEVICE_INFO</scope><name>Current_Interface</name></member>
+      <member refid="struct_d_e_v_i_c_e___i_n_f_o_1a61e66da94a8bd82d23c394b1043b1bf6" prot="public" virt="non-virtual"><scope>DEVICE_INFO</scope><name>USBbmRequestType</name></member>
+      <member refid="struct_d_e_v_i_c_e___i_n_f_o_1a908462442dbc7527cbfcc550ea5084dd" prot="public" virt="non-virtual"><scope>DEVICE_INFO</scope><name>USBbRequest</name></member>
+      <member refid="struct_d_e_v_i_c_e___i_n_f_o_1ad36435e05c5d45497c35c1bd252622c4" prot="public" virt="non-virtual"><scope>DEVICE_INFO</scope><name>USBwIndexs</name></member>
+      <member refid="struct_d_e_v_i_c_e___i_n_f_o_1a80ed49cab97aef2ccb43fea5ba960459" prot="public" virt="non-virtual"><scope>DEVICE_INFO</scope><name>USBwLengths</name></member>
+      <member refid="struct_d_e_v_i_c_e___i_n_f_o_1a0ea3520d273e0db5a011fdc838c59720" prot="public" virt="non-virtual"><scope>DEVICE_INFO</scope><name>USBwValues</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

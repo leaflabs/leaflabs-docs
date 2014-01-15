@@ -1,0 +1,614 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="descriptors_8h" kind="file">
+    <compoundname>descriptors.h</compoundname>
+    <includes refid="libmaple_8h" local="yes">libmaple.h</includes>
+    <includes refid="usb__lib_8h" local="yes">usb_lib.h</includes>
+    <includedby refid="descriptors_8c" local="yes">libmaple/usb/descriptors.c</includedby>
+    <includedby refid="usb__callbacks_8c" local="yes">libmaple/usb/usb_callbacks.c</includedby>
+    <incdepgraph>
+      <node id="706">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="705">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="715">
+        <label>usb_mem.h</label>
+        <link refid="usb__mem_8h_source"/>
+      </node>
+      <node id="710">
+        <label>usb_type.h</label>
+        <link refid="usb__type_8h_source"/>
+      </node>
+      <node id="716">
+        <label>usb_int.h</label>
+        <link refid="usb__int_8h_source"/>
+      </node>
+      <node id="704">
+        <label>libmaple.h</label>
+        <link refid="libmaple_8h"/>
+        <childnode refid="705" relation="include">
+        </childnode>
+        <childnode refid="706" relation="include">
+        </childnode>
+        <childnode refid="707" relation="include">
+        </childnode>
+        <childnode refid="708" relation="include">
+        </childnode>
+      </node>
+      <node id="709">
+        <label>usb_lib.h</label>
+        <link refid="usb__lib_8h_source"/>
+        <childnode refid="710" relation="include">
+        </childnode>
+        <childnode refid="711" relation="include">
+        </childnode>
+        <childnode refid="712" relation="include">
+        </childnode>
+        <childnode refid="713" relation="include">
+        </childnode>
+        <childnode refid="714" relation="include">
+        </childnode>
+        <childnode refid="715" relation="include">
+        </childnode>
+        <childnode refid="716" relation="include">
+        </childnode>
+      </node>
+      <node id="714">
+        <label>usb_init.h</label>
+        <link refid="usb__init_8h_source"/>
+      </node>
+      <node id="712">
+        <label>usb_def.h</label>
+        <link refid="usb__def_8h_source"/>
+      </node>
+      <node id="713">
+        <label>usb_core.h</label>
+        <link refid="usb__core_8h_source"/>
+      </node>
+      <node id="708">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="705" relation="include">
+        </childnode>
+        <childnode refid="706" relation="include">
+        </childnode>
+      </node>
+      <node id="711">
+        <label>usb_regs.h</label>
+        <link refid="usb__regs_8h_source"/>
+      </node>
+      <node id="707">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="705" relation="include">
+        </childnode>
+      </node>
+      <node id="703">
+        <label>libmaple/usb/descriptors.h</label>
+        <link refid="descriptors.h"/>
+        <childnode refid="704" relation="include">
+        </childnode>
+        <childnode refid="709" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="718">
+        <label>libmaple/usb/descriptors.c</label>
+        <link refid="descriptors_8c_source"/>
+      </node>
+      <node id="717">
+        <label>libmaple/usb/descriptors.h</label>
+        <link refid="descriptors.h"/>
+        <childnode refid="718" relation="include">
+        </childnode>
+        <childnode refid="719" relation="include">
+        </childnode>
+      </node>
+      <node id="719">
+        <label>libmaple/usb/usb_callbacks.c</label>
+        <link refid="usb__callbacks_8c_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_u_s_b___descriptor___device" prot="public">USB_Descriptor_Device</innerclass>
+    <innerclass refid="struct_u_s_b___descriptor___config___header" prot="public">USB_Descriptor_Config_Header</innerclass>
+    <innerclass refid="struct_u_s_b___descriptor___interface" prot="public">USB_Descriptor_Interface</innerclass>
+    <innerclass refid="struct_u_s_b___descriptor___endpoint" prot="public">USB_Descriptor_Endpoint</innerclass>
+    <innerclass refid="struct_u_s_b___descriptor___config" prot="public">USB_Descriptor_Config</innerclass>
+    <innerclass refid="struct_u_s_b___descriptor___string" prot="public">USB_Descriptor_String</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="descriptors_8h_1ad626719e50aaddf936b5b56d4fc16e29" prot="public" static="no">
+        <name>USB_DESCRIPTOR_TYPE_DEVICE</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="32" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="descriptors_8h_1afceefb752630871e8822805708390d90" prot="public" static="no">
+        <name>USB_DESCRIPTOR_TYPE_CONFIGURATION</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="33" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="descriptors_8h_1a168996008543bd789d456c1f3cfbabb0" prot="public" static="no">
+        <name>USB_DESCRIPTOR_TYPE_STRING</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="34" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="descriptors_8h_1af6a0962df0f465af333de8bd65ce4d16" prot="public" static="no">
+        <name>USB_DESCRIPTOR_TYPE_INTERFACE</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="35" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="descriptors_8h_1a5df151d31a5cfb950e56381cf50545a4" prot="public" static="no">
+        <name>USB_DESCRIPTOR_TYPE_ENDPOINT</name>
+        <initializer>0x05</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="36" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="descriptors_8h_1a09e2e9e1e10c1998e51b0718f90d9356" prot="public" static="no">
+        <name>USB_DEVICE_CLASS_CDC</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="38" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="descriptors_8h_1aa9333d6b0c0a7bfdcd64fc4b347f18f2" prot="public" static="no">
+        <name>USB_DEVICE_SUBCLASS_CDC</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="39" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="descriptors_8h_1a623891fa43c9dfbbb7c27990cdba5ea4" prot="public" static="no">
+        <name>USB_CONFIG_ATTR_BUSPOWERED</name>
+        <initializer>0b10000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="41" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="descriptors_8h_1af1b445db8c331630bbedb383544ed80b" prot="public" static="no">
+        <name>USB_CONFIG_ATTR_SELF_POWERED</name>
+        <initializer>0b11000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="42" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="descriptors_8h_1aca8e10a5688781c86e0317b63d06ecb8" prot="public" static="no">
+        <name>EP_TYPE_INTERRUPT</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="44" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="descriptors_8h_1a07d9641305bdb74348ed3f7d063d2eb5" prot="public" static="no">
+        <name>EP_TYPE_BULK</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="45" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="descriptors_8h_1afa2f5b8540120ec76f4aa3737b2f5413" prot="public" static="no">
+        <name>USB_DESCRIPTOR_ENDPOINT_IN</name>
+        <initializer>0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="47" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="descriptors_8h_1a5648fcb0de69a06c7191319b5e0b95ad" prot="public" static="no">
+        <name>USB_DESCRIPTOR_ENDPOINT_OUT</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="48" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="descriptors_8h_1ad8695d5b049665465cc962b943c098f6" prot="public" static="no">
+        <name>USB_DESCRIPTOR_STRING_LEN</name>
+        <param><defname>x</defname></param>
+        <initializer>(2 + (x &lt;&lt; 1))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="50" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="descriptors_8h_1ab8119f334d5f6a10a343b9a29b76b059" prot="public" static="no">
+        <name>USB_DESCRIPTOR_STRING</name>
+        <param><defname>len</defname></param>
+        <initializer>struct {					\
+    uint8 bLength;				\
+    uint8 bDescriptorType;			\
+    uint16 bString[len];			\
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="62" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="descriptors_8h_1aee2d8540f3eb477f6700244215bd8f59" prot="public" static="no">
+        <name>CDC_FUNCTIONAL_DESCRIPTOR</name>
+        <param><defname>DataSize</defname></param>
+        <initializer>struct					\
+  {						\
+    uint8 bLength;				\
+    uint8 bDescriptorType;			\
+    uint8 SubType;				\
+    uint8 Data[DataSize];			\
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="71" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="descriptors_8h_1a0ef3c251df293cc72fc880ad9b530fea" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_u_s_b___descriptor___device" kindref="compound">USB_Descriptor_Device</ref></type>
+        <definition>const USB_Descriptor_Device usbVcomDescriptor_Device</definition>
+        <argsstring></argsstring>
+        <name>usbVcomDescriptor_Device</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="214" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.c" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="descriptors_8h_1a87b4de734df352ba9244ca12f368025d" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_u_s_b___descriptor___config" kindref="compound">USB_Descriptor_Config</ref></type>
+        <definition>const USB_Descriptor_Config usbVcomDescriptor_Config</definition>
+        <argsstring></argsstring>
+        <name>usbVcomDescriptor_Config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="215" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.c" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="descriptors_8h_1a8985a835cdaa34223c3665d9494d6e29" prot="public" static="no" mutable="no">
+        <type>const uint8</type>
+        <definition>const uint8 usbVcomDescriptor_LangID[USB_DESCRIPTOR_STRING_LEN(1)]</definition>
+        <argsstring>[USB_DESCRIPTOR_STRING_LEN(1)]</argsstring>
+        <name>usbVcomDescriptor_LangID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="217" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.c" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="descriptors_8h_1adf8987872d694e75645c10d9abf964dd" prot="public" static="no" mutable="no">
+        <type>const uint8</type>
+        <definition>const uint8 usbVcomDescriptor_iManufacturer[USB_DESCRIPTOR_STRING_LEN(8)]</definition>
+        <argsstring>[USB_DESCRIPTOR_STRING_LEN(8)]</argsstring>
+        <name>usbVcomDescriptor_iManufacturer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="218" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.c" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="descriptors_8h_1af534f60b7256e56375f2231fad429a2f" prot="public" static="no" mutable="no">
+        <type>const uint8</type>
+        <definition>const uint8 usbVcomDescriptor_iProduct[USB_DESCRIPTOR_STRING_LEN(8)]</definition>
+        <argsstring>[USB_DESCRIPTOR_STRING_LEN(8)]</argsstring>
+        <name>usbVcomDescriptor_iProduct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="219" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.c" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>*****************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>LeafLabs<sp/>LLC.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__DESCRIPTORS_H</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__DESCRIPTORS_H</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libmaple_8h" kindref="compound" tooltip="General include file for libmaple.">libmaple.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;usb_lib.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USB_DESCRIPTOR_TYPE_DEVICE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_DESCRIPTOR_TYPE_CONFIGURATION<sp/>0x02</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_DESCRIPTOR_TYPE_STRING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x03</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_DESCRIPTOR_TYPE_INTERFACE<sp/><sp/><sp/><sp/><sp/>0x04</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_DESCRIPTOR_TYPE_ENDPOINT<sp/><sp/><sp/><sp/><sp/><sp/>0x05</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USB_DEVICE_CLASS_CDC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x02</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_DEVICE_SUBCLASS_CDC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USB_CONFIG_ATTR_BUSPOWERED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0b10000000</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_CONFIG_ATTR_SELF_POWERED<sp/><sp/><sp/><sp/><sp/><sp/>0b11000000</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EP_TYPE_INTERRUPT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x03</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EP_TYPE_BULK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x02</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USB_DESCRIPTOR_ENDPOINT_IN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x80</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_DESCRIPTOR_ENDPOINT_OUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USB_DESCRIPTOR_STRING_LEN(x)<sp/>(2<sp/>+<sp/>(x<sp/>&lt;&lt;<sp/>1))</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__cplusplus)</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USB_DESCRIPTOR_STRING(len)<sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"><sp/><sp/>struct<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>uint8<sp/>bLength;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>uint8<sp/>bDescriptorType;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>uint16<sp/>bString[len];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CDC_FUNCTIONAL_DESCRIPTOR(DataSize)<sp/>\</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"><sp/><sp/>struct<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>uint8<sp/>bLength;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>uint8<sp/>bDescriptorType;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>uint8<sp/>SubType;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>uint8<sp/>Data[DataSize];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="struct_u_s_b___descriptor___device" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bLength;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bDescriptorType;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>uint16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bcdUSB;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bDeviceClass;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bDeviceSubClass;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bDeviceProtocol;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bMaxPacketSize0;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>uint16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>idVendor;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>uint16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>idProduct;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>uint16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bcdDevice;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iManufacturer;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iProduct;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iSerialNumber;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bNumConfigurations;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}<sp/><ref refid="struct_u_s_b___descriptor___device" kindref="compound">USB_Descriptor_Device</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="struct_u_s_b___descriptor___config___header" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bLength;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bDescriptorType;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>uint16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wTotalLength;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bNumInterfaces;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bConfigurationValue;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iConfiguration;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bmAttributes;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bMaxPower;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}<sp/><ref refid="struct_u_s_b___descriptor___config___header" kindref="compound">USB_Descriptor_Config_Header</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="struct_u_s_b___descriptor___interface" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bLength;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bDescriptorType;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bInterfaceNumber;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bAlternateSetting;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bNumEndpoints;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bInterfaceClass;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bInterfaceSubClass;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bInterfaceProtocol;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iInterface;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}<sp/><ref refid="struct_u_s_b___descriptor___interface" kindref="compound">USB_Descriptor_Interface</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="struct_u_s_b___descriptor___endpoint" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bLength;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bDescriptorType;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bEndpointAddress;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bmAttributes;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>uint16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wMaxPacketSize;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bInterval;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}<sp/><ref refid="struct_u_s_b___descriptor___endpoint" kindref="compound">USB_Descriptor_Endpoint</ref>;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="struct_u_s_b___descriptor___config" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>config<sp/>header<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bLength;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bDescriptorType;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>uint16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>wTotalLength;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bNumInterfaces;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bConfigurationValue;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iConfiguration;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bmAttributes;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bMaxPower;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><ref refid="struct_u_s_b___descriptor___interface" kindref="compound">USB_Descriptor_Interface</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CCI_Interface;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>bLength;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>bDescriptorType;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>SubType;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>Data[2];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CDC_Functional_IntHeader;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>bLength;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>bDescriptorType;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>SubType;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>Data[2];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CDC_Functional_CallManagement;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>bLength;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>bDescriptorType;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>SubType;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>Data[1];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CDC_Functional_ACM;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>bLength;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>bDescriptorType;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>SubType;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>Data[2];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CDC_Functional_Union;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="160"><highlight class="comment"><sp/><sp/>USB_Descriptor_Endpoint<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ManagementEndpoint;</highlight></codeline>
+<codeline lineno="161"><highlight class="comment"><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EP1_bLength;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EP1_bDescriptorType;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EP1_bEndpointAddress;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EP1_bmAttributes;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EP1_wMaxPacketSize0;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EP1_wMaxPacketSize1;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EP1_bInterval;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="171"><highlight class="comment"><sp/><sp/>USB_Descriptor_Interface<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DCI_Interface;</highlight></codeline>
+<codeline lineno="172"><highlight class="comment"><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DCI_bLength;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DCI_bDescriptorType;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DCI_bInterfaceNumber;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DCI_bAlternateSetting;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DCI_bNumEndpoints;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DCI_bInterfaceClass;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DCI_bInterfaceSubClass;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DCI_bInterfaceProtocol;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DCI_iInterface;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="185"><highlight class="comment"><sp/><sp/>USB_Descriptor_Endpoint<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DataOutEndpoint;</highlight></codeline>
+<codeline lineno="186"><highlight class="comment"><sp/><sp/>USB_Descriptor_Endpoint<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DataInEndpoint;</highlight></codeline>
+<codeline lineno="187"><highlight class="comment"><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EP2_bLength;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EP2_bDescriptorType;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EP2_bEndpointAddress;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EP2_bmAttributes;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EP2_wMaxPacketSize0;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EP2_wMaxPacketSize1;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EP2_bInterval;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EP3_bLength;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EP3_bDescriptorType;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EP3_bEndpointAddress;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EP3_bmAttributes;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EP3_wMaxPacketSize0;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EP3_wMaxPacketSize1;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EP3_bInterval;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="206"><highlight class="normal">}<ref refid="struct_u_s_b___descriptor___config" kindref="compound">USB_Descriptor_Config</ref>;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="208" refid="struct_u_s_b___descriptor___string" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bLength;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bDescriptorType;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bString[];</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/>}<sp/><ref refid="struct_u_s_b___descriptor___string" kindref="compound">USB_Descriptor_String</ref>;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_u_s_b___descriptor___device" kindref="compound">USB_Descriptor_Device</ref><sp/>usbVcomDescriptor_Device;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_u_s_b___descriptor___config" kindref="compound">USB_Descriptor_Config</ref><sp/>usbVcomDescriptor_Config;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8<sp/>usbVcomDescriptor_LangID[USB_DESCRIPTOR_STRING_LEN(1)];</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8<sp/>usbVcomDescriptor_iManufacturer[USB_DESCRIPTOR_STRING_LEN(8)];</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8<sp/>usbVcomDescriptor_iProduct[USB_DESCRIPTOR_STRING_LEN(8)];</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__cplusplus)</highlight></codeline>
+<codeline lineno="222"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="224"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>__DESCRIPTORS_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h"/>
+  </compounddef>
+</doxygen>

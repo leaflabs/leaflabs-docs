@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="struct_n_v_i_c___type_def" kind="struct" prot="public">
+    <compoundname>NVIC_TypeDef</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_n_v_i_c___type_def_1a72fddbe4ea5b88cd3fc4b93c962792c9" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 NVIC_TypeDef::ISER[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>ISER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="89" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_def_1aeb464fdad6dd6c6356d4dc6c0aed3be4" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 NVIC_TypeDef::RESERVED0[30]</definition>
+        <argsstring>[30]</argsstring>
+        <name>RESERVED0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="90" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_def_1a9b4da918dba2eed1a8aeada3352fa880" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 NVIC_TypeDef::ICER[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>ICER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="91" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_def_1aa02a3713ede28af84a1036310bd03dc9" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 NVIC_TypeDef::RSERVED1[30]</definition>
+        <argsstring>[30]</argsstring>
+        <name>RSERVED1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="92" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_def_1adb7b1470ee6c7c467c32cb38015aab28" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 NVIC_TypeDef::ISPR[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>ISPR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="93" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_def_1ab09c3aa6ffd25f3efdaf218fe3b30356" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 NVIC_TypeDef::RESERVED2[30]</definition>
+        <argsstring>[30]</argsstring>
+        <name>RESERVED2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="94" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_def_1adbe65121fd5532e27b23dc89d96715d9" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 NVIC_TypeDef::ICPR[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>ICPR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="95" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_def_1a48fbd0c7509922f5b0f42776824756b4" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 NVIC_TypeDef::RESERVED3[30]</definition>
+        <argsstring>[30]</argsstring>
+        <name>RESERVED3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="96" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_def_1ac379bcddcfd509e1b627114f5fd8546e" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 NVIC_TypeDef::IABR[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>IABR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="97" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_def_1a1c0a55da975ab2073a2ea32c9da56d8a" prot="public" static="no" mutable="no">
+        <type>u32</type>
+        <definition>u32 NVIC_TypeDef::RESERVED4[62]</definition>
+        <argsstring>[62]</argsstring>
+        <name>RESERVED4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="98" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_def_1a0a4acedc69e58241987b8cfd761ed08f" prot="public" static="no" mutable="no">
+        <type>vu32</type>
+        <definition>vu32 NVIC_TypeDef::IPR[15]</definition>
+        <argsstring>[15]</argsstring>
+        <name>IPR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="99" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="88" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="88" bodyend="100"/>
+    <listofallmembers>
+      <member refid="struct_n_v_i_c___type_def_1ac379bcddcfd509e1b627114f5fd8546e" prot="public" virt="non-virtual"><scope>NVIC_TypeDef</scope><name>IABR</name></member>
+      <member refid="struct_n_v_i_c___type_def_1a9b4da918dba2eed1a8aeada3352fa880" prot="public" virt="non-virtual"><scope>NVIC_TypeDef</scope><name>ICER</name></member>
+      <member refid="struct_n_v_i_c___type_def_1adbe65121fd5532e27b23dc89d96715d9" prot="public" virt="non-virtual"><scope>NVIC_TypeDef</scope><name>ICPR</name></member>
+      <member refid="struct_n_v_i_c___type_def_1a0a4acedc69e58241987b8cfd761ed08f" prot="public" virt="non-virtual"><scope>NVIC_TypeDef</scope><name>IPR</name></member>
+      <member refid="struct_n_v_i_c___type_def_1a72fddbe4ea5b88cd3fc4b93c962792c9" prot="public" virt="non-virtual"><scope>NVIC_TypeDef</scope><name>ISER</name></member>
+      <member refid="struct_n_v_i_c___type_def_1adb7b1470ee6c7c467c32cb38015aab28" prot="public" virt="non-virtual"><scope>NVIC_TypeDef</scope><name>ISPR</name></member>
+      <member refid="struct_n_v_i_c___type_def_1aeb464fdad6dd6c6356d4dc6c0aed3be4" prot="public" virt="non-virtual"><scope>NVIC_TypeDef</scope><name>RESERVED0</name></member>
+      <member refid="struct_n_v_i_c___type_def_1ab09c3aa6ffd25f3efdaf218fe3b30356" prot="public" virt="non-virtual"><scope>NVIC_TypeDef</scope><name>RESERVED2</name></member>
+      <member refid="struct_n_v_i_c___type_def_1a48fbd0c7509922f5b0f42776824756b4" prot="public" virt="non-virtual"><scope>NVIC_TypeDef</scope><name>RESERVED3</name></member>
+      <member refid="struct_n_v_i_c___type_def_1a1c0a55da975ab2073a2ea32c9da56d8a" prot="public" virt="non-virtual"><scope>NVIC_TypeDef</scope><name>RESERVED4</name></member>
+      <member refid="struct_n_v_i_c___type_def_1aa02a3713ede28af84a1036310bd03dc9" prot="public" virt="non-virtual"><scope>NVIC_TypeDef</scope><name>RSERVED1</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

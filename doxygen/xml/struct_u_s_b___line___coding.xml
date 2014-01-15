@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="struct_u_s_b___line___coding" kind="struct" prot="public">
+    <compoundname>USB_Line_Coding</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_u_s_b___line___coding_1a38b67fbbc69c2d2ca00aec7f55ba305b" prot="public" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>uint32 USB_Line_Coding::bitrate</definition>
+        <argsstring></argsstring>
+        <name>bitrate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.h" line="22" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_b___line___coding_1a9d1ceebe259ade57ee34ad5b69417794" prot="public" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 USB_Line_Coding::format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.h" line="23" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_b___line___coding_1ab2d61ebef7990ea466a650733632df12" prot="public" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 USB_Line_Coding::paritytype</definition>
+        <argsstring></argsstring>
+        <name>paritytype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.h" line="24" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_b___line___coding_1a10ee5be49f847bc9b3bc13a0d5eff443" prot="public" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 USB_Line_Coding::datatype</definition>
+        <argsstring></argsstring>
+        <name>datatype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.h" line="25" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.h" line="21" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_callbacks.h" bodystart="21" bodyend="26"/>
+    <listofallmembers>
+      <member refid="struct_u_s_b___line___coding_1a38b67fbbc69c2d2ca00aec7f55ba305b" prot="public" virt="non-virtual"><scope>USB_Line_Coding</scope><name>bitrate</name></member>
+      <member refid="struct_u_s_b___line___coding_1a10ee5be49f847bc9b3bc13a0d5eff443" prot="public" virt="non-virtual"><scope>USB_Line_Coding</scope><name>datatype</name></member>
+      <member refid="struct_u_s_b___line___coding_1a9d1ceebe259ade57ee34ad5b69417794" prot="public" virt="non-virtual"><scope>USB_Line_Coding</scope><name>format</name></member>
+      <member refid="struct_u_s_b___line___coding_1ab2d61ebef7990ea466a650733632df12" prot="public" virt="non-virtual"><scope>USB_Line_Coding</scope><name>paritytype</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structnvic__reg__map" kind="struct" prot="public">
+    <compoundname>nvic_reg_map</compoundname>
+    <includes refid="nvic_8h" local="no">nvic.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structnvic__reg__map_1aba770bac20c1762dd00b3dbb2d20b05f" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 nvic_reg_map::ISER[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>ISER</name>
+        <briefdescription>
+<para>Interrupt Set Enable Registers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" line="44" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvic__reg__map_1acaf913667b365150d783d7592f1178b8" prot="public" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>uint32 nvic_reg_map::RESERVED0[24]</definition>
+        <argsstring>[24]</argsstring>
+        <name>RESERVED0</name>
+        <briefdescription>
+<para>Reserved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" line="45" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvic__reg__map_1ad7e689aec80eceaf669b85d9122afeb1" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 nvic_reg_map::ICER[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>ICER</name>
+        <briefdescription>
+<para>Interrupt Clear Enable Registers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" line="46" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvic__reg__map_1a1b38bd48c71a34321cab8cf32166b469" prot="public" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>uint32 nvic_reg_map::RSERVED1[24]</definition>
+        <argsstring>[24]</argsstring>
+        <name>RSERVED1</name>
+        <briefdescription>
+<para>Reserved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" line="47" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvic__reg__map_1a35c3fcde139936b005f0715eac547109" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 nvic_reg_map::ISPR[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>ISPR</name>
+        <briefdescription>
+<para>Interrupt Set Pending Registers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" line="48" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvic__reg__map_1a2bb1671ff6b9ac9c193a9b1681bee200" prot="public" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>uint32 nvic_reg_map::RESERVED2[24]</definition>
+        <argsstring>[24]</argsstring>
+        <name>RESERVED2</name>
+        <briefdescription>
+<para>Reserved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" line="49" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvic__reg__map_1adbd2912401e45b839d4c20e56220ae71" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 nvic_reg_map::ICPR[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>ICPR</name>
+        <briefdescription>
+<para>Interrupt Clear Pending Registers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" line="50" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvic__reg__map_1aeb89acbadf3494838b372dd1e0957778" prot="public" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>uint32 nvic_reg_map::RESERVED3[24]</definition>
+        <argsstring>[24]</argsstring>
+        <name>RESERVED3</name>
+        <briefdescription>
+<para>Reserved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" line="51" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvic__reg__map_1acb2a8c2534f4d07492f53dd6684e6a5c" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 nvic_reg_map::IABR[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>IABR</name>
+        <briefdescription>
+<para>Interrupt Active bit Registers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" line="52" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvic__reg__map_1ae9f3fb981c9fb69c5491c93734241b90" prot="public" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>uint32 nvic_reg_map::RESERVED4[56]</definition>
+        <argsstring>[56]</argsstring>
+        <name>RESERVED4</name>
+        <briefdescription>
+<para>Reserved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" line="53" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvic__reg__map_1a8235db3d5e033cb4bb398ea4bf3819c5" prot="public" static="no" mutable="no">
+        <type>__io uint8</type>
+        <definition>__io uint8 nvic_reg_map::IP[240]</definition>
+        <argsstring>[240]</argsstring>
+        <name>IP</name>
+        <briefdescription>
+<para>Interrupt Priority Registers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" line="54" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvic__reg__map_1a7b733b2a2bec1433a185183ede94d04d" prot="public" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>uint32 nvic_reg_map::RESERVED5[644]</definition>
+        <argsstring>[644]</argsstring>
+        <name>RESERVED5</name>
+        <briefdescription>
+<para>Reserved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" line="55" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnvic__reg__map_1a5c6e47dcd72da8f2f589a7156d44e190" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 nvic_reg_map::STIR</definition>
+        <argsstring></argsstring>
+        <name>STIR</name>
+        <briefdescription>
+<para>Software Trigger Interrupt Registers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" line="56" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>NVIC register map type. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" line="43" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/nvic.h" bodystart="43" bodyend="57"/>
+    <listofallmembers>
+      <member refid="structnvic__reg__map_1acb2a8c2534f4d07492f53dd6684e6a5c" prot="public" virt="non-virtual"><scope>nvic_reg_map</scope><name>IABR</name></member>
+      <member refid="structnvic__reg__map_1ad7e689aec80eceaf669b85d9122afeb1" prot="public" virt="non-virtual"><scope>nvic_reg_map</scope><name>ICER</name></member>
+      <member refid="structnvic__reg__map_1adbd2912401e45b839d4c20e56220ae71" prot="public" virt="non-virtual"><scope>nvic_reg_map</scope><name>ICPR</name></member>
+      <member refid="structnvic__reg__map_1a8235db3d5e033cb4bb398ea4bf3819c5" prot="public" virt="non-virtual"><scope>nvic_reg_map</scope><name>IP</name></member>
+      <member refid="structnvic__reg__map_1aba770bac20c1762dd00b3dbb2d20b05f" prot="public" virt="non-virtual"><scope>nvic_reg_map</scope><name>ISER</name></member>
+      <member refid="structnvic__reg__map_1a35c3fcde139936b005f0715eac547109" prot="public" virt="non-virtual"><scope>nvic_reg_map</scope><name>ISPR</name></member>
+      <member refid="structnvic__reg__map_1acaf913667b365150d783d7592f1178b8" prot="public" virt="non-virtual"><scope>nvic_reg_map</scope><name>RESERVED0</name></member>
+      <member refid="structnvic__reg__map_1a2bb1671ff6b9ac9c193a9b1681bee200" prot="public" virt="non-virtual"><scope>nvic_reg_map</scope><name>RESERVED2</name></member>
+      <member refid="structnvic__reg__map_1aeb89acbadf3494838b372dd1e0957778" prot="public" virt="non-virtual"><scope>nvic_reg_map</scope><name>RESERVED3</name></member>
+      <member refid="structnvic__reg__map_1ae9f3fb981c9fb69c5491c93734241b90" prot="public" virt="non-virtual"><scope>nvic_reg_map</scope><name>RESERVED4</name></member>
+      <member refid="structnvic__reg__map_1a7b733b2a2bec1433a185183ede94d04d" prot="public" virt="non-virtual"><scope>nvic_reg_map</scope><name>RESERVED5</name></member>
+      <member refid="structnvic__reg__map_1a1b38bd48c71a34321cab8cf32166b469" prot="public" virt="non-virtual"><scope>nvic_reg_map</scope><name>RSERVED1</name></member>
+      <member refid="structnvic__reg__map_1a5c6e47dcd72da8f2f589a7156d44e190" prot="public" virt="non-virtual"><scope>nvic_reg_map</scope><name>STIR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

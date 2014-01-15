@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__v_task_resume_from_i_s_r" kind="group">
+    <compoundname>vTaskResumeFromISR</compoundname>
+    <title>vTaskResumeFromISR</title>
+    <briefdescription>
+<para>task. </para>    </briefdescription>
+    <detaileddescription>
+<para>h <preformatted>void xTaskResumeFromISR( xTaskHandle pxTaskToResume );</preformatted></para><para>INCLUDE_xTaskResumeFromISR must be defined as 1 for this function to be available. See the configuration section for more information.</para><para>An implementation of vTaskResume() that can be called from within an ISR.</para><para>A task that has been suspended by one of more calls to vTaskSuspend () will be made available for running again by a single call to xTaskResumeFromISR ().</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pxTaskToResume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the task being readied. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

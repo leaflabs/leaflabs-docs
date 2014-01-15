@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_29ffe02a384dcce005908aaa4df98377" kind="dir">
+    <compoundname>libmaple/usb/</compoundname>
+    <innerdir refid="dir_fe675f2379c965c6a11a84068535bba8">libmaple/usb/usb_lib/</innerdir>
+    <innerfile refid="descriptors_8c">descriptors.c</innerfile>
+    <innerfile refid="descriptors_8h">descriptors.h</innerfile>
+    <innerfile refid="usb_8c">usb.c</innerfile>
+    <innerfile refid="usb_8h">usb.h</innerfile>
+    <innerfile refid="usb__callbacks_8c">usb_callbacks.c</innerfile>
+    <innerfile refid="usb__callbacks_8h">usb_callbacks.h</innerfile>
+    <innerfile refid="usb__config_8h">usb_config.h</innerfile>
+    <innerfile refid="usb__hardware_8c">usb_hardware.c</innerfile>
+    <innerfile refid="usb__hardware_8h">usb_hardware.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/"/>
+  </compounddef>
+</doxygen>

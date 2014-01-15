@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structi2c__dev" kind="struct" prot="public">
+    <compoundname>i2c_dev</compoundname>
+    <includes refid="i2c_8h" local="no">i2c.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structi2c__dev_1a770bf7447fdee9e9a919393cedf327c5" prot="public" static="no" mutable="no">
+        <type><ref refid="structi2c__reg__map" kindref="compound">i2c_reg_map</ref> *</type>
+        <definition>i2c_reg_map* i2c_dev::regs</definition>
+        <argsstring></argsstring>
+        <name>regs</name>
+        <briefdescription>
+<para>Register map. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="80" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structi2c__dev_1afe11205c9bf23c8aa90a9a05921b66fb" prot="public" static="no" mutable="no">
+        <type><ref refid="structgpio__dev" kindref="compound">gpio_dev</ref> *</type>
+        <definition>gpio_dev* i2c_dev::gpio_port</definition>
+        <argsstring></argsstring>
+        <name>gpio_port</name>
+        <briefdescription>
+<para>SDA, SCL pins&apos; GPIO port. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="81" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structi2c__dev_1a1a8578058d9bcbf287484ec425bb9f5f" prot="public" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 i2c_dev::sda_pin</definition>
+        <argsstring></argsstring>
+        <name>sda_pin</name>
+        <briefdescription>
+<para>SDA bit on gpio_port. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="82" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structi2c__dev_1a08028527337ea71f5c53497076703fa0" prot="public" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 i2c_dev::scl_pin</definition>
+        <argsstring></argsstring>
+        <name>scl_pin</name>
+        <briefdescription>
+<para>SCL bit on gpio_port. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="83" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structi2c__dev_1a1d65d86bc935e410dedb99513f8067b9" prot="public" static="no" mutable="no">
+        <type><ref refid="rcc_8h_1ae3722d2d8eff5283fb0388429953640f" kindref="member">rcc_clk_id</ref></type>
+        <definition>rcc_clk_id i2c_dev::clk_id</definition>
+        <argsstring></argsstring>
+        <name>clk_id</name>
+        <briefdescription>
+<para>RCC clock information. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="84" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structi2c__dev_1a1eab3b8e31794d3a88844704bc80f5a1" prot="public" static="no" mutable="no">
+        <type><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83" kindref="member">nvic_irq_num</ref></type>
+        <definition>nvic_irq_num i2c_dev::ev_nvic_line</definition>
+        <argsstring></argsstring>
+        <name>ev_nvic_line</name>
+        <briefdescription>
+<para>Event IRQ number. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="85" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structi2c__dev_1aecdb8c9b799063905520bb7f87503ee9" prot="public" static="no" mutable="no">
+        <type><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83" kindref="member">nvic_irq_num</ref></type>
+        <definition>nvic_irq_num i2c_dev::er_nvic_line</definition>
+        <argsstring></argsstring>
+        <name>er_nvic_line</name>
+        <briefdescription>
+<para>Error IRQ number. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="86" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structi2c__dev_1ad1c99c4368625947a2e98284df705d91" prot="public" static="no" mutable="no">
+        <type><ref refid="i2c_8h_1a3acd3f8324118cb8c44f79b0fa24190a" kindref="member">i2c_state</ref></type>
+        <definition>volatile i2c_state i2c_dev::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+<para>Device state. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="87" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structi2c__dev_1ae752e1f62474bced6b88cdce32be2cc9" prot="public" static="no" mutable="no">
+        <type>uint16</type>
+        <definition>uint16 i2c_dev::msgs_left</definition>
+        <argsstring></argsstring>
+        <name>msgs_left</name>
+        <briefdescription>
+<para>Messages left. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="88" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structi2c__dev_1ad7c032f3abb09d59b6c3191c0249bfbf" prot="public" static="no" mutable="no">
+        <type><ref refid="structi2c__msg" kindref="compound">i2c_msg</ref> *</type>
+        <definition>i2c_msg* i2c_dev::msg</definition>
+        <argsstring></argsstring>
+        <name>msg</name>
+        <briefdescription>
+<para>Messages. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="89" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structi2c__dev_1a548eb25d2d6906db7b49976c85a7979d" prot="public" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>volatile uint32 i2c_dev::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+<para>For internal use. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="90" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structi2c__dev_1a9efc3cbcbd6d297b213a998781eb5a39" prot="public" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>uint32 i2c_dev::error_flags</definition>
+        <argsstring></argsstring>
+        <name>error_flags</name>
+        <briefdescription>
+<para>Error flags, set on I2C error condition. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="91" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>I2C device type. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="70">
+        <label>gpio_dev</label>
+        <link refid="structgpio__dev"/>
+        <childnode refid="71" relation="usage">
+          <edgelabel>regs</edgelabel>
+        </childnode>
+      </node>
+      <node id="68">
+        <label>i2c_dev</label>
+        <link refid="structi2c__dev"/>
+        <childnode refid="69" relation="usage">
+          <edgelabel>msg</edgelabel>
+        </childnode>
+        <childnode refid="70" relation="usage">
+          <edgelabel>gpio_port</edgelabel>
+        </childnode>
+        <childnode refid="72" relation="usage">
+          <edgelabel>regs</edgelabel>
+        </childnode>
+      </node>
+      <node id="71">
+        <label>gpio_reg_map</label>
+        <link refid="structgpio__reg__map"/>
+      </node>
+      <node id="69">
+        <label>i2c_msg</label>
+        <link refid="structi2c__msg"/>
+      </node>
+      <node id="72">
+        <label>i2c_reg_map</label>
+        <link refid="structi2c__reg__map"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="79" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="79" bodyend="92"/>
+    <listofallmembers>
+      <member refid="structi2c__dev_1a1d65d86bc935e410dedb99513f8067b9" prot="public" virt="non-virtual"><scope>i2c_dev</scope><name>clk_id</name></member>
+      <member refid="structi2c__dev_1aecdb8c9b799063905520bb7f87503ee9" prot="public" virt="non-virtual"><scope>i2c_dev</scope><name>er_nvic_line</name></member>
+      <member refid="structi2c__dev_1a9efc3cbcbd6d297b213a998781eb5a39" prot="public" virt="non-virtual"><scope>i2c_dev</scope><name>error_flags</name></member>
+      <member refid="structi2c__dev_1a1eab3b8e31794d3a88844704bc80f5a1" prot="public" virt="non-virtual"><scope>i2c_dev</scope><name>ev_nvic_line</name></member>
+      <member refid="structi2c__dev_1afe11205c9bf23c8aa90a9a05921b66fb" prot="public" virt="non-virtual"><scope>i2c_dev</scope><name>gpio_port</name></member>
+      <member refid="structi2c__dev_1ad7c032f3abb09d59b6c3191c0249bfbf" prot="public" virt="non-virtual"><scope>i2c_dev</scope><name>msg</name></member>
+      <member refid="structi2c__dev_1ae752e1f62474bced6b88cdce32be2cc9" prot="public" virt="non-virtual"><scope>i2c_dev</scope><name>msgs_left</name></member>
+      <member refid="structi2c__dev_1a770bf7447fdee9e9a919393cedf327c5" prot="public" virt="non-virtual"><scope>i2c_dev</scope><name>regs</name></member>
+      <member refid="structi2c__dev_1a08028527337ea71f5c53497076703fa0" prot="public" virt="non-virtual"><scope>i2c_dev</scope><name>scl_pin</name></member>
+      <member refid="structi2c__dev_1a1a8578058d9bcbf287484ec425bb9f5f" prot="public" virt="non-virtual"><scope>i2c_dev</scope><name>sda_pin</name></member>
+      <member refid="structi2c__dev_1ad1c99c4368625947a2e98284df705d91" prot="public" virt="non-virtual"><scope>i2c_dev</scope><name>state</name></member>
+      <member refid="structi2c__dev_1a548eb25d2d6906db7b49976c85a7979d" prot="public" virt="non-virtual"><scope>i2c_dev</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

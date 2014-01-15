@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_87fbdb3fb88c5387ee640bda614ef70c" kind="dir">
+    <compoundname>wirish/comm/</compoundname>
+    <innerfile refid="_hardware_serial_8h">HardwareSerial.h</innerfile>
+    <innerfile refid="_hardware_s_p_i_8h">HardwareSPI.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/wirish/comm/"/>
+  </compounddef>
+</doxygen>

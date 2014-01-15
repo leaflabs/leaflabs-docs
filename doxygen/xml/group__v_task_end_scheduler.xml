@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__v_task_end_scheduler" kind="group">
+    <compoundname>vTaskEndScheduler</compoundname>
+    <title>vTaskEndScheduler</title>
+    <briefdescription>
+<para>task. </para>    </briefdescription>
+    <detaileddescription>
+<para>h <preformatted>void vTaskEndScheduler( void );</preformatted></para><para>Stops the real time kernel tick. All created tasks will be automatically deleted and multitasking (either preemptive or cooperative) will stop. Execution then resumes from the point where vTaskStartScheduler () was called, as if vTaskStartScheduler () had just returned.</para><para>See the demo application file main. c in the demo/PC directory for an example that uses vTaskEndScheduler ().</para><para>vTaskEndScheduler () requires an exit function to be defined within the portable layer (see vPortEndScheduler () in port. c for the PC port). This performs hardware specific operations such as stopping the kernel tick.</para><para>vTaskEndScheduler () will cause all of the resources allocated by the kernel to be freed - but will not free resources allocated by application tasks.</para><para>Example usage: <preformatted>
+ void vTaskCode( void * pvParameters )
+ {
+	 for( ;; )
+	 {
+Task code goes here.</preformatted></para><para><preformatted>At some point we want to end the real time kernel processing
+so call ...
+		 vTaskEndScheduler ();
+	 }
+ }</preformatted></para><para><preformatted> void vAFunction( void )
+ {
+Create at least one task before starting the kernel.
+	 xTaskCreate( vTaskCode, &quot;NAME&quot;, STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );</preformatted></para><para><preformatted>Start the real time kernel with preemption.
+	 vTaskStartScheduler ();</preformatted></para><para><preformatted>Will only get here when the vTaskCode () task has called
+vTaskEndScheduler ().  When we get here we are back to single task
+execution.
+ }
+   </preformatted> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

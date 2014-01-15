@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="task_y_i_e_l_d" kind="page">
+    <compoundname>taskYIELD</compoundname>
+    <title>taskYIELD</title>
+    <detaileddescription>
+<para>task.</para><para>h</para><para>Macro for forcing a context switch. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

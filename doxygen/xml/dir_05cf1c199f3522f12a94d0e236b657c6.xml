@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_05cf1c199f3522f12a94d0e236b657c6" kind="dir">
+    <compoundname>libmaple/</compoundname>
+    <innerdir refid="dir_29ffe02a384dcce005908aaa4df98377">libmaple/usb/</innerdir>
+    <innerfile refid="adc_8c">adc.c</innerfile>
+    <innerfile refid="adc_8h">adc.h</innerfile>
+    <innerfile refid="bitband_8h">bitband.h</innerfile>
+    <innerfile refid="bkp_8c">bkp.c</innerfile>
+    <innerfile refid="bkp_8h">bkp.h</innerfile>
+    <innerfile refid="dac_8c">dac.c</innerfile>
+    <innerfile refid="dac_8h">dac.h</innerfile>
+    <innerfile refid="delay_8h">delay.h</innerfile>
+    <innerfile refid="dma_8c">dma.c</innerfile>
+    <innerfile refid="dma_8h">dma.h</innerfile>
+    <innerfile refid="exti_8c">exti.c</innerfile>
+    <innerfile refid="exti_8h">exti.h</innerfile>
+    <innerfile refid="flash_8c">flash.c</innerfile>
+    <innerfile refid="flash_8h">flash.h</innerfile>
+    <innerfile refid="fsmc_8c">fsmc.c</innerfile>
+    <innerfile refid="fsmc_8h">fsmc.h</innerfile>
+    <innerfile refid="gpio_8c">gpio.c</innerfile>
+    <innerfile refid="gpio_8h">gpio.h</innerfile>
+    <innerfile refid="i2c_8c">i2c.c</innerfile>
+    <innerfile refid="i2c_8h">i2c.h</innerfile>
+    <innerfile refid="iwdg_8c">iwdg.c</innerfile>
+    <innerfile refid="iwdg_8h">iwdg.h</innerfile>
+    <innerfile refid="libmaple_8h">libmaple.h</innerfile>
+    <innerfile refid="libmaple__types_8h">libmaple_types.h</innerfile>
+    <innerfile refid="nvic_8c">nvic.c</innerfile>
+    <innerfile refid="nvic_8h">nvic.h</innerfile>
+    <innerfile refid="pwr_8c">pwr.c</innerfile>
+    <innerfile refid="pwr_8h">pwr.h</innerfile>
+    <innerfile refid="rcc_8c">rcc.c</innerfile>
+    <innerfile refid="rcc_8h">rcc.h</innerfile>
+    <innerfile refid="ring__buffer_8h">ring_buffer.h</innerfile>
+    <innerfile refid="scb_8h">scb.h</innerfile>
+    <innerfile refid="spi_8c">spi.c</innerfile>
+    <innerfile refid="spi_8h">spi.h</innerfile>
+    <innerfile refid="stm32_8h">stm32.h</innerfile>
+    <innerfile refid="syscalls_8c">syscalls.c</innerfile>
+    <innerfile refid="systick_8c">systick.c</innerfile>
+    <innerfile refid="systick_8h">systick.h</innerfile>
+    <innerfile refid="timer_8c">timer.c</innerfile>
+    <innerfile refid="timer_8h">timer.h</innerfile>
+    <innerfile refid="usart_8c">usart.c</innerfile>
+    <innerfile refid="usart_8h">usart.h</innerfile>
+    <innerfile refid="util_8c">util.c</innerfile>
+    <innerfile refid="util_8h">util.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/"/>
+  </compounddef>
+</doxygen>

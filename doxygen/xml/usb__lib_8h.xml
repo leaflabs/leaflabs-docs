@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="usb__lib_8h" kind="file">
+    <compoundname>usb_lib.h</compoundname>
+    <includes refid="usb__type_8h" local="yes">usb_type.h</includes>
+    <includes refid="usb__regs_8h" local="yes">usb_regs.h</includes>
+    <includes refid="usb__def_8h" local="yes">usb_def.h</includes>
+    <includes refid="usb__core_8h" local="yes">usb_core.h</includes>
+    <includes refid="usb__init_8h" local="yes">usb_init.h</includes>
+    <includes refid="usb__mem_8h" local="yes">usb_mem.h</includes>
+    <includes refid="usb__int_8h" local="yes">usb_int.h</includes>
+    <includedby refid="descriptors_8h" local="yes">libmaple/usb/descriptors.h</includedby>
+    <includedby refid="usb__config_8h" local="yes">libmaple/usb/usb_config.h</includedby>
+    <includedby refid="usb_8h" local="yes">libmaple/usb/usb.h</includedby>
+    <includedby refid="usb_8c" local="yes">libmaple/usb/usb.c</includedby>
+    <includedby refid="usb__callbacks_8h" local="yes">libmaple/usb/usb_callbacks.h</includedby>
+    <includedby refid="usb__callbacks_8c" local="yes">libmaple/usb/usb_callbacks.c</includedby>
+    <includedby refid="usb__core_8c" local="yes">libmaple/usb/usb_lib/usb_core.c</includedby>
+    <includedby refid="usb__init_8c" local="yes">libmaple/usb/usb_lib/usb_init.c</includedby>
+    <includedby refid="usb__int_8c" local="yes">libmaple/usb/usb_lib/usb_int.c</includedby>
+    <includedby refid="usb__mem_8c" local="yes">libmaple/usb/usb_lib/usb_mem.c</includedby>
+    <includedby refid="usb__regs_8c" local="yes">libmaple/usb/usb_lib/usb_regs.c</includedby>
+    <incdepgraph>
+      <node id="931">
+        <label>usb_mem.h</label>
+        <link refid="usb__mem_8h_source"/>
+      </node>
+      <node id="926">
+        <label>usb_type.h</label>
+        <link refid="usb__type_8h_source"/>
+      </node>
+      <node id="932">
+        <label>usb_int.h</label>
+        <link refid="usb__int_8h_source"/>
+      </node>
+      <node id="925">
+        <label>libmaple/usb/usb_lib/usb_lib.h</label>
+        <link refid="usb_lib.h"/>
+        <childnode refid="926" relation="include">
+        </childnode>
+        <childnode refid="927" relation="include">
+        </childnode>
+        <childnode refid="928" relation="include">
+        </childnode>
+        <childnode refid="929" relation="include">
+        </childnode>
+        <childnode refid="930" relation="include">
+        </childnode>
+        <childnode refid="931" relation="include">
+        </childnode>
+        <childnode refid="932" relation="include">
+        </childnode>
+      </node>
+      <node id="930">
+        <label>usb_init.h</label>
+        <link refid="usb__init_8h_source"/>
+      </node>
+      <node id="928">
+        <label>usb_def.h</label>
+        <link refid="usb__def_8h_source"/>
+      </node>
+      <node id="929">
+        <label>usb_core.h</label>
+        <link refid="usb__core_8h_source"/>
+      </node>
+      <node id="927">
+        <label>usb_regs.h</label>
+        <link refid="usb__regs_8h_source"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="938">
+        <label>libmaple/usb/usb.c</label>
+        <link refid="usb_8c_source"/>
+      </node>
+      <node id="940">
+        <label>libmaple/usb/usb.h</label>
+        <link refid="usb_8h_source"/>
+        <childnode refid="938" relation="include">
+        </childnode>
+        <childnode refid="936" relation="include">
+        </childnode>
+      </node>
+      <node id="944">
+        <label>libmaple/usb/usb_lib/usb_mem.c</label>
+        <link refid="usb__mem_8c_source"/>
+      </node>
+      <node id="943">
+        <label>libmaple/usb/usb_lib/usb_int.c</label>
+        <link refid="usb__int_8c_source"/>
+      </node>
+      <node id="933">
+        <label>libmaple/usb/usb_lib/usb_lib.h</label>
+        <link refid="usb_lib.h"/>
+        <childnode refid="934" relation="include">
+        </childnode>
+        <childnode refid="937" relation="include">
+        </childnode>
+        <childnode refid="940" relation="include">
+        </childnode>
+        <childnode refid="938" relation="include">
+        </childnode>
+        <childnode refid="939" relation="include">
+        </childnode>
+        <childnode refid="936" relation="include">
+        </childnode>
+        <childnode refid="941" relation="include">
+        </childnode>
+        <childnode refid="942" relation="include">
+        </childnode>
+        <childnode refid="943" relation="include">
+        </childnode>
+        <childnode refid="944" relation="include">
+        </childnode>
+        <childnode refid="945" relation="include">
+        </childnode>
+      </node>
+      <node id="937">
+        <label>libmaple/usb/usb_config.h</label>
+        <link refid="usb__config_8h_source"/>
+        <childnode refid="935" relation="include">
+        </childnode>
+        <childnode refid="938" relation="include">
+        </childnode>
+        <childnode refid="939" relation="include">
+        </childnode>
+        <childnode refid="936" relation="include">
+        </childnode>
+      </node>
+      <node id="942">
+        <label>libmaple/usb/usb_lib/usb_init.c</label>
+        <link refid="usb__init_8c_source"/>
+      </node>
+      <node id="941">
+        <label>libmaple/usb/usb_lib/usb_core.c</label>
+        <link refid="usb__core_8c_source"/>
+      </node>
+      <node id="945">
+        <label>libmaple/usb/usb_lib/usb_regs.c</label>
+        <link refid="usb__regs_8c_source"/>
+      </node>
+      <node id="935">
+        <label>libmaple/usb/descriptors.c</label>
+        <link refid="descriptors_8c_source"/>
+      </node>
+      <node id="934">
+        <label>libmaple/usb/descriptors.h</label>
+        <link refid="descriptors_8h_source"/>
+        <childnode refid="935" relation="include">
+        </childnode>
+        <childnode refid="936" relation="include">
+        </childnode>
+      </node>
+      <node id="936">
+        <label>libmaple/usb/usb_callbacks.c</label>
+        <link refid="usb__callbacks_8c_source"/>
+      </node>
+      <node id="939">
+        <label>libmaple/usb/usb_callbacks.h</label>
+        <link refid="usb__callbacks_8h_source"/>
+        <childnode refid="938" relation="include">
+        </childnode>
+        <childnode refid="936" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/********************<sp/>(C)<sp/>COPYRIGHT<sp/>2008<sp/>STMicroelectronics<sp/>********************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*<sp/>File<sp/>Name<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>usb_lib.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/>Author<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>MCD<sp/>Application<sp/>Team</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*<sp/>Version<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>V2.2.1</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/>Date<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>09/22/2008</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*<sp/>Description<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>USB<sp/>library<sp/>include<sp/>files</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">********************************************************************************</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/>THE<sp/>PRESENT<sp/>FIRMWARE<sp/>WHICH<sp/>IS<sp/>FOR<sp/>GUIDANCE<sp/>ONLY<sp/>AIMS<sp/>AT<sp/>PROVIDING<sp/>CUSTOMERS</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*<sp/>WITH<sp/>CODING<sp/>INFORMATION<sp/>REGARDING<sp/>THEIR<sp/>PRODUCTS<sp/>IN<sp/>ORDER<sp/>FOR<sp/>THEM<sp/>TO<sp/>SAVE<sp/>TIME.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/>AS<sp/>A<sp/>RESULT,<sp/>STMICROELECTRONICS<sp/>SHALL<sp/>NOT<sp/>BE<sp/>HELD<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>DIRECT,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*<sp/>INDIRECT<sp/>OR<sp/>CONSEQUENTIAL<sp/>DAMAGES<sp/>WITH<sp/>RESPECT<sp/>TO<sp/>ANY<sp/>CLAIMS<sp/>ARISING<sp/>FROM<sp/>THE</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*<sp/>CONTENT<sp/>OF<sp/>SUCH<sp/>FIRMWARE<sp/>AND/OR<sp/>THE<sp/>USE<sp/>MADE<sp/>BY<sp/>CUSTOMERS<sp/>OF<sp/>THE<sp/>CODING</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*<sp/>INFORMATION<sp/>CONTAINED<sp/>HEREIN<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THEIR<sp/>PRODUCTS.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>prevent<sp/>recursive<sp/>inclusion<sp/>-------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__USB_LIB_H</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__USB_LIB_H</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;usb_type.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;usb_regs.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;usb_def.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;usb_core.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;usb_init.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;usb_mem.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;usb_int.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>types<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>constants<sp/>--------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>macro<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>functions<sp/>-------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>External<sp/>variables<sp/>--------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__USB_LIB_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*******************<sp/>(C)<sp/>COPYRIGHT<sp/>2008<sp/>STMicroelectronics<sp/>*****END<sp/>OF<sp/>FILE****/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_lib/usb_lib.h"/>
+  </compounddef>
+</doxygen>

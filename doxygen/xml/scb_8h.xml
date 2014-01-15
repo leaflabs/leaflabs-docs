@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="scb_8h" kind="file">
+    <compoundname>scb.h</compoundname>
+    <includes refid="libmaple__types_8h" local="yes">libmaple_types.h</includes>
+    <includedby refid="nvic_8c" local="yes">libmaple/nvic.c</includedby>
+    <incdepgraph>
+      <node id="520">
+        <label>libmaple/scb.h</label>
+        <link refid="scb.h"/>
+        <childnode refid="521" relation="include">
+        </childnode>
+      </node>
+      <node id="521">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="522">
+        <label>libmaple/scb.h</label>
+        <link refid="scb.h"/>
+        <childnode refid="523" relation="include">
+        </childnode>
+      </node>
+      <node id="523">
+        <label>libmaple/nvic.c</label>
+        <link refid="nvic_8c_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structscb__reg__map" prot="public">scb_reg_map</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="scb_8h_1ad55a7ddb8d4b2398b0c1cfec76c0d9fd" prot="public" static="no">
+        <name>SCB_BASE</name>
+        <initializer>((struct <ref refid="structscb__reg__map" kindref="compound">scb_reg_map</ref>*)0xE000ED00)</initializer>
+        <briefdescription>
+<para>System control block register map base pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/scb.h" line="62" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/scb.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>System control block header. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Perry<sp/>Hung.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/><sp/>above<sp/>copyright<sp/><sp/>notice<sp/>and<sp/><sp/>this<sp/>permission<sp/><sp/>notice<sp/><sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libmaple__types_8h" kindref="compound" tooltip="libmaple types">libmaple_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_SCB_H_</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_SCB_H_</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="38" refid="structscb__reg__map" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structscb__reg__map" kindref="compound" tooltip="System control block register map type.">scb_reg_map</ref><sp/>{</highlight></codeline>
+<codeline lineno="39" refid="structscb__reg__map_1a71ad92772031622576c39653617c59d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structscb__reg__map_1a71ad92772031622576c39653617c59d0" kindref="member" tooltip="CPU ID Base Register.">CPUID</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40" refid="structscb__reg__map_1ab462f1803c7b14d96d56b19423013ad6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structscb__reg__map_1ab462f1803c7b14d96d56b19423013ad6" kindref="member" tooltip="Interrupt Control State Register.">ICSR</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41" refid="structscb__reg__map_1ac809ea58765b452d0c4e49e6a1a21042" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structscb__reg__map_1ac809ea58765b452d0c4e49e6a1a21042" kindref="member" tooltip="Vector Table Offset Register.">VTOR</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42" refid="structscb__reg__map_1a0a4cb700dcd49e004027925ba6e34d90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structscb__reg__map_1a0a4cb700dcd49e004027925ba6e34d90" kindref="member" tooltip="Application Interrupt / Reset Control Register.">AIRCR</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43" refid="structscb__reg__map_1a9e2731e34ecd91164ef3f6dac80be0b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structscb__reg__map_1a9e2731e34ecd91164ef3f6dac80be0b9" kindref="member" tooltip="System Control Register.">SCR</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44" refid="structscb__reg__map_1a1373c33e0b109ad9fb61adbee2a5527b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structscb__reg__map_1a1373c33e0b109ad9fb61adbee2a5527b" kindref="member" tooltip="Configuration Control Register.">CCR</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45" refid="structscb__reg__map_1a747811293243545f7727aab4d958e8c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint8<sp/><sp/><ref refid="structscb__reg__map_1a747811293243545f7727aab4d958e8c8" kindref="member" tooltip="System Handlers Priority Registers (4-7, 8-11, 12-15)">SHP</ref>[12];<sp/></highlight></codeline>
+<codeline lineno="47" refid="structscb__reg__map_1aac6eee2bea8da59ea013dfdb80d62feb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structscb__reg__map_1aac6eee2bea8da59ea013dfdb80d62feb" kindref="member" tooltip="System Handler Control and State Register.">SHCSR</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48" refid="structscb__reg__map_1a993af30c0d5d343c0c39ce6acf0ac744" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structscb__reg__map_1a993af30c0d5d343c0c39ce6acf0ac744" kindref="member" tooltip="Configurable Fault Status Register.">CFSR</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="structscb__reg__map_1a411af4a029d8a7ab2f654faf2c235301" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structscb__reg__map_1a411af4a029d8a7ab2f654faf2c235301" kindref="member" tooltip="Hard Fault Status Register.">HFSR</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50" refid="structscb__reg__map_1a51acdbe8de9f34cdcb1ec7c3014059b3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structscb__reg__map_1a51acdbe8de9f34cdcb1ec7c3014059b3" kindref="member" tooltip="Debug Fault Status Register.">DFSR</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51" refid="structscb__reg__map_1a51277a286c399df73409e3e2048864dd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structscb__reg__map_1a51277a286c399df73409e3e2048864dd" kindref="member" tooltip="Mem Manage Address Register.">MMFAR</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52" refid="structscb__reg__map_1aa860341ac569efa6a406ea183602c570" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structscb__reg__map_1aa860341ac569efa6a406ea183602c570" kindref="member" tooltip="Bus Fault Address Register.">BFAR</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53" refid="structscb__reg__map_1a5838df096f59c602ca37e61fdd4c67a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structscb__reg__map_1a5838df096f59c602ca37e61fdd4c67a6" kindref="member" tooltip="Auxiliary Fault Status Register.">AFSR</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54" refid="structscb__reg__map_1afdd06d0d5179da58576f49d09f9c810a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structscb__reg__map_1afdd06d0d5179da58576f49d09f9c810a" kindref="member" tooltip="Processor Feature Register.">PFR</ref>[2];<sp/><sp/></highlight></codeline>
+<codeline lineno="55" refid="structscb__reg__map_1a3893c5ca13bb136a4f56c88c538823ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structscb__reg__map_1a3893c5ca13bb136a4f56c88c538823ad" kindref="member" tooltip="Debug Feature Register.">DFR</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56" refid="structscb__reg__map_1a9bd8201822de91f9bc6c844edab1691c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structscb__reg__map_1a9bd8201822de91f9bc6c844edab1691c" kindref="member" tooltip="Auxiliary Feature Register.">ADR</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57" refid="structscb__reg__map_1a8ce5a09eb8eb075af29155585d7b2300" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structscb__reg__map_1a8ce5a09eb8eb075af29155585d7b2300" kindref="member" tooltip="Memory Model Feature Register.">MMFR</ref>[4];<sp/></highlight></codeline>
+<codeline lineno="58" refid="structscb__reg__map_1a4888139d0f8fd57136ea9bc1b7d240a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structscb__reg__map_1a4888139d0f8fd57136ea9bc1b7d240a8" kindref="member" tooltip="ISA Feature Register.">ISAR</ref>[5];<sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}<sp/><ref refid="structscb__reg__map" kindref="compound" tooltip="System control block register map type.">scb_reg_map</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="scb_8h_1ad55a7ddb8d4b2398b0c1cfec76c0d9fd" refkind="member"><highlight class="preprocessor">#define<sp/>SCB_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((struct<sp/>scb_reg_map*)0xE000ED00)</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/scb.h"/>
+  </compounddef>
+</doxygen>

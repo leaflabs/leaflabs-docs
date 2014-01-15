@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="ux_task_get_number_of_tasks" kind="page">
+    <compoundname>uxTaskGetNumberOfTasks</compoundname>
+    <title>uxTaskGetNumberOfTasks</title>
+    <detaileddescription>
+<para>task.</para><para>h <preformatted>unsigned short uxTaskGetNumberOfTasks( void );</preformatted></para><para><simplesect kind="return"><para>The number of tasks that the real time kernel is currently managing. This includes all ready, blocked and suspended tasks. A task that has been deleted but not yet freed by the idle task will also be included in the count. </para></simplesect>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

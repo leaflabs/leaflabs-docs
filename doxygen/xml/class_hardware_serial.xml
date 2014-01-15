@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="class_hardware_serial" kind="class" prot="public">
+    <compoundname>HardwareSerial</compoundname>
+    <basecompoundref refid="class_print" prot="public" virt="non-virtual">Print</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_hardware_serial_1a913f412932bafb4f3b15e5f2657959af" prot="private" static="no" mutable="no">
+        <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+        <definition>usart_dev* HardwareSerial::usart_device</definition>
+        <argsstring></argsstring>
+        <name>usart_device</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSerial.h" line="72" bodyfile="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSerial.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hardware_serial_1a36cf8a07af495e0c765f5e9fdbfddab8" prot="private" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 HardwareSerial::tx_pin</definition>
+        <argsstring></argsstring>
+        <name>tx_pin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSerial.h" line="73" bodyfile="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSerial.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hardware_serial_1a98f486dc9bce391dde7c3138a2520064" prot="private" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 HardwareSerial::rx_pin</definition>
+        <argsstring></argsstring>
+        <name>rx_pin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSerial.h" line="74" bodyfile="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSerial.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hardware_serial_1a71dd864b59f023e8de31c9094a748abe" prot="private" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>uint32 HardwareSerial::clock_speed</definition>
+        <argsstring></argsstring>
+        <name>clock_speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSerial.h" line="75" bodyfile="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSerial.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hardware_serial_1ac751eb0dbb9f1275923c4320481c1ba5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>HardwareSerial::HardwareSerial</definition>
+        <argsstring>(usart_dev *usart_device, uint8 tx_pin, uint8 rx_pin, uint32 clock_speed)</argsstring>
+        <name>HardwareSerial</name>
+        <param>
+          <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+          <declname>usart_device</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>tx_pin</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>rx_pin</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>clock_speed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSerial.h" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hardware_serial_1aa3e33a565bb89d8fb26c9c3eb439a0ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HardwareSerial::begin</definition>
+        <argsstring>(uint32 baud)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>uint32</type>
+          <declname>baud</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSerial.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hardware_serial_1a10a08b71d82e6716a111011ab63d504b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HardwareSerial::end</definition>
+        <argsstring>(void)</argsstring>
+        <name>end</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSerial.h" line="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hardware_serial_1ab82621a0d1444bddc183a01060e2b6a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32</type>
+        <definition>uint32 HardwareSerial::available</definition>
+        <argsstring>(void)</argsstring>
+        <name>available</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSerial.h" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hardware_serial_1ab1c08d23c836513d10b2f3d8260c030d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8</type>
+        <definition>uint8 HardwareSerial::read</definition>
+        <argsstring>(void)</argsstring>
+        <name>read</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSerial.h" line="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hardware_serial_1a1eeb094d8da77e0292f95f4498a5396f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HardwareSerial::flush</definition>
+        <argsstring>(void)</argsstring>
+        <name>flush</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSerial.h" line="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hardware_serial_1aaa518eaae0dcd252f3077c01f8043630" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void HardwareSerial::write</definition>
+        <argsstring>(unsigned char)</argsstring>
+        <name>write</name>
+        <param>
+          <type>unsigned</type>
+          <declname>char</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSerial.h" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hardware_serial_1a149360a97304f2e20b25437349dcb155" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int HardwareSerial::txPin</definition>
+        <argsstring>(void)</argsstring>
+        <name>txPin</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSerial.h" line="69" bodyfile="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSerial.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hardware_serial_1abbded5337216350aab9159872ca29bd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int HardwareSerial::rxPin</definition>
+        <argsstring>(void)</argsstring>
+        <name>rxPin</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSerial.h" line="70" bodyfile="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSerial.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="59">
+        <label>HardwareSerial</label>
+        <link refid="class_hardware_serial"/>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>Print</label>
+        <link refid="class_print"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="61">
+        <label>HardwareSerial</label>
+        <link refid="class_hardware_serial"/>
+        <childnode refid="62" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>Print</label>
+        <link refid="class_print"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSerial.h" line="50" bodyfile="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSerial.h" bodystart="50" bodyend="76"/>
+    <listofallmembers>
+      <member refid="class_hardware_serial_1ab82621a0d1444bddc183a01060e2b6a6" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>available</name></member>
+      <member refid="class_hardware_serial_1aa3e33a565bb89d8fb26c9c3eb439a0ae" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>begin</name></member>
+      <member refid="class_hardware_serial_1a71dd864b59f023e8de31c9094a748abe" prot="private" virt="non-virtual"><scope>HardwareSerial</scope><name>clock_speed</name></member>
+      <member refid="class_hardware_serial_1a10a08b71d82e6716a111011ab63d504b" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>end</name></member>
+      <member refid="class_hardware_serial_1a1eeb094d8da77e0292f95f4498a5396f" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>flush</name></member>
+      <member refid="class_hardware_serial_1ac751eb0dbb9f1275923c4320481c1ba5" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>HardwareSerial</name></member>
+      <member refid="class_print_1a6309cc0fb10c5f50517069ae86bf60d7" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>print</name></member>
+      <member refid="class_print_1aa7b0a6dc63e3d27effd8459e3d443b83" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>print</name></member>
+      <member refid="class_print_1a3cf3e9608f1d3f8541234a4f20a47fc1" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>print</name></member>
+      <member refid="class_print_1a35a6196999c85e5afc5fd852d088e886" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>print</name></member>
+      <member refid="class_print_1a5f8df5d4f941b411ce9d660b48996bea" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>print</name></member>
+      <member refid="class_print_1afab3f8d07a58a8d37fec32d7fcb67b56" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>print</name></member>
+      <member refid="class_print_1a4be58e920bdddcaf5496d0ba2ae4ea81" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>print</name></member>
+      <member refid="class_print_1a598ac48b52f7ce46a1b5b1d8c6de8fdd" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>print</name></member>
+      <member refid="class_print_1a362ac4126fe8d3cf3061bc4408002d1f" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>print</name></member>
+      <member refid="class_print_1aa5fe80d3a3e8d2dc64f346eb08dcb43f" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>print</name></member>
+      <member refid="class_print_1a525b37c566658ff8113a067f6e8d5bf1" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>println</name></member>
+      <member refid="class_print_1afde6ae226acae7c07f07b2ac674418b9" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>println</name></member>
+      <member refid="class_print_1a09db74a8d51c6b2420c478267f958a51" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>println</name></member>
+      <member refid="class_print_1a20e39d1025276140ce3070860316fc66" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>println</name></member>
+      <member refid="class_print_1a350bdfe3569acb05a2fdefb7c54e292d" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>println</name></member>
+      <member refid="class_print_1af0aeb581689c6e9c9f8331b342a91e20" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>println</name></member>
+      <member refid="class_print_1a1999020b07369721caa16c52fdba4341" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>println</name></member>
+      <member refid="class_print_1aacf64fb9630526fb6c666f038a9dc4e6" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>println</name></member>
+      <member refid="class_print_1a7aafbd73fb788daf40f6154678b0289d" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>println</name></member>
+      <member refid="class_print_1aef90f1b88f702cebcf8ab52c25b49b25" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>println</name></member>
+      <member refid="class_print_1a4302b58946b9355b0491118227beed07" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>println</name></member>
+      <member refid="class_hardware_serial_1ab1c08d23c836513d10b2f3d8260c030d" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>read</name></member>
+      <member refid="class_hardware_serial_1a98f486dc9bce391dde7c3138a2520064" prot="private" virt="non-virtual"><scope>HardwareSerial</scope><name>rx_pin</name></member>
+      <member refid="class_hardware_serial_1abbded5337216350aab9159872ca29bd3" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>rxPin</name></member>
+      <member refid="class_hardware_serial_1a36cf8a07af495e0c765f5e9fdbfddab8" prot="private" virt="non-virtual"><scope>HardwareSerial</scope><name>tx_pin</name></member>
+      <member refid="class_hardware_serial_1a149360a97304f2e20b25437349dcb155" prot="public" virt="non-virtual"><scope>HardwareSerial</scope><name>txPin</name></member>
+      <member refid="class_hardware_serial_1a913f412932bafb4f3b15e5f2657959af" prot="private" virt="non-virtual"><scope>HardwareSerial</scope><name>usart_device</name></member>
+      <member refid="class_hardware_serial_1aaa518eaae0dcd252f3077c01f8043630" prot="public" virt="virtual"><scope>HardwareSerial</scope><name>write</name></member>
+      <member refid="class_print_1a75695b6605b4c21ba26073b4139283d8" prot="public" virt="pure-virtual" ambiguityscope="Print::"><scope>HardwareSerial</scope><name>write</name></member>
+      <member refid="class_print_1aa6d255e68e0527f189aa7c44cb28037f" prot="public" virt="virtual" ambiguityscope="Print::"><scope>HardwareSerial</scope><name>write</name></member>
+      <member refid="class_print_1a0569902a9ad573d017048e68d786ba35" prot="public" virt="virtual" ambiguityscope="Print::"><scope>HardwareSerial</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

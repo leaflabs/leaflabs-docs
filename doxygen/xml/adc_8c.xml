@@ -1,0 +1,479 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="adc_8c" kind="file">
+    <compoundname>adc.c</compoundname>
+    <includes refid="libmaple_8h" local="yes">libmaple.h</includes>
+    <includes refid="rcc_8h" local="yes">rcc.h</includes>
+    <includes refid="adc_8h" local="yes">adc.h</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="2">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="1">
+        <label>libmaple.h</label>
+        <link refid="libmaple_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="0">
+        <label>libmaple/adc.c</label>
+        <link refid="adc.c"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>adc.h</label>
+        <link refid="adc_8h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>bitband.h</label>
+        <link refid="bitband_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="adc_8c_1aaf38910fd99847dc047c11843fa884b1" prot="public" static="yes" mutable="no">
+        <type><ref refid="structadc__dev" kindref="compound">adc_dev</ref></type>
+        <definition>adc_dev adc1</definition>
+        <argsstring></argsstring>
+        <name>adc1</name>
+        <initializer> {
+    .regs   = <ref refid="adc_8h_1a695c9a2f892363a1c942405c8d351b91" kindref="member">ADC1_BASE</ref>,
+    .clk_id = RCC_ADC1
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.c" line="47" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.c" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="adc_8c_1ab2f44c17129eb02974115fb9d44df277" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structadc__dev" kindref="compound">adc_dev</ref> *</type>
+        <definition>const adc_dev* ADC1</definition>
+        <argsstring></argsstring>
+        <name>ADC1</name>
+        <initializer> &amp;adc1</initializer>
+        <briefdescription>
+<para>ADC1 device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.c" line="49" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.c" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="adc_8c_1a4406b02f83f2df8c8d13a9feec70e867" prot="public" static="yes" mutable="no">
+        <type><ref refid="structadc__dev" kindref="compound">adc_dev</ref></type>
+        <definition>adc_dev adc2</definition>
+        <argsstring></argsstring>
+        <name>adc2</name>
+        <initializer> {
+    .regs   = <ref refid="adc_8h_1a6544abc57f9759f610eee09a02442ae6" kindref="member">ADC2_BASE</ref>,
+    .clk_id = RCC_ADC2
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.c" line="54" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.c" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="adc_8c_1a3972325ad3f36467628b7e8ce262d638" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structadc__dev" kindref="compound">adc_dev</ref> *</type>
+        <definition>const adc_dev* ADC2</definition>
+        <argsstring></argsstring>
+        <name>ADC2</name>
+        <initializer> &amp;adc2</initializer>
+        <briefdescription>
+<para>ADC2 device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.c" line="56" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.c" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="adc_8c_1ad10c3e82890e0a368edfadfb70c11262" prot="public" static="no" mutable="no">
+        <type><ref refid="structadc__dev" kindref="compound">adc_dev</ref></type>
+        <definition>adc_dev adc3</definition>
+        <argsstring></argsstring>
+        <name>adc3</name>
+        <initializer> {
+    .regs   = <ref refid="adc_8h_1aca766f86c8e0b00a8e2b0224dcbb4c82" kindref="member">ADC3_BASE</ref>,
+    .clk_id = RCC_ADC3
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.c" line="62" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.c" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="adc_8c_1a3aa993e3ded670ff5703b3e3ce37ba7a" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structadc__dev" kindref="compound">adc_dev</ref> *</type>
+        <definition>const adc_dev* ADC3</definition>
+        <argsstring></argsstring>
+        <name>ADC3</name>
+        <initializer> &amp;adc3</initializer>
+        <briefdescription>
+<para>ADC3 device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.c" line="64" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.c" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="adc_8c_1a8d588cf22e19f5fc152d509d9b654d40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void adc_init</definition>
+        <argsstring>(const adc_dev *dev)</argsstring>
+        <name>adc_init</name>
+        <param>
+          <type>const <ref refid="structadc__dev" kindref="compound">adc_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Initialize an ADC peripheral. </para>        </briefdescription>
+        <detaileddescription>
+<para>Initializes the RCC clock line for the given peripheral. Resets ADC device registers.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ADC peripheral to initialize </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.c" line="75" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.c" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="adc_8c_1a8e63e11beaf9d04b92fd21b728e2aa18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void adc_set_extsel</definition>
+        <argsstring>(const adc_dev *dev, adc_extsel_event event)</argsstring>
+        <name>adc_set_extsel</name>
+        <param>
+          <type>const <ref refid="structadc__dev" kindref="compound">adc_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type><ref refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0f" kindref="member">adc_extsel_event</ref></type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Set external event select for regular group. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ADC device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Event used to trigger the start of conversion. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0f" kindref="member">adc_extsel_event</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.c" line="86" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.c" bodystart="86" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="adc_8c_1adb49446435db6389c73ec4a422b5d09d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void adc_foreach</definition>
+        <argsstring>(void(*fn)(const adc_dev *))</argsstring>
+        <name>adc_foreach</name>
+        <param>
+          <type>void(*)(const <ref refid="structadc__dev" kindref="compound">adc_dev</ref> *)</type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+<para>Call a function on all ADC devices. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to call on each ADC device. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.c" line="97" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.c" bodystart="97" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="adc_8c_1a6ccbc8e99ac38893b04d7995631e0473" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void adc_set_sample_rate</definition>
+        <argsstring>(const adc_dev *dev, adc_smp_rate smp_rate)</argsstring>
+        <name>adc_set_sample_rate</name>
+        <param>
+          <type>const <ref refid="structadc__dev" kindref="compound">adc_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type><ref refid="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519" kindref="member">adc_smp_rate</ref></type>
+          <declname>smp_rate</declname>
+        </param>
+        <briefdescription>
+<para>Turn the given sample rate into values for ADC_SMPRx. </para>        </briefdescription>
+        <detaileddescription>
+<para>Don&apos;t call this during conversion. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>adc device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>smp_rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sample rate to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519" kindref="member">adc_smp_rate</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.c" line="112" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.c" bodystart="112" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="adc_8c_1afba48cea90f600c2e7c7c4764c8a1582" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void adc_calibrate</definition>
+        <argsstring>(const adc_dev *dev)</argsstring>
+        <name>adc_calibrate</name>
+        <param>
+          <type>const <ref refid="structadc__dev" kindref="compound">adc_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Calibrate an ADC peripheral. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>adc device </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.c" line="133" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.c" bodystart="133" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="adc_8c_1a6fecdfa52f889c14238f0631582f88a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16</type>
+        <definition>uint16 adc_read</definition>
+        <argsstring>(const adc_dev *dev, uint8 channel)</argsstring>
+        <name>adc_read</name>
+        <param>
+          <type>const <ref refid="structadc__dev" kindref="compound">adc_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>channel</declname>
+        </param>
+        <briefdescription>
+<para>Perform a single synchronous software triggered conversion on a channel. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ADC device to use for reading. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>channel to convert </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>conversion result </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.c" line="153" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.c" bodystart="153" bodyend="164"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Analog to digital converter routines. </para>    </briefdescription>
+    <detaileddescription>
+<para>IMPORTANT: maximum external impedance must be below 0.4kOhms for 1.5 sample conversion time.</para><para>At 55.5 cycles/sample, the external input impedance &lt; 50kOhms.</para><para>See STM32 manual RM0008 for how to calculate this. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Perry<sp/>Hung.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libmaple_8h" kindref="compound" tooltip="General include file for libmaple.">libmaple.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rcc_8h" kindref="compound" tooltip="reset and clock control definitions and prototypes">rcc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="adc_8h" kindref="compound" tooltip="Analog-to-Digital Conversion (ADC) header.">adc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref><sp/>adc1<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="structadc__dev_1a05f4fc782026e3b163ba49b771d8ab9f" kindref="member" tooltip="Register map.">regs</ref><sp/><sp/><sp/>=<sp/><ref refid="adc_8h_1a695c9a2f892363a1c942405c8d351b91" kindref="member" tooltip="ADC1 register map base pointer.">ADC1_BASE</ref>,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>.clk_id<sp/>=<sp/>RCC_ADC1</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="49" refid="adc_8h_1ab2f44c17129eb02974115fb9d44df277" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref><sp/>*<ref refid="adc_8c_1ab2f44c17129eb02974115fb9d44df277" kindref="member" tooltip="ADC1 device.">ADC1</ref><sp/>=<sp/>&amp;adc1;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref><sp/>adc2<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="structadc__dev_1a05f4fc782026e3b163ba49b771d8ab9f" kindref="member" tooltip="Register map.">regs</ref><sp/><sp/><sp/>=<sp/><ref refid="adc_8h_1a6544abc57f9759f610eee09a02442ae6" kindref="member" tooltip="ADC2 register map base pointer.">ADC2_BASE</ref>,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>.clk_id<sp/>=<sp/>RCC_ADC2</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="56" refid="adc_8h_1a3972325ad3f36467628b7e8ce262d638" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref><sp/>*<ref refid="adc_8c_1a3972325ad3f36467628b7e8ce262d638" kindref="member" tooltip="ADC2 device.">ADC2</ref><sp/>=<sp/>&amp;adc2;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>STM32_HIGH_DENSITY</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="normal"><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref><sp/>adc3<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="structadc__dev_1a05f4fc782026e3b163ba49b771d8ab9f" kindref="member" tooltip="Register map.">regs</ref><sp/><sp/><sp/>=<sp/><ref refid="adc_8h_1aca766f86c8e0b00a8e2b0224dcbb4c82" kindref="member" tooltip="ADC3 register map base pointer.">ADC3_BASE</ref>,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>.clk_id<sp/>=<sp/>RCC_ADC3</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="64" refid="adc_8h_1a3aa993e3ded670ff5703b3e3ce37ba7a" refkind="member"><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref><sp/>*<ref refid="adc_8c_1a3aa993e3ded670ff5703b3e3ce37ba7a" kindref="member" tooltip="ADC3 device.">ADC3</ref><sp/>=<sp/>&amp;adc3;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="75" refid="adc_8h_1a8d588cf22e19f5fc152d509d9b654d40" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="adc_8c_1a8d588cf22e19f5fc152d509d9b654d40" kindref="member" tooltip="Initialize an ADC peripheral.">adc_init</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>rcc_clk_enable(dev-&gt;<ref refid="structadc__dev_1a9c34f932000c9008303a8d2c69965324" kindref="member" tooltip="RCC clock information.">clk_id</ref>);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>rcc_reset_dev(dev-&gt;<ref refid="structadc__dev_1a9c34f932000c9008303a8d2c69965324" kindref="member" tooltip="RCC clock information.">clk_id</ref>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="adc_8h_1a8e63e11beaf9d04b92fd21b728e2aa18" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="adc_8c_1a8e63e11beaf9d04b92fd21b728e2aa18" kindref="member" tooltip="Set external event select for regular group.">adc_set_extsel</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref><sp/>*dev,<sp/><ref refid="adc_8h_1aee09c19b4403d1d39cb695e1c60e9c0f" kindref="member" tooltip="External event selector for regular group conversion.">adc_extsel_event</ref><sp/>event)<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>cr2<sp/>=<sp/>dev-&gt;<ref refid="structadc__dev_1a05f4fc782026e3b163ba49b771d8ab9f" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structadc__reg__map_1a5a59370540ebbf41d1a05ce5645ff1e6" kindref="member" tooltip="Control register 2.">CR2</ref>;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>cr2<sp/>&amp;=<sp/>~ADC_CR2_EXTSEL;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>cr2<sp/>|=<sp/>event;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>dev-&gt;<ref refid="structadc__dev_1a05f4fc782026e3b163ba49b771d8ab9f" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structadc__reg__map_1a5a59370540ebbf41d1a05ce5645ff1e6" kindref="member" tooltip="Control register 2.">CR2</ref><sp/>=<sp/>cr2;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="adc_8h_1adb49446435db6389c73ec4a422b5d09d" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="adc_8c_1adb49446435db6389c73ec4a422b5d09d" kindref="member" tooltip="Call a function on all ADC devices.">adc_foreach</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*fn)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref>*))<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>fn(ADC1);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>fn(ADC2);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>STM32_HIGH_DENSITY</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>fn(ADC3);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="adc_8h_1a6ccbc8e99ac38893b04d7995631e0473" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="adc_8c_1a6ccbc8e99ac38893b04d7995631e0473" kindref="member" tooltip="Turn the given sample rate into values for ADC_SMPRx.">adc_set_sample_rate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref><sp/>*dev,<sp/><ref refid="adc_8h_1ace843f98737343a7f8d1ef7ac8f9b519" kindref="member" tooltip="ADC sample times, in ADC clock cycles.">adc_smp_rate</ref><sp/>smp_rate)<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>adc_smpr1_val<sp/>=<sp/>0,<sp/>adc_smpr2_val<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>10;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>&lt;<sp/>8)<sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>ADC_SMPR1<sp/>determines<sp/>sample<sp/>time<sp/>for<sp/>channels<sp/>[10,17]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>adc_smpr1_val<sp/>|=<sp/>smp_rate<sp/>&lt;&lt;<sp/>(i<sp/>*<sp/>3);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>ADC_SMPR2<sp/>determines<sp/>sample<sp/>time<sp/>for<sp/>channels<sp/>[0,9]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>adc_smpr2_val<sp/>|=<sp/>smp_rate<sp/>&lt;&lt;<sp/>(i<sp/>*<sp/>3);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>dev-&gt;<ref refid="structadc__dev_1a05f4fc782026e3b163ba49b771d8ab9f" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structadc__reg__map_1a1783cf2c5217280b1b0353f030f68cfd" kindref="member" tooltip="Sample time register 1.">SMPR1</ref><sp/>=<sp/>adc_smpr1_val;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>dev-&gt;<ref refid="structadc__dev_1a05f4fc782026e3b163ba49b771d8ab9f" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structadc__reg__map_1a465ba27397cc1369798a27aaeb43b23c" kindref="member" tooltip="Sample time register 2.">SMPR2</ref><sp/>=<sp/>adc_smpr2_val;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="adc_8h_1afba48cea90f600c2e7c7c4764c8a1582" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="adc_8c_1afba48cea90f600c2e7c7c4764c8a1582" kindref="member" tooltip="Calibrate an ADC peripheral.">adc_calibrate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/>*rstcal_bit<sp/>=<sp/><ref refid="bitband_8h_1a090d1c0629caa58e2e783578591378d5" kindref="member" tooltip="Obtain a pointer to the bit-band address corresponding to a bit in a peripheral address.">bb_perip</ref>(&amp;(dev-&gt;<ref refid="structadc__dev_1a05f4fc782026e3b163ba49b771d8ab9f" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structadc__reg__map_1a5a59370540ebbf41d1a05ce5645ff1e6" kindref="member" tooltip="Control register 2.">CR2</ref>),<sp/>3);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/>*cal_bit<sp/>=<sp/><ref refid="bitband_8h_1a090d1c0629caa58e2e783578591378d5" kindref="member" tooltip="Obtain a pointer to the bit-band address corresponding to a bit in a peripheral address.">bb_perip</ref>(&amp;(dev-&gt;<ref refid="structadc__dev_1a05f4fc782026e3b163ba49b771d8ab9f" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structadc__reg__map_1a5a59370540ebbf41d1a05ce5645ff1e6" kindref="member" tooltip="Control register 2.">CR2</ref>),<sp/>2);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>*rstcal_bit<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(*rstcal_bit)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>*cal_bit<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(*cal_bit)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="adc_8h_1a6fecdfa52f889c14238f0631582f88a9" refkind="member"><highlight class="normal">uint16<sp/><ref refid="adc_8c_1a6fecdfa52f889c14238f0631582f88a9" kindref="member" tooltip="Perform a single synchronous software triggered conversion on a channel.">adc_read</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref><sp/>*dev,<sp/>uint8<sp/>channel)<sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structadc__reg__map" kindref="compound" tooltip="ADC register map type.">adc_reg_map</ref><sp/>*regs<sp/>=<sp/>dev-&gt;<ref refid="structadc__dev_1a05f4fc782026e3b163ba49b771d8ab9f" kindref="member" tooltip="Register map.">regs</ref>;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="adc_8h_1a126f43fe7e241b944d2192ddfa637373" kindref="member" tooltip="Set the regular channel sequence length.">adc_set_reg_seqlen</ref>(dev,<sp/>1);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>regs-&gt;<ref refid="structadc__reg__map_1ab4443c5e93afb9b4e95afaf9fa07fe73" kindref="member" tooltip="Regular sequence register 3.">SQR3</ref><sp/>=<sp/>channel;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>regs-&gt;<ref refid="structadc__reg__map_1a5a59370540ebbf41d1a05ce5645ff1e6" kindref="member" tooltip="Control register 2.">CR2</ref><sp/>|=<sp/>ADC_CR2_SWSTART;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!(regs-&gt;<ref refid="structadc__reg__map_1a6353efa587df48ed29b578bb42e7db0b" kindref="member" tooltip="Status register.">SR</ref><sp/>&amp;<sp/>ADC_SR_EOC))</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(uint16)(regs-&gt;<ref refid="structadc__reg__map_1ad5f04a2ecbaaf2381169bf5300eabbeb" kindref="member" tooltip="Regular data register.">DR</ref><sp/>&amp;<sp/>ADC_DR_DATA);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.c"/>
+  </compounddef>
+</doxygen>

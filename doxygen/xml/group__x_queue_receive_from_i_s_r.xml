@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__x_queue_receive_from_i_s_r" kind="group">
+    <compoundname>xQueueReceiveFromISR</compoundname>
+    <title>xQueueReceiveFromISR</title>
+    <briefdescription>
+<para>queue. </para>    </briefdescription>
+    <detaileddescription>
+<para>h <preformatted>
+ portBASE_TYPE xQueueReceiveFromISR(
+									   xQueueHandle	pxQueue,
+									   void	*pvBuffer,
+									   portBASE_TYPE	*pxTaskWoken
+								   );
+ </preformatted></para><para>Receive an item from a queue. It is safe to use this function from within an interrupt service routine.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pxQueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle to the queue from which the item is to be received.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pvBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the buffer into which the received item will be copied.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pxTaskWoken</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A task may be blocked waiting for space to become available on the queue. If xQueueReceiveFromISR causes such a task to unblock *pxTaskWoken will get set to pdTRUE, otherwise *pxTaskWoken will remain unchanged.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>pdTRUE if an item was successfully received from the queue, otherwise pdFALSE.</para></simplesect>
+Example usage: <preformatted></preformatted></para><para><preformatted> xQueueHandle xQueue;</preformatted></para><para><preformatted>Function to create a queue and post some values.
+ void vAFunction( void *pvParameters )
+ {
+ char cValueToPost;
+ const portTickType xBlockTime = ( portTickType )0xff;</preformatted></para><para><preformatted>Create a queue capable of containing 10 characters.
+	xQueue = xQueueCreate( 10, sizeof( char ) );
+	if( xQueue == 0 )
+	{
+Failed to create the queue.
+	}</preformatted></para><para><preformatted>...</preformatted></para><para><preformatted>Post some characters that will be used within an ISR.  If the queue
+is full then this task will block for xBlockTime ticks.
+	cValueToPost = &apos;a&apos;;
+	xQueueSend( xQueue, ( void * ) &amp;cValueToPost, xBlockTime );
+	cValueToPost = &apos;b&apos;;
+	xQueueSend( xQueue, ( void * ) &amp;cValueToPost, xBlockTime );</preformatted></para><para><preformatted>... keep posting characters ... this task may block when the queue
+becomes full.</preformatted></para><para><preformatted>	cValueToPost = &apos;c&apos;;
+	xQueueSend( xQueue, ( void * ) &amp;cValueToPost, xBlockTime );
+ }</preformatted></para><para><preformatted>ISR that outputs all the characters received on the queue.
+ void vISR_Routine( void )
+ {
+ portBASE_TYPE xTaskWokenByReceive = pdFALSE;
+ char cRxedChar;</preformatted></para><para><preformatted>	while( xQueueReceiveFromISR( xQueue, ( void * ) &amp;cRxedChar, &amp;xTaskWokenByReceive) )
+	{
+A character was received.  Output the character now.
+		vOutputCharacter( cRxedChar );</preformatted></para><para><preformatted>If removing the character from the queue woke the task that was
+posting onto the queue cTaskWokenByReceive will have been set to
+pdTRUE.  No matter how many times this loop iterates only one
+task will be woken.
+	}</preformatted></para><para><preformatted>	if( cTaskWokenByPost != ( char ) pdFALSE;
+	{
+		taskYIELD ();
+	}
+ }
+ </preformatted> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

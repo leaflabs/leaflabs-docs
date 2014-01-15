@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__v_semaphore_create_mutex" kind="group">
+    <compoundname>vSemaphoreCreateMutex</compoundname>
+    <title>vSemaphoreCreateMutex</title>
+    <briefdescription>
+<para>semphr. </para>    </briefdescription>
+    <detaileddescription>
+<para>h <preformatted>xSemaphoreHandle xSemaphoreCreateMutex( void )</preformatted></para><para><emphasis>Macro</emphasis> that implements a mutex semaphore by using the existing queue mechanism.</para><para>Mutexes created using this macro can be accessed using the xSemaphoreTake() and xSemaphoreGive() macros. The xSemaphoreTakeRecursive() and xSemaphoreGiveRecursive() macros should not be used.</para><para>This type of semaphore uses a priority inheritance mechanism so a task &apos;taking&apos; a semaphore MUST ALWAYS &apos;give&apos; the semaphore back once the semaphore it is no longer required.</para><para>Mutex type semaphores cannot be used from within interrupt service routines.</para><para>See vSemaphoreCreateBinary() for an alternative implementation that can be used for pure synchronisation (where one task or interrupt always &apos;gives&apos; the semaphore and another always &apos;takes&apos; the semaphore) and from within interrupt service routines.</para><para><simplesect kind="return"><para>xSemaphore Handle to the created mutex semaphore. Should be of type xSemaphoreHandle.</para></simplesect>
+Example usage: <preformatted>
+ xSemaphoreHandle xSemaphore;</preformatted></para><para><preformatted> void vATask( void * pvParameters )
+ {
+Semaphore cannot be used before a call to xSemaphoreCreateMutex().
+This is a macro so pass the variable in directly.
+    xSemaphore = xSemaphoreCreateMutex();</preformatted></para><para><preformatted>    if( xSemaphore != NULL )
+    {
+The semaphore was created successfully.
+The semaphore can now be used.  
+    }
+ }
+ </preformatted></para><para>h <preformatted>xSemaphoreHandle xSemaphoreCreateRecursiveMutex( void )</preformatted></para><para><emphasis>Macro</emphasis> that implements a recursive mutex by using the existing queue mechanism.</para><para>Mutexes created using this macro can be accessed using the xSemaphoreTakeRecursive() and xSemaphoreGiveRecursive() macros. The xSemaphoreTake() and xSemaphoreGive() macros should not be used.</para><para>A mutex used recursively can be &apos;taken&apos; repeatedly by the owner. The mutex doesn&apos;t become available again until the owner has called xSemaphoreGiveRecursive() for each successful &apos;take&apos; request. For example, if a task successfully &apos;takes&apos; the same mutex 5 times then the mutex will not be available to any other task until it has also &apos;given&apos; the mutex back exactly five times.</para><para>This type of semaphore uses a priority inheritance mechanism so a task &apos;taking&apos; a semaphore MUST ALWAYS &apos;give&apos; the semaphore back once the semaphore it is no longer required.</para><para>Mutex type semaphores cannot be used from within interrupt service routines.</para><para>See vSemaphoreCreateBinary() for an alternative implementation that can be used for pure synchronisation (where one task or interrupt always &apos;gives&apos; the semaphore and another always &apos;takes&apos; the semaphore) and from within interrupt service routines.</para><para><simplesect kind="return"><para>xSemaphore Handle to the created mutex semaphore. Should be of type xSemaphoreHandle.</para></simplesect>
+Example usage: <preformatted>
+ xSemaphoreHandle xSemaphore;</preformatted></para><para><preformatted> void vATask( void * pvParameters )
+ {
+Semaphore cannot be used before a call to xSemaphoreCreateMutex().
+This is a macro so pass the variable in directly.
+    xSemaphore = xSemaphoreCreateRecursiveMutex();</preformatted></para><para><preformatted>    if( xSemaphore != NULL )
+    {
+The semaphore was created successfully.
+The semaphore can now be used.  
+    }
+ }
+ </preformatted> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structdma__handler__config" kind="struct" prot="public">
+    <compoundname>dma_handler_config</compoundname>
+    <includes refid="dma_8h" local="no">dma.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdma__handler__config_1ac771c2cf86b0cb58b0da1c27412550f4" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* dma_handler_config::handler)(void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>handler</name>
+        <briefdescription>
+<para>User-specified channel interrupt handler. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="275" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__handler__config_1aa5d1dd770e57e8cb739cbbef9b30cf94" prot="public" static="no" mutable="no">
+        <type><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83" kindref="member">nvic_irq_num</ref></type>
+        <definition>nvic_irq_num dma_handler_config::irq_line</definition>
+        <argsstring></argsstring>
+        <name>irq_line</name>
+        <briefdescription>
+<para>Channel&apos;s NVIC interrupt number. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="276" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Encapsulates state related to a DMA channel interrupt. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="273" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="273" bodyend="277"/>
+    <listofallmembers>
+      <member refid="structdma__handler__config_1ac771c2cf86b0cb58b0da1c27412550f4" prot="public" virt="non-virtual"><scope>dma_handler_config</scope><name>handler</name></member>
+      <member refid="structdma__handler__config_1aa5d1dd770e57e8cb739cbbef9b30cf94" prot="public" virt="non-virtual"><scope>dma_handler_config</scope><name>irq_line</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

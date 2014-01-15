@@ -1,0 +1,601 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="wirish__math_8h" kind="file">
+    <compoundname>wirish_math.h</compoundname>
+    <includes local="no">math.h</includes>
+    <includedby refid="wirish_8h" local="yes">wirish/wirish.h</includedby>
+    <incdepgraph>
+      <node id="1636">
+        <label>wirish/wirish_math.h</label>
+        <link refid="wirish_math.h"/>
+        <childnode refid="1637" relation="include">
+        </childnode>
+      </node>
+      <node id="1637">
+        <label>math.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1638">
+        <label>wirish/wirish_math.h</label>
+        <link refid="wirish_math.h"/>
+        <childnode refid="1639" relation="include">
+        </childnode>
+      </node>
+      <node id="1639">
+        <label>wirish/wirish.h</label>
+        <link refid="wirish_8h_source"/>
+        <childnode refid="1640" relation="include">
+        </childnode>
+        <childnode refid="1641" relation="include">
+        </childnode>
+        <childnode refid="1642" relation="include">
+        </childnode>
+        <childnode refid="1643" relation="include">
+        </childnode>
+      </node>
+      <node id="1642">
+        <label>libraries/LiquidCrystal/LiquidCrystal.h</label>
+        <link refid="_liquid_crystal_8h_source"/>
+      </node>
+      <node id="1643">
+        <label>libraries/Wire/Wire.h</label>
+        <link refid="_wire_8h_source"/>
+      </node>
+      <node id="1640">
+        <label>wirish/WProgram.h</label>
+        <link refid="_w_program_8h_source"/>
+      </node>
+      <node id="1641">
+        <label>libraries/FreeRTOS/MapleFreeRTOS.h</label>
+        <link refid="_maple_free_r_t_o_s_8h_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wirish__math_8h_1a598a3330b3c21701223ee0ca14316eca" prot="public" static="no">
+        <name>PI</name>
+        <initializer>3.1415926535897932384626433832795</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" line="87" bodyfile="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wirish__math_8h_1ae3ec3219e4eee3b0992bfd59c2e2bc42" prot="public" static="no">
+        <name>HALF_PI</name>
+        <initializer>1.5707963267948966192313216916398</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" line="88" bodyfile="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wirish__math_8h_1a3b947f4b635461030ff2d87833e5049e" prot="public" static="no">
+        <name>TWO_PI</name>
+        <initializer>6.283185307179586476925286766559</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" line="89" bodyfile="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wirish__math_8h_1a212460e743fecb084d717bb2180c5a56" prot="public" static="no">
+        <name>DEG_TO_RAD</name>
+        <initializer>0.017453292519943295769236907684886</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" line="90" bodyfile="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wirish__math_8h_1a89e47af0449640d4f15191aba5ca24c6" prot="public" static="no">
+        <name>RAD_TO_DEG</name>
+        <initializer>57.295779513082320876798154814105</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" line="91" bodyfile="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wirish__math_8h_1ac6afabdc09a49a433ee19d8a9486056d" prot="public" static="no">
+        <name>min</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer>((a)&lt;(b)?(a):(b))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" line="93" bodyfile="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wirish__math_8h_1affe776513b24d84b39af8ab0930fef7f" prot="public" static="no">
+        <name>max</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer>((a)&gt;(b)?(a):(b))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" line="94" bodyfile="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wirish__math_8h_1a7df4a1319e5665c9040aa1838eef987c" prot="public" static="no">
+        <name>constrain</name>
+        <param><defname>amt</defname></param>
+        <param><defname>low</defname></param>
+        <param><defname>high</defname></param>
+        <initializer>((amt)&lt;(low)?(low):((amt)&gt;(high)?(high):(amt)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" line="95" bodyfile="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wirish__math_8h_1a6ea10f4260b54a61665ead26cb995ba3" prot="public" static="no">
+        <name>round</name>
+        <param><defname>x</defname></param>
+        <initializer>((x)&gt;=0?(long)((x)+0.5):(long)((x)-0.5))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" line="96" bodyfile="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wirish__math_8h_1a7571dba2995b9cb57259345fe49d2f97" prot="public" static="no">
+        <name>radians</name>
+        <param><defname>deg</defname></param>
+        <initializer>((deg)*DEG_TO_RAD)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" line="97" bodyfile="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wirish__math_8h_1afe93c2c14da376a1621194c15c1de496" prot="public" static="no">
+        <name>degrees</name>
+        <param><defname>rad</defname></param>
+        <initializer>((rad)*RAD_TO_DEG)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" line="98" bodyfile="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wirish__math_8h_1ae7616788b30810a219d9cdee95904ba4" prot="public" static="no">
+        <name>sq</name>
+        <param><defname>x</defname></param>
+        <initializer>((x)*(x))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" line="99" bodyfile="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wirish__math_8h_1a3aa069ac3980707dae1e0530f50d59e4" prot="public" static="no">
+        <name>abs</name>
+        <param><defname>x</defname></param>
+        <initializer>(((x) &gt; 0) ? (x) : -(x))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" line="105" bodyfile="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wirish__math_8h_1a7168ac68f2e0af58e9581a9360845061" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void randomSeed</definition>
+        <argsstring>(unsigned int seed)</argsstring>
+        <name>randomSeed</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>seed</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the pseudo-random number generator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>seed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the number used to initialize the seed; cannot be zero. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" line="41"/>
+      </memberdef>
+      <memberdef kind="function" id="wirish__math_8h_1a07da44cd136848332e2b70879a4385b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long random</definition>
+        <argsstring>(long max)</argsstring>
+        <name>random</name>
+        <param>
+          <type>long</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>Generate a pseudo-random number with upper bound. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An upper bound on the returned value, exclusive. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pseudo-random number in the range [0,max). </para></simplesect>
+<simplesect kind="see"><para><ref refid="wirish__math_8h_1a7168ac68f2e0af58e9581a9360845061" kindref="member">randomSeed()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="wirish__math_8h_1a2d69632859fb548f0e5a74f77d36b1eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long random</definition>
+        <argsstring>(long min, long max)</argsstring>
+        <name>random</name>
+        <param>
+          <type>long</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>Generate a pseudo-random number with lower and upper bounds. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lower bound on the returned value, inclusive. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Upper bound on the returned value, exclusive. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A pseudo-random number in the range [min, max). </para></simplesect>
+<simplesect kind="see"><para><ref refid="wirish__math_8h_1a7168ac68f2e0af58e9581a9360845061" kindref="member">randomSeed()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="wirish__math_8h_1a9ef9b4bb711c6e42ec6f2d6e7e137d73" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long</type>
+        <definition>static long map</definition>
+        <argsstring>(long value, long fromStart, long fromEnd, long toStart, long toEnd)</argsstring>
+        <name>map</name>
+        <param>
+          <type>long</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>fromStart</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>fromEnd</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>toStart</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>toEnd</declname>
+        </param>
+        <briefdescription>
+<para>Remap a number from one range to another. </para>        </briefdescription>
+        <detaileddescription>
+<para>That is, a value equal to fromStart gets mapped to toStart, a value of fromEnd to toEnd, and other values are mapped proportionately.</para><para>Does not constrain value to lie within [fromStart, fromEnd].</para><para>If a &quot;start&quot; value is larger than its corresponding &quot;end&quot;, the ranges are reversed, so map(n, 1, 10, 10, 1) would reverse the range [1,10].</para><para>Negative numbers may appear as any argument.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value to map. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fromStart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the beginning of the value&apos;s current range. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fromEnd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the end of the value&apos;s current range. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>toStart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the beginning of the value&apos;s mapped range. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>toEnd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the end of the value&apos;s mapped range. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the mapped value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" line="82" bodyfile="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" bodystart="81" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="wirish__math_8h_1a5e7b53a694b3cf0f2d7debd444140fbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double cos</definition>
+        <argsstring>(double x)</argsstring>
+        <name>cos</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Compute the cosine of an angle, in radians. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The radian measure of the angle. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The cosine of x. This value will be between -1 and 1. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" line="117"/>
+      </memberdef>
+      <memberdef kind="function" id="wirish__math_8h_1aad4af25633b071b0e2cdb8ebd87eca77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sin</definition>
+        <argsstring>(double x)</argsstring>
+        <name>sin</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Compute the sine of an angle, in radians. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The radian measure of the angle. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The sine of x. This value will be between -1 and 1. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" line="124"/>
+      </memberdef>
+      <memberdef kind="function" id="wirish__math_8h_1aa48fdfd5eea5f4f9c33496402b9e4039" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double tan</definition>
+        <argsstring>(double x)</argsstring>
+        <name>tan</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Compute the tangent of an angle, in radians. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The radian measure of the angle. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The tangent of x. There are no limits on the return value of this function. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" line="132"/>
+      </memberdef>
+      <memberdef kind="function" id="wirish__math_8h_1ab87521a75ef827a85807f89a6c10629a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sqrt</definition>
+        <argsstring>(double x)</argsstring>
+        <name>sqrt</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Compute the square root of a number. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number whose square root to find. This value cannot be negative. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The square root of x. The return value is never negative. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" line="140"/>
+      </memberdef>
+      <memberdef kind="function" id="wirish__math_8h_1aa56c9494c95edf68386375e97d64159b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double pow</definition>
+        <argsstring>(double x, double y)</argsstring>
+        <name>pow</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Compute an exponentiation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the base. This value cannot be zero if y &lt;= 0. This value cannot be negative if y is not an integral value. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the exponent. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>x raised to the power y. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h" line="149"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Includes &lt;math.h&gt;; provides Arduino-compatible math routines. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Perry<sp/>Hung.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor">#ifndef<sp/>_WIRING_MATH_H_</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_WIRING_MATH_H_</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="wirish__math_8h_1a7168ac68f2e0af58e9581a9360845061" kindref="member" tooltip="Initialize the pseudo-random number generator.">randomSeed</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>seed);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="wirish__math_8h_1a07da44cd136848332e2b70879a4385b4" kindref="member" tooltip="Generate a pseudo-random number with upper bound.">random</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>max);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="wirish__math_8h_1a07da44cd136848332e2b70879a4385b4" kindref="member" tooltip="Generate a pseudo-random number with upper bound.">random</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>max);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="wirish__math_8h_1a9ef9b4bb711c6e42ec6f2d6e7e137d73" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="wirish__math_8h_1a9ef9b4bb711c6e42ec6f2d6e7e137d73" kindref="member" tooltip="Remap a number from one range to another.">map</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>value,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>fromStart,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>fromEnd,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>toStart,<sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>toEnd)<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(value<sp/>-<sp/>fromStart)<sp/>*<sp/>(toEnd<sp/>-<sp/>toStart)<sp/>/<sp/>(fromEnd<sp/>-<sp/>fromStart)<sp/>+</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>toStart;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3.1415926535897932384626433832795</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HALF_PI<sp/><sp/><sp/><sp/><sp/>1.5707963267948966192313216916398</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TWO_PI<sp/><sp/><sp/><sp/><sp/><sp/>6.283185307179586476925286766559</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DEG_TO_RAD<sp/><sp/>0.017453292519943295769236907684886</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RAD_TO_DEG<sp/>57.295779513082320876798154814105</highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>min(a,b)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((a)&lt;(b)?(a):(b))</highlight></codeline>
+<codeline lineno="94"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>max(a,b)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((a)&gt;(b)?(a):(b))</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>constrain(amt,low,high)<sp/>((amt)&lt;(low)?(low):((amt)&gt;(high)?(high):(amt)))</highlight></codeline>
+<codeline lineno="96"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>round(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((x)&gt;=0?(long)((x)+0.5):(long)((x)-0.5))</highlight></codeline>
+<codeline lineno="97"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>radians(deg)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((deg)*DEG_TO_RAD)</highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>degrees(rad)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((rad)*RAD_TO_DEG)</highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>sq(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((x)*(x))</highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>undefine<sp/>stdlib&apos;s<sp/>abs<sp/>if<sp/>encountered<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>abs</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#undef<sp/>abs</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>abs(x)<sp/>(((x)<sp/>&gt;<sp/>0)<sp/>?<sp/>(x)<sp/>:<sp/>-(x))</highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Following<sp/>are<sp/>duplicate<sp/>declarations<sp/>(with<sp/>Doxygen<sp/>comments)<sp/>for</highlight></codeline>
+<codeline lineno="108"><highlight class="comment"><sp/>*<sp/>some<sp/>of<sp/>the<sp/>math.h<sp/>functions;<sp/>this<sp/>is<sp/>for<sp/>the<sp/>convenience<sp/>of<sp/>the</highlight></codeline>
+<codeline lineno="109"><highlight class="comment"><sp/>*<sp/>Sphinx<sp/>docs.</highlight></codeline>
+<codeline lineno="110"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="wirish__math_8h_1a5e7b53a694b3cf0f2d7debd444140fbd" kindref="member" tooltip="Compute the cosine of an angle, in radians.">cos</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="wirish__math_8h_1aad4af25633b071b0e2cdb8ebd87eca77" kindref="member" tooltip="Compute the sine of an angle, in radians.">sin</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="wirish__math_8h_1aa48fdfd5eea5f4f9c33496402b9e4039" kindref="member" tooltip="Compute the tangent of an angle, in radians.">tan</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="wirish__math_8h_1ab87521a75ef827a85807f89a6c10629a" kindref="member" tooltip="Compute the square root of a number.">sqrt</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="wirish__math_8h_1aa56c9494c95edf68386375e97d64159b" kindref="member" tooltip="Compute an exponentiation.">pow</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_math.h"/>
+  </compounddef>
+</doxygen>

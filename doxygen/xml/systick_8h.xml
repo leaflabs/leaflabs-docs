@@ -1,0 +1,466 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="systick_8h" kind="file">
+    <compoundname>systick.h</compoundname>
+    <includes refid="libmaple__types_8h" local="yes">libmaple_types.h</includes>
+    <includes refid="util_8h" local="yes">util.h</includes>
+    <includedby refid="i2c_8c" local="yes">libmaple/i2c.c</includedby>
+    <includedby refid="systick_8c" local="yes">libmaple/systick.c</includedby>
+    <includedby refid="wirish__time_8h" local="yes">wirish/wirish_time.h</includedby>
+    <incdepgraph>
+      <node id="614">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="613">
+        <label>libmaple/systick.h</label>
+        <link refid="systick.h"/>
+        <childnode refid="614" relation="include">
+        </childnode>
+        <childnode refid="615" relation="include">
+        </childnode>
+      </node>
+      <node id="615">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="614" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="621">
+        <label>wirish/wirish.h</label>
+        <link refid="wirish_8h_source"/>
+        <childnode refid="622" relation="include">
+        </childnode>
+        <childnode refid="623" relation="include">
+        </childnode>
+        <childnode refid="624" relation="include">
+        </childnode>
+        <childnode refid="625" relation="include">
+        </childnode>
+      </node>
+      <node id="620">
+        <label>wirish/io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="621" relation="include">
+        </childnode>
+      </node>
+      <node id="617">
+        <label>libmaple/i2c.c</label>
+        <link refid="i2c_8c"/>
+      </node>
+      <node id="624">
+        <label>libraries/LiquidCrystal/LiquidCrystal.h</label>
+        <link refid="_liquid_crystal_8h_source"/>
+      </node>
+      <node id="619">
+        <label>wirish/wirish_time.h</label>
+        <link refid="wirish__time_8h"/>
+        <childnode refid="620" relation="include">
+        </childnode>
+        <childnode refid="621" relation="include">
+        </childnode>
+      </node>
+      <node id="618">
+        <label>libmaple/systick.c</label>
+        <link refid="systick_8c_source"/>
+      </node>
+      <node id="616">
+        <label>libmaple/systick.h</label>
+        <link refid="systick.h"/>
+        <childnode refid="617" relation="include">
+        </childnode>
+        <childnode refid="618" relation="include">
+        </childnode>
+        <childnode refid="619" relation="include">
+        </childnode>
+      </node>
+      <node id="625">
+        <label>libraries/Wire/Wire.h</label>
+        <link refid="_wire_8h_source"/>
+      </node>
+      <node id="622">
+        <label>wirish/WProgram.h</label>
+        <link refid="_w_program_8h_source"/>
+      </node>
+      <node id="623">
+        <label>libraries/FreeRTOS/MapleFreeRTOS.h</label>
+        <link refid="_maple_free_r_t_o_s_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structsystick__reg__map" prot="public">systick_reg_map</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="systick_8h_1a5f6ac8b4c581ebfa1f6a2013dec2396d" prot="public" static="no">
+        <name>SYSTICK_BASE</name>
+        <initializer>((struct <ref refid="structsystick__reg__map" kindref="compound">systick_reg_map</ref>*)0xE000E010)</initializer>
+        <briefdescription>
+<para>SysTick register map base pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h" line="52" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="systick_8h_1ac88ad21c10e9bf72311a31ec16daae8b" prot="public" static="no">
+        <name>SYSTICK_CSR_COUNTFLAG</name>
+        <initializer>BIT(16)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h" line="60" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="systick_8h_1a7e71affc5bd57a6756410b15322b8e20" prot="public" static="no">
+        <name>SYSTICK_CSR_CLKSOURCE</name>
+        <initializer>BIT(2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h" line="61" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="systick_8h_1a3be33846b073d0e07c96af91f08c51b0" prot="public" static="no">
+        <name>SYSTICK_CSR_CLKSOURCE_EXTERNAL</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h" line="62" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="systick_8h_1a05e345445a88afea3f3cec81919ab5bf" prot="public" static="no">
+        <name>SYSTICK_CSR_CLKSOURCE_CORE</name>
+        <initializer>BIT(2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h" line="63" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="systick_8h_1a04617219830c078f7e8ed404a674d5fd" prot="public" static="no">
+        <name>SYSTICK_CSR_TICKINT</name>
+        <initializer>BIT(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h" line="64" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="systick_8h_1a6d273c73a1090f88df37259ebf1d0b99" prot="public" static="no">
+        <name>SYSTICK_CSR_TICKINT_PEND</name>
+        <initializer>BIT(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h" line="65" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="systick_8h_1a301d731d0e01e05ae414ad37503b7f48" prot="public" static="no">
+        <name>SYSTICK_CSR_TICKINT_NO_PEND</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h" line="66" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="systick_8h_1ac02cd5ac520780a2f5ddb12e0941f773" prot="public" static="no">
+        <name>SYSTICK_CSR_ENABLE</name>
+        <initializer>BIT(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h" line="67" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="systick_8h_1a5dde9b251bbbd9fdd3d377cb81620d2e" prot="public" static="no">
+        <name>SYSTICK_CSR_ENABLE_MULTISHOT</name>
+        <initializer>BIT(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h" line="68" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="systick_8h_1ad562ec4ee4e7216a7a98ea84b3c2dfe9" prot="public" static="no">
+        <name>SYSTICK_CSR_ENABLE_DISABLED</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h" line="69" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="systick_8h_1a989fde8dbc0970a78a4ce13bd1d92213" prot="public" static="no">
+        <name>SYSTICK_CVR_NOREF</name>
+        <initializer>BIT(31)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h" line="73" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="systick_8h_1a1930ac8ad4c57dbd55a26b7c84b7279f" prot="public" static="no">
+        <name>SYSTICK_CVR_SKEW</name>
+        <initializer>BIT(30)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h" line="74" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="systick_8h_1a070ba20fad5994c666fd740bebeabffd" prot="public" static="no">
+        <name>SYSTICK_CVR_TENMS</name>
+        <initializer>0xFFFFFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h" line="75" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="systick_8h_1a202ff4986ead6aa0fd590c4c9a5af768" prot="public" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>volatile uint32 systick_uptime_millis</definition>
+        <argsstring></argsstring>
+        <name>systick_uptime_millis</name>
+        <briefdescription>
+<para>System elapsed time, in milliseconds. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h" line="78" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.c" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="systick_8h_1a8d9e8be23ed5bcf7ee68333180d1e8ec" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32</type>
+        <definition>static uint32 systick_uptime</definition>
+        <argsstring>(void)</argsstring>
+        <name>systick_uptime</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the system uptime, in milliseconds. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h" line="83" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.h" bodystart="83" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="systick_8h_1a3824cca1fc00921d15e474451714afa6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void systick_init</definition>
+        <argsstring>(uint32 reload_val)</argsstring>
+        <name>systick_init</name>
+        <param>
+          <type>uint32</type>
+          <declname>reload_val</declname>
+        </param>
+        <briefdescription>
+<para>Initialize and enable SysTick. </para>        </briefdescription>
+        <detaileddescription>
+<para>Clocks the system timer with the core clock, turns it on, and enables interrupts.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reload_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Appropriate reload counter to tick every 1 ms. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h" line="88" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.c" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="systick_8h_1a23a475a16abcc21caa11e52539be4a70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void systick_disable</definition>
+        <argsstring>()</argsstring>
+        <name>systick_disable</name>
+        <briefdescription>
+<para>Clock the system timer with the core clock, but don&apos;t turn it on or enable interrupt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h" line="89" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.c" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="systick_8h_1ab0296113160a008111a1c39150423b5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void systick_enable</definition>
+        <argsstring>()</argsstring>
+        <name>systick_enable</name>
+        <briefdescription>
+<para>Clock the system timer with the core clock and turn it on; interrupt every 1 ms, for systick_timer_millis. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h" line="90" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.c" bodystart="61" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="systick_8h_1a30ec980344b2f608b40eb67d6ffeed4d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32</type>
+        <definition>static uint32 systick_get_count</definition>
+        <argsstring>(void)</argsstring>
+        <name>systick_get_count</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Returns the current value of the SysTick counter. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h" line="95" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.h" bodystart="95" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="systick_8h_1acfa3c7978f6fd8988d9cdaad5b920cca" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32</type>
+        <definition>static uint32 systick_check_underflow</definition>
+        <argsstring>(void)</argsstring>
+        <name>systick_check_underflow</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Check for underflow. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns 1 if the SysTick timer has counted to 0 since the last time it was called. However, any reads of any part of the SysTick Control and Status Register SYSTICK_BASE-&gt;CSR will interfere with this functionality. See the ARM Cortex M3 Technical Reference Manual for more details (e.g. Table 8-3 in revision r1p1). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h" line="108" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.h" bodystart="108" bodyend="110"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Various system timer definitions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Perry<sp/>Hung.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor">#ifndef<sp/>_SYSTICK_H_</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_SYSTICK_H_</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libmaple__types_8h" kindref="compound" tooltip="libmaple types">libmaple_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="util_8h" kindref="compound" tooltip="Miscellaneous utility macros and procedures.">util.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="44" refid="structsystick__reg__map" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsystick__reg__map" kindref="compound" tooltip="SysTick register map type.">systick_reg_map</ref><sp/>{</highlight></codeline>
+<codeline lineno="45" refid="structsystick__reg__map_1a9d7fc9f093316c406fd1c807e684fff2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structsystick__reg__map_1a9d7fc9f093316c406fd1c807e684fff2" kindref="member" tooltip="Control and status register.">CSR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46" refid="structsystick__reg__map_1a206a2d996b26c1c24c869a078e6e9925" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structsystick__reg__map_1a206a2d996b26c1c24c869a078e6e9925" kindref="member" tooltip="Reload value register.">RVR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="structsystick__reg__map_1a9dc848a54e4cef23cc93937c887ac273" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structsystick__reg__map_1a9dc848a54e4cef23cc93937c887ac273" kindref="member" tooltip="Current value register (&amp;quot;count&amp;quot;)">CNT</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48" refid="structsystick__reg__map_1a231c46d2ab97f8fa9b0dafadb3dfb1f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structsystick__reg__map_1a231c46d2ab97f8fa9b0dafadb3dfb1f6" kindref="member" tooltip="Calibration value register.">CVR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}<sp/><ref refid="structsystick__reg__map" kindref="compound" tooltip="SysTick register map type.">systick_reg_map</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="systick_8h_1a5f6ac8b4c581ebfa1f6a2013dec2396d" refkind="member"><highlight class="preprocessor">#define<sp/>SYSTICK_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((struct<sp/>systick_reg_map*)0xE000E010)</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*<sp/>Register<sp/>bit<sp/>definitions.</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Control<sp/>and<sp/>status<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SYSTICK_CSR_COUNTFLAG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(16)</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SYSTICK_CSR_CLKSOURCE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(2)</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SYSTICK_CSR_CLKSOURCE_EXTERNAL<sp/><sp/>0</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SYSTICK_CSR_CLKSOURCE_CORE<sp/><sp/><sp/><sp/><sp/><sp/>BIT(2)</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SYSTICK_CSR_TICKINT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(1)</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SYSTICK_CSR_TICKINT_PEND<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(1)</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SYSTICK_CSR_TICKINT_NO_PEND<sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SYSTICK_CSR_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(0)</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SYSTICK_CSR_ENABLE_MULTISHOT<sp/><sp/><sp/><sp/>BIT(0)</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SYSTICK_CSR_ENABLE_DISABLED<sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Calibration<sp/>value<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SYSTICK_CVR_NOREF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(31)</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SYSTICK_CVR_SKEW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(30)</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SYSTICK_CVR_TENMS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xFFFFFF</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="78"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32<sp/>systick_uptime_millis;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="systick_8h_1a8d9e8be23ed5bcf7ee68333180d1e8ec" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32<sp/><ref refid="systick_8h_1a8d9e8be23ed5bcf7ee68333180d1e8ec" kindref="member" tooltip="Returns the system uptime, in milliseconds.">systick_uptime</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>systick_uptime_millis;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>systick_init(uint32<sp/>reload_val);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>systick_disable();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>systick_enable();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="systick_8h_1a30ec980344b2f608b40eb67d6ffeed4d" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32<sp/><ref refid="systick_8h_1a30ec980344b2f608b40eb67d6ffeed4d" kindref="member" tooltip="Returns the current value of the SysTick counter.">systick_get_count</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="systick_8h_1a5f6ac8b4c581ebfa1f6a2013dec2396d" kindref="member" tooltip="SysTick register map base pointer.">SYSTICK_BASE</ref>-&gt;CNT;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="systick_8h_1acfa3c7978f6fd8988d9cdaad5b920cca" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32<sp/><ref refid="systick_8h_1acfa3c7978f6fd8988d9cdaad5b920cca" kindref="member" tooltip="Check for underflow.">systick_check_underflow</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="systick_8h_1a5f6ac8b4c581ebfa1f6a2013dec2396d" kindref="member" tooltip="SysTick register map base pointer.">SYSTICK_BASE</ref>-&gt;CSR<sp/>&amp;<sp/>SYSTICK_CSR_COUNTFLAG;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="113"><highlight class="preprocessor"></highlight><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>extern<sp/>&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="115"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h"/>
+  </compounddef>
+</doxygen>

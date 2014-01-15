@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structx_q_u_e_u_e" kind="struct" prot="public">
+    <compoundname>xQUEUE</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structx_q_u_e_u_e_1a8280d5f2ea11a818f14fdf6349450649" prot="public" static="no" mutable="no">
+        <type>signed char *</type>
+        <definition>signed char* xQUEUE::pcHead</definition>
+        <argsstring></argsstring>
+        <name>pcHead</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" line="106" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_q_u_e_u_e_1a5a137e973746f4dea176602d0a2d7372" prot="public" static="no" mutable="no">
+        <type>signed char *</type>
+        <definition>signed char* xQUEUE::pcTail</definition>
+        <argsstring></argsstring>
+        <name>pcTail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" line="107" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_q_u_e_u_e_1a18e7c9235a9743258698664634e8cf6e" prot="public" static="no" mutable="no">
+        <type>signed char *</type>
+        <definition>signed char* xQUEUE::pcWriteTo</definition>
+        <argsstring></argsstring>
+        <name>pcWriteTo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" line="109" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_q_u_e_u_e_1afffbd9861fe9716e99fc929c0c2bf5bd" prot="public" static="no" mutable="no">
+        <type>signed char *</type>
+        <definition>signed char* xQUEUE::pcReadFrom</definition>
+        <argsstring></argsstring>
+        <name>pcReadFrom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" line="110" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_q_u_e_u_e_1a983469e8f5a2a60965007f5b41cfe6cf" prot="public" static="no" mutable="no">
+        <type><ref refid="structx_list" kindref="compound">xList</ref></type>
+        <definition>xList xQUEUE::xTasksWaitingToSend</definition>
+        <argsstring></argsstring>
+        <name>xTasksWaitingToSend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" line="112" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_q_u_e_u_e_1a416a9ae99ca1d880fd433e5ee4f64885" prot="public" static="no" mutable="no">
+        <type><ref refid="structx_list" kindref="compound">xList</ref></type>
+        <definition>xList xQUEUE::xTasksWaitingToReceive</definition>
+        <argsstring></argsstring>
+        <name>xTasksWaitingToReceive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" line="113" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_q_u_e_u_e_1a6fd26b69513ba66b362a28c9f0f027da" prot="public" static="no" mutable="no">
+        <type>unsigned portBASE_TYPE</type>
+        <definition>volatile unsigned portBASE_TYPE xQUEUE::uxMessagesWaiting</definition>
+        <argsstring></argsstring>
+        <name>uxMessagesWaiting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" line="115" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_q_u_e_u_e_1ada3c7f802f8012fbf38fc7456dfc0933" prot="public" static="no" mutable="no">
+        <type>unsigned portBASE_TYPE</type>
+        <definition>unsigned portBASE_TYPE xQUEUE::uxLength</definition>
+        <argsstring></argsstring>
+        <name>uxLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" line="116" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_q_u_e_u_e_1aa7478aaca8479545dad4bf10cc77ecd1" prot="public" static="no" mutable="no">
+        <type>unsigned portBASE_TYPE</type>
+        <definition>unsigned portBASE_TYPE xQUEUE::uxItemSize</definition>
+        <argsstring></argsstring>
+        <name>uxItemSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" line="117" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_q_u_e_u_e_1a7e6ff687a741e94aab17d83e6833dfa0" prot="public" static="no" mutable="no">
+        <type>signed portBASE_TYPE</type>
+        <definition>signed portBASE_TYPE xQUEUE::xRxLock</definition>
+        <argsstring></argsstring>
+        <name>xRxLock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" line="119" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_q_u_e_u_e_1a84a1e97555f356e2ab08192b6c7676c7" prot="public" static="no" mutable="no">
+        <type>signed portBASE_TYPE</type>
+        <definition>signed portBASE_TYPE xQUEUE::xTxLock</definition>
+        <argsstring></argsstring>
+        <name>xTxLock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" line="120" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="196">
+        <label>xList</label>
+        <link refid="structx_list"/>
+      </node>
+      <node id="195">
+        <label>xQUEUE</label>
+        <link refid="structx_q_u_e_u_e"/>
+        <childnode refid="196" relation="usage">
+          <edgelabel>xTasksWaitingToSend</edgelabel>
+          <edgelabel>xTasksWaitingToReceive</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" line="105" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/queue.c" bodystart="104" bodyend="122"/>
+    <listofallmembers>
+      <member refid="structx_q_u_e_u_e_1a8280d5f2ea11a818f14fdf6349450649" prot="public" virt="non-virtual"><scope>xQUEUE</scope><name>pcHead</name></member>
+      <member refid="structx_q_u_e_u_e_1afffbd9861fe9716e99fc929c0c2bf5bd" prot="public" virt="non-virtual"><scope>xQUEUE</scope><name>pcReadFrom</name></member>
+      <member refid="structx_q_u_e_u_e_1a5a137e973746f4dea176602d0a2d7372" prot="public" virt="non-virtual"><scope>xQUEUE</scope><name>pcTail</name></member>
+      <member refid="structx_q_u_e_u_e_1a18e7c9235a9743258698664634e8cf6e" prot="public" virt="non-virtual"><scope>xQUEUE</scope><name>pcWriteTo</name></member>
+      <member refid="structx_q_u_e_u_e_1aa7478aaca8479545dad4bf10cc77ecd1" prot="public" virt="non-virtual"><scope>xQUEUE</scope><name>uxItemSize</name></member>
+      <member refid="structx_q_u_e_u_e_1ada3c7f802f8012fbf38fc7456dfc0933" prot="public" virt="non-virtual"><scope>xQUEUE</scope><name>uxLength</name></member>
+      <member refid="structx_q_u_e_u_e_1a6fd26b69513ba66b362a28c9f0f027da" prot="public" virt="non-virtual"><scope>xQUEUE</scope><name>uxMessagesWaiting</name></member>
+      <member refid="structx_q_u_e_u_e_1a7e6ff687a741e94aab17d83e6833dfa0" prot="public" virt="non-virtual"><scope>xQUEUE</scope><name>xRxLock</name></member>
+      <member refid="structx_q_u_e_u_e_1a416a9ae99ca1d880fd433e5ee4f64885" prot="public" virt="non-virtual"><scope>xQUEUE</scope><name>xTasksWaitingToReceive</name></member>
+      <member refid="structx_q_u_e_u_e_1a983469e8f5a2a60965007f5b41cfe6cf" prot="public" virt="non-virtual"><scope>xQUEUE</scope><name>xTasksWaitingToSend</name></member>
+      <member refid="structx_q_u_e_u_e_1a84a1e97555f356e2ab08192b6c7676c7" prot="public" virt="non-virtual"><scope>xQUEUE</scope><name>xTxLock</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,798 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="flash_8h" kind="file">
+    <compoundname>flash.h</compoundname>
+    <includes refid="libmaple__types_8h" local="yes">libmaple_types.h</includes>
+    <includedby refid="flash_8c" local="yes">libmaple/flash.c</includedby>
+    <includedby refid="rcc_8c" local="yes">libmaple/rcc.c</includedby>
+    <incdepgraph>
+      <node id="184">
+        <label>libmaple/flash.h</label>
+        <link refid="flash.h"/>
+        <childnode refid="185" relation="include">
+        </childnode>
+      </node>
+      <node id="185">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="187">
+        <label>libmaple/flash.c</label>
+        <link refid="flash_8c"/>
+      </node>
+      <node id="186">
+        <label>libmaple/flash.h</label>
+        <link refid="flash.h"/>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+      </node>
+      <node id="188">
+        <label>libmaple/rcc.c</label>
+        <link refid="rcc_8c_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structflash__reg__map" prot="public">flash_reg_map</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="flash_8h_1a23a9099a5f8fc9c6e253c0eecb2be8db" prot="public" static="no">
+        <name>FLASH_BASE</name>
+        <initializer>((struct <ref refid="structflash__reg__map" kindref="compound">flash_reg_map</ref>*)0x40022000)</initializer>
+        <briefdescription>
+<para>Flash register map base pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="55" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a5066a669a98ca0c669b6fb6140d363a3" prot="public" static="no">
+        <name>FLASH_ACR_PRFTBS_BIT</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="63" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a942dda9f27074a337e041ce25e2826bf" prot="public" static="no">
+        <name>FLASH_ACR_PRFTBE_BIT</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="64" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1ad15449c380a23f0aaad4050466c27b01" prot="public" static="no">
+        <name>FLASH_ACR_HLFCYA_BIT</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="65" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a1e73d25ffe7e7a258a873e1fbef17445" prot="public" static="no">
+        <name>FLASH_ACR_PRFTBS</name>
+        <initializer>BIT(FLASH_ACR_PRFTBS_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="67" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a5285ab198307213dce0629f9b7c6fc86" prot="public" static="no">
+        <name>FLASH_ACR_PRFTBE</name>
+        <initializer>BIT(FLASH_ACR_PRFTBE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="68" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a6e66d0fa94c019e9c27a3d79e8228cd9" prot="public" static="no">
+        <name>FLASH_ACR_HLFCYA</name>
+        <initializer>BIT(FLASH_ACR_HLFCYA_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="69" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1aef5e44cbb084160a6004ca9951ec7318" prot="public" static="no">
+        <name>FLASH_ACR_LATENCY</name>
+        <initializer>0x7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="70" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a299d210bf8ec4ca6a49c6bd45a09984f" prot="public" static="no">
+        <name>FLASH_SR_EOP_BIT</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="74" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1aec9c051af1daff394318c500989c0793" prot="public" static="no">
+        <name>FLASH_SR_WRPRTERR_BIT</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="75" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1ad50bf74926a6226cbd3c3e28cb2b5f45" prot="public" static="no">
+        <name>FLASH_SR_PGERR_BIT</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="76" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a0bf783a52a8efe536c472d93d1cfff3d" prot="public" static="no">
+        <name>FLASH_SR_BSY_BIT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="77" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1ae1301c6b487cfefa247c54a576a0c12b" prot="public" static="no">
+        <name>FLASH_SR_EOP</name>
+        <initializer>BIT(FLASH_SR_EOP_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="79" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a2e403606e5ac23cb07701aeebc1f73e5" prot="public" static="no">
+        <name>FLASH_SR_WRPRTERR</name>
+        <initializer>BIT(FLASH_SR_WRPRTERR_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="80" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a60f40ca765714598a62aa216a5ccd8e4" prot="public" static="no">
+        <name>FLASH_SR_PGERR</name>
+        <initializer>BIT(FLASH_SR_PGERR_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="81" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a4b86181a96fd2f1cc3828e9d8d83d368" prot="public" static="no">
+        <name>FLASH_SR_BSY</name>
+        <initializer>BIT(FLASH_SR_BSY_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="82" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a0667d1a6a7febd6aafb3c9b05088d008" prot="public" static="no">
+        <name>FLASH_CR_EOPIE_BIT</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="86" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a53d288ef8b62c68ebf7e6dfd429fb6e5" prot="public" static="no">
+        <name>FLASH_CR_ERRIE_BIT</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="87" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a91c9ec9dca49e79e89a72dba0558748f" prot="public" static="no">
+        <name>FLASH_CR_OPTWRE_BIT</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="88" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a1068f4b5a7a4f0d8c1de2374f9c72e00" prot="public" static="no">
+        <name>FLASH_CR_LOCK_BIT</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="89" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a8525d8d09f9411f9cd944360d04efecc" prot="public" static="no">
+        <name>FLASH_CR_STRT_BIT</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="90" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a6726b40c1fbca693f266746dcd3a381c" prot="public" static="no">
+        <name>FLASH_CR_OPTER_BIT</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="91" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1ac7e8541c3a200d8331b99337c2c9eb93" prot="public" static="no">
+        <name>FLASH_CR_OPTPG_BIT</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="92" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a91ab0366ca178388a1e28831096b9003" prot="public" static="no">
+        <name>FLASH_CR_MER_BIT</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="93" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a894812c977dd26087e8a7b48f0e2c3ee" prot="public" static="no">
+        <name>FLASH_CR_PER_BIT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="94" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a4268f0b4876b2b1c04e2a9ecdd7d11a9" prot="public" static="no">
+        <name>FLASH_CR_PG_BIT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="95" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1ab9e69856f654ec430a42791a34799db0" prot="public" static="no">
+        <name>FLASH_CR_EOPIE</name>
+        <initializer>BIT(FLASH_CR_EOPIE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="97" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a930897cecdaa9dbef8c640b84acbd8c2" prot="public" static="no">
+        <name>FLASH_CR_ERRIE</name>
+        <initializer>BIT(FLASH_CR_ERRIE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="98" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a27d44bc9617cc430de9413b385dfe0c3" prot="public" static="no">
+        <name>FLASH_CR_OPTWRE</name>
+        <initializer>BIT(FLASH_CR_OPTWRE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="99" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1ab25f1fa4127fa015361b61a6f3180784" prot="public" static="no">
+        <name>FLASH_CR_LOCK</name>
+        <initializer>BIT(FLASH_CR_LOCK_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="100" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1afe4dd28134f93f52b1d4ec5b36a99864" prot="public" static="no">
+        <name>FLASH_CR_STRT</name>
+        <initializer>BIT(FLASH_CR_STRT_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="101" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a19fbf5dc4339b1ec8630675f03ad6fe0" prot="public" static="no">
+        <name>FLASH_CR_OPTER</name>
+        <initializer>BIT(FLASH_CR_OPTER_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="102" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a6736a5478a87f35a6a0cb66d8784a5ab" prot="public" static="no">
+        <name>FLASH_CR_OPTPG</name>
+        <initializer>BIT(FLASH_CR_OPTPG_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="103" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a4a287aa5a625125301306a02fb69c53a" prot="public" static="no">
+        <name>FLASH_CR_MER</name>
+        <initializer>BIT(FLASH_CR_MER_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="104" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1ad845355ade49d56cf70ad0ff09595a23" prot="public" static="no">
+        <name>FLASH_CR_PER</name>
+        <initializer>BIT(FLASH_CR_PER_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="105" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a47754b39bd7a7c79c251d6376f97f661" prot="public" static="no">
+        <name>FLASH_CR_PG</name>
+        <initializer>BIT(FLASH_CR_PG_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="106" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a65f3d1b503326f2b47a1558932147c49" prot="public" static="no">
+        <name>FLASH_OBR_nRST_STDBY_BIT</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="110" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1ad3420b2078c1828898cd0c773a2cd3ff" prot="public" static="no">
+        <name>FLASH_OBR_nRST_STOP_BIT</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="111" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1acc74b778d112a720e477ac14834cdbbd" prot="public" static="no">
+        <name>FLASH_OBR_WDG_SW_BIT</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="112" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a203ee96a8eebacb6b5cd35d28dcca687" prot="public" static="no">
+        <name>FLASH_OBR_RDPRT_BIT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="113" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1aa04f7732d898dd2345eaad7b5191f405" prot="public" static="no">
+        <name>FLASH_OBR_OPTERR_BIT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="114" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1ae48a097cfc60d888756d3fda266d87c9" prot="public" static="no">
+        <name>FLASH_OBR_DATA1</name>
+        <initializer>(0xFF &lt;&lt; 18)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="116" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a9380684d6fc14b681adf7eb97964c0bf" prot="public" static="no">
+        <name>FLASH_OBR_DATA0</name>
+        <initializer>(0xFF &lt;&lt; 10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="117" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a1585552c59923cb1e1979cdfdc77b991" prot="public" static="no">
+        <name>FLASH_OBR_USER</name>
+        <initializer>0x3FF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="118" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a3d863a776a1d5a136e267bac209f6a85" prot="public" static="no">
+        <name>FLASH_OBR_nRST_STDBY</name>
+        <initializer>BIT(FLASH_OBR_nRST_STDBY_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="119" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a8e84d6c706420de2335619043a06760d" prot="public" static="no">
+        <name>FLASH_OBR_nRST_STOP</name>
+        <initializer>BIT(FLASH_OBR_nRST_STOP_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="120" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a5a18df54a9254985b1ee69c5666e68b6" prot="public" static="no">
+        <name>FLASH_OBR_WDG_SW</name>
+        <initializer>BIT(FLASH_OBR_WDG_SW_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="121" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a052763d6c2daf0a422577a6c8a0be977" prot="public" static="no">
+        <name>FLASH_OBR_RDPRT</name>
+        <initializer>BIT(FLASH_OBR_RDPRT_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="122" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1ab52c27d6657bd72f1860fa25a1faf8e3" prot="public" static="no">
+        <name>FLASH_OBR_OPTERR</name>
+        <initializer>BIT(FLASH_OBR_OPTERR_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="123" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a725395733d5ae065e3bf990004facf90" prot="public" static="no">
+        <name>FLASH_WAIT_STATE_0</name>
+        <initializer>0x0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="129" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1ad390fef0b85ff4c27d8b5d1aa4fb9a50" prot="public" static="no">
+        <name>FLASH_WAIT_STATE_1</name>
+        <initializer>0x1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="130" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="flash_8h_1a3dd20055f4c6b73e6aa27923d80d0044" prot="public" static="no">
+        <name>FLASH_WAIT_STATE_2</name>
+        <initializer>0x2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="131" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="flash_8h_1ae1a8e23f9850a6ae07e6bf1e94968b1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void flash_enable_prefetch</definition>
+        <argsstring>(void)</argsstring>
+        <name>flash_enable_prefetch</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Turn on the hardware prefetcher. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="133" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.c" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="flash_8h_1ad43efe3233808b59c6a7af6a0599e905" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void flash_set_latency</definition>
+        <argsstring>(uint32 wait_states)</argsstring>
+        <name>flash_set_latency</name>
+        <param>
+          <type>uint32</type>
+          <declname>wait_states</declname>
+        </param>
+        <briefdescription>
+<para>Set flash wait states. </para>        </briefdescription>
+        <detaileddescription>
+<para>See ST PM0042, section 3.1 for restrictions on the acceptable value of wait_states for a given SYSCLK configuration.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wait_states</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of wait states (one of FLASH_WAIT_STATE_0, FLASH_WAIT_STATE_1, FLASH_WAIT_STATE_2). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h" line="134" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/flash.c" bodystart="53" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>STM32 Medium and high density Flash register map and setup routines. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Perry<sp/>Hung.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libmaple__types_8h" kindref="compound" tooltip="libmaple types">libmaple_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_FLASH_H_</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_FLASH_H_</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="43" refid="structflash__reg__map" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structflash__reg__map" kindref="compound" tooltip="Flash register map type.">flash_reg_map</ref><sp/>{</highlight></codeline>
+<codeline lineno="44" refid="structflash__reg__map_1a43cb24fec8276d00c42d418451837162" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structflash__reg__map_1a43cb24fec8276d00c42d418451837162" kindref="member" tooltip="Access control register.">ACR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45" refid="structflash__reg__map_1aca3b328dedfbfdaea9bbab354a5252cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structflash__reg__map_1aca3b328dedfbfdaea9bbab354a5252cb" kindref="member" tooltip="Key register.">KEYR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46" refid="structflash__reg__map_1a71580c8cce3320b2c6919a4c8be316f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structflash__reg__map_1a71580c8cce3320b2c6919a4c8be316f6" kindref="member" tooltip="OPTKEY register.">OPTKEYR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="structflash__reg__map_1a42af4d4677a06f5a853d62ac01ea3130" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structflash__reg__map_1a42af4d4677a06f5a853d62ac01ea3130" kindref="member" tooltip="Status register.">SR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48" refid="structflash__reg__map_1acc1014e17f2fa7ec7214ccf95b77c9a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structflash__reg__map_1acc1014e17f2fa7ec7214ccf95b77c9a5" kindref="member" tooltip="Control register.">CR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="structflash__reg__map_1aa277aaef7f182c236881347c8c64265c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structflash__reg__map_1aa277aaef7f182c236881347c8c64265c" kindref="member" tooltip="Address register.">AR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50" refid="structflash__reg__map_1a1428e0286bc209e16a7b9d92a46b6470" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structflash__reg__map_1a1428e0286bc209e16a7b9d92a46b6470" kindref="member" tooltip="Option byte register.">OBR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51" refid="structflash__reg__map_1a689af8ace6616441e6307977eee5552b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structflash__reg__map_1a689af8ace6616441e6307977eee5552b" kindref="member" tooltip="Write protection register.">WRPR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}<sp/><ref refid="structflash__reg__map" kindref="compound" tooltip="Flash register map type.">flash_reg_map</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="flash_8h_1a23a9099a5f8fc9c6e253c0eecb2be8db" refkind="member"><highlight class="preprocessor">#define<sp/>FLASH_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((struct<sp/>flash_reg_map*)0x40022000)</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*<sp/>Register<sp/>bit<sp/>definitions</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Access<sp/>control<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_ACR_PRFTBS_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_ACR_PRFTBE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_ACR_HLFCYA_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_ACR_PRFTBS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FLASH_ACR_PRFTBS_BIT)</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_ACR_PRFTBE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FLASH_ACR_PRFTBE_BIT)</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_ACR_HLFCYA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FLASH_ACR_HLFCYA_BIT)</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_ACR_LATENCY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x7</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Status<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_SR_EOP_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_SR_WRPRTERR_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_SR_PGERR_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_SR_BSY_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_SR_EOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FLASH_SR_EOP_BIT)</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_SR_WRPRTERR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FLASH_SR_WRPRTERR_BIT)</highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_SR_PGERR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FLASH_SR_PGERR_BIT)</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_SR_BSY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FLASH_SR_BSY_BIT)</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Control<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_CR_EOPIE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_CR_ERRIE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_CR_OPTWRE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>9</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_CR_LOCK_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_CR_STRT_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_CR_OPTER_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_CR_OPTPG_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_CR_MER_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="94"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_CR_PER_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_CR_PG_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="96"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_CR_EOPIE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FLASH_CR_EOPIE_BIT)</highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_CR_ERRIE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FLASH_CR_ERRIE_BIT)</highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_CR_OPTWRE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FLASH_CR_OPTWRE_BIT)</highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_CR_LOCK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FLASH_CR_LOCK_BIT)</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_CR_STRT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FLASH_CR_STRT_BIT)</highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_CR_OPTER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FLASH_CR_OPTER_BIT)</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_CR_OPTPG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FLASH_CR_OPTPG_BIT)</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_CR_MER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FLASH_CR_MER_BIT)</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_CR_PER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FLASH_CR_PER_BIT)</highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_CR_PG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FLASH_CR_PG_BIT)</highlight></codeline>
+<codeline lineno="107"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Option<sp/>byte<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_OBR_nRST_STDBY_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight></codeline>
+<codeline lineno="111"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_OBR_nRST_STOP_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="112"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_OBR_WDG_SW_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="113"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_OBR_RDPRT_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="114"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_OBR_OPTERR_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="115"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_OBR_DATA1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xFF<sp/>&lt;&lt;<sp/>18)</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_OBR_DATA0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xFF<sp/>&lt;&lt;<sp/>10)</highlight></codeline>
+<codeline lineno="118"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_OBR_USER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x3FF</highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_OBR_nRST_STDBY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FLASH_OBR_nRST_STDBY_BIT)</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_OBR_nRST_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FLASH_OBR_nRST_STOP_BIT)</highlight></codeline>
+<codeline lineno="121"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_OBR_WDG_SW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FLASH_OBR_WDG_SW_BIT)</highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_OBR_RDPRT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FLASH_OBR_RDPRT_BIT)</highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_OBR_OPTERR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(FLASH_OBR_OPTERR_BIT)</highlight></codeline>
+<codeline lineno="124"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/>*<sp/>Setup<sp/>routines</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_WAIT_STATE_0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0</highlight></codeline>
+<codeline lineno="130"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_WAIT_STATE_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1</highlight></codeline>
+<codeline lineno="131"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FLASH_WAIT_STATE_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2</highlight></codeline>
+<codeline lineno="132"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="flash_8c_1ae1a8e23f9850a6ae07e6bf1e94968b1b" kindref="member" tooltip="Turn on the hardware prefetcher.">flash_enable_prefetch</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="flash_8c_1ad43efe3233808b59c6a7af6a0599e905" kindref="member" tooltip="Set flash wait states.">flash_set_latency</ref>(uint32<sp/>wait_states);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="137"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="139"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="141"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/flash.h"/>
+  </compounddef>
+</doxygen>

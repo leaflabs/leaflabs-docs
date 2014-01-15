@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structexti__reg__map" kind="struct" prot="public">
+    <compoundname>exti_reg_map</compoundname>
+    <includes refid="exti_8h" local="no">exti.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structexti__reg__map_1aef364e8ff542ee10c9142841d1bae7a9" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 exti_reg_map::IMR</definition>
+        <argsstring></argsstring>
+        <name>IMR</name>
+        <briefdescription>
+<para>Interrupt mask register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.h" line="46" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexti__reg__map_1a1af3af3fda4d24ae2c1f8720be092488" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 exti_reg_map::EMR</definition>
+        <argsstring></argsstring>
+        <name>EMR</name>
+        <briefdescription>
+<para>Event mask register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.h" line="47" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexti__reg__map_1aee6293129d2ebb2d571d24d6bd54f93d" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 exti_reg_map::RTSR</definition>
+        <argsstring></argsstring>
+        <name>RTSR</name>
+        <briefdescription>
+<para>Rising trigger selection register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.h" line="48" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexti__reg__map_1a12ab3c490f412570b135a242bd98d4a1" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 exti_reg_map::FTSR</definition>
+        <argsstring></argsstring>
+        <name>FTSR</name>
+        <briefdescription>
+<para>Falling trigger selection register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.h" line="49" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexti__reg__map_1abf3457ff13f1528ec5a0de102c600121" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 exti_reg_map::SWIER</definition>
+        <argsstring></argsstring>
+        <name>SWIER</name>
+        <briefdescription>
+<para>Software interrupt event register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.h" line="50" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structexti__reg__map_1a87735c086d2cbf502e0b9a8c28cbc2b6" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 exti_reg_map::PR</definition>
+        <argsstring></argsstring>
+        <name>PR</name>
+        <briefdescription>
+<para>Pending register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.h" line="51" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>EXTI register map type. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.h" line="45" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.h" bodystart="45" bodyend="52"/>
+    <listofallmembers>
+      <member refid="structexti__reg__map_1a1af3af3fda4d24ae2c1f8720be092488" prot="public" virt="non-virtual"><scope>exti_reg_map</scope><name>EMR</name></member>
+      <member refid="structexti__reg__map_1a12ab3c490f412570b135a242bd98d4a1" prot="public" virt="non-virtual"><scope>exti_reg_map</scope><name>FTSR</name></member>
+      <member refid="structexti__reg__map_1aef364e8ff542ee10c9142841d1bae7a9" prot="public" virt="non-virtual"><scope>exti_reg_map</scope><name>IMR</name></member>
+      <member refid="structexti__reg__map_1a87735c086d2cbf502e0b9a8c28cbc2b6" prot="public" virt="non-virtual"><scope>exti_reg_map</scope><name>PR</name></member>
+      <member refid="structexti__reg__map_1aee6293129d2ebb2d571d24d6bd54f93d" prot="public" virt="non-virtual"><scope>exti_reg_map</scope><name>RTSR</name></member>
+      <member refid="structexti__reg__map_1abf3457ff13f1528ec5a0de102c600121" prot="public" virt="non-virtual"><scope>exti_reg_map</scope><name>SWIER</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

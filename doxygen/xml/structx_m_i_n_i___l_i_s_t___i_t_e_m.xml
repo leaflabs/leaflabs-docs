@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structx_m_i_n_i___l_i_s_t___i_t_e_m" kind="struct" prot="public">
+    <compoundname>xMINI_LIST_ITEM</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structx_m_i_n_i___l_i_s_t___i_t_e_m_1a99e8a18d83a4e2a71194f5d0897b4930" prot="public" static="no" mutable="no">
+        <type>portTickType</type>
+        <definition>portTickType xMiniListItem::xItemValue</definition>
+        <argsstring></argsstring>
+        <name>xItemValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="110" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_m_i_n_i___l_i_s_t___i_t_e_m_1a91da5b98ab8f27a9d74b89c019cc946e" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structx_l_i_s_t___i_t_e_m" kindref="compound">xLIST_ITEM</ref> *</type>
+        <definition>struct xLIST_ITEM* xMiniListItem::pxNext</definition>
+        <argsstring></argsstring>
+        <name>pxNext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="111" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_m_i_n_i___l_i_s_t___i_t_e_m_1a7e1f50c0efbcc1cb407dd4bff5c2b1bc" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structx_l_i_s_t___i_t_e_m" kindref="compound">xLIST_ITEM</ref> *</type>
+        <definition>struct xLIST_ITEM* xMiniListItem::pxPrevious</definition>
+        <argsstring></argsstring>
+        <name>pxPrevious</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="112" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="193">
+        <label>xListItem</label>
+        <link refid="structx_l_i_s_t___i_t_e_m"/>
+        <childnode refid="193" relation="usage">
+          <edgelabel>pxPrevious</edgelabel>
+          <edgelabel>pxNext</edgelabel>
+        </childnode>
+      </node>
+      <node id="192">
+        <label>xMiniListItem</label>
+        <link refid="structx_m_i_n_i___l_i_s_t___i_t_e_m"/>
+        <childnode refid="193" relation="usage">
+          <edgelabel>pxPrevious</edgelabel>
+          <edgelabel>pxNext</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="109" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" bodystart="108" bodyend="113"/>
+    <listofallmembers>
+      <member refid="structx_m_i_n_i___l_i_s_t___i_t_e_m_1a91da5b98ab8f27a9d74b89c019cc946e" prot="public" virt="non-virtual"><scope>xMINI_LIST_ITEM</scope><name>pxNext</name></member>
+      <member refid="structx_m_i_n_i___l_i_s_t___i_t_e_m_1a7e1f50c0efbcc1cb407dd4bff5c2b1bc" prot="public" virt="non-virtual"><scope>xMINI_LIST_ITEM</scope><name>pxPrevious</name></member>
+      <member refid="structx_m_i_n_i___l_i_s_t___i_t_e_m_1a99e8a18d83a4e2a71194f5d0897b4930" prot="public" virt="non-virtual"><scope>xMINI_LIST_ITEM</scope><name>xItemValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,466 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="class_hardware_s_p_i" kind="class" prot="public">
+    <compoundname>HardwareSPI</compoundname>
+    <includes refid="_hardware_s_p_i_8h" local="no">HardwareSPI.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_hardware_s_p_i_1a595ef6adb4a4fc68224de00ed8c500ab" prot="private" static="no" mutable="no">
+        <type><ref refid="structspi__dev" kindref="compound">spi_dev</ref> *</type>
+        <definition>spi_dev* HardwareSPI::spi_d</definition>
+        <argsstring></argsstring>
+        <name>spi_d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h" line="219" bodyfile="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hardware_s_p_i_1ab2f7d1d773cb1fd5c1fb7f6d23693137" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>HardwareSPI::HardwareSPI</definition>
+        <argsstring>(uint32 spiPortNumber)</argsstring>
+        <name>HardwareSPI</name>
+        <param>
+          <type>uint32</type>
+          <declname>spiPortNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>spiPortNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of the SPI port to manage. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hardware_s_p_i_1afdf3c596f768796406a3191e7b9ac966" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HardwareSPI::begin</definition>
+        <argsstring>(SPIFrequency frequency, uint32 bitOrder, uint32 mode)</argsstring>
+        <name>begin</name>
+        <param>
+          <type><ref refid="_hardware_s_p_i_8h_1aa778307b2af3fee751838e73f501012e" kindref="member">SPIFrequency</ref></type>
+          <declname>frequency</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>bitOrder</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Turn on a SPI port and set its GPIO pin modes for use as master. </para>        </briefdescription>
+        <detaileddescription>
+<para>SPI port is enabled in full duplex mode, with software slave management.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frequency</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Communication frequency </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitOrder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Either LSBFIRST (little-endian) or MSBFIRST (big-endian) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SPI mode to use, one of SPI_MODE_0, SPI_MODE_1, SPI_MODE_2, and SPI_MODE_3. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h" line="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hardware_s_p_i_1a4035e41124ca71fb5e2c8837b7f3c19a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HardwareSPI::begin</definition>
+        <argsstring>(void)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Equivalent to begin(SPI_1_125MHZ, MSBFIRST, 0). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h" line="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hardware_s_p_i_1ab0130510853f5edcda6a308dd4998f9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HardwareSPI::beginSlave</definition>
+        <argsstring>(uint32 bitOrder, uint32 mode)</argsstring>
+        <name>beginSlave</name>
+        <param>
+          <type>uint32</type>
+          <declname>bitOrder</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Turn on a SPI port and set its GPIO pin modes for use as a slave. </para>        </briefdescription>
+        <detaileddescription>
+<para>SPI port is enabled in full duplex mode, with software slave management.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bitOrder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Either LSBFIRST (little-endian) or MSBFIRST(big-endian) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SPI mode to use </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h" line="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hardware_s_p_i_1a5f4ea1ee7e51e4a52a9c3dfb18a4c21c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HardwareSPI::beginSlave</definition>
+        <argsstring>(void)</argsstring>
+        <name>beginSlave</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Equivalent to beginSlave(MSBFIRST, 0). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h" line="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hardware_s_p_i_1a1924db0236ed90724dbe9982d7844cca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HardwareSPI::end</definition>
+        <argsstring>(void)</argsstring>
+        <name>end</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Disables the SPI port, but leaves its GPIO pin modes unchanged. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h" line="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hardware_s_p_i_1a4ad896161ab5ddf39a716f75c6013f2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8</type>
+        <definition>uint8 HardwareSPI::read</definition>
+        <argsstring>(void)</argsstring>
+        <name>read</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the next unread byte. </para>        </briefdescription>
+        <detaileddescription>
+<para>If there is no unread byte waiting, this function will block until one is received. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h" line="129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hardware_s_p_i_1a9b9c8e9a5dfc683ce61701fd163ea90a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HardwareSPI::read</definition>
+        <argsstring>(uint8 *buffer, uint32 length)</argsstring>
+        <name>read</name>
+        <param>
+          <type>uint8 *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Read length bytes, storing them into buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer to store received bytes into. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bytes to store in buffer. This function will block until the desired number of bytes have been read. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h" line="138"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hardware_s_p_i_1ac81da22ee223d0994887aa9020855923" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HardwareSPI::write</definition>
+        <argsstring>(uint8 data)</argsstring>
+        <name>write</name>
+        <param>
+          <type>uint8</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Transmit a byte. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Byte to transmit. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h" line="144"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hardware_s_p_i_1a3bce839a87af765e05fb0ea07ce06ad9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void HardwareSPI::write</definition>
+        <argsstring>(const uint8 *buffer, uint32 length)</argsstring>
+        <name>write</name>
+        <param>
+          <type>const uint8 *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Transmit multiple bytes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bytes to transmit. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bytes in buffer to transmit. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h" line="151"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hardware_s_p_i_1aa317111bd382e7b201d13f369d2fd85a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8</type>
+        <definition>uint8 HardwareSPI::transfer</definition>
+        <argsstring>(uint8 data)</argsstring>
+        <name>transfer</name>
+        <param>
+          <type>uint8</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Transmit a byte, then return the next unread byte. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function transmits before receiving.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Byte to transmit. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Next unread byte. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h" line="161"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hardware_s_p_i_1a516aff5127beaa45ac54169ab901121c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8</type>
+        <definition>uint8 HardwareSPI::misoPin</definition>
+        <argsstring>(void)</argsstring>
+        <name>misoPin</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the number of the MISO (master in, slave out) pin. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h" line="170"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hardware_s_p_i_1a5b8edf02933921960a3de79eec3c69b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8</type>
+        <definition>uint8 HardwareSPI::mosiPin</definition>
+        <argsstring>(void)</argsstring>
+        <name>mosiPin</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the number of the MOSI (master out, slave in) pin. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h" line="175"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hardware_s_p_i_1ad8bc6986a367ef9bf3d538f02f41309b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8</type>
+        <definition>uint8 HardwareSPI::sckPin</definition>
+        <argsstring>(void)</argsstring>
+        <name>sckPin</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the number of the SCK (serial clock) pin. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h" line="180"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hardware_s_p_i_1a2514f1aa5a0638c421e24e1f7829f367" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8</type>
+        <definition>uint8 HardwareSPI::nssPin</definition>
+        <argsstring>(void)</argsstring>
+        <name>nssPin</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the number of the NSS (slave select) pin. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h" line="185"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hardware_s_p_i_1a89e485636f99449fc14a0ef5ad2cc5d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8</type>
+        <definition>uint8 HardwareSPI::send</definition>
+        <argsstring>(uint8 data)</argsstring>
+        <name>send</name>
+        <param>
+          <type>uint8</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>Deprecated. </para>        </briefdescription>
+        <detaileddescription>
+<para>Use <ref refid="class_hardware_s_p_i_1aa317111bd382e7b201d13f369d2fd85a" kindref="member">HardwareSPI::transfer()</ref> instead.</para><para><simplesect kind="see"><para><ref refid="class_hardware_s_p_i_1aa317111bd382e7b201d13f369d2fd85a" kindref="member">HardwareSPI::transfer()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h" line="196"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hardware_s_p_i_1a2e4ac5306208492e2b667ad091bbcca0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8</type>
+        <definition>uint8 HardwareSPI::send</definition>
+        <argsstring>(uint8 *data, uint32 length)</argsstring>
+        <name>send</name>
+        <param>
+          <type>uint8 *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Deprecated. </para>        </briefdescription>
+        <detaileddescription>
+<para>Use <ref refid="class_hardware_s_p_i_1ac81da22ee223d0994887aa9020855923" kindref="member">HardwareSPI::write()</ref> in combination with <ref refid="class_hardware_s_p_i_1a4ad896161ab5ddf39a716f75c6013f2d" kindref="member">HardwareSPI::read()</ref> (or <ref refid="class_hardware_s_p_i_1aa317111bd382e7b201d13f369d2fd85a" kindref="member">HardwareSPI::transfer()</ref>) instead.</para><para><simplesect kind="see"><para><ref refid="class_hardware_s_p_i_1ac81da22ee223d0994887aa9020855923" kindref="member">HardwareSPI::write()</ref> </para><simplesectsep/><para><ref refid="class_hardware_s_p_i_1a4ad896161ab5ddf39a716f75c6013f2d" kindref="member">HardwareSPI::read()</ref> </para><simplesectsep/><para><ref refid="class_hardware_s_p_i_1aa317111bd382e7b201d13f369d2fd85a" kindref="member">HardwareSPI::transfer()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h" line="208"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hardware_s_p_i_1af27d3515c07928a55d30cc3c0a1d6679" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8</type>
+        <definition>uint8 HardwareSPI::recv</definition>
+        <argsstring>(void)</argsstring>
+        <name>recv</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Deprecated. </para>        </briefdescription>
+        <detaileddescription>
+<para>Use <ref refid="class_hardware_s_p_i_1a4ad896161ab5ddf39a716f75c6013f2d" kindref="member">HardwareSPI::read()</ref> instead.</para><para><simplesect kind="see"><para><ref refid="class_hardware_s_p_i_1a4ad896161ab5ddf39a716f75c6013f2d" kindref="member">HardwareSPI::read()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h" line="217"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Wirish SPI interface. </para>    </briefdescription>
+    <detaileddescription>
+<para>This implementation uses software slave management, so the caller is responsible for controlling the slave select line. </para>    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h" line="71" bodyfile="/home/mbolivar/leaf/libmaple/wirish/comm/HardwareSPI.h" bodystart="71" bodyend="220"/>
+    <listofallmembers>
+      <member refid="class_hardware_s_p_i_1afdf3c596f768796406a3191e7b9ac966" prot="public" virt="non-virtual"><scope>HardwareSPI</scope><name>begin</name></member>
+      <member refid="class_hardware_s_p_i_1a4035e41124ca71fb5e2c8837b7f3c19a" prot="public" virt="non-virtual"><scope>HardwareSPI</scope><name>begin</name></member>
+      <member refid="class_hardware_s_p_i_1ab0130510853f5edcda6a308dd4998f9f" prot="public" virt="non-virtual"><scope>HardwareSPI</scope><name>beginSlave</name></member>
+      <member refid="class_hardware_s_p_i_1a5f4ea1ee7e51e4a52a9c3dfb18a4c21c" prot="public" virt="non-virtual"><scope>HardwareSPI</scope><name>beginSlave</name></member>
+      <member refid="class_hardware_s_p_i_1a1924db0236ed90724dbe9982d7844cca" prot="public" virt="non-virtual"><scope>HardwareSPI</scope><name>end</name></member>
+      <member refid="class_hardware_s_p_i_1ab2f7d1d773cb1fd5c1fb7f6d23693137" prot="public" virt="non-virtual"><scope>HardwareSPI</scope><name>HardwareSPI</name></member>
+      <member refid="class_hardware_s_p_i_1a516aff5127beaa45ac54169ab901121c" prot="public" virt="non-virtual"><scope>HardwareSPI</scope><name>misoPin</name></member>
+      <member refid="class_hardware_s_p_i_1a5b8edf02933921960a3de79eec3c69b6" prot="public" virt="non-virtual"><scope>HardwareSPI</scope><name>mosiPin</name></member>
+      <member refid="class_hardware_s_p_i_1a2514f1aa5a0638c421e24e1f7829f367" prot="public" virt="non-virtual"><scope>HardwareSPI</scope><name>nssPin</name></member>
+      <member refid="class_hardware_s_p_i_1a4ad896161ab5ddf39a716f75c6013f2d" prot="public" virt="non-virtual"><scope>HardwareSPI</scope><name>read</name></member>
+      <member refid="class_hardware_s_p_i_1a9b9c8e9a5dfc683ce61701fd163ea90a" prot="public" virt="non-virtual"><scope>HardwareSPI</scope><name>read</name></member>
+      <member refid="class_hardware_s_p_i_1af27d3515c07928a55d30cc3c0a1d6679" prot="public" virt="non-virtual"><scope>HardwareSPI</scope><name>recv</name></member>
+      <member refid="class_hardware_s_p_i_1ad8bc6986a367ef9bf3d538f02f41309b" prot="public" virt="non-virtual"><scope>HardwareSPI</scope><name>sckPin</name></member>
+      <member refid="class_hardware_s_p_i_1a89e485636f99449fc14a0ef5ad2cc5d8" prot="public" virt="non-virtual"><scope>HardwareSPI</scope><name>send</name></member>
+      <member refid="class_hardware_s_p_i_1a2e4ac5306208492e2b667ad091bbcca0" prot="public" virt="non-virtual"><scope>HardwareSPI</scope><name>send</name></member>
+      <member refid="class_hardware_s_p_i_1a595ef6adb4a4fc68224de00ed8c500ab" prot="private" virt="non-virtual"><scope>HardwareSPI</scope><name>spi_d</name></member>
+      <member refid="class_hardware_s_p_i_1aa317111bd382e7b201d13f369d2fd85a" prot="public" virt="non-virtual"><scope>HardwareSPI</scope><name>transfer</name></member>
+      <member refid="class_hardware_s_p_i_1ac81da22ee223d0994887aa9020855923" prot="public" virt="non-virtual"><scope>HardwareSPI</scope><name>write</name></member>
+      <member refid="class_hardware_s_p_i_1a3bce839a87af765e05fb0ea07ce06ad9" prot="public" virt="non-virtual"><scope>HardwareSPI</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

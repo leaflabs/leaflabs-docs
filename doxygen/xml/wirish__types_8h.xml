@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="wirish__types_8h" kind="file">
+    <compoundname>wirish_types.h</compoundname>
+    <includes refid="libmaple__types_8h" local="yes">libmaple_types.h</includes>
+    <includes refid="gpio_8h" local="yes">gpio.h</includes>
+    <includes refid="timer_8h" local="yes">timer.h</includes>
+    <includes refid="adc_8h" local="yes">adc.h</includes>
+    <includedby refid="boards_8h" local="yes">wirish/boards.h</includedby>
+    <includedby refid="wirish_8h" local="yes">wirish/wirish.h</includedby>
+    <includedby refid="_servo_8h" local="yes">libraries/Servo/Servo.h</includedby>
+    <incdepgraph>
+      <node id="1675">
+        <label>nvic.h</label>
+        <link refid="nvic_8h"/>
+        <childnode refid="1667" relation="include">
+        </childnode>
+        <childnode refid="1671" relation="include">
+        </childnode>
+      </node>
+      <node id="1673">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="1667" relation="include">
+        </childnode>
+      </node>
+      <node id="1670">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="1667">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="1669">
+        <label>libmaple.h</label>
+        <link refid="libmaple_8h"/>
+        <childnode refid="1667" relation="include">
+        </childnode>
+        <childnode refid="1670" relation="include">
+        </childnode>
+        <childnode refid="1671" relation="include">
+        </childnode>
+        <childnode refid="1672" relation="include">
+        </childnode>
+      </node>
+      <node id="1666">
+        <label>wirish/wirish_types.h</label>
+        <link refid="wirish_types.h"/>
+        <childnode refid="1667" relation="include">
+        </childnode>
+        <childnode refid="1668" relation="include">
+        </childnode>
+        <childnode refid="1674" relation="include">
+        </childnode>
+        <childnode refid="1677" relation="include">
+        </childnode>
+      </node>
+      <node id="1677">
+        <label>adc.h</label>
+        <link refid="adc_8h"/>
+        <childnode refid="1669" relation="include">
+        </childnode>
+        <childnode refid="1676" relation="include">
+        </childnode>
+        <childnode refid="1673" relation="include">
+        </childnode>
+      </node>
+      <node id="1676">
+        <label>bitband.h</label>
+        <link refid="bitband_8h"/>
+        <childnode refid="1667" relation="include">
+        </childnode>
+      </node>
+      <node id="1668">
+        <label>gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="1669" relation="include">
+        </childnode>
+        <childnode refid="1673" relation="include">
+        </childnode>
+      </node>
+      <node id="1674">
+        <label>timer.h</label>
+        <link refid="timer_8h"/>
+        <childnode refid="1669" relation="include">
+        </childnode>
+        <childnode refid="1673" relation="include">
+        </childnode>
+        <childnode refid="1675" relation="include">
+        </childnode>
+        <childnode refid="1676" relation="include">
+        </childnode>
+      </node>
+      <node id="1672">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="1667" relation="include">
+        </childnode>
+        <childnode refid="1670" relation="include">
+        </childnode>
+      </node>
+      <node id="1671">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="1667" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1681">
+        <label>wirish/wirish.h</label>
+        <link refid="wirish_8h_source"/>
+        <childnode refid="1682" relation="include">
+        </childnode>
+        <childnode refid="1683" relation="include">
+        </childnode>
+        <childnode refid="1684" relation="include">
+        </childnode>
+        <childnode refid="1685" relation="include">
+        </childnode>
+      </node>
+      <node id="1679">
+        <label>wirish/boards.h</label>
+        <link refid="boards_8h"/>
+        <childnode refid="1680" relation="include">
+        </childnode>
+        <childnode refid="1686" relation="include">
+        </childnode>
+        <childnode refid="1681" relation="include">
+        </childnode>
+      </node>
+      <node id="1687">
+        <label>wirish/io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="1681" relation="include">
+        </childnode>
+      </node>
+      <node id="1680">
+        <label>wirish/comm/HardwareSPI.h</label>
+        <link refid="_hardware_s_p_i_8h"/>
+        <childnode refid="1681" relation="include">
+        </childnode>
+      </node>
+      <node id="1684">
+        <label>libraries/LiquidCrystal/LiquidCrystal.h</label>
+        <link refid="_liquid_crystal_8h_source"/>
+      </node>
+      <node id="1686">
+        <label>wirish/wirish_time.h</label>
+        <link refid="wirish__time_8h"/>
+        <childnode refid="1687" relation="include">
+        </childnode>
+        <childnode refid="1681" relation="include">
+        </childnode>
+      </node>
+      <node id="1678">
+        <label>wirish/wirish_types.h</label>
+        <link refid="wirish_types.h"/>
+        <childnode refid="1679" relation="include">
+        </childnode>
+        <childnode refid="1681" relation="include">
+        </childnode>
+        <childnode refid="1688" relation="include">
+        </childnode>
+      </node>
+      <node id="1688">
+        <label>libraries/Servo/Servo.h</label>
+        <link refid="_servo_8h_source"/>
+      </node>
+      <node id="1685">
+        <label>libraries/Wire/Wire.h</label>
+        <link refid="_wire_8h_source"/>
+      </node>
+      <node id="1682">
+        <label>wirish/WProgram.h</label>
+        <link refid="_w_program_8h_source"/>
+      </node>
+      <node id="1683">
+        <label>libraries/FreeRTOS/MapleFreeRTOS.h</label>
+        <link refid="_maple_free_r_t_o_s_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structstm32__pin__info" prot="public">stm32_pin_info</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wirish__types_8h_1ab44c1065d38c298955fc028346984340" prot="public" static="no">
+        <name>ADCx</name>
+        <initializer>0xFF</initializer>
+        <briefdescription>
+<para>Invalid <ref refid="structstm32__pin__info" kindref="compound">stm32_pin_info</ref> adc_channel value. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structstm32__pin__info" kindref="compound">stm32_pin_info</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_types.h" line="45" bodyfile="/home/mbolivar/leaf/libmaple/wirish/wirish_types.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wirish__types_8h_1a26674f796bcf9800aa38f494478e5068" prot="public" static="no">
+        <name>__FLASH__</name>
+        <initializer>__attr_flash</initializer>
+        <briefdescription>
+<para>Variable attribute, instructs the linker to place the marked variable in Flash instead of RAM. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_types.h" line="63" bodyfile="/home/mbolivar/leaf/libmaple/wirish/wirish_types.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Wirish library type definitions. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Marti Bolivar &lt;<ulink url="mailto:mbolivar@leaflabs.com">mbolivar@leaflabs.com</ulink>&gt; </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2011<sp/>LeafLabs,<sp/>LLC.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libmaple__types_8h" kindref="compound" tooltip="libmaple types">libmaple_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gpio_8h" kindref="compound" tooltip="General purpose I/O (GPIO) and Alternate Function I/O (AFIO) prototypes, defines, and inlined access ...">gpio.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="timer_8h" kindref="compound" tooltip="New-style timer interface.">timer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="adc_8h" kindref="compound" tooltip="Analog-to-Digital Conversion (ADC) header.">adc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_WIRISH_TYPES_H_</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_WIRISH_TYPES_H_</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="45" refid="wirish__types_8h_1ab44c1065d38c298955fc028346984340" refkind="member"><highlight class="preprocessor">#define<sp/>ADCx<sp/>0xFF</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="51" refid="structstm32__pin__info" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structstm32__pin__info" kindref="compound" tooltip="Stores STM32-specific information related to a given Maple pin.">stm32_pin_info</ref><sp/>{</highlight></codeline>
+<codeline lineno="52" refid="structstm32__pin__info_1a8258f118b311f0ee54bfd23382a32f2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgpio__dev" kindref="compound" tooltip="GPIO device type.">gpio_dev</ref><sp/>*<ref refid="structstm32__pin__info_1a8258f118b311f0ee54bfd23382a32f2c" kindref="member" tooltip="Maple pin&amp;#39;s GPIO device.">gpio_device</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53" refid="structstm32__pin__info_1a116f06f46ba57f6de19c765465306537" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structtimer__dev" kindref="compound" tooltip="Timer device type.">timer_dev</ref><sp/>*<ref refid="structstm32__pin__info_1a116f06f46ba57f6de19c765465306537" kindref="member" tooltip="Pin&amp;#39;s timer device, if any.">timer_device</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54" refid="structstm32__pin__info_1a14088fe4f20fbf5cbc58ec998cc541ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structadc__dev" kindref="compound" tooltip="ADC device type.">adc_dev</ref><sp/>*<ref refid="structstm32__pin__info_1a14088fe4f20fbf5cbc58ec998cc541ee" kindref="member" tooltip="ADC device, if any.">adc_device</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="55" refid="structstm32__pin__info_1a7764f5aed15a126e91d9ed747c4f56a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/><ref refid="structstm32__pin__info_1a7764f5aed15a126e91d9ed747c4f56a0" kindref="member" tooltip="Pin&amp;#39;s GPIO port bit.">gpio_bit</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56" refid="structstm32__pin__info_1a3d0447eb7ee7cfdfee36e2fed2f4299b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/><ref refid="structstm32__pin__info_1a3d0447eb7ee7cfdfee36e2fed2f4299b" kindref="member" tooltip="Timer channel, or 0 if none.">timer_channel</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57" refid="structstm32__pin__info_1a0f085d8f257cac371796f7d74e2a2a6e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/><ref refid="structstm32__pin__info_1a0f085d8f257cac371796f7d74e2a2a6e" kindref="member" tooltip="Pin ADC channel, or ADCx if none.">adc_channel</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}<sp/><ref refid="structstm32__pin__info" kindref="compound" tooltip="Stores STM32-specific information related to a given Maple pin.">stm32_pin_info</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="wirish__types_8h_1a26674f796bcf9800aa38f494478e5068" refkind="member"><highlight class="preprocessor">#define<sp/>__FLASH__<sp/>__attr_flash</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/wirish/wirish_types.h"/>
+  </compounddef>
+</doxygen>

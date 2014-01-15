@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structgpio__reg__map" kind="struct" prot="public">
+    <compoundname>gpio_reg_map</compoundname>
+    <includes refid="gpio_8h" local="no">gpio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgpio__reg__map_1aa2b0a9f3d244a108ec63785831a96743" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 gpio_reg_map::CRL</definition>
+        <argsstring></argsstring>
+        <name>CRL</name>
+        <briefdescription>
+<para><ref refid="struct_port" kindref="compound">Port</ref> configuration register low. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" line="50" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgpio__reg__map_1af9a345014d9778f023c197b29344acb5" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 gpio_reg_map::CRH</definition>
+        <argsstring></argsstring>
+        <name>CRH</name>
+        <briefdescription>
+<para><ref refid="struct_port" kindref="compound">Port</ref> configuration register high. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" line="51" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgpio__reg__map_1a26ad04efab8adc4a5d8627fbd4dfd3d7" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 gpio_reg_map::IDR</definition>
+        <argsstring></argsstring>
+        <name>IDR</name>
+        <briefdescription>
+<para><ref refid="struct_port" kindref="compound">Port</ref> input data register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" line="52" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgpio__reg__map_1a48f3413c08dc99d3a68ea7079641549e" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 gpio_reg_map::ODR</definition>
+        <argsstring></argsstring>
+        <name>ODR</name>
+        <briefdescription>
+<para><ref refid="struct_port" kindref="compound">Port</ref> output data register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" line="53" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgpio__reg__map_1a57431c719e4b0f5cc8c65c4a32e5ef30" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 gpio_reg_map::BSRR</definition>
+        <argsstring></argsstring>
+        <name>BSRR</name>
+        <briefdescription>
+<para><ref refid="struct_port" kindref="compound">Port</ref> bit set/reset register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" line="54" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgpio__reg__map_1a37c463362d804ac4f6c37e8c6b930b0a" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 gpio_reg_map::BRR</definition>
+        <argsstring></argsstring>
+        <name>BRR</name>
+        <briefdescription>
+<para><ref refid="struct_port" kindref="compound">Port</ref> bit reset register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" line="55" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgpio__reg__map_1ad4004a106af28e97121b01a78e06f98f" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 gpio_reg_map::LCKR</definition>
+        <argsstring></argsstring>
+        <name>LCKR</name>
+        <briefdescription>
+<para><ref refid="struct_port" kindref="compound">Port</ref> configuration lock register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" line="56" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>GPIO register map type. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" line="49" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/gpio.h" bodystart="49" bodyend="57"/>
+    <listofallmembers>
+      <member refid="structgpio__reg__map_1a37c463362d804ac4f6c37e8c6b930b0a" prot="public" virt="non-virtual"><scope>gpio_reg_map</scope><name>BRR</name></member>
+      <member refid="structgpio__reg__map_1a57431c719e4b0f5cc8c65c4a32e5ef30" prot="public" virt="non-virtual"><scope>gpio_reg_map</scope><name>BSRR</name></member>
+      <member refid="structgpio__reg__map_1af9a345014d9778f023c197b29344acb5" prot="public" virt="non-virtual"><scope>gpio_reg_map</scope><name>CRH</name></member>
+      <member refid="structgpio__reg__map_1aa2b0a9f3d244a108ec63785831a96743" prot="public" virt="non-virtual"><scope>gpio_reg_map</scope><name>CRL</name></member>
+      <member refid="structgpio__reg__map_1a26ad04efab8adc4a5d8627fbd4dfd3d7" prot="public" virt="non-virtual"><scope>gpio_reg_map</scope><name>IDR</name></member>
+      <member refid="structgpio__reg__map_1ad4004a106af28e97121b01a78e06f98f" prot="public" virt="non-virtual"><scope>gpio_reg_map</scope><name>LCKR</name></member>
+      <member refid="structgpio__reg__map_1a48f3413c08dc99d3a68ea7079641549e" prot="public" virt="non-virtual"><scope>gpio_reg_map</scope><name>ODR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

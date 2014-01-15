@@ -1,0 +1,593 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="bitband_8h" kind="file">
+    <compoundname>bitband.h</compoundname>
+    <includes refid="libmaple__types_8h" local="yes">libmaple_types.h</includes>
+    <includedby refid="adc_8h" local="yes">libmaple/adc.h</includedby>
+    <includedby refid="bkp_8c" local="yes">libmaple/bkp.c</includedby>
+    <includedby refid="dma_8c" local="yes">libmaple/dma.c</includedby>
+    <includedby refid="exti_8c" local="yes">libmaple/exti.c</includedby>
+    <includedby refid="flash_8c" local="yes">libmaple/flash.c</includedby>
+    <includedby refid="rcc_8c" local="yes">libmaple/rcc.c</includedby>
+    <includedby refid="spi_8c" local="yes">libmaple/spi.c</includedby>
+    <includedby refid="timer_8h" local="yes">libmaple/timer.h</includedby>
+    <incdepgraph>
+      <node id="33">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="32">
+        <label>libmaple/bitband.h</label>
+        <link refid="bitband.h"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="57">
+        <label>wirish/HardwareTimer.h</label>
+        <link refid="_hardware_timer_8h_source"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>libmaple/bkp.c</label>
+        <link refid="bkp_8c_source"/>
+      </node>
+      <node id="41">
+        <label>wirish/wirish.h</label>
+        <link refid="wirish_8h_source"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>wirish/boards.h</label>
+        <link refid="boards_8h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>libmaple/flash.c</label>
+        <link refid="flash_8c"/>
+      </node>
+      <node id="47">
+        <label>wirish/io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>libmaple/rcc.c</label>
+        <link refid="rcc_8c_source"/>
+      </node>
+      <node id="54">
+        <label>libmaple/spi.c</label>
+        <link refid="spi_8c"/>
+      </node>
+      <node id="40">
+        <label>wirish/comm/HardwareSPI.h</label>
+        <link refid="_hardware_s_p_i_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>libmaple/dma.c</label>
+        <link refid="dma_8c"/>
+      </node>
+      <node id="44">
+        <label>libraries/LiquidCrystal/LiquidCrystal.h</label>
+        <link refid="_liquid_crystal_8h_source"/>
+      </node>
+      <node id="46">
+        <label>wirish/wirish_time.h</label>
+        <link refid="wirish__time_8h"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>wirish/wirish_types.h</label>
+        <link refid="wirish__types_8h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>libraries/Servo/Servo.h</label>
+        <link refid="_servo_8h_source"/>
+      </node>
+      <node id="36">
+        <label>libmaple/adc.c</label>
+        <link refid="adc_8c"/>
+      </node>
+      <node id="35">
+        <label>libmaple/adc.h</label>
+        <link refid="adc_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>libmaple/bitband.h</label>
+        <link refid="bitband.h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>libmaple/timer.c</label>
+        <link refid="timer_8c"/>
+      </node>
+      <node id="55">
+        <label>libmaple/timer.h</label>
+        <link refid="timer_8h"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>libraries/Wire/Wire.h</label>
+        <link refid="_wire_8h_source"/>
+      </node>
+      <node id="42">
+        <label>wirish/WProgram.h</label>
+        <link refid="_w_program_8h_source"/>
+      </node>
+      <node id="43">
+        <label>libraries/FreeRTOS/MapleFreeRTOS.h</label>
+        <link refid="_maple_free_r_t_o_s_8h_source"/>
+      </node>
+      <node id="51">
+        <label>libmaple/exti.c</label>
+        <link refid="exti_8c"/>
+      </node>
+      <node id="37">
+        <label>libmaple/util.c</label>
+        <link refid="util_8c_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="bitband_8h_1a656325acf5ee02d6494cb45b10ae36bb" prot="public" static="no">
+        <name>BB_SRAM_REF</name>
+        <initializer>0x20000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bitband.h" line="38" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bitband.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bitband_8h_1afa9b25f51ea43e85c85f2c908fc43076" prot="public" static="no">
+        <name>BB_SRAM_BASE</name>
+        <initializer>0x22000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bitband.h" line="39" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bitband.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bitband_8h_1a91049d98b97b474de624a3c8587d6378" prot="public" static="no">
+        <name>BB_PERI_REF</name>
+        <initializer>0x40000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bitband.h" line="40" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bitband.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bitband_8h_1a24e7e0e12d54e296f996fcba8c256cab" prot="public" static="no">
+        <name>BB_PERI_BASE</name>
+        <initializer>0x42000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bitband.h" line="41" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bitband.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="bitband_8h_1a9c974ebea52eef2879a3ffed24ca89d4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32 *</type>
+        <definition>static volatile uint32 * __bb_addr</definition>
+        <argsstring>(volatile void *, uint32, uint32, uint32)</argsstring>
+        <name>__bb_addr</name>
+        <param>
+          <type>volatile void *</type>
+          <defname>address</defname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <defname>bit</defname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <defname>bb_base</defname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <defname>bb_ref</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bitband.h" line="46" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bitband.h" bodystart="112" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="bitband_8h_1ae080439b344d89cf0249f3c71e2a45f0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32 *</type>
+        <definition>static volatile uint32* bb_sramp</definition>
+        <argsstring>(volatile void *address, uint32 bit)</argsstring>
+        <name>bb_sramp</name>
+        <param>
+          <type>volatile void *</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>bit</declname>
+        </param>
+        <briefdescription>
+<para>Obtain a pointer to the bit-band address corresponding to a bit in a volatile SRAM address. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address in the bit-banded SRAM region </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit in address to bit-band </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bitband.h" line="54" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bitband.h" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="bitband_8h_1aceb4320effc7c8ce207b134ed953a59f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8</type>
+        <definition>static uint8 bb_sram_get_bit</definition>
+        <argsstring>(volatile void *address, uint32 bit)</argsstring>
+        <name>bb_sram_get_bit</name>
+        <param>
+          <type>volatile void *</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>bit</declname>
+        </param>
+        <briefdescription>
+<para>Get a bit from an address in the SRAM bit-band region. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address in the SRAM bit-band region to read from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit in address to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bit&apos;s value in address. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bitband.h" line="64" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bitband.h" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="bitband_8h_1a8463ee646ad90c67daeb23372d7117e3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void bb_sram_set_bit</definition>
+        <argsstring>(volatile void *address, uint32 bit, uint8 val)</argsstring>
+        <name>bb_sram_set_bit</name>
+        <param>
+          <type>volatile void *</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>bit</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set a bit in an address in the SRAM bit-band region. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address in the SRAM bit-band region to write to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit in address to write to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to write for bit, either 0 or 1. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bitband.h" line="76" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bitband.h" bodystart="74" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="bitband_8h_1a090d1c0629caa58e2e783578591378d5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32 *</type>
+        <definition>static volatile uint32* bb_perip</definition>
+        <argsstring>(volatile void *address, uint32 bit)</argsstring>
+        <name>bb_perip</name>
+        <param>
+          <type>volatile void *</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>bit</declname>
+        </param>
+        <briefdescription>
+<para>Obtain a pointer to the bit-band address corresponding to a bit in a peripheral address. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address in the bit-banded peripheral region </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit in address to bit-band </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bitband.h" line="86" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bitband.h" bodystart="86" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="bitband_8h_1a522d6e28813b2ead2d8763630ce81508" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8</type>
+        <definition>static uint8 bb_peri_get_bit</definition>
+        <argsstring>(volatile void *address, uint32 bit)</argsstring>
+        <name>bb_peri_get_bit</name>
+        <param>
+          <type>volatile void *</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>bit</declname>
+        </param>
+        <briefdescription>
+<para>Get a bit from an address in the peripheral bit-band region. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address in the peripheral bit-band region to read from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit in address to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bit&apos;s value in address. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bitband.h" line="96" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bitband.h" bodystart="96" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="bitband_8h_1a20fc9d0655ba9ecfd07045b759729942" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void bb_peri_set_bit</definition>
+        <argsstring>(volatile void *address, uint32 bit, uint8 val)</argsstring>
+        <name>bb_peri_set_bit</name>
+        <param>
+          <type>volatile void *</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>bit</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set a bit in an address in the peripheral bit-band region. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address in the peripheral bit-band region to write to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit in address to write to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to write for bit, either 0 or 1. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/bitband.h" line="108" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/bitband.h" bodystart="106" bodyend="110"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Bit-banding utility functions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2011<sp/>LeafLabs,<sp/>LLC.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libmaple__types_8h" kindref="compound" tooltip="libmaple types">libmaple_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_BITBAND_H_</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_BITBAND_H_</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BB_SRAM_REF<sp/><sp/><sp/><sp/><sp/><sp/>0x20000000</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BB_SRAM_BASE<sp/><sp/><sp/><sp/><sp/>0x22000000</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BB_PERI_REF<sp/><sp/><sp/><sp/><sp/><sp/>0x40000000</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BB_PERI_BASE<sp/><sp/><sp/><sp/><sp/>0x42000000</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32*<sp/>__bb_addr(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="bitband_8h_1ae080439b344d89cf0249f3c71e2a45f0" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32*<sp/><ref refid="bitband_8h_1ae080439b344d89cf0249f3c71e2a45f0" kindref="member" tooltip="Obtain a pointer to the bit-band address corresponding to a bit in a volatile SRAM address...">bb_sramp</ref>(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*address,<sp/>uint32<sp/>bit)<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>__bb_addr(address,<sp/>bit,<sp/>BB_SRAM_BASE,<sp/>BB_SRAM_REF);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="bitband_8h_1aceb4320effc7c8ce207b134ed953a59f" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint8<sp/><ref refid="bitband_8h_1aceb4320effc7c8ce207b134ed953a59f" kindref="member" tooltip="Get a bit from an address in the SRAM bit-band region.">bb_sram_get_bit</ref>(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*address,<sp/>uint32<sp/>bit)<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*<ref refid="bitband_8h_1ae080439b344d89cf0249f3c71e2a45f0" kindref="member" tooltip="Obtain a pointer to the bit-band address corresponding to a bit in a volatile SRAM address...">bb_sramp</ref>(address,<sp/>bit);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="bitband_8h_1a8463ee646ad90c67daeb23372d7117e3" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bitband_8h_1a8463ee646ad90c67daeb23372d7117e3" kindref="member" tooltip="Set a bit in an address in the SRAM bit-band region.">bb_sram_set_bit</ref>(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*address,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32<sp/>bit,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8<sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="bitband_8h_1ae080439b344d89cf0249f3c71e2a45f0" kindref="member" tooltip="Obtain a pointer to the bit-band address corresponding to a bit in a volatile SRAM address...">bb_sramp</ref>(address,<sp/>bit)<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="bitband_8h_1a090d1c0629caa58e2e783578591378d5" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32*<sp/><ref refid="bitband_8h_1a090d1c0629caa58e2e783578591378d5" kindref="member" tooltip="Obtain a pointer to the bit-band address corresponding to a bit in a peripheral address.">bb_perip</ref>(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*address,<sp/>uint32<sp/>bit)<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>__bb_addr(address,<sp/>bit,<sp/>BB_PERI_BASE,<sp/>BB_PERI_REF);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="bitband_8h_1a522d6e28813b2ead2d8763630ce81508" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint8<sp/><ref refid="bitband_8h_1a522d6e28813b2ead2d8763630ce81508" kindref="member" tooltip="Get a bit from an address in the peripheral bit-band region.">bb_peri_get_bit</ref>(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*address,<sp/>uint32<sp/>bit)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*<ref refid="bitband_8h_1a090d1c0629caa58e2e783578591378d5" kindref="member" tooltip="Obtain a pointer to the bit-band address corresponding to a bit in a peripheral address.">bb_perip</ref>(address,<sp/>bit);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="bitband_8h_1a20fc9d0655ba9ecfd07045b759729942" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bitband_8h_1a20fc9d0655ba9ecfd07045b759729942" kindref="member" tooltip="Set a bit in an address in the peripheral bit-band region.">bb_peri_set_bit</ref>(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*address,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32<sp/>bit,</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8<sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="bitband_8h_1a090d1c0629caa58e2e783578591378d5" kindref="member" tooltip="Obtain a pointer to the bit-band address corresponding to a bit in a peripheral address.">bb_perip</ref>(address,<sp/>bit)<sp/>=<sp/>val;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32*<sp/>__bb_addr(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*address,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32<sp/>bit,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32<sp/>bb_base,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32<sp/>bb_ref)<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32*)(bb_base<sp/>+<sp/>((uint32)address<sp/>-<sp/>bb_ref)<sp/>*<sp/>32<sp/>+</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bit<sp/>*<sp/>4);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>_BITBAND_H_<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/bitband.h"/>
+  </compounddef>
+</doxygen>

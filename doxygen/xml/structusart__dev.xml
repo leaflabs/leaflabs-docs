@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structusart__dev" kind="struct" prot="public">
+    <compoundname>usart_dev</compoundname>
+    <includes refid="usart_8h" local="no">usart.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structusart__dev_1a78190808091aa1c52aff1c2432d1580a" prot="public" static="no" mutable="no">
+        <type><ref refid="structusart__reg__map" kindref="compound">usart_reg_map</ref> *</type>
+        <definition>usart_reg_map* usart_dev::regs</definition>
+        <argsstring></argsstring>
+        <name>regs</name>
+        <briefdescription>
+<para>Register map. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="237" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusart__dev_1a41b77903cca126923c49204fe58fa646" prot="public" static="no" mutable="no">
+        <type><ref refid="structring__buffer" kindref="compound">ring_buffer</ref> *</type>
+        <definition>ring_buffer* usart_dev::rb</definition>
+        <argsstring></argsstring>
+        <name>rb</name>
+        <briefdescription>
+<para>RX ring buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="238" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusart__dev_1a9db8c2a81396375505cba76e4220bc96" prot="public" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>uint32 usart_dev::max_baud</definition>
+        <argsstring></argsstring>
+        <name>max_baud</name>
+        <briefdescription>
+<para>Maximum baud. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="239" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusart__dev_1a4f04099f0748dc368de960d386040a2a" prot="public" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 usart_dev::rx_buf[USART_RX_BUF_SIZE]</definition>
+        <argsstring>[USART_RX_BUF_SIZE]</argsstring>
+        <name>rx_buf</name>
+        <briefdescription>
+<para>Deprecated. </para>        </briefdescription>
+        <detaileddescription>
+<para>Actual RX buffer used by rb. This field will be removed in a future release. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="243" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusart__dev_1a97216f26534f0290171efb40453ff028" prot="public" static="no" mutable="no">
+        <type><ref refid="rcc_8h_1ae3722d2d8eff5283fb0388429953640f" kindref="member">rcc_clk_id</ref></type>
+        <definition>rcc_clk_id usart_dev::clk_id</definition>
+        <argsstring></argsstring>
+        <name>clk_id</name>
+        <briefdescription>
+<para>RCC clock information. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="244" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusart__dev_1ade349ba928d1b1329f238d327a046ef0" prot="public" static="no" mutable="no">
+        <type><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83" kindref="member">nvic_irq_num</ref></type>
+        <definition>nvic_irq_num usart_dev::irq_num</definition>
+        <argsstring></argsstring>
+        <name>irq_num</name>
+        <briefdescription>
+<para>USART NVIC interrupt. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="245" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>USART device type. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="158">
+        <label>ring_buffer</label>
+        <link refid="structring__buffer"/>
+      </node>
+      <node id="159">
+        <label>usart_reg_map</label>
+        <link refid="structusart__reg__map"/>
+      </node>
+      <node id="157">
+        <label>usart_dev</label>
+        <link refid="structusart__dev"/>
+        <childnode refid="158" relation="usage">
+          <edgelabel>rb</edgelabel>
+        </childnode>
+        <childnode refid="159" relation="usage">
+          <edgelabel>regs</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="236" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="236" bodyend="246"/>
+    <listofallmembers>
+      <member refid="structusart__dev_1a97216f26534f0290171efb40453ff028" prot="public" virt="non-virtual"><scope>usart_dev</scope><name>clk_id</name></member>
+      <member refid="structusart__dev_1ade349ba928d1b1329f238d327a046ef0" prot="public" virt="non-virtual"><scope>usart_dev</scope><name>irq_num</name></member>
+      <member refid="structusart__dev_1a9db8c2a81396375505cba76e4220bc96" prot="public" virt="non-virtual"><scope>usart_dev</scope><name>max_baud</name></member>
+      <member refid="structusart__dev_1a41b77903cca126923c49204fe58fa646" prot="public" virt="non-virtual"><scope>usart_dev</scope><name>rb</name></member>
+      <member refid="structusart__dev_1a78190808091aa1c52aff1c2432d1580a" prot="public" virt="non-virtual"><scope>usart_dev</scope><name>regs</name></member>
+      <member refid="structusart__dev_1a4f04099f0748dc368de960d386040a2a" prot="public" virt="non-virtual"><scope>usart_dev</scope><name>rx_buf</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

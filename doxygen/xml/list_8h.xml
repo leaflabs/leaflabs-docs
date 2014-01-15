@@ -1,0 +1,633 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="list_8h" kind="file">
+    <compoundname>list.h</compoundname>
+    <includedby refid="task_8h" local="yes">libraries/FreeRTOS/utility/task.h</includedby>
+    <includedby refid="croutine_8h" local="yes">libraries/FreeRTOS/utility/croutine.h</includedby>
+    <includedby refid="list_8c" local="yes">libraries/FreeRTOS/utility/list.c</includedby>
+    <includedby refid="timers_8h" local="yes">libraries/FreeRTOS/utility/timers.h</includedby>
+    <invincdepgraph>
+      <node id="1209">
+        <label>libraries/FreeRTOS/utility/timers.h</label>
+        <link refid="timers_8h_source"/>
+        <childnode refid="1205" relation="include">
+        </childnode>
+        <childnode refid="1206" relation="include">
+        </childnode>
+      </node>
+      <node id="1205">
+        <label>libraries/FreeRTOS/utility/tasks.c</label>
+        <link refid="tasks_8c_source"/>
+      </node>
+      <node id="1199">
+        <label>libraries/FreeRTOS/utility/task.h</label>
+        <link refid="task_8h_source"/>
+        <childnode refid="1200" relation="include">
+        </childnode>
+        <childnode refid="1201" relation="include">
+        </childnode>
+        <childnode refid="1202" relation="include">
+        </childnode>
+        <childnode refid="1203" relation="include">
+        </childnode>
+        <childnode refid="1204" relation="include">
+        </childnode>
+        <childnode refid="1205" relation="include">
+        </childnode>
+        <childnode refid="1206" relation="include">
+        </childnode>
+      </node>
+      <node id="1204">
+        <label>libraries/FreeRTOS/utility/queue.c</label>
+        <link refid="queue_8c_source"/>
+      </node>
+      <node id="1202">
+        <label>libraries/FreeRTOS/utility/heap_2.c</label>
+        <link refid="heap__2_8c_source"/>
+      </node>
+      <node id="1203">
+        <label>libraries/FreeRTOS/utility/port.c</label>
+        <link refid="port_8c_source"/>
+      </node>
+      <node id="1201">
+        <label>libraries/FreeRTOS/utility/croutine.c</label>
+        <link refid="croutine_8c_source"/>
+      </node>
+      <node id="1207">
+        <label>libraries/FreeRTOS/utility/croutine.h</label>
+        <link refid="croutine_8h_source"/>
+        <childnode refid="1201" relation="include">
+        </childnode>
+        <childnode refid="1204" relation="include">
+        </childnode>
+      </node>
+      <node id="1208">
+        <label>libraries/FreeRTOS/utility/list.c</label>
+        <link refid="list_8c_source"/>
+      </node>
+      <node id="1200">
+        <label>libraries/FreeRTOS/MapleFreeRTOS.h</label>
+        <link refid="_maple_free_r_t_o_s_8h_source"/>
+      </node>
+      <node id="1198">
+        <label>libraries/FreeRTOS/utility/list.h</label>
+        <link refid="list.h"/>
+        <childnode refid="1199" relation="include">
+        </childnode>
+        <childnode refid="1207" relation="include">
+        </childnode>
+        <childnode refid="1208" relation="include">
+        </childnode>
+        <childnode refid="1209" relation="include">
+        </childnode>
+      </node>
+      <node id="1206">
+        <label>libraries/FreeRTOS/utility/timers.c</label>
+        <link refid="timers_8c_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structx_l_i_s_t___i_t_e_m" prot="public">xLIST_ITEM</innerclass>
+    <innerclass refid="structx_m_i_n_i___l_i_s_t___i_t_e_m" prot="public">xMINI_LIST_ITEM</innerclass>
+    <innerclass refid="structx_list" prot="public">xList</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="list_8h_1acc01a08e534b54fe438847ef02e5060a" prot="public" static="no">
+        <name>listSET_LIST_ITEM_OWNER</name>
+        <param><defname>pxListItem</defname></param>
+        <param><defname>pxOwner</defname></param>
+        <initializer>( pxListItem )-&gt;pvOwner = ( void * ) ( pxOwner )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="133" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1a83e95e61652f032fdc26aa622f5e2610" prot="public" static="no">
+        <name>listSET_LIST_ITEM_VALUE</name>
+        <param><defname>pxListItem</defname></param>
+        <param><defname>xValue</defname></param>
+        <initializer>( pxListItem )-&gt;xItemValue = ( xValue )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="142" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1aa50d09950abc602741d7ebe8387f4e1a" prot="public" static="no">
+        <name>listGET_LIST_ITEM_VALUE</name>
+        <param><defname>pxListItem</defname></param>
+        <initializer>( ( pxListItem )-&gt;xItemValue )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="152" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1a63742b27958b959ac9ab69d8e9aed241" prot="public" static="no">
+        <name>listGET_ITEM_VALUE_OF_HEAD_ENTRY</name>
+        <param><defname>pxList</defname></param>
+        <initializer>( (&amp;( ( pxList )-&gt;xListEnd ))-&gt;pxNext-&gt;xItemValue )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="161" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1aaba6eb05d67ebc8026bea29193eca28f" prot="public" static="no">
+        <name>listLIST_IS_EMPTY</name>
+        <param><defname>pxList</defname></param>
+        <initializer>( ( pxList )-&gt;uxNumberOfItems == ( unsigned portBASE_TYPE ) 0 )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="170" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1a18b4aded515bdc512017ea6e677a13bb" prot="public" static="no">
+        <name>listCURRENT_LIST_LENGTH</name>
+        <param><defname>pxList</defname></param>
+        <initializer>( ( pxList )-&gt;uxNumberOfItems )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="175" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1a275d9855e9b71652e2b8f6e2ed62aadd" prot="public" static="no">
+        <name>listGET_OWNER_OF_NEXT_ENTRY</name>
+        <param><defname>pxTCB</defname></param>
+        <param><defname>pxList</defname></param>
+        <initializer>{																						\
+<ref refid="structx_list" kindref="compound">xList</ref> * const pxConstList = ( pxList );													\
+	/* Increment the index to the next item and return the item, ensuring */			\
+	/* we don&apos;t return the marker used at the end of the list.  */						\
+	( pxConstList )-&gt;pxIndex = ( pxConstList )-&gt;pxIndex-&gt;pxNext;						\
+	if( ( pxConstList )-&gt;pxIndex == ( xListItem * ) &amp;( ( pxConstList )-&gt;xListEnd ) )	\
+	{																					\
+		( pxConstList )-&gt;pxIndex = ( pxConstList )-&gt;pxIndex-&gt;pxNext;					\
+	}																					\
+	( pxTCB ) = ( pxConstList )-&gt;pxIndex-&gt;pvOwner;										\
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="207" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1a715561302af8cb5b74416b23ce4e999d" prot="public" static="no">
+        <name>listGET_OWNER_OF_HEAD_ENTRY</name>
+        <param><defname>pxList</defname></param>
+        <initializer>( (&amp;( ( pxList )-&gt;xListEnd ))-&gt;pxNext-&gt;pvOwner )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="226" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="list_8h_1a60302b468d21f8c53d13987372acb8fa" prot="public" static="no">
+        <name>listIS_CONTAINED_WITHIN</name>
+        <param><defname>pxList</defname></param>
+        <param><defname>pxListItem</defname></param>
+        <initializer>( ( pxListItem )-&gt;pvContainer == ( void * ) ( pxList ) )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="238" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="list_8h_1acc831631f04ca3f6fef79b0175f6d6e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vListInitialise</definition>
+        <argsstring>(xList *pxList)</argsstring>
+        <name>vListInitialise</name>
+        <param>
+          <type><ref refid="structx_list" kindref="compound">xList</ref> *</type>
+          <declname>pxList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="250" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.c" bodystart="69" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="list_8h_1aa0c6c2804f1673b95f781a795ebf96d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vListInitialiseItem</definition>
+        <argsstring>(xListItem *pxItem)</argsstring>
+        <name>vListInitialiseItem</name>
+        <param>
+          <type>xListItem *</type>
+          <declname>pxItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="261" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.c" bodystart="89" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="list_8h_1ae0c352207d36c7ba3fa1b970b1eadd51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vListInsert</definition>
+        <argsstring>(xList *pxList, xListItem *pxNewListItem)</argsstring>
+        <name>vListInsert</name>
+        <param>
+          <type><ref refid="structx_list" kindref="compound">xList</ref> *</type>
+          <declname>pxList</declname>
+        </param>
+        <param>
+          <type>xListItem *</type>
+          <declname>pxNewListItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="274" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.c" bodystart="119" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="list_8h_1aa234bf74629ff34fbd8494a0f0112b42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vListInsertEnd</definition>
+        <argsstring>(xList *pxList, xListItem *pxNewListItem)</argsstring>
+        <name>vListInsertEnd</name>
+        <param>
+          <type><ref refid="structx_list" kindref="compound">xList</ref> *</type>
+          <declname>pxList</declname>
+        </param>
+        <param>
+          <type>xListItem *</type>
+          <declname>pxNewListItem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="295" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.c" bodystart="96" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="list_8h_1a6c083a9d7103fca1c9abd0de20839651" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vListRemove</definition>
+        <argsstring>(xListItem *pxItemToRemove)</argsstring>
+        <name>vListRemove</name>
+        <param>
+          <type>xListItem *</type>
+          <declname>pxItemToRemove</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="307" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.c" bodystart="176" bodyend="195"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>V7.0.1<sp/>-<sp/>Copyright<sp/>(C)<sp/>2011<sp/>Real<sp/>Time<sp/>Engineers<sp/>Ltd.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>supports<sp/>many<sp/>tools<sp/>and<sp/>architectures.<sp/>V7.0.0<sp/>is<sp/>sponsored<sp/>by:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>Atollic<sp/>AB<sp/>-<sp/>Atollic<sp/>provides<sp/>professional<sp/>embedded<sp/>systems<sp/>development<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>tools<sp/>for<sp/>C/C++<sp/>development,<sp/>code<sp/>analysis<sp/>and<sp/>test<sp/>automation.<sp/><sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>See<sp/>http://www.atollic.com</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>***************************************************************************</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>FreeRTOS<sp/>tutorial<sp/>books<sp/>are<sp/>available<sp/>in<sp/>pdf<sp/>and<sp/>paperback.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>Complete,<sp/>revised,<sp/>and<sp/>edited<sp/>pdf<sp/>reference<sp/>manuals<sp/>are<sp/>also<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>available.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>Purchasing<sp/>FreeRTOS<sp/>documentation<sp/>will<sp/>not<sp/>only<sp/>help<sp/>you,<sp/>by<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>ensuring<sp/>you<sp/>get<sp/>running<sp/>as<sp/>quickly<sp/>as<sp/>possible<sp/>and<sp/>with<sp/>an<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>in-depth<sp/>knowledge<sp/>of<sp/>how<sp/>to<sp/>use<sp/>FreeRTOS,<sp/>it<sp/>will<sp/>also<sp/>help<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>the<sp/>FreeRTOS<sp/>project<sp/>to<sp/>continue<sp/>with<sp/>its<sp/>mission<sp/>of<sp/>providing<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>professional<sp/>grade,<sp/>cross<sp/>platform,<sp/>de<sp/>facto<sp/>standard<sp/>solutions<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>for<sp/>microcontrollers<sp/>-<sp/>completely<sp/>free<sp/>of<sp/>charge!<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>&gt;&gt;&gt;<sp/>See<sp/>http://www.FreeRTOS.org/Documentation<sp/>for<sp/>details.<sp/>&lt;&lt;&lt;<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>Thank<sp/>you<sp/>for<sp/>using<sp/>FreeRTOS,<sp/>and<sp/>thank<sp/>you<sp/>for<sp/>your<sp/>support!<sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/>***************************************************************************</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"></highlight></codeline>
+<codeline lineno="30"><highlight class="comment"></highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>FreeRTOS<sp/>distribution.</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"></highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it<sp/>under</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>(version<sp/>2)<sp/>as<sp/>published<sp/>by<sp/>the</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/>Free<sp/>Software<sp/>Foundation<sp/>AND<sp/>MODIFIED<sp/>BY<sp/>the<sp/>FreeRTOS<sp/>exception.</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/>&gt;&gt;&gt;NOTE&lt;&lt;&lt;<sp/>The<sp/>modification<sp/>to<sp/>the<sp/>GPL<sp/>is<sp/>included<sp/>to<sp/>allow<sp/>you<sp/>to</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/>distribute<sp/>a<sp/>combined<sp/>work<sp/>that<sp/>includes<sp/>FreeRTOS<sp/>without<sp/>being<sp/>obliged<sp/>to</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/>provide<sp/>the<sp/>source<sp/>code<sp/>for<sp/>proprietary<sp/>components<sp/>outside<sp/>of<sp/>the<sp/>FreeRTOS</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/>kernel.<sp/><sp/>FreeRTOS<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/>MERCHANTABILITY</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/><sp/><sp/>more<sp/>details.<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/><sp/>License<sp/>and<sp/>the<sp/>FreeRTOS<sp/>license<sp/>exception<sp/>along<sp/>with<sp/>FreeRTOS;<sp/>if<sp/>not<sp/>it</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/><sp/><sp/>can<sp/>be<sp/>viewed<sp/>here:<sp/>http://www.freertos.org/a00114.html<sp/>and<sp/>also<sp/>obtained</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/><sp/><sp/>by<sp/>writing<sp/>to<sp/>Richard<sp/>Barry,<sp/>contact<sp/>details<sp/>for<sp/>whom<sp/>are<sp/>available<sp/>on<sp/>the</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>WEB<sp/>site.</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"></highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/><sp/><sp/>1<sp/>tab<sp/>==<sp/>4<sp/>spaces!</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"></highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.FreeRTOS.org<sp/>-<sp/>Documentation,<sp/>latest<sp/>information,<sp/>license<sp/>and</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/>contact<sp/>details.</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"></highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.SafeRTOS.com<sp/>-<sp/>A<sp/>version<sp/>that<sp/>is<sp/>certified<sp/>for<sp/>use<sp/>in<sp/>safety</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/><sp/><sp/><sp/>critical<sp/>systems.</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"></highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.OpenRTOS.com<sp/>-<sp/>Commercial<sp/>support,<sp/>development,<sp/>porting,</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/><sp/><sp/>licensing<sp/>and<sp/>training<sp/>services.</highlight></codeline>
+<codeline lineno="58"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/>*<sp/>This<sp/>is<sp/>the<sp/>list<sp/>implementation<sp/>used<sp/>by<sp/>the<sp/>scheduler.<sp/><sp/>While<sp/>it<sp/>is<sp/>tailored</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*<sp/>heavily<sp/>for<sp/>the<sp/>schedulers<sp/>needs,<sp/>it<sp/>is<sp/>also<sp/>available<sp/>for<sp/>use<sp/>by</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>*<sp/>application<sp/>code.</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>*<sp/>xLists<sp/>can<sp/>only<sp/>store<sp/>pointers<sp/>to<sp/>xListItems.<sp/><sp/>Each<sp/>xListItem<sp/>contains<sp/>a</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/>*<sp/>numeric<sp/>value<sp/>(xItemValue).<sp/><sp/>Most<sp/>of<sp/>the<sp/>time<sp/>the<sp/>lists<sp/>are<sp/>sorted<sp/>in</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>*<sp/>descending<sp/>item<sp/>value<sp/>order.</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/>*<sp/>Lists<sp/>are<sp/>created<sp/>already<sp/>containing<sp/>one<sp/>list<sp/>item.<sp/><sp/>The<sp/>value<sp/>of<sp/>this</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/>*<sp/>item<sp/>is<sp/>the<sp/>maximum<sp/>possible<sp/>that<sp/>can<sp/>be<sp/>stored,<sp/>it<sp/>is<sp/>therefore<sp/>always<sp/>at</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/>*<sp/>the<sp/>end<sp/>of<sp/>the<sp/>list<sp/>and<sp/>acts<sp/>as<sp/>a<sp/>marker.<sp/><sp/>The<sp/>list<sp/>member<sp/>pxHead<sp/>always</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/>*<sp/>points<sp/>to<sp/>this<sp/>marker<sp/>-<sp/>even<sp/>though<sp/>it<sp/>is<sp/>at<sp/>the<sp/>tail<sp/>of<sp/>the<sp/>list.<sp/><sp/>This</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/>*<sp/>is<sp/>because<sp/>the<sp/>tail<sp/>contains<sp/>a<sp/>wrap<sp/>back<sp/>pointer<sp/>to<sp/>the<sp/>true<sp/>head<sp/>of</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/>*<sp/>the<sp/>list.</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/>*<sp/>In<sp/>addition<sp/>to<sp/>it&apos;s<sp/>value,<sp/>each<sp/>list<sp/>item<sp/>contains<sp/>a<sp/>pointer<sp/>to<sp/>the<sp/>next</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*<sp/>item<sp/>in<sp/>the<sp/>list<sp/>(pxNext),<sp/>a<sp/>pointer<sp/>to<sp/>the<sp/>list<sp/>it<sp/>is<sp/>in<sp/>(pxContainer)</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*<sp/>and<sp/>a<sp/>pointer<sp/>to<sp/>back<sp/>to<sp/>the<sp/>object<sp/>that<sp/>contains<sp/>it.<sp/><sp/>These<sp/>later<sp/>two</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*<sp/>pointers<sp/>are<sp/>included<sp/>for<sp/>efficiency<sp/>of<sp/>list<sp/>manipulation.<sp/><sp/>There<sp/>is</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*<sp/>effectively<sp/>a<sp/>two<sp/>way<sp/>link<sp/>between<sp/>the<sp/>object<sp/>containing<sp/>the<sp/>list<sp/>item<sp/>and</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*<sp/>the<sp/>list<sp/>item<sp/>itself.</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/>*<sp/>\page<sp/>ListIntroduction<sp/>List<sp/>Implementation</highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/>*<sp/>\ingroup<sp/>FreeRTOSIntro</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LIST_H</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LIST_H</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/>*<sp/>Definition<sp/>of<sp/>the<sp/>only<sp/>type<sp/>of<sp/>object<sp/>that<sp/>a<sp/>list<sp/>can<sp/>contain.</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="structx_l_i_s_t___i_t_e_m" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structx_l_i_s_t___i_t_e_m" kindref="compound">xLIST_ITEM</ref></highlight></codeline>
+<codeline lineno="99"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>portTickType<sp/>xItemValue;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*&lt;<sp/>The<sp/>value<sp/>being<sp/>listed.<sp/><sp/>In<sp/>most<sp/>cases<sp/>this<sp/>is<sp/>used<sp/>to<sp/>sort<sp/>the<sp/>list<sp/>in<sp/>descending<sp/>order.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structx_l_i_s_t___i_t_e_m" kindref="compound">xLIST_ITEM</ref><sp/>*<sp/>pxNext;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*&lt;<sp/>Pointer<sp/>to<sp/>the<sp/>next<sp/>xListItem<sp/>in<sp/>the<sp/>list.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structx_l_i_s_t___i_t_e_m" kindref="compound">xLIST_ITEM</ref><sp/>*<sp/>pxPrevious;</highlight><highlight class="comment">/*&lt;<sp/>Pointer<sp/>to<sp/>the<sp/>previous<sp/>xListItem<sp/>in<sp/>the<sp/>list.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>pvOwner;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*&lt;<sp/>Pointer<sp/>to<sp/>the<sp/>object<sp/>(normally<sp/>a<sp/>TCB)<sp/>that<sp/>contains<sp/>the<sp/>list<sp/>item.<sp/><sp/>There<sp/>is<sp/>therefore<sp/>a<sp/>two<sp/>way<sp/>link<sp/>between<sp/>the<sp/>object<sp/>containing<sp/>the<sp/>list<sp/>item<sp/>and<sp/>the<sp/>list<sp/>item<sp/>itself.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>pvContainer;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*&lt;<sp/>Pointer<sp/>to<sp/>the<sp/>list<sp/>in<sp/>which<sp/>this<sp/>list<sp/>item<sp/>is<sp/>placed<sp/>(if<sp/>any).<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structx_l_i_s_t___i_t_e_m" kindref="compound">xLIST_ITEM</ref><sp/>xListItem;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>For<sp/>some<sp/>reason<sp/>lint<sp/>wants<sp/>this<sp/>as<sp/>two<sp/>separate<sp/>definitions.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="structx_m_i_n_i___l_i_s_t___i_t_e_m" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structx_m_i_n_i___l_i_s_t___i_t_e_m" kindref="compound">xMINI_LIST_ITEM</ref></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>portTickType<sp/>xItemValue;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structx_l_i_s_t___i_t_e_m" kindref="compound">xLIST_ITEM</ref><sp/>*pxNext;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structx_l_i_s_t___i_t_e_m" kindref="compound">xLIST_ITEM</ref><sp/>*pxPrevious;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structx_m_i_n_i___l_i_s_t___i_t_e_m" kindref="compound">xMINI_LIST_ITEM</ref><sp/>xMiniListItem;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/>*<sp/>Definition<sp/>of<sp/>the<sp/>type<sp/>of<sp/>queue<sp/>used<sp/>by<sp/>the<sp/>scheduler.</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="structx_list" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">xLIST</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>uxNumberOfItems;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>xListItem<sp/>*<sp/>pxIndex;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*&lt;<sp/>Used<sp/>to<sp/>walk<sp/>through<sp/>the<sp/>list.<sp/><sp/>Points<sp/>to<sp/>the<sp/>last<sp/>item<sp/>returned<sp/>by<sp/>a<sp/>call<sp/>to<sp/>pvListGetOwnerOfNextEntry<sp/>().<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>xMiniListItem<sp/>xListEnd;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*&lt;<sp/>List<sp/>item<sp/>that<sp/>contains<sp/>the<sp/>maximum<sp/>possible<sp/>item<sp/>value<sp/>meaning<sp/>it<sp/>is<sp/>always<sp/>at<sp/>the<sp/>end<sp/>of<sp/>the<sp/>list<sp/>and<sp/>is<sp/>therefore<sp/>used<sp/>as<sp/>a<sp/>marker.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}<sp/><ref refid="structx_list" kindref="compound">xList</ref>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/>*<sp/>Access<sp/>macro<sp/>to<sp/>set<sp/>the<sp/>owner<sp/>of<sp/>a<sp/>list<sp/>item.<sp/><sp/>The<sp/>owner<sp/>of<sp/>a<sp/>list<sp/>item</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/>*<sp/>is<sp/>the<sp/>object<sp/>(usually<sp/>a<sp/>TCB)<sp/>that<sp/>contains<sp/>the<sp/>list<sp/>item.</highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"><sp/>*<sp/>\page<sp/>listSET_LIST_ITEM_OWNER<sp/>listSET_LIST_ITEM_OWNER</highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/>*<sp/>\ingroup<sp/>LinkedList</highlight></codeline>
+<codeline lineno="132"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>listSET_LIST_ITEM_OWNER(<sp/>pxListItem,<sp/>pxOwner<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>pxListItem<sp/>)-&gt;pvOwner<sp/>=<sp/>(<sp/>void<sp/>*<sp/>)<sp/>(<sp/>pxOwner<sp/>)</highlight></codeline>
+<codeline lineno="134"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="136"><highlight class="comment"><sp/>*<sp/>Access<sp/>macro<sp/>to<sp/>set<sp/>the<sp/>value<sp/>of<sp/>the<sp/>list<sp/>item.<sp/><sp/>In<sp/>most<sp/>cases<sp/>the<sp/>value<sp/>is</highlight></codeline>
+<codeline lineno="137"><highlight class="comment"><sp/>*<sp/>used<sp/>to<sp/>sort<sp/>the<sp/>list<sp/>in<sp/>descending<sp/>order.</highlight></codeline>
+<codeline lineno="138"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="139"><highlight class="comment"><sp/>*<sp/>\page<sp/>listSET_LIST_ITEM_VALUE<sp/>listSET_LIST_ITEM_VALUE</highlight></codeline>
+<codeline lineno="140"><highlight class="comment"><sp/>*<sp/>\ingroup<sp/>LinkedList</highlight></codeline>
+<codeline lineno="141"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>listSET_LIST_ITEM_VALUE(<sp/>pxListItem,<sp/>xValue<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>pxListItem<sp/>)-&gt;xItemValue<sp/>=<sp/>(<sp/>xValue<sp/>)</highlight></codeline>
+<codeline lineno="143"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="145"><highlight class="comment"><sp/>*<sp/>Access<sp/>macro<sp/>the<sp/>retrieve<sp/>the<sp/>value<sp/>of<sp/>the<sp/>list<sp/>item.<sp/><sp/>The<sp/>value<sp/>can</highlight></codeline>
+<codeline lineno="146"><highlight class="comment"><sp/>*<sp/>represent<sp/>anything<sp/>-<sp/>for<sp/>example<sp/>a<sp/>the<sp/>priority<sp/>of<sp/>a<sp/>task,<sp/>or<sp/>the<sp/>time<sp/>at</highlight></codeline>
+<codeline lineno="147"><highlight class="comment"><sp/>*<sp/>which<sp/>a<sp/>task<sp/>should<sp/>be<sp/>unblocked.</highlight></codeline>
+<codeline lineno="148"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="149"><highlight class="comment"><sp/>*<sp/>\page<sp/>listGET_LIST_ITEM_VALUE<sp/>listGET_LIST_ITEM_VALUE</highlight></codeline>
+<codeline lineno="150"><highlight class="comment"><sp/>*<sp/>\ingroup<sp/>LinkedList</highlight></codeline>
+<codeline lineno="151"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>listGET_LIST_ITEM_VALUE(<sp/>pxListItem<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>(<sp/>pxListItem<sp/>)-&gt;xItemValue<sp/>)</highlight></codeline>
+<codeline lineno="153"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="155"><highlight class="comment"><sp/>*<sp/>Access<sp/>macro<sp/>the<sp/>retrieve<sp/>the<sp/>value<sp/>of<sp/>the<sp/>list<sp/>item<sp/>at<sp/>the<sp/>head<sp/>of<sp/>a<sp/>given</highlight></codeline>
+<codeline lineno="156"><highlight class="comment"><sp/>*<sp/>list.</highlight></codeline>
+<codeline lineno="157"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="158"><highlight class="comment"><sp/>*<sp/>\page<sp/>listGET_LIST_ITEM_VALUE<sp/>listGET_LIST_ITEM_VALUE</highlight></codeline>
+<codeline lineno="159"><highlight class="comment"><sp/>*<sp/>\ingroup<sp/>LinkedList</highlight></codeline>
+<codeline lineno="160"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>listGET_ITEM_VALUE_OF_HEAD_ENTRY(<sp/>pxList<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>(&amp;(<sp/>(<sp/>pxList<sp/>)-&gt;xListEnd<sp/>))-&gt;pxNext-&gt;xItemValue<sp/>)</highlight></codeline>
+<codeline lineno="162"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="164"><highlight class="comment"><sp/>*<sp/>Access<sp/>macro<sp/>to<sp/>determine<sp/>if<sp/>a<sp/>list<sp/>contains<sp/>any<sp/>items.<sp/><sp/>The<sp/>macro<sp/>will</highlight></codeline>
+<codeline lineno="165"><highlight class="comment"><sp/>*<sp/>only<sp/>have<sp/>the<sp/>value<sp/>true<sp/>if<sp/>the<sp/>list<sp/>is<sp/>empty.</highlight></codeline>
+<codeline lineno="166"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="167"><highlight class="comment"><sp/>*<sp/>\page<sp/>listLIST_IS_EMPTY<sp/>listLIST_IS_EMPTY</highlight></codeline>
+<codeline lineno="168"><highlight class="comment"><sp/>*<sp/>\ingroup<sp/>LinkedList</highlight></codeline>
+<codeline lineno="169"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>listLIST_IS_EMPTY(<sp/>pxList<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>(<sp/>pxList<sp/>)-&gt;uxNumberOfItems<sp/>==<sp/>(<sp/>unsigned<sp/>portBASE_TYPE<sp/>)<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="171"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="173"><highlight class="comment"><sp/>*<sp/>Access<sp/>macro<sp/>to<sp/>return<sp/>the<sp/>number<sp/>of<sp/>items<sp/>in<sp/>the<sp/>list.</highlight></codeline>
+<codeline lineno="174"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>listCURRENT_LIST_LENGTH(<sp/>pxList<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>(<sp/>pxList<sp/>)-&gt;uxNumberOfItems<sp/>)</highlight></codeline>
+<codeline lineno="176"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="178"><highlight class="comment"><sp/>*<sp/>Access<sp/>function<sp/>to<sp/>obtain<sp/>the<sp/>owner<sp/>of<sp/>the<sp/>next<sp/>entry<sp/>in<sp/>a<sp/>list.</highlight></codeline>
+<codeline lineno="179"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="180"><highlight class="comment"><sp/>*<sp/>The<sp/>list<sp/>member<sp/>pxIndex<sp/>is<sp/>used<sp/>to<sp/>walk<sp/>through<sp/>a<sp/>list.<sp/><sp/>Calling</highlight></codeline>
+<codeline lineno="181"><highlight class="comment"><sp/>*<sp/>listGET_OWNER_OF_NEXT_ENTRY<sp/>increments<sp/>pxIndex<sp/>to<sp/>the<sp/>next<sp/>item<sp/>in<sp/>the<sp/>list</highlight></codeline>
+<codeline lineno="182"><highlight class="comment"><sp/>*<sp/>and<sp/>returns<sp/>that<sp/>entries<sp/>pxOwner<sp/>parameter.<sp/><sp/>Using<sp/>multiple<sp/>calls<sp/>to<sp/>this</highlight></codeline>
+<codeline lineno="183"><highlight class="comment"><sp/>*<sp/>function<sp/>it<sp/>is<sp/>therefore<sp/>possible<sp/>to<sp/>move<sp/>through<sp/>every<sp/>item<sp/>contained<sp/>in</highlight></codeline>
+<codeline lineno="184"><highlight class="comment"><sp/>*<sp/>a<sp/>list.</highlight></codeline>
+<codeline lineno="185"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="186"><highlight class="comment"><sp/>*<sp/>The<sp/>pxOwner<sp/>parameter<sp/>of<sp/>a<sp/>list<sp/>item<sp/>is<sp/>a<sp/>pointer<sp/>to<sp/>the<sp/>object<sp/>that<sp/>owns</highlight></codeline>
+<codeline lineno="187"><highlight class="comment"><sp/>*<sp/>the<sp/>list<sp/>item.<sp/><sp/>In<sp/>the<sp/>scheduler<sp/>this<sp/>is<sp/>normally<sp/>a<sp/>task<sp/>control<sp/>block.</highlight></codeline>
+<codeline lineno="188"><highlight class="comment"><sp/>*<sp/>The<sp/>pxOwner<sp/>parameter<sp/>effectively<sp/>creates<sp/>a<sp/>two<sp/>way<sp/>link<sp/>between<sp/>the<sp/>list</highlight></codeline>
+<codeline lineno="189"><highlight class="comment"><sp/>*<sp/>item<sp/>and<sp/>its<sp/>owner.</highlight></codeline>
+<codeline lineno="190"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="191"><highlight class="comment"><sp/>*<sp/>@param<sp/>pxList<sp/>The<sp/>list<sp/>from<sp/>which<sp/>the<sp/>next<sp/>item<sp/>owner<sp/>is<sp/>to<sp/>be<sp/>returned.</highlight></codeline>
+<codeline lineno="192"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="193"><highlight class="comment"><sp/>*<sp/>\page<sp/>listGET_OWNER_OF_NEXT_ENTRY<sp/>listGET_OWNER_OF_NEXT_ENTRY</highlight></codeline>
+<codeline lineno="194"><highlight class="comment"><sp/>*<sp/>\ingroup<sp/>LinkedList</highlight></codeline>
+<codeline lineno="195"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>listGET_OWNER_OF_NEXT_ENTRY(<sp/>pxTCB,<sp/>pxList<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="197"><highlight class="preprocessor">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="198"><highlight class="preprocessor">xList<sp/>*<sp/>const<sp/>pxConstList<sp/>=<sp/>(<sp/>pxList<sp/>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="199"><highlight class="preprocessor"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Increment<sp/>the<sp/>index<sp/>to<sp/>the<sp/>next<sp/>item<sp/>and<sp/>return<sp/>the<sp/>item,<sp/>ensuring<sp/>*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>we<sp/>don&apos;t<sp/>return<sp/>the<sp/>marker<sp/>used<sp/>at<sp/>the<sp/>end<sp/>of<sp/>the<sp/>list.<sp/><sp/>*/</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>(<sp/>pxConstList<sp/>)-&gt;pxIndex<sp/>=<sp/>(<sp/>pxConstList<sp/>)-&gt;pxIndex-&gt;pxNext;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>if(<sp/>(<sp/>pxConstList<sp/>)-&gt;pxIndex<sp/>==<sp/>(<sp/>xListItem<sp/>*<sp/>)<sp/>&amp;(<sp/>(<sp/>pxConstList<sp/>)-&gt;xListEnd<sp/>)<sp/>)<sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>pxConstList<sp/>)-&gt;pxIndex<sp/>=<sp/>(<sp/>pxConstList<sp/>)-&gt;pxIndex-&gt;pxNext;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>(<sp/>pxTCB<sp/>)<sp/>=<sp/>(<sp/>pxConstList<sp/>)-&gt;pxIndex-&gt;pvOwner;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="207"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="211"><highlight class="comment"><sp/>*<sp/>Access<sp/>function<sp/>to<sp/>obtain<sp/>the<sp/>owner<sp/>of<sp/>the<sp/>first<sp/>entry<sp/>in<sp/>a<sp/>list.<sp/><sp/>Lists</highlight></codeline>
+<codeline lineno="212"><highlight class="comment"><sp/>*<sp/>are<sp/>normally<sp/>sorted<sp/>in<sp/>ascending<sp/>item<sp/>value<sp/>order.</highlight></codeline>
+<codeline lineno="213"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="214"><highlight class="comment"><sp/>*<sp/>This<sp/>function<sp/>returns<sp/>the<sp/>pxOwner<sp/>member<sp/>of<sp/>the<sp/>first<sp/>item<sp/>in<sp/>the<sp/>list.</highlight></codeline>
+<codeline lineno="215"><highlight class="comment"><sp/>*<sp/>The<sp/>pxOwner<sp/>parameter<sp/>of<sp/>a<sp/>list<sp/>item<sp/>is<sp/>a<sp/>pointer<sp/>to<sp/>the<sp/>object<sp/>that<sp/>owns</highlight></codeline>
+<codeline lineno="216"><highlight class="comment"><sp/>*<sp/>the<sp/>list<sp/>item.<sp/><sp/>In<sp/>the<sp/>scheduler<sp/>this<sp/>is<sp/>normally<sp/>a<sp/>task<sp/>control<sp/>block.</highlight></codeline>
+<codeline lineno="217"><highlight class="comment"><sp/>*<sp/>The<sp/>pxOwner<sp/>parameter<sp/>effectively<sp/>creates<sp/>a<sp/>two<sp/>way<sp/>link<sp/>between<sp/>the<sp/>list</highlight></codeline>
+<codeline lineno="218"><highlight class="comment"><sp/>*<sp/>item<sp/>and<sp/>its<sp/>owner.</highlight></codeline>
+<codeline lineno="219"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="220"><highlight class="comment"><sp/>*<sp/>@param<sp/>pxList<sp/>The<sp/>list<sp/>from<sp/>which<sp/>the<sp/>owner<sp/>of<sp/>the<sp/>head<sp/>item<sp/>is<sp/>to<sp/>be</highlight></codeline>
+<codeline lineno="221"><highlight class="comment"><sp/>*<sp/>returned.</highlight></codeline>
+<codeline lineno="222"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="223"><highlight class="comment"><sp/>*<sp/>\page<sp/>listGET_OWNER_OF_HEAD_ENTRY<sp/>listGET_OWNER_OF_HEAD_ENTRY</highlight></codeline>
+<codeline lineno="224"><highlight class="comment"><sp/>*<sp/>\ingroup<sp/>LinkedList</highlight></codeline>
+<codeline lineno="225"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>listGET_OWNER_OF_HEAD_ENTRY(<sp/>pxList<sp/>)<sp/><sp/>(<sp/>(&amp;(<sp/>(<sp/>pxList<sp/>)-&gt;xListEnd<sp/>))-&gt;pxNext-&gt;pvOwner<sp/>)</highlight></codeline>
+<codeline lineno="227"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="229"><highlight class="comment"><sp/>*<sp/>Check<sp/>to<sp/>see<sp/>if<sp/>a<sp/>list<sp/>item<sp/>is<sp/>within<sp/>a<sp/>list.<sp/><sp/>The<sp/>list<sp/>item<sp/>maintains<sp/>a</highlight></codeline>
+<codeline lineno="230"><highlight class="comment"><sp/>*<sp/>&quot;container&quot;<sp/>pointer<sp/>that<sp/>points<sp/>to<sp/>the<sp/>list<sp/>it<sp/>is<sp/>in.<sp/><sp/>All<sp/>this<sp/>macro<sp/>does</highlight></codeline>
+<codeline lineno="231"><highlight class="comment"><sp/>*<sp/>is<sp/>check<sp/>to<sp/>see<sp/>if<sp/>the<sp/>container<sp/>and<sp/>the<sp/>list<sp/>match.</highlight></codeline>
+<codeline lineno="232"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="233"><highlight class="comment"><sp/>*<sp/>@param<sp/>pxList<sp/>The<sp/>list<sp/>we<sp/>want<sp/>to<sp/>know<sp/>if<sp/>the<sp/>list<sp/>item<sp/>is<sp/>within.</highlight></codeline>
+<codeline lineno="234"><highlight class="comment"><sp/>*<sp/>@param<sp/>pxListItem<sp/>The<sp/>list<sp/>item<sp/>we<sp/>want<sp/>to<sp/>know<sp/>if<sp/>is<sp/>in<sp/>the<sp/>list.</highlight></codeline>
+<codeline lineno="235"><highlight class="comment"><sp/>*<sp/>@return<sp/>pdTRUE<sp/>is<sp/>the<sp/>list<sp/>item<sp/>is<sp/>in<sp/>the<sp/>list,<sp/>otherwise<sp/>pdFALSE.</highlight></codeline>
+<codeline lineno="236"><highlight class="comment"><sp/>*<sp/>pointer<sp/>against</highlight></codeline>
+<codeline lineno="237"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>listIS_CONTAINED_WITHIN(<sp/>pxList,<sp/>pxListItem<sp/>)<sp/>(<sp/>(<sp/>pxListItem<sp/>)-&gt;pvContainer<sp/>==<sp/>(<sp/>void<sp/>*<sp/>)<sp/>(<sp/>pxList<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="239"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="241"><highlight class="comment"><sp/>*<sp/>Must<sp/>be<sp/>called<sp/>before<sp/>a<sp/>list<sp/>is<sp/>used!<sp/><sp/>This<sp/>initialises<sp/>all<sp/>the<sp/>members</highlight></codeline>
+<codeline lineno="242"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>list<sp/>structure<sp/>and<sp/>inserts<sp/>the<sp/>xListEnd<sp/>item<sp/>into<sp/>the<sp/>list<sp/>as<sp/>a</highlight></codeline>
+<codeline lineno="243"><highlight class="comment"><sp/>*<sp/>marker<sp/>to<sp/>the<sp/>back<sp/>of<sp/>the<sp/>list.</highlight></codeline>
+<codeline lineno="244"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="245"><highlight class="comment"><sp/>*<sp/>@param<sp/>pxList<sp/>Pointer<sp/>to<sp/>the<sp/>list<sp/>being<sp/>initialised.</highlight></codeline>
+<codeline lineno="246"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="247"><highlight class="comment"><sp/>*<sp/>\page<sp/>vListInitialise<sp/>vListInitialise</highlight></codeline>
+<codeline lineno="248"><highlight class="comment"><sp/>*<sp/>\ingroup<sp/>LinkedList</highlight></codeline>
+<codeline lineno="249"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vListInitialise(<sp/><ref refid="structx_list" kindref="compound">xList</ref><sp/>*pxList<sp/>);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="253"><highlight class="comment"><sp/>*<sp/>Must<sp/>be<sp/>called<sp/>before<sp/>a<sp/>list<sp/>item<sp/>is<sp/>used.<sp/><sp/>This<sp/>sets<sp/>the<sp/>list<sp/>container<sp/>to</highlight></codeline>
+<codeline lineno="254"><highlight class="comment"><sp/>*<sp/>null<sp/>so<sp/>the<sp/>item<sp/>does<sp/>not<sp/>think<sp/>that<sp/>it<sp/>is<sp/>already<sp/>contained<sp/>in<sp/>a<sp/>list.</highlight></codeline>
+<codeline lineno="255"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="256"><highlight class="comment"><sp/>*<sp/>@param<sp/>pxItem<sp/>Pointer<sp/>to<sp/>the<sp/>list<sp/>item<sp/>being<sp/>initialised.</highlight></codeline>
+<codeline lineno="257"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="258"><highlight class="comment"><sp/>*<sp/>\page<sp/>vListInitialiseItem<sp/>vListInitialiseItem</highlight></codeline>
+<codeline lineno="259"><highlight class="comment"><sp/>*<sp/>\ingroup<sp/>LinkedList</highlight></codeline>
+<codeline lineno="260"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vListInitialiseItem(<sp/>xListItem<sp/>*pxItem<sp/>);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="264"><highlight class="comment"><sp/>*<sp/>Insert<sp/>a<sp/>list<sp/>item<sp/>into<sp/>a<sp/>list.<sp/><sp/>The<sp/>item<sp/>will<sp/>be<sp/>inserted<sp/>into<sp/>the<sp/>list<sp/>in</highlight></codeline>
+<codeline lineno="265"><highlight class="comment"><sp/>*<sp/>a<sp/>position<sp/>determined<sp/>by<sp/>its<sp/>item<sp/>value<sp/>(descending<sp/>item<sp/>value<sp/>order).</highlight></codeline>
+<codeline lineno="266"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="267"><highlight class="comment"><sp/>*<sp/>@param<sp/>pxList<sp/>The<sp/>list<sp/>into<sp/>which<sp/>the<sp/>item<sp/>is<sp/>to<sp/>be<sp/>inserted.</highlight></codeline>
+<codeline lineno="268"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="269"><highlight class="comment"><sp/>*<sp/>@param<sp/>pxNewListItem<sp/>The<sp/>item<sp/>to<sp/>that<sp/>is<sp/>to<sp/>be<sp/>placed<sp/>in<sp/>the<sp/>list.</highlight></codeline>
+<codeline lineno="270"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="271"><highlight class="comment"><sp/>*<sp/>\page<sp/>vListInsert<sp/>vListInsert</highlight></codeline>
+<codeline lineno="272"><highlight class="comment"><sp/>*<sp/>\ingroup<sp/>LinkedList</highlight></codeline>
+<codeline lineno="273"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vListInsert(<sp/><ref refid="structx_list" kindref="compound">xList</ref><sp/>*pxList,<sp/>xListItem<sp/>*pxNewListItem<sp/>);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="277"><highlight class="comment"><sp/>*<sp/>Insert<sp/>a<sp/>list<sp/>item<sp/>into<sp/>a<sp/>list.<sp/><sp/>The<sp/>item<sp/>will<sp/>be<sp/>inserted<sp/>in<sp/>a<sp/>position</highlight></codeline>
+<codeline lineno="278"><highlight class="comment"><sp/>*<sp/>such<sp/>that<sp/>it<sp/>will<sp/>be<sp/>the<sp/>last<sp/>item<sp/>within<sp/>the<sp/>list<sp/>returned<sp/>by<sp/>multiple</highlight></codeline>
+<codeline lineno="279"><highlight class="comment"><sp/>*<sp/>calls<sp/>to<sp/>listGET_OWNER_OF_NEXT_ENTRY.</highlight></codeline>
+<codeline lineno="280"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="281"><highlight class="comment"><sp/>*<sp/>The<sp/>list<sp/>member<sp/>pvIndex<sp/>is<sp/>used<sp/>to<sp/>walk<sp/>through<sp/>a<sp/>list.<sp/><sp/>Calling</highlight></codeline>
+<codeline lineno="282"><highlight class="comment"><sp/>*<sp/>listGET_OWNER_OF_NEXT_ENTRY<sp/>increments<sp/>pvIndex<sp/>to<sp/>the<sp/>next<sp/>item<sp/>in<sp/>the<sp/>list.</highlight></codeline>
+<codeline lineno="283"><highlight class="comment"><sp/>*<sp/>Placing<sp/>an<sp/>item<sp/>in<sp/>a<sp/>list<sp/>using<sp/>vListInsertEnd<sp/>effectively<sp/>places<sp/>the<sp/>item</highlight></codeline>
+<codeline lineno="284"><highlight class="comment"><sp/>*<sp/>in<sp/>the<sp/>list<sp/>position<sp/>pointed<sp/>to<sp/>by<sp/>pvIndex.<sp/><sp/>This<sp/>means<sp/>that<sp/>every<sp/>other</highlight></codeline>
+<codeline lineno="285"><highlight class="comment"><sp/>*<sp/>item<sp/>within<sp/>the<sp/>list<sp/>will<sp/>be<sp/>returned<sp/>by<sp/>listGET_OWNER_OF_NEXT_ENTRY<sp/>before</highlight></codeline>
+<codeline lineno="286"><highlight class="comment"><sp/>*<sp/>the<sp/>pvIndex<sp/>parameter<sp/>again<sp/>points<sp/>to<sp/>the<sp/>item<sp/>being<sp/>inserted.</highlight></codeline>
+<codeline lineno="287"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="288"><highlight class="comment"><sp/>*<sp/>@param<sp/>pxList<sp/>The<sp/>list<sp/>into<sp/>which<sp/>the<sp/>item<sp/>is<sp/>to<sp/>be<sp/>inserted.</highlight></codeline>
+<codeline lineno="289"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="290"><highlight class="comment"><sp/>*<sp/>@param<sp/>pxNewListItem<sp/>The<sp/>list<sp/>item<sp/>to<sp/>be<sp/>inserted<sp/>into<sp/>the<sp/>list.</highlight></codeline>
+<codeline lineno="291"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="292"><highlight class="comment"><sp/>*<sp/>\page<sp/>vListInsertEnd<sp/>vListInsertEnd</highlight></codeline>
+<codeline lineno="293"><highlight class="comment"><sp/>*<sp/>\ingroup<sp/>LinkedList</highlight></codeline>
+<codeline lineno="294"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vListInsertEnd(<sp/><ref refid="structx_list" kindref="compound">xList</ref><sp/>*pxList,<sp/>xListItem<sp/>*pxNewListItem<sp/>);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="298"><highlight class="comment"><sp/>*<sp/>Remove<sp/>an<sp/>item<sp/>from<sp/>a<sp/>list.<sp/><sp/>The<sp/>list<sp/>item<sp/>has<sp/>a<sp/>pointer<sp/>to<sp/>the<sp/>list<sp/>that</highlight></codeline>
+<codeline lineno="299"><highlight class="comment"><sp/>*<sp/>it<sp/>is<sp/>in,<sp/>so<sp/>only<sp/>the<sp/>list<sp/>item<sp/>need<sp/>be<sp/>passed<sp/>into<sp/>the<sp/>function.</highlight></codeline>
+<codeline lineno="300"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="301"><highlight class="comment"><sp/>*<sp/>@param<sp/>vListRemove<sp/>The<sp/>item<sp/>to<sp/>be<sp/>removed.<sp/><sp/>The<sp/>item<sp/>will<sp/>remove<sp/>itself<sp/>from</highlight></codeline>
+<codeline lineno="302"><highlight class="comment"><sp/>*<sp/>the<sp/>list<sp/>pointed<sp/>to<sp/>by<sp/>it&apos;s<sp/>pxContainer<sp/>parameter.</highlight></codeline>
+<codeline lineno="303"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="304"><highlight class="comment"><sp/>*<sp/>\page<sp/>vListRemove<sp/>vListRemove</highlight></codeline>
+<codeline lineno="305"><highlight class="comment"><sp/>*<sp/>\ingroup<sp/>LinkedList</highlight></codeline>
+<codeline lineno="306"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vListRemove(<sp/>xListItem<sp/>*pxItemToRemove<sp/>);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="310"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="312"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="314"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h"/>
+  </compounddef>
+</doxygen>

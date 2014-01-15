@@ -1,0 +1,371 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="semphr_8h" kind="file">
+    <compoundname>semphr.h</compoundname>
+    <includes refid="queue_8h" local="yes">queue.h</includes>
+    <includedby refid="_maple_free_r_t_o_s_8h" local="yes">libraries/FreeRTOS/MapleFreeRTOS.h</includedby>
+    <incdepgraph>
+      <node id="1298">
+        <label>queue.h</label>
+        <link refid="queue_8h_source"/>
+        <childnode refid="1299" relation="include">
+        </childnode>
+      </node>
+      <node id="1297">
+        <label>libraries/FreeRTOS/utility/semphr.h</label>
+        <link refid="semphr.h"/>
+        <childnode refid="1298" relation="include">
+        </childnode>
+      </node>
+      <node id="1299">
+        <label>mpu_wrappers.h</label>
+        <link refid="mpu__wrappers_8h_source"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1300">
+        <label>libraries/FreeRTOS/utility/semphr.h</label>
+        <link refid="semphr.h"/>
+        <childnode refid="1301" relation="include">
+        </childnode>
+      </node>
+      <node id="1301">
+        <label>libraries/FreeRTOS/MapleFreeRTOS.h</label>
+        <link refid="_maple_free_r_t_o_s_8h_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="semphr_8h_1a73cfd14cf25a13f8dd4dc1d74b7fc04a" prot="public" static="no">
+        <name>semBINARY_SEMAPHORE_QUEUE_LENGTH</name>
+        <initializer>( ( unsigned char ) 1U )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" line="71" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="semphr_8h_1a93bd07e28aed3084bdafa1f4e99700b2" prot="public" static="no">
+        <name>semSEMAPHORE_QUEUE_ITEM_LENGTH</name>
+        <initializer>( ( unsigned char ) 0U )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" line="72" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="semphr_8h_1a124bb5bd7805baa06fbd3239840d6803" prot="public" static="no">
+        <name>semGIVE_BLOCK_TIME</name>
+        <initializer>( ( portTickType ) 0U )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" line="73" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="semphr_8h_1ae10bffadd26fbd5bcce76bf33a83ef30" prot="public" static="no">
+        <name>vSemaphoreCreateBinary</name>
+        <param><defname>xSemaphore</defname></param>
+        <initializer>{																									\
+														( xSemaphore ) = xQueueCreate( ( unsigned portBASE_TYPE ) 1, semSEMAPHORE_QUEUE_ITEM_LENGTH );	\
+														if( ( xSemaphore ) != NULL )																	\
+														{																								\
+															xSemaphoreGive( ( xSemaphore ) );															\
+														}																								\
+													}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" line="120" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="semphr_8h_1af116e436d2a5ae5bd72dbade2b5ea930" prot="public" static="no">
+        <name>xSemaphoreTake</name>
+        <param><defname>xSemaphore</defname></param>
+        <param><defname>xBlockTime</defname></param>
+        <initializer>xQueueGenericReceive( ( <ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref> ) ( xSemaphore ), NULL, ( xBlockTime ), pdFALSE )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" line="187" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="semphr_8h_1ad395f4bba51eea6af3397d72bc079e4d" prot="public" static="no">
+        <name>xSemaphoreTakeRecursive</name>
+        <param><defname>xMutex</defname></param>
+        <param><defname>xBlockTime</defname></param>
+        <initializer>xQueueTakeMutexRecursive( ( xMutex ), ( xBlockTime ) )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" line="280" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="semphr_8h_1ae999c79808cd06356d58e2ead90d8e1f" prot="public" static="no">
+        <name>xSemaphoreAltTake</name>
+        <param><defname>xSemaphore</defname></param>
+        <param><defname>xBlockTime</defname></param>
+        <initializer>xQueueAltGenericReceive( ( <ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref> ) ( xSemaphore ), NULL, ( xBlockTime ), pdFALSE )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" line="295" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="semphr_8h_1aae55761cabfa9bf85c8f4430f78c0953" prot="public" static="no">
+        <name>xSemaphoreGive</name>
+        <param><defname>xSemaphore</defname></param>
+        <initializer>xQueueGenericSend( ( <ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref> ) ( xSemaphore ), NULL, semGIVE_BLOCK_TIME, queueSEND_TO_BACK )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" line="358" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="semphr_8h_1a398d66b17856c22dd49d39aaac42f105" prot="public" static="no">
+        <name>xSemaphoreGiveRecursive</name>
+        <param><defname>xMutex</defname></param>
+        <initializer>xQueueGiveMutexRecursive( ( xMutex ) )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" line="442" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" bodystart="442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="semphr_8h_1a5489341c35be2350d3e164ea1520d094" prot="public" static="no">
+        <name>xSemaphoreAltGive</name>
+        <param><defname>xSemaphore</defname></param>
+        <initializer>xQueueAltGenericSend( ( <ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref> ) ( xSemaphore ), NULL, semGIVE_BLOCK_TIME, queueSEND_TO_BACK )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" line="456" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" bodystart="456" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="semphr_8h_1a68aa43df8b2a0dbe17d05fad74670ef0" prot="public" static="no">
+        <name>xSemaphoreGiveFromISR</name>
+        <param><defname>xSemaphore</defname></param>
+        <param><defname>pxHigherPriorityTaskWoken</defname></param>
+        <initializer>xQueueGenericSendFromISR( ( <ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref> ) ( xSemaphore ), NULL, ( pxHigherPriorityTaskWoken ), queueSEND_TO_BACK )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" line="547" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" bodystart="547" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="semphr_8h_1aa6a00aa9b91a9e5b3ebe4ae1c3f115c6" prot="public" static="no">
+        <name>xSemaphoreCreateMutex</name>
+        <param></param>
+        <initializer>xQueueCreateMutex()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" line="594" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" bodystart="594" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="semphr_8h_1a1bbc843be5a41ea83d2693b2189fc0f8" prot="public" static="no">
+        <name>xSemaphoreCreateRecursiveMutex</name>
+        <param></param>
+        <initializer>xQueueCreateMutex()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" line="649" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" bodystart="649" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="semphr_8h_1a7764616a918a46115403569a88148ad4" prot="public" static="no">
+        <name>xSemaphoreCreateCounting</name>
+        <param><defname>uxMaxCount</defname></param>
+        <param><defname>uxInitialCount</defname></param>
+        <initializer>xQueueCreateCountingSemaphore( ( uxMaxCount ), ( uxInitialCount ) )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" line="712" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" bodystart="712" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="semphr_8h_1aa91aa1b6835a184838f9ccf138a6ad10" prot="public" static="no">
+        <type><ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref></type>
+        <definition>typedef xQueueHandle xSemaphoreHandle</definition>
+        <argsstring></argsstring>
+        <name>xSemaphoreHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" line="69" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>V7.0.1<sp/>-<sp/>Copyright<sp/>(C)<sp/>2011<sp/>Real<sp/>Time<sp/>Engineers<sp/>Ltd.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>supports<sp/>many<sp/>tools<sp/>and<sp/>architectures.<sp/>V7.0.0<sp/>is<sp/>sponsored<sp/>by:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>Atollic<sp/>AB<sp/>-<sp/>Atollic<sp/>provides<sp/>professional<sp/>embedded<sp/>systems<sp/>development<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>tools<sp/>for<sp/>C/C++<sp/>development,<sp/>code<sp/>analysis<sp/>and<sp/>test<sp/>automation.<sp/><sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>See<sp/>http://www.atollic.com</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>***************************************************************************</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>FreeRTOS<sp/>tutorial<sp/>books<sp/>are<sp/>available<sp/>in<sp/>pdf<sp/>and<sp/>paperback.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>Complete,<sp/>revised,<sp/>and<sp/>edited<sp/>pdf<sp/>reference<sp/>manuals<sp/>are<sp/>also<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>available.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>Purchasing<sp/>FreeRTOS<sp/>documentation<sp/>will<sp/>not<sp/>only<sp/>help<sp/>you,<sp/>by<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>ensuring<sp/>you<sp/>get<sp/>running<sp/>as<sp/>quickly<sp/>as<sp/>possible<sp/>and<sp/>with<sp/>an<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>in-depth<sp/>knowledge<sp/>of<sp/>how<sp/>to<sp/>use<sp/>FreeRTOS,<sp/>it<sp/>will<sp/>also<sp/>help<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>the<sp/>FreeRTOS<sp/>project<sp/>to<sp/>continue<sp/>with<sp/>its<sp/>mission<sp/>of<sp/>providing<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>professional<sp/>grade,<sp/>cross<sp/>platform,<sp/>de<sp/>facto<sp/>standard<sp/>solutions<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>for<sp/>microcontrollers<sp/>-<sp/>completely<sp/>free<sp/>of<sp/>charge!<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>&gt;&gt;&gt;<sp/>See<sp/>http://www.FreeRTOS.org/Documentation<sp/>for<sp/>details.<sp/>&lt;&lt;&lt;<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>Thank<sp/>you<sp/>for<sp/>using<sp/>FreeRTOS,<sp/>and<sp/>thank<sp/>you<sp/>for<sp/>your<sp/>support!<sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/>***************************************************************************</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"></highlight></codeline>
+<codeline lineno="30"><highlight class="comment"></highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>FreeRTOS<sp/>distribution.</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"></highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it<sp/>under</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>(version<sp/>2)<sp/>as<sp/>published<sp/>by<sp/>the</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/>Free<sp/>Software<sp/>Foundation<sp/>AND<sp/>MODIFIED<sp/>BY<sp/>the<sp/>FreeRTOS<sp/>exception.</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/>&gt;&gt;&gt;NOTE&lt;&lt;&lt;<sp/>The<sp/>modification<sp/>to<sp/>the<sp/>GPL<sp/>is<sp/>included<sp/>to<sp/>allow<sp/>you<sp/>to</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/>distribute<sp/>a<sp/>combined<sp/>work<sp/>that<sp/>includes<sp/>FreeRTOS<sp/>without<sp/>being<sp/>obliged<sp/>to</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/>provide<sp/>the<sp/>source<sp/>code<sp/>for<sp/>proprietary<sp/>components<sp/>outside<sp/>of<sp/>the<sp/>FreeRTOS</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/>kernel.<sp/><sp/>FreeRTOS<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/>MERCHANTABILITY</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/><sp/><sp/>more<sp/>details.<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/><sp/>License<sp/>and<sp/>the<sp/>FreeRTOS<sp/>license<sp/>exception<sp/>along<sp/>with<sp/>FreeRTOS;<sp/>if<sp/>not<sp/>it</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/><sp/><sp/>can<sp/>be<sp/>viewed<sp/>here:<sp/>http://www.freertos.org/a00114.html<sp/>and<sp/>also<sp/>obtained</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/><sp/><sp/>by<sp/>writing<sp/>to<sp/>Richard<sp/>Barry,<sp/>contact<sp/>details<sp/>for<sp/>whom<sp/>are<sp/>available<sp/>on<sp/>the</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>WEB<sp/>site.</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"></highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/><sp/><sp/>1<sp/>tab<sp/>==<sp/>4<sp/>spaces!</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"></highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.FreeRTOS.org<sp/>-<sp/>Documentation,<sp/>latest<sp/>information,<sp/>license<sp/>and</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/>contact<sp/>details.</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"></highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.SafeRTOS.com<sp/>-<sp/>A<sp/>version<sp/>that<sp/>is<sp/>certified<sp/>for<sp/>use<sp/>in<sp/>safety</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/><sp/><sp/><sp/>critical<sp/>systems.</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"></highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.OpenRTOS.com<sp/>-<sp/>Commercial<sp/>support,<sp/>development,<sp/>porting,</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/><sp/><sp/>licensing<sp/>and<sp/>training<sp/>services.</highlight></codeline>
+<codeline lineno="58"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SEMAPHORE_H</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEMAPHORE_H</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INC_FREERTOS_H</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#error<sp/>&quot;#include<sp/>FreeRTOS.h&quot;<sp/>must<sp/>appear<sp/>in<sp/>source<sp/>files<sp/>before<sp/>&quot;#include<sp/>semphr.h&quot;</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;queue.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structx_q_u_e_u_e" kindref="compound">xQueueHandle</ref><sp/><ref refid="structx_q_u_e_u_e" kindref="compound">xSemaphoreHandle</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>semBINARY_SEMAPHORE_QUEUE_LENGTH<sp/><sp/><sp/><sp/>(<sp/>(<sp/>unsigned<sp/>char<sp/>)<sp/>1U<sp/>)</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>semSEMAPHORE_QUEUE_ITEM_LENGTH<sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>(<sp/>unsigned<sp/>char<sp/>)<sp/>0U<sp/>)</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>semGIVE_BLOCK_TIME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>(<sp/>portTickType<sp/>)<sp/>0U<sp/>)</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="preprocessor">#define<sp/>vSemaphoreCreateBinary(<sp/>xSemaphore<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="115"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<sp/>xSemaphore<sp/>)<sp/>=<sp/>xQueueCreate(<sp/>(<sp/>unsigned<sp/>portBASE_TYPE<sp/>)<sp/>1,<sp/>semSEMAPHORE_QUEUE_ITEM_LENGTH<sp/>);<sp/><sp/>\</highlight></codeline>
+<codeline lineno="116"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(<sp/>(<sp/>xSemaphore<sp/>)<sp/>!=<sp/>NULL<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="118"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xSemaphoreGive(<sp/>(<sp/>xSemaphore<sp/>)<sp/>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="187"><highlight class="preprocessor">#define<sp/>xSemaphoreTake(<sp/>xSemaphore,<sp/>xBlockTime<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xQueueGenericReceive(<sp/>(<sp/>xQueueHandle<sp/>)<sp/>(<sp/>xSemaphore<sp/>),<sp/>NULL,<sp/>(<sp/>xBlockTime<sp/>),<sp/>pdFALSE<sp/>)</highlight></codeline>
+<codeline lineno="188"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="280"><highlight class="preprocessor">#define<sp/>xSemaphoreTakeRecursive(<sp/>xMutex,<sp/>xBlockTime<sp/>)<sp/><sp/><sp/>xQueueTakeMutexRecursive(<sp/>(<sp/>xMutex<sp/>),<sp/>(<sp/>xBlockTime<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="281"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="284"><highlight class="comment"><sp/>*<sp/>xSemaphoreAltTake()<sp/>is<sp/>an<sp/>alternative<sp/>version<sp/>of<sp/>xSemaphoreTake().</highlight></codeline>
+<codeline lineno="285"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="286"><highlight class="comment"><sp/>*<sp/>The<sp/>source<sp/>code<sp/>that<sp/>implements<sp/>the<sp/>alternative<sp/>(Alt)<sp/>API<sp/>is<sp/>much<sp/></highlight></codeline>
+<codeline lineno="287"><highlight class="comment"><sp/>*<sp/>simpler<sp/><sp/>because<sp/>it<sp/>executes<sp/>everything<sp/>from<sp/>within<sp/>a<sp/>critical<sp/>section.<sp/><sp/></highlight></codeline>
+<codeline lineno="288"><highlight class="comment"><sp/>*<sp/>This<sp/>is<sp/><sp/>the<sp/>approach<sp/>taken<sp/>by<sp/>many<sp/>other<sp/>RTOSes,<sp/>but<sp/>FreeRTOS.org<sp/>has<sp/>the<sp/></highlight></codeline>
+<codeline lineno="289"><highlight class="comment"><sp/>*<sp/>preferred<sp/>fully<sp/>featured<sp/>API<sp/>too.<sp/><sp/>The<sp/>fully<sp/>featured<sp/>API<sp/>has<sp/>more<sp/></highlight></codeline>
+<codeline lineno="290"><highlight class="comment"><sp/>*<sp/>complex<sp/><sp/>code<sp/>that<sp/>takes<sp/>longer<sp/>to<sp/>execute,<sp/>but<sp/>makes<sp/>much<sp/>less<sp/>use<sp/>of<sp/></highlight></codeline>
+<codeline lineno="291"><highlight class="comment"><sp/>*<sp/>critical<sp/>sections.<sp/><sp/>Therefore<sp/>the<sp/>alternative<sp/>API<sp/>sacrifices<sp/>interrupt<sp/></highlight></codeline>
+<codeline lineno="292"><highlight class="comment"><sp/>*<sp/>responsiveness<sp/>to<sp/>gain<sp/>execution<sp/>speed,<sp/>whereas<sp/>the<sp/>fully<sp/>featured<sp/>API</highlight></codeline>
+<codeline lineno="293"><highlight class="comment"><sp/>*<sp/>sacrifices<sp/>execution<sp/>speed<sp/>to<sp/>ensure<sp/>better<sp/>interrupt<sp/>responsiveness.</highlight></codeline>
+<codeline lineno="294"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>xSemaphoreAltTake(<sp/>xSemaphore,<sp/>xBlockTime<sp/>)<sp/><sp/><sp/><sp/><sp/>xQueueAltGenericReceive(<sp/>(<sp/>xQueueHandle<sp/>)<sp/>(<sp/>xSemaphore<sp/>),<sp/>NULL,<sp/>(<sp/>xBlockTime<sp/>),<sp/>pdFALSE<sp/>)</highlight></codeline>
+<codeline lineno="296"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="358"><highlight class="preprocessor">#define<sp/>xSemaphoreGive(<sp/>xSemaphore<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xQueueGenericSend(<sp/>(<sp/>xQueueHandle<sp/>)<sp/>(<sp/>xSemaphore<sp/>),<sp/>NULL,<sp/>semGIVE_BLOCK_TIME,<sp/>queueSEND_TO_BACK<sp/>)</highlight></codeline>
+<codeline lineno="359"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="442"><highlight class="preprocessor">#define<sp/>xSemaphoreGiveRecursive(<sp/>xMutex<sp/>)<sp/><sp/><sp/>xQueueGiveMutexRecursive(<sp/>(<sp/>xMutex<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="443"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="444"><highlight class="normal"></highlight><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="445"><highlight class="comment"><sp/>*<sp/>xSemaphoreAltGive()<sp/>is<sp/>an<sp/>alternative<sp/>version<sp/>of<sp/>xSemaphoreGive().</highlight></codeline>
+<codeline lineno="446"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="447"><highlight class="comment"><sp/>*<sp/>The<sp/>source<sp/>code<sp/>that<sp/>implements<sp/>the<sp/>alternative<sp/>(Alt)<sp/>API<sp/>is<sp/>much<sp/></highlight></codeline>
+<codeline lineno="448"><highlight class="comment"><sp/>*<sp/>simpler<sp/><sp/>because<sp/>it<sp/>executes<sp/>everything<sp/>from<sp/>within<sp/>a<sp/>critical<sp/>section.<sp/><sp/></highlight></codeline>
+<codeline lineno="449"><highlight class="comment"><sp/>*<sp/>This<sp/>is<sp/><sp/>the<sp/>approach<sp/>taken<sp/>by<sp/>many<sp/>other<sp/>RTOSes,<sp/>but<sp/>FreeRTOS.org<sp/>has<sp/>the<sp/></highlight></codeline>
+<codeline lineno="450"><highlight class="comment"><sp/>*<sp/>preferred<sp/>fully<sp/>featured<sp/>API<sp/>too.<sp/><sp/>The<sp/>fully<sp/>featured<sp/>API<sp/>has<sp/>more<sp/></highlight></codeline>
+<codeline lineno="451"><highlight class="comment"><sp/>*<sp/>complex<sp/><sp/>code<sp/>that<sp/>takes<sp/>longer<sp/>to<sp/>execute,<sp/>but<sp/>makes<sp/>much<sp/>less<sp/>use<sp/>of<sp/></highlight></codeline>
+<codeline lineno="452"><highlight class="comment"><sp/>*<sp/>critical<sp/>sections.<sp/><sp/>Therefore<sp/>the<sp/>alternative<sp/>API<sp/>sacrifices<sp/>interrupt<sp/></highlight></codeline>
+<codeline lineno="453"><highlight class="comment"><sp/>*<sp/>responsiveness<sp/>to<sp/>gain<sp/>execution<sp/>speed,<sp/>whereas<sp/>the<sp/>fully<sp/>featured<sp/>API</highlight></codeline>
+<codeline lineno="454"><highlight class="comment"><sp/>*<sp/>sacrifices<sp/>execution<sp/>speed<sp/>to<sp/>ensure<sp/>better<sp/>interrupt<sp/>responsiveness.</highlight></codeline>
+<codeline lineno="455"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="456"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>xSemaphoreAltGive(<sp/>xSemaphore<sp/>)<sp/><sp/><sp/><sp/><sp/>xQueueAltGenericSend(<sp/>(<sp/>xQueueHandle<sp/>)<sp/>(<sp/>xSemaphore<sp/>),<sp/>NULL,<sp/>semGIVE_BLOCK_TIME,<sp/>queueSEND_TO_BACK<sp/>)</highlight></codeline>
+<codeline lineno="457"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="547"><highlight class="preprocessor">#define<sp/>xSemaphoreGiveFromISR(<sp/>xSemaphore,<sp/>pxHigherPriorityTaskWoken<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xQueueGenericSendFromISR(<sp/>(<sp/>xQueueHandle<sp/>)<sp/>(<sp/>xSemaphore<sp/>),<sp/>NULL,<sp/>(<sp/>pxHigherPriorityTaskWoken<sp/>),<sp/>queueSEND_TO_BACK<sp/>)</highlight></codeline>
+<codeline lineno="548"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="594"><highlight class="preprocessor">#define<sp/>xSemaphoreCreateMutex()<sp/>xQueueCreateMutex()</highlight></codeline>
+<codeline lineno="595"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="596"><highlight class="normal"></highlight></codeline>
+<codeline lineno="649"><highlight class="preprocessor">#define<sp/>xSemaphoreCreateRecursiveMutex()<sp/>xQueueCreateMutex()</highlight></codeline>
+<codeline lineno="650"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="712"><highlight class="preprocessor">#define<sp/>xSemaphoreCreateCounting(<sp/>uxMaxCount,<sp/>uxInitialCount<sp/>)<sp/>xQueueCreateCountingSemaphore(<sp/>(<sp/>uxMaxCount<sp/>),<sp/>(<sp/>uxInitialCount<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="713"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="714"><highlight class="normal"></highlight></codeline>
+<codeline lineno="715"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>SEMAPHORE_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="716"><highlight class="normal"></highlight></codeline>
+<codeline lineno="717"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/semphr.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1228 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="boards_8h" kind="file">
+    <compoundname>boards.h</compoundname>
+    <includes refid="libmaple_8h" local="yes">libmaple.h</includes>
+    <includes refid="gpio_8h" local="yes">gpio.h</includes>
+    <includes refid="timer_8h" local="yes">timer.h</includes>
+    <includes refid="wirish__types_8h" local="yes">wirish_types.h</includes>
+    <includedby refid="_hardware_s_p_i_8h" local="yes">wirish/comm/HardwareSPI.h</includedby>
+    <includedby refid="wirish__time_8h" local="yes">wirish/wirish_time.h</includedby>
+    <includedby refid="wirish_8h" local="yes">wirish/wirish.h</includedby>
+    <incdepgraph>
+      <node id="1453">
+        <label>wirish/boards.h</label>
+        <link refid="boards.h"/>
+        <childnode refid="1454" relation="include">
+        </childnode>
+        <childnode refid="1459" relation="include">
+        </childnode>
+        <childnode refid="1461" relation="include">
+        </childnode>
+        <childnode refid="1464" relation="include">
+        </childnode>
+      </node>
+      <node id="1462">
+        <label>nvic.h</label>
+        <link refid="nvic_8h"/>
+        <childnode refid="1455" relation="include">
+        </childnode>
+        <childnode refid="1457" relation="include">
+        </childnode>
+      </node>
+      <node id="1460">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="1455" relation="include">
+        </childnode>
+      </node>
+      <node id="1456">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="1455">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="1454">
+        <label>libmaple.h</label>
+        <link refid="libmaple_8h"/>
+        <childnode refid="1455" relation="include">
+        </childnode>
+        <childnode refid="1456" relation="include">
+        </childnode>
+        <childnode refid="1457" relation="include">
+        </childnode>
+        <childnode refid="1458" relation="include">
+        </childnode>
+      </node>
+      <node id="1464">
+        <label>wirish_types.h</label>
+        <link refid="wirish__types_8h"/>
+        <childnode refid="1455" relation="include">
+        </childnode>
+        <childnode refid="1459" relation="include">
+        </childnode>
+        <childnode refid="1461" relation="include">
+        </childnode>
+        <childnode refid="1465" relation="include">
+        </childnode>
+      </node>
+      <node id="1465">
+        <label>adc.h</label>
+        <link refid="adc_8h"/>
+        <childnode refid="1454" relation="include">
+        </childnode>
+        <childnode refid="1463" relation="include">
+        </childnode>
+        <childnode refid="1460" relation="include">
+        </childnode>
+      </node>
+      <node id="1463">
+        <label>bitband.h</label>
+        <link refid="bitband_8h"/>
+        <childnode refid="1455" relation="include">
+        </childnode>
+      </node>
+      <node id="1459">
+        <label>gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="1454" relation="include">
+        </childnode>
+        <childnode refid="1460" relation="include">
+        </childnode>
+      </node>
+      <node id="1461">
+        <label>timer.h</label>
+        <link refid="timer_8h"/>
+        <childnode refid="1454" relation="include">
+        </childnode>
+        <childnode refid="1460" relation="include">
+        </childnode>
+        <childnode refid="1462" relation="include">
+        </childnode>
+        <childnode refid="1463" relation="include">
+        </childnode>
+      </node>
+      <node id="1458">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="1455" relation="include">
+        </childnode>
+        <childnode refid="1456" relation="include">
+        </childnode>
+      </node>
+      <node id="1457">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="1455" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1468">
+        <label>wirish/wirish.h</label>
+        <link refid="wirish_8h_source"/>
+        <childnode refid="1469" relation="include">
+        </childnode>
+        <childnode refid="1470" relation="include">
+        </childnode>
+        <childnode refid="1471" relation="include">
+        </childnode>
+        <childnode refid="1472" relation="include">
+        </childnode>
+      </node>
+      <node id="1466">
+        <label>wirish/boards.h</label>
+        <link refid="boards.h"/>
+        <childnode refid="1467" relation="include">
+        </childnode>
+        <childnode refid="1473" relation="include">
+        </childnode>
+        <childnode refid="1468" relation="include">
+        </childnode>
+      </node>
+      <node id="1474">
+        <label>wirish/io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="1468" relation="include">
+        </childnode>
+      </node>
+      <node id="1467">
+        <label>wirish/comm/HardwareSPI.h</label>
+        <link refid="_hardware_s_p_i_8h"/>
+        <childnode refid="1468" relation="include">
+        </childnode>
+      </node>
+      <node id="1471">
+        <label>libraries/LiquidCrystal/LiquidCrystal.h</label>
+        <link refid="_liquid_crystal_8h_source"/>
+      </node>
+      <node id="1473">
+        <label>wirish/wirish_time.h</label>
+        <link refid="wirish__time_8h"/>
+        <childnode refid="1474" relation="include">
+        </childnode>
+        <childnode refid="1468" relation="include">
+        </childnode>
+      </node>
+      <node id="1472">
+        <label>libraries/Wire/Wire.h</label>
+        <link refid="_wire_8h_source"/>
+      </node>
+      <node id="1469">
+        <label>wirish/WProgram.h</label>
+        <link refid="_w_program_8h_source"/>
+      </node>
+      <node id="1470">
+        <label>libraries/FreeRTOS/MapleFreeRTOS.h</label>
+        <link refid="_maple_free_r_t_o_s_8h_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="boards_8h_1aa730cf63998cc5fa6fe71c11af0adcd4" prot="public" static="no">
+        <name>CLOCK_SPEED_MHZ</name>
+        <initializer>CYCLES_PER_MICROSECOND</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards.h" line="152" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="boards_8h_1af975bc87ba77fa536ea6af090980071f" prot="public" static="no">
+        <name>CLOCK_SPEED_HZ</name>
+        <initializer>(CLOCK_SPEED_MHZ * 1000000UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards.h" line="153" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635" prot="public" static="no">
+        <name>@6</name>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a5484c6144a8cba103d5d23f4be32afcf" prot="public">
+          <name>D0</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a29b8ecb29049f38cbf752d95f479bff7" prot="public">
+          <name>D1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a86c69dc8849d17673b52b9a8d94d8b9f" prot="public">
+          <name>D2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635ade8ef7573c5fa770f07ac7616cbf5d34" prot="public">
+          <name>D3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a12761dd9f3b74590b720d87d6ca9fbcf" prot="public">
+          <name>D4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a9bfc9615ce2836fe43fe37e0eda2a68a" prot="public">
+          <name>D5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635ab6e74cb404ad3a7370b6cbb05f004fcb" prot="public">
+          <name>D6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a0701f86c777d8dde5be3a916a510cdfa" prot="public">
+          <name>D7</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635aea0726597b1f1d4e1fbe5bc51978a5e1" prot="public">
+          <name>D8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635ad8ff471f40b06f8793851f05c87d4fdf" prot="public">
+          <name>D9</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635adc4009866f9c8c1611854e1e70b683d9" prot="public">
+          <name>D10</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a3875f0f8761e76cc3c581ae7eaf346a2" prot="public">
+          <name>D11</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a2d33aedca327f4bc5671e43de930ae6d" prot="public">
+          <name>D12</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a5b09fede8072db2deedbfb5fa2647234" prot="public">
+          <name>D13</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a5d8e140b8d4b1f912ab573a095724d57" prot="public">
+          <name>D14</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a9ed51b980e2b1824af26a0b7873c80ea" prot="public">
+          <name>D15</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a8377f9d944ff9899a3fde307d977a7eb" prot="public">
+          <name>D16</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635ab661cfd80d61f15479a30545c391a4e0" prot="public">
+          <name>D17</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a842bbf59df663a098b1e24f2ef094da7" prot="public">
+          <name>D18</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a19bcedaa6922977dbf4b89bd634fea0f" prot="public">
+          <name>D19</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a5957a793b1bbd7bc442e76f09cf16fe8" prot="public">
+          <name>D20</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a9e707fda9c1a00945a62d54039b2600c" prot="public">
+          <name>D21</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635afaa0337cddede46a9c548f287303dee9" prot="public">
+          <name>D22</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a70b8f02cc5c0859f88fcdd09d86a7828" prot="public">
+          <name>D23</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a944abca84b67cf5cbea8872877813877" prot="public">
+          <name>D24</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a3ba4bae1d7561c69ead76af1bb13cc03" prot="public">
+          <name>D25</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a445c5240c6246e4ca3d5db218a00abf3" prot="public">
+          <name>D26</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a0b64009c85ebdcaf0d402cdcca68ccf3" prot="public">
+          <name>D27</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a600cb831409acf8aa35bd03fea415428" prot="public">
+          <name>D28</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a7dc2ff5b6c6c899b1ac46176239d166b" prot="public">
+          <name>D29</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a9a578f45e69e2d3c7f41e463b008a7b3" prot="public">
+          <name>D30</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a3a31094415e817bd202ca09835d06bf6" prot="public">
+          <name>D31</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a7fcab80995e92ee3d9b32d076fb5f6c2" prot="public">
+          <name>D32</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a0383778c2054a5c0daa0a27c811728af" prot="public">
+          <name>D33</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a6e271a2a0408f8c0fdebc682a3a83882" prot="public">
+          <name>D34</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a74c5878a6bd484a3797c1452577d7a37" prot="public">
+          <name>D35</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a75eee8d2f6bb36f7b158f59036fce323" prot="public">
+          <name>D36</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a0582c87e0f0be78e5bc8c0a7be480dc6" prot="public">
+          <name>D37</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a8a745b276eddf4303ff87fd9cbb493d7" prot="public">
+          <name>D38</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635ae5d06dc4dd53fc795816c79952e82bd7" prot="public">
+          <name>D39</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635aadd843a40095b8c0995a9eebc5a5c574" prot="public">
+          <name>D40</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635abcc00a27883b872e8d5b25e2686b5c1a" prot="public">
+          <name>D41</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a4ad2c96362065ef34d09d88957bfc676" prot="public">
+          <name>D42</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a9303cb0628858dd7ba743868f7d993c4" prot="public">
+          <name>D43</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635af12b8dd2b72b00de067d351261fd121c" prot="public">
+          <name>D44</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a9a631237a11eefda14340d9211b474cb" prot="public">
+          <name>D45</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635adbbfe1a43ca4c83e0970885e5aa5a3a0" prot="public">
+          <name>D46</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635ab978ae75c730abad01d5d1ccfd8f44a6" prot="public">
+          <name>D47</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a95832b8edf5d4426f090fdcc11cf9b0d" prot="public">
+          <name>D48</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a225c9991cc87993552e58644c77f0abe" prot="public">
+          <name>D49</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a629538a283f23af9979b7eaecc927843" prot="public">
+          <name>D50</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635ae0017aa0306aa8c35bf7185852756451" prot="public">
+          <name>D51</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a41e259bc1c9d98e817902e755805eff6" prot="public">
+          <name>D52</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635ab1cbf24d0ddac6c9f1d5e9505510fdd1" prot="public">
+          <name>D53</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635aa1e327c5a9183618d117e93b94b10b45" prot="public">
+          <name>D54</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635aaf581b8bd9ab3d2c1ba11c2b844283be" prot="public">
+          <name>D55</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a7234963f4b1886dca1ebf972e5642d6f" prot="public">
+          <name>D56</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a20d382d69bda376fde5f7761004fd4a6" prot="public">
+          <name>D57</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635af2a44fb96520e65c0e3d334e54fc9889" prot="public">
+          <name>D58</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635ae0ccfe9c70b07f9c98fa69f60868fc63" prot="public">
+          <name>D59</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a77525eca2673ffce20a09ee1d9e0ca13" prot="public">
+          <name>D60</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a0f6016042a25a6882bf65614aa541cfa" prot="public">
+          <name>D61</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a7cd4d942a3c2639d6ebb2656eb2a21b8" prot="public">
+          <name>D62</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a5b8b09b75bb7e5321f2c1b1ebe0769d3" prot="public">
+          <name>D63</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635adf35f32e76b69fc7f64e3b70aca48c1b" prot="public">
+          <name>D64</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a482fea03f2ba8d9376c4fdb5dae32a09" prot="public">
+          <name>D65</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a827d4777607cf92eaf235dd8544a07b7" prot="public">
+          <name>D66</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a3f95364ca2f2216a1bd82343e76886f6" prot="public">
+          <name>D67</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a0dfe0ddc223bf8320cbba852d18059a8" prot="public">
+          <name>D68</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a1f79104c348884e803e707e3ecd27f4b" prot="public">
+          <name>D69</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a75afc28727a60af88dfb18eb807c6c33" prot="public">
+          <name>D70</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635add80b56bafc5121e8045d874c8f7fb2b" prot="public">
+          <name>D71</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635af7730e9785b5a6e4e405ebbd1d6578eb" prot="public">
+          <name>D72</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635ad752c2aaf7767d652b3d6b08d221ede5" prot="public">
+          <name>D73</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a016c4cf4445be145855071536fef6926" prot="public">
+          <name>D74</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a04f18675d6181a211d01d71b077a2860" prot="public">
+          <name>D75</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635ac0ebbd84274c1db4e9ab4adc8c136d78" prot="public">
+          <name>D76</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a60971ebfa382d42ac96e1cdd46684340" prot="public">
+          <name>D77</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635aada1a270b14d42c83e301a25c8e86aae" prot="public">
+          <name>D78</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a8a88df25abd8e7949ffb9a32f5611285" prot="public">
+          <name>D79</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635af9b1bbfb5760f6eb62e0d848d1e7b975" prot="public">
+          <name>D80</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a201669524caab8ade29f0e9e67d86e3d" prot="public">
+          <name>D81</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635afe54766595f1ff207867007aee5f4561" prot="public">
+          <name>D82</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a1e9a014c296cc17281d9d28e1c7dfb6a" prot="public">
+          <name>D83</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a5b01d88cc1bac52659b2062f83d467a4" prot="public">
+          <name>D84</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635ad137cc9818d0ac1427dd8c0bb5996da2" prot="public">
+          <name>D85</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635ac4bd599124723e3f9f7973e826775221" prot="public">
+          <name>D86</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a9da1646527a7f168a4580f26c77043fb" prot="public">
+          <name>D87</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a979e3f40bedaa7f2f7d27e5d5bd47da6" prot="public">
+          <name>D88</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635ab24b9476c151c603537868f56f1de710" prot="public">
+          <name>D89</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a4d6a25861fb171b63c169e47cac44211" prot="public">
+          <name>D90</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a537f20e02c7747ce5f8c7b84d4331e4d" prot="public">
+          <name>D91</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a79cb459ac16f0a4ab73d14d84973d54b" prot="public">
+          <name>D92</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a929e6dc5ab1da44f5d8c8ae93dc0f69d" prot="public">
+          <name>D93</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a2dc4b5598b696922e13d7b428411b7b6" prot="public">
+          <name>D94</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a706355a225f776b96046b01ab00771c9" prot="public">
+          <name>D95</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a9145b19c04af339562639e21e5b5114d" prot="public">
+          <name>D96</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a25da5d7ee3922c1ecb84ad6222c99d0c" prot="public">
+          <name>D97</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635aa3d57428436c26ea3bb90f5c38a2d3e1" prot="public">
+          <name>D98</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a7e9e861e8a71f42623d6316f7ed154d0" prot="public">
+          <name>D99</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a4e4773131bac10253b5f17d0e73d7498" prot="public">
+          <name>D100</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635ac03b6c442f1952a7512062b01fb58001" prot="public">
+          <name>D101</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a06b9dd47ec14cb96048e987f6831ff40" prot="public">
+          <name>D102</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a0d21f34836cd035faffe88e77581b4e8" prot="public">
+          <name>D103</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635acc39bf02ac9172a31e013118559e07e1" prot="public">
+          <name>D104</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a8db0b64fa423c3345375617cbbf1840b" prot="public">
+          <name>D105</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a057853cf3edbb1fc03f1bdc3f50840c0" prot="public">
+          <name>D106</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a6feb6ac2933a585315df6790f57c3fa4" prot="public">
+          <name>D107</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a31c55a0632e0efcba283d63034485e7a" prot="public">
+          <name>D108</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635a80cb89f4c3669c5e80174dd9db4df06f" prot="public">
+          <name>D109</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635ae2ce67663126358c6117bda1d19a798f" prot="public">
+          <name>D110</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="boards_8h_1a726ca809ffd3d67ab4b8476646f26635ac493f8a721f92110faac21c4e9c0deb9" prot="public">
+          <name>D111</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards.h" line="52" bodyfile="/home/mbolivar/leaf/libmaple/wirish/boards.h" bodystart="52" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="boards_8h_1abe7c312b45813fd54f41209790693b98" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structstm32__pin__info" kindref="compound">stm32_pin_info</ref></type>
+        <definition>const stm32_pin_info PIN_MAP[]</definition>
+        <argsstring>[]</argsstring>
+        <name>PIN_MAP</name>
+        <briefdescription>
+<para>Maps each Maple pin to a corresponding <ref refid="structstm32__pin__info" kindref="compound">stm32_pin_info</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="structstm32__pin__info" kindref="compound">stm32_pin_info</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards.h" line="66"/>
+      </memberdef>
+      <memberdef kind="variable" id="boards_8h_1a8856488fced55f921894324fba1442ef" prot="public" static="no" mutable="no">
+        <type>const uint8</type>
+        <definition>const uint8 boardPWMPins[]</definition>
+        <argsstring>[]</argsstring>
+        <name>boardPWMPins</name>
+        <briefdescription>
+<para>Pins capable of PWM output. </para>        </briefdescription>
+        <detaileddescription>
+<para>Its length is BOARD_NR_PWM_PINS. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards.h" line="73"/>
+      </memberdef>
+      <memberdef kind="variable" id="boards_8h_1ad92e4c5161c2c8ff8c64f25496adb739" prot="public" static="no" mutable="no">
+        <type>const uint8</type>
+        <definition>const uint8 boardADCPins[]</definition>
+        <argsstring>[]</argsstring>
+        <name>boardADCPins</name>
+        <briefdescription>
+<para>Array of pins capable of analog input. </para>        </briefdescription>
+        <detaileddescription>
+<para>Its length is BOARD_NR_ADC_PINS. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards.h" line="80"/>
+      </memberdef>
+      <memberdef kind="variable" id="boards_8h_1af0d7b8b52cd3927acb0df88e4fdebcbd" prot="public" static="no" mutable="no">
+        <type>const uint8</type>
+        <definition>const uint8 boardUsedPins[]</definition>
+        <argsstring>[]</argsstring>
+        <name>boardUsedPins</name>
+        <briefdescription>
+<para>Pins which are connected to external hardware. </para>        </briefdescription>
+        <detaileddescription>
+<para>For example, on Maple boards, it always at least includes BOARD_LED_PIN. Its length is BOARD_NR_USED_PINS. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards.h" line="88"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="boards_8h_1a2858154e2009b0e6e616f313177762bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void init</definition>
+        <argsstring>(void)</argsstring>
+        <name>init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Generic board initialization function. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is called before main(). It ensures that the clocks and peripherals are configured properly for use with wirish, then calls <ref refid="boards_8h_1a48edc646a1de1ba488bbe7d786df9bae" kindref="member">boardInit()</ref>.</para><para><simplesect kind="see"><para><ref refid="boards_8h_1a48edc646a1de1ba488bbe7d786df9bae" kindref="member">boardInit()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards.h" line="99"/>
+      </memberdef>
+      <memberdef kind="function" id="boards_8h_1a48edc646a1de1ba488bbe7d786df9bae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void boardInit</definition>
+        <argsstring>(void)</argsstring>
+        <name>boardInit</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Board-specific initialization function. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is called from <ref refid="boards_8h_1a2858154e2009b0e6e616f313177762bc" kindref="member">init()</ref> after all generic board initialization has been performed. Each board is required to define its own.</para><para><simplesect kind="see"><para><ref refid="boards_8h_1a2858154e2009b0e6e616f313177762bc" kindref="member">init()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards.h" line="110"/>
+      </memberdef>
+      <memberdef kind="function" id="boards_8h_1a3018645f92742c6a931c59fba3dabece" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool boardUsesPin</definition>
+        <argsstring>(uint8 pin)</argsstring>
+        <name>boardUsesPin</name>
+        <param>
+          <type>uint8</type>
+          <declname>pin</declname>
+        </param>
+        <briefdescription>
+<para>Test if a pin is used for a special purpose on your board. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pin to test </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the given pin is in boardUsedPins, and false otherwise. </para></simplesect>
+<simplesect kind="see"><para><ref refid="boards_8h_1af0d7b8b52cd3927acb0df88e4fdebcbd" kindref="member">boardUsedPins</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/wirish/boards.h" line="118"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Board-specific pin information. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Bryan Newbold &lt;<ulink url="mailto:bnewbold@leaflabs.com">bnewbold@leaflabs.com</ulink>&gt;, Marti Bolivar &lt;<ulink url="mailto:mbolivar@leaflabs.com">mbolivar@leaflabs.com</ulink>&gt; To add a new board type, add a new pair of files to /wirish/boards/, update the section below with a new &quot;BOARD&quot; type, and update /wirish/rules.mk to include your boards/your_board.cpp file in the top-level Makefile build. </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Bryan<sp/>Newbold.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor">#ifndef<sp/>_BOARDS_H_</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_BOARDS_H_</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libmaple_8h" kindref="compound" tooltip="General include file for libmaple.">libmaple.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gpio_8h" kindref="compound" tooltip="General purpose I/O (GPIO) and Alternate Function I/O (AFIO) prototypes, defines, and inlined access ...">gpio.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="timer_8h" kindref="compound" tooltip="New-style timer interface.">timer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wirish__types_8h" kindref="compound" tooltip="Wirish library type definitions.">wirish_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Set<sp/>of<sp/>all<sp/>possible<sp/>pin<sp/>names;<sp/>not<sp/>all<sp/>boards<sp/>have<sp/>all<sp/>these<sp/>(note</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*<sp/>that<sp/>we<sp/>use<sp/>the<sp/>Dx<sp/>convention<sp/>since<sp/>all<sp/>of<sp/>the<sp/>Maple&apos;s<sp/>pins<sp/>are</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*<sp/>&quot;digital&quot;<sp/>pins<sp/>(e.g.<sp/>can<sp/>be<sp/>used<sp/>with<sp/>digitalRead()<sp/>and</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*<sp/>digitalWrite()),<sp/>but<sp/>not<sp/>all<sp/>of<sp/>them<sp/>are<sp/>connected<sp/>to<sp/>ADCs.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>D0,<sp/>D1,<sp/>D2,<sp/>D3,<sp/>D4,<sp/>D5,<sp/>D6,<sp/>D7,<sp/>D8,<sp/>D9,<sp/>D10,<sp/>D11,<sp/>D12,<sp/>D13,<sp/>D14,<sp/>D15,<sp/>D16,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>D17,<sp/>D18,<sp/>D19,<sp/>D20,<sp/>D21,<sp/>D22,<sp/>D23,<sp/>D24,<sp/>D25,<sp/>D26,<sp/>D27,<sp/>D28,<sp/>D29,<sp/>D30,<sp/>D31,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>D32,<sp/>D33,<sp/>D34,<sp/>D35,<sp/>D36,<sp/>D37,<sp/>D38,<sp/>D39,<sp/>D40,<sp/>D41,<sp/>D42,<sp/>D43,<sp/>D44,<sp/>D45,<sp/>D46,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>D47,<sp/>D48,<sp/>D49,<sp/>D50,<sp/>D51,<sp/>D52,<sp/>D53,<sp/>D54,<sp/>D55,<sp/>D56,<sp/>D57,<sp/>D58,<sp/>D59,<sp/>D60,<sp/>D61,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>D62,<sp/>D63,<sp/>D64,<sp/>D65,<sp/>D66,<sp/>D67,<sp/>D68,<sp/>D69,<sp/>D70,<sp/>D71,<sp/>D72,<sp/>D73,<sp/>D74,<sp/>D75,<sp/>D76,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>D77,<sp/>D78,<sp/>D79,<sp/>D80,<sp/>D81,<sp/>D82,<sp/>D83,<sp/>D84,<sp/>D85,<sp/>D86,<sp/>D87,<sp/>D88,<sp/>D89,<sp/>D90,<sp/>D91,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>D92,<sp/>D93,<sp/>D94,<sp/>D95,<sp/>D96,<sp/>D97,<sp/>D98,<sp/>D99,<sp/>D100,<sp/>D101,<sp/>D102,<sp/>D103,<sp/>D104,<sp/>D105,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>D106,<sp/>D107,<sp/>D108,<sp/>D109,<sp/>D110,<sp/>D111,<sp/>};</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structstm32__pin__info" kindref="compound" tooltip="Stores STM32-specific information related to a given Maple pin.">stm32_pin_info</ref><sp/><ref refid="boards_8h_1abe7c312b45813fd54f41209790693b98" kindref="member" tooltip="Maps each Maple pin to a corresponding stm32_pin_info.">PIN_MAP</ref>[];</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8<sp/><ref refid="boards_8h_1a8856488fced55f921894324fba1442ef" kindref="member" tooltip="Pins capable of PWM output.">boardPWMPins</ref>[];</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8<sp/><ref refid="boards_8h_1ad92e4c5161c2c8ff8c64f25496adb739" kindref="member" tooltip="Array of pins capable of analog input.">boardADCPins</ref>[];</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8<sp/><ref refid="boards_8h_1af0d7b8b52cd3927acb0df88e4fdebcbd" kindref="member" tooltip="Pins which are connected to external hardware.">boardUsedPins</ref>[];</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="boards_8h_1a2858154e2009b0e6e616f313177762bc" kindref="member" tooltip="Generic board initialization function.">init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="boards_8h_1a48edc646a1de1ba488bbe7d786df9bae" kindref="member" tooltip="Board-specific initialization function.">boardInit</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="boards_8h_1a3018645f92742c6a931c59fba3dabece" kindref="member" tooltip="Test if a pin is used for a special purpose on your board.">boardUsesPin</ref>(uint8<sp/>pin);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Include<sp/>the<sp/>appropriate<sp/>private<sp/>header<sp/>from<sp/>boards/:<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>FIXME<sp/>HACK<sp/>put<sp/>boards/<sp/>before<sp/>these<sp/>paths<sp/>once<sp/>IDE<sp/>uses<sp/>make.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>BOARD_maple</highlight></codeline>
+<codeline lineno="125"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="maple_8h" kindref="compound" tooltip="Private include file for Maple in boards.h.">maple.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(BOARD_maple_native)</highlight></codeline>
+<codeline lineno="127"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="maple__native_8h" kindref="compound" tooltip="Private include file for Maple Native in boards.h.">maple_native.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(BOARD_maple_mini)</highlight></codeline>
+<codeline lineno="129"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="maple__mini_8h" kindref="compound" tooltip="Private include file for Maple Mini in boards.h.">maple_mini.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(BOARD_maple_RET6)</highlight></codeline>
+<codeline lineno="131"><highlight class="preprocessor"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="132"><highlight class="comment"><sp/>*<sp/>**NOT**<sp/>MAPLE<sp/>REV6.<sp/><sp/>This<sp/>the<sp/>**Maple<sp/>RET6<sp/>EDITION**,<sp/>which<sp/>is<sp/>a</highlight></codeline>
+<codeline lineno="133"><highlight class="comment"><sp/>*<sp/>Maple<sp/>with<sp/>an<sp/>STM32F103RET6<sp/>(...RET6)<sp/>instead<sp/>of<sp/>an<sp/>STM32F103RBT6</highlight></codeline>
+<codeline lineno="134"><highlight class="comment"><sp/>*<sp/>(...RBT6)<sp/>on<sp/>it.<sp/><sp/>Maple<sp/>Rev6<sp/>(as<sp/>of<sp/>March<sp/>2011)<sp/>DOES<sp/>NOT<sp/>EXIST.</highlight></codeline>
+<codeline lineno="135"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="maple___r_e_t6_8h" kindref="compound" tooltip="Private include file for Maple RET6 Edition in boards.h.">maple_RET6.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="138"><highlight class="preprocessor"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="139"><highlight class="comment"><sp/>*<sp/>TODO<sp/>turn<sp/>this<sp/>into<sp/>a<sp/>warning<sp/>so<sp/>people<sp/>can:</highlight></codeline>
+<codeline lineno="140"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="141"><highlight class="comment"><sp/>*<sp/>#include<sp/>&quot;my_board_config.h&quot;</highlight></codeline>
+<codeline lineno="142"><highlight class="comment"><sp/>*<sp/>#include<sp/>&quot;wirish.h&quot;</highlight></codeline>
+<codeline lineno="143"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="144"><highlight class="comment"><sp/>*<sp/>This<sp/>will<sp/>enable<sp/>third-party<sp/>board<sp/>support<sp/>without<sp/>requiring<sp/>that</highlight></codeline>
+<codeline lineno="145"><highlight class="comment"><sp/>*<sp/>anybody<sp/>hack<sp/>around<sp/>in<sp/>libmaple<sp/>itself.</highlight></codeline>
+<codeline lineno="146"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>&quot;Board<sp/>type<sp/>has<sp/>not<sp/>been<sp/>selected<sp/>correctly.&quot;</highlight></codeline>
+<codeline lineno="148"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="149"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Set<sp/>derived<sp/>definitions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLOCK_SPEED_MHZ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CYCLES_PER_MICROSECOND</highlight></codeline>
+<codeline lineno="153"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CLOCK_SPEED_HZ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(CLOCK_SPEED_MHZ<sp/>*<sp/>1000000UL)</highlight></codeline>
+<codeline lineno="154"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/wirish/boards.h"/>
+  </compounddef>
+</doxygen>

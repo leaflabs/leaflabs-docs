@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="struct_u_s_b___descriptor___endpoint" kind="struct" prot="public">
+    <compoundname>USB_Descriptor_Endpoint</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_u_s_b___descriptor___endpoint_1a022bf62fd8fc1add6dfa6dcacac88940" prot="public" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 USB_Descriptor_Endpoint::bLength</definition>
+        <argsstring></argsstring>
+        <name>bLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="114" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_b___descriptor___endpoint_1ae6be6a361ade8338a91efe78923355aa" prot="public" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 USB_Descriptor_Endpoint::bDescriptorType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="115" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_b___descriptor___endpoint_1a613b4ca4377626b8dc303f24a445f953" prot="public" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 USB_Descriptor_Endpoint::bEndpointAddress</definition>
+        <argsstring></argsstring>
+        <name>bEndpointAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="116" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_b___descriptor___endpoint_1a9e7b20fe830001b7f1c8cf3b68c32151" prot="public" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 USB_Descriptor_Endpoint::bmAttributes</definition>
+        <argsstring></argsstring>
+        <name>bmAttributes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="117" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_b___descriptor___endpoint_1a5f3f1d3420447248ef72c8d4499f256d" prot="public" static="no" mutable="no">
+        <type>uint16</type>
+        <definition>uint16 USB_Descriptor_Endpoint::wMaxPacketSize</definition>
+        <argsstring></argsstring>
+        <name>wMaxPacketSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="118" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_b___descriptor___endpoint_1ae2a90c1fb8def96500fbc5b117f67bf7" prot="public" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 USB_Descriptor_Endpoint::bInterval</definition>
+        <argsstring></argsstring>
+        <name>bInterval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="119" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="113" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="113" bodyend="120"/>
+    <listofallmembers>
+      <member refid="struct_u_s_b___descriptor___endpoint_1ae6be6a361ade8338a91efe78923355aa" prot="public" virt="non-virtual"><scope>USB_Descriptor_Endpoint</scope><name>bDescriptorType</name></member>
+      <member refid="struct_u_s_b___descriptor___endpoint_1a613b4ca4377626b8dc303f24a445f953" prot="public" virt="non-virtual"><scope>USB_Descriptor_Endpoint</scope><name>bEndpointAddress</name></member>
+      <member refid="struct_u_s_b___descriptor___endpoint_1ae2a90c1fb8def96500fbc5b117f67bf7" prot="public" virt="non-virtual"><scope>USB_Descriptor_Endpoint</scope><name>bInterval</name></member>
+      <member refid="struct_u_s_b___descriptor___endpoint_1a022bf62fd8fc1add6dfa6dcacac88940" prot="public" virt="non-virtual"><scope>USB_Descriptor_Endpoint</scope><name>bLength</name></member>
+      <member refid="struct_u_s_b___descriptor___endpoint_1a9e7b20fe830001b7f1c8cf3b68c32151" prot="public" virt="non-virtual"><scope>USB_Descriptor_Endpoint</scope><name>bmAttributes</name></member>
+      <member refid="struct_u_s_b___descriptor___endpoint_1a5f3f1d3420447248ef72c8d4499f256d" prot="public" virt="non-virtual"><scope>USB_Descriptor_Endpoint</scope><name>wMaxPacketSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

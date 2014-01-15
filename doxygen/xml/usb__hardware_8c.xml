@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="usb__hardware_8c" kind="file">
+    <compoundname>usb_hardware.c</compoundname>
+    <includes refid="usb__hardware_8h" local="yes">usb_hardware.h</includes>
+    <incdepgraph>
+      <node id="823">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="824" relation="include">
+        </childnode>
+      </node>
+      <node id="821">
+        <label>libmaple/usb/usb_hardware.c</label>
+        <link refid="usb_hardware.c"/>
+        <childnode refid="822" relation="include">
+        </childnode>
+      </node>
+      <node id="822">
+        <label>usb_hardware.h</label>
+        <link refid="usb__hardware_8h_source"/>
+        <childnode refid="823" relation="include">
+        </childnode>
+        <childnode refid="825" relation="include">
+        </childnode>
+      </node>
+      <node id="824">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="825">
+        <label>usb_type.h</label>
+        <link refid="usb__type_8h_source"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="usb__hardware_8c_1a386049eca7cfa29e8e8052124a312a9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvicInit</definition>
+        <argsstring>(NVIC_InitTypeDef *NVIC_InitStruct)</argsstring>
+        <name>nvicInit</name>
+        <param>
+          <type><ref refid="struct_n_v_i_c___init_type_def" kindref="compound">NVIC_InitTypeDef</ref> *</type>
+          <declname>NVIC_InitStruct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.c" line="36" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.c" bodystart="36" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="usb__hardware_8c_1a0893c59a9c5fef18bd70f8f4184f033b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void nvicDisableInterrupts</definition>
+        <argsstring>()</argsstring>
+        <name>nvicDisableInterrupts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.c" line="74" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.c" bodystart="74" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="usb__hardware_8c_1a76855055e98c77cab30f0ceb1045de7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void systemHardReset</definition>
+        <argsstring>(void)</argsstring>
+        <name>systemHardReset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.c" line="85" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.c" bodystart="85" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>init routines to setup clocks and interrupts for usb. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>LeafLabs<sp/>LLC.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#include<sp/>&quot;usb_hardware.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>nvicInit(<ref refid="struct_n_v_i_c___init_type_def" kindref="compound">NVIC_InitTypeDef</ref>*<sp/>NVIC_InitStruct)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>tmppriority<sp/>=<sp/>0x00;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>tmpreg<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>tmpmask<sp/><sp/><sp/><sp/><sp/>=<sp/>0x00;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>tmppre<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>u32<sp/>tmpsub<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0F;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_s_c_b___type_def" kindref="compound">SCB_TypeDef</ref>*<sp/>rSCB<sp/>=<sp/>(<ref refid="struct_s_c_b___type_def" kindref="compound">SCB_TypeDef</ref><sp/>*)<sp/><ref refid="scb_8h_1ad55a7ddb8d4b2398b0c1cfec76c0d9fd" kindref="member" tooltip="System control block register map base pointer.">SCB_BASE</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_n_v_i_c___type_def" kindref="compound">NVIC_TypeDef</ref>*<sp/>rNVIC<sp/>=<sp/>(<ref refid="struct_n_v_i_c___type_def" kindref="compound">NVIC_TypeDef</ref><sp/>*)<sp/><ref refid="nvic_8h_1aa0288691785a5f868238e0468b39523d" kindref="member" tooltip="NVIC register map base pointer.">NVIC_BASE</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Compute<sp/>the<sp/>Corresponding<sp/>IRQ<sp/>Priority<sp/>-------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>tmppriority<sp/>=<sp/>(0x700<sp/>-<sp/>(rSCB-&gt;AIRCR<sp/>&amp;<sp/>(u32)0x700))&gt;&gt;<sp/>0x08;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>tmppre<sp/>=<sp/>(0x4<sp/>-<sp/>tmppriority);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>tmpsub<sp/>=<sp/>tmpsub<sp/>&gt;&gt;<sp/>tmppriority;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>tmppriority<sp/>=<sp/>(u32)NVIC_InitStruct-&gt;NVIC_IRQChannelPreemptionPriority<sp/>&lt;&lt;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmppre;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>tmppriority<sp/>|=<sp/><sp/>NVIC_InitStruct-&gt;NVIC_IRQChannelSubPriority<sp/>&amp;<sp/>tmpsub;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>tmppriority<sp/>=<sp/>tmppriority<sp/>&lt;&lt;<sp/>0x04;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>tmppriority<sp/>=<sp/>((u32)tmppriority)<sp/>&lt;&lt;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((NVIC_InitStruct-&gt;NVIC_IRQChannel<sp/>&amp;<sp/>(u8)0x03)<sp/>*<sp/>0x08);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>tmpreg<sp/>=<sp/>rNVIC-&gt;IPR[(NVIC_InitStruct-&gt;NVIC_IRQChannel<sp/>&gt;&gt;<sp/>0x02)];</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>tmpmask<sp/>=<sp/>(u32)0xFF<sp/>&lt;&lt;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((NVIC_InitStruct-&gt;NVIC_IRQChannel<sp/>&amp;<sp/>(u8)0x03)<sp/>*<sp/>0x08);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>tmpreg<sp/>&amp;=<sp/>~tmpmask;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>tmppriority<sp/>&amp;=<sp/>tmpmask;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>tmpreg<sp/>|=<sp/>tmppriority;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>rNVIC-&gt;IPR[(NVIC_InitStruct-&gt;NVIC_IRQChannel<sp/>&gt;&gt;<sp/>0x02)]<sp/>=<sp/>tmpreg;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Enable<sp/>the<sp/>Selected<sp/>IRQ<sp/>Channels<sp/>-------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>rNVIC-&gt;ISER[(NVIC_InitStruct-&gt;NVIC_IRQChannel<sp/>&gt;&gt;<sp/>0x05)]<sp/>=</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(u32)0x01<sp/>&lt;&lt;<sp/>(NVIC_InitStruct-&gt;NVIC_IRQChannel<sp/>&amp;<sp/>(u8)0x1F);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>nvicDisableInterrupts()<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_n_v_i_c___type_def" kindref="compound">NVIC_TypeDef</ref>*<sp/>rNVIC<sp/>=<sp/>(<ref refid="struct_n_v_i_c___type_def" kindref="compound">NVIC_TypeDef</ref><sp/>*)<sp/><ref refid="nvic_8h_1aa0288691785a5f868238e0468b39523d" kindref="member" tooltip="NVIC register map base pointer.">NVIC_BASE</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>rNVIC-&gt;ICER[0]<sp/>=<sp/>0xFFFFFFFF;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>rNVIC-&gt;ICER[1]<sp/>=<sp/>0xFFFFFFFF;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>rNVIC-&gt;ICPR[0]<sp/>=<sp/>0xFFFFFFFF;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>rNVIC-&gt;ICPR[1]<sp/>=<sp/>0xFFFFFFFF;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Disable<sp/>the<sp/>systick<sp/>timer,<sp/>which<sp/>operates<sp/>separately<sp/>from<sp/>NVIC<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>SET_REG(STK_CTRL,0x04);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>systemHardReset(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_s_c_b___type_def" kindref="compound">SCB_TypeDef</ref>*<sp/>rSCB<sp/>=<sp/>(<ref refid="struct_s_c_b___type_def" kindref="compound">SCB_TypeDef</ref><sp/>*)<sp/><ref refid="scb_8h_1ad55a7ddb8d4b2398b0c1cfec76c0d9fd" kindref="member" tooltip="System control block register map base pointer.">SCB_BASE</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*funcPtr)(void);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Reset<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>rSCB-&gt;AIRCR<sp/>=<sp/>(u32)AIRCR_RESET_REQ;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Should<sp/>never<sp/>get<sp/>here<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)<sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">asm</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal">(</highlight><highlight class="stringliteral">&quot;nop&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.c"/>
+  </compounddef>
+</doxygen>

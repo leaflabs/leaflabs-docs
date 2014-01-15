@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="uniontimer__reg__map" kind="union" prot="public">
+    <compoundname>timer_reg_map</compoundname>
+    <includes refid="timer_8h" local="no">timer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="uniontimer__reg__map_1ab7c3758fd5e57ae6dc22ec12984f82be" prot="public" static="no" mutable="no">
+        <type><ref refid="structtimer__adv__reg__map" kindref="compound">timer_adv_reg_map</ref> *</type>
+        <definition>timer_adv_reg_map* timer_reg_map::adv</definition>
+        <argsstring></argsstring>
+        <name>adv</name>
+        <briefdescription>
+<para>Advanced register map. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="145" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="uniontimer__reg__map_1ac89de7c84a0ed7d1fcfeadb1f4a3d925" prot="public" static="no" mutable="no">
+        <type><ref refid="structtimer__gen__reg__map" kindref="compound">timer_gen_reg_map</ref> *</type>
+        <definition>timer_gen_reg_map* timer_reg_map::gen</definition>
+        <argsstring></argsstring>
+        <name>gen</name>
+        <briefdescription>
+<para>General purpose register map. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="146" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="uniontimer__reg__map_1a8ab08c73b8d4bb82c6a422e88fbde9b9" prot="public" static="no" mutable="no">
+        <type><ref refid="structtimer__bas__reg__map" kindref="compound">timer_bas_reg_map</ref> *</type>
+        <definition>timer_bas_reg_map* timer_reg_map::bas</definition>
+        <argsstring></argsstring>
+        <name>bas</name>
+        <briefdescription>
+<para>Basic register map. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="147" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Timer register map type. </para>    </briefdescription>
+    <detaileddescription>
+<para>Just holds a pointer to the correct type of register map, based on the timer&apos;s type. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="146">
+        <label>timer_adv_reg_map</label>
+        <link refid="structtimer__adv__reg__map"/>
+      </node>
+      <node id="148">
+        <label>timer_gen_reg_map</label>
+        <link refid="structtimer__gen__reg__map"/>
+      </node>
+      <node id="147">
+        <label>timer_bas_reg_map</label>
+        <link refid="structtimer__bas__reg__map"/>
+      </node>
+      <node id="145">
+        <label>timer_reg_map</label>
+        <link refid="uniontimer__reg__map"/>
+        <childnode refid="146" relation="usage">
+          <edgelabel>adv</edgelabel>
+        </childnode>
+        <childnode refid="147" relation="usage">
+          <edgelabel>bas</edgelabel>
+        </childnode>
+        <childnode refid="148" relation="usage">
+          <edgelabel>gen</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/timer.h" line="144" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/timer.h" bodystart="144" bodyend="148"/>
+    <listofallmembers>
+      <member refid="uniontimer__reg__map_1ab7c3758fd5e57ae6dc22ec12984f82be" prot="public" virt="non-virtual"><scope>timer_reg_map</scope><name>adv</name></member>
+      <member refid="uniontimer__reg__map_1a8ab08c73b8d4bb82c6a422e88fbde9b9" prot="public" virt="non-virtual"><scope>timer_reg_map</scope><name>bas</name></member>
+      <member refid="uniontimer__reg__map_1ac89de7c84a0ed7d1fcfeadb1f4a3d925" prot="public" virt="non-virtual"><scope>timer_reg_map</scope><name>gen</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

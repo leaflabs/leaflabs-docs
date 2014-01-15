@@ -1,0 +1,2122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="usart_8h" kind="file">
+    <compoundname>usart.h</compoundname>
+    <includes refid="libmaple__types_8h" local="yes">libmaple_types.h</includes>
+    <includes refid="util_8h" local="yes">util.h</includes>
+    <includes refid="rcc_8h" local="yes">rcc.h</includes>
+    <includes refid="nvic_8h" local="yes">nvic.h</includes>
+    <includes refid="ring__buffer_8h" local="yes">ring_buffer.h</includes>
+    <includedby refid="usart_8c" local="yes">libmaple/usart.c</includedby>
+    <includedby refid="util_8c" local="yes">libmaple/util.c</includedby>
+    <includedby refid="_hardware_serial_8h" local="yes">wirish/comm/HardwareSerial.h</includedby>
+    <incdepgraph>
+      <node id="673">
+        <label>nvic.h</label>
+        <link refid="nvic_8h"/>
+        <childnode refid="670" relation="include">
+        </childnode>
+        <childnode refid="671" relation="include">
+        </childnode>
+      </node>
+      <node id="669">
+        <label>libmaple/usart.h</label>
+        <link refid="usart.h"/>
+        <childnode refid="670" relation="include">
+        </childnode>
+        <childnode refid="671" relation="include">
+        </childnode>
+        <childnode refid="672" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="674" relation="include">
+        </childnode>
+      </node>
+      <node id="672">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="670" relation="include">
+        </childnode>
+      </node>
+      <node id="670">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="674">
+        <label>ring_buffer.h</label>
+        <link refid="ring__buffer_8h"/>
+        <childnode refid="670" relation="include">
+        </childnode>
+      </node>
+      <node id="671">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="670" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="679">
+        <label>wirish/wirish.h</label>
+        <link refid="wirish_8h_source"/>
+        <childnode refid="680" relation="include">
+        </childnode>
+        <childnode refid="681" relation="include">
+        </childnode>
+        <childnode refid="682" relation="include">
+        </childnode>
+        <childnode refid="683" relation="include">
+        </childnode>
+      </node>
+      <node id="678">
+        <label>wirish/comm/HardwareSerial.h</label>
+        <link refid="_hardware_serial_8h"/>
+        <childnode refid="679" relation="include">
+        </childnode>
+      </node>
+      <node id="676">
+        <label>libmaple/usart.c</label>
+        <link refid="usart_8c"/>
+      </node>
+      <node id="675">
+        <label>libmaple/usart.h</label>
+        <link refid="usart.h"/>
+        <childnode refid="676" relation="include">
+        </childnode>
+        <childnode refid="677" relation="include">
+        </childnode>
+        <childnode refid="678" relation="include">
+        </childnode>
+      </node>
+      <node id="682">
+        <label>libraries/LiquidCrystal/LiquidCrystal.h</label>
+        <link refid="_liquid_crystal_8h_source"/>
+      </node>
+      <node id="683">
+        <label>libraries/Wire/Wire.h</label>
+        <link refid="_wire_8h_source"/>
+      </node>
+      <node id="680">
+        <label>wirish/WProgram.h</label>
+        <link refid="_w_program_8h_source"/>
+      </node>
+      <node id="681">
+        <label>libraries/FreeRTOS/MapleFreeRTOS.h</label>
+        <link refid="_maple_free_r_t_o_s_8h_source"/>
+      </node>
+      <node id="677">
+        <label>libmaple/util.c</label>
+        <link refid="util_8c_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structusart__reg__map" prot="public">usart_reg_map</innerclass>
+    <innerclass refid="structusart__dev" prot="public">usart_dev</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="usart_8h_1a86162ab3f740db9026c1320d46938b4d" prot="public" static="no">
+        <name>USART1_BASE</name>
+        <initializer>((struct <ref refid="structusart__reg__map" kindref="compound">usart_reg_map</ref>*)0x40013800)</initializer>
+        <briefdescription>
+<para>USART1 register map base pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="63" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1ade83162a04bca0b15b39018a8e8ec090" prot="public" static="no">
+        <name>USART2_BASE</name>
+        <initializer>((struct <ref refid="structusart__reg__map" kindref="compound">usart_reg_map</ref>*)0x40004400)</initializer>
+        <briefdescription>
+<para>USART2 register map base pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="65" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1abe0d6539ac0026d598274ee7f45b0251" prot="public" static="no">
+        <name>USART3_BASE</name>
+        <initializer>((struct <ref refid="structusart__reg__map" kindref="compound">usart_reg_map</ref>*)0x40004800)</initializer>
+        <briefdescription>
+<para>USART3 register map base pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="67" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a94d92270bf587ccdc3a37a5bb5d20467" prot="public" static="no">
+        <name>UART4_BASE</name>
+        <initializer>((struct <ref refid="structusart__reg__map" kindref="compound">usart_reg_map</ref>*)0x40004C00)</initializer>
+        <briefdescription>
+<para>UART4 register map base pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="70" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1aa155689c0e206e6994951dc3cf31052a" prot="public" static="no">
+        <name>UART5_BASE</name>
+        <initializer>((struct <ref refid="structusart__reg__map" kindref="compound">usart_reg_map</ref>*)0x40005000)</initializer>
+        <briefdescription>
+<para>UART5 register map base pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="72" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a3508b43d36ea3f485106f2db8a51aecb" prot="public" static="no">
+        <name>USART_SR_CTS_BIT</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="81" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a33d4aaee9cb0f118b489af514337123f" prot="public" static="no">
+        <name>USART_SR_LBD_BIT</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="82" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a3145bbd810288d4fb3c6daa51ded0c7c" prot="public" static="no">
+        <name>USART_SR_TXE_BIT</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="83" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a17e87ef96961c57bf73e2773ee3cd978" prot="public" static="no">
+        <name>USART_SR_TC_BIT</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="84" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a81e342ffb6c5c54045d6bf5ea99f9e83" prot="public" static="no">
+        <name>USART_SR_RXNE_BIT</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="85" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a73b5ea3121327a0d7af98a6f2acfdf79" prot="public" static="no">
+        <name>USART_SR_IDLE_BIT</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="86" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1aa4e242ac679c1dab792767e1898d8b7e" prot="public" static="no">
+        <name>USART_SR_ORE_BIT</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="87" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a498ba5eb3b999d0956f2514cf7adb114" prot="public" static="no">
+        <name>USART_SR_NE_BIT</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="88" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a6a7d2d9e76ea98338729901b684a1132" prot="public" static="no">
+        <name>USART_SR_FE_BIT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="89" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1adf41ed73b6c19387738d3ee0f7e987ce" prot="public" static="no">
+        <name>USART_SR_PE_BIT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="90" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a9250ae2793db0541e6c4bb8837424541" prot="public" static="no">
+        <name>USART_SR_CTS</name>
+        <initializer>BIT(USART_SR_CTS_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="92" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a5b868b59576f42421226d35628c6b628" prot="public" static="no">
+        <name>USART_SR_LBD</name>
+        <initializer>BIT(USART_SR_LBD_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="93" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a65e9cddf0890113d405342f1d8b5b980" prot="public" static="no">
+        <name>USART_SR_TXE</name>
+        <initializer>BIT(USART_SR_TXE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="94" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a76229b05ac37a5a688e6ba45851a29f1" prot="public" static="no">
+        <name>USART_SR_TC</name>
+        <initializer>BIT(USART_SR_TC_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="95" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1aa0c99e2bb265b3d58a91aca7a93f7836" prot="public" static="no">
+        <name>USART_SR_RXNE</name>
+        <initializer>BIT(USART_SR_RXNE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="96" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a336fa8c9965ce18c10972ac80ded611f" prot="public" static="no">
+        <name>USART_SR_IDLE</name>
+        <initializer>BIT(USART_SR_IDLE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="97" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a4560fc7a60df4bdf402fc7219ae7b558" prot="public" static="no">
+        <name>USART_SR_ORE</name>
+        <initializer>BIT(USART_SR_ORE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="98" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a8938468c5666a8305ade6d80d467c572" prot="public" static="no">
+        <name>USART_SR_NE</name>
+        <initializer>BIT(USART_SR_NE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="99" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a9eb6fd3f820bd12e0b5a981de1894804" prot="public" static="no">
+        <name>USART_SR_FE</name>
+        <initializer>BIT(USART_SR_FE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="100" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1ac88be3484245af8c1b271ae5c1b97a14" prot="public" static="no">
+        <name>USART_SR_PE</name>
+        <initializer>BIT(USART_SR_PE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="101" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1ad84ad1e1d0202b41021e2d6e40486bff" prot="public" static="no">
+        <name>USART_DR_DR</name>
+        <initializer>0xFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="105" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1aac5ff609d9d5f5cb4bdbd3a5c0c9a8c2" prot="public" static="no">
+        <name>USART_BRR_DIV_MANTISSA</name>
+        <initializer>(0xFFF &lt;&lt; 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="109" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a2d7dd57632bcc0f7f3b635da39b4be3e" prot="public" static="no">
+        <name>USART_BRR_DIV_FRACTION</name>
+        <initializer>0xF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="110" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a70884d5f967dd50d8bb82fb649febb93" prot="public" static="no">
+        <name>USART_CR1_UE_BIT</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="114" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1ad329a94f312297f1688f390817d5f87a" prot="public" static="no">
+        <name>USART_CR1_M_BIT</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="115" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1af3e93c9619b1bfaea53c5c576fb3435c" prot="public" static="no">
+        <name>USART_CR1_WAKE_BIT</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="116" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a2e9cce6af385ab0b2b118a741b54cb11" prot="public" static="no">
+        <name>USART_CR1_PCE_BIT</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="117" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a7b7f208c0a396bb350484375d0d1341c" prot="public" static="no">
+        <name>USART_CR1_PS_BIT</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="118" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a2cd4fd71bd7b817cd351e78e48155d53" prot="public" static="no">
+        <name>USART_CR1_PEIE_BIT</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="119" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1ae9e470c504704c11b04c054de851c9d7" prot="public" static="no">
+        <name>USART_CR1_TXEIE_BIT</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="120" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1af5eb931d5466f99cad30987d36439670" prot="public" static="no">
+        <name>USART_CR1_TCIE_BIT</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="121" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1ac64f355d68892834e6022416644ed072" prot="public" static="no">
+        <name>USART_CR1_RXNEIE_BIT</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="122" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a23b85165709243082ec0b33f264c84f5" prot="public" static="no">
+        <name>USART_CR1_IDLEIE_BIT</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="123" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a762a9979577b9f04b294e10ba5a83fd7" prot="public" static="no">
+        <name>USART_CR1_TE_BIT</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="124" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a9c869b0565dde8daf53cd272d56317dd" prot="public" static="no">
+        <name>USART_CR1_RE_BIT</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="125" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1affbab7822f981b9ca2d084b72f941b5e" prot="public" static="no">
+        <name>USART_CR1_RWU_BIT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="126" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a443854ac0ba2b07d3bf641e5703413ed" prot="public" static="no">
+        <name>USART_CR1_SBK_BIT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="127" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a2bb650676aaae4a5203f372d497d5947" prot="public" static="no">
+        <name>USART_CR1_UE</name>
+        <initializer>BIT(USART_CR1_UE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="129" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a95f0288b9c6aaeca7cb6550a2e6833e2" prot="public" static="no">
+        <name>USART_CR1_M</name>
+        <initializer>BIT(USART_CR1_M_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="130" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1ad831dfc169fcf14b7284984dbecf322d" prot="public" static="no">
+        <name>USART_CR1_WAKE</name>
+        <initializer>BIT(USART_CR1_WAKE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="131" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a604170385f3f68719d9dd764bca87229" prot="public" static="no">
+        <name>USART_CR1_WAKE_IDLE</name>
+        <initializer>(0 &lt;&lt; USART_CR1_WAKE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="132" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a14ba33a91579b61060a070d300e882e4" prot="public" static="no">
+        <name>USART_CR1_WAKE_ADDR</name>
+        <initializer>(1 &lt;&lt; USART_CR1_WAKE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="133" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a60f8fcf084f9a8514efafb617c70b074" prot="public" static="no">
+        <name>USART_CR1_PCE</name>
+        <initializer>BIT(USART_CR1_PCE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="134" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a2e159d36ab2c93a2c1942df60e9eebbe" prot="public" static="no">
+        <name>USART_CR1_PS</name>
+        <initializer>BIT(USART_CR1_PS_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="135" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a06dd8046f0be5bf34ee6af36a1811785" prot="public" static="no">
+        <name>USART_CR1_PS_EVEN</name>
+        <initializer>(0 &lt;&lt; USART_CR1_PS_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="136" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1ad5e07c22b70d6370d4af989104f5ba7e" prot="public" static="no">
+        <name>USART_CR1_PS_ODD</name>
+        <initializer>(1 &lt;&lt; USART_CR1_PS_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="137" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a27405d413b6d355ccdb076d52fef6875" prot="public" static="no">
+        <name>USART_CR1_PEIE</name>
+        <initializer>BIT(USART_CR1_PEIE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="138" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a70422871d15f974b464365e7fe1877e9" prot="public" static="no">
+        <name>USART_CR1_TXEIE</name>
+        <initializer>BIT(USART_CR1_TXEIE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="139" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1aa17130690a1ca95b972429eb64d4254e" prot="public" static="no">
+        <name>USART_CR1_TCIE</name>
+        <initializer>BIT(USART_CR1_TCIE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="140" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a91118f867adfdb2e805beea86666de04" prot="public" static="no">
+        <name>USART_CR1_RXNEIE</name>
+        <initializer>BIT(USART_CR1_RXNEIE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="141" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a5221d09eebd12445a20f221bf98066f8" prot="public" static="no">
+        <name>USART_CR1_IDLEIE</name>
+        <initializer>BIT(USART_CR1_IDLEIE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="142" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1ade7f090b04fd78b755b43357ecaa9622" prot="public" static="no">
+        <name>USART_CR1_TE</name>
+        <initializer>BIT(USART_CR1_TE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="143" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1ada0d5d407a22264de847bc1b40a17aeb" prot="public" static="no">
+        <name>USART_CR1_RE</name>
+        <initializer>BIT(USART_CR1_RE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="144" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1aa7d61ab5a4e2beaa3f591c56bd15a27b" prot="public" static="no">
+        <name>USART_CR1_RWU</name>
+        <initializer>BIT(USART_CR1_RWU_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="145" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a493bdabe0c6dfce23994fe26d80391c4" prot="public" static="no">
+        <name>USART_CR1_RWU_ACTIVE</name>
+        <initializer>(0 &lt;&lt; USART_CR1_RWU_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="146" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a330f226711df15acea3f4ab1ab066f4b" prot="public" static="no">
+        <name>USART_CR1_RWU_MUTE</name>
+        <initializer>(1 &lt;&lt; USART_CR1_RWU_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="147" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1ac457c519baa28359ab7959fbe0c5cda1" prot="public" static="no">
+        <name>USART_CR1_SBK</name>
+        <initializer>BIT(USART_CR1_SBK_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="148" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a40b339fb007c47567ddc55bf2ccca75b" prot="public" static="no">
+        <name>USART_CR2_LINEN_BIT</name>
+        <initializer>14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="152" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1ab5a323c9c7da85b437bdf3f7bdfd127e" prot="public" static="no">
+        <name>USART_CR2_CLKEN_BIT</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="153" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a3544da106b4e20863c7d4aef67cf6fde" prot="public" static="no">
+        <name>USART_CR2_CPOL_BIT</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="154" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1ad01df5c7d1693b65f7cf050cc3b8d60a" prot="public" static="no">
+        <name>USART_CR2_CPHA_BIT</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="155" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1ac2ad226d41d164760f70d002e68ed208" prot="public" static="no">
+        <name>USART_CR2_LBCL_BIT</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="156" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1aabbe97edd1b172440cbee6202f7dc75e" prot="public" static="no">
+        <name>USART_CR2_LBDIE_BIT</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="157" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a0adb3fe851f575f395cde7dce6bcb43b" prot="public" static="no">
+        <name>USART_CR2_LBDL_BIT</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="158" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1ac8931efa62c29d92f5c0ec5a05f907ef" prot="public" static="no">
+        <name>USART_CR2_LINEN</name>
+        <initializer>BIT(USART_CR2_LINEN_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="160" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1af993e483318ebcecffd18649de766dc6" prot="public" static="no">
+        <name>USART_CR2_STOP</name>
+        <initializer>(0x3 &lt;&lt; 12)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="161" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1af63d9cb47a328204529f6cd3a02dfc1d" prot="public" static="no">
+        <name>USART_CR2_STOP_BITS_1</name>
+        <initializer>(0x0 &lt;&lt; 12)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="162" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1adde2464871c7a707a1b2329db45e3cf1" prot="public" static="no">
+        <name>USART_CR2_STOP_BITS_POINT_5</name>
+        <initializer>(0x1 &lt;&lt; 12)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="164" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a451ef86b366d4c96282b34c761924ad9" prot="public" static="no">
+        <name>USART_CR2_STOP_BITS_1_POINT_5</name>
+        <initializer>(0x3 &lt;&lt; 12)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="166" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a9664240981ee04aa80f842f1afdc9ff1" prot="public" static="no">
+        <name>USART_CR2_STOP_BITS_2</name>
+        <initializer>(0x2 &lt;&lt; 12)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="167" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a42a396cde02ffa0c4d3fd9817b6af853" prot="public" static="no">
+        <name>USART_CR2_CLKEN</name>
+        <initializer>BIT(USART_CR2_CLKEN_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="168" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1afbb4336ac93d94d4e78f9fb7b3a0dc68" prot="public" static="no">
+        <name>USART_CR2_CPOL</name>
+        <initializer>BIT(USART_CR2_CPOL_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="170" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a6010560f872aa1687fb5f12b8d124842" prot="public" static="no">
+        <name>USART_CR2_CPOL_LOW</name>
+        <initializer>(0x0 &lt;&lt; USART_CR2_CLKEN_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="171" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a917197e4ebfd2d48b4fa622c4a9cd3eb" prot="public" static="no">
+        <name>USART_CR2_CPOL_HIGH</name>
+        <initializer>(0x1 &lt;&lt; USART_CR2_CLKEN_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="172" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a362976ce813e58310399d113d2cf09cb" prot="public" static="no">
+        <name>USART_CR2_CPHA</name>
+        <initializer>BIT(USART_CR2_CPHA_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="174" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a6c4b9baf9b7ad5a04c1ca9e5399f8fe2" prot="public" static="no">
+        <name>USART_CR2_CPHA_FIRST</name>
+        <initializer>(0x0 &lt;&lt; USART_CR2_CPHA_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="175" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a4d0e767ecc9242a7560b354909208917" prot="public" static="no">
+        <name>USART_CR2_CPHA_SECOND</name>
+        <initializer>(0x1 &lt;&lt; USART_CR2_CPHA_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="176" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a4a62e93ae7864e89622bdd92508b615e" prot="public" static="no">
+        <name>USART_CR2_LBCL</name>
+        <initializer>BIT(USART_CR2_LBCL_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="178" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1aa02ef5d22553f028ea48e5d9f08192b4" prot="public" static="no">
+        <name>USART_CR2_LBDIE</name>
+        <initializer>BIT(USART_CR2_LBDIE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="179" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a7f9bc41700717fd93548e0e95b6072ed" prot="public" static="no">
+        <name>USART_CR2_LBDL</name>
+        <initializer>BIT(USART_CR2_LBDL_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="180" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a3d273ceb8390618baba19cf0551bb310" prot="public" static="no">
+        <name>USART_CR2_LBDL_10_BIT</name>
+        <initializer>(0 &lt;&lt; USART_CR2_LBDL_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="181" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a59518e9184fd7631c237acbae75faa1d" prot="public" static="no">
+        <name>USART_CR2_LBDL_11_BIT</name>
+        <initializer>(1 &lt;&lt; USART_CR2_LBDL_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="182" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a3ee77fac25142271ad56d49685e518b3" prot="public" static="no">
+        <name>USART_CR2_ADD</name>
+        <initializer>0xF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="183" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a40b0dc8c0981812c249d2d285c634bfe" prot="public" static="no">
+        <name>USART_CR3_CTSIE_BIT</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="187" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1acd0b7d90fefc2d91c5cb59193bfb0b61" prot="public" static="no">
+        <name>USART_CR3_CTSE_BIT</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="188" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a4d674bd658accbcdd58a6fa4b931cb01" prot="public" static="no">
+        <name>USART_CR3_RTSE_BIT</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="189" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1ad2c19b7f2815c6da2b7f950337e8a623" prot="public" static="no">
+        <name>USART_CR3_DMAT_BIT</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="190" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a8ce5dbd3037ef22f4ed35e296aa60a52" prot="public" static="no">
+        <name>USART_CR3_DMAR_BIT</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="191" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a8c3b8d9b15b23312e7e7a35cdb0c1631" prot="public" static="no">
+        <name>USART_CR3_SCEN_BIT</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="192" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a819ff9b2fed8d4969c4e104f89eabcfe" prot="public" static="no">
+        <name>USART_CR3_NACK_BIT</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="193" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a488db2978f3c39589c431093a4b8bce5" prot="public" static="no">
+        <name>USART_CR3_HDSEL_BIT</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="194" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1ac660a8ea5172882005d1588bdbd5b1f0" prot="public" static="no">
+        <name>USART_CR3_IRLP_BIT</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="195" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1ac285eb55103cc0f512eb3f0f1bb27281" prot="public" static="no">
+        <name>USART_CR3_IREN_BIT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="196" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a0e828e7e1413c03bc412f4621a844ac6" prot="public" static="no">
+        <name>USART_CR3_EIE_BIT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="197" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a636d5ec2e9556949fc68d13ad45a1e90" prot="public" static="no">
+        <name>USART_CR3_CTSIE</name>
+        <initializer>BIT(USART_CR3_CTSIE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="200" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1aa125f026b1ca2d76eab48b191baed265" prot="public" static="no">
+        <name>USART_CR3_CTSE</name>
+        <initializer>BIT(USART_CR3_CTSE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="202" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a7c5d6fcd84a4728cda578a0339b4cac2" prot="public" static="no">
+        <name>USART_CR3_RTSE</name>
+        <initializer>BIT(USART_CR3_RTSE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="204" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a5bb515d3814d448f84e2c98bf44f3993" prot="public" static="no">
+        <name>USART_CR3_DMAT</name>
+        <initializer>BIT(USART_CR3_DMAT_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="206" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1aff130f15493c765353ec2fd605667c5a" prot="public" static="no">
+        <name>USART_CR3_DMAR</name>
+        <initializer>BIT(USART_CR3_DMAR_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="208" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a9180b9249a26988f71d4bb2b0c3eec27" prot="public" static="no">
+        <name>USART_CR3_SCEN</name>
+        <initializer>BIT(USART_CR3_SCEN_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="210" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a3f3b70b2ee9ff0b59e952fd7ab04373c" prot="public" static="no">
+        <name>USART_CR3_NACK</name>
+        <initializer>BIT(USART_CR3_NACK_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="212" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1ac71129810fab0b46d91161a39e3f8d01" prot="public" static="no">
+        <name>USART_CR3_HDSEL</name>
+        <initializer>BIT(USART_CR3_HDSEL_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="213" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a22af8d399f1adda62e31186f0309af80" prot="public" static="no">
+        <name>USART_CR3_IRLP</name>
+        <initializer>BIT(USART_CR3_IRLP_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="214" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a3811fd90ae3cd7918fb0c8f5e8c06ee1" prot="public" static="no">
+        <name>USART_CR3_IRLP_NORMAL</name>
+        <initializer>(0 &lt;&lt; USART_CR3_IRLP_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="215" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a8d9a0b693fcb41746992ae2d6880979e" prot="public" static="no">
+        <name>USART_CR3_IRLP_LOW_POWER</name>
+        <initializer>(1 &lt;&lt; USART_CR3_IRLP_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="216" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a31c66373bfbae7724c836ac63b8411dd" prot="public" static="no">
+        <name>USART_CR3_IREN</name>
+        <initializer>BIT(USART_CR3_IREN_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="217" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1aaed1a39c551b1641128f81893ff558d0" prot="public" static="no">
+        <name>USART_CR3_EIE</name>
+        <initializer>BIT(USART_CR3_EIE_BIT)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="218" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1a8e927fad0bfa430f54007e158e01f43b" prot="public" static="no">
+        <name>USART_GTPR_GT</name>
+        <initializer>(0xFF &lt;&lt; 8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="223" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usart_8h_1aa0b423f0f4baf7d510ea70477e5c9203" prot="public" static="no">
+        <name>USART_GTPR_PSC</name>
+        <initializer>0xFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="225" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="usart_8h_1a4d115720656155ba3fcffac95ea18d33" prot="public" static="no" mutable="no">
+        <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+        <definition>usart_dev* USART1</definition>
+        <argsstring></argsstring>
+        <name>USART1</name>
+        <briefdescription>
+<para>USART1 device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="248" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usart_8h_1ae413e6bb2ff2c87336aefd387294169b" prot="public" static="no" mutable="no">
+        <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+        <definition>usart_dev* USART2</definition>
+        <argsstring></argsstring>
+        <name>USART2</name>
+        <briefdescription>
+<para>USART2 device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="249" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usart_8h_1a6b4d25bc4b89f06c8f7436454b79a4c1" prot="public" static="no" mutable="no">
+        <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+        <definition>usart_dev* USART3</definition>
+        <argsstring></argsstring>
+        <name>USART3</name>
+        <briefdescription>
+<para>USART3 device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="250" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usart_8h_1ae038774150fdba32590403d652567640" prot="public" static="no" mutable="no">
+        <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+        <definition>usart_dev* UART4</definition>
+        <argsstring></argsstring>
+        <name>UART4</name>
+        <briefdescription>
+<para>UART4 device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="252" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usart_8h_1a80daf75a0d0cb1f4e6278d7b9c344009" prot="public" static="no" mutable="no">
+        <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+        <definition>usart_dev* UART5</definition>
+        <argsstring></argsstring>
+        <name>UART5</name>
+        <briefdescription>
+<para>UART5 device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="253" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="usart_8h_1a4e681821539d76f652db1f96e1cab966" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usart_init</definition>
+        <argsstring>(usart_dev *dev)</argsstring>
+        <name>usart_init</name>
+        <param>
+          <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Initialize a serial port. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Serial port to be initialized </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="256" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="101" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="usart_8h_1acb3dad2577b5add75dc061c12cddf3fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usart_set_baud_rate</definition>
+        <argsstring>(usart_dev *dev, uint32 clock_speed, uint32 baud)</argsstring>
+        <name>usart_set_baud_rate</name>
+        <param>
+          <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>clock_speed</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>baud</declname>
+        </param>
+        <briefdescription>
+<para>Configure a serial port&apos;s baud rate. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Serial port to be configured </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clock_speed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Clock speed, in megahertz. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>baud</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Baud rate for transmit/receive. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="257" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="114" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="usart_8h_1a2707484d73b19ccb708facc0a413d56a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usart_enable</definition>
+        <argsstring>(usart_dev *dev)</argsstring>
+        <name>usart_enable</name>
+        <param>
+          <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Enable a serial port. </para>        </briefdescription>
+        <detaileddescription>
+<para>USART is enabled in single buffer transmission mode, multibuffer receiver mode, 8n1.</para><para>Serial port must have a baud rate configured to work properly.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Serial port to enable. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="usart_8c_1acb3dad2577b5add75dc061c12cddf3fe" kindref="member">usart_set_baud_rate()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="258" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="139" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="usart_8h_1aacc27700ee5d75bbf5a84587631917a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usart_disable</definition>
+        <argsstring>(usart_dev *dev)</argsstring>
+        <name>usart_disable</name>
+        <param>
+          <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Turn off a serial port. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Serial port to be disabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="259" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="149" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="usart_8h_1a2ef984778d839552d23fa80bb240f891" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usart_foreach</definition>
+        <argsstring>(void(*fn)(usart_dev *dev))</argsstring>
+        <name>usart_foreach</name>
+        <param>
+          <type>void(*)(<ref refid="structusart__dev" kindref="compound">usart_dev</ref> *dev)</type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="260"/>
+      </memberdef>
+      <memberdef kind="function" id="usart_8h_1a8a77e40c330e1393f2b2e5c8a880f561" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32</type>
+        <definition>uint32 usart_tx</definition>
+        <argsstring>(usart_dev *dev, const uint8 *buf, uint32 len)</argsstring>
+        <name>usart_tx</name>
+        <param>
+          <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>const uint8 *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Nonblocking USART transmit. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Serial port to transmit over </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer to transmit </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum number of bytes to transmit </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of bytes transmitted </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="261" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="185" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="usart_8h_1adc07cc9819ac5baa43e4639d88a296a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usart_putudec</definition>
+        <argsstring>(usart_dev *dev, uint32 val)</argsstring>
+        <name>usart_putudec</name>
+        <param>
+          <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Transmit an unsigned integer to the specified serial port in decimal format. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function blocks until the integer&apos;s digits have been completely transmitted.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Serial port to send on </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number to print </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="262" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="204" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="usart_8h_1a978fd153d351e4d05e42d5da8356e297" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void usart_disable_all</definition>
+        <argsstring>(void)</argsstring>
+        <name>usart_disable_all</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Disable all serial ports. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="267" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="267" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="usart_8h_1a76f511d4799bfc2ad702eb5b03b72f8b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void usart_putc</definition>
+        <argsstring>(usart_dev *dev, uint8 byte)</argsstring>
+        <name>usart_putc</name>
+        <param>
+          <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>byte</declname>
+        </param>
+        <briefdescription>
+<para>Transmit one character on a serial port. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function blocks until the character has been successfully transmitted.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Serial port to send on. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>byte</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Byte to transmit. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="280" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="280" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="usart_8h_1adfd73cdc84463809e6938b0328532fbe" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void usart_putstr</definition>
+        <argsstring>(usart_dev *dev, const char *str)</argsstring>
+        <name>usart_putstr</name>
+        <param>
+          <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Transmit a character string on a serial port. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function blocks until str is completely transmitted.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Serial port to send on </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String to send </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="293" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="293" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="usart_8h_1afaad8cb780b4dfe75651dc4cd5483390" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8</type>
+        <definition>static uint8 usart_getc</definition>
+        <argsstring>(usart_dev *dev)</argsstring>
+        <name>usart_getc</name>
+        <param>
+          <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Read one character from a serial port. </para>        </briefdescription>
+        <detaileddescription>
+<para>It&apos;s not safe to call this function if the serial port has no data available.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Serial port to read from </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>byte read </para></simplesect>
+<simplesect kind="see"><para><ref refid="usart_8h_1acc07fab64a315ca7f70f404d4c29ccef" kindref="member">usart_data_available()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="310" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="310" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="usart_8h_1acc07fab64a315ca7f70f404d4c29ccef" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32</type>
+        <definition>static uint32 usart_data_available</definition>
+        <argsstring>(usart_dev *dev)</argsstring>
+        <name>usart_data_available</name>
+        <param>
+          <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Return the amount of data available in a serial port&apos;s RX buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Serial port to check </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of bytes in dev&apos;s RX buffer. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="319" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="319" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="usart_8h_1a10dd0720ef249ba461e6ca3f4ba13c83" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void usart_reset_rx</definition>
+        <argsstring>(usart_dev *dev)</argsstring>
+        <name>usart_reset_rx</name>
+        <param>
+          <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Discard the contents of a serial port&apos;s RX buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Serial port whose buffer to empty. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h" line="327" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.h" bodystart="327" bodyend="329"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>USART definitions and prototypes. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Marti Bolivar &lt;<ulink url="mailto:mbolivar@leaflabs.com">mbolivar@leaflabs.com</ulink>&gt;, Perry Hung &lt;<ulink url="mailto:perry@leaflabs.com">perry@leaflabs.com</ulink>&gt; </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Perry<sp/>Hung.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#ifndef<sp/>_USART_H_</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_USART_H_</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libmaple__types_8h" kindref="compound" tooltip="libmaple types">libmaple_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="util_8h" kindref="compound" tooltip="Miscellaneous utility macros and procedures.">util.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rcc_8h" kindref="compound" tooltip="reset and clock control definitions and prototypes">rcc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="nvic_8h" kindref="compound" tooltip="Nested vector interrupt controller support.">nvic.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ring__buffer_8h" kindref="compound" tooltip="Simple circular buffer.">ring_buffer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*<sp/>Register<sp/>maps<sp/>and<sp/>devices</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="structusart__reg__map" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structusart__reg__map" kindref="compound" tooltip="USART register map type.">usart_reg_map</ref><sp/>{</highlight></codeline>
+<codeline lineno="53" refid="structusart__reg__map_1a2608675b685e36c0993fb534e6a37c27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structusart__reg__map_1a2608675b685e36c0993fb534e6a37c27" kindref="member" tooltip="Status register.">SR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54" refid="structusart__reg__map_1a878865a91b0ad6eb0673a1260bdc009d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structusart__reg__map_1a878865a91b0ad6eb0673a1260bdc009d" kindref="member" tooltip="Data register.">DR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55" refid="structusart__reg__map_1a25fb1970fe9d9ea0f18f601eda2576f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structusart__reg__map_1a25fb1970fe9d9ea0f18f601eda2576f9" kindref="member" tooltip="Baud rate register.">BRR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56" refid="structusart__reg__map_1ad97a57d1cacb209d66166d61c423b947" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structusart__reg__map_1ad97a57d1cacb209d66166d61c423b947" kindref="member" tooltip="Control register 1.">CR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57" refid="structusart__reg__map_1af9d2d241c5f55a08155461bc6e889db8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structusart__reg__map_1af9d2d241c5f55a08155461bc6e889db8" kindref="member" tooltip="Control register 2.">CR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58" refid="structusart__reg__map_1ab3aa06a42a976a341cec9edc0e02bf6d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structusart__reg__map_1ab3aa06a42a976a341cec9edc0e02bf6d" kindref="member" tooltip="Control register 3.">CR3</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59" refid="structusart__reg__map_1aa8dd2f4bc62498b9438a26a1d0351dbb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structusart__reg__map_1aa8dd2f4bc62498b9438a26a1d0351dbb" kindref="member" tooltip="Guard time and prescaler register.">GTPR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}<sp/><ref refid="structusart__reg__map" kindref="compound" tooltip="USART register map type.">usart_reg_map</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="usart_8h_1a86162ab3f740db9026c1320d46938b4d" refkind="member"><highlight class="preprocessor">#define<sp/>USART1_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((struct<sp/>usart_reg_map*)0x40013800)</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="65" refid="usart_8h_1ade83162a04bca0b15b39018a8e8ec090" refkind="member"><highlight class="preprocessor">#define<sp/>USART2_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((struct<sp/>usart_reg_map*)0x40004400)</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="67" refid="usart_8h_1abe0d6539ac0026d598274ee7f45b0251" refkind="member"><highlight class="preprocessor">#define<sp/>USART3_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((struct<sp/>usart_reg_map*)0x40004800)</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifdef<sp/>STM32_HIGH_DENSITY</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="70" refid="usart_8h_1a94d92270bf587ccdc3a37a5bb5d20467" refkind="member"><highlight class="preprocessor">#define<sp/>UART4_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((struct<sp/>usart_reg_map*)0x40004C00)</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="72" refid="usart_8h_1aa155689c0e206e6994951dc3cf31052a" refkind="member"><highlight class="preprocessor">#define<sp/>UART5_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((struct<sp/>usart_reg_map*)0x40005000)</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/>*<sp/>Register<sp/>bit<sp/>definitions</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Status<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_SR_CTS_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>9</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_SR_LBD_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_SR_TXE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_SR_TC_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_SR_RXNE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_SR_IDLE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_SR_ORE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_SR_NE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_SR_FE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_SR_PE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_SR_CTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_SR_CTS_BIT)</highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_SR_LBD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_SR_LBD_BIT)</highlight></codeline>
+<codeline lineno="94"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_SR_TXE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_SR_TXE_BIT)</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_SR_TC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_SR_TC_BIT)</highlight></codeline>
+<codeline lineno="96"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_SR_RXNE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_SR_RXNE_BIT)</highlight></codeline>
+<codeline lineno="97"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_SR_IDLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_SR_IDLE_BIT)</highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_SR_ORE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_SR_ORE_BIT)</highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_SR_NE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_SR_NE_BIT)</highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_SR_FE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_SR_FE_BIT)</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_SR_PE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_SR_PE_BIT)</highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Data<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_DR_DR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xFF</highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Baud<sp/>rate<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_BRR_DIV_MANTISSA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xFFF<sp/>&lt;&lt;<sp/>4)</highlight></codeline>
+<codeline lineno="110"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_BRR_DIV_FRACTION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xF</highlight></codeline>
+<codeline lineno="111"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Control<sp/>register<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_UE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>13</highlight></codeline>
+<codeline lineno="115"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_M_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight></codeline>
+<codeline lineno="116"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_WAKE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>11</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_PCE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10</highlight></codeline>
+<codeline lineno="118"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_PS_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>9</highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_PEIE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_TXEIE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7</highlight></codeline>
+<codeline lineno="121"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_TCIE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_RXNEIE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_IDLEIE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight></codeline>
+<codeline lineno="124"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_TE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="125"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_RE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="126"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_RWU_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="127"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_SBK_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="128"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_UE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR1_UE_BIT)</highlight></codeline>
+<codeline lineno="130"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR1_M_BIT)</highlight></codeline>
+<codeline lineno="131"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_WAKE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR1_WAKE_BIT)</highlight></codeline>
+<codeline lineno="132"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_WAKE_IDLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0<sp/>&lt;&lt;<sp/>USART_CR1_WAKE_BIT)</highlight></codeline>
+<codeline lineno="133"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_WAKE_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>USART_CR1_WAKE_BIT)</highlight></codeline>
+<codeline lineno="134"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_PCE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR1_PCE_BIT)</highlight></codeline>
+<codeline lineno="135"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_PS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR1_PS_BIT)</highlight></codeline>
+<codeline lineno="136"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_PS_EVEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0<sp/>&lt;&lt;<sp/>USART_CR1_PS_BIT)</highlight></codeline>
+<codeline lineno="137"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_PS_ODD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>USART_CR1_PS_BIT)</highlight></codeline>
+<codeline lineno="138"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_PEIE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR1_PEIE_BIT)</highlight></codeline>
+<codeline lineno="139"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_TXEIE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR1_TXEIE_BIT)</highlight></codeline>
+<codeline lineno="140"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_TCIE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR1_TCIE_BIT)</highlight></codeline>
+<codeline lineno="141"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_RXNEIE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR1_RXNEIE_BIT)</highlight></codeline>
+<codeline lineno="142"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_IDLEIE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR1_IDLEIE_BIT)</highlight></codeline>
+<codeline lineno="143"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_TE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR1_TE_BIT)</highlight></codeline>
+<codeline lineno="144"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_RE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR1_RE_BIT)</highlight></codeline>
+<codeline lineno="145"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_RWU<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR1_RWU_BIT)</highlight></codeline>
+<codeline lineno="146"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_RWU_ACTIVE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0<sp/>&lt;&lt;<sp/>USART_CR1_RWU_BIT)</highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_RWU_MUTE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>USART_CR1_RWU_BIT)</highlight></codeline>
+<codeline lineno="148"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR1_SBK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR1_SBK_BIT)</highlight></codeline>
+<codeline lineno="149"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Control<sp/>register<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_CR2_LINEN_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>14</highlight></codeline>
+<codeline lineno="153"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR2_CLKEN_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>11</highlight></codeline>
+<codeline lineno="154"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR2_CPOL_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10</highlight></codeline>
+<codeline lineno="155"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR2_CPHA_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>9</highlight></codeline>
+<codeline lineno="156"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR2_LBCL_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight></codeline>
+<codeline lineno="157"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR2_LBDIE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight></codeline>
+<codeline lineno="158"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR2_LBDL_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight></codeline>
+<codeline lineno="159"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_CR2_LINEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR2_LINEN_BIT)</highlight></codeline>
+<codeline lineno="161"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR2_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x3<sp/>&lt;&lt;<sp/>12)</highlight></codeline>
+<codeline lineno="162"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR2_STOP_BITS_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0<sp/>&lt;&lt;<sp/>12)</highlight></codeline>
+<codeline lineno="163"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>Not<sp/>on<sp/>UART4,<sp/>UART5<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_CR2_STOP_BITS_POINT_5<sp/><sp/><sp/><sp/><sp/>(0x1<sp/>&lt;&lt;<sp/>12)</highlight></codeline>
+<codeline lineno="165"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>Not<sp/>on<sp/>UART4,<sp/>UART5<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_CR2_STOP_BITS_1_POINT_5<sp/><sp/><sp/>(0x3<sp/>&lt;&lt;<sp/>12)</highlight></codeline>
+<codeline lineno="167"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR2_STOP_BITS_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x2<sp/>&lt;&lt;<sp/>12)</highlight></codeline>
+<codeline lineno="168"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR2_CLKEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR2_CLKEN_BIT)</highlight></codeline>
+<codeline lineno="169"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>Not<sp/>on<sp/>UART4,<sp/>UART5<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_CR2_CPOL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR2_CPOL_BIT)</highlight></codeline>
+<codeline lineno="171"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR2_CPOL_LOW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0<sp/>&lt;&lt;<sp/>USART_CR2_CLKEN_BIT)</highlight></codeline>
+<codeline lineno="172"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR2_CPOL_HIGH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1<sp/>&lt;&lt;<sp/>USART_CR2_CLKEN_BIT)</highlight></codeline>
+<codeline lineno="173"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>Not<sp/>on<sp/>UART4,<sp/>UART5<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_CR2_CPHA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR2_CPHA_BIT)</highlight></codeline>
+<codeline lineno="175"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR2_CPHA_FIRST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0<sp/>&lt;&lt;<sp/>USART_CR2_CPHA_BIT)</highlight></codeline>
+<codeline lineno="176"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR2_CPHA_SECOND<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1<sp/>&lt;&lt;<sp/>USART_CR2_CPHA_BIT)</highlight></codeline>
+<codeline lineno="177"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>Not<sp/>on<sp/>UART4,<sp/>UART5<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_CR2_LBCL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR2_LBCL_BIT)</highlight></codeline>
+<codeline lineno="179"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR2_LBDIE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR2_LBDIE_BIT)</highlight></codeline>
+<codeline lineno="180"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR2_LBDL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR2_LBDL_BIT)</highlight></codeline>
+<codeline lineno="181"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR2_LBDL_10_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0<sp/>&lt;&lt;<sp/>USART_CR2_LBDL_BIT)</highlight></codeline>
+<codeline lineno="182"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR2_LBDL_11_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>USART_CR2_LBDL_BIT)</highlight></codeline>
+<codeline lineno="183"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR2_ADD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xF</highlight></codeline>
+<codeline lineno="184"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Control<sp/>register<sp/>3<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_CR3_CTSIE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>10</highlight></codeline>
+<codeline lineno="188"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR3_CTSE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>9</highlight></codeline>
+<codeline lineno="189"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR3_RTSE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight></codeline>
+<codeline lineno="190"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR3_DMAT_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7</highlight></codeline>
+<codeline lineno="191"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR3_DMAR_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6</highlight></codeline>
+<codeline lineno="192"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR3_SCEN_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5</highlight></codeline>
+<codeline lineno="193"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR3_NACK_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight></codeline>
+<codeline lineno="194"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR3_HDSEL_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>3</highlight></codeline>
+<codeline lineno="195"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR3_IRLP_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2</highlight></codeline>
+<codeline lineno="196"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR3_IREN_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1</highlight></codeline>
+<codeline lineno="197"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR3_EIE_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0</highlight></codeline>
+<codeline lineno="198"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Not<sp/>on<sp/>UART4,<sp/>UART5<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_CR3_CTSIE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR3_CTSIE_BIT)</highlight></codeline>
+<codeline lineno="201"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>Not<sp/>on<sp/>UART4,<sp/>UART5<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_CR3_CTSE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR3_CTSE_BIT)</highlight></codeline>
+<codeline lineno="203"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>Not<sp/>on<sp/>UART4,<sp/>UART5<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_CR3_RTSE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR3_RTSE_BIT)</highlight></codeline>
+<codeline lineno="205"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>Not<sp/>on<sp/>UART5<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_CR3_DMAT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR3_DMAT_BIT)</highlight></codeline>
+<codeline lineno="207"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>Not<sp/>on<sp/>UART5<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_CR3_DMAR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR3_DMAR_BIT)</highlight></codeline>
+<codeline lineno="209"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>Not<sp/>on<sp/>UART4,<sp/>UART5<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_CR3_SCEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR3_SCEN_BIT)</highlight></codeline>
+<codeline lineno="211"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>Not<sp/>on<sp/>UART4,<sp/>UART5<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_CR3_NACK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR3_NACK_BIT)</highlight></codeline>
+<codeline lineno="213"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR3_HDSEL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR3_HDSEL_BIT)</highlight></codeline>
+<codeline lineno="214"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR3_IRLP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR3_IRLP_BIT)</highlight></codeline>
+<codeline lineno="215"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR3_IRLP_NORMAL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0<sp/>&lt;&lt;<sp/>USART_CR3_IRLP_BIT)</highlight></codeline>
+<codeline lineno="216"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR3_IRLP_LOW_POWER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1<sp/>&lt;&lt;<sp/>USART_CR3_IRLP_BIT)</highlight></codeline>
+<codeline lineno="217"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR3_IREN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR3_IREN_BIT)</highlight></codeline>
+<codeline lineno="218"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_CR3_EIE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(USART_CR3_EIE_BIT)</highlight></codeline>
+<codeline lineno="219"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Guard<sp/>time<sp/>and<sp/>prescaler<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Not<sp/>on<sp/>UART4,<sp/>UART5<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_GTPR_GT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xFF<sp/>&lt;&lt;<sp/>8)</highlight></codeline>
+<codeline lineno="224"><highlight class="preprocessor"></highlight><highlight class="comment">/*<sp/>Not<sp/>on<sp/>UART4,<sp/>UART5<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_GTPR_PSC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xFF</highlight></codeline>
+<codeline lineno="226"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="228"><highlight class="comment"><sp/>*<sp/>Devices</highlight></codeline>
+<codeline lineno="229"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>USART_RX_BUF_SIZE</highlight></codeline>
+<codeline lineno="232"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USART_RX_BUF_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>64</highlight></codeline>
+<codeline lineno="233"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="234"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="236" refid="structusart__dev" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>{</highlight></codeline>
+<codeline lineno="237" refid="structusart__dev_1a78190808091aa1c52aff1c2432d1580a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structusart__reg__map" kindref="compound" tooltip="USART register map type.">usart_reg_map</ref><sp/>*<ref refid="structusart__dev_1a78190808091aa1c52aff1c2432d1580a" kindref="member" tooltip="Register map.">regs</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="238" refid="structusart__dev_1a41b77903cca126923c49204fe58fa646" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structring__buffer" kindref="compound" tooltip="Ring buffer type.">ring_buffer</ref><sp/>*<ref refid="structusart__dev_1a41b77903cca126923c49204fe58fa646" kindref="member" tooltip="RX ring buffer.">rb</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="239" refid="structusart__dev_1a9db8c2a81396375505cba76e4220bc96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/><ref refid="structusart__dev_1a9db8c2a81396375505cba76e4220bc96" kindref="member" tooltip="Maximum baud.">max_baud</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="240" refid="structusart__dev_1a4f04099f0748dc368de960d386040a2a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/><ref refid="structusart__dev_1a4f04099f0748dc368de960d386040a2a" kindref="member" tooltip="Deprecated.">rx_buf</ref>[USART_RX_BUF_SIZE];<sp/></highlight></codeline>
+<codeline lineno="244" refid="structusart__dev_1a97216f26534f0290171efb40453ff028" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="rcc_8h_1ae3722d2d8eff5283fb0388429953640f" kindref="member" tooltip="Identifies bus and clock line for a peripheral.">rcc_clk_id</ref><sp/><ref refid="structusart__dev_1a97216f26534f0290171efb40453ff028" kindref="member" tooltip="RCC clock information.">clk_id</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="245" refid="structusart__dev_1ade349ba928d1b1329f238d327a046ef0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83" kindref="member" tooltip="Interrupt vector table interrupt numbers.">nvic_irq_num</ref><sp/><ref refid="structusart__dev_1ade349ba928d1b1329f238d327a046ef0" kindref="member" tooltip="USART NVIC interrupt.">irq_num</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="246"><highlight class="normal">}<sp/><ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref>;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*<ref refid="usart_8c_1a4d115720656155ba3fcffac95ea18d33" kindref="member" tooltip="USART1 device.">USART1</ref>;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*<ref refid="usart_8c_1ae413e6bb2ff2c87336aefd387294169b" kindref="member" tooltip="USART2 device.">USART2</ref>;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*<ref refid="usart_8c_1a6b4d25bc4b89f06c8f7436454b79a4c1" kindref="member" tooltip="USART3 device.">USART3</ref>;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>STM32_HIGH_DENSITY</highlight></codeline>
+<codeline lineno="252"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*<ref refid="usart_8c_1ae038774150fdba32590403d652567640" kindref="member" tooltip="UART4 device.">UART4</ref>;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*<ref refid="usart_8c_1a80daf75a0d0cb1f4e6278d7b9c344009" kindref="member" tooltip="UART5 device.">UART5</ref>;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="255"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usart_8c_1a4e681821539d76f652db1f96e1cab966" kindref="member" tooltip="Initialize a serial port.">usart_init</ref>(<ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*dev);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usart_8c_1acb3dad2577b5add75dc061c12cddf3fe" kindref="member" tooltip="Configure a serial port&amp;#39;s baud rate.">usart_set_baud_rate</ref>(<ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*dev,<sp/>uint32<sp/>clock_speed,<sp/>uint32<sp/>baud);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usart_8c_1a2707484d73b19ccb708facc0a413d56a" kindref="member" tooltip="Enable a serial port.">usart_enable</ref>(<ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*dev);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usart_8c_1aacc27700ee5d75bbf5a84587631917a8" kindref="member" tooltip="Turn off a serial port.">usart_disable</ref>(<ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*dev);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usart_8c_1aad11e38166160c2e27d7253c5708541d" kindref="member" tooltip="Call a function on each USART.">usart_foreach</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*fn)(<ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*dev));</highlight></codeline>
+<codeline lineno="261"><highlight class="normal">uint32<sp/><ref refid="usart_8c_1a8a77e40c330e1393f2b2e5c8a880f561" kindref="member" tooltip="Nonblocking USART transmit.">usart_tx</ref>(<ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*dev,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8<sp/>*buf,<sp/>uint32<sp/>len);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usart_8c_1adc07cc9819ac5baa43e4639d88a296a7" kindref="member" tooltip="Transmit an unsigned integer to the specified serial port in decimal format.">usart_putudec</ref>(<ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*dev,<sp/>uint32<sp/>val);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267" refid="usart_8h_1a978fd153d351e4d05e42d5da8356e297" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usart_8h_1a978fd153d351e4d05e42d5da8356e297" kindref="member" tooltip="Disable all serial ports.">usart_disable_all</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8c_1aad11e38166160c2e27d7253c5708541d" kindref="member" tooltip="Call a function on each USART.">usart_foreach</ref>(<ref refid="usart_8c_1aacc27700ee5d75bbf5a84587631917a8" kindref="member" tooltip="Turn off a serial port.">usart_disable</ref>);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280" refid="usart_8h_1a76f511d4799bfc2ad702eb5b03b72f8b" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usart_8h_1a76f511d4799bfc2ad702eb5b03b72f8b" kindref="member" tooltip="Transmit one character on a serial port.">usart_putc</ref>(<ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref>*<sp/>dev,<sp/>uint8<sp/>byte)<sp/>{</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!<ref refid="usart_8c_1a8a77e40c330e1393f2b2e5c8a880f561" kindref="member" tooltip="Nonblocking USART transmit.">usart_tx</ref>(dev,<sp/>&amp;byte,<sp/>1))</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293" refid="usart_8h_1adfd73cdc84463809e6938b0328532fbe" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usart_8h_1adfd73cdc84463809e6938b0328532fbe" kindref="member" tooltip="Transmit a character string on a serial port.">usart_putstr</ref>(<ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*dev,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str)<sp/>{</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(str[i]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="usart_8h_1a76f511d4799bfc2ad702eb5b03b72f8b" kindref="member" tooltip="Transmit one character on a serial port.">usart_putc</ref>(dev,<sp/>str[i++]);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="298"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310" refid="usart_8h_1afaad8cb780b4dfe75651dc4cd5483390" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint8<sp/><ref refid="usart_8h_1afaad8cb780b4dfe75651dc4cd5483390" kindref="member" tooltip="Read one character from a serial port.">usart_getc</ref>(<ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="ring__buffer_8h_1ac8a79086d32e51e62186880119cf4641" kindref="member" tooltip="Remove and return the first item from a ring buffer.">rb_remove</ref>(dev-&gt;<ref refid="structusart__dev_1a41b77903cca126923c49204fe58fa646" kindref="member" tooltip="RX ring buffer.">rb</ref>);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319" refid="usart_8h_1acc07fab64a315ca7f70f404d4c29ccef" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint32<sp/><ref refid="usart_8h_1acc07fab64a315ca7f70f404d4c29ccef" kindref="member" tooltip="Return the amount of data available in a serial port&amp;#39;s RX buffer.">usart_data_available</ref>(<ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="ring__buffer_8h_1ad406625a0c387e7229a73e8b668e6ee3" kindref="member" tooltip="Return the number of elements stored in the ring buffer.">rb_full_count</ref>(dev-&gt;<ref refid="structusart__dev_1a41b77903cca126923c49204fe58fa646" kindref="member" tooltip="RX ring buffer.">rb</ref>);</highlight></codeline>
+<codeline lineno="321"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327" refid="usart_8h_1a10dd0720ef249ba461e6ca3f4ba13c83" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usart_8h_1a10dd0720ef249ba461e6ca3f4ba13c83" kindref="member" tooltip="Discard the contents of a serial port&amp;#39;s RX buffer.">usart_reset_rx</ref>(<ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ring__buffer_8h_1aa150c847dc8f29454f99c3ec143ef768" kindref="member" tooltip="Discard all items from a ring buffer.">rb_reset</ref>(dev-&gt;<ref refid="structusart__dev_1a41b77903cca126923c49204fe58fa646" kindref="member" tooltip="RX ring buffer.">rb</ref>);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="332"><highlight class="preprocessor"></highlight><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>extern<sp/>&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="334"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_USART_H_</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.h"/>
+  </compounddef>
+</doxygen>

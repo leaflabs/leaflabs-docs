@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structx_list" kind="struct" prot="public">
+    <compoundname>xList</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structx_list_1ac6f553e2beb9099d9d3b8470ecce54be" prot="public" static="no" mutable="no">
+        <type>unsigned portBASE_TYPE</type>
+        <definition>volatile unsigned portBASE_TYPE xList::uxNumberOfItems</definition>
+        <argsstring></argsstring>
+        <name>uxNumberOfItems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="121" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_list_1ae02b8677ac5bbc5af2d1518d4fff0306" prot="public" static="no" mutable="no">
+        <type>xListItem *</type>
+        <definition>volatile xListItem* xList::pxIndex</definition>
+        <argsstring></argsstring>
+        <name>pxIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="122" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_list_1aa0e72d1f79f9634fa90dd5b4a0633764" prot="public" static="no" mutable="no">
+        <type>xMiniListItem</type>
+        <definition>volatile xMiniListItem xList::xListEnd</definition>
+        <argsstring></argsstring>
+        <name>xListEnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="123" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" line="120" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/list.h" bodystart="119" bodyend="124"/>
+    <listofallmembers>
+      <member refid="structx_list_1ae02b8677ac5bbc5af2d1518d4fff0306" prot="public" virt="non-virtual"><scope>xList</scope><name>pxIndex</name></member>
+      <member refid="structx_list_1ac6f553e2beb9099d9d3b8470ecce54be" prot="public" virt="non-virtual"><scope>xList</scope><name>uxNumberOfItems</name></member>
+      <member refid="structx_list_1aa0e72d1f79f9634fa90dd5b4a0633764" prot="public" virt="non-virtual"><scope>xList</scope><name>xListEnd</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

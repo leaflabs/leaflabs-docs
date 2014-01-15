@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="task_e_n_a_b_l_e__i_n_t_e_r_r_u_p_t_s" kind="page">
+    <compoundname>taskENABLE_INTERRUPTS</compoundname>
+    <title>taskENABLE_INTERRUPTS</title>
+    <detaileddescription>
+<para>task.</para><para>h</para><para>Macro to enable microcontroller interrupts. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

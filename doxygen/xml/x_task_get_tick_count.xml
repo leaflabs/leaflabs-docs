@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="x_task_get_tick_count" kind="page">
+    <compoundname>xTaskGetTickCount</compoundname>
+    <title>xTaskGetTickCount</title>
+    <detaileddescription>
+<para>task.</para><para>h <preformatted>portTickType xTaskGetTickCount( void );</preformatted></para><para><simplesect kind="return"><para>The count of ticks since vTaskStartScheduler was called.</para></simplesect>
+task.</para><para>h <preformatted>portTickType xTaskGetTickCountFromISR( void );</preformatted></para><para><simplesect kind="return"><para>The count of ticks since vTaskStartScheduler was called.</para></simplesect>
+This is a version of xTaskGetTickCount() that is safe to be called from an ISR - provided that portTickType is the natural word size of the microcontroller being used or interrupt nesting is either not supported or not being used. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

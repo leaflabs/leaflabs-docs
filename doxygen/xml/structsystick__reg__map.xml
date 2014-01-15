@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structsystick__reg__map" kind="struct" prot="public">
+    <compoundname>systick_reg_map</compoundname>
+    <includes refid="systick_8h" local="no">systick.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsystick__reg__map_1a9d7fc9f093316c406fd1c807e684fff2" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 systick_reg_map::CSR</definition>
+        <argsstring></argsstring>
+        <name>CSR</name>
+        <briefdescription>
+<para>Control and status register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h" line="45" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsystick__reg__map_1a206a2d996b26c1c24c869a078e6e9925" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 systick_reg_map::RVR</definition>
+        <argsstring></argsstring>
+        <name>RVR</name>
+        <briefdescription>
+<para>Reload value register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h" line="46" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsystick__reg__map_1a9dc848a54e4cef23cc93937c887ac273" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 systick_reg_map::CNT</definition>
+        <argsstring></argsstring>
+        <name>CNT</name>
+        <briefdescription>
+<para>Current value register (&quot;count&quot;) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h" line="47" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsystick__reg__map_1a231c46d2ab97f8fa9b0dafadb3dfb1f6" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 systick_reg_map::CVR</definition>
+        <argsstring></argsstring>
+        <name>CVR</name>
+        <briefdescription>
+<para>Calibration value register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h" line="48" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>SysTick register map type. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/systick.h" line="44" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/systick.h" bodystart="44" bodyend="49"/>
+    <listofallmembers>
+      <member refid="structsystick__reg__map_1a9dc848a54e4cef23cc93937c887ac273" prot="public" virt="non-virtual"><scope>systick_reg_map</scope><name>CNT</name></member>
+      <member refid="structsystick__reg__map_1a9d7fc9f093316c406fd1c807e684fff2" prot="public" virt="non-virtual"><scope>systick_reg_map</scope><name>CSR</name></member>
+      <member refid="structsystick__reg__map_1a231c46d2ab97f8fa9b0dafadb3dfb1f6" prot="public" virt="non-virtual"><scope>systick_reg_map</scope><name>CVR</name></member>
+      <member refid="structsystick__reg__map_1a206a2d996b26c1c24c869a078e6e9925" prot="public" virt="non-virtual"><scope>systick_reg_map</scope><name>RVR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

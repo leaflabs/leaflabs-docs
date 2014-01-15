@@ -1,0 +1,718 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="_liquid_crystal_8h" kind="file">
+    <compoundname>LiquidCrystal.h</compoundname>
+    <includes refid="wirish_8h" local="yes">wirish.h</includes>
+    <includes refid="_print_8h" local="yes">Print.h</includes>
+    <incdepgraph>
+      <node id="1387">
+        <label>usb_serial.h</label>
+        <link refid="usb__serial_8h_source"/>
+        <childnode refid="1385" relation="include">
+        </childnode>
+      </node>
+      <node id="1378">
+        <label>wirish_math.h</label>
+        <link refid="wirish__math_8h"/>
+        <childnode refid="1379" relation="include">
+        </childnode>
+      </node>
+      <node id="1386">
+        <label>HardwareTimer.h</label>
+        <link refid="_hardware_timer_8h_source"/>
+        <childnode refid="1365" relation="include">
+        </childnode>
+      </node>
+      <node id="1356">
+        <label>wirish.h</label>
+        <link refid="wirish_8h_source"/>
+        <childnode refid="1357" relation="include">
+        </childnode>
+        <childnode refid="1362" relation="include">
+        </childnode>
+        <childnode refid="1369" relation="include">
+        </childnode>
+        <childnode refid="1370" relation="include">
+        </childnode>
+        <childnode refid="1373" relation="include">
+        </childnode>
+        <childnode refid="1375" relation="include">
+        </childnode>
+        <childnode refid="1376" relation="include">
+        </childnode>
+        <childnode refid="1377" relation="include">
+        </childnode>
+        <childnode refid="1378" relation="include">
+        </childnode>
+        <childnode refid="1371" relation="include">
+        </childnode>
+        <childnode refid="1380" relation="include">
+        </childnode>
+        <childnode refid="1382" relation="include">
+        </childnode>
+        <childnode refid="1386" relation="include">
+        </childnode>
+        <childnode refid="1387" relation="include">
+        </childnode>
+      </node>
+      <node id="1382">
+        <label>HardwareSerial.h</label>
+        <link refid="_hardware_serial_8h"/>
+        <childnode refid="1358" relation="include">
+        </childnode>
+        <childnode refid="1383" relation="include">
+        </childnode>
+        <childnode refid="1385" relation="include">
+        </childnode>
+      </node>
+      <node id="1369">
+        <label>boards.h</label>
+        <link refid="boards_8h"/>
+        <childnode refid="1357" relation="include">
+        </childnode>
+        <childnode refid="1363" relation="include">
+        </childnode>
+        <childnode refid="1365" relation="include">
+        </childnode>
+        <childnode refid="1362" relation="include">
+        </childnode>
+      </node>
+      <node id="1366">
+        <label>nvic.h</label>
+        <link refid="nvic_8h"/>
+        <childnode refid="1358" relation="include">
+        </childnode>
+        <childnode refid="1360" relation="include">
+        </childnode>
+      </node>
+      <node id="1383">
+        <label>usart.h</label>
+        <link refid="usart_8h"/>
+        <childnode refid="1358" relation="include">
+        </childnode>
+        <childnode refid="1360" relation="include">
+        </childnode>
+        <childnode refid="1364" relation="include">
+        </childnode>
+        <childnode refid="1366" relation="include">
+        </childnode>
+        <childnode refid="1384" relation="include">
+        </childnode>
+      </node>
+      <node id="1370">
+        <label>io.h</label>
+        <link refid="io_8h"/>
+        <childnode refid="1363" relation="include">
+        </childnode>
+        <childnode refid="1368" relation="include">
+        </childnode>
+        <childnode refid="1371" relation="include">
+        </childnode>
+      </node>
+      <node id="1364">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="1358" relation="include">
+        </childnode>
+      </node>
+      <node id="1381">
+        <label>spi.h</label>
+        <link refid="spi_8h"/>
+        <childnode refid="1358" relation="include">
+        </childnode>
+        <childnode refid="1364" relation="include">
+        </childnode>
+        <childnode refid="1366" relation="include">
+        </childnode>
+        <childnode refid="1363" relation="include">
+        </childnode>
+        <childnode refid="1360" relation="include">
+        </childnode>
+      </node>
+      <node id="1380">
+        <label>HardwareSPI.h</label>
+        <link refid="_hardware_s_p_i_8h"/>
+        <childnode refid="1358" relation="include">
+        </childnode>
+        <childnode refid="1381" relation="include">
+        </childnode>
+        <childnode refid="1369" relation="include">
+        </childnode>
+      </node>
+      <node id="1385">
+        <label>Print.h</label>
+        <link refid="_print_8h_source"/>
+        <childnode refid="1358" relation="include">
+        </childnode>
+      </node>
+      <node id="1359">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="1358">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="1355">
+        <label>libraries/LiquidCrystal/LiquidCrystal.h</label>
+        <link refid="LiquidCrystal.h"/>
+        <childnode refid="1356" relation="include">
+        </childnode>
+        <childnode refid="1385" relation="include">
+        </childnode>
+      </node>
+      <node id="1357">
+        <label>libmaple.h</label>
+        <link refid="libmaple_8h"/>
+        <childnode refid="1358" relation="include">
+        </childnode>
+        <childnode refid="1359" relation="include">
+        </childnode>
+        <childnode refid="1360" relation="include">
+        </childnode>
+        <childnode refid="1361" relation="include">
+        </childnode>
+      </node>
+      <node id="1375">
+        <label>pwm.h</label>
+        <link refid="pwm_8h"/>
+      </node>
+      <node id="1371">
+        <label>wirish_time.h</label>
+        <link refid="wirish__time_8h"/>
+        <childnode refid="1357" relation="include">
+        </childnode>
+        <childnode refid="1366" relation="include">
+        </childnode>
+        <childnode refid="1372" relation="include">
+        </childnode>
+        <childnode refid="1369" relation="include">
+        </childnode>
+      </node>
+      <node id="1362">
+        <label>wirish_types.h</label>
+        <link refid="wirish__types_8h"/>
+        <childnode refid="1358" relation="include">
+        </childnode>
+        <childnode refid="1363" relation="include">
+        </childnode>
+        <childnode refid="1365" relation="include">
+        </childnode>
+        <childnode refid="1368" relation="include">
+        </childnode>
+      </node>
+      <node id="1374">
+        <label>bit_constants.h</label>
+        <link refid="bit__constants_8h_source"/>
+      </node>
+      <node id="1368">
+        <label>adc.h</label>
+        <link refid="adc_8h"/>
+        <childnode refid="1357" relation="include">
+        </childnode>
+        <childnode refid="1367" relation="include">
+        </childnode>
+        <childnode refid="1364" relation="include">
+        </childnode>
+      </node>
+      <node id="1377">
+        <label>wirish_debug.h</label>
+        <link refid="wirish__debug_8h"/>
+      </node>
+      <node id="1384">
+        <label>ring_buffer.h</label>
+        <link refid="ring__buffer_8h"/>
+        <childnode refid="1358" relation="include">
+        </childnode>
+      </node>
+      <node id="1372">
+        <label>systick.h</label>
+        <link refid="systick_8h"/>
+        <childnode refid="1358" relation="include">
+        </childnode>
+        <childnode refid="1360" relation="include">
+        </childnode>
+      </node>
+      <node id="1367">
+        <label>bitband.h</label>
+        <link refid="bitband_8h"/>
+        <childnode refid="1358" relation="include">
+        </childnode>
+      </node>
+      <node id="1363">
+        <label>gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="1357" relation="include">
+        </childnode>
+        <childnode refid="1364" relation="include">
+        </childnode>
+      </node>
+      <node id="1365">
+        <label>timer.h</label>
+        <link refid="timer_8h"/>
+        <childnode refid="1357" relation="include">
+        </childnode>
+        <childnode refid="1364" relation="include">
+        </childnode>
+        <childnode refid="1366" relation="include">
+        </childnode>
+        <childnode refid="1367" relation="include">
+        </childnode>
+      </node>
+      <node id="1376">
+        <label>ext_interrupts.h</label>
+        <link refid="ext__interrupts_8h"/>
+        <childnode refid="1358" relation="include">
+        </childnode>
+        <childnode refid="1366" relation="include">
+        </childnode>
+      </node>
+      <node id="1379">
+        <label>math.h</label>
+      </node>
+      <node id="1361">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="1358" relation="include">
+        </childnode>
+        <childnode refid="1359" relation="include">
+        </childnode>
+      </node>
+      <node id="1360">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="1358" relation="include">
+        </childnode>
+      </node>
+      <node id="1373">
+        <label>bits.h</label>
+        <link refid="bits_8h_source"/>
+        <childnode refid="1374" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_liquid_crystal" prot="public">LiquidCrystal</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_liquid_crystal_8h_1acc3509bc0442b41e2b816555de473ed2" prot="public" static="no">
+        <name>LCD_CLEARDISPLAY</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="9" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1a154c86a887633d0f6d9988e4dbb1f419" prot="public" static="no">
+        <name>LCD_RETURNHOME</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="10" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1a5597e1d5819ea2f0734ad4313abf6703" prot="public" static="no">
+        <name>LCD_ENTRYMODESET</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="11" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1adfb8b2b8b8a08d7313504d7a4f89d99f" prot="public" static="no">
+        <name>LCD_DISPLAYCONTROL</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="12" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1a61f16a2b7550e4700f7898a7587c5594" prot="public" static="no">
+        <name>LCD_CURSORSHIFT</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="13" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1aaef882ae70d1f485cd132815d9716111" prot="public" static="no">
+        <name>LCD_FUNCTIONSET</name>
+        <initializer>0x20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="14" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1aae6ea856879c11dee58493184582a52f" prot="public" static="no">
+        <name>LCD_SETCGRAMADDR</name>
+        <initializer>0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="15" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1a15008b832807a208d9d88c74e6751ebf" prot="public" static="no">
+        <name>LCD_SETDDRAMADDR</name>
+        <initializer>0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="16" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1a43c26ba2e66880fac95ef640b56873ad" prot="public" static="no">
+        <name>LCD_ENTRYRIGHT</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="19" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1ae7c6309fce6200bd7526d090a4a84dd0" prot="public" static="no">
+        <name>LCD_ENTRYLEFT</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="20" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1aa2cf1d0f4a319e53c009cffe1184466c" prot="public" static="no">
+        <name>LCD_ENTRYSHIFTINCREMENT</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="21" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1a049ee97e98d04788c1da9a55590fbe42" prot="public" static="no">
+        <name>LCD_ENTRYSHIFTDECREMENT</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="22" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1a76236ae8317b34bbc98ea56bc0a2639c" prot="public" static="no">
+        <name>LCD_DISPLAYON</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="25" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1a257ebe775cac7140cf82aa40d8ce545a" prot="public" static="no">
+        <name>LCD_DISPLAYOFF</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="26" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1ab67f0adccde68de88eee0513fdfc4574" prot="public" static="no">
+        <name>LCD_CURSORON</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="27" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1a32b194a3adaa0a0bb69acee2e6a754fa" prot="public" static="no">
+        <name>LCD_CURSOROFF</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="28" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1ac3b19d4e6553b9bbf18a23387e439206" prot="public" static="no">
+        <name>LCD_BLINKON</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="29" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1a4b28243034cec656b0ed490ba6979752" prot="public" static="no">
+        <name>LCD_BLINKOFF</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="30" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1ab2f7b67abfac33f610acfd5d7a971f40" prot="public" static="no">
+        <name>LCD_DISPLAYMOVE</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="33" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1ac21f0302ac4136775877d5f4759e4f74" prot="public" static="no">
+        <name>LCD_CURSORMOVE</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="34" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1acf5999180233790bb2c9902efde58f7f" prot="public" static="no">
+        <name>LCD_MOVERIGHT</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="35" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1aafb86adb0dfca1e65d65b2cd1946a009" prot="public" static="no">
+        <name>LCD_MOVELEFT</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="36" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1a59a57ca857dae5d89eb5f2a38c4ac6f0" prot="public" static="no">
+        <name>LCD_8BITMODE</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="39" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1ab8c35d355d2372090c7a347e961c9224" prot="public" static="no">
+        <name>LCD_4BITMODE</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="40" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1a7987e93538df2819583ba43b81ddbb25" prot="public" static="no">
+        <name>LCD_2LINE</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="41" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1a8c85cf88d8af66a47c42249d81c94641" prot="public" static="no">
+        <name>LCD_1LINE</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="42" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1abb3210156d88d3fe18c9352eb161fe42" prot="public" static="no">
+        <name>LCD_5x10DOTS</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="43" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_liquid_crystal_8h_1a9ef57e724c1b846dae0f531aff6fb464" prot="public" static="no">
+        <name>LCD_5x8DOTS</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" line="44" bodyfile="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LiquidCrystal_h</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LiquidCrystal_h</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&lt;inttypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wirish.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Print.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>commands</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LCD_CLEARDISPLAY<sp/>0x01</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LCD_RETURNHOME<sp/>0x02</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LCD_ENTRYMODESET<sp/>0x04</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LCD_DISPLAYCONTROL<sp/>0x08</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LCD_CURSORSHIFT<sp/>0x10</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LCD_FUNCTIONSET<sp/>0x20</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LCD_SETCGRAMADDR<sp/>0x40</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LCD_SETDDRAMADDR<sp/>0x80</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>flags<sp/>for<sp/>display<sp/>entry<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LCD_ENTRYRIGHT<sp/>0x00</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LCD_ENTRYLEFT<sp/>0x02</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LCD_ENTRYSHIFTINCREMENT<sp/>0x01</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LCD_ENTRYSHIFTDECREMENT<sp/>0x00</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>flags<sp/>for<sp/>display<sp/>on/off<sp/>control</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LCD_DISPLAYON<sp/>0x04</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LCD_DISPLAYOFF<sp/>0x00</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LCD_CURSORON<sp/>0x02</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LCD_CURSOROFF<sp/>0x00</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LCD_BLINKON<sp/>0x01</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LCD_BLINKOFF<sp/>0x00</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>flags<sp/>for<sp/>display/cursor<sp/>shift</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LCD_DISPLAYMOVE<sp/>0x08</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LCD_CURSORMOVE<sp/>0x00</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LCD_MOVERIGHT<sp/>0x04</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LCD_MOVELEFT<sp/>0x00</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/>flags<sp/>for<sp/>function<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LCD_8BITMODE<sp/>0x10</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LCD_4BITMODE<sp/>0x00</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LCD_2LINE<sp/>0x08</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LCD_1LINE<sp/>0x00</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LCD_5x10DOTS<sp/>0x04</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LCD_5x8DOTS<sp/>0x00</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="class_liquid_crystal" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_liquid_crystal" kindref="compound">LiquidCrystal</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_print" kindref="compound">Print</ref><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="class_liquid_crystal" kindref="compound">LiquidCrystal</ref>(uint8<sp/>rs,<sp/>uint8<sp/>enable,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8<sp/>d0,<sp/>uint8<sp/>d1,<sp/>uint8<sp/>d2,<sp/>uint8<sp/>d3,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8<sp/>d4,<sp/>uint8<sp/>d5,<sp/>uint8<sp/>d6,<sp/>uint8<sp/>d7);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><ref refid="class_liquid_crystal" kindref="compound">LiquidCrystal</ref>(uint8<sp/>rs,<sp/>uint8<sp/>rw,<sp/>uint8<sp/>enable,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8<sp/>d0,<sp/>uint8<sp/>d1,<sp/>uint8<sp/>d2,<sp/>uint8<sp/>d3,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8<sp/>d4,<sp/>uint8<sp/>d5,<sp/>uint8<sp/>d6,<sp/>uint8<sp/>d7);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><ref refid="class_liquid_crystal" kindref="compound">LiquidCrystal</ref>(uint8<sp/>rs,<sp/>uint8<sp/>rw,<sp/>uint8<sp/>enable,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8<sp/>d0,<sp/>uint8<sp/>d1,<sp/>uint8<sp/>d2,<sp/>uint8<sp/>d3);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><ref refid="class_liquid_crystal" kindref="compound">LiquidCrystal</ref>(uint8<sp/>rs,<sp/>uint8<sp/>enable,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8<sp/>d0,<sp/>uint8<sp/>d1,<sp/>uint8<sp/>d2,<sp/>uint8<sp/>d3);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init(uint8<sp/>fourbitmode,<sp/>uint8<sp/>rs,<sp/>uint8<sp/>rw,<sp/>uint8<sp/>enable,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8<sp/>d0,<sp/>uint8<sp/>d1,<sp/>uint8<sp/>d2,<sp/>uint8<sp/>d3,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8<sp/>d4,<sp/>uint8<sp/>d5,<sp/>uint8<sp/>d6,<sp/>uint8<sp/>d7);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>begin(uint8<sp/>cols,<sp/>uint8<sp/>rows,<sp/>uint8<sp/>charsize<sp/>=<sp/>LCD_5x8DOTS);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>clear();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>home();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>noDisplay();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>display();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>noBlink();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>blink();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>noCursor();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>cursor();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>scrollDisplayLeft();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>scrollDisplayRight();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>leftToRight();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rightToLeft();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>autoscroll();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>noAutoscroll();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>createChar(uint8,<sp/>uint8[]);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setCursor(uint8,<sp/>uint8);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>write(uint8);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>command(uint8);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>send(uint8,<sp/>uint8);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>write4bits(uint8);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>write8bits(uint8);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pulseEnable();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>uint8<sp/>_rs_pin;<sp/></highlight><highlight class="comment">//<sp/>LOW:<sp/>command.<sp/><sp/>HIGH:<sp/>character.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>uint8<sp/>_rw_pin;<sp/></highlight><highlight class="comment">//<sp/>LOW:<sp/>write<sp/>to<sp/>LCD.<sp/><sp/>HIGH:<sp/>read<sp/>from<sp/>LCD.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>uint8<sp/>_enable_pin;<sp/></highlight><highlight class="comment">//<sp/>activated<sp/>by<sp/>a<sp/>HIGH<sp/>pulse.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>uint8<sp/>_data_pins[8];</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>uint8<sp/>_displayfunction;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>uint8<sp/>_displaycontrol;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>uint8<sp/>_displaymode;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>uint8<sp/>_initialized;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>uint8<sp/>_numlines,_currline;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/LiquidCrystal/LiquidCrystal.h"/>
+  </compounddef>
+</doxygen>

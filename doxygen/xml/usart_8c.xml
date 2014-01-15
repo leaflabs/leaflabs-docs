@@ -1,0 +1,829 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="usart_8c" kind="file">
+    <compoundname>usart.c</compoundname>
+    <includes refid="usart_8h" local="yes">usart.h</includes>
+    <incdepgraph>
+      <node id="661">
+        <label>libmaple/usart.c</label>
+        <link refid="usart.c"/>
+        <childnode refid="662" relation="include">
+        </childnode>
+      </node>
+      <node id="666">
+        <label>nvic.h</label>
+        <link refid="nvic_8h"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+        <childnode refid="664" relation="include">
+        </childnode>
+      </node>
+      <node id="662">
+        <label>usart.h</label>
+        <link refid="usart_8h"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+        <childnode refid="664" relation="include">
+        </childnode>
+        <childnode refid="665" relation="include">
+        </childnode>
+        <childnode refid="666" relation="include">
+        </childnode>
+        <childnode refid="667" relation="include">
+        </childnode>
+      </node>
+      <node id="665">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="663">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="667">
+        <label>ring_buffer.h</label>
+        <link refid="ring__buffer_8h"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="664">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="usart_8c_1a50d4a4b73d37794f6d8672cdb72ef847" prot="public" static="yes" mutable="no">
+        <type><ref refid="structring__buffer" kindref="compound">ring_buffer</ref></type>
+        <definition>ring_buffer usart1_rb</definition>
+        <argsstring></argsstring>
+        <name>usart1_rb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="40" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usart_8c_1aafacf54224063ff2b732437de246d655" prot="public" static="yes" mutable="no">
+        <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref></type>
+        <definition>usart_dev usart1</definition>
+        <argsstring></argsstring>
+        <name>usart1</name>
+        <initializer> {
+    .regs     = <ref refid="usart_8h_1a86162ab3f740db9026c1320d46938b4d" kindref="member">USART1_BASE</ref>,
+    .rb       = &amp;usart1_rb,
+    .max_baud = 4500000UL,
+    .clk_id   = RCC_USART1,
+    .irq_num  = NVIC_USART1
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="47" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usart_8c_1a4d115720656155ba3fcffac95ea18d33" prot="public" static="no" mutable="no">
+        <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+        <definition>usart_dev* USART1</definition>
+        <argsstring></argsstring>
+        <name>USART1</name>
+        <initializer> &amp;usart1</initializer>
+        <briefdescription>
+<para>USART1 device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="49" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usart_8c_1a927d3da34bb434a9b92eeac13396a05a" prot="public" static="yes" mutable="no">
+        <type><ref refid="structring__buffer" kindref="compound">ring_buffer</ref></type>
+        <definition>ring_buffer usart2_rb</definition>
+        <argsstring></argsstring>
+        <name>usart2_rb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="51" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usart_8c_1a58a3025cbfb60edc91787d3bddb5d678" prot="public" static="yes" mutable="no">
+        <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref></type>
+        <definition>usart_dev usart2</definition>
+        <argsstring></argsstring>
+        <name>usart2</name>
+        <initializer> {
+    .regs     = <ref refid="usart_8h_1ade83162a04bca0b15b39018a8e8ec090" kindref="member">USART2_BASE</ref>,
+    .rb       = &amp;usart2_rb,
+    .max_baud = 2250000UL,
+    .clk_id   = RCC_USART2,
+    .irq_num  = NVIC_USART2
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="58" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usart_8c_1ae413e6bb2ff2c87336aefd387294169b" prot="public" static="no" mutable="no">
+        <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+        <definition>usart_dev* USART2</definition>
+        <argsstring></argsstring>
+        <name>USART2</name>
+        <initializer> &amp;usart2</initializer>
+        <briefdescription>
+<para>USART2 device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="60" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usart_8c_1afaaa24c78d29db60f82ab2333864df2c" prot="public" static="yes" mutable="no">
+        <type><ref refid="structring__buffer" kindref="compound">ring_buffer</ref></type>
+        <definition>ring_buffer usart3_rb</definition>
+        <argsstring></argsstring>
+        <name>usart3_rb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="62" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usart_8c_1abdf6408f0da772cba7810f3230e2189b" prot="public" static="yes" mutable="no">
+        <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref></type>
+        <definition>usart_dev usart3</definition>
+        <argsstring></argsstring>
+        <name>usart3</name>
+        <initializer> {
+    .regs     = <ref refid="usart_8h_1abe0d6539ac0026d598274ee7f45b0251" kindref="member">USART3_BASE</ref>,
+    .rb       = &amp;usart3_rb,
+    .max_baud = 2250000UL,
+    .clk_id   = RCC_USART3,
+    .irq_num  = NVIC_USART3
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="69" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usart_8c_1a6b4d25bc4b89f06c8f7436454b79a4c1" prot="public" static="no" mutable="no">
+        <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+        <definition>usart_dev* USART3</definition>
+        <argsstring></argsstring>
+        <name>USART3</name>
+        <initializer> &amp;usart3</initializer>
+        <briefdescription>
+<para>USART3 device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="71" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usart_8c_1a69980d616e4564a031fbb43a009f03d7" prot="public" static="yes" mutable="no">
+        <type><ref refid="structring__buffer" kindref="compound">ring_buffer</ref></type>
+        <definition>ring_buffer uart4_rb</definition>
+        <argsstring></argsstring>
+        <name>uart4_rb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="74" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usart_8c_1a80ad44c3a537d915dc97e1f4cbb57ba0" prot="public" static="yes" mutable="no">
+        <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref></type>
+        <definition>usart_dev uart4</definition>
+        <argsstring></argsstring>
+        <name>uart4</name>
+        <initializer> {
+    .regs     = <ref refid="usart_8h_1a94d92270bf587ccdc3a37a5bb5d20467" kindref="member">UART4_BASE</ref>,
+    .rb       = &amp;uart4_rb,
+    .max_baud = 2250000UL,
+    .clk_id   = RCC_UART4,
+    .irq_num  = NVIC_UART4
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="81" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usart_8c_1ae038774150fdba32590403d652567640" prot="public" static="no" mutable="no">
+        <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+        <definition>usart_dev* UART4</definition>
+        <argsstring></argsstring>
+        <name>UART4</name>
+        <initializer> &amp;uart4</initializer>
+        <briefdescription>
+<para>UART4 device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="83" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usart_8c_1adbfe248b9588ccaa3f12b4370ac3dd2f" prot="public" static="yes" mutable="no">
+        <type><ref refid="structring__buffer" kindref="compound">ring_buffer</ref></type>
+        <definition>ring_buffer uart5_rb</definition>
+        <argsstring></argsstring>
+        <name>uart5_rb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="85" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usart_8c_1a87767f78504ac6dfc8433a70830a9f60" prot="public" static="yes" mutable="no">
+        <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref></type>
+        <definition>usart_dev uart5</definition>
+        <argsstring></argsstring>
+        <name>uart5</name>
+        <initializer> {
+    .regs     = <ref refid="usart_8h_1aa155689c0e206e6994951dc3cf31052a" kindref="member">UART5_BASE</ref>,
+    .rb       = &amp;uart5_rb,
+    .max_baud = 2250000UL,
+    .clk_id   = RCC_UART5,
+    .irq_num  = NVIC_UART5
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="92" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="usart_8c_1a80daf75a0d0cb1f4e6278d7b9c344009" prot="public" static="no" mutable="no">
+        <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+        <definition>usart_dev* UART5</definition>
+        <argsstring></argsstring>
+        <name>UART5</name>
+        <initializer> &amp;uart5</initializer>
+        <briefdescription>
+<para>UART5 device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="94" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="usart_8c_1a4e681821539d76f652db1f96e1cab966" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usart_init</definition>
+        <argsstring>(usart_dev *dev)</argsstring>
+        <name>usart_init</name>
+        <param>
+          <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Initialize a serial port. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Serial port to be initialized </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="101" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="101" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="usart_8c_1acb3dad2577b5add75dc061c12cddf3fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usart_set_baud_rate</definition>
+        <argsstring>(usart_dev *dev, uint32 clock_speed, uint32 baud)</argsstring>
+        <name>usart_set_baud_rate</name>
+        <param>
+          <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>clock_speed</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>baud</declname>
+        </param>
+        <briefdescription>
+<para>Configure a serial port&apos;s baud rate. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Serial port to be configured </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clock_speed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Clock speed, in megahertz. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>baud</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Baud rate for transmit/receive. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="114" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="114" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="usart_8c_1a2707484d73b19ccb708facc0a413d56a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usart_enable</definition>
+        <argsstring>(usart_dev *dev)</argsstring>
+        <name>usart_enable</name>
+        <param>
+          <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Enable a serial port. </para>        </briefdescription>
+        <detaileddescription>
+<para>USART is enabled in single buffer transmission mode, multibuffer receiver mode, 8n1.</para><para>Serial port must have a baud rate configured to work properly.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Serial port to enable. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="usart_8c_1acb3dad2577b5add75dc061c12cddf3fe" kindref="member">usart_set_baud_rate()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="139" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="139" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="usart_8c_1aacc27700ee5d75bbf5a84587631917a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usart_disable</definition>
+        <argsstring>(usart_dev *dev)</argsstring>
+        <name>usart_disable</name>
+        <param>
+          <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Turn off a serial port. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Serial port to be disabled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="149" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="149" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="usart_8c_1aad11e38166160c2e27d7253c5708541d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usart_foreach</definition>
+        <argsstring>(void(*fn)(usart_dev *))</argsstring>
+        <name>usart_foreach</name>
+        <param>
+          <type>void(*)(<ref refid="structusart__dev" kindref="compound">usart_dev</ref> *)</type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+<para>Call a function on each USART. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to call. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="168" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="168" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="usart_8c_1a8a77e40c330e1393f2b2e5c8a880f561" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32</type>
+        <definition>uint32 usart_tx</definition>
+        <argsstring>(usart_dev *dev, const uint8 *buf, uint32 len)</argsstring>
+        <name>usart_tx</name>
+        <param>
+          <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>const uint8 *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+<para>Nonblocking USART transmit. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Serial port to transmit over </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer to transmit </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum number of bytes to transmit </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of bytes transmitted </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="185" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="185" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="usart_8c_1adc07cc9819ac5baa43e4639d88a296a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usart_putudec</definition>
+        <argsstring>(usart_dev *dev, uint32 val)</argsstring>
+        <name>usart_putudec</name>
+        <param>
+          <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Transmit an unsigned integer to the specified serial port in decimal format. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function blocks until the integer&apos;s digits have been completely transmitted.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Serial port to send on </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number to print </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="204" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="204" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="usart_8c_1ae8527d18837c55027109bd5099cab595" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void usart_irq</definition>
+        <argsstring>(usart_dev *dev)</argsstring>
+        <name>usart_irq</name>
+        <param>
+          <type><ref refid="structusart__dev" kindref="compound">usart_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="222" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="222" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="usart_8c_1a79ae8bd2846a4b1508ce502f24c37a8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __irq_usart1</definition>
+        <argsstring>(void)</argsstring>
+        <name>__irq_usart1</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="233" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="233" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="usart_8c_1a9e9f874cb6739793293c273c349aed06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __irq_usart2</definition>
+        <argsstring>(void)</argsstring>
+        <name>__irq_usart2</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="237" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="237" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="usart_8c_1a97079b573141eca09e32535fcb275ca8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __irq_usart3</definition>
+        <argsstring>(void)</argsstring>
+        <name>__irq_usart3</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="241" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="241" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="usart_8c_1ae57488c77c723b1f3d3a4ee246d21708" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __irq_uart4</definition>
+        <argsstring>(void)</argsstring>
+        <name>__irq_uart4</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="246" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="246" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="usart_8c_1a3ded00eef4a2a50094237b05d3bf2d9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __irq_uart5</definition>
+        <argsstring>(void)</argsstring>
+        <name>__irq_uart5</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c" line="250" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usart.c" bodystart="250" bodyend="252"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>USART control routines. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Marti Bolivar &lt;<ulink url="mailto:mbolivar@leaflabs.com">mbolivar@leaflabs.com</ulink>&gt;, Perry Hung &lt;<ulink url="mailto:perry@leaflabs.com">perry@leaflabs.com</ulink>&gt; </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Perry<sp/>Hung.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="usart_8h" kindref="compound" tooltip="USART definitions and prototypes.">usart.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*<sp/>Devices</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structring__buffer" kindref="compound" tooltip="Ring buffer type.">ring_buffer</ref><sp/>usart1_rb;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>usart1<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="structusart__dev_1a78190808091aa1c52aff1c2432d1580a" kindref="member" tooltip="Register map.">regs</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="usart_8h_1a86162ab3f740db9026c1320d46938b4d" kindref="member" tooltip="USART1 register map base pointer.">USART1_BASE</ref>,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>.rb<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>&amp;usart1_rb,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>.max_baud<sp/>=<sp/>4500000UL,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>.clk_id<sp/><sp/><sp/>=<sp/>RCC_USART1,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>.irq_num<sp/><sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83aaa1a454cf3c61d9bcbe869d293b85e9b" kindref="member" tooltip="USART1.">NVIC_USART1</ref></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="49" refid="usart_8h_1a4d115720656155ba3fcffac95ea18d33" refkind="member"><highlight class="normal"><ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*<ref refid="usart_8c_1a4d115720656155ba3fcffac95ea18d33" kindref="member" tooltip="USART1 device.">USART1</ref><sp/>=<sp/>&amp;usart1;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structring__buffer" kindref="compound" tooltip="Ring buffer type.">ring_buffer</ref><sp/>usart2_rb;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>usart2<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="structusart__dev_1a78190808091aa1c52aff1c2432d1580a" kindref="member" tooltip="Register map.">regs</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="usart_8h_1ade83162a04bca0b15b39018a8e8ec090" kindref="member" tooltip="USART2 register map base pointer.">USART2_BASE</ref>,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>.rb<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>&amp;usart2_rb,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>.max_baud<sp/>=<sp/>2250000UL,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>.clk_id<sp/><sp/><sp/>=<sp/>RCC_USART2,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>.irq_num<sp/><sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a387d691414c56fae087308eb38454d79" kindref="member" tooltip="USART2.">NVIC_USART2</ref></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="60" refid="usart_8h_1ae413e6bb2ff2c87336aefd387294169b" refkind="member"><highlight class="normal"><ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*<ref refid="usart_8c_1ae413e6bb2ff2c87336aefd387294169b" kindref="member" tooltip="USART2 device.">USART2</ref><sp/>=<sp/>&amp;usart2;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structring__buffer" kindref="compound" tooltip="Ring buffer type.">ring_buffer</ref><sp/>usart3_rb;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>usart3<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="structusart__dev_1a78190808091aa1c52aff1c2432d1580a" kindref="member" tooltip="Register map.">regs</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="usart_8h_1abe0d6539ac0026d598274ee7f45b0251" kindref="member" tooltip="USART3 register map base pointer.">USART3_BASE</ref>,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>.rb<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>&amp;usart3_rb,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>.max_baud<sp/>=<sp/>2250000UL,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>.clk_id<sp/><sp/><sp/>=<sp/>RCC_USART3,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>.irq_num<sp/><sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83aaeec2b13ce7e24e747cd0c6b6c3ff67b" kindref="member" tooltip="USART3.">NVIC_USART3</ref></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="71" refid="usart_8h_1a6b4d25bc4b89f06c8f7436454b79a4c1" refkind="member"><highlight class="normal"><ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*<ref refid="usart_8c_1a6b4d25bc4b89f06c8f7436454b79a4c1" kindref="member" tooltip="USART3 device.">USART3</ref><sp/>=<sp/>&amp;usart3;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>STM32_HIGH_DENSITY</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structring__buffer" kindref="compound" tooltip="Ring buffer type.">ring_buffer</ref><sp/>uart4_rb;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>uart4<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="structusart__dev_1a78190808091aa1c52aff1c2432d1580a" kindref="member" tooltip="Register map.">regs</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="usart_8h_1a94d92270bf587ccdc3a37a5bb5d20467" kindref="member" tooltip="UART4 register map base pointer.">UART4_BASE</ref>,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>.rb<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>&amp;uart4_rb,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>.max_baud<sp/>=<sp/>2250000UL,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>.clk_id<sp/><sp/><sp/>=<sp/>RCC_UART4,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>.irq_num<sp/><sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a4a5f5915924cdf95032af028d9ec6da2" kindref="member" tooltip="UART4.">NVIC_UART4</ref></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="83" refid="usart_8h_1ae038774150fdba32590403d652567640" refkind="member"><highlight class="normal"><ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*<ref refid="usart_8c_1ae038774150fdba32590403d652567640" kindref="member" tooltip="UART4 device.">UART4</ref><sp/>=<sp/>&amp;uart4;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structring__buffer" kindref="compound" tooltip="Ring buffer type.">ring_buffer</ref><sp/>uart5_rb;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>uart5<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="structusart__dev_1a78190808091aa1c52aff1c2432d1580a" kindref="member" tooltip="Register map.">regs</ref><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="usart_8h_1aa155689c0e206e6994951dc3cf31052a" kindref="member" tooltip="UART5 register map base pointer.">UART5_BASE</ref>,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>.rb<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>&amp;uart5_rb,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>.max_baud<sp/>=<sp/>2250000UL,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>.clk_id<sp/><sp/><sp/>=<sp/>RCC_UART5,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>.irq_num<sp/><sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a7072049c5c0aefe112c656ef42a9aa99" kindref="member" tooltip="UART5.">NVIC_UART5</ref></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="94" refid="usart_8h_1a80daf75a0d0cb1f4e6278d7b9c344009" refkind="member"><highlight class="normal"><ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*<ref refid="usart_8c_1a80daf75a0d0cb1f4e6278d7b9c344009" kindref="member" tooltip="UART5 device.">UART5</ref><sp/>=<sp/>&amp;uart5;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="96"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="101" refid="usart_8h_1a4e681821539d76f652db1f96e1cab966" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usart_8c_1a4e681821539d76f652db1f96e1cab966" kindref="member" tooltip="Initialize a serial port.">usart_init</ref>(<ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ring__buffer_8h_1aa9af1a473f040889f02ab3a8fb9d01f2" kindref="member" tooltip="Initialise a ring buffer.">rb_init</ref>(dev-&gt;<ref refid="structusart__dev_1a41b77903cca126923c49204fe58fa646" kindref="member" tooltip="RX ring buffer.">rb</ref>,<sp/>USART_RX_BUF_SIZE,<sp/>dev-&gt;<ref refid="structusart__dev_1a4f04099f0748dc368de960d386040a2a" kindref="member" tooltip="Deprecated.">rx_buf</ref>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>rcc_clk_enable(dev-&gt;<ref refid="structusart__dev_1a97216f26534f0290171efb40453ff028" kindref="member" tooltip="RCC clock information.">clk_id</ref>);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a51e6b1b0e83aac5cd8f1a50255db6b45" kindref="member" tooltip="Enable interrupt irq_num.">nvic_irq_enable</ref>(dev-&gt;<ref refid="structusart__dev_1ade349ba928d1b1329f238d327a046ef0" kindref="member" tooltip="USART NVIC interrupt.">irq_num</ref>);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="usart_8h_1acb3dad2577b5add75dc061c12cddf3fe" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usart_8c_1acb3dad2577b5add75dc061c12cddf3fe" kindref="member" tooltip="Configure a serial port&amp;#39;s baud rate.">usart_set_baud_rate</ref>(<ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*dev,<sp/>uint32<sp/>clock_speed,<sp/>uint32<sp/>baud)<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>integer_part;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>fractional_part;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>tmp;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>See<sp/>ST<sp/>RM0008<sp/>for<sp/>the<sp/>details<sp/>on<sp/>configuring<sp/>the<sp/>baud<sp/>rate<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>integer_part<sp/>=<sp/>(25<sp/>*<sp/>clock_speed)<sp/>/<sp/>(4<sp/>*<sp/>baud);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/>(integer_part<sp/>/<sp/>100)<sp/>&lt;&lt;<sp/>4;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>fractional_part<sp/>=<sp/>integer_part<sp/>-<sp/>(100<sp/>*<sp/>(tmp<sp/>&gt;&gt;<sp/>4));</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp<sp/>|=<sp/>(((fractional_part<sp/>*<sp/>16)<sp/>+<sp/>50)<sp/>/<sp/>100)<sp/>&amp;<sp/>((uint8)0x0F);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>dev-&gt;<ref refid="structusart__dev_1a78190808091aa1c52aff1c2432d1580a" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structusart__reg__map_1a25fb1970fe9d9ea0f18f601eda2576f9" kindref="member" tooltip="Baud rate register.">BRR</ref><sp/>=<sp/>(uint16)tmp;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="usart_8h_1a2707484d73b19ccb708facc0a413d56a" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usart_8c_1a2707484d73b19ccb708facc0a413d56a" kindref="member" tooltip="Enable a serial port.">usart_enable</ref>(<ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structusart__reg__map" kindref="compound" tooltip="USART register map type.">usart_reg_map</ref><sp/>*regs<sp/>=<sp/>dev-&gt;<ref refid="structusart__dev_1a78190808091aa1c52aff1c2432d1580a" kindref="member" tooltip="Register map.">regs</ref>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>regs-&gt;<ref refid="structusart__reg__map_1ad97a57d1cacb209d66166d61c423b947" kindref="member" tooltip="Control register 1.">CR1</ref><sp/>=<sp/>USART_CR1_TE<sp/>|<sp/>USART_CR1_RE<sp/>|<sp/>USART_CR1_RXNEIE;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>regs-&gt;<ref refid="structusart__reg__map_1ad97a57d1cacb209d66166d61c423b947" kindref="member" tooltip="Control register 1.">CR1</ref><sp/>|=<sp/>USART_CR1_UE;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="usart_8h_1aacc27700ee5d75bbf5a84587631917a8" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usart_8c_1aacc27700ee5d75bbf5a84587631917a8" kindref="member" tooltip="Turn off a serial port.">usart_disable</ref>(<ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>FIXME<sp/>this<sp/>misbehaves<sp/>if<sp/>you<sp/>try<sp/>to<sp/>use<sp/>PWM<sp/>on<sp/>TX<sp/>afterwards<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structusart__reg__map" kindref="compound" tooltip="USART register map type.">usart_reg_map</ref><sp/>*regs<sp/>=<sp/>dev-&gt;<ref refid="structusart__dev_1a78190808091aa1c52aff1c2432d1580a" kindref="member" tooltip="Register map.">regs</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TC<sp/>bit<sp/>must<sp/>be<sp/>high<sp/>before<sp/>disabling<sp/>the<sp/>USART<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">((regs-&gt;<ref refid="structusart__reg__map_1ad97a57d1cacb209d66166d61c423b947" kindref="member" tooltip="Control register 1.">CR1</ref><sp/>&amp;<sp/>USART_CR1_UE)<sp/>&amp;&amp;<sp/>!(regs-&gt;<ref refid="structusart__reg__map_1a2608675b685e36c0993fb534e6a37c27" kindref="member" tooltip="Status register.">SR</ref><sp/>&amp;<sp/>USART_SR_TC))</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Disable<sp/>UE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>regs-&gt;<ref refid="structusart__reg__map_1ad97a57d1cacb209d66166d61c423b947" kindref="member" tooltip="Control register 1.">CR1</ref><sp/>&amp;=<sp/>~USART_CR1_UE;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clean<sp/>up<sp/>buffer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="usart_8h_1a10dd0720ef249ba461e6ca3f4ba13c83" kindref="member" tooltip="Discard the contents of a serial port&amp;#39;s RX buffer.">usart_reset_rx</ref>(dev);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="usart_8c_1aad11e38166160c2e27d7253c5708541d" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usart_8c_1aad11e38166160c2e27d7253c5708541d" kindref="member" tooltip="Call a function on each USART.">usart_foreach</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*fn)(<ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref>*))<sp/>{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>fn(USART1);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>fn(USART2);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>fn(USART3);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>STM32_HIGH_DENSITY</highlight></codeline>
+<codeline lineno="173"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>fn(UART4);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>fn(UART5);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="176"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="usart_8h_1a8a77e40c330e1393f2b2e5c8a880f561" refkind="member"><highlight class="normal">uint32<sp/><ref refid="usart_8c_1a8a77e40c330e1393f2b2e5c8a880f561" kindref="member" tooltip="Nonblocking USART transmit.">usart_tx</ref>(<ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*dev,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8<sp/>*buf,<sp/>uint32<sp/>len)<sp/>{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structusart__reg__map" kindref="compound" tooltip="USART register map type.">usart_reg_map</ref><sp/>*regs<sp/>=<sp/>dev-&gt;<ref refid="structusart__dev_1a78190808091aa1c52aff1c2432d1580a" kindref="member" tooltip="Register map.">regs</ref>;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>txed<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((regs-&gt;<ref refid="structusart__reg__map_1a2608675b685e36c0993fb534e6a37c27" kindref="member" tooltip="Status register.">SR</ref><sp/>&amp;<sp/>USART_SR_TXE)<sp/>&amp;&amp;<sp/>(txed<sp/>&lt;<sp/>len))<sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>regs-&gt;<ref refid="structusart__reg__map_1a878865a91b0ad6eb0673a1260bdc009d" kindref="member" tooltip="Data register.">DR</ref><sp/>=<sp/>buf[txed++];</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>txed;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="usart_8h_1adc07cc9819ac5baa43e4639d88a296a7" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="usart_8c_1adc07cc9819ac5baa43e4639d88a296a7" kindref="member" tooltip="Transmit an unsigned integer to the specified serial port in decimal format.">usart_putudec</ref>(<ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*dev,<sp/>uint32<sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>digits[12];</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>digits[i++]<sp/>=<sp/>val<sp/>%<sp/>10<sp/>+<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>val<sp/>/=<sp/>10;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(val<sp/>&gt;<sp/>0);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(--i<sp/>&gt;=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="usart_8h_1a76f511d4799bfc2ad702eb5b03b72f8b" kindref="member" tooltip="Transmit one character on a serial port.">usart_putc</ref>(dev,<sp/>digits[i]);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="219"><highlight class="comment"><sp/>*<sp/>Interrupt<sp/>handlers.</highlight></codeline>
+<codeline lineno="220"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>usart_irq(<ref refid="structusart__dev" kindref="compound" tooltip="USART device type.">usart_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>USART_SAFE_INSERT</highlight></codeline>
+<codeline lineno="224"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>If<sp/>the<sp/>buffer<sp/>is<sp/>full<sp/>and<sp/>the<sp/>user<sp/>defines<sp/>USART_SAFE_INSERT,</highlight></codeline>
+<codeline lineno="225"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>ignore<sp/>new<sp/>bytes.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ring__buffer_8h_1af47583ba110bbe64f1eb4b12271661d9" kindref="member" tooltip="Attempt to insert an element into a ring buffer.">rb_safe_insert</ref>(dev-&gt;<ref refid="structusart__dev_1a41b77903cca126923c49204fe58fa646" kindref="member" tooltip="RX ring buffer.">rb</ref>,<sp/>(uint8)dev-&gt;<ref refid="structusart__dev_1a78190808091aa1c52aff1c2432d1580a" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structusart__reg__map_1a878865a91b0ad6eb0673a1260bdc009d" kindref="member" tooltip="Data register.">DR</ref>);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="228"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>By<sp/>default,<sp/>push<sp/>bytes<sp/>around<sp/>in<sp/>the<sp/>ring<sp/>buffer.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ring__buffer_8h_1a98f1c6646a6128a881556190459a320a" kindref="member" tooltip="Append an item onto the end of a non-full ring buffer.">rb_push_insert</ref>(dev-&gt;<ref refid="structusart__dev_1a41b77903cca126923c49204fe58fa646" kindref="member" tooltip="RX ring buffer.">rb</ref>,<sp/>(uint8)dev-&gt;<ref refid="structusart__dev_1a78190808091aa1c52aff1c2432d1580a" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structusart__reg__map_1a878865a91b0ad6eb0673a1260bdc009d" kindref="member" tooltip="Data register.">DR</ref>);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="231"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__irq_usart1(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>usart_irq(USART1);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__irq_usart2(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>usart_irq(USART2);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__irq_usart3(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>usart_irq(USART3);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>STM32_HIGH_DENSITY</highlight></codeline>
+<codeline lineno="246"><highlight class="preprocessor"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__irq_uart4(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>usart_irq(UART4);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__irq_uart5(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>usart_irq(UART5);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usart.c"/>
+  </compounddef>
+</doxygen>

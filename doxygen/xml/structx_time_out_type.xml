@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structx_time_out_type" kind="struct" prot="public">
+    <compoundname>xTimeOutType</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structx_time_out_type_1ac1ad493bfdc2f1ebf13f666809c347d1" prot="public" static="no" mutable="no">
+        <type>portBASE_TYPE</type>
+        <definition>portBASE_TYPE xTimeOutType::xOverflowCount</definition>
+        <argsstring></argsstring>
+        <name>xOverflowCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" line="98" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structx_time_out_type_1a43fc3febfbf804317021036d664dfd32" prot="public" static="no" mutable="no">
+        <type>portTickType</type>
+        <definition>portTickType xTimeOutType::xTimeOnEntering</definition>
+        <argsstring></argsstring>
+        <name>xTimeOnEntering</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" line="99" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" line="97" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/task.h" bodystart="96" bodyend="100"/>
+    <listofallmembers>
+      <member refid="structx_time_out_type_1ac1ad493bfdc2f1ebf13f666809c347d1" prot="public" virt="non-virtual"><scope>xTimeOutType</scope><name>xOverflowCount</name></member>
+      <member refid="structx_time_out_type_1a43fc3febfbf804317021036d664dfd32" prot="public" virt="non-virtual"><scope>xTimeOutType</scope><name>xTimeOnEntering</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

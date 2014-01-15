@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="struct_n_v_i_c___init_type_def" kind="struct" prot="public">
+    <compoundname>NVIC_InitTypeDef</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_n_v_i_c___init_type_def_1a2309c52a0c88793d005fd43173129267" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 NVIC_InitTypeDef::NVIC_IRQChannel</definition>
+        <argsstring></argsstring>
+        <name>NVIC_IRQChannel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="103" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___init_type_def_1adc8226d770dbf7513448c12e14f30198" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 NVIC_InitTypeDef::NVIC_IRQChannelPreemptionPriority</definition>
+        <argsstring></argsstring>
+        <name>NVIC_IRQChannelPreemptionPriority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="104" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___init_type_def_1a0d908a33a2250776d6016117a3b874aa" prot="public" static="no" mutable="no">
+        <type>u8</type>
+        <definition>u8 NVIC_InitTypeDef::NVIC_IRQChannelSubPriority</definition>
+        <argsstring></argsstring>
+        <name>NVIC_IRQChannelSubPriority</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="105" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___init_type_def_1a08646f7b57dd7ef6983457dd8cff5290" prot="public" static="no" mutable="no">
+        <type>USB_Bool</type>
+        <definition>USB_Bool NVIC_InitTypeDef::NVIC_IRQChannelCmd</definition>
+        <argsstring></argsstring>
+        <name>NVIC_IRQChannelCmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="106" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" line="102" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_hardware.h" bodystart="102" bodyend="107"/>
+    <listofallmembers>
+      <member refid="struct_n_v_i_c___init_type_def_1a2309c52a0c88793d005fd43173129267" prot="public" virt="non-virtual"><scope>NVIC_InitTypeDef</scope><name>NVIC_IRQChannel</name></member>
+      <member refid="struct_n_v_i_c___init_type_def_1a08646f7b57dd7ef6983457dd8cff5290" prot="public" virt="non-virtual"><scope>NVIC_InitTypeDef</scope><name>NVIC_IRQChannelCmd</name></member>
+      <member refid="struct_n_v_i_c___init_type_def_1adc8226d770dbf7513448c12e14f30198" prot="public" virt="non-virtual"><scope>NVIC_InitTypeDef</scope><name>NVIC_IRQChannelPreemptionPriority</name></member>
+      <member refid="struct_n_v_i_c___init_type_def_1a0d908a33a2250776d6016117a3b874aa" prot="public" virt="non-virtual"><scope>NVIC_InitTypeDef</scope><name>NVIC_IRQChannelSubPriority</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

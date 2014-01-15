@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structdma__channel__reg__map" kind="struct" prot="public">
+    <compoundname>dma_channel_reg_map</compoundname>
+    <includes refid="dma_8h" local="no">dma.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdma__channel__reg__map_1acc7d75d79e01cb8c33126cc49dd5f3e4" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_channel_reg_map::CCR</definition>
+        <argsstring></argsstring>
+        <name>CCR</name>
+        <briefdescription>
+<para>Channel configuration register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="385" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__channel__reg__map_1ab837164625bb51b79aeca17e3a86c53f" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_channel_reg_map::CNDTR</definition>
+        <argsstring></argsstring>
+        <name>CNDTR</name>
+        <briefdescription>
+<para>Channel number of data register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="386" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__channel__reg__map_1a04591a2895e9b08079413fd69692fd46" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_channel_reg_map::CPAR</definition>
+        <argsstring></argsstring>
+        <name>CPAR</name>
+        <briefdescription>
+<para>Channel peripheral address register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="387" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdma__channel__reg__map_1acf1a1214e3b12ca02b2de9608ed5b14b" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 dma_channel_reg_map::CMAR</definition>
+        <argsstring></argsstring>
+        <name>CMAR</name>
+        <briefdescription>
+<para>Channel memory address register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="388" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>DMA channel register map type. </para>    </briefdescription>
+    <detaileddescription>
+<para>Provides access to an individual channel&apos;s registers. </para>    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/dma.h" line="384" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/dma.h" bodystart="384" bodyend="389"/>
+    <listofallmembers>
+      <member refid="structdma__channel__reg__map_1acc7d75d79e01cb8c33126cc49dd5f3e4" prot="public" virt="non-virtual"><scope>dma_channel_reg_map</scope><name>CCR</name></member>
+      <member refid="structdma__channel__reg__map_1acf1a1214e3b12ca02b2de9608ed5b14b" prot="public" virt="non-virtual"><scope>dma_channel_reg_map</scope><name>CMAR</name></member>
+      <member refid="structdma__channel__reg__map_1ab837164625bb51b79aeca17e3a86c53f" prot="public" virt="non-virtual"><scope>dma_channel_reg_map</scope><name>CNDTR</name></member>
+      <member refid="structdma__channel__reg__map_1a04591a2895e9b08079413fd69692fd46" prot="public" virt="non-virtual"><scope>dma_channel_reg_map</scope><name>CPAR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

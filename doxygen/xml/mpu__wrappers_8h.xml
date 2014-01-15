@@ -1,0 +1,711 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="mpu__wrappers_8h" kind="file">
+    <compoundname>mpu_wrappers.h</compoundname>
+    <includedby refid="portable_8h" local="yes">libraries/FreeRTOS/utility/portable.h</includedby>
+    <includedby refid="queue_8h" local="yes">libraries/FreeRTOS/utility/queue.h</includedby>
+    <invincdepgraph>
+      <node id="1223">
+        <label>libraries/FreeRTOS/utility/timers.h</label>
+        <link refid="timers_8h_source"/>
+        <childnode refid="1220" relation="include">
+        </childnode>
+        <childnode refid="1221" relation="include">
+        </childnode>
+      </node>
+      <node id="1213">
+        <label>libraries/FreeRTOS/utility/FreeRTOS.h</label>
+        <link refid="_free_r_t_o_s_8h_source"/>
+        <childnode refid="1214" relation="include">
+        </childnode>
+        <childnode refid="1215" relation="include">
+        </childnode>
+        <childnode refid="1216" relation="include">
+        </childnode>
+        <childnode refid="1217" relation="include">
+        </childnode>
+        <childnode refid="1218" relation="include">
+        </childnode>
+        <childnode refid="1219" relation="include">
+        </childnode>
+        <childnode refid="1220" relation="include">
+        </childnode>
+        <childnode refid="1221" relation="include">
+        </childnode>
+      </node>
+      <node id="1220">
+        <label>libraries/FreeRTOS/utility/tasks.c</label>
+        <link refid="tasks_8c_source"/>
+      </node>
+      <node id="1212">
+        <label>libraries/FreeRTOS/utility/portable.h</label>
+        <link refid="portable_8h_source"/>
+        <childnode refid="1213" relation="include">
+        </childnode>
+        <childnode refid="1222" relation="include">
+        </childnode>
+        <childnode refid="1223" relation="include">
+        </childnode>
+      </node>
+      <node id="1222">
+        <label>libraries/FreeRTOS/utility/task.h</label>
+        <link refid="task_8h_source"/>
+        <childnode refid="1214" relation="include">
+        </childnode>
+        <childnode refid="1215" relation="include">
+        </childnode>
+        <childnode refid="1216" relation="include">
+        </childnode>
+        <childnode refid="1218" relation="include">
+        </childnode>
+        <childnode refid="1219" relation="include">
+        </childnode>
+        <childnode refid="1220" relation="include">
+        </childnode>
+        <childnode refid="1221" relation="include">
+        </childnode>
+      </node>
+      <node id="1219">
+        <label>libraries/FreeRTOS/utility/queue.c</label>
+        <link refid="queue_8c_source"/>
+      </node>
+      <node id="1224">
+        <label>libraries/FreeRTOS/utility/queue.h</label>
+        <link refid="queue_8h_source"/>
+        <childnode refid="1214" relation="include">
+        </childnode>
+        <childnode refid="1225" relation="include">
+        </childnode>
+        <childnode refid="1221" relation="include">
+        </childnode>
+      </node>
+      <node id="1216">
+        <label>libraries/FreeRTOS/utility/heap_2.c</label>
+        <link refid="heap__2_8c_source"/>
+      </node>
+      <node id="1218">
+        <label>libraries/FreeRTOS/utility/port.c</label>
+        <link refid="port_8c_source"/>
+      </node>
+      <node id="1225">
+        <label>libraries/FreeRTOS/utility/semphr.h</label>
+        <link refid="semphr_8h_source"/>
+        <childnode refid="1214" relation="include">
+        </childnode>
+      </node>
+      <node id="1215">
+        <label>libraries/FreeRTOS/utility/croutine.c</label>
+        <link refid="croutine_8c_source"/>
+      </node>
+      <node id="1217">
+        <label>libraries/FreeRTOS/utility/list.c</label>
+        <link refid="list_8c_source"/>
+      </node>
+      <node id="1214">
+        <label>libraries/FreeRTOS/MapleFreeRTOS.h</label>
+        <link refid="_maple_free_r_t_o_s_8h_source"/>
+      </node>
+      <node id="1211">
+        <label>libraries/FreeRTOS/utility/mpu_wrappers.h</label>
+        <link refid="mpu_wrappers.h"/>
+        <childnode refid="1212" relation="include">
+        </childnode>
+        <childnode refid="1224" relation="include">
+        </childnode>
+      </node>
+      <node id="1221">
+        <label>libraries/FreeRTOS/utility/timers.c</label>
+        <link refid="timers_8c_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="mpu__wrappers_8h_1a6442889647ce88751225bb0427b9f99e" prot="public" static="no">
+        <name>xTaskGenericCreate</name>
+        <initializer>MPU_xTaskGenericCreate</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="72" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1a7281bf835ceca66e06face30635a067e" prot="public" static="no">
+        <name>vTaskAllocateMPURegions</name>
+        <initializer>MPU_vTaskAllocateMPURegions</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="73" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1a9883db7b4c6fd9d6e321d9ddfa50f4c7" prot="public" static="no">
+        <name>vTaskDelete</name>
+        <initializer>MPU_vTaskDelete</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="74" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1a3727eaaf17270ad885fafde2ca3849bd" prot="public" static="no">
+        <name>vTaskDelayUntil</name>
+        <initializer>MPU_vTaskDelayUntil</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="75" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1aeb7708fd9a021ed19e87357cd16a25e6" prot="public" static="no">
+        <name>vTaskDelay</name>
+        <initializer>MPU_vTaskDelay</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="76" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1acdb4eb15b3b0abce9fff3011365f235f" prot="public" static="no">
+        <name>uxTaskPriorityGet</name>
+        <initializer>MPU_uxTaskPriorityGet</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="77" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1aa3e8ea4d4138e29cd3ec7d1f5ec1ffea" prot="public" static="no">
+        <name>vTaskPrioritySet</name>
+        <initializer>MPU_vTaskPrioritySet</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="78" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1a8bef8cabef17e1a842d4c9c1c6dcdcad" prot="public" static="no">
+        <name>vTaskSuspend</name>
+        <initializer>MPU_vTaskSuspend</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="79" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1a72cd695d69e54932517fd69b91032b02" prot="public" static="no">
+        <name>xTaskIsTaskSuspended</name>
+        <initializer>MPU_xTaskIsTaskSuspended</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="80" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1a1f1f0849c306fe31d821996719ffb73b" prot="public" static="no">
+        <name>vTaskResume</name>
+        <initializer>MPU_vTaskResume</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="81" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1ac987f4c7f5aa0a9a079a68ca619dce06" prot="public" static="no">
+        <name>vTaskSuspendAll</name>
+        <initializer>MPU_vTaskSuspendAll</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="82" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1aab42e9347e4b1584e777f1dd4a4f6d56" prot="public" static="no">
+        <name>xTaskResumeAll</name>
+        <initializer>MPU_xTaskResumeAll</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="83" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1a75bf627256fb610bcdbea3e76b8321a4" prot="public" static="no">
+        <name>xTaskGetTickCount</name>
+        <initializer>MPU_xTaskGetTickCount</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="84" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1ad17e32ff320f56344aecc2e01566b1e4" prot="public" static="no">
+        <name>uxTaskGetNumberOfTasks</name>
+        <initializer>MPU_uxTaskGetNumberOfTasks</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="85" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1a6f1d60d70d55826bd598fb6848e4718a" prot="public" static="no">
+        <name>vTaskList</name>
+        <initializer>MPU_vTaskList</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="86" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1a5ed7f6b363fccf82d899ebb772b146b0" prot="public" static="no">
+        <name>vTaskGetRunTimeStats</name>
+        <initializer>MPU_vTaskGetRunTimeStats</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="87" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1a53a6d4ef070551d9a7367980e90fd0d7" prot="public" static="no">
+        <name>vTaskStartTrace</name>
+        <initializer>MPU_vTaskStartTrace</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="88" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1ab0262e866139ec0dac1e5f0a574f6217" prot="public" static="no">
+        <name>ulTaskEndTrace</name>
+        <initializer>MPU_ulTaskEndTrace</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="89" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1a1e2f7a8de671ce9450d943fefacd3560" prot="public" static="no">
+        <name>vTaskSetApplicationTaskTag</name>
+        <initializer>MPU_vTaskSetApplicationTaskTag</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="90" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1ae2ace5bb349a4064681e124e225bfd32" prot="public" static="no">
+        <name>xTaskGetApplicationTaskTag</name>
+        <initializer>MPU_xTaskGetApplicationTaskTag</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="91" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1a27789847045b308a9ba93c988419ae94" prot="public" static="no">
+        <name>xTaskCallApplicationTaskHook</name>
+        <initializer>MPU_xTaskCallApplicationTaskHook</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="92" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1a4463c4c5e379b07f44780b732f13158d" prot="public" static="no">
+        <name>uxTaskGetStackHighWaterMark</name>
+        <initializer>MPU_uxTaskGetStackHighWaterMark</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="93" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1a25c8cab3b95c259badbd7b5195cf5cac" prot="public" static="no">
+        <name>xTaskGetCurrentTaskHandle</name>
+        <initializer>MPU_xTaskGetCurrentTaskHandle</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="94" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1af21a3dd67221742ed36d28e89620a5c0" prot="public" static="no">
+        <name>xTaskGetSchedulerState</name>
+        <initializer>MPU_xTaskGetSchedulerState</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="95" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1a270f1eae3a0b78daa6a28094b49464ac" prot="public" static="no">
+        <name>xQueueCreate</name>
+        <initializer>MPU_xQueueCreate</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="97" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1a0d9469b797e7af8c70815d0664eebd22" prot="public" static="no">
+        <name>xQueueCreateMutex</name>
+        <initializer>MPU_xQueueCreateMutex</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="98" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1ab32520b661678bc45c93e17c1ab7cd57" prot="public" static="no">
+        <name>xQueueGiveMutexRecursive</name>
+        <initializer>MPU_xQueueGiveMutexRecursive</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="99" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1ab287faba7799526dab9dbe3014154f74" prot="public" static="no">
+        <name>xQueueTakeMutexRecursive</name>
+        <initializer>MPU_xQueueTakeMutexRecursive</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="100" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1ab05bbc177485aff5b13b164e8b548c32" prot="public" static="no">
+        <name>xQueueCreateCountingSemaphore</name>
+        <initializer>MPU_xQueueCreateCountingSemaphore</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="101" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1a6d90bcd6e8a4e581dd65e18d939bcd72" prot="public" static="no">
+        <name>xQueueGenericSend</name>
+        <initializer>MPU_xQueueGenericSend</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="102" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1a018ee2d834a4c1f8eb15f6bd084d2d36" prot="public" static="no">
+        <name>xQueueAltGenericSend</name>
+        <initializer>MPU_xQueueAltGenericSend</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="103" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1a0693e61851608e5d0e95e8b54a735059" prot="public" static="no">
+        <name>xQueueAltGenericReceive</name>
+        <initializer>MPU_xQueueAltGenericReceive</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="104" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1a19ede9b89ed5fcb7c907e7e5636bfd46" prot="public" static="no">
+        <name>xQueueGenericReceive</name>
+        <initializer>MPU_xQueueGenericReceive</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="105" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1aed6ebc79390f5ccff8e9f3d9b79459b6" prot="public" static="no">
+        <name>uxQueueMessagesWaiting</name>
+        <initializer>MPU_uxQueueMessagesWaiting</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="106" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1a5f5284a12f85f1d67dcc9a85adc75774" prot="public" static="no">
+        <name>vQueueDelete</name>
+        <initializer>MPU_vQueueDelete</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="107" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1a4d523dc6c079459faa62130465595246" prot="public" static="no">
+        <name>pvPortMalloc</name>
+        <initializer>MPU_pvPortMalloc</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="109" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1a5e70e878c0ed79ab346b5eab7e93ddff" prot="public" static="no">
+        <name>vPortFree</name>
+        <initializer>MPU_vPortFree</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="110" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1a3084abcbfbf4e137bf33c0c4cc7aff7f" prot="public" static="no">
+        <name>xPortGetFreeHeapSize</name>
+        <initializer>MPU_xPortGetFreeHeapSize</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="111" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1a78d309e0df87daae9c897e7d7921cd8c" prot="public" static="no">
+        <name>vPortInitialiseBlocks</name>
+        <initializer>MPU_vPortInitialiseBlocks</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="112" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mpu__wrappers_8h_1a4785c4f4a8c04b835139dcc2a6682078" prot="public" static="no">
+        <name>PRIVILEGED_FUNCTION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" line="120" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>V7.0.1<sp/>-<sp/>Copyright<sp/>(C)<sp/>2011<sp/>Real<sp/>Time<sp/>Engineers<sp/>Ltd.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>supports<sp/>many<sp/>tools<sp/>and<sp/>architectures.<sp/>V7.0.0<sp/>is<sp/>sponsored<sp/>by:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>Atollic<sp/>AB<sp/>-<sp/>Atollic<sp/>provides<sp/>professional<sp/>embedded<sp/>systems<sp/>development<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>tools<sp/>for<sp/>C/C++<sp/>development,<sp/>code<sp/>analysis<sp/>and<sp/>test<sp/>automation.<sp/><sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>See<sp/>http://www.atollic.com</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>***************************************************************************</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>FreeRTOS<sp/>tutorial<sp/>books<sp/>are<sp/>available<sp/>in<sp/>pdf<sp/>and<sp/>paperback.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>Complete,<sp/>revised,<sp/>and<sp/>edited<sp/>pdf<sp/>reference<sp/>manuals<sp/>are<sp/>also<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>available.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>Purchasing<sp/>FreeRTOS<sp/>documentation<sp/>will<sp/>not<sp/>only<sp/>help<sp/>you,<sp/>by<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>ensuring<sp/>you<sp/>get<sp/>running<sp/>as<sp/>quickly<sp/>as<sp/>possible<sp/>and<sp/>with<sp/>an<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>in-depth<sp/>knowledge<sp/>of<sp/>how<sp/>to<sp/>use<sp/>FreeRTOS,<sp/>it<sp/>will<sp/>also<sp/>help<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>the<sp/>FreeRTOS<sp/>project<sp/>to<sp/>continue<sp/>with<sp/>its<sp/>mission<sp/>of<sp/>providing<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>professional<sp/>grade,<sp/>cross<sp/>platform,<sp/>de<sp/>facto<sp/>standard<sp/>solutions<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>for<sp/>microcontrollers<sp/>-<sp/>completely<sp/>free<sp/>of<sp/>charge!<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>&gt;&gt;&gt;<sp/>See<sp/>http://www.FreeRTOS.org/Documentation<sp/>for<sp/>details.<sp/>&lt;&lt;&lt;<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>Thank<sp/>you<sp/>for<sp/>using<sp/>FreeRTOS,<sp/>and<sp/>thank<sp/>you<sp/>for<sp/>your<sp/>support!<sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/>***************************************************************************</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"></highlight></codeline>
+<codeline lineno="30"><highlight class="comment"></highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>FreeRTOS<sp/>distribution.</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"></highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it<sp/>under</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>(version<sp/>2)<sp/>as<sp/>published<sp/>by<sp/>the</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/>Free<sp/>Software<sp/>Foundation<sp/>AND<sp/>MODIFIED<sp/>BY<sp/>the<sp/>FreeRTOS<sp/>exception.</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/>&gt;&gt;&gt;NOTE&lt;&lt;&lt;<sp/>The<sp/>modification<sp/>to<sp/>the<sp/>GPL<sp/>is<sp/>included<sp/>to<sp/>allow<sp/>you<sp/>to</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/>distribute<sp/>a<sp/>combined<sp/>work<sp/>that<sp/>includes<sp/>FreeRTOS<sp/>without<sp/>being<sp/>obliged<sp/>to</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/>provide<sp/>the<sp/>source<sp/>code<sp/>for<sp/>proprietary<sp/>components<sp/>outside<sp/>of<sp/>the<sp/>FreeRTOS</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/>kernel.<sp/><sp/>FreeRTOS<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/>MERCHANTABILITY</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/><sp/><sp/>more<sp/>details.<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/><sp/>License<sp/>and<sp/>the<sp/>FreeRTOS<sp/>license<sp/>exception<sp/>along<sp/>with<sp/>FreeRTOS;<sp/>if<sp/>not<sp/>it</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/><sp/><sp/>can<sp/>be<sp/>viewed<sp/>here:<sp/>http://www.freertos.org/a00114.html<sp/>and<sp/>also<sp/>obtained</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/><sp/><sp/>by<sp/>writing<sp/>to<sp/>Richard<sp/>Barry,<sp/>contact<sp/>details<sp/>for<sp/>whom<sp/>are<sp/>available<sp/>on<sp/>the</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>WEB<sp/>site.</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"></highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/><sp/><sp/>1<sp/>tab<sp/>==<sp/>4<sp/>spaces!</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"></highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.FreeRTOS.org<sp/>-<sp/>Documentation,<sp/>latest<sp/>information,<sp/>license<sp/>and</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/>contact<sp/>details.</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"></highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.SafeRTOS.com<sp/>-<sp/>A<sp/>version<sp/>that<sp/>is<sp/>certified<sp/>for<sp/>use<sp/>in<sp/>safety</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/><sp/><sp/><sp/>critical<sp/>systems.</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"></highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.OpenRTOS.com<sp/>-<sp/>Commercial<sp/>support,<sp/>development,<sp/>porting,</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/><sp/><sp/>licensing<sp/>and<sp/>training<sp/>services.</highlight></codeline>
+<codeline lineno="58"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MPU_WRAPPERS_H</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MPU_WRAPPERS_H</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>This<sp/>file<sp/>redefines<sp/>API<sp/>functions<sp/>to<sp/>be<sp/>called<sp/>through<sp/>a<sp/>wrapper<sp/>macro,<sp/>but</highlight></codeline>
+<codeline lineno="64"><highlight class="comment">only<sp/>for<sp/>ports<sp/>that<sp/>are<sp/>using<sp/>the<sp/>MPU.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>portUSING_MPU_WRAPPERS</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>MPU_WRAPPERS_INCLUDED_FROM_API_FILE<sp/>will<sp/>be<sp/>defined<sp/>when<sp/>this<sp/>file<sp/>is</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/><sp/><sp/><sp/>included<sp/>from<sp/>queue.c<sp/>or<sp/>task.c<sp/>to<sp/>prevent<sp/>it<sp/>from<sp/>having<sp/>an<sp/>effect<sp/>within</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/><sp/><sp/><sp/>those<sp/>files.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifndef<sp/>MPU_WRAPPERS_INCLUDED_FROM_API_FILE</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>xTaskGenericCreate<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_xTaskGenericCreate</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>vTaskAllocateMPURegions<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_vTaskAllocateMPURegions</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>vTaskDelete<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_vTaskDelete</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>vTaskDelayUntil<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_vTaskDelayUntil</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>vTaskDelay<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_vTaskDelay</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>uxTaskPriorityGet<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_uxTaskPriorityGet</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>vTaskPrioritySet<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_vTaskPrioritySet</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>vTaskSuspend<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_vTaskSuspend</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>xTaskIsTaskSuspended<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_xTaskIsTaskSuspended</highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>vTaskResume<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_vTaskResume</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>vTaskSuspendAll<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_vTaskSuspendAll</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>xTaskResumeAll<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_xTaskResumeAll</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>xTaskGetTickCount<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_xTaskGetTickCount</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>uxTaskGetNumberOfTasks<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_uxTaskGetNumberOfTasks</highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>vTaskList<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_vTaskList</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>vTaskGetRunTimeStats<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_vTaskGetRunTimeStats</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>vTaskStartTrace<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_vTaskStartTrace</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>ulTaskEndTrace<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_ulTaskEndTrace</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>vTaskSetApplicationTaskTag<sp/><sp/><sp/><sp/><sp/><sp/>MPU_vTaskSetApplicationTaskTag</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>xTaskGetApplicationTaskTag<sp/><sp/><sp/><sp/><sp/><sp/>MPU_xTaskGetApplicationTaskTag</highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>xTaskCallApplicationTaskHook<sp/><sp/><sp/><sp/>MPU_xTaskCallApplicationTaskHook</highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>uxTaskGetStackHighWaterMark<sp/><sp/><sp/><sp/><sp/>MPU_uxTaskGetStackHighWaterMark</highlight></codeline>
+<codeline lineno="94"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>xTaskGetCurrentTaskHandle<sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_xTaskGetCurrentTaskHandle</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>xTaskGetSchedulerState<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_xTaskGetSchedulerState</highlight></codeline>
+<codeline lineno="96"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>xQueueCreate<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_xQueueCreate</highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>xQueueCreateMutex<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_xQueueCreateMutex</highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>xQueueGiveMutexRecursive<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_xQueueGiveMutexRecursive</highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>xQueueTakeMutexRecursive<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_xQueueTakeMutexRecursive</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>xQueueCreateCountingSemaphore<sp/><sp/><sp/>MPU_xQueueCreateCountingSemaphore</highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>xQueueGenericSend<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_xQueueGenericSend</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>xQueueAltGenericSend<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_xQueueAltGenericSend</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>xQueueAltGenericReceive<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_xQueueAltGenericReceive</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>xQueueGenericReceive<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_xQueueGenericReceive</highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>uxQueueMessagesWaiting<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_uxQueueMessagesWaiting</highlight></codeline>
+<codeline lineno="107"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>vQueueDelete<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_vQueueDelete</highlight></codeline>
+<codeline lineno="108"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>pvPortMalloc<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_pvPortMalloc</highlight></codeline>
+<codeline lineno="110"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>vPortFree<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_vPortFree</highlight></codeline>
+<codeline lineno="111"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>xPortGetFreeHeapSize<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_xPortGetFreeHeapSize</highlight></codeline>
+<codeline lineno="112"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>vPortInitialiseBlocks<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_vPortInitialiseBlocks</highlight></codeline>
+<codeline lineno="113"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#if<sp/>configQUEUE_REGISTRY_SIZE<sp/>&gt;<sp/>0</highlight></codeline>
+<codeline lineno="115"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>vQueueAddToRegistry<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_vQueueAddToRegistry</highlight></codeline>
+<codeline lineno="116"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>vQueueUnregisterQueue<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MPU_vQueueUnregisterQueue</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="118"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Remove<sp/>the<sp/>privileged<sp/>function<sp/>macro.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>PRIVILEGED_FUNCTION</highlight></codeline>
+<codeline lineno="121"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#else<sp/></highlight><highlight class="comment">/*<sp/>MPU_WRAPPERS_INCLUDED_FROM_API_FILE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Ensure<sp/>API<sp/>functions<sp/>go<sp/>in<sp/>the<sp/>privileged<sp/>execution<sp/>section.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>PRIVILEGED_FUNCTION<sp/>__attribute__((section(&quot;privileged_functions&quot;)))</highlight></codeline>
+<codeline lineno="126"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>PRIVILEGED_DATA<sp/>__attribute__((section(&quot;privileged_data&quot;)))</highlight></codeline>
+<codeline lineno="127"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//#define<sp/>PRIVILEGED_DATA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif<sp/></highlight><highlight class="comment">/*<sp/>MPU_WRAPPERS_INCLUDED_FROM_API_FILE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/></highlight><highlight class="comment">/*<sp/>portUSING_MPU_WRAPPERS<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>PRIVILEGED_FUNCTION</highlight></codeline>
+<codeline lineno="134"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>PRIVILEGED_DATA</highlight></codeline>
+<codeline lineno="135"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>portUSING_MPU_WRAPPERS<sp/>0</highlight></codeline>
+<codeline lineno="136"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>portUSING_MPU_WRAPPERS<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>MPU_WRAPPERS_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/mpu_wrappers.h"/>
+  </compounddef>
+</doxygen>

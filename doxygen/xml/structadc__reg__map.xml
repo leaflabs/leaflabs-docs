@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structadc__reg__map" kind="struct" prot="public">
+    <compoundname>adc_reg_map</compoundname>
+    <includes refid="adc_8h" local="no">adc.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structadc__reg__map_1a6353efa587df48ed29b578bb42e7db0b" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 adc_reg_map::SR</definition>
+        <argsstring></argsstring>
+        <name>SR</name>
+        <briefdescription>
+<para>Status register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="46" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structadc__reg__map_1a9c508f1d9f8b60215ea7cc8df4e48a89" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 adc_reg_map::CR1</definition>
+        <argsstring></argsstring>
+        <name>CR1</name>
+        <briefdescription>
+<para>Control register 1. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="47" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structadc__reg__map_1a5a59370540ebbf41d1a05ce5645ff1e6" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 adc_reg_map::CR2</definition>
+        <argsstring></argsstring>
+        <name>CR2</name>
+        <briefdescription>
+<para>Control register 2. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="48" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structadc__reg__map_1a1783cf2c5217280b1b0353f030f68cfd" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 adc_reg_map::SMPR1</definition>
+        <argsstring></argsstring>
+        <name>SMPR1</name>
+        <briefdescription>
+<para>Sample time register 1. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="49" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structadc__reg__map_1a465ba27397cc1369798a27aaeb43b23c" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 adc_reg_map::SMPR2</definition>
+        <argsstring></argsstring>
+        <name>SMPR2</name>
+        <briefdescription>
+<para>Sample time register 2. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="50" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structadc__reg__map_1ac0a911103bc1d64e9d00f2884acf3de7" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 adc_reg_map::JOFR1</definition>
+        <argsstring></argsstring>
+        <name>JOFR1</name>
+        <briefdescription>
+<para>Injected channel data offset register 1. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="51" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structadc__reg__map_1ab6b7152a392b5272eecd84b4723b4a37" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 adc_reg_map::JOFR2</definition>
+        <argsstring></argsstring>
+        <name>JOFR2</name>
+        <briefdescription>
+<para>Injected channel data offset register 2. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="52" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structadc__reg__map_1a470f1615b67380d0a2078097dcd6787d" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 adc_reg_map::JOFR3</definition>
+        <argsstring></argsstring>
+        <name>JOFR3</name>
+        <briefdescription>
+<para>Injected channel data offset register 3. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="53" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structadc__reg__map_1ae5eafb7719e94d062d9f9df4aa4c90fa" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 adc_reg_map::JOFR4</definition>
+        <argsstring></argsstring>
+        <name>JOFR4</name>
+        <briefdescription>
+<para>Injected channel data offset register 4. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="54" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structadc__reg__map_1ab9fd6de1f2fced9ee9ff475f51225e8a" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 adc_reg_map::HTR</definition>
+        <argsstring></argsstring>
+        <name>HTR</name>
+        <briefdescription>
+<para>Watchdog high threshold register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="55" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structadc__reg__map_1a4a2353ec9d80b39c8b2b261ab99f8cb9" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 adc_reg_map::LTR</definition>
+        <argsstring></argsstring>
+        <name>LTR</name>
+        <briefdescription>
+<para>Watchdog low threshold register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="56" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structadc__reg__map_1abf9ae5ccaf187b92844015dbe5d0e854" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 adc_reg_map::SQR1</definition>
+        <argsstring></argsstring>
+        <name>SQR1</name>
+        <briefdescription>
+<para>Regular sequence register 1. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="57" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structadc__reg__map_1ab81feeca8cd7953d7ba3d58ad4b65f55" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 adc_reg_map::SQR2</definition>
+        <argsstring></argsstring>
+        <name>SQR2</name>
+        <briefdescription>
+<para>Regular sequence register 2. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="58" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structadc__reg__map_1ab4443c5e93afb9b4e95afaf9fa07fe73" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 adc_reg_map::SQR3</definition>
+        <argsstring></argsstring>
+        <name>SQR3</name>
+        <briefdescription>
+<para>Regular sequence register 3. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="59" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structadc__reg__map_1a64ea948da35502344f963a7fa742e122" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 adc_reg_map::JSQR</definition>
+        <argsstring></argsstring>
+        <name>JSQR</name>
+        <briefdescription>
+<para>Injected sequence register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="60" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structadc__reg__map_1aae40f40ad4df09fcc8fa708699f5c861" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 adc_reg_map::JDR1</definition>
+        <argsstring></argsstring>
+        <name>JDR1</name>
+        <briefdescription>
+<para>Injected data register 1. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="61" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structadc__reg__map_1a261f8d73474d678dd2f0709a01800d93" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 adc_reg_map::JDR2</definition>
+        <argsstring></argsstring>
+        <name>JDR2</name>
+        <briefdescription>
+<para>Injected data register 2. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="62" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structadc__reg__map_1ae685d988faba19f95106f931d3ed15a2" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 adc_reg_map::JDR3</definition>
+        <argsstring></argsstring>
+        <name>JDR3</name>
+        <briefdescription>
+<para>Injected data register 3. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="63" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structadc__reg__map_1a6e6ad8427b381243e4fbbe3946d68e88" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 adc_reg_map::JDR4</definition>
+        <argsstring></argsstring>
+        <name>JDR4</name>
+        <briefdescription>
+<para>Injected data register 4. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="64" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structadc__reg__map_1ad5f04a2ecbaaf2381169bf5300eabbeb" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 adc_reg_map::DR</definition>
+        <argsstring></argsstring>
+        <name>DR</name>
+        <briefdescription>
+<para>Regular data register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="65" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ADC register map type. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/adc.h" line="45" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/adc.h" bodystart="45" bodyend="66"/>
+    <listofallmembers>
+      <member refid="structadc__reg__map_1a9c508f1d9f8b60215ea7cc8df4e48a89" prot="public" virt="non-virtual"><scope>adc_reg_map</scope><name>CR1</name></member>
+      <member refid="structadc__reg__map_1a5a59370540ebbf41d1a05ce5645ff1e6" prot="public" virt="non-virtual"><scope>adc_reg_map</scope><name>CR2</name></member>
+      <member refid="structadc__reg__map_1ad5f04a2ecbaaf2381169bf5300eabbeb" prot="public" virt="non-virtual"><scope>adc_reg_map</scope><name>DR</name></member>
+      <member refid="structadc__reg__map_1ab9fd6de1f2fced9ee9ff475f51225e8a" prot="public" virt="non-virtual"><scope>adc_reg_map</scope><name>HTR</name></member>
+      <member refid="structadc__reg__map_1aae40f40ad4df09fcc8fa708699f5c861" prot="public" virt="non-virtual"><scope>adc_reg_map</scope><name>JDR1</name></member>
+      <member refid="structadc__reg__map_1a261f8d73474d678dd2f0709a01800d93" prot="public" virt="non-virtual"><scope>adc_reg_map</scope><name>JDR2</name></member>
+      <member refid="structadc__reg__map_1ae685d988faba19f95106f931d3ed15a2" prot="public" virt="non-virtual"><scope>adc_reg_map</scope><name>JDR3</name></member>
+      <member refid="structadc__reg__map_1a6e6ad8427b381243e4fbbe3946d68e88" prot="public" virt="non-virtual"><scope>adc_reg_map</scope><name>JDR4</name></member>
+      <member refid="structadc__reg__map_1ac0a911103bc1d64e9d00f2884acf3de7" prot="public" virt="non-virtual"><scope>adc_reg_map</scope><name>JOFR1</name></member>
+      <member refid="structadc__reg__map_1ab6b7152a392b5272eecd84b4723b4a37" prot="public" virt="non-virtual"><scope>adc_reg_map</scope><name>JOFR2</name></member>
+      <member refid="structadc__reg__map_1a470f1615b67380d0a2078097dcd6787d" prot="public" virt="non-virtual"><scope>adc_reg_map</scope><name>JOFR3</name></member>
+      <member refid="structadc__reg__map_1ae5eafb7719e94d062d9f9df4aa4c90fa" prot="public" virt="non-virtual"><scope>adc_reg_map</scope><name>JOFR4</name></member>
+      <member refid="structadc__reg__map_1a64ea948da35502344f963a7fa742e122" prot="public" virt="non-virtual"><scope>adc_reg_map</scope><name>JSQR</name></member>
+      <member refid="structadc__reg__map_1a4a2353ec9d80b39c8b2b261ab99f8cb9" prot="public" virt="non-virtual"><scope>adc_reg_map</scope><name>LTR</name></member>
+      <member refid="structadc__reg__map_1a1783cf2c5217280b1b0353f030f68cfd" prot="public" virt="non-virtual"><scope>adc_reg_map</scope><name>SMPR1</name></member>
+      <member refid="structadc__reg__map_1a465ba27397cc1369798a27aaeb43b23c" prot="public" virt="non-virtual"><scope>adc_reg_map</scope><name>SMPR2</name></member>
+      <member refid="structadc__reg__map_1abf9ae5ccaf187b92844015dbe5d0e854" prot="public" virt="non-virtual"><scope>adc_reg_map</scope><name>SQR1</name></member>
+      <member refid="structadc__reg__map_1ab81feeca8cd7953d7ba3d58ad4b65f55" prot="public" virt="non-virtual"><scope>adc_reg_map</scope><name>SQR2</name></member>
+      <member refid="structadc__reg__map_1ab4443c5e93afb9b4e95afaf9fa07fe73" prot="public" virt="non-virtual"><scope>adc_reg_map</scope><name>SQR3</name></member>
+      <member refid="structadc__reg__map_1a6353efa587df48ed29b578bb42e7db0b" prot="public" virt="non-virtual"><scope>adc_reg_map</scope><name>SR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

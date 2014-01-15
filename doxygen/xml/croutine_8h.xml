@@ -1,0 +1,480 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="croutine_8h" kind="file">
+    <compoundname>croutine.h</compoundname>
+    <includes refid="list_8h" local="yes">list.h</includes>
+    <includedby refid="croutine_8c" local="yes">libraries/FreeRTOS/utility/croutine.c</includedby>
+    <includedby refid="queue_8c" local="yes">libraries/FreeRTOS/utility/queue.c</includedby>
+    <incdepgraph>
+      <node id="1142">
+        <label>libraries/FreeRTOS/utility/croutine.h</label>
+        <link refid="croutine.h"/>
+        <childnode refid="1143" relation="include">
+        </childnode>
+      </node>
+      <node id="1143">
+        <label>list.h</label>
+        <link refid="list_8h_source"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1146">
+        <label>libraries/FreeRTOS/utility/queue.c</label>
+        <link refid="queue_8c_source"/>
+      </node>
+      <node id="1145">
+        <label>libraries/FreeRTOS/utility/croutine.c</label>
+        <link refid="croutine_8c_source"/>
+      </node>
+      <node id="1144">
+        <label>libraries/FreeRTOS/utility/croutine.h</label>
+        <link refid="croutine.h"/>
+        <childnode refid="1145" relation="include">
+        </childnode>
+        <childnode refid="1146" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structcor_c_r_c_b" prot="public">corCRCB</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="croutine_8h_1a19a57a201a325e8af1207ed68c4aedde" prot="public" static="no">
+        <name>crSTART</name>
+        <param><defname>pxCRCB</defname></param>
+        <initializer>switch( ( ( <ref refid="structcor_c_r_c_b" kindref="compound">corCRCB</ref> * )( pxCRCB ) )-&gt;uxState ) { case 0:</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" line="236" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="croutine_8h_1ae6038cc976689b50000475ebfc4e2f23" prot="public" static="no">
+        <name>crEND</name>
+        <param></param>
+        <initializer>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" line="267" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="croutine_8h_1aa8ec8c0192674b896b04df1f82d679f7" prot="public" static="no">
+        <name>crSET_STATE0</name>
+        <param><defname>xHandle</defname></param>
+        <initializer>( ( <ref refid="structcor_c_r_c_b" kindref="compound">corCRCB</ref> * )( xHandle ) )-&gt;uxState = (__LINE__ * 2); return; case (__LINE__ * 2):</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" line="273" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="croutine_8h_1a345ffc731dc40152bfb1162453ecc1f7" prot="public" static="no">
+        <name>crSET_STATE1</name>
+        <param><defname>xHandle</defname></param>
+        <initializer>( ( <ref refid="structcor_c_r_c_b" kindref="compound">corCRCB</ref> * )( xHandle ) )-&gt;uxState = ((__LINE__ * 2)+1); return; case ((__LINE__ * 2)+1):</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" line="274" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="croutine_8h_1a05a06feb11028f2d1d440ea335f562ba" prot="public" static="no">
+        <name>crDELAY</name>
+        <param><defname>xHandle</defname></param>
+        <param><defname>xTicksToDelay</defname></param>
+        <initializer>if( ( xTicksToDelay ) &gt; 0 )															\
+	{																					\
+		vCoRoutineAddToDelayedList( ( xTicksToDelay ), NULL );							\
+	}																					\
+	crSET_STATE0( ( xHandle ) );</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" line="327" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="croutine_8h_1a26af3d36f22a04168eebdf5b08465d6e" prot="public" static="no">
+        <name>crQUEUE_SEND</name>
+        <param><defname>xHandle</defname></param>
+        <param><defname>pxQueue</defname></param>
+        <param><defname>pvItemToQueue</defname></param>
+        <param><defname>xTicksToWait</defname></param>
+        <param><defname>pxResult</defname></param>
+        <initializer>{																						\
+	*( pxResult ) = xQueueCRSend( ( pxQueue) , ( pvItemToQueue) , ( xTicksToWait ) );	\
+	if( *( pxResult ) == errQUEUE_BLOCKED )												\
+	{																					\
+		crSET_STATE0( ( xHandle ) );													\
+		*pxResult = xQueueCRSend( ( pxQueue ), ( pvItemToQueue ), 0 );					\
+	}																					\
+	if( *pxResult == errQUEUE_YIELD )													\
+	{																					\
+		crSET_STATE1( ( xHandle ) );													\
+		*pxResult = pdPASS;																\
+	}																					\
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" line="425" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="croutine_8h_1a586d57fd9a3e2aa5ae66484ed3be36c9" prot="public" static="no">
+        <name>crQUEUE_RECEIVE</name>
+        <param><defname>xHandle</defname></param>
+        <param><defname>pxQueue</defname></param>
+        <param><defname>pvBuffer</defname></param>
+        <param><defname>xTicksToWait</defname></param>
+        <param><defname>pxResult</defname></param>
+        <initializer>{																						\
+	*( pxResult ) = xQueueCRReceive( ( pxQueue) , ( pvBuffer ), ( xTicksToWait ) );		\
+	if( *( pxResult ) == errQUEUE_BLOCKED ) 											\
+	{																					\
+		crSET_STATE0( ( xHandle ) );													\
+		*( pxResult ) = xQueueCRReceive( ( pxQueue) , ( pvBuffer ), 0 );				\
+	}																					\
+	if( *( pxResult ) == errQUEUE_YIELD )												\
+	{																					\
+		crSET_STATE1( ( xHandle ) );													\
+		*( pxResult ) = pdPASS;															\
+	}																					\
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" line="517" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" bodystart="504" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="croutine_8h_1ac8eb0a81c5cf69de7e4edd73ce44a3be" prot="public" static="no">
+        <name>crQUEUE_SEND_FROM_ISR</name>
+        <param><defname>pxQueue</defname></param>
+        <param><defname>pvItemToQueue</defname></param>
+        <param><defname>xCoRoutinePreviouslyWoken</defname></param>
+        <initializer>xQueueCRSendFromISR( ( pxQueue ), ( pvItemToQueue ), ( xCoRoutinePreviouslyWoken ) )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" line="613" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" bodystart="613" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="croutine_8h_1a9c0fa977ca69adbddb4811affa2a71f7" prot="public" static="no">
+        <name>crQUEUE_RECEIVE_FROM_ISR</name>
+        <param><defname>pxQueue</defname></param>
+        <param><defname>pvBuffer</defname></param>
+        <param><defname>pxCoRoutineWoken</defname></param>
+        <initializer>xQueueCRReceiveFromISR( ( pxQueue ), ( pvBuffer ), ( pxCoRoutineWoken ) )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" line="726" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" bodystart="726" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="croutine_8h_1ae46d12d33255c43b94c6558916e9a5b9" prot="public" static="no">
+        <type>void *</type>
+        <definition>typedef void* xCoRoutineHandle</definition>
+        <argsstring></argsstring>
+        <name>xCoRoutineHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" line="76" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="croutine_8h_1a6e4eab2099c619436f180f021787779b" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* crCOROUTINE_CODE)(xCoRoutineHandle, unsigned portBASE_TYPE)</definition>
+        <argsstring>)(xCoRoutineHandle, unsigned portBASE_TYPE)</argsstring>
+        <name>crCOROUTINE_CODE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" line="79" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="croutine_8h_1a1e945d913788ba682fb52c175ae1443a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>signed portBASE_TYPE</type>
+        <definition>signed portBASE_TYPE xCoRoutineCreate</definition>
+        <argsstring>(crCOROUTINE_CODE pxCoRoutineCode, unsigned portBASE_TYPE uxPriority, unsigned portBASE_TYPE uxIndex)</argsstring>
+        <name>xCoRoutineCreate</name>
+        <param>
+          <type>crCOROUTINE_CODE</type>
+          <declname>pxCoRoutineCode</declname>
+        </param>
+        <param>
+          <type>unsigned portBASE_TYPE</type>
+          <declname>uxPriority</declname>
+        </param>
+        <param>
+          <type>unsigned portBASE_TYPE</type>
+          <declname>uxIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" line="163" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.c" bodystart="131" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="croutine_8h_1a5333c649a2c063006ca3cd7a3b5b9240" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vCoRoutineSchedule</definition>
+        <argsstring>(void)</argsstring>
+        <name>vCoRoutineSchedule</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" line="205" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.c" bodystart="307" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="croutine_8h_1ab079c8617df3a965355be09a08a31342" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vCoRoutineAddToDelayedList</definition>
+        <argsstring>(portTickType xTicksToDelay, xList *pxEventList)</argsstring>
+        <name>vCoRoutineAddToDelayedList</name>
+        <param>
+          <type>portTickType</type>
+          <declname>xTicksToDelay</declname>
+        </param>
+        <param>
+          <type><ref refid="structx_list" kindref="compound">xList</ref> *</type>
+          <declname>pxEventList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" line="737" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.c" bodystart="188" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="croutine_8h_1a9d3b6fc4612f417a42fc92f072a19686" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>signed portBASE_TYPE</type>
+        <definition>signed portBASE_TYPE xCoRoutineRemoveFromEventList</definition>
+        <argsstring>(const xList *pxEventList)</argsstring>
+        <name>xCoRoutineRemoveFromEventList</name>
+        <param>
+          <type>const <ref refid="structx_list" kindref="compound">xList</ref> *</type>
+          <declname>pxEventList</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h" line="746" bodyfile="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.c" bodystart="357" bodyend="379"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>V7.0.1<sp/>-<sp/>Copyright<sp/>(C)<sp/>2011<sp/>Real<sp/>Time<sp/>Engineers<sp/>Ltd.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>supports<sp/>many<sp/>tools<sp/>and<sp/>architectures.<sp/>V7.0.0<sp/>is<sp/>sponsored<sp/>by:</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/><sp/><sp/>Atollic<sp/>AB<sp/>-<sp/>Atollic<sp/>provides<sp/>professional<sp/>embedded<sp/>systems<sp/>development<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>tools<sp/>for<sp/>C/C++<sp/>development,<sp/>code<sp/>analysis<sp/>and<sp/>test<sp/>automation.<sp/><sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>See<sp/>http://www.atollic.com</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>***************************************************************************</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>FreeRTOS<sp/>tutorial<sp/>books<sp/>are<sp/>available<sp/>in<sp/>pdf<sp/>and<sp/>paperback.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>Complete,<sp/>revised,<sp/>and<sp/>edited<sp/>pdf<sp/>reference<sp/>manuals<sp/>are<sp/>also<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>available.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>Purchasing<sp/>FreeRTOS<sp/>documentation<sp/>will<sp/>not<sp/>only<sp/>help<sp/>you,<sp/>by<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>ensuring<sp/>you<sp/>get<sp/>running<sp/>as<sp/>quickly<sp/>as<sp/>possible<sp/>and<sp/>with<sp/>an<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>in-depth<sp/>knowledge<sp/>of<sp/>how<sp/>to<sp/>use<sp/>FreeRTOS,<sp/>it<sp/>will<sp/>also<sp/>help<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>the<sp/>FreeRTOS<sp/>project<sp/>to<sp/>continue<sp/>with<sp/>its<sp/>mission<sp/>of<sp/>providing<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>professional<sp/>grade,<sp/>cross<sp/>platform,<sp/>de<sp/>facto<sp/>standard<sp/>solutions<sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>for<sp/>microcontrollers<sp/>-<sp/>completely<sp/>free<sp/>of<sp/>charge!<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>&gt;&gt;&gt;<sp/>See<sp/>http://www.FreeRTOS.org/Documentation<sp/>for<sp/>details.<sp/>&lt;&lt;&lt;<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/>Thank<sp/>you<sp/>for<sp/>using<sp/>FreeRTOS,<sp/>and<sp/>thank<sp/>you<sp/>for<sp/>your<sp/>support!<sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/>***************************************************************************</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"></highlight></codeline>
+<codeline lineno="30"><highlight class="comment"></highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>FreeRTOS<sp/>distribution.</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"></highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/>it<sp/>under</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>(version<sp/>2)<sp/>as<sp/>published<sp/>by<sp/>the</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/>Free<sp/>Software<sp/>Foundation<sp/>AND<sp/>MODIFIED<sp/>BY<sp/>the<sp/>FreeRTOS<sp/>exception.</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/>&gt;&gt;&gt;NOTE&lt;&lt;&lt;<sp/>The<sp/>modification<sp/>to<sp/>the<sp/>GPL<sp/>is<sp/>included<sp/>to<sp/>allow<sp/>you<sp/>to</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/>distribute<sp/>a<sp/>combined<sp/>work<sp/>that<sp/>includes<sp/>FreeRTOS<sp/>without<sp/>being<sp/>obliged<sp/>to</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/>provide<sp/>the<sp/>source<sp/>code<sp/>for<sp/>proprietary<sp/>components<sp/>outside<sp/>of<sp/>the<sp/>FreeRTOS</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/>kernel.<sp/><sp/>FreeRTOS<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/>but</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/>MERCHANTABILITY</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/><sp/><sp/>more<sp/>details.<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/><sp/>License<sp/>and<sp/>the<sp/>FreeRTOS<sp/>license<sp/>exception<sp/>along<sp/>with<sp/>FreeRTOS;<sp/>if<sp/>not<sp/>it</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/><sp/><sp/>can<sp/>be<sp/>viewed<sp/>here:<sp/>http://www.freertos.org/a00114.html<sp/>and<sp/>also<sp/>obtained</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/><sp/><sp/>by<sp/>writing<sp/>to<sp/>Richard<sp/>Barry,<sp/>contact<sp/>details<sp/>for<sp/>whom<sp/>are<sp/>available<sp/>on<sp/>the</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/><sp/><sp/>FreeRTOS<sp/>WEB<sp/>site.</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"></highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/><sp/><sp/>1<sp/>tab<sp/>==<sp/>4<sp/>spaces!</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"></highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.FreeRTOS.org<sp/>-<sp/>Documentation,<sp/>latest<sp/>information,<sp/>license<sp/>and</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/>contact<sp/>details.</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"></highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.SafeRTOS.com<sp/>-<sp/>A<sp/>version<sp/>that<sp/>is<sp/>certified<sp/>for<sp/>use<sp/>in<sp/>safety</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/><sp/><sp/><sp/>critical<sp/>systems.</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"></highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/><sp/><sp/>http://www.OpenRTOS.com<sp/>-<sp/>Commercial<sp/>support,<sp/>development,<sp/>porting,</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/><sp/><sp/>licensing<sp/>and<sp/>training<sp/>services.</highlight></codeline>
+<codeline lineno="58"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CO_ROUTINE_H</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CO_ROUTINE_H</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INC_FREERTOS_H</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#error<sp/>&quot;include<sp/>FreeRTOS.h<sp/>must<sp/>appear<sp/>in<sp/>source<sp/>files<sp/>before<sp/>include<sp/>croutine.h&quot;</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;list.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Used<sp/>to<sp/>hide<sp/>the<sp/>implementation<sp/>of<sp/>the<sp/>co-routine<sp/>control<sp/>block.<sp/><sp/>The</highlight></codeline>
+<codeline lineno="74"><highlight class="comment">control<sp/>block<sp/>structure<sp/>however<sp/>has<sp/>to<sp/>be<sp/>included<sp/>in<sp/>the<sp/>header<sp/>due<sp/>to</highlight></codeline>
+<codeline lineno="75"><highlight class="comment">the<sp/>macro<sp/>implementation<sp/>of<sp/>the<sp/>co-routine<sp/>functionality.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>xCoRoutineHandle;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Defines<sp/>the<sp/>prototype<sp/>to<sp/>which<sp/>co-routine<sp/>functions<sp/>must<sp/>conform.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*crCOROUTINE_CODE)(<sp/>xCoRoutineHandle,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="structcor_c_r_c_b" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">corCoRoutineControlBlock</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>crCOROUTINE_CODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pxCoRoutineFunction;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>xListItem<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xGenericListItem;<sp/><sp/><sp/></highlight><highlight class="comment">/*&lt;<sp/>List<sp/>item<sp/>used<sp/>to<sp/>place<sp/>the<sp/>CRCB<sp/>in<sp/>ready<sp/>and<sp/>blocked<sp/>queues.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>xListItem<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xEventListItem;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*&lt;<sp/>List<sp/>item<sp/>used<sp/>to<sp/>place<sp/>the<sp/>CRCB<sp/>in<sp/>event<sp/>lists.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/><sp/>uxPriority;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*&lt;<sp/>The<sp/>priority<sp/>of<sp/>the<sp/>co-routine<sp/>in<sp/>relation<sp/>to<sp/>other<sp/>co-routines.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/><sp/>uxIndex;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*&lt;<sp/>Used<sp/>to<sp/>distinguish<sp/>between<sp/>co-routines<sp/>when<sp/>multiple<sp/>co-routines<sp/>use<sp/>the<sp/>same<sp/>co-routine<sp/>function.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>uxState;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*&lt;<sp/>Used<sp/>internally<sp/>by<sp/>the<sp/>co-routine<sp/>implementation.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}<sp/><ref refid="structcor_c_r_c_b" kindref="compound">corCRCB</ref>;<sp/></highlight><highlight class="comment">/*<sp/>Co-routine<sp/>control<sp/>block.<sp/><sp/>Note<sp/>must<sp/>be<sp/>identical<sp/>in<sp/>size<sp/>down<sp/>to<sp/>uxPriority<sp/>with<sp/>tskTCB.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>xCoRoutineCreate(<sp/>crCOROUTINE_CODE<sp/>pxCoRoutineCode,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>uxPriority,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>uxIndex<sp/>);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vCoRoutineSchedule(<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="preprocessor">#define<sp/>crSTART(<sp/>pxCRCB<sp/>)<sp/>switch(<sp/>(<sp/>(<sp/>corCRCB<sp/>*<sp/>)(<sp/>pxCRCB<sp/>)<sp/>)-&gt;uxState<sp/>)<sp/>{<sp/>case<sp/>0:</highlight></codeline>
+<codeline lineno="237"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="267"><highlight class="preprocessor">#define<sp/>crEND()<sp/>}</highlight></codeline>
+<codeline lineno="268"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="270"><highlight class="comment"><sp/>*<sp/>These<sp/>macros<sp/>are<sp/>intended<sp/>for<sp/>internal<sp/>use<sp/>by<sp/>the<sp/>co-routine<sp/>implementation</highlight></codeline>
+<codeline lineno="271"><highlight class="comment"><sp/>*<sp/>only.<sp/><sp/>The<sp/>macros<sp/>should<sp/>not<sp/>be<sp/>used<sp/>directly<sp/>by<sp/>application<sp/>writers.</highlight></codeline>
+<codeline lineno="272"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>crSET_STATE0(<sp/>xHandle<sp/>)<sp/>(<sp/>(<sp/>corCRCB<sp/>*<sp/>)(<sp/>xHandle<sp/>)<sp/>)-&gt;uxState<sp/>=<sp/>(__LINE__<sp/>*<sp/>2);<sp/>return;<sp/>case<sp/>(__LINE__<sp/>*<sp/>2):</highlight></codeline>
+<codeline lineno="274"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>crSET_STATE1(<sp/>xHandle<sp/>)<sp/>(<sp/>(<sp/>corCRCB<sp/>*<sp/>)(<sp/>xHandle<sp/>)<sp/>)-&gt;uxState<sp/>=<sp/>((__LINE__<sp/>*<sp/>2)+1);<sp/>return;<sp/>case<sp/>((__LINE__<sp/>*<sp/>2)+1):</highlight></codeline>
+<codeline lineno="275"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="322"><highlight class="preprocessor">#define<sp/>crDELAY(<sp/>xHandle,<sp/>xTicksToDelay<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="323"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if(<sp/>(<sp/>xTicksToDelay<sp/>)<sp/>&gt;<sp/>0<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="324"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="325"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vCoRoutineAddToDelayedList(<sp/>(<sp/>xTicksToDelay<sp/>),<sp/>NULL<sp/>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="326"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="327"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>crSET_STATE0(<sp/>(<sp/>xHandle<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="328"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="412"><highlight class="preprocessor">#define<sp/>crQUEUE_SEND(<sp/>xHandle,<sp/>pxQueue,<sp/>pvItemToQueue,<sp/>xTicksToWait,<sp/>pxResult<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="413"><highlight class="preprocessor">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="414"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>*(<sp/>pxResult<sp/>)<sp/>=<sp/>xQueueCRSend(<sp/>(<sp/>pxQueue)<sp/>,<sp/>(<sp/>pvItemToQueue)<sp/>,<sp/>(<sp/>xTicksToWait<sp/>)<sp/>);<sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="415"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if(<sp/>*(<sp/>pxResult<sp/>)<sp/>==<sp/>errQUEUE_BLOCKED<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="416"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="417"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>crSET_STATE0(<sp/>(<sp/>xHandle<sp/>)<sp/>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="418"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*pxResult<sp/>=<sp/>xQueueCRSend(<sp/>(<sp/>pxQueue<sp/>),<sp/>(<sp/>pvItemToQueue<sp/>),<sp/>0<sp/>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="419"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="420"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if(<sp/>*pxResult<sp/>==<sp/>errQUEUE_YIELD<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="421"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="422"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>crSET_STATE1(<sp/>(<sp/>xHandle<sp/>)<sp/>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="423"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*pxResult<sp/>=<sp/>pdPASS;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="424"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="425"><highlight class="preprocessor">}</highlight></codeline>
+<codeline lineno="426"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="504"><highlight class="preprocessor">#define<sp/>crQUEUE_RECEIVE(<sp/>xHandle,<sp/>pxQueue,<sp/>pvBuffer,<sp/>xTicksToWait,<sp/>pxResult<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="505"><highlight class="preprocessor">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="506"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>*(<sp/>pxResult<sp/>)<sp/>=<sp/>xQueueCRReceive(<sp/>(<sp/>pxQueue)<sp/>,<sp/>(<sp/>pvBuffer<sp/>),<sp/>(<sp/>xTicksToWait<sp/>)<sp/>);<sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="507"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if(<sp/>*(<sp/>pxResult<sp/>)<sp/>==<sp/>errQUEUE_BLOCKED<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="508"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="509"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>crSET_STATE0(<sp/>(<sp/>xHandle<sp/>)<sp/>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="510"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*(<sp/>pxResult<sp/>)<sp/>=<sp/>xQueueCRReceive(<sp/>(<sp/>pxQueue)<sp/>,<sp/>(<sp/>pvBuffer<sp/>),<sp/>0<sp/>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="511"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="512"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if(<sp/>*(<sp/>pxResult<sp/>)<sp/>==<sp/>errQUEUE_YIELD<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="513"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="514"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>crSET_STATE1(<sp/>(<sp/>xHandle<sp/>)<sp/>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="515"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*(<sp/>pxResult<sp/>)<sp/>=<sp/>pdPASS;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="516"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="517"><highlight class="preprocessor">}</highlight></codeline>
+<codeline lineno="518"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="613"><highlight class="preprocessor">#define<sp/>crQUEUE_SEND_FROM_ISR(<sp/>pxQueue,<sp/>pvItemToQueue,<sp/>xCoRoutinePreviouslyWoken<sp/>)<sp/>xQueueCRSendFromISR(<sp/>(<sp/>pxQueue<sp/>),<sp/>(<sp/>pvItemToQueue<sp/>),<sp/>(<sp/>xCoRoutinePreviouslyWoken<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="614"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="615"><highlight class="normal"></highlight></codeline>
+<codeline lineno="726"><highlight class="preprocessor">#define<sp/>crQUEUE_RECEIVE_FROM_ISR(<sp/>pxQueue,<sp/>pvBuffer,<sp/>pxCoRoutineWoken<sp/>)<sp/>xQueueCRReceiveFromISR(<sp/>(<sp/>pxQueue<sp/>),<sp/>(<sp/>pvBuffer<sp/>),<sp/>(<sp/>pxCoRoutineWoken<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="727"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="728"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="729"><highlight class="comment"><sp/>*<sp/>This<sp/>function<sp/>is<sp/>intended<sp/>for<sp/>internal<sp/>use<sp/>by<sp/>the<sp/>co-routine<sp/>macros<sp/>only.</highlight></codeline>
+<codeline lineno="730"><highlight class="comment"><sp/>*<sp/>The<sp/>macro<sp/>nature<sp/>of<sp/>the<sp/>co-routine<sp/>implementation<sp/>requires<sp/>that<sp/>the</highlight></codeline>
+<codeline lineno="731"><highlight class="comment"><sp/>*<sp/>prototype<sp/>appears<sp/>here.<sp/><sp/>The<sp/>function<sp/>should<sp/>not<sp/>be<sp/>used<sp/>by<sp/>application</highlight></codeline>
+<codeline lineno="732"><highlight class="comment"><sp/>*<sp/>writers.</highlight></codeline>
+<codeline lineno="733"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="734"><highlight class="comment"><sp/>*<sp/>Removes<sp/>the<sp/>current<sp/>co-routine<sp/>from<sp/>its<sp/>ready<sp/>list<sp/>and<sp/>places<sp/>it<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="735"><highlight class="comment"><sp/>*<sp/>appropriate<sp/>delayed<sp/>list.</highlight></codeline>
+<codeline lineno="736"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="737"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vCoRoutineAddToDelayedList(<sp/>portTickType<sp/>xTicksToDelay,<sp/><ref refid="structx_list" kindref="compound">xList</ref><sp/>*pxEventList<sp/>);</highlight></codeline>
+<codeline lineno="738"><highlight class="normal"></highlight></codeline>
+<codeline lineno="739"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="740"><highlight class="comment"><sp/>*<sp/>This<sp/>function<sp/>is<sp/>intended<sp/>for<sp/>internal<sp/>use<sp/>by<sp/>the<sp/>queue<sp/>implementation<sp/>only.</highlight></codeline>
+<codeline lineno="741"><highlight class="comment"><sp/>*<sp/>The<sp/>function<sp/>should<sp/>not<sp/>be<sp/>used<sp/>by<sp/>application<sp/>writers.</highlight></codeline>
+<codeline lineno="742"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="743"><highlight class="comment"><sp/>*<sp/>Removes<sp/>the<sp/>highest<sp/>priority<sp/>co-routine<sp/>from<sp/>the<sp/>event<sp/>list<sp/>and<sp/>places<sp/>it<sp/>in</highlight></codeline>
+<codeline lineno="744"><highlight class="comment"><sp/>*<sp/>the<sp/>pending<sp/>ready<sp/>list.</highlight></codeline>
+<codeline lineno="745"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="746"><highlight class="normal"></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>portBASE_TYPE<sp/>xCoRoutineRemoveFromEventList(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structx_list" kindref="compound">xList</ref><sp/>*pxEventList<sp/>);</highlight></codeline>
+<codeline lineno="747"><highlight class="normal"></highlight></codeline>
+<codeline lineno="748"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="749"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="750"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="751"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="752"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CO_ROUTINE_H<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/FreeRTOS/utility/croutine.h"/>
+  </compounddef>
+</doxygen>

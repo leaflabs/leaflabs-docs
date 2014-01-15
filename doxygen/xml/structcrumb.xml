@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structcrumb" kind="struct" prot="public">
+    <compoundname>crumb</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcrumb_1ab1d202db1c1faf33e4f69ecb97b7220f" prot="public" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>uint32 crumb::event</definition>
+        <argsstring></argsstring>
+        <name>event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.c" line="106" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.c" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcrumb_1ae82fdbf5e4a6f0636adacf82111c8fbd" prot="public" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>uint32 crumb::arg0</definition>
+        <argsstring></argsstring>
+        <name>arg0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.c" line="107" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.c" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcrumb_1a358437d4241e54c9250881b22ffa06fb" prot="public" static="no" mutable="no">
+        <type>uint32</type>
+        <definition>uint32 crumb::arg1</definition>
+        <argsstring></argsstring>
+        <name>arg1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.c" line="108" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.c" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.c" line="105" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.c" bodystart="105" bodyend="109"/>
+    <listofallmembers>
+      <member refid="structcrumb_1ae82fdbf5e4a6f0636adacf82111c8fbd" prot="public" virt="non-virtual"><scope>crumb</scope><name>arg0</name></member>
+      <member refid="structcrumb_1a358437d4241e54c9250881b22ffa06fb" prot="public" virt="non-virtual"><scope>crumb</scope><name>arg1</name></member>
+      <member refid="structcrumb_1ab1d202db1c1faf33e4f69ecb97b7220f" prot="public" virt="non-virtual"><scope>crumb</scope><name>event</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

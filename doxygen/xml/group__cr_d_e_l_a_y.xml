@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__cr_d_e_l_a_y" kind="group">
+    <compoundname>crDELAY</compoundname>
+    <title>crDELAY</title>
+    <briefdescription>
+<para>croutine. </para>    </briefdescription>
+    <detaileddescription>
+<para>h <preformatted>
+ crDELAY( xCoRoutineHandle xHandle, portTickType xTicksToDelay );</preformatted></para><para>Delay a co-routine for a fixed period of time.</para><para>crDELAY can only be called from the co-routine function itself - not from within a function called by the co-routine function. This is because co-routines do not maintain their own stack.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xHandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The handle of the co-routine to delay. This is the xHandle parameter of the co-routine function.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xTickToDelay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of ticks that the co-routine should delay for. The actual amount of time this equates to is defined by configTICK_RATE_HZ (set in <ref refid="_free_r_t_o_s_config_8h_source" kindref="compound">FreeRTOSConfig.h</ref>). The constant portTICK_RATE_MS can be used to convert ticks to milliseconds.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Example usage: <preformatted>
+Co-routine to be created.
+ void vACoRoutine( xCoRoutineHandle xHandle, unsigned portBASE_TYPE uxIndex )
+ {
+Variables in co-routines must be declared static if they must maintain value across a blocking call.
+This may not be necessary for const variables.
+We are to delay for 200ms.
+ static const xTickType xDelayTime = 200 / portTICK_RATE_MS;</preformatted></para><para><preformatted>Must start every co-routine with a call to crSTART();
+     crSTART( xHandle );</preformatted></para><para><preformatted>     for( ;; )
+     {
+Delay for 200ms.
+        crDELAY( xHandle, xDelayTime );</preformatted></para><para><preformatted>Do something here.
+     }</preformatted></para><para><preformatted>Must end every co-routine with a call to crEND();
+     crEND();
+ }</preformatted> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

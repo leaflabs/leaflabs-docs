@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="v_task_start_trace" kind="page">
+    <compoundname>vTaskStartTrace</compoundname>
+    <title>vTaskStartTrace</title>
+    <detaileddescription>
+<para>task.</para><para>h <preformatted>void vTaskStartTrace( char * pcBuffer, unsigned portBASE_TYPE uxBufferSize );</preformatted></para><para>Starts a real time kernel activity trace. The trace logs the identity of which task is running when.</para><para>The trace file is stored in binary format. A separate DOS utility called convtrce.exe is used to convert this into a tab delimited text file which can be viewed and plotted in a spread sheet.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pcBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The buffer into which the trace will be written.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ulBufferSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of pcBuffer in bytes. The trace will continue until either the buffer in full, or ulTaskEndTrace () is called. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structspi__reg__map" kind="struct" prot="public">
+    <compoundname>spi_reg_map</compoundname>
+    <includes refid="spi_8h" local="no">spi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structspi__reg__map_1a8672e7959cbb3fcc688ba28354743b95" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 spi_reg_map::CR1</definition>
+        <argsstring></argsstring>
+        <name>CR1</name>
+        <briefdescription>
+<para>Control register 1. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.h" line="55" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structspi__reg__map_1aff8bd8690325acc4188951a29dda3544" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 spi_reg_map::CR2</definition>
+        <argsstring></argsstring>
+        <name>CR2</name>
+        <briefdescription>
+<para>Control register 2. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.h" line="56" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structspi__reg__map_1ae891b3ea0fc2b0a80f5a045923e3fae2" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 spi_reg_map::SR</definition>
+        <argsstring></argsstring>
+        <name>SR</name>
+        <briefdescription>
+<para>Status register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.h" line="57" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structspi__reg__map_1a1c43896ca4ad11a166ede0e3fef16f27" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 spi_reg_map::DR</definition>
+        <argsstring></argsstring>
+        <name>DR</name>
+        <briefdescription>
+<para>Data register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.h" line="58" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structspi__reg__map_1ade78813ac8cede0e0a417ebfb9e39280" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 spi_reg_map::CRCPR</definition>
+        <argsstring></argsstring>
+        <name>CRCPR</name>
+        <briefdescription>
+<para>CRC polynomial register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.h" line="59" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structspi__reg__map_1a6ec9cd31afd4367311c0d3f127971567" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 spi_reg_map::RXCRCR</definition>
+        <argsstring></argsstring>
+        <name>RXCRCR</name>
+        <briefdescription>
+<para>RX CRC register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.h" line="60" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structspi__reg__map_1aa699f6861aedb98047c4c7a7233af7c5" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 spi_reg_map::TXCRCR</definition>
+        <argsstring></argsstring>
+        <name>TXCRCR</name>
+        <briefdescription>
+<para>TX CRC register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.h" line="61" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structspi__reg__map_1af72217348e947e8fbe812ae526193054" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 spi_reg_map::I2SCFGR</definition>
+        <argsstring></argsstring>
+        <name>I2SCFGR</name>
+        <briefdescription>
+<para>I2S configuration register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.h" line="62" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structspi__reg__map_1aaf110261ae70e735e5c0e40f8c4e7477" prot="public" static="no" mutable="no">
+        <type>__io uint32</type>
+        <definition>__io uint32 spi_reg_map::I2SPR</definition>
+        <argsstring></argsstring>
+        <name>I2SPR</name>
+        <briefdescription>
+<para>I2S prescaler register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.h" line="63" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>SPI register map type. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/spi.h" line="54" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/spi.h" bodystart="54" bodyend="64"/>
+    <listofallmembers>
+      <member refid="structspi__reg__map_1a8672e7959cbb3fcc688ba28354743b95" prot="public" virt="non-virtual"><scope>spi_reg_map</scope><name>CR1</name></member>
+      <member refid="structspi__reg__map_1aff8bd8690325acc4188951a29dda3544" prot="public" virt="non-virtual"><scope>spi_reg_map</scope><name>CR2</name></member>
+      <member refid="structspi__reg__map_1ade78813ac8cede0e0a417ebfb9e39280" prot="public" virt="non-virtual"><scope>spi_reg_map</scope><name>CRCPR</name></member>
+      <member refid="structspi__reg__map_1a1c43896ca4ad11a166ede0e3fef16f27" prot="public" virt="non-virtual"><scope>spi_reg_map</scope><name>DR</name></member>
+      <member refid="structspi__reg__map_1af72217348e947e8fbe812ae526193054" prot="public" virt="non-virtual"><scope>spi_reg_map</scope><name>I2SCFGR</name></member>
+      <member refid="structspi__reg__map_1aaf110261ae70e735e5c0e40f8c4e7477" prot="public" virt="non-virtual"><scope>spi_reg_map</scope><name>I2SPR</name></member>
+      <member refid="structspi__reg__map_1a6ec9cd31afd4367311c0d3f127971567" prot="public" virt="non-virtual"><scope>spi_reg_map</scope><name>RXCRCR</name></member>
+      <member refid="structspi__reg__map_1ae891b3ea0fc2b0a80f5a045923e3fae2" prot="public" virt="non-virtual"><scope>spi_reg_map</scope><name>SR</name></member>
+      <member refid="structspi__reg__map_1aa699f6861aedb98047c4c7a7233af7c5" prot="public" virt="non-virtual"><scope>spi_reg_map</scope><name>TXCRCR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

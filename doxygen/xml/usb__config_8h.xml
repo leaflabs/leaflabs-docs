@@ -1,0 +1,549 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="usb__config_8h" kind="file">
+    <compoundname>usb_config.h</compoundname>
+    <includes refid="usb__lib_8h" local="yes">usb_lib.h</includes>
+    <includes refid="gpio_8h" local="yes">gpio.h</includes>
+    <includedby refid="descriptors_8c" local="yes">libmaple/usb/descriptors.c</includedby>
+    <includedby refid="usb_8c" local="yes">libmaple/usb/usb.c</includedby>
+    <includedby refid="usb__callbacks_8h" local="yes">libmaple/usb/usb_callbacks.h</includedby>
+    <includedby refid="usb__callbacks_8c" local="yes">libmaple/usb/usb_callbacks.c</includedby>
+    <incdepgraph>
+      <node id="815">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="811" relation="include">
+        </childnode>
+      </node>
+      <node id="812">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="811">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="807">
+        <label>usb_mem.h</label>
+        <link refid="usb__mem_8h_source"/>
+      </node>
+      <node id="802">
+        <label>usb_type.h</label>
+        <link refid="usb__type_8h_source"/>
+      </node>
+      <node id="810">
+        <label>libmaple.h</label>
+        <link refid="libmaple_8h"/>
+        <childnode refid="811" relation="include">
+        </childnode>
+        <childnode refid="812" relation="include">
+        </childnode>
+        <childnode refid="813" relation="include">
+        </childnode>
+        <childnode refid="814" relation="include">
+        </childnode>
+      </node>
+      <node id="808">
+        <label>usb_int.h</label>
+        <link refid="usb__int_8h_source"/>
+      </node>
+      <node id="801">
+        <label>usb_lib.h</label>
+        <link refid="usb__lib_8h_source"/>
+        <childnode refid="802" relation="include">
+        </childnode>
+        <childnode refid="803" relation="include">
+        </childnode>
+        <childnode refid="804" relation="include">
+        </childnode>
+        <childnode refid="805" relation="include">
+        </childnode>
+        <childnode refid="806" relation="include">
+        </childnode>
+        <childnode refid="807" relation="include">
+        </childnode>
+        <childnode refid="808" relation="include">
+        </childnode>
+      </node>
+      <node id="800">
+        <label>libmaple/usb/usb_config.h</label>
+        <link refid="usb_config.h"/>
+        <childnode refid="801" relation="include">
+        </childnode>
+        <childnode refid="809" relation="include">
+        </childnode>
+      </node>
+      <node id="806">
+        <label>usb_init.h</label>
+        <link refid="usb__init_8h_source"/>
+      </node>
+      <node id="804">
+        <label>usb_def.h</label>
+        <link refid="usb__def_8h_source"/>
+      </node>
+      <node id="809">
+        <label>gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="810" relation="include">
+        </childnode>
+        <childnode refid="815" relation="include">
+        </childnode>
+      </node>
+      <node id="805">
+        <label>usb_core.h</label>
+        <link refid="usb__core_8h_source"/>
+      </node>
+      <node id="814">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="811" relation="include">
+        </childnode>
+        <childnode refid="812" relation="include">
+        </childnode>
+      </node>
+      <node id="803">
+        <label>usb_regs.h</label>
+        <link refid="usb__regs_8h_source"/>
+      </node>
+      <node id="813">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="811" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="818">
+        <label>libmaple/usb/usb.c</label>
+        <link refid="usb_8c_source"/>
+      </node>
+      <node id="816">
+        <label>libmaple/usb/usb_config.h</label>
+        <link refid="usb_config.h"/>
+        <childnode refid="817" relation="include">
+        </childnode>
+        <childnode refid="818" relation="include">
+        </childnode>
+        <childnode refid="819" relation="include">
+        </childnode>
+        <childnode refid="820" relation="include">
+        </childnode>
+      </node>
+      <node id="817">
+        <label>libmaple/usb/descriptors.c</label>
+        <link refid="descriptors_8c_source"/>
+      </node>
+      <node id="820">
+        <label>libmaple/usb/usb_callbacks.c</label>
+        <link refid="usb__callbacks_8c_source"/>
+      </node>
+      <node id="819">
+        <label>libmaple/usb/usb_callbacks.h</label>
+        <link refid="usb__callbacks_8h_source"/>
+        <childnode refid="818" relation="include">
+        </childnode>
+        <childnode refid="820" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="usb__config_8h_1ad69effaac28a4ea502f1c82ab0b1a856" prot="public" static="no">
+        <name>VCOM_ID_VENDOR</name>
+        <initializer>0x1EAF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" line="27" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__config_8h_1a5f1226244e161294423fac73a93d034d" prot="public" static="no">
+        <name>RESET_DELAY</name>
+        <initializer>(100000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" line="28" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__config_8h_1a0019f746af31739b01fa47a264b9bd19" prot="public" static="no">
+        <name>USB_CONFIG_MAX_POWER</name>
+        <initializer>(100 &gt;&gt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" line="29" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__config_8h_1a2686cbf47343993be5fc1baf1416d416" prot="public" static="no">
+        <name>USB_BTABLE_ADDRESS</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" line="71" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__config_8h_1a645a902e19ac04919abd3f0d7bb67285" prot="public" static="no">
+        <name>VCOM_CTRL_EPNUM</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" line="72" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__config_8h_1a5df48b16166233c727b237efae9c5cab" prot="public" static="no">
+        <name>VCOM_CTRL_RX_ADDR</name>
+        <initializer>0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" line="73" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__config_8h_1a66259305db4f839ad83f7bbf6aae367b" prot="public" static="no">
+        <name>VCOM_CTRL_TX_ADDR</name>
+        <initializer>0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" line="74" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__config_8h_1a8dd70260182042b41163d6ccec1ee663" prot="public" static="no">
+        <name>VCOM_CTRL_EPSIZE</name>
+        <initializer>0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" line="75" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__config_8h_1aa514e796f89cfb463b03d973937d9619" prot="public" static="no">
+        <name>VCOM_TX_ENDP</name>
+        <initializer>ENDP1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" line="77" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__config_8h_1a35dd6ac7e1ffafd41ec0c6245e3ff910" prot="public" static="no">
+        <name>VCOM_TX_EPNUM</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" line="78" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__config_8h_1a7bfd5ebbaf0e35687d952eaa7eb2b7f5" prot="public" static="no">
+        <name>VCOM_TX_ADDR</name>
+        <initializer>0xC0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" line="79" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__config_8h_1ae1edb2b011ee9ce74506a73914f39648" prot="public" static="no">
+        <name>VCOM_TX_EPSIZE</name>
+        <initializer>0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" line="80" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__config_8h_1a4b854cee038ad55fab16833094fec4e9" prot="public" static="no">
+        <name>VCOM_NOTIFICATION_ENDP</name>
+        <initializer>ENDP2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" line="82" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__config_8h_1a0734bdaeba9098beaa173959ab3a9d93" prot="public" static="no">
+        <name>VCOM_NOTIFICATION_EPNUM</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" line="83" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__config_8h_1ad0f45635c7b636f59cd2d253db7019f9" prot="public" static="no">
+        <name>VCOM_NOTIFICATION_ADDR</name>
+        <initializer>0x100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" line="84" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__config_8h_1af55ef03f5666c4fa78f0adcc87403b25" prot="public" static="no">
+        <name>VCOM_NOTIFICATION_EPSIZE</name>
+        <initializer>0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" line="85" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__config_8h_1a99e89e1221dccb7ac70be9306707ecd6" prot="public" static="no">
+        <name>VCOM_RX_ENDP</name>
+        <initializer>ENDP3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" line="87" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__config_8h_1aac4a2afc1645cacf857486deda64adb2" prot="public" static="no">
+        <name>VCOM_RX_EPNUM</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" line="88" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__config_8h_1a258e2440effa07d00cf5d199ba7350da" prot="public" static="no">
+        <name>VCOM_RX_ADDR</name>
+        <initializer>0x110</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" line="89" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__config_8h_1af992af11cc4d6fb6740e4ee646965e24" prot="public" static="no">
+        <name>VCOM_RX_EPSIZE</name>
+        <initializer>0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" line="90" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__config_8h_1a926c2d62db615b00a8ba6168011b47d4" prot="public" static="no">
+        <name>VCOM_RX_BUFLEN</name>
+        <initializer>(VCOM_RX_EPSIZE*3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" line="91" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__config_8h_1a072cff34d645f4b7bc67994bfe1a8321" prot="public" static="no">
+        <name>bMaxPacketSize</name>
+        <initializer>0x40  /* 64B, maximum for USB FS Devices */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" line="93" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__config_8h_1a08de2a2407d98adfef008c516c620c6b" prot="public" static="no">
+        <name>NUM_ENDPTS</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" line="95" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__config_8h_1ad98b6709a31e2ee70c13e650b5cff6bb" prot="public" static="no">
+        <name>ISR_MSK</name>
+        <initializer>(CNTR_CTRM    |                                         \
+                 CNTR_WKUPM   |                                         \
+                 CNTR_SUSPM   |                                         \
+                 CNTR_ERRM    |                                         \
+                 CNTR_SOFM    |                                         \
+                 CNTR_ESOFM   |                                         \
+                 CNTR_RESETM)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" line="104" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="usb__config_8h_1a11b1dec185032bb074de8477d6ab6291" prot="public" static="no">
+        <name>F_SUSPEND_ENABLED</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" line="106" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>insert<sp/>license<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__USB_CONFIG_H</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>__USB_CONFIG_H</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;usb_lib.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gpio_8h" kindref="compound" tooltip="General purpose I/O (GPIO) and Alternate Function I/O (AFIO) prototypes, defines, and inlined access ...">gpio.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>******************************************************************************</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>***</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>***<sp/><sp/><sp/>HACK<sp/>ALERT</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>***</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>***<sp/><sp/><sp/>FIXME<sp/>FIXME<sp/>FIXME<sp/>FIXME</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>***</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>***<sp/><sp/><sp/>A<sp/>bunch<sp/>of<sp/>board-specific<sp/>#defines<sp/>that<sp/>are<sp/>only<sp/>used<sp/>by<sp/>the</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>***<sp/><sp/><sp/>USB<sp/>routines<sp/>got<sp/>put<sp/>into<sp/>libmaple.h<sp/>for<sp/>what<sp/>appear<sp/>to<sp/>be</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>***<sp/><sp/><sp/>historical<sp/>reasons.<sp/><sp/>I&apos;m<sp/>[mbolivar]<sp/>putting<sp/>them<sp/>in<sp/>here<sp/>for</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>***<sp/><sp/><sp/>now,<sp/>so<sp/>that<sp/>we<sp/>can<sp/>treat<sp/>the<sp/>usb/<sp/>directory<sp/>as<sp/>a<sp/>black<sp/>box,</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>***<sp/><sp/><sp/>freeing<sp/>the<sp/>rest<sp/>of<sp/>libmaple/<sp/>to<sp/>be<sp/>implemented<sp/>as<sp/>a</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>***<sp/><sp/><sp/>general-purpose<sp/>STM32<sp/>library.<sp/>All<sp/>of<sp/>this<sp/>REALLY<sp/>needs<sp/>to<sp/>get</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>***<sp/><sp/><sp/>moved<sp/>into<sp/>wirish<sp/>when<sp/>we<sp/>get<sp/>a<sp/>chance<sp/>to<sp/>redo<sp/>the<sp/>USB<sp/>stack.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>***</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>******************************************************************************</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VCOM_ID_VENDOR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1EAF</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RESET_DELAY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(100000)</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_CONFIG_MAX_POWER<sp/><sp/><sp/><sp/><sp/><sp/>(100<sp/>&gt;&gt;<sp/>1)</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(BOARD_maple)<sp/>||<sp/>defined(BOARD_maple_RET6)</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>USB<sp/>Identifier<sp/>numbers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VCOM_ID_PRODUCT<sp/><sp/><sp/><sp/><sp/><sp/>0x0004</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>USB_DISC_DEV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GPIOC</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>USB_DISC_PIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(BOARD_maple_mini)</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VCOM_ID_PRODUCT<sp/><sp/><sp/><sp/><sp/><sp/>0x0004</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>USB_DISC_DEV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GPIOB</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>USB_DISC_PIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>9</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(BOARD_maple_native)</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>VCOM_ID_PRODUCT<sp/><sp/><sp/><sp/><sp/><sp/>0x0004</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>USB_DISC_DEV<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GPIOB</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>USB_DISC_PIN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>(&quot;Sorry!<sp/>the<sp/>USB<sp/>stack<sp/>relies<sp/>on<sp/>LeafLabs<sp/>board-specific<sp/>&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;configuration<sp/>right<sp/>now.<sp/><sp/>If<sp/>you<sp/>want,<sp/>you<sp/>can<sp/>pretend<sp/>you&apos;re<sp/>one<sp/>&quot;<sp/>\</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;of<sp/>our<sp/>boards;<sp/>i.e.,<sp/>#define<sp/>BOARD_maple,<sp/>BOARD_maple_mini,<sp/>or<sp/>&quot;<sp/>\</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;BOARD_maple_native<sp/>according<sp/>to<sp/>what<sp/>matches<sp/>your<sp/>MCU<sp/>best.<sp/>&quot;<sp/><sp/>\</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;You<sp/>should<sp/>also<sp/>take<sp/>a<sp/>look<sp/>at<sp/>libmaple/usb/descriptors.c;<sp/>we<sp/>make<sp/>&quot;<sp/>\</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;some<sp/>assumptions<sp/>there<sp/>that<sp/>you<sp/>probably<sp/>won&apos;t<sp/>like.&quot;)</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>******************************************************************************</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>***</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/>***<sp/><sp/><sp/>END<sp/>HACK</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>***</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/>******************************************************************************</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>choose<sp/>addresses<sp/>to<sp/>give<sp/>endpoints<sp/>the<sp/>max<sp/>64<sp/>byte<sp/>buffers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USB_BTABLE_ADDRESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VCOM_CTRL_EPNUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VCOM_CTRL_RX_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x40</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VCOM_CTRL_TX_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x80</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VCOM_CTRL_EPSIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x40</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VCOM_TX_ENDP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ENDP1</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VCOM_TX_EPNUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VCOM_TX_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xC0</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VCOM_TX_EPSIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x40</highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VCOM_NOTIFICATION_ENDP<sp/><sp/><sp/><sp/>ENDP2</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VCOM_NOTIFICATION_EPNUM<sp/><sp/><sp/>0x02</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VCOM_NOTIFICATION_ADDR<sp/><sp/><sp/><sp/>0x100</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VCOM_NOTIFICATION_EPSIZE<sp/><sp/>0x40</highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VCOM_RX_ENDP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ENDP3</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VCOM_RX_EPNUM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x03</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VCOM_RX_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x110</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VCOM_RX_EPSIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x40</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VCOM_RX_BUFLEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(VCOM_RX_EPSIZE*3)</highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>bMaxPacketSize<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x40<sp/><sp/></highlight><highlight class="comment">/*<sp/>64B,<sp/>maximum<sp/>for<sp/>USB<sp/>FS<sp/>Devices<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NUM_ENDPTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x04</highlight></codeline>
+<codeline lineno="96"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>handle<sp/>all<sp/>usb<sp/>interrupts<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ISR_MSK<sp/>(CNTR_CTRM<sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CNTR_WKUPM<sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="100"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CNTR_SUSPM<sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CNTR_ERRM<sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CNTR_SOFM<sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="103"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CNTR_ESOFM<sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CNTR_RESETM)</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>F_SUSPEND_ENABLED<sp/>1</highlight></codeline>
+<codeline lineno="107"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/usb_config.h"/>
+  </compounddef>
+</doxygen>

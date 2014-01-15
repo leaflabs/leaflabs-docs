@@ -1,0 +1,582 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="exti_8c" kind="file">
+    <compoundname>exti.c</compoundname>
+    <includes refid="exti_8h" local="yes">exti.h</includes>
+    <includes refid="libmaple_8h" local="yes">libmaple.h</includes>
+    <includes refid="nvic_8h" local="yes">nvic.h</includes>
+    <includes refid="bitband_8h" local="yes">bitband.h</includes>
+    <incdepgraph>
+      <node id="162">
+        <label>nvic.h</label>
+        <link refid="nvic_8h"/>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+      </node>
+      <node id="161">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="156" relation="include">
+        </childnode>
+      </node>
+      <node id="157">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="156">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="155">
+        <label>libmaple.h</label>
+        <link refid="libmaple_8h"/>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="163">
+        <label>bitband.h</label>
+        <link refid="bitband_8h"/>
+        <childnode refid="156" relation="include">
+        </childnode>
+      </node>
+      <node id="160">
+        <label>gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="161" relation="include">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+      </node>
+      <node id="153">
+        <label>libmaple/exti.c</label>
+        <link refid="exti.c"/>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+      </node>
+      <node id="154">
+        <label>exti.h</label>
+        <link refid="exti_8h"/>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+      </node>
+      <node id="158">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="156" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structexti__channel" prot="public">exti_channel</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="exti_8c_1a97f056d7452cade7e8cb5a442d017368" prot="public" static="yes" mutable="no">
+        <type><ref refid="structexti__channel" kindref="compound">exti_channel</ref></type>
+        <definition>exti_channel exti_channels[]</definition>
+        <argsstring>[]</argsstring>
+        <name>exti_channels</name>
+        <initializer> {
+    { .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ae8682487e9160a6fc1ab8481f5272683" kindref="member">NVIC_EXTI0</ref>      },  
+    { .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a77be88c5985357fe7ef3fcf6ffe3fc90" kindref="member">NVIC_EXTI1</ref>      },  
+    { .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ac3bb8adf1a451bf9a5ea90ea41ae3154" kindref="member">NVIC_EXTI2</ref>      },  
+    { .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83af2226dee9874d0769810efba92ea0eb5" kindref="member">NVIC_EXTI3</ref>      },  
+    { .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a4e8c99ea32d63686fd6c044b9837c308" kindref="member">NVIC_EXTI4</ref>      },  
+    { .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a1b99945914ee92c7907c135de842d9c0" kindref="member">NVIC_EXTI_9_5</ref>   },  
+    { .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a1b99945914ee92c7907c135de842d9c0" kindref="member">NVIC_EXTI_9_5</ref>   },  
+    { .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a1b99945914ee92c7907c135de842d9c0" kindref="member">NVIC_EXTI_9_5</ref>   },  
+    { .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a1b99945914ee92c7907c135de842d9c0" kindref="member">NVIC_EXTI_9_5</ref>   },  
+    { .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a1b99945914ee92c7907c135de842d9c0" kindref="member">NVIC_EXTI_9_5</ref>   },  
+    { .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ab37902fafd8500b53850cc4979960fcb" kindref="member">NVIC_EXTI_15_10</ref> },  
+    { .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ab37902fafd8500b53850cc4979960fcb" kindref="member">NVIC_EXTI_15_10</ref> },  
+    { .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ab37902fafd8500b53850cc4979960fcb" kindref="member">NVIC_EXTI_15_10</ref> },  
+    { .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ab37902fafd8500b53850cc4979960fcb" kindref="member">NVIC_EXTI_15_10</ref> },  
+    { .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ab37902fafd8500b53850cc4979960fcb" kindref="member">NVIC_EXTI_15_10</ref> },  
+    { .handler = NULL, .irq_line = <ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ab37902fafd8500b53850cc4979960fcb" kindref="member">NVIC_EXTI_15_10</ref> },  
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.c" line="66" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.c" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="exti_8c_1a99a2c664fc954a0a49a1046ee45c7cec" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dispatch_single_exti</definition>
+        <argsstring>(uint32 exti_num)</argsstring>
+        <name>dispatch_single_exti</name>
+        <param>
+          <type>uint32</type>
+          <declname>exti_num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.c" line="37" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.c" bodystart="188" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="exti_8c_1a56e3bd1aabd5ea852f43c8846094ce4f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dispatch_extis</definition>
+        <argsstring>(uint32 start, uint32 stop)</argsstring>
+        <name>dispatch_extis</name>
+        <param>
+          <type>uint32</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>stop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.c" line="38" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.c" bodystart="200" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="exti_8c_1a426bedfa921d4c070ea1ea146deec910" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void exti_attach_interrupt</definition>
+        <argsstring>(afio_exti_num num, afio_exti_port port, voidFuncPtr handler, exti_trigger_mode mode)</argsstring>
+        <name>exti_attach_interrupt</name>
+        <param>
+          <type><ref refid="gpio_8h_1a155a78e19d9a90cf0cc63b1e1ce4d04c" kindref="member">afio_exti_num</ref></type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type><ref refid="gpio_8h_1a2575e4635087025b9c3077176aeb5e61" kindref="member">afio_exti_port</ref></type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>voidFuncPtr</type>
+          <declname>handler</declname>
+        </param>
+        <param>
+          <type><ref refid="exti_8h_1ad887fbd72d4310a768c05688bb7113bd" kindref="member">exti_trigger_mode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Register a handler to run upon external interrupt. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function assumes that the interrupt request corresponding to the given external interrupt is masked.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>External interrupt line number. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="struct_port" kindref="compound">Port</ref> to use as source input for external interrupt. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handler</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function handler to execute when interrupt is triggered. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of transition to trigger on, one of: EXTI_RISING, EXTI_FALLING, EXTI_RISING_FALLING. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="gpio_8h_1a155a78e19d9a90cf0cc63b1e1ce4d04c" kindref="member">afio_exti_num</ref> </para><simplesectsep/><para><ref refid="gpio_8h_1a2575e4635087025b9c3077176aeb5e61" kindref="member">afio_exti_port</ref> </para><simplesectsep/><para>voidFuncPtr </para><simplesectsep/><para><ref refid="exti_8h_1ad887fbd72d4310a768c05688bb7113bd" kindref="member">exti_trigger_mode</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.c" line="91" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.c" bodystart="88" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="exti_8c_1abb44b7038a9549418cdfff9d01b36600" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void exti_detach_interrupt</definition>
+        <argsstring>(afio_exti_num num)</argsstring>
+        <name>exti_detach_interrupt</name>
+        <param>
+          <type><ref refid="gpio_8h_1a155a78e19d9a90cf0cc63b1e1ce4d04c" kindref="member">afio_exti_num</ref></type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+<para>Unregister an external interrupt handler. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of the external interrupt line to disable. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="gpio_8h_1a155a78e19d9a90cf0cc63b1e1ce4d04c" kindref="member">afio_exti_num</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.c" line="126" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.c" bodystart="126" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="exti_8c_1ae2678c6ed5792b467b241f15d647bb43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __irq_exti0</definition>
+        <argsstring>(void)</argsstring>
+        <name>__irq_exti0</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.c" line="142" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.c" bodystart="142" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="exti_8c_1a2cd05971d547bb5a962b35d81ee20bd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __irq_exti1</definition>
+        <argsstring>(void)</argsstring>
+        <name>__irq_exti1</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.c" line="146" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.c" bodystart="146" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="exti_8c_1a245c3d0b401bdb0a0ed63197cf852c69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __irq_exti2</definition>
+        <argsstring>(void)</argsstring>
+        <name>__irq_exti2</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.c" line="150" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.c" bodystart="150" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="exti_8c_1aed981a2162e7763dfbbd004bfc04a079" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __irq_exti3</definition>
+        <argsstring>(void)</argsstring>
+        <name>__irq_exti3</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.c" line="154" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.c" bodystart="154" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="exti_8c_1a3488eb34f9267db9d93a675641b78420" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __irq_exti4</definition>
+        <argsstring>(void)</argsstring>
+        <name>__irq_exti4</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.c" line="158" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.c" bodystart="158" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="exti_8c_1ab9f50b845f55186e47febf6d0fc13127" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __irq_exti9_5</definition>
+        <argsstring>(void)</argsstring>
+        <name>__irq_exti9_5</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.c" line="162" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.c" bodystart="162" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="exti_8c_1a4a7e9d53521503c0dc3ef43474020411" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void __irq_exti15_10</definition>
+        <argsstring>(void)</argsstring>
+        <name>__irq_exti15_10</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.c" line="166" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.c" bodystart="166" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="exti_8c_1ac8dcd3d0a41f4cf3316986dd298343b4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void clear_pending_msk</definition>
+        <argsstring>(uint32 exti_msk)</argsstring>
+        <name>clear_pending_msk</name>
+        <param>
+          <type>uint32</type>
+          <declname>exti_msk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.c" line="180" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/exti.c" bodystart="180" bodyend="184"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>External interrupt control routines. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Perry<sp/>Hung.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="exti_8h" kindref="compound" tooltip="External interrupt control prototypes and defines.">exti.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libmaple_8h" kindref="compound" tooltip="General include file for libmaple.">libmaple.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="nvic_8h" kindref="compound" tooltip="Nested vector interrupt controller support.">nvic.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bitband_8h" kindref="compound" tooltip="Bit-banding utility functions.">bitband.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dispatch_single_exti(uint32<sp/>exti_num);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dispatch_extis(uint32<sp/>start,<sp/>uint32<sp/>stop);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>Internal<sp/>state</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="structexti__channel" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structexti__channel" kindref="compound">exti_channel</ref><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*handler)(void);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>irq_line;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}<sp/><ref refid="structexti__channel" kindref="compound">exti_channel</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structexti__channel" kindref="compound">exti_channel</ref><sp/>exti_channels[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ae8682487e9160a6fc1ab8481f5272683" kindref="member" tooltip="EXTI line 0.">NVIC_EXTI0</ref><sp/><sp/><sp/><sp/><sp/><sp/>},<sp/><sp/></highlight><highlight class="comment">//<sp/>EXTI0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a77be88c5985357fe7ef3fcf6ffe3fc90" kindref="member" tooltip="EXTI line 1.">NVIC_EXTI1</ref><sp/><sp/><sp/><sp/><sp/><sp/>},<sp/><sp/></highlight><highlight class="comment">//<sp/>EXTI1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ac3bb8adf1a451bf9a5ea90ea41ae3154" kindref="member" tooltip="EXTI line 2.">NVIC_EXTI2</ref><sp/><sp/><sp/><sp/><sp/><sp/>},<sp/><sp/></highlight><highlight class="comment">//<sp/>EXTI2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83af2226dee9874d0769810efba92ea0eb5" kindref="member" tooltip="EXTI line 3.">NVIC_EXTI3</ref><sp/><sp/><sp/><sp/><sp/><sp/>},<sp/><sp/></highlight><highlight class="comment">//<sp/>EXTI3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a4e8c99ea32d63686fd6c044b9837c308" kindref="member" tooltip="EXTI line 4.">NVIC_EXTI4</ref><sp/><sp/><sp/><sp/><sp/><sp/>},<sp/><sp/></highlight><highlight class="comment">//<sp/>EXTI4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a1b99945914ee92c7907c135de842d9c0" kindref="member" tooltip="EXTI line [9:5].">NVIC_EXTI_9_5</ref><sp/><sp/><sp/>},<sp/><sp/></highlight><highlight class="comment">//<sp/>EXTI5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a1b99945914ee92c7907c135de842d9c0" kindref="member" tooltip="EXTI line [9:5].">NVIC_EXTI_9_5</ref><sp/><sp/><sp/>},<sp/><sp/></highlight><highlight class="comment">//<sp/>EXTI6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a1b99945914ee92c7907c135de842d9c0" kindref="member" tooltip="EXTI line [9:5].">NVIC_EXTI_9_5</ref><sp/><sp/><sp/>},<sp/><sp/></highlight><highlight class="comment">//<sp/>EXTI7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a1b99945914ee92c7907c135de842d9c0" kindref="member" tooltip="EXTI line [9:5].">NVIC_EXTI_9_5</ref><sp/><sp/><sp/>},<sp/><sp/></highlight><highlight class="comment">//<sp/>EXTI8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83a1b99945914ee92c7907c135de842d9c0" kindref="member" tooltip="EXTI line [9:5].">NVIC_EXTI_9_5</ref><sp/><sp/><sp/>},<sp/><sp/></highlight><highlight class="comment">//<sp/>EXTI9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ab37902fafd8500b53850cc4979960fcb" kindref="member" tooltip="EXTI line [15:10].">NVIC_EXTI_15_10</ref><sp/>},<sp/><sp/></highlight><highlight class="comment">//<sp/>EXTI10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ab37902fafd8500b53850cc4979960fcb" kindref="member" tooltip="EXTI line [15:10].">NVIC_EXTI_15_10</ref><sp/>},<sp/><sp/></highlight><highlight class="comment">//<sp/>EXTI11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ab37902fafd8500b53850cc4979960fcb" kindref="member" tooltip="EXTI line [15:10].">NVIC_EXTI_15_10</ref><sp/>},<sp/><sp/></highlight><highlight class="comment">//<sp/>EXTI12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ab37902fafd8500b53850cc4979960fcb" kindref="member" tooltip="EXTI line [15:10].">NVIC_EXTI_15_10</ref><sp/>},<sp/><sp/></highlight><highlight class="comment">//<sp/>EXTI13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ab37902fafd8500b53850cc4979960fcb" kindref="member" tooltip="EXTI line [15:10].">NVIC_EXTI_15_10</ref><sp/>},<sp/><sp/></highlight><highlight class="comment">//<sp/>EXTI14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>.handler<sp/>=<sp/>NULL,<sp/>.irq_line<sp/>=<sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83ab37902fafd8500b53850cc4979960fcb" kindref="member" tooltip="EXTI line [15:10].">NVIC_EXTI_15_10</ref><sp/>},<sp/><sp/></highlight><highlight class="comment">//<sp/>EXTI15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/>*<sp/>Convenience<sp/>routines</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="exti_8h_1a426bedfa921d4c070ea1ea146deec910" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="exti_8c_1a426bedfa921d4c070ea1ea146deec910" kindref="member" tooltip="Register a handler to run upon external interrupt.">exti_attach_interrupt</ref>(<ref refid="gpio_8h_1a155a78e19d9a90cf0cc63b1e1ce4d04c" kindref="member" tooltip="External interrupt line numbers.">afio_exti_num</ref><sp/>num,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gpio_8h_1a2575e4635087025b9c3077176aeb5e61" kindref="member" tooltip="External interrupt line port selector.">afio_exti_port</ref><sp/>port,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>voidFuncPtr<sp/>handler,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="exti_8h_1ad887fbd72d4310a768c05688bb7113bd" kindref="member" tooltip="External interrupt trigger mode.">exti_trigger_mode</ref><sp/>mode)<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>ASSERT(handler);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Register<sp/>the<sp/>handler<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>exti_channels[num].handler<sp/>=<sp/>handler;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>trigger<sp/>mode<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(mode)<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="exti_8h_1ad887fbd72d4310a768c05688bb7113bda0f4aba10f123514f27120ae63ab8a40c" kindref="member" tooltip="Trigger on the rising edge.">EXTI_RISING</ref>:</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bitband_8h_1a20fc9d0655ba9ecfd07045b759729942" kindref="member" tooltip="Set a bit in an address in the peripheral bit-band region.">bb_peri_set_bit</ref>(&amp;<ref refid="exti_8h_1a87371508b3bcdcd98cd1ec629be29061" kindref="member" tooltip="EXTI register map base pointer.">EXTI_BASE</ref>-&gt;RTSR,<sp/>num,<sp/>1);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="exti_8h_1ad887fbd72d4310a768c05688bb7113bda82ee40687454f207023a4679fe0f6ccd" kindref="member" tooltip="Trigger on the falling edge.">EXTI_FALLING</ref>:</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bitband_8h_1a20fc9d0655ba9ecfd07045b759729942" kindref="member" tooltip="Set a bit in an address in the peripheral bit-band region.">bb_peri_set_bit</ref>(&amp;<ref refid="exti_8h_1a87371508b3bcdcd98cd1ec629be29061" kindref="member" tooltip="EXTI register map base pointer.">EXTI_BASE</ref>-&gt;FTSR,<sp/>num,<sp/>1);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="exti_8h_1ad887fbd72d4310a768c05688bb7113bdadb52284de9f94c0677fe2cc5ffd9e3f2" kindref="member" tooltip="Trigger on both the rising and falling edges.">EXTI_RISING_FALLING</ref>:</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bitband_8h_1a20fc9d0655ba9ecfd07045b759729942" kindref="member" tooltip="Set a bit in an address in the peripheral bit-band region.">bb_peri_set_bit</ref>(&amp;<ref refid="exti_8h_1a87371508b3bcdcd98cd1ec629be29061" kindref="member" tooltip="EXTI register map base pointer.">EXTI_BASE</ref>-&gt;RTSR,<sp/>num,<sp/>1);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="bitband_8h_1a20fc9d0655ba9ecfd07045b759729942" kindref="member" tooltip="Set a bit in an address in the peripheral bit-band region.">bb_peri_set_bit</ref>(&amp;<ref refid="exti_8h_1a87371508b3bcdcd98cd1ec629be29061" kindref="member" tooltip="EXTI register map base pointer.">EXTI_BASE</ref>-&gt;FTSR,<sp/>num,<sp/>1);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Map<sp/>num<sp/>to<sp/>port<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>afio_exti_select(num,<sp/>port);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Unmask<sp/>external<sp/>interrupt<sp/>request<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bitband_8h_1a20fc9d0655ba9ecfd07045b759729942" kindref="member" tooltip="Set a bit in an address in the peripheral bit-band region.">bb_peri_set_bit</ref>(&amp;<ref refid="exti_8h_1a87371508b3bcdcd98cd1ec629be29061" kindref="member" tooltip="EXTI register map base pointer.">EXTI_BASE</ref>-&gt;IMR,<sp/>num,<sp/>1);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Enable<sp/>the<sp/>interrupt<sp/>line<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a51e6b1b0e83aac5cd8f1a50255db6b45" kindref="member" tooltip="Enable interrupt irq_num.">nvic_irq_enable</ref>(exti_channels[num].irq_line);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="exti_8h_1abb44b7038a9549418cdfff9d01b36600" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="exti_8c_1abb44b7038a9549418cdfff9d01b36600" kindref="member" tooltip="Unregister an external interrupt handler.">exti_detach_interrupt</ref>(<ref refid="gpio_8h_1a155a78e19d9a90cf0cc63b1e1ce4d04c" kindref="member" tooltip="External interrupt line numbers.">afio_exti_num</ref><sp/>num)<sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>First,<sp/>mask<sp/>the<sp/>interrupt<sp/>request<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bitband_8h_1a20fc9d0655ba9ecfd07045b759729942" kindref="member" tooltip="Set a bit in an address in the peripheral bit-band region.">bb_peri_set_bit</ref>(&amp;<ref refid="exti_8h_1a87371508b3bcdcd98cd1ec629be29061" kindref="member" tooltip="EXTI register map base pointer.">EXTI_BASE</ref>-&gt;IMR,<sp/>num,<sp/>0);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Then,<sp/>clear<sp/>the<sp/>trigger<sp/>selection<sp/>registers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bitband_8h_1a20fc9d0655ba9ecfd07045b759729942" kindref="member" tooltip="Set a bit in an address in the peripheral bit-band region.">bb_peri_set_bit</ref>(&amp;<ref refid="exti_8h_1a87371508b3bcdcd98cd1ec629be29061" kindref="member" tooltip="EXTI register map base pointer.">EXTI_BASE</ref>-&gt;FTSR,<sp/>num,<sp/>0);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bitband_8h_1a20fc9d0655ba9ecfd07045b759729942" kindref="member" tooltip="Set a bit in an address in the peripheral bit-band region.">bb_peri_set_bit</ref>(&amp;<ref refid="exti_8h_1a87371508b3bcdcd98cd1ec629be29061" kindref="member" tooltip="EXTI register map base pointer.">EXTI_BASE</ref>-&gt;RTSR,<sp/>num,<sp/>0);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Finally,<sp/>unregister<sp/>the<sp/>user&apos;s<sp/>handler<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>exti_channels[num].handler<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="139"><highlight class="comment"><sp/>*<sp/>Interrupt<sp/>handlers</highlight></codeline>
+<codeline lineno="140"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__irq_exti0(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>dispatch_single_exti(<ref refid="gpio_8h_1a155a78e19d9a90cf0cc63b1e1ce4d04ca487990858c4e59a52570ddad99ef3242" kindref="member" tooltip="External interrupt line 0.">AFIO_EXTI_0</ref>);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__irq_exti1(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>dispatch_single_exti(<ref refid="gpio_8h_1a155a78e19d9a90cf0cc63b1e1ce4d04cad230483f1a211b36107436376a2413b9" kindref="member" tooltip="External interrupt line 1.">AFIO_EXTI_1</ref>);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__irq_exti2(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>dispatch_single_exti(<ref refid="gpio_8h_1a155a78e19d9a90cf0cc63b1e1ce4d04ca941654e1e77f7675da3c71a3f0f1e141" kindref="member" tooltip="External interrupt line 2.">AFIO_EXTI_2</ref>);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__irq_exti3(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>dispatch_single_exti(<ref refid="gpio_8h_1a155a78e19d9a90cf0cc63b1e1ce4d04ca6e88c5c97368830071456e855dc10cc0" kindref="member" tooltip="External interrupt line 3.">AFIO_EXTI_3</ref>);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__irq_exti4(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>dispatch_single_exti(<ref refid="gpio_8h_1a155a78e19d9a90cf0cc63b1e1ce4d04cab35687868bdafd6123736d88afe3b6ff" kindref="member" tooltip="External interrupt line 4.">AFIO_EXTI_4</ref>);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__irq_exti9_5(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>dispatch_extis(5,<sp/>9);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>__irq_exti15_10(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>dispatch_extis(10,<sp/>15);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="171"><highlight class="comment"><sp/>*<sp/>Auxiliary<sp/>functions</highlight></codeline>
+<codeline lineno="172"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Clear<sp/>the<sp/>pending<sp/>bits<sp/>for<sp/>EXTIs<sp/>whose<sp/>bits<sp/>are<sp/>set<sp/>in<sp/>exti_msk.</highlight></codeline>
+<codeline lineno="175"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="176"><highlight class="comment"><sp/>*<sp/>If<sp/>a<sp/>pending<sp/>bit<sp/>is<sp/>cleared<sp/>as<sp/>the<sp/>last<sp/>instruction<sp/>in<sp/>an<sp/>ISR,<sp/>it</highlight></codeline>
+<codeline lineno="177"><highlight class="comment"><sp/>*<sp/>won&apos;t<sp/>actually<sp/>be<sp/>cleared<sp/>in<sp/>time<sp/>and<sp/>the<sp/>ISR<sp/>will<sp/>fire<sp/>again.<sp/><sp/>To</highlight></codeline>
+<codeline lineno="178"><highlight class="comment"><sp/>*<sp/>compensate,<sp/>this<sp/>function<sp/>NOPs<sp/>for<sp/>2<sp/>cycles<sp/>after<sp/>clearing<sp/>the</highlight></codeline>
+<codeline lineno="179"><highlight class="comment"><sp/>*<sp/>pending<sp/>bits<sp/>to<sp/>ensure<sp/>it<sp/>takes<sp/>effect.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>clear_pending_msk(uint32<sp/>exti_msk)<sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="exti_8h_1a87371508b3bcdcd98cd1ec629be29061" kindref="member" tooltip="EXTI register map base pointer.">EXTI_BASE</ref>-&gt;PR<sp/>=<sp/>exti_msk;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">asm</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal">(</highlight><highlight class="stringliteral">&quot;nop&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">asm</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal">(</highlight><highlight class="stringliteral">&quot;nop&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>This<sp/>dispatch<sp/>routine<sp/>is<sp/>for<sp/>non-multiplexed<sp/>EXTI<sp/>lines<sp/>only;<sp/>i.e.,</highlight></codeline>
+<codeline lineno="187"><highlight class="comment"><sp/>*<sp/>it<sp/>doesn&apos;t<sp/>check<sp/>EXTI_PR.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dispatch_single_exti(uint32<sp/>exti)<sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>voidFuncPtr<sp/>handler<sp/>=<sp/>exti_channels[exti].handler;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!handler)<sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>handler();</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>clear_pending_msk(BIT(exti));</highlight></codeline>
+<codeline lineno="197"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Dispatch<sp/>routine<sp/>for<sp/>EXTIs<sp/>which<sp/>share<sp/>an<sp/>IRQ.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dispatch_extis(uint32<sp/>start,<sp/>uint32<sp/>stop)<sp/>{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>pr<sp/>=<sp/><ref refid="exti_8h_1a87371508b3bcdcd98cd1ec629be29061" kindref="member" tooltip="EXTI register map base pointer.">EXTI_BASE</ref>-&gt;PR;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>handled_msk<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>exti;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Dispatch<sp/>user<sp/>handlers<sp/>for<sp/>pending<sp/>EXTIs.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(exti<sp/>=<sp/>start;<sp/>exti<sp/>&lt;=<sp/>stop;<sp/>exti++)<sp/>{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32<sp/>eb<sp/>=<sp/>BIT(exti);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pr<sp/>&amp;<sp/>eb)<sp/>{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>voidFuncPtr<sp/>handler<sp/>=<sp/>exti_channels[exti].handler;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(handler)<sp/>{</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>handler();</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>handled_msk<sp/>|=<sp/>eb;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Clear<sp/>the<sp/>pending<sp/>bits<sp/>for<sp/>handled<sp/>EXTIs.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>clear_pending_msk(handled_msk);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/exti.c"/>
+  </compounddef>
+</doxygen>

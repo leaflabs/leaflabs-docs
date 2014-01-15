@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="struct_u_s_b___descriptor___config___header" kind="struct" prot="public">
+    <compoundname>USB_Descriptor_Config_Header</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_u_s_b___descriptor___config___header_1aed4fd6bcc4e01e4eb26133f6fff5d7f8" prot="public" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 USB_Descriptor_Config_Header::bLength</definition>
+        <argsstring></argsstring>
+        <name>bLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="91" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_b___descriptor___config___header_1ad05a9a762a683594a6db5282d2712c4b" prot="public" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 USB_Descriptor_Config_Header::bDescriptorType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="92" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_b___descriptor___config___header_1ac0ec8149d80c5125b7bdca1b7b1331f3" prot="public" static="no" mutable="no">
+        <type>uint16</type>
+        <definition>uint16 USB_Descriptor_Config_Header::wTotalLength</definition>
+        <argsstring></argsstring>
+        <name>wTotalLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="93" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_b___descriptor___config___header_1a8bc30c76900a74e38027bce5ef3d3468" prot="public" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 USB_Descriptor_Config_Header::bNumInterfaces</definition>
+        <argsstring></argsstring>
+        <name>bNumInterfaces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="94" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_b___descriptor___config___header_1ac1e34b473be2b310170118c283585703" prot="public" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 USB_Descriptor_Config_Header::bConfigurationValue</definition>
+        <argsstring></argsstring>
+        <name>bConfigurationValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="95" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_b___descriptor___config___header_1aa7e1b8b50b8df55f145db09c8c7c89c5" prot="public" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 USB_Descriptor_Config_Header::iConfiguration</definition>
+        <argsstring></argsstring>
+        <name>iConfiguration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="96" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_b___descriptor___config___header_1ab03c412770ba7b0b3d4e9409588221ab" prot="public" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 USB_Descriptor_Config_Header::bmAttributes</definition>
+        <argsstring></argsstring>
+        <name>bmAttributes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="97" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_u_s_b___descriptor___config___header_1aa76faf99197d2abacc7f4a46c18a5362" prot="public" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 USB_Descriptor_Config_Header::bMaxPower</definition>
+        <argsstring></argsstring>
+        <name>bMaxPower</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="98" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" line="90" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/usb/descriptors.h" bodystart="90" bodyend="99"/>
+    <listofallmembers>
+      <member refid="struct_u_s_b___descriptor___config___header_1ac1e34b473be2b310170118c283585703" prot="public" virt="non-virtual"><scope>USB_Descriptor_Config_Header</scope><name>bConfigurationValue</name></member>
+      <member refid="struct_u_s_b___descriptor___config___header_1ad05a9a762a683594a6db5282d2712c4b" prot="public" virt="non-virtual"><scope>USB_Descriptor_Config_Header</scope><name>bDescriptorType</name></member>
+      <member refid="struct_u_s_b___descriptor___config___header_1aed4fd6bcc4e01e4eb26133f6fff5d7f8" prot="public" virt="non-virtual"><scope>USB_Descriptor_Config_Header</scope><name>bLength</name></member>
+      <member refid="struct_u_s_b___descriptor___config___header_1ab03c412770ba7b0b3d4e9409588221ab" prot="public" virt="non-virtual"><scope>USB_Descriptor_Config_Header</scope><name>bmAttributes</name></member>
+      <member refid="struct_u_s_b___descriptor___config___header_1aa76faf99197d2abacc7f4a46c18a5362" prot="public" virt="non-virtual"><scope>USB_Descriptor_Config_Header</scope><name>bMaxPower</name></member>
+      <member refid="struct_u_s_b___descriptor___config___header_1a8bc30c76900a74e38027bce5ef3d3468" prot="public" virt="non-virtual"><scope>USB_Descriptor_Config_Header</scope><name>bNumInterfaces</name></member>
+      <member refid="struct_u_s_b___descriptor___config___header_1aa7e1b8b50b8df55f145db09c8c7c89c5" prot="public" virt="non-virtual"><scope>USB_Descriptor_Config_Header</scope><name>iConfiguration</name></member>
+      <member refid="struct_u_s_b___descriptor___config___header_1ac0ec8149d80c5125b7bdca1b7b1331f3" prot="public" virt="non-virtual"><scope>USB_Descriptor_Config_Header</scope><name>wTotalLength</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

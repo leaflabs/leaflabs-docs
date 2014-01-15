@@ -1,0 +1,1558 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="i2c_8h" kind="file">
+    <compoundname>i2c.h</compoundname>
+    <includes refid="libmaple__types_8h" local="yes">libmaple_types.h</includes>
+    <includes refid="rcc_8h" local="yes">rcc.h</includes>
+    <includes refid="nvic_8h" local="yes">nvic.h</includes>
+    <includes refid="gpio_8h" local="yes">gpio.h</includes>
+    <includedby refid="i2c_8c" local="yes">libmaple/i2c.c</includedby>
+    <incdepgraph>
+      <node id="262">
+        <label>nvic.h</label>
+        <link refid="nvic_8h"/>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="263" relation="include">
+        </childnode>
+      </node>
+      <node id="261">
+        <label>rcc.h</label>
+        <link refid="rcc_8h"/>
+        <childnode refid="260" relation="include">
+        </childnode>
+      </node>
+      <node id="259">
+        <label>libmaple/i2c.h</label>
+        <link refid="i2c.h"/>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="264" relation="include">
+        </childnode>
+      </node>
+      <node id="266">
+        <label>stm32.h</label>
+        <link refid="stm32_8h"/>
+      </node>
+      <node id="260">
+        <label>libmaple_types.h</label>
+        <link refid="libmaple__types_8h"/>
+      </node>
+      <node id="265">
+        <label>libmaple.h</label>
+        <link refid="libmaple_8h"/>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="267" relation="include">
+        </childnode>
+      </node>
+      <node id="264">
+        <label>gpio.h</label>
+        <link refid="gpio_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="261" relation="include">
+        </childnode>
+      </node>
+      <node id="267">
+        <label>delay.h</label>
+        <link refid="delay_8h"/>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+      </node>
+      <node id="263">
+        <label>util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="260" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="269">
+        <label>libmaple/i2c.c</label>
+        <link refid="i2c_8c"/>
+      </node>
+      <node id="268">
+        <label>libmaple/i2c.h</label>
+        <link refid="i2c.h"/>
+        <childnode refid="269" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structi2c__reg__map" prot="public">i2c_reg_map</innerclass>
+    <innerclass refid="structi2c__msg" prot="public">i2c_msg</innerclass>
+    <innerclass refid="structi2c__dev" prot="public">i2c_dev</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="i2c_8h_1a6c3042e882e6a817a6498b7a4e1f0a95" prot="public" static="no">
+        <name>I2C_MSG_READ</name>
+        <initializer>0x1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="67" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a83796a103d3f72dcd3c90ee49c02c609" prot="public" static="no">
+        <name>I2C_MSG_10BIT_ADDR</name>
+        <initializer>0x2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="68" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1acd72dbffb1738ca87c838545c4eb85a3" prot="public" static="no">
+        <name>I2C1_BASE</name>
+        <initializer>((struct <ref refid="structi2c__reg__map" kindref="compound">i2c_reg_map</ref>*)0x40005400)</initializer>
+        <briefdescription>
+<para>I2C1 register map base pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="106" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a04bda70f25c795fb79f163b633ad4a5d" prot="public" static="no">
+        <name>I2C2_BASE</name>
+        <initializer>((struct <ref refid="structi2c__reg__map" kindref="compound">i2c_reg_map</ref>*)0x40005800)</initializer>
+        <briefdescription>
+<para>I2C2 register map base pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="108" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a8dc661ef13da02e5bcb943f2003d576d" prot="public" static="no">
+        <name>I2C_CR1_SWRST</name>
+        <initializer>BIT(15)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="116" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a56729ccf93c5d9f5b5b05002e3a2323c" prot="public" static="no">
+        <name>I2C_CR1_ALERT</name>
+        <initializer>BIT(13)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="117" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1ab4d0119253d93a106b5ca704e5020c12" prot="public" static="no">
+        <name>I2C_CR1_PEC</name>
+        <initializer>BIT(12)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="118" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a34721958229a5983f2e95dfeaa8e55c3" prot="public" static="no">
+        <name>I2C_CR1_POS</name>
+        <initializer>BIT(11)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="119" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1af933b105259a4bc46a957576adb8d96d" prot="public" static="no">
+        <name>I2C_CR1_ACK</name>
+        <initializer>BIT(10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="120" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a2ca7f18dd5bc1130dbefae4ff8736143" prot="public" static="no">
+        <name>I2C_CR1_START</name>
+        <initializer>BIT(8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="121" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1ace70293f3dfa24d448b600fc58e45223" prot="public" static="no">
+        <name>I2C_CR1_STOP</name>
+        <initializer>BIT(9)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="122" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a953b0d38414808db79da116842ed3262" prot="public" static="no">
+        <name>I2C_CR1_PE</name>
+        <initializer>BIT(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="123" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a6a0955008cbabbb6b726ba0b4f8da609" prot="public" static="no">
+        <name>I2C_CR2_LAST</name>
+        <initializer>BIT(12)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="127" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1adb81d5c91486b873bd0bf279a4ffcf69" prot="public" static="no">
+        <name>I2C_CR2_DMAEN</name>
+        <initializer>BIT(11)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="128" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a2efbe5d96ed0ce447a45a62e8317a68a" prot="public" static="no">
+        <name>I2C_CR2_ITBUFEN</name>
+        <initializer>BIT(10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="129" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a3b1ebaf8173090ec469b055b98e585d2" prot="public" static="no">
+        <name>I2C_CR2_ITEVTEN</name>
+        <initializer>BIT(9)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="130" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a6f14ae48e4609c2b3645211234cba974" prot="public" static="no">
+        <name>I2C_CR2_ITERREN</name>
+        <initializer>BIT(8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="131" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a293fbe15ed5fd1fc95915bd6437859e7" prot="public" static="no">
+        <name>I2C_CR2_FREQ</name>
+        <initializer>0xFFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="132" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1aea64e5d7eba609ac9a84964bc0bc2def" prot="public" static="no">
+        <name>I2C_CCR_FS</name>
+        <initializer>BIT(15)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="136" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a851c8a6b598d54c1a805b1632a4078e5" prot="public" static="no">
+        <name>I2C_CCR_DUTY</name>
+        <initializer>BIT(14)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="137" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a5c8cb2bd83dd7dbdcf6ca4bbf4a841de" prot="public" static="no">
+        <name>I2C_CCR_CCR</name>
+        <initializer>0xFFF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="138" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a6935c920da59d755d0cf834548a70ec4" prot="public" static="no">
+        <name>I2C_SR1_SB</name>
+        <initializer>BIT(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="142" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a3db361a4d9dd84b187085a11d933b45d" prot="public" static="no">
+        <name>I2C_SR1_ADDR</name>
+        <initializer>BIT(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="143" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1afb279f85d78cfe5abd3eeb0b40a65ab1" prot="public" static="no">
+        <name>I2C_SR1_BTF</name>
+        <initializer>BIT(2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="144" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a6faaa55a1e48aa7c1f2b69669901445d" prot="public" static="no">
+        <name>I2C_SR1_ADD10</name>
+        <initializer>BIT(3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="145" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1aafcea4cdbe2f6da31566c897fa893a7c" prot="public" static="no">
+        <name>I2C_SR1_STOPF</name>
+        <initializer>BIT(4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="146" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1af6ebe33c992611bc2e25bbb01c1441a5" prot="public" static="no">
+        <name>I2C_SR1_RXNE</name>
+        <initializer>BIT(6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="147" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1afdc4da49c163910203255e384591b6f7" prot="public" static="no">
+        <name>I2C_SR1_TXE</name>
+        <initializer>BIT(7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="148" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a1d12990c90ab0757dcfea150ea50b227" prot="public" static="no">
+        <name>I2C_SR1_BERR</name>
+        <initializer>BIT(8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="149" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1acbc52f6ec6172c71d8b026a22c2f69d2" prot="public" static="no">
+        <name>I2C_SR1_ARLO</name>
+        <initializer>BIT(9)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="150" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a62aa2496d4b3955214a16a7bd998fd88" prot="public" static="no">
+        <name>I2C_SR1_AF</name>
+        <initializer>BIT(10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="151" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1ad42d2435d2e64bf710c701c9b17adfb4" prot="public" static="no">
+        <name>I2C_SR1_OVR</name>
+        <initializer>BIT(11)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="152" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a4b2976279024e832e53ad12796a7bb71" prot="public" static="no">
+        <name>I2C_SR1_PECERR</name>
+        <initializer>BIT(12)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="153" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1aef3a1e4921d7c509d1b639c67882c4c9" prot="public" static="no">
+        <name>I2C_SR1_TIMEOUT</name>
+        <initializer>BIT(14)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="154" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a8df36c38deb8791d0ac3cb5881298c1c" prot="public" static="no">
+        <name>I2C_SR1_SMBALERT</name>
+        <initializer>BIT(15)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="155" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a75cc361adf0e72e33d6771ebfa17b52d" prot="public" static="no">
+        <name>I2C_SR2_MSL</name>
+        <initializer>BIT(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="159" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a3b1e75a82da73ae2873cff1cd27c3179" prot="public" static="no">
+        <name>I2C_SR2_BUSY</name>
+        <initializer>BIT(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="160" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a288b20416b42a79e591aa80d9a690fca" prot="public" static="no">
+        <name>I2C_SR2_TRA</name>
+        <initializer>BIT(2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="161" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1af3aeb79cbe04f7ec1e3c2615921c4fab" prot="public" static="no">
+        <name>I2C_SR2_GENCALL</name>
+        <initializer>BIT(4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="162" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1afcf50334903013177a8c6f4e36b8d6fe" prot="public" static="no">
+        <name>I2C_SR2_SMBDEFAULT</name>
+        <initializer>BIT(5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="163" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1aa07cf3e404f9f57e98d1ba3793079c80" prot="public" static="no">
+        <name>I2C_SR2_SMBHOST</name>
+        <initializer>BIT(6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="164" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a79a6a21835e06d9bc48009f4269b7798" prot="public" static="no">
+        <name>I2C_SR2_DUALF</name>
+        <initializer>BIT(7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="165" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a4a4fd5d9c9e2593be920d19a5f6ae732" prot="public" static="no">
+        <name>I2C_SR2_PEC</name>
+        <initializer>0xFF00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="166" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a1563098b2b4bb41e29f0e2d2e187b3c8" prot="public" static="no">
+        <name>I2C_FAST_MODE</name>
+        <initializer>BIT(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="179" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a4f7f0e1eaa623fe9555c07b9ac2ce1bf" prot="public" static="no">
+        <name>I2C_DUTY_16_9</name>
+        <initializer>BIT(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="180" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a8f5d3258ed044731e5aeabc09590f188" prot="public" static="no">
+        <name>I2C_REMAP</name>
+        <initializer>BIT(2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="181" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1aadb89860ce6eaee32c974994a1f223b5" prot="public" static="no">
+        <name>I2C_BUS_RESET</name>
+        <initializer>BIT(3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="182" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a0f4f6981e417cc231d7bb5a955cf5b61" prot="public" static="no">
+        <name>I2C_ERROR_PROTOCOL</name>
+        <initializer>(-1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="185" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a1b84d1553cbca47e052922088a0cc4e8" prot="public" static="no">
+        <name>I2C_ERROR_TIMEOUT</name>
+        <initializer>(-2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="186" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a52a80944a72431b51fd928d904486db7" prot="public" static="no">
+        <name>I2C_IRQ_ERROR</name>
+        <initializer>I2C_CR2_ITERREN</initializer>
+        <briefdescription>
+<para>Enable one or more I2C interrupts. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>irqs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bitwise or of: I2C_IRQ_ERROR (error interrupt), I2C_IRQ_EVENT (event interrupt), and I2C_IRQ_BUFFER (buffer interrupt). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="308" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a822afc9d10b6c154fad652fee96ba787" prot="public" static="no">
+        <name>I2C_IRQ_EVENT</name>
+        <initializer>I2C_CR2_ITEVTEN</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="309" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="i2c_8h_1a127cd216fc2ee81937a9452ff1ebf5d4" prot="public" static="no">
+        <name>I2C_IRQ_BUFFER</name>
+        <initializer>I2C_CR2_ITBUFEN</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="310" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="i2c_8h_1a3acd3f8324118cb8c44f79b0fa24190a" prot="public" static="no">
+        <name>i2c_state</name>
+        <enumvalue id="i2c_8h_1a3acd3f8324118cb8c44f79b0fa24190aa5792a96b3ac295e48ea5c9cd12e3b57c" prot="public">
+          <name>I2C_STATE_DISABLED</name>
+          <initializer> 0</initializer>
+          <briefdescription>
+<para>Disabled. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="i2c_8h_1a3acd3f8324118cb8c44f79b0fa24190aa6ec919e5ab4c1e707e4341497c56ef3a" prot="public">
+          <name>I2C_STATE_IDLE</name>
+          <initializer> 1</initializer>
+          <briefdescription>
+<para>Idle. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="i2c_8h_1a3acd3f8324118cb8c44f79b0fa24190aa29bc11ff47f471f704fab5c69974a692" prot="public">
+          <name>I2C_STATE_XFER_DONE</name>
+          <initializer> 2</initializer>
+          <briefdescription>
+<para>Done with transfer. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="i2c_8h_1a3acd3f8324118cb8c44f79b0fa24190aa14c205a74425e3c05c129652c52180ab" prot="public">
+          <name>I2C_STATE_BUSY</name>
+          <initializer> 3</initializer>
+          <briefdescription>
+<para>Busy. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="i2c_8h_1a3acd3f8324118cb8c44f79b0fa24190aadd0d5082a2cf148823e1b8307728b011" prot="public">
+          <name>I2C_STATE_ERROR</name>
+          <initializer> -1</initializer>
+          <briefdescription>
+<para>Error occurred. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>I2C device states. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="54" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="54" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="i2c_8h_1aec89802fb408c222366cbe7dab906b09" prot="public" static="no" mutable="no">
+        <type><ref refid="structi2c__dev" kindref="compound">i2c_dev</ref> *const</type>
+        <definition>i2c_dev* const I2C1</definition>
+        <argsstring></argsstring>
+        <name>I2C1</name>
+        <briefdescription>
+<para>I2C1 device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="98" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.c" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="i2c_8h_1a6d5a7765624c32671f73c79a73e778cc" prot="public" static="no" mutable="no">
+        <type><ref refid="structi2c__dev" kindref="compound">i2c_dev</ref> *const</type>
+        <definition>i2c_dev* const I2C2</definition>
+        <argsstring></argsstring>
+        <name>I2C2</name>
+        <briefdescription>
+<para>I2C2 device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="99" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.c" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="i2c_8h_1af8cfdd992921cde40e1602a9b34e25ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void i2c_init</definition>
+        <argsstring>(i2c_dev *dev)</argsstring>
+        <name>i2c_init</name>
+        <param>
+          <type><ref refid="structi2c__dev" kindref="compound">i2c_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Initialize an I2C device and reset its registers to their default values. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device to initialize. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="176" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.c" bodystart="378" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="function" id="i2c_8h_1a452bf35cbe145bbdf2def959891952f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void i2c_master_enable</definition>
+        <argsstring>(i2c_dev *dev, uint32 flags)</argsstring>
+        <name>i2c_master_enable</name>
+        <param>
+          <type><ref refid="structi2c__dev" kindref="compound">i2c_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+<para>Initialize an I2C device as bus master. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device to enable </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bitwise or of the following I2C options: I2C_FAST_MODE: 400 khz operation, I2C_DUTY_16_9: 16/9 Tlow/Thigh duty cycle (only applicable for fast mode), I2C_BUS_RESET: Reset the bus and clock out any hung slaves on initialization, I2C_10BIT_ADDRESSING: Enable 10-bit addressing, I2C_REMAP: Remap I2C1 to SCL/PB8 SDA/PB9. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="183" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.c" bodystart="395" bodyend="488"/>
+      </memberdef>
+      <memberdef kind="function" id="i2c_8h_1aafcba989e09effa08b3b8414326b52ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32</type>
+        <definition>int32 i2c_master_xfer</definition>
+        <argsstring>(i2c_dev *dev, i2c_msg *msgs, uint16 num, uint32 timeout)</argsstring>
+        <name>i2c_master_xfer</name>
+        <param>
+          <type><ref refid="structi2c__dev" kindref="compound">i2c_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type><ref refid="structi2c__msg" kindref="compound">i2c_msg</ref> *</type>
+          <declname>msgs</declname>
+        </param>
+        <param>
+          <type>uint16</type>
+          <declname>num</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+<para>Process an i2c transaction. </para>        </briefdescription>
+        <detaileddescription>
+<para>Transactions are composed of one or more <ref refid="structi2c__msg" kindref="compound">i2c_msg</ref>&apos;s, and may be read or write tranfers. Multiple <ref refid="structi2c__msg" kindref="compound">i2c_msg</ref>&apos;s will generate a repeated start in between messages.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>msgs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Messages to send/receive </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of messages to send/receive </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bus idle timeout in milliseconds before aborting the transfer. 0 denotes no timeout. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, I2C_ERROR_PROTOCOL if there was a protocol error, I2C_ERROR_TIMEOUT if the transfer timed out. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="187" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.c" bodystart="507" bodyend="531"/>
+      </memberdef>
+      <memberdef kind="function" id="i2c_8h_1aab3886f4f42b3c5aa303311db6cba2ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void i2c_bus_reset</definition>
+        <argsstring>(const i2c_dev *dev)</argsstring>
+        <name>i2c_bus_reset</name>
+        <param>
+          <type>const <ref refid="structi2c__dev" kindref="compound">i2c_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Reset an I2C bus. </para>        </briefdescription>
+        <detaileddescription>
+<para>Reset is accomplished by clocking out pulses until any hung slaves release SDA and SCL, then generating a START condition, then a STOP condition.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C device </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="189" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.c" bodystart="337" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="i2c_8h_1a1cd1a1f7c1a2bb5a313b976dbee81233" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void i2c_disable</definition>
+        <argsstring>(i2c_dev *dev)</argsstring>
+        <name>i2c_disable</name>
+        <param>
+          <type><ref refid="structi2c__dev" kindref="compound">i2c_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Disable an I2C device. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function disables the corresponding peripheral and marks dev&apos;s state as I2C_STATE_DISABLED.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device to disable. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="199" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="199" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="i2c_8h_1a8d68fb99a8a2536a75fd9008fac9d2d3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void i2c_peripheral_enable</definition>
+        <argsstring>(i2c_dev *dev)</argsstring>
+        <name>i2c_peripheral_enable</name>
+        <param>
+          <type><ref refid="structi2c__dev" kindref="compound">i2c_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Turn on an I2C peripheral. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device to enable </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="208" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="208" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="i2c_8h_1abcbe61c229078b24811bb119c716163b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void i2c_peripheral_disable</definition>
+        <argsstring>(i2c_dev *dev)</argsstring>
+        <name>i2c_peripheral_disable</name>
+        <param>
+          <type><ref refid="structi2c__dev" kindref="compound">i2c_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Turn off an I2C peripheral. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Device to turn off </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="216" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="216" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="i2c_8h_1aaf1d8b3f161b5bffccf335e45560bc95" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void i2c_write</definition>
+        <argsstring>(i2c_dev *dev, uint8 byte)</argsstring>
+        <name>i2c_write</name>
+        <param>
+          <type><ref refid="structi2c__dev" kindref="compound">i2c_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>uint8</type>
+          <declname>byte</declname>
+        </param>
+        <briefdescription>
+<para>Fill transmit register. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>byte</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Byte to write </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="225" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="225" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="i2c_8h_1ac689edbe53b35ee1aa991a3c0377b403" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void i2c_set_input_clk</definition>
+        <argsstring>(i2c_dev *dev, uint32 freq)</argsstring>
+        <name>i2c_set_input_clk</name>
+        <param>
+          <type><ref refid="structi2c__dev" kindref="compound">i2c_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+<para>Set input clock frequency, in MHz. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Frequency in megahertz (2-36) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="234" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="234" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="i2c_8h_1ac6814d6ac4068949197003b43f3a213f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void i2c_set_clk_control</definition>
+        <argsstring>(i2c_dev *dev, uint32 val)</argsstring>
+        <name>i2c_set_clk_control</name>
+        <param>
+          <type><ref refid="structi2c__dev" kindref="compound">i2c_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set I2C clock control register. </para>        </briefdescription>
+        <detaileddescription>
+<para>See RM008 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value to use for clock control register (in Fast/Standard mode) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="247" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="247" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="i2c_8h_1ab449d7e74e40ebeb3f015575d92734f8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void i2c_set_trise</definition>
+        <argsstring>(i2c_dev *dev, uint32 trise)</argsstring>
+        <name>i2c_set_trise</name>
+        <param>
+          <type><ref refid="structi2c__dev" kindref="compound">i2c_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>trise</declname>
+        </param>
+        <briefdescription>
+<para>Set SCL rise time. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>trise</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum rise time in fast/standard mode (see RM0008 for relevant formula). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="261" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="261" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="i2c_8h_1a001c83b552f3002bc6ff294e0a3a03e0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void i2c_start_condition</definition>
+        <argsstring>(i2c_dev *dev)</argsstring>
+        <name>i2c_start_condition</name>
+        <param>
+          <type><ref refid="structi2c__dev" kindref="compound">i2c_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Generate a start condition on the bus. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C device </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="270" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="270" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="i2c_8h_1a71fa06b838b8c067401ad767da3bedc2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void i2c_stop_condition</definition>
+        <argsstring>(i2c_dev *dev)</argsstring>
+        <name>i2c_stop_condition</name>
+        <param>
+          <type><ref refid="structi2c__dev" kindref="compound">i2c_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Generate a stop condition on the bus. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C device </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="284" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="284" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="i2c_8h_1a8e88e175e27566db33201a8d16384899" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void i2c_enable_irq</definition>
+        <argsstring>(i2c_dev *dev, uint32 irqs)</argsstring>
+        <name>i2c_enable_irq</name>
+        <param>
+          <type><ref refid="structi2c__dev" kindref="compound">i2c_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>irqs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="311" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="311" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="i2c_8h_1a2902b00e058e95b0ef5523f6bcfe6198" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void i2c_disable_irq</definition>
+        <argsstring>(i2c_dev *dev, uint32 irqs)</argsstring>
+        <name>i2c_disable_irq</name>
+        <param>
+          <type><ref refid="structi2c__dev" kindref="compound">i2c_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>uint32</type>
+          <declname>irqs</declname>
+        </param>
+        <briefdescription>
+<para>Disable one or more I2C interrupts. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>irqs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bitwise or of: I2C_IRQ_ERROR (error interrupt), I2C_IRQ_EVENT (event interrupt), and I2C_IRQ_BUFFER (buffer interrupt). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="323" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="323" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="i2c_8h_1a6b816d62c3416d559973f4f2ea0820b9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void i2c_enable_ack</definition>
+        <argsstring>(i2c_dev *dev)</argsstring>
+        <name>i2c_enable_ack</name>
+        <param>
+          <type><ref refid="structi2c__dev" kindref="compound">i2c_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Enable I2C acknowledgment. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C device </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="332" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="332" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="i2c_8h_1a1ae827cb26f735cee3efba1897496540" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void i2c_disable_ack</definition>
+        <argsstring>(i2c_dev *dev)</argsstring>
+        <name>i2c_disable_ack</name>
+        <param>
+          <type><ref refid="structi2c__dev" kindref="compound">i2c_dev</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+<para>Disable I2C acknowledgment. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>I2C device </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" line="340" bodyfile="/home/mbolivar/leaf/libmaple/libmaple/i2c.h" bodystart="340" bodyend="342"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Inter-Integrated Circuit (I2C) peripheral support. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>The<sp/>MIT<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2010<sp/>Perry<sp/>Hung.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,<sp/>copy,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell<sp/>copies</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="libmaple__types_8h" kindref="compound" tooltip="libmaple types">libmaple_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rcc_8h" kindref="compound" tooltip="reset and clock control definitions and prototypes">rcc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="nvic_8h" kindref="compound" tooltip="Nested vector interrupt controller support.">nvic.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gpio_8h" kindref="compound" tooltip="General purpose I/O (GPIO) and Alternate Function I/O (AFIO) prototypes, defines, and inlined access ...">gpio.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_I2C_H_</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_I2C_H_</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="41" refid="structi2c__reg__map" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structi2c__reg__map" kindref="compound" tooltip="I2C register map type.">i2c_reg_map</ref><sp/>{</highlight></codeline>
+<codeline lineno="42" refid="structi2c__reg__map_1abb271ffe6065de30f01e4580ea559ef5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structi2c__reg__map_1abb271ffe6065de30f01e4580ea559ef5" kindref="member" tooltip="Control register 1.">CR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43" refid="structi2c__reg__map_1a267a517c33011aecfe0964c16b0b9f62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structi2c__reg__map_1a267a517c33011aecfe0964c16b0b9f62" kindref="member" tooltip="Control register 2.">CR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44" refid="structi2c__reg__map_1ad9bd09e23c553b7aeebf1f33ca985084" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structi2c__reg__map_1ad9bd09e23c553b7aeebf1f33ca985084" kindref="member" tooltip="Own address register 1.">OAR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45" refid="structi2c__reg__map_1a299b9230d69071f73a0573075ca3a2fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structi2c__reg__map_1a299b9230d69071f73a0573075ca3a2fa" kindref="member" tooltip="Own address register 2.">OAR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46" refid="structi2c__reg__map_1a7028d38567026e86589a537dec78c63d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structi2c__reg__map_1a7028d38567026e86589a537dec78c63d" kindref="member" tooltip="Data register.">DR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="structi2c__reg__map_1af8809b67c1551e09349054e46bc4c237" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structi2c__reg__map_1af8809b67c1551e09349054e46bc4c237" kindref="member" tooltip="Status register 1.">SR1</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48" refid="structi2c__reg__map_1a0dfc48d5ca6ec155b50d1c7018df4036" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structi2c__reg__map_1a0dfc48d5ca6ec155b50d1c7018df4036" kindref="member" tooltip="Status register 2.">SR2</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="structi2c__reg__map_1a466eb465967831291b3ebeaaf9292f50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structi2c__reg__map_1a466eb465967831291b3ebeaaf9292f50" kindref="member" tooltip="Clock control register.">CCR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50" refid="structi2c__reg__map_1a3ce5bafeb625e62ca40221ec5a6d7426" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>__io<sp/>uint32<sp/><ref refid="structi2c__reg__map_1a3ce5bafeb625e62ca40221ec5a6d7426" kindref="member" tooltip="TRISE (rise time) register.">TRISE</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}<sp/><ref refid="structi2c__reg__map" kindref="compound" tooltip="I2C register map type.">i2c_reg_map</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="i2c_8h_1a3acd3f8324118cb8c44f79b0fa24190a" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="i2c_8h_1a3acd3f8324118cb8c44f79b0fa24190a" kindref="member" tooltip="I2C device states.">i2c_state</ref><sp/>{</highlight></codeline>
+<codeline lineno="55" refid="i2c_8h_1a3acd3f8324118cb8c44f79b0fa24190aa5792a96b3ac295e48ea5c9cd12e3b57c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="i2c_8h_1a3acd3f8324118cb8c44f79b0fa24190aa5792a96b3ac295e48ea5c9cd12e3b57c" kindref="member" tooltip="Disabled.">I2C_STATE_DISABLED</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="56" refid="i2c_8h_1a3acd3f8324118cb8c44f79b0fa24190aa6ec919e5ab4c1e707e4341497c56ef3a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="i2c_8h_1a3acd3f8324118cb8c44f79b0fa24190aa6ec919e5ab4c1e707e4341497c56ef3a" kindref="member" tooltip="Idle.">I2C_STATE_IDLE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="57" refid="i2c_8h_1a3acd3f8324118cb8c44f79b0fa24190aa29bc11ff47f471f704fab5c69974a692" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="i2c_8h_1a3acd3f8324118cb8c44f79b0fa24190aa29bc11ff47f471f704fab5c69974a692" kindref="member" tooltip="Done with transfer.">I2C_STATE_XFER_DONE</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/></highlight></codeline>
+<codeline lineno="58" refid="i2c_8h_1a3acd3f8324118cb8c44f79b0fa24190aa14c205a74425e3c05c129652c52180ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="i2c_8h_1a3acd3f8324118cb8c44f79b0fa24190aa14c205a74425e3c05c129652c52180ab" kindref="member" tooltip="Busy.">I2C_STATE_BUSY</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/></highlight></codeline>
+<codeline lineno="59" refid="i2c_8h_1a3acd3f8324118cb8c44f79b0fa24190aadd0d5082a2cf148823e1b8307728b011" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="i2c_8h_1a3acd3f8324118cb8c44f79b0fa24190aadd0d5082a2cf148823e1b8307728b011" kindref="member" tooltip="Error occurred.">I2C_STATE_ERROR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>-1<sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}<sp/><ref refid="i2c_8h_1a3acd3f8324118cb8c44f79b0fa24190a" kindref="member" tooltip="I2C device states.">i2c_state</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="structi2c__msg" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structi2c__msg" kindref="compound" tooltip="I2C message type.">i2c_msg</ref><sp/>{</highlight></codeline>
+<codeline lineno="66" refid="structi2c__msg_1a66b30535a9a11588b2eb88475940c40c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16<sp/><ref refid="structi2c__msg_1a66b30535a9a11588b2eb88475940c40c" kindref="member" tooltip="Address.">addr</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor">#define<sp/>I2C_MSG_READ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_MSG_10BIT_ADDR<sp/><sp/><sp/><sp/><sp/><sp/>0x2</highlight></codeline>
+<codeline lineno="69" refid="structi2c__msg_1ae69339535712eeb396cc1e3d71340c23" refkind="member"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>uint16<sp/><ref refid="structi2c__msg_1ae69339535712eeb396cc1e3d71340c23" kindref="member" tooltip="Bitwise OR of I2C_MSG_READ and I2C_MSG_10BIT_ADDR.">flags</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71" refid="structi2c__msg_1a5f0907550fa4e8455e8ab9faeaebf340" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16<sp/><ref refid="structi2c__msg_1a5f0907550fa4e8455e8ab9faeaebf340" kindref="member" tooltip="Message length.">length</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72" refid="structi2c__msg_1adba24d9b7f6f5873472bfc5d70b8a207" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16<sp/><ref refid="structi2c__msg_1adba24d9b7f6f5873472bfc5d70b8a207" kindref="member" tooltip="Messages transferred.">xferred</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73" refid="structi2c__msg_1a33aa3bea77e6db64bfee3ee49e6213f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/>*<ref refid="structi2c__msg_1a33aa3bea77e6db64bfee3ee49e6213f9" kindref="member" tooltip="Data.">data</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}<sp/><ref refid="structi2c__msg" kindref="compound" tooltip="I2C message type.">i2c_msg</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="structi2c__dev" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structi2c__dev" kindref="compound" tooltip="I2C device type.">i2c_dev</ref><sp/>{</highlight></codeline>
+<codeline lineno="80" refid="structi2c__dev_1a770bf7447fdee9e9a919393cedf327c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structi2c__reg__map" kindref="compound" tooltip="I2C register map type.">i2c_reg_map</ref><sp/>*<ref refid="structi2c__dev_1a770bf7447fdee9e9a919393cedf327c5" kindref="member" tooltip="Register map.">regs</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81" refid="structi2c__dev_1afe11205c9bf23c8aa90a9a05921b66fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgpio__dev" kindref="compound" tooltip="GPIO device type.">gpio_dev</ref><sp/>*<ref refid="structi2c__dev_1afe11205c9bf23c8aa90a9a05921b66fb" kindref="member" tooltip="SDA, SCL pins&amp;#39; GPIO port.">gpio_port</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82" refid="structi2c__dev_1a1a8578058d9bcbf287484ec425bb9f5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/><ref refid="structi2c__dev_1a1a8578058d9bcbf287484ec425bb9f5f" kindref="member" tooltip="SDA bit on gpio_port.">sda_pin</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="83" refid="structi2c__dev_1a08028527337ea71f5c53497076703fa0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8<sp/><ref refid="structi2c__dev_1a08028527337ea71f5c53497076703fa0" kindref="member" tooltip="SCL bit on gpio_port.">scl_pin</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84" refid="structi2c__dev_1a1d65d86bc935e410dedb99513f8067b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="rcc_8h_1ae3722d2d8eff5283fb0388429953640f" kindref="member" tooltip="Identifies bus and clock line for a peripheral.">rcc_clk_id</ref><sp/><ref refid="structi2c__dev_1a1d65d86bc935e410dedb99513f8067b9" kindref="member" tooltip="RCC clock information.">clk_id</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="85" refid="structi2c__dev_1a1eab3b8e31794d3a88844704bc80f5a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83" kindref="member" tooltip="Interrupt vector table interrupt numbers.">nvic_irq_num</ref><sp/><ref refid="structi2c__dev_1a1eab3b8e31794d3a88844704bc80f5a1" kindref="member" tooltip="Event IRQ number.">ev_nvic_line</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="86" refid="structi2c__dev_1aecdb8c9b799063905520bb7f87503ee9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="nvic_8h_1a89e3d57340a69fbdef83f12661543d83" kindref="member" tooltip="Interrupt vector table interrupt numbers.">nvic_irq_num</ref><sp/><ref refid="structi2c__dev_1aecdb8c9b799063905520bb7f87503ee9" kindref="member" tooltip="Error IRQ number.">er_nvic_line</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="87" refid="structi2c__dev_1ad1c99c4368625947a2e98284df705d91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="i2c_8h_1a3acd3f8324118cb8c44f79b0fa24190a" kindref="member" tooltip="I2C device states.">i2c_state</ref><sp/><ref refid="structi2c__dev_1ad1c99c4368625947a2e98284df705d91" kindref="member" tooltip="Device state.">state</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88" refid="structi2c__dev_1ae752e1f62474bced6b88cdce32be2cc9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16<sp/><ref refid="structi2c__dev_1ae752e1f62474bced6b88cdce32be2cc9" kindref="member" tooltip="Messages left.">msgs_left</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89" refid="structi2c__dev_1ad7c032f3abb09d59b6c3191c0249bfbf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structi2c__msg" kindref="compound" tooltip="I2C message type.">i2c_msg</ref><sp/>*<ref refid="structi2c__dev_1ad7c032f3abb09d59b6c3191c0249bfbf" kindref="member" tooltip="Messages.">msg</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90" refid="structi2c__dev_1a548eb25d2d6906db7b49976c85a7979d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32<sp/><ref refid="structi2c__dev_1a548eb25d2d6906db7b49976c85a7979d" kindref="member" tooltip="For internal use.">timestamp</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="91" refid="structi2c__dev_1a9efc3cbcbd6d297b213a998781eb5a39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/><ref refid="structi2c__dev_1a9efc3cbcbd6d297b213a998781eb5a39" kindref="member" tooltip="Error flags, set on I2C error condition.">error_flags</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}<sp/><ref refid="structi2c__dev" kindref="compound" tooltip="I2C device type.">i2c_dev</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/>*<sp/>Devices</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structi2c__dev" kindref="compound" tooltip="I2C device type.">i2c_dev</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="i2c_8c_1aec89802fb408c222366cbe7dab906b09" kindref="member" tooltip="I2C1 device.">I2C1</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structi2c__dev" kindref="compound" tooltip="I2C device type.">i2c_dev</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="i2c_8c_1a6d5a7765624c32671f73c79a73e778cc" kindref="member" tooltip="I2C2 device.">I2C2</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/>*<sp/>Register<sp/>map<sp/>base<sp/>pointers</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="i2c_8h_1acd72dbffb1738ca87c838545c4eb85a3" refkind="member"><highlight class="preprocessor">#define<sp/>I2C1_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((struct<sp/>i2c_reg_map*)0x40005400)</highlight></codeline>
+<codeline lineno="107"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="108" refid="i2c_8h_1a04bda70f25c795fb79f163b633ad4a5d" refkind="member"><highlight class="preprocessor">#define<sp/>I2C2_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((struct<sp/>i2c_reg_map*)0x40005800)</highlight></codeline>
+<codeline lineno="109"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="111"><highlight class="comment"><sp/>*<sp/>Register<sp/>bit<sp/>definitions</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Control<sp/>register<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_CR1_SWRST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(15)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Software<sp/>reset</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_CR1_ALERT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(13)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>SMBus<sp/>alert</highlight></codeline>
+<codeline lineno="118"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_CR1_PEC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(12)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Packet<sp/>error<sp/>checking</highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_CR1_POS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(11)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Acknowledge/PEC<sp/>position</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_CR1_ACK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(10)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Acknowledge<sp/>enable</highlight></codeline>
+<codeline lineno="121"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_CR1_START<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(8)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Start<sp/>generation</highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_CR1_STOP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(9)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Stop<sp/>generation</highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_CR1_PE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Peripheral<sp/>Enable</highlight></codeline>
+<codeline lineno="124"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Control<sp/>register<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_CR2_LAST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(12)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>DMA<sp/>last<sp/>transfer</highlight></codeline>
+<codeline lineno="128"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_CR2_DMAEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(11)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>DMA<sp/>requests<sp/>enable</highlight></codeline>
+<codeline lineno="129"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_CR2_ITBUFEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(10)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Buffer<sp/>interrupt<sp/>enable</highlight></codeline>
+<codeline lineno="130"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_CR2_ITEVTEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(9)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Event<sp/>interupt<sp/>enable</highlight></codeline>
+<codeline lineno="131"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_CR2_ITERREN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(8)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Error<sp/>interupt<sp/>enable</highlight></codeline>
+<codeline lineno="132"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_CR2_FREQ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xFFF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Peripheral<sp/>input<sp/>frequency</highlight></codeline>
+<codeline lineno="133"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Clock<sp/>control<sp/>register<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_CCR_FS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(15)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Fast<sp/>mode<sp/>selection</highlight></codeline>
+<codeline lineno="137"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_CCR_DUTY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(14)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>16/9<sp/>duty<sp/>ratio</highlight></codeline>
+<codeline lineno="138"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_CCR_CCR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xFFF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Clock<sp/>control<sp/>bits</highlight></codeline>
+<codeline lineno="139"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Status<sp/>register<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_SR1_SB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Start<sp/>bit</highlight></codeline>
+<codeline lineno="143"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_SR1_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Address<sp/>sent/matched</highlight></codeline>
+<codeline lineno="144"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_SR1_BTF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(2)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Byte<sp/>transfer<sp/>finished</highlight></codeline>
+<codeline lineno="145"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_SR1_ADD10<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(3)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>10-bit<sp/>header<sp/>sent</highlight></codeline>
+<codeline lineno="146"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_SR1_STOPF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(4)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Stop<sp/>detection</highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_SR1_RXNE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(6)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Data<sp/>register<sp/>not<sp/>empty</highlight></codeline>
+<codeline lineno="148"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_SR1_TXE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(7)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Data<sp/>register<sp/>empty</highlight></codeline>
+<codeline lineno="149"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_SR1_BERR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(8)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Bus<sp/>error</highlight></codeline>
+<codeline lineno="150"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_SR1_ARLO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(9)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Arbitration<sp/>lost</highlight></codeline>
+<codeline lineno="151"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_SR1_AF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(10)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Acknowledge<sp/>failure</highlight></codeline>
+<codeline lineno="152"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_SR1_OVR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(11)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Overrun/underrun</highlight></codeline>
+<codeline lineno="153"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_SR1_PECERR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(12)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>PEC<sp/>Error<sp/>in<sp/>reception</highlight></codeline>
+<codeline lineno="154"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_SR1_TIMEOUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(14)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Timeout<sp/>or<sp/>Tlow<sp/>error</highlight></codeline>
+<codeline lineno="155"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_SR1_SMBALERT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(15)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>SMBus<sp/>alert</highlight></codeline>
+<codeline lineno="156"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Status<sp/>register<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_SR2_MSL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(0)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Master/slave</highlight></codeline>
+<codeline lineno="160"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_SR2_BUSY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(1)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Bus<sp/>busy</highlight></codeline>
+<codeline lineno="161"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_SR2_TRA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(2)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Transmitter/receiver</highlight></codeline>
+<codeline lineno="162"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_SR2_GENCALL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(4)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>General<sp/>call<sp/>address</highlight></codeline>
+<codeline lineno="163"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_SR2_SMBDEFAULT<sp/><sp/><sp/><sp/><sp/><sp/>BIT(5)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>SMBus<sp/>device<sp/>default<sp/>address</highlight></codeline>
+<codeline lineno="164"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_SR2_SMBHOST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(6)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>SMBus<sp/>host<sp/>header</highlight></codeline>
+<codeline lineno="165"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_SR2_DUALF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(7)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Dual<sp/>flag</highlight></codeline>
+<codeline lineno="166"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_SR2_PEC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xFF00<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Packet<sp/>error<sp/>checking<sp/>register</highlight></codeline>
+<codeline lineno="167"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="169"><highlight class="comment"><sp/>*<sp/>Convenience<sp/>routines</highlight></codeline>
+<codeline lineno="170"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="173"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="175"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="i2c_8c_1af8cfdd992921cde40e1602a9b34e25ae" kindref="member" tooltip="Initialize an I2C device and reset its registers to their default values.">i2c_init</ref>(<ref refid="structi2c__dev" kindref="compound" tooltip="I2C device type.">i2c_dev</ref><sp/>*dev);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>I2C<sp/>enable<sp/>options<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_FAST_MODE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(0)<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>400<sp/>khz</highlight></codeline>
+<codeline lineno="180"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_DUTY_16_9<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(1)<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>16/9<sp/>duty<sp/>ratio</highlight></codeline>
+<codeline lineno="181"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_REMAP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(2)<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Use<sp/>alternate<sp/>pin<sp/>mapping</highlight></codeline>
+<codeline lineno="182"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_BUS_RESET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BIT(3)<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Perform<sp/>a<sp/>bus<sp/>reset</highlight></codeline>
+<codeline lineno="183"><highlight class="preprocessor"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="i2c_8c_1a452bf35cbe145bbdf2def959891952f1" kindref="member" tooltip="Initialize an I2C device as bus master.">i2c_master_enable</ref>(<ref refid="structi2c__dev" kindref="compound" tooltip="I2C device type.">i2c_dev</ref><sp/>*dev,<sp/>uint32<sp/>flags);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_ERROR_PROTOCOL<sp/><sp/><sp/><sp/><sp/><sp/>(-1)</highlight></codeline>
+<codeline lineno="186"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_ERROR_TIMEOUT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(-2)</highlight></codeline>
+<codeline lineno="187"><highlight class="preprocessor"></highlight><highlight class="normal">int32<sp/><ref refid="i2c_8c_1aafcba989e09effa08b3b8414326b52ef" kindref="member" tooltip="Process an i2c transaction.">i2c_master_xfer</ref>(<ref refid="structi2c__dev" kindref="compound" tooltip="I2C device type.">i2c_dev</ref><sp/>*dev,<sp/><ref refid="structi2c__msg" kindref="compound" tooltip="I2C message type.">i2c_msg</ref><sp/>*msgs,<sp/>uint16<sp/>num,<sp/>uint32<sp/>timeout);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="i2c_8c_1aab3886f4f42b3c5aa303311db6cba2ce" kindref="member" tooltip="Reset an I2C bus.">i2c_bus_reset</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structi2c__dev" kindref="compound" tooltip="I2C device type.">i2c_dev</ref><sp/>*dev);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="i2c_8h_1a1cd1a1f7c1a2bb5a313b976dbee81233" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="i2c_8h_1a1cd1a1f7c1a2bb5a313b976dbee81233" kindref="member" tooltip="Disable an I2C device.">i2c_disable</ref>(<ref refid="structi2c__dev" kindref="compound" tooltip="I2C device type.">i2c_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>dev-&gt;<ref refid="structi2c__dev_1a770bf7447fdee9e9a919393cedf327c5" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structi2c__reg__map_1abb271ffe6065de30f01e4580ea559ef5" kindref="member" tooltip="Control register 1.">CR1</ref><sp/>&amp;=<sp/>~I2C_CR1_PE;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>dev-&gt;<ref refid="structi2c__dev_1ad1c99c4368625947a2e98284df705d91" kindref="member" tooltip="Device state.">state</ref><sp/>=<sp/><ref refid="i2c_8h_1a3acd3f8324118cb8c44f79b0fa24190aa5792a96b3ac295e48ea5c9cd12e3b57c" kindref="member" tooltip="Disabled.">I2C_STATE_DISABLED</ref>;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208" refid="i2c_8h_1a8d68fb99a8a2536a75fd9008fac9d2d3" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="i2c_8h_1a8d68fb99a8a2536a75fd9008fac9d2d3" kindref="member" tooltip="Turn on an I2C peripheral.">i2c_peripheral_enable</ref>(<ref refid="structi2c__dev" kindref="compound" tooltip="I2C device type.">i2c_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>dev-&gt;<ref refid="structi2c__dev_1a770bf7447fdee9e9a919393cedf327c5" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structi2c__reg__map_1abb271ffe6065de30f01e4580ea559ef5" kindref="member" tooltip="Control register 1.">CR1</ref><sp/>|=<sp/>I2C_CR1_PE;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216" refid="i2c_8h_1abcbe61c229078b24811bb119c716163b" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="i2c_8h_1abcbe61c229078b24811bb119c716163b" kindref="member" tooltip="Turn off an I2C peripheral.">i2c_peripheral_disable</ref>(<ref refid="structi2c__dev" kindref="compound" tooltip="I2C device type.">i2c_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>dev-&gt;<ref refid="structi2c__dev_1a770bf7447fdee9e9a919393cedf327c5" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structi2c__reg__map_1abb271ffe6065de30f01e4580ea559ef5" kindref="member" tooltip="Control register 1.">CR1</ref><sp/>&amp;=<sp/>~I2C_CR1_PE;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225" refid="i2c_8h_1aaf1d8b3f161b5bffccf335e45560bc95" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="i2c_8h_1aaf1d8b3f161b5bffccf335e45560bc95" kindref="member" tooltip="Fill transmit register.">i2c_write</ref>(<ref refid="structi2c__dev" kindref="compound" tooltip="I2C device type.">i2c_dev</ref><sp/>*dev,<sp/>uint8<sp/>byte)<sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>dev-&gt;<ref refid="structi2c__dev_1a770bf7447fdee9e9a919393cedf327c5" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structi2c__reg__map_1a7028d38567026e86589a537dec78c63d" kindref="member" tooltip="Data register.">DR</ref><sp/>=<sp/>byte;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234" refid="i2c_8h_1ac689edbe53b35ee1aa991a3c0377b403" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="i2c_8h_1ac689edbe53b35ee1aa991a3c0377b403" kindref="member" tooltip="Set input clock frequency, in MHz.">i2c_set_input_clk</ref>(<ref refid="structi2c__dev" kindref="compound" tooltip="I2C device type.">i2c_dev</ref><sp/>*dev,<sp/>uint32<sp/>freq)<sp/>{</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>cr2<sp/>=<sp/>dev-&gt;<ref refid="structi2c__dev_1a770bf7447fdee9e9a919393cedf327c5" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structi2c__reg__map_1a267a517c33011aecfe0964c16b0b9f62" kindref="member" tooltip="Control register 2.">CR2</ref>;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>cr2<sp/>&amp;=<sp/>~I2C_CR2_FREQ;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>cr2<sp/>|=<sp/>freq;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>dev-&gt;<ref refid="structi2c__dev_1a770bf7447fdee9e9a919393cedf327c5" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structi2c__reg__map_1a267a517c33011aecfe0964c16b0b9f62" kindref="member" tooltip="Control register 2.">CR2</ref><sp/>=<sp/>freq;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247" refid="i2c_8h_1ac6814d6ac4068949197003b43f3a213f" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="i2c_8h_1ac6814d6ac4068949197003b43f3a213f" kindref="member" tooltip="Set I2C clock control register.">i2c_set_clk_control</ref>(<ref refid="structi2c__dev" kindref="compound" tooltip="I2C device type.">i2c_dev</ref><sp/>*dev,<sp/>uint32<sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>ccr<sp/>=<sp/>dev-&gt;<ref refid="structi2c__dev_1a770bf7447fdee9e9a919393cedf327c5" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structi2c__reg__map_1a466eb465967831291b3ebeaaf9292f50" kindref="member" tooltip="Clock control register.">CCR</ref>;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>ccr<sp/>&amp;=<sp/>~I2C_CCR_CCR;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>ccr<sp/>|=<sp/>val;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>dev-&gt;<ref refid="structi2c__dev_1a770bf7447fdee9e9a919393cedf327c5" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structi2c__reg__map_1a466eb465967831291b3ebeaaf9292f50" kindref="member" tooltip="Clock control register.">CCR</ref><sp/>=<sp/>ccr;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261" refid="i2c_8h_1ab449d7e74e40ebeb3f015575d92734f8" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="i2c_8h_1ab449d7e74e40ebeb3f015575d92734f8" kindref="member" tooltip="Set SCL rise time.">i2c_set_trise</ref>(<ref refid="structi2c__dev" kindref="compound" tooltip="I2C device type.">i2c_dev</ref><sp/>*dev,<sp/>uint32<sp/>trise)<sp/>{</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>dev-&gt;<ref refid="structi2c__dev_1a770bf7447fdee9e9a919393cedf327c5" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structi2c__reg__map_1a3ce5bafeb625e62ca40221ec5a6d7426" kindref="member" tooltip="TRISE (rise time) register.">TRISE</ref><sp/>=<sp/>trise;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270" refid="i2c_8h_1a001c83b552f3002bc6ff294e0a3a03e0" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="i2c_8h_1a001c83b552f3002bc6ff294e0a3a03e0" kindref="member" tooltip="Generate a start condition on the bus.">i2c_start_condition</ref>(<ref refid="structi2c__dev" kindref="compound" tooltip="I2C device type.">i2c_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>cr1;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((cr1<sp/>=<sp/>dev-&gt;<ref refid="structi2c__dev_1a770bf7447fdee9e9a919393cedf327c5" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structi2c__reg__map_1abb271ffe6065de30f01e4580ea559ef5" kindref="member" tooltip="Control register 1.">CR1</ref>)<sp/>&amp;<sp/>(I2C_CR1_START<sp/>|</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>I2C_CR1_STOP<sp/><sp/>|</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>I2C_CR1_PEC))<sp/>{</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>dev-&gt;<ref refid="structi2c__dev_1a770bf7447fdee9e9a919393cedf327c5" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structi2c__reg__map_1abb271ffe6065de30f01e4580ea559ef5" kindref="member" tooltip="Control register 1.">CR1</ref><sp/>|=<sp/>I2C_CR1_START;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284" refid="i2c_8h_1a71fa06b838b8c067401ad767da3bedc2" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="i2c_8h_1a71fa06b838b8c067401ad767da3bedc2" kindref="member" tooltip="Generate a stop condition on the bus.">i2c_stop_condition</ref>(<ref refid="structi2c__dev" kindref="compound" tooltip="I2C device type.">i2c_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32<sp/>cr1;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((cr1<sp/>=<sp/>dev-&gt;<ref refid="structi2c__dev_1a770bf7447fdee9e9a919393cedf327c5" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structi2c__reg__map_1abb271ffe6065de30f01e4580ea559ef5" kindref="member" tooltip="Control register 1.">CR1</ref>)<sp/>&amp;<sp/>(I2C_CR1_START<sp/>|</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>I2C_CR1_STOP<sp/><sp/>|</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>I2C_CR1_PEC))<sp/>{</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>dev-&gt;<ref refid="structi2c__dev_1a770bf7447fdee9e9a919393cedf327c5" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structi2c__reg__map_1abb271ffe6065de30f01e4580ea559ef5" kindref="member" tooltip="Control register 1.">CR1</ref><sp/>|=<sp/>I2C_CR1_STOP;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((cr1<sp/>=<sp/>dev-&gt;<ref refid="structi2c__dev_1a770bf7447fdee9e9a919393cedf327c5" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structi2c__reg__map_1abb271ffe6065de30f01e4580ea559ef5" kindref="member" tooltip="Control register 1.">CR1</ref>)<sp/>&amp;<sp/>(I2C_CR1_START<sp/>|</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>I2C_CR1_STOP<sp/><sp/>|</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>I2C_CR1_PEC))<sp/>{</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308" refid="i2c_8h_1a52a80944a72431b51fd928d904486db7" refkind="member"><highlight class="preprocessor">#define<sp/>I2C_IRQ_ERROR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>I2C_CR2_ITERREN</highlight></codeline>
+<codeline lineno="309"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_IRQ_EVENT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>I2C_CR2_ITEVTEN</highlight></codeline>
+<codeline lineno="310"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I2C_IRQ_BUFFER<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>I2C_CR2_ITBUFEN</highlight></codeline>
+<codeline lineno="311"><highlight class="preprocessor"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>i2c_enable_irq(<ref refid="structi2c__dev" kindref="compound" tooltip="I2C device type.">i2c_dev</ref><sp/>*dev,<sp/>uint32<sp/>irqs)<sp/>{</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/>dev-&gt;<ref refid="structi2c__dev_1a770bf7447fdee9e9a919393cedf327c5" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structi2c__reg__map_1a267a517c33011aecfe0964c16b0b9f62" kindref="member" tooltip="Control register 2.">CR2</ref><sp/>|=<sp/>irqs;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323" refid="i2c_8h_1a2902b00e058e95b0ef5523f6bcfe6198" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="i2c_8h_1a2902b00e058e95b0ef5523f6bcfe6198" kindref="member" tooltip="Disable one or more I2C interrupts.">i2c_disable_irq</ref>(<ref refid="structi2c__dev" kindref="compound" tooltip="I2C device type.">i2c_dev</ref><sp/>*dev,<sp/>uint32<sp/>irqs)<sp/>{</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>dev-&gt;<ref refid="structi2c__dev_1a770bf7447fdee9e9a919393cedf327c5" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structi2c__reg__map_1a267a517c33011aecfe0964c16b0b9f62" kindref="member" tooltip="Control register 2.">CR2</ref><sp/>&amp;=<sp/>~irqs;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332" refid="i2c_8h_1a6b816d62c3416d559973f4f2ea0820b9" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="i2c_8h_1a6b816d62c3416d559973f4f2ea0820b9" kindref="member" tooltip="Enable I2C acknowledgment.">i2c_enable_ack</ref>(<ref refid="structi2c__dev" kindref="compound" tooltip="I2C device type.">i2c_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>dev-&gt;<ref refid="structi2c__dev_1a770bf7447fdee9e9a919393cedf327c5" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structi2c__reg__map_1abb271ffe6065de30f01e4580ea559ef5" kindref="member" tooltip="Control register 1.">CR1</ref><sp/>|=<sp/>I2C_CR1_ACK;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340" refid="i2c_8h_1a1ae827cb26f735cee3efba1897496540" refkind="member"><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="i2c_8h_1a1ae827cb26f735cee3efba1897496540" kindref="member" tooltip="Disable I2C acknowledgment.">i2c_disable_ack</ref>(<ref refid="structi2c__dev" kindref="compound" tooltip="I2C device type.">i2c_dev</ref><sp/>*dev)<sp/>{</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/>dev-&gt;<ref refid="structi2c__dev_1a770bf7447fdee9e9a919393cedf327c5" kindref="member" tooltip="Register map.">regs</ref>-&gt;<ref refid="structi2c__reg__map_1abb271ffe6065de30f01e4580ea559ef5" kindref="member" tooltip="Control register 1.">CR1</ref><sp/>&amp;=<sp/>~I2C_CR1_ACK;</highlight></codeline>
+<codeline lineno="342"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="345"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="347"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/mbolivar/leaf/libmaple/libmaple/i2c.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="struct_port" kind="struct" prot="public">
+    <compoundname>Port</compoundname>
+    <includes refid="_wire_8h" local="no">Wire.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_port_1a3bce4634a5365e94c5807b64a8fc3724" prot="public" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 Port::scl</definition>
+        <argsstring></argsstring>
+        <name>scl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="38" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_port_1aad67108c3bf11ffa7b670782bc99bd6b" prot="public" static="no" mutable="no">
+        <type>uint8</type>
+        <definition>uint8 Port::sda</definition>
+        <argsstring></argsstring>
+        <name>sda</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="39" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Wire library, ported from Arduino. </para>    </briefdescription>
+    <detaileddescription>
+<para>Provides a lean interface to I2C (two-wire) communication. </para>    </detaileddescription>
+    <location file="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" line="37" bodyfile="/home/mbolivar/leaf/libmaple/libraries/Wire/Wire.h" bodystart="37" bodyend="40"/>
+    <listofallmembers>
+      <member refid="struct_port_1a3bce4634a5365e94c5807b64a8fc3724" prot="public" virt="non-virtual"><scope>Port</scope><name>scl</name></member>
+      <member refid="struct_port_1aad67108c3bf11ffa7b670782bc99bd6b" prot="public" virt="non-virtual"><scope>Port</scope><name>sda</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

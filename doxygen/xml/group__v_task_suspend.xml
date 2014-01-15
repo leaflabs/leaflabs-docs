@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__v_task_suspend" kind="group">
+    <compoundname>vTaskSuspend</compoundname>
+    <title>vTaskSuspend</title>
+    <briefdescription>
+<para>task. </para>    </briefdescription>
+    <detaileddescription>
+<para>h <preformatted>void vTaskSuspend( xTaskHandle pxTaskToSuspend );</preformatted></para><para>INCLUDE_vTaskSuspend must be defined as 1 for this function to be available. See the configuration section for more information.</para><para>Suspend any task. When suspended a task will never get any microcontroller processing time, no matter what its priority.</para><para>Calls to vTaskSuspend are not accumulative - i.e. calling vTaskSuspend () twice on the same task still only requires one call to vTaskResume () to ready the suspended task.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pxTaskToSuspend</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Handle to the task being suspended. Passing a NULL handle will cause the calling task to be suspended.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Example usage: <preformatted>
+ void vAFunction( void )
+ {
+ xTaskHandle xHandle;</preformatted></para><para><preformatted>Create a task, storing the handle.
+	 xTaskCreate( vTaskCode, &quot;NAME&quot;, STACK_SIZE, NULL, tskIDLE_PRIORITY, &amp;xHandle );</preformatted></para><para><preformatted>...</preformatted></para><para><preformatted>Use the handle to suspend the created task.
+	 vTaskSuspend( xHandle );</preformatted></para><para><preformatted>...</preformatted></para><para><preformatted>The created task will not run during this period, unless
+another task calls vTaskResume( xHandle ).</preformatted></para><para><preformatted>...</preformatted></para><para><preformatted>Suspend ourselves.
+	 vTaskSuspend( NULL );</preformatted></para><para><preformatted>We cannot get here unless another task calls vTaskResume
+with our handle as the parameter.
+ }
+   </preformatted> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>
