@@ -2,15 +2,11 @@ This repository contains source files used to generate the
 documentation for LeafLabs' libmaple and Maple IDE projects [*]. The
 HTML documentation generated from these sources is available online:
 
-    http://leaflabs.com/docs/
+    http://docs.leaflabs.com
 
 The above URL is the recommended way for users to read the
 documentation.  The docs for the latest release are always available
 there.
-
-Older versions are here:
-
-    http://static.leaflabs.com/pub/leaflabs/maple-docs/
 
 The file README-building.txt explains how to build the HTML docs.
 
